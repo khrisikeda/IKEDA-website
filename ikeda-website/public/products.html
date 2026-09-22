@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | Ikeda Endoscopy Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/index.html" class="brand">Ikeda <span>Endoscopy</span> Africa</a>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/products.html" aria-current="page">Products</a></li>
+        <li><a href="/manufacturers.html">Manufacturers</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-phone" href="tel:0795360359">&#9742; 0795 360 359</a>
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:4rem;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <p class="eyebrow">Products</p>
+      <h1>Sixteen departments, one supplier.</h1>
+      <p class="lede">Laparoscopy for surgery, gynecology and urology is our specialty &mdash; and it sits alongside a full multi-specialty catalog for the rest of the hospital.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div id="category-grid" class="category-grid" aria-live="polite">
+      <p>Loading product categories&hellip;</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap center">
+    <h2>Looking for a specific model or spec sheet?</h2>
+    <p style="margin-left:auto;margin-right:auto;">Call us or send a message and we'll match you with the right equipment for your department.</p>
+    <div class="hero-cta" style="justify-content:center;">
+      <a href="tel:0795360359" class="btn btn-dark">Call 0795 360 359</a>
+      <a href="/contact.html" class="btn btn-ghost" style="color:var(--teal-950); border-color:var(--line);">Send a message</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Ikeda Endoscopy Africa</h3>
+        <p style="color:var(--ivory-dim); max-width:38ch;">Multi-specialty medical equipment, with a specialty in laparoscopy for surgery, gynecology and urology.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer-links">
+          <li><a href="/about.html">About us</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/manufacturers.html">Manufacturers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li><a href="tel:0795360359">0795 360 359</a></li>
+          <li><a href="/contact.html">Contact form &amp; map</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Ikeda Endoscopy Africa</span>
+      <span>Built for growth &mdash; ready to extend</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/products.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

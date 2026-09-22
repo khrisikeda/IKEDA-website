@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Manufacturer Name 1",
+    "categories": [
+      "Laparoscopy"
+    ],
+    "website": "",
+    "logo": ""
+  },
+  {
+    "name": "Manufacturer Name 2",
+    "categories": [
+      "Intensive Care",
+      "Neonatology"
+    ],
+    "website": "",
+    "logo": ""
+  },
+  {
+    "name": "Manufacturer Name 3",
+    "categories": [
+      "Ophthalmology"
+    ],
+    "website": "",
+    "logo": ""
+  }
+]

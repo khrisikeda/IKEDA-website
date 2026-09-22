@@ -1,0 +1,99 @@
+[
+  {
+    "slug": "laparoscopy",
+    "name": "Laparoscopy",
+    "featured": true,
+    "tagline": "Our core specialty",
+    "description": "Minimally invasive surgical systems and instruments for general surgery, gynecology and urology — scopes, towers, energy devices and hand instruments for advanced laparoscopic procedures."
+  },
+  {
+    "slug": "urology",
+    "name": "Urology",
+    "featured": false,
+    "description": "Diagnostic and surgical equipment for urological procedures, including endoscopic and imaging tools."
+  },
+  {
+    "slug": "vats",
+    "name": "VATS",
+    "featured": false,
+    "description": "Video-assisted thoracoscopic surgery systems for minimally invasive chest and thoracic procedures."
+  },
+  {
+    "slug": "neonatology",
+    "name": "Neonatology",
+    "featured": false,
+    "description": "Incubators, warmers, phototherapy and monitoring equipment for newborn and premature infant care."
+  },
+  {
+    "slug": "maternity",
+    "name": "Maternity",
+    "featured": false,
+    "description": "Labor, delivery and maternal monitoring equipment for maternity wards and birthing units."
+  },
+  {
+    "slug": "intensive-care",
+    "name": "Intensive Care",
+    "featured": false,
+    "description": "Ventilators, patient monitors and critical care equipment for ICU and high-dependency units."
+  },
+  {
+    "slug": "ophthalmology",
+    "name": "Ophthalmology",
+    "featured": false,
+    "description": "Diagnostic and surgical equipment for eye care, from examination to surgical suites."
+  },
+  {
+    "slug": "dentistry",
+    "name": "Dentistry",
+    "featured": false,
+    "description": "Dental chairs, imaging and instruments for general and specialist dental practice."
+  },
+  {
+    "slug": "orthopedics",
+    "name": "Orthopedics",
+    "featured": false,
+    "description": "Equipment and instrumentation for orthopedic diagnosis, surgery and rehabilitation."
+  },
+  {
+    "slug": "gastroenterology",
+    "name": "Gastroenterology",
+    "featured": false,
+    "description": "Endoscopic and diagnostic equipment for gastrointestinal care."
+  },
+  {
+    "slug": "gynecology",
+    "name": "Gynecology",
+    "featured": false,
+    "description": "Diagnostic and procedural equipment for women's health beyond our laparoscopic gynecology line."
+  },
+  {
+    "slug": "pediatrics",
+    "name": "Pediatrics",
+    "featured": false,
+    "description": "Equipment sized and designed for the diagnosis and care of infants and children."
+  },
+  {
+    "slug": "radiology",
+    "name": "Radiology Equipment",
+    "featured": false,
+    "description": "Imaging systems and accessories for diagnostic radiology departments."
+  },
+  {
+    "slug": "emergency",
+    "name": "Emergency Equipment",
+    "featured": false,
+    "description": "Resuscitation, monitoring and rapid-response equipment for emergency departments."
+  },
+  {
+    "slug": "ent",
+    "name": "ENT Equipment",
+    "featured": false,
+    "description": "Diagnostic and procedural equipment and products for ear, nose and throat care."
+  },
+  {
+    "slug": "physiotherapy",
+    "name": "Physiotherapy",
+    "featured": false,
+    "description": "Rehabilitation and physical therapy equipment for clinics and hospital physiotherapy units."
+  }
+]
