@@ -1,0 +1,308 @@
+[
+  {
+    "slug": "laparoscopy",
+    "name": "Laparoscopy & Minimally Invasive Surgery",
+    "departmentGroup": "Endoscopy & Surgery",
+    "featured": true,
+    "tagline": "Our Core Flagship Specialty",
+    "description": "State-of-the-art 4K Ultra HD and Full HD laparoscopic video towers, camera control units, cold LED illumination, CO2 insufflators, and precision rigid optics for general surgery, gynecology, and urology.",
+    "equipmentHighlights": [
+      "Ikeda 4K UHD Integrated Endoscopy Tower System",
+      "Full HD 1080p Medical Video Processor & CCU",
+      "High-Flow Automatic CO2 Insufflator (30L - 45L/min with Gas Heater)",
+      "High-Lumen Medical Cold LED Light Source (80W - 120W)",
+      "32\" and 55\" Medical Grade 4K/FHD Surgical Displays",
+      "Autoclavable HD Rigid Laparoscopes (0° & 30°, 5.5mm & 10mm)",
+      "Modular Laparoscopic Hand Instruments, Trocar Cannulas & Clip Appliers"
+    ],
+    "keySpecs": [
+      "3840 x 2160 native resolution with zero-latency transmission",
+      "Optical optical fiber bundles with universal Storz/Wolf adaptors",
+      "Smoke evacuation and peristaltic suction-irrigation integration",
+      "CE & ISO13485 certified surgical grade stainless steel construction"
+    ]
+  },
+  {
+    "slug": "urology",
+    "name": "Urology & Endourology",
+    "departmentGroup": "Endoscopy & Surgery",
+    "featured": false,
+    "tagline": "Transurethral & Percutaneous Precision",
+    "description": "Comprehensive diagnostic and surgical equipment for urological procedures, including transurethral resection (TURP/TURBT), ureteroscopy, and percutaneous stone management.",
+    "equipmentHighlights": [
+      "Continuous-Flow Bipolar & Monopolar Resectoscope Sets",
+      "Semi-Rigid & Flexible Ureterorenoscopes (URS)",
+      "Percutaneous Nephroscopes with Triturating Forceps",
+      "High-Power Holmium Laser Compatible Working Elements",
+      "Optical Urethrotome & Cystoscopy Sheath Sets"
+    ],
+    "keySpecs": [
+      "Wide-angle optical system with Sapphire distal lens tip",
+      "Standard and active rotatable continuous irrigation sheaths",
+      "Compatible with high-definition endoscopic camera heads"
+    ]
+  },
+  {
+    "slug": "vats",
+    "name": "Video-Assisted Thoracoscopic Surgery (VATS)",
+    "departmentGroup": "Endoscopy & Surgery",
+    "featured": false,
+    "tagline": "Minimally Invasive Thoracic Care",
+    "description": "Advanced video-assisted thoracoscopic surgery systems tailored for minimally invasive thoracic, pulmonary, and mediastinal interventions.",
+    "equipmentHighlights": [
+      "HD Thoracoscopes (0° & 30°, extended working length)",
+      "Double-Curved VATS Grasping, Dissecting & Biopsy Forceps",
+      "Endoscopic Vessel Sealing and Ultrasonic Dissection Devices",
+      "Thoracic Trocar Sets with Flexible Sleeve Portals"
+    ],
+    "keySpecs": [
+      "Anti-fogging optical elements with high-temperature autoclavability",
+      "Extended 33cm–38cm shaft lengths with 360° rotational rings"
+    ]
+  },
+  {
+    "slug": "neonatology",
+    "name": "Neonatology & Newborn Care",
+    "departmentGroup": "Maternal & Infant",
+    "featured": false,
+    "tagline": "Gentle Technology for Fragile Lives",
+    "description": "Advanced infant incubators, radiant warmers, LED phototherapy units, and neonatal vital signs monitors engineered for NICUs.",
+    "equipmentHighlights": [
+      "Microprocessor-Controlled Infant Incubators with Humidity Servo",
+      "Infant Radiant Warmers with Integrated Resuscitation Modules",
+      "Intensive LED Phototherapy Units (Overhead & Bilibed)",
+      "Neonatal High-Frequency Oscillatory Ventilators",
+      "Pulse Oximeters & Neonatal Multi-Parameter Vital Monitors"
+    ],
+    "keySpecs": [
+      "Double-wall canopy for optimal thermal isolation and low noise",
+      "Integrated infant weighing scale and X-ray cassette tray",
+      "Real-time skin and air temperature dual-channel servo control"
+    ]
+  },
+  {
+    "slug": "maternity",
+    "name": "Maternity & Obstetrics",
+    "departmentGroup": "Maternal & Infant",
+    "featured": false,
+    "tagline": "Safe Delivery & Fetal Well-Being",
+    "description": "Complete labor and delivery infrastructure, fetal maternal monitors, electric obstetric beds, and postpartum recovery equipment.",
+    "equipmentHighlights": [
+      "Twins & Singleton Fetal Maternal Doppler Monitors (CTG)",
+      "Multi-Function Electric Delivery & Obstetric Operating Beds",
+      "Vacuum Delivery Extractors & Infant Suction Units",
+      "Portable Point-of-Care Obstetric Ultrasound"
+    ],
+    "keySpecs": [
+      "12.1-inch color touchscreen with 24-hour CTG waveform replay",
+      "Ergonomic multi-position delivery beds with motorized height and Trendelenburg adjustments"
+    ]
+  },
+  {
+    "slug": "intensive-care",
+    "name": "Intensive Care Unit (ICU)",
+    "departmentGroup": "Critical Care & Emergency",
+    "featured": false,
+    "tagline": "Life Support & Critical Monitoring",
+    "description": "Turbine and pneumatic-driven critical care ventilators, modular bedside patient monitors, central nursing monitoring stations, and infusion arrays.",
+    "equipmentHighlights": [
+      "Invasive / Non-Invasive Critical Care ICU Ventilators",
+      "15\" Modular Multi-Parameter Patient Monitors (ECG, SpO2, NIBP, IBP, EtCO2)",
+      "Central Monitoring Station Networks (up to 64 bedside units)",
+      "Multi-Channel Syringe Pumps & Volumetric Infusion Workstations",
+      "Medical Gas Delivery Pendants & ICU Electric Beds"
+    ],
+    "keySpecs": [
+      "Smart lung mechanics ventilation modes (PRVC, SIMV, PSV, Bi-Level)",
+      "Microstream EtCO2 and hemodynamic monitoring integration",
+      "Backup battery backup exceeding 4 hours of autonomous operation"
+    ]
+  },
+  {
+    "slug": "ophthalmology",
+    "name": "Ophthalmology & Eye Care",
+    "departmentGroup": "Diagnostics & Specialty",
+    "featured": false,
+    "tagline": "Optical Diagnostics & Microsurgery",
+    "description": "Diagnostic slit lamps, auto-refractometers, visual acuity projectors, and ophthalmic operating microscopes for clinics and surgical suites.",
+    "equipmentHighlights": [
+      "Digital Slit Lamp Imaging Systems with Beam Splitter & HD Camera",
+      "Surgical Ophthalmic Microscopes with Coaxial Illumination",
+      "Auto Refractometer / Keratometers",
+      "Non-Contact Tonometer with Corneal Thickness Compensation",
+      "Phacoemulsification Cataract Surgery Units"
+    ],
+    "keySpecs": [
+      "Five-step Galilean magnification changer with Schott optical glass",
+      "Stereo coaxial illumination with red reflex enhancement for vitreoretinal and cataract surgery"
+    ]
+  },
+  {
+    "slug": "dentistry",
+    "name": "Dentistry & Oral Surgery",
+    "departmentGroup": "Diagnostics & Specialty",
+    "featured": false,
+    "tagline": "Ergonomic Dental Suites",
+    "description": "Complete dental treatment chairs, digital intraoral sensors, ultrasonic scalers, and panoramic dental X-ray systems.",
+    "equipmentHighlights": [
+      "Comprehensive Luxury Electric Dental Unit Chairs",
+      "Digital Intraoral X-Ray Sensors (CMOS technology)",
+      "High-Frequency Portable Dental X-Ray Units",
+      "Piezoelectric Ultrasonic Scalers & LED Curing Lights",
+      "Oil-Free Dental Air Compressors with Dryers"
+    ],
+    "keySpecs": [
+      "Seamless memory foam upholstery with synchronized backrest movement",
+      "Whisper-quiet DC motor operation with intuitive foot controls"
+    ]
+  },
+  {
+    "slug": "orthopedics",
+    "name": "Orthopedics & Traumatology",
+    "departmentGroup": "Endoscopy & Surgery",
+    "featured": false,
+    "tagline": "Reconstruction & Power Surgery",
+    "description": "Surgical power tools, orthopedic traction operating tables, arthroscopy systems, and bone fracture fixation instrument sets.",
+    "equipmentHighlights": [
+      "Autoclavable Bone Cannulated Drills, Sagittal Saws & Reamers",
+      "HD Arthroscopy Systems with Shaver Consoles and RF Electrodes",
+      "Carbon-Fiber Radiolucent Orthopedic Extension Traction Tables",
+      "Large & Small Fragment Trauma Instrument Trays"
+    ],
+    "keySpecs": [
+      "Brushless motor drills with 0-1200 RPM stepless speed regulation",
+      "Full C-arm fluoroscopy compatibility without shadow interference"
+    ]
+  },
+  {
+    "slug": "gastroenterology",
+    "name": "Gastroenterology & GI Endoscopy",
+    "departmentGroup": "Endoscopy & Surgery",
+    "featured": false,
+    "tagline": "Luminal Diagnosis & Intervention",
+    "description": "Video gastroscope and colonoscope workstations, high-definition electronic processors, and endoscopic electrocautery accessories.",
+    "equipmentHighlights": [
+      "Electronic Video Gastroscopes & Video Colonoscopes",
+      "HD Video Endoscopy Processor with Digital Chromoendoscopy (Hemoglobin Enhancement)",
+      "Carbon Dioxide GI Insufflation Regulators",
+      "Endoscope Automatic Washer-Disinfectors (AER)",
+      "Polypectomy Snares, Injection Needles & Hemostatic Hemoclips"
+    ],
+    "keySpecs": [
+      "Mega-pixel CMOS tip sensor with 140° super-wide field of view",
+      "Auxiliary forward water jet channel for fast mucosal clearing"
+    ]
+  },
+  {
+    "slug": "gynecology",
+    "name": "Gynecology & Women's Health",
+    "departmentGroup": "Endoscopy & Surgery",
+    "featured": false,
+    "tagline": "Hysteroscopy & Outpatient Gynae Care",
+    "description": "Diagnostic and operative continuous-flow hysteroscopy systems, high-definition video colposcopes, and LEEP electrosurgery units.",
+    "equipmentHighlights": [
+      "Compact Office & Operative Hysteroscope Sets with Sheaths",
+      "HD Digital Video Colposcopes with Green Filter Software Analysis",
+      "LEEP / LLETZ High-Frequency Radiofrequency Generators with Smoke Evacuation",
+      "Cryosurgical Systems for Cervical Lesion Management"
+    ],
+    "keySpecs": [
+      "Ultra-fine 2.9mm and 4.0mm rod lenses for atraumatic outpatient hysteroscopy",
+      "Integrated image capture and patient archive management software"
+    ]
+  },
+  {
+    "slug": "pediatrics",
+    "name": "Pediatrics & Child Health",
+    "departmentGroup": "Maternal & Infant",
+    "featured": false,
+    "tagline": "Dedicated Pediatric Care",
+    "description": "Vital signs monitoring, transport systems, and specialized clinical equipment scaled precisely for pediatric care wards.",
+    "equipmentHighlights": [
+      "Multi-Parameter Pediatric Monitors with Custom Neonatal/Child Algorithms",
+      "Pediatric Crash & Emergency Resuscitation Carts",
+      "Pediatric Vein Finders (Near-Infrared Projection)",
+      "Child Treatment & Observation Beds with Safety Railings"
+    ],
+    "keySpecs": [
+      "Child-specific non-invasive blood pressure cuffs and optical SpO2 probes",
+      "Ultra-low dose radiation protocols for pediatric diagnostics"
+    ]
+  },
+  {
+    "slug": "radiology",
+    "name": "Radiology & Diagnostic Imaging",
+    "departmentGroup": "Diagnostics & Specialty",
+    "featured": false,
+    "tagline": "Fluoroscopy, X-Ray & Ultrasound",
+    "description": "High-frequency mobile C-arm systems for operating theatres, digital radiography (DR) flat-panel suites, and multi-probe ultrasound.",
+    "equipmentHighlights": [
+      "High-Frequency Mobile Surgical C-Arm X-Ray Systems",
+      "Wireless Flat-Panel Digital Radiography (DR) Detectors",
+      "Floor-Mounted and Ceiling Suspension High-Frequency X-Ray Units",
+      "Color Doppler Diagnostic Ultrasound (Cardio, Vascular, Abdominal)",
+      "Lead Protection Equipment & Radiation Shielding Glass"
+    ],
+    "keySpecs": [
+      "High-frequency 5kW - 50kW generators with pulsed fluoroscopy for low dose",
+      "DICOM 3.0 seamless integration with hospital PACS networks"
+    ]
+  },
+  {
+    "slug": "emergency",
+    "name": "Emergency & Casualty Care",
+    "departmentGroup": "Critical Care & Emergency",
+    "featured": false,
+    "tagline": "Rapid-Response Resuscitation",
+    "description": "Biphasic defibrillators, automated external defibrillators (AEDs), transport ventilators, emergency crash carts, and patient stretchers.",
+    "equipmentHighlights": [
+      "Biphasic Defibrillator Monitors with Pacing & 12-Lead ECG",
+      "Public Access Automated External Defibrillators (AED)",
+      "Portable Turbine Emergency Transport Ventilators",
+      "Emergency Crash Carts with Lockable Drug Drawers",
+      "Hydraulic Multi-Position Ambulance & Patient Transfer Stretchers"
+    ],
+    "keySpecs": [
+      "IPX4 water/dust ingress resistance with drop-tested ruggedized casings",
+      "Fast charging cycles under 5 seconds to 200 Joules"
+    ]
+  },
+  {
+    "slug": "ent",
+    "name": "ENT (Ear, Nose & Throat)",
+    "departmentGroup": "Diagnostics & Specialty",
+    "featured": false,
+    "tagline": "Endoscopic Otolaryngology",
+    "description": "Integrated ENT treatment workstations, rigid sinuscopes, otoscopes, laryngoscopes, and ENT surgical micro-debriders.",
+    "equipmentHighlights": [
+      "Luxury Integrated ENT Examination & Treatment Workstations",
+      "Rigid Sinuscopes, Otoscopes, and Laryngoscopes (0°, 30°, 70°)",
+      "High-Definition ENT Camera Systems with Built-In LED Illumination",
+      "ENT Surgical Shaver / Debrider Systems",
+      "Diagnostic Tympanometers & Audiometers"
+    ],
+    "keySpecs": [
+      "Integrated suction, medication spraying, pre-heating and ear-wash channels",
+      "High-resolution sapphire lens optics with wide depth of field"
+    ]
+  },
+  {
+    "slug": "physiotherapy",
+    "name": "Physiotherapy & Rehabilitation",
+    "departmentGroup": "Diagnostics & Specialty",
+    "featured": false,
+    "tagline": "Active Recovery & Physical Therapy",
+    "description": "Combined electrotherapy and ultrasound units, shortwave diathermy, traction tables, and continuous passive motion (CPM) devices.",
+    "equipmentHighlights": [
+      "Multi-Channel Electrotherapy & Ultrasound Combination Units",
+      "Shortwave & Microwave Diathermy Therapy Systems",
+      "Computerized Lumbar & Cervical Traction Decompression Beds",
+      "Lower Limb Continuous Passive Motion (CPM) Machines",
+      "Shockwave Therapy Systems for Musculoskeletal Pain"
+    ],
+    "keySpecs": [
+      "Preset clinical evidence-based treatment protocols with body-map diagrams",
+      "Dual-frequency ultrasound (1 MHz and 3 MHz) for superficial and deep tissue treatment"
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "IKEDA Medical",
+    "tier": "Flagship OEM Partner",
+    "categories": ["Laparoscopy", "Endoscopy", "VATS", "ENT", "Gynecology"],
+    "description": "Global manufacturer of medical endoscopy video systems, 4K UHD camera control units, cold LED illumination, and surgical monitors.",
+    "website": "https://www.ikeda-endoscopy.com",
+    "country": "International / OEM",
+    "featured": true
+  },
+  {
+    "name": "Mindray Medical",
+    "tier": "Critical Care & Diagnostic Partner",
+    "categories": ["Intensive Care", "Radiology", "Emergency", "Maternity"],
+    "description": "Leading global developer of patient monitoring systems, life-support ventilators, portable ultrasound, and defibrillators.",
+    "website": "https://www.mindray.com",
+    "country": "Global",
+    "featured": true
+  },
+  {
+    "name": "Comen Medical",
+    "tier": "Maternal & Neonatal Specialist",
+    "categories": ["Neonatology", "Maternity", "Pediatrics", "Intensive Care"],
+    "description": "Specialized electro-medical systems focusing on infant incubators, phototherapy units, infant radiant warmers, and fetal monitors.",
+    "website": "https://en.comen.com",
+    "country": "Global",
+    "featured": false
+  },
+  {
+    "name": "SonoScape Medical",
+    "tier": "Endoscopy & Ultrasound Partner",
+    "categories": ["Gastroenterology", "Radiology", "Urology"],
+    "description": "High-performance diagnostic ultrasound systems and flexible video endoscopy workstations for GI and pulmonology.",
+    "website": "https://www.sonoscape.com",
+    "country": "Global",
+    "featured": false
+  },
+  {
+    "name": "BOWA Electronic",
+    "tier": "Surgical Energy Partner",
+    "categories": ["Laparoscopy", "General Surgery", "Gynecology", "Urology"],
+    "description": "High-frequency electrosurgery and ultrasonic energy systems engineered for precision tissue coagulation and dissection.",
+    "website": "https://www.bowa-medical.com",
+    "country": "Germany",
+    "featured": false
+  },
+  {
+    "name": "Optomic Medical",
+    "tier": "Surgical Optics & ENT Partner",
+    "categories": ["ENT", "Ophthalmology", "Gynecology"],
+    "description": "Manufacturer of advanced surgical operating microscopes, video colposcopes, and specialized diagnostic workstations.",
+    "website": "https://www.optomic.com",
+    "country": "Spain",
+    "featured": false
+  }
+]
