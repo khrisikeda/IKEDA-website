@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Phone
     document.querySelectorAll('[data-company="phone"]').forEach((el) => {
-      el.textContent = company.phone || '+254 795 360 359';
+      el.textContent = company.phone || '+250 795 360 359';
       if (el.tagName === 'A') el.href = `tel:${(company.phone || '0795360359').replace(/[^0-9+]/g, '')}`;
     });
 
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Address
     document.querySelectorAll('[data-company="address"]').forEach((el) => {
-      el.textContent = company.address || 'Hospital Road, Upper Hill, Nairobi, Kenya';
+      el.textContent = company.address || 'Kigali, Kicukiro, Masaka, Cyimo, Kabeza — Rwanda';
     });
 
     // Working Hours
