@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Email
     document.querySelectorAll('[data-company="email"]').forEach((el) => {
-      el.textContent = company.email || 'info@ikedaendoscopy.com';
-      if (el.tagName === 'A') el.href = `mailto:${company.email || 'info@ikedaendoscopy.com'}`;
+      el.textContent = company.email || 'ikedasurgery@gmail.com';
+      if (el.tagName === 'A') el.href = `mailto:${company.email || 'ikedasurgery@gmail.com'}`;
     });
 
     // Address

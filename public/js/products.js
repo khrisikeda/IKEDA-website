@@ -140,7 +140,7 @@ function renderCard(cat) {
       <div class="category-card-footer">
         <span class="tag">${(cat.equipmentHighlights || []).length} Systems Cataloged</span>
         <a href="/contact?dept=${encodeURIComponent(cat.name)}" class="quote-link">
-          Inquire &amp; Spec Sheet &rarr;
+          Request Quote &rarr;
         </a>
       </div>
     </article>
