@@ -7,7 +7,7 @@ const contactRouter = require('./routes/contact');
 const companyRouter = require('./routes/company');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // Body parser
 app.use(express.json());
