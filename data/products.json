@@ -2,7 +2,7 @@
   {
     "slug": "laparoscopy",
     "name": "Laparoscopy & Minimally Invasive Surgery",
-    "departmentGroup": "Endoscopy & Surgery",
+    "departmentGroup": "Operating Theatre",
     "featured": true,
     "tagline": "Our Core Flagship Specialty",
     "description": "State-of-the-art 4K Ultra HD and Full HD laparoscopic video towers, camera control units, cold LED illumination, CO2 insufflators, and precision rigid optics for general surgery, gynecology, and urology.",
@@ -25,7 +25,7 @@
   {
     "slug": "urology",
     "name": "Urology & Endourology",
-    "departmentGroup": "Endoscopy & Surgery",
+    "departmentGroup": "Operating Theatre",
     "featured": false,
     "tagline": "Transurethral & Percutaneous Precision",
     "description": "Comprehensive diagnostic and surgical equipment for urological procedures, including transurethral resection (TURP/TURBT), ureteroscopy, and percutaneous stone management.",
@@ -45,7 +45,7 @@
   {
     "slug": "vats",
     "name": "Video-Assisted Thoracoscopic Surgery (VATS)",
-    "departmentGroup": "Endoscopy & Surgery",
+    "departmentGroup": "Operating Theatre",
     "featured": false,
     "tagline": "Minimally Invasive Thoracic Care",
     "description": "Advanced video-assisted thoracoscopic surgery systems tailored for minimally invasive thoracic, pulmonary, and mediastinal interventions.",
@@ -62,22 +62,126 @@
   },
   {
     "slug": "neonatology",
-    "name": "Neonatology & Newborn Care",
+    "name": "Neonatal & Pediatric Care",
     "departmentGroup": "Maternal & Infant",
     "featured": false,
     "tagline": "Gentle Technology for Fragile Lives",
-    "description": "Advanced infant incubators, radiant warmers, LED phototherapy units, and neonatal vital signs monitors engineered for NICUs.",
+    "description": "Advanced infant incubators, radiant warmers, neonatal Bubble CPAP systems, transcutaneous jaundice detectors, pediatric cribs, and intensive LED phototherapy units engineered for NICU and pediatric departments.",
     "equipmentHighlights": [
-      "Microprocessor-Controlled Infant Incubators with Humidity Servo",
-      "Infant Radiant Warmers with Integrated Resuscitation Modules",
-      "Intensive LED Phototherapy Units (Overhead & Bilibed)",
-      "Neonatal High-Frequency Oscillatory Ventilators",
-      "Pulse Oximeters & Neonatal Multi-Parameter Vital Monitors"
+      {
+        "name": "Neonatal CPAP Machine",
+        "image": null,
+        "features": [
+          "Continuous Positive Airway Pressure (Bubble CPAP) System Tailored for Neonates & Preemies",
+          "High-Precision Electronic Medical Air / Oxygen Blender with FiO2 Range from 21% to 100%",
+          "Integrated Servo-Controlled Heated Respiratory Humidifier Preventing Airway Mucosal Drying",
+          "Adjustable Water-Column Pressure Generator (3 - 10 cmH2O) with Pressure Relief Pop-Off Valve",
+          "Comprehensive Range of Soft Silicone Nasal Prongs, Infant Bonnets & Gentle Fixation Harnesses"
+        ],
+        "category": "Neonatal Respiratory Care"
+      },
+      {
+        "name": "Jaundice Detector",
+        "image": null,
+        "features": [
+          "Non-Invasive Optical Transcutaneous Bilirubinometer (TcB) for Instant Neonatal Screening",
+          "Accurate Instant Bilirubin Concentration Reading Displayed in Under 1.5 Seconds",
+          "Painless & Stress-Free Optical Sensor Eliminating Unnecessary Heel-Stick Blood Draws",
+          "Dual Optical Path Xenon Flash Technology with Automatic Skin Melanin & Maturity Calibration",
+          "High-Capacity Rechargeable Battery with Internal Memory Storing up to 500 Patient Measurements"
+        ],
+        "category": "Neonatal Diagnostics"
+      },
+      {
+        "name": "Infant Beds",
+        "image": null,
+        "features": [
+          "Medical-Grade Clear Polycarbonate Infant Bassinet with Multi-Angle Trendelenburg Tilt (±12°)",
+          "Heavy-Duty Antibacterial Stainless Steel / Epoxy-Coated Tubular Base Frame",
+          "Smooth 360-Degree Silent Swivel Medical Castor Wheels with Independent Foot Pedal Brakes",
+          "Integrated Lower Utility Storage Shelf for Diapers, Suction Units & Patient Records",
+          "Includes Flame-Retardant, Waterproof Antimicrobial Foam Mattress with Removable Zip Cover"
+        ],
+        "category": "Pediatric Hospital Furniture"
+      },
+      {
+        "name": "Microprocessor Infant Incubator",
+        "image": null,
+        "features": [
+          "Microprocessor Dual-Channel Servo Control for Air Temperature and Infant Skin Temperature",
+          "Ultrasonic Active Humidity Servo Control System Maintaining 30% to 95% Relative Humidity",
+          "Double-Wall Acrylic Canopy Minimizing Radiant Heat Loss and External Acoustic Disturbances",
+          "Integrated Precision Infant Weighing Scale and X-Ray Cassette Tray Without Canopy Opening",
+          "Comprehensive Visual and Acoustic Multi-Level Alarms for Power, Temperature, and Airflow"
+        ],
+        "category": "Neonatal Thermal Care"
+      },
+      {
+        "name": "Infant Radiant Warmer",
+        "image": null,
+        "features": [
+          "Ceramic Infrared Radiant Heater with Anti-Explosion Quartz Protective Safety Shield",
+          "Pre-Warm, Manual, and Baby Servo-Controlled Skin Temperature Operational Modes",
+          "Integrated Precision APGAR Timer, High-Lumen Examination Light & Phototherapy Adapter",
+          "Continuous Bed Surface Tilting (±15°) with Soft Organic Silicone Heated Gel Mattress",
+          "Built-In Resuscitation Module Equipped with Negative Pressure Suction and O2 Flowmeter"
+        ],
+        "category": "Neonatal Thermal Care"
+      },
+      {
+        "name": "Intensive LED Phototherapy Unit",
+        "image": null,
+        "features": [
+          "Narrow-Spectrum High-Intensity Medical Blue LED Illumination (Peak: 450 - 470 nm)",
+          "Large Effective Irradiance Surface (>40 µW/cm²/nm) for Rapid Bilirubin Photo-Degradation",
+          "Integrated Digital Cumulative Therapy Timer and Real-Time Irradiance Level Monitor",
+          "Multi-Angle Articulating Arm with Lockable Mobile Height-Adjustable Trolley Stand",
+          "Cold Light Source Technology Ensuring Zero Thermal Burns or Transepidermal Water Loss"
+        ],
+        "category": "Phototherapy & Hyperbilirubinemia"
+      },
+      {
+        "name": "Neonatal High-Frequency Ventilator",
+        "image": null,
+        "features": [
+          "Combined High-Frequency Oscillation (HFOV) and Conventional Lung-Protective Ventilation Modes",
+          "Active Exhalation Diaphragm Preventing Gas Trapping in Severe Neonatal Respiratory Distress (RDS)",
+          "Ultra-Low Micro-Tidal Volume Delivery Down to 0.2 mL Suitable for Extremely Low Birth Weight Preemies",
+          "Real-Time Dynamic Pressure-Volume & Flow-Volume Loops with Automated Lung Mechanics Calculation",
+          "Proximal Neonatal Flow Sensor Providing Millisecond Response Time and Dead-Space Elimination"
+        ],
+        "category": "Neonatal Respiratory Care"
+      },
+      {
+        "name": "Neonatal Multi-Parameter Monitor",
+        "image": null,
+        "features": [
+          "Proprietary Neonatal Anti-Motion & Low-Perfusion SpO2 Algorithm for Weak Peripheral Pulse",
+          "High-Sensitivity 3/5-Lead Neonatal ECG, Dual Skin Temperature, Respiration & Soft-Cuff NIBP",
+          "Specialized Neonatal OxyCRG (Oxygen Cardio-Respirogram) Screen for Instant Apnea Detection",
+          "360-Degree Omnidirectional High-Visibility Alarm Beacon Light on Top of Monitor Console",
+          "12.1-Inch Anti-Glare Touchscreen with 120-Hour Trend Data & Arrhythmia Waveform Storage"
+        ],
+        "category": "Patient Monitoring"
+      },
+      {
+        "name": "Handheld Neonatal Pulse Oximeter",
+        "image": null,
+        "features": [
+          "Masimo / Nellcor Sensor Compatibility with Motion-Tolerant Low-Perfusion Algorithm",
+          "Specialized Neonatal Soft Wrap & Y-Sensor Probes Protecting Fragile Skin",
+          "High-Resolution Color Display Showing SpO2, Pulse Rate & Real-Time Plethysmogram Waveform",
+          "Adjustable High/Low Audible and Visual Alarm Thresholds for Neonatal Desaturation",
+          "Rechargeable Lithium Battery Supporting Over 14 Hours Continuous Bedside & Transport Monitoring"
+        ],
+        "category": "Patient Monitoring"
+      }
     ],
     "keySpecs": [
-      "Double-wall canopy for optimal thermal isolation and low noise",
-      "Integrated infant weighing scale and X-ray cassette tray",
-      "Real-time skin and air temperature dual-channel servo control"
+      "Bubble CPAP systems with integrated air/oxygen blenders and heated humidification",
+      "Painless transcutaneous jaundice detectors with dual-beam optical analysis",
+      "Double-wall canopy infant incubators with active servo humidity control",
+      "Infant radiant warmers with integrated neonatal resuscitation and APGAR timers"
     ]
   },
   {
@@ -85,17 +189,159 @@
     "name": "Maternity & Obstetrics",
     "departmentGroup": "Maternal & Infant",
     "featured": false,
-    "tagline": "Safe Delivery & Fetal Well-Being",
-    "description": "Complete labor and delivery infrastructure, fetal maternal monitors, electric obstetric beds, and postpartum recovery equipment.",
+    "tagline": "Gynecological Endoscopy & Surgical Obstetrics",
+    "description": "Comprehensive gynecological endoscopy suites, advanced digital colposcopy, diagnostic and operative hysteroscopy, intrauterine tissue morcellation, uterine manipulation, and precision laparoscopic instruments.",
     "equipmentHighlights": [
-      "Twins & Singleton Fetal Maternal Doppler Monitors (CTG)",
-      "Multi-Function Electric Delivery & Obstetric Operating Beds",
-      "Vacuum Delivery Extractors & Infant Suction Units",
-      "Portable Point-of-Care Obstetric Ultrasound"
+      {
+        "name": "Colposcope",
+        "image": null,
+        "features": [
+          "High-Resolution Optical & Digital HD Video Colposcopy System",
+          "Multi-Step Optical Magnification (Up to 30x) with Fine Dual-Diopter Eyepiece Adjustment",
+          "High-Lumen Medical LED Coaxial Cold Light Source with Multi-Grade Brightness Control",
+          "Built-in Green Filter Enhancing Vascular Contrast for Cervical & Vaginal Epithelium Examination",
+          "Ergonomic Balanced Spring-Arm Stand with Integrated HD Image/Video Capture Workstation"
+        ],
+        "category": "Gynecological Diagnostics"
+      },
+      {
+        "name": "Hysteroscope",
+        "image": null,
+        "features": [
+          "High-Definition Scratch-Resistant Sapphire Distal Lens Optics (0°, 12°, and 30° Options)",
+          "Ultra-Slim Continuous Flow Diagnostic & Operative Stainless Steel Sheath Systems",
+          "Dual Luer-Lock Inflow & Outflow Irrigation Stopcocks Ensuring Crystal-Clear Uterine Cavity Distension",
+          "Dedicated 5 Fr / 7 Fr Auxiliary Instrument Channel for Biopsy Forceps & Micro-Scissors",
+          "Autoclavable and Fully Compatible with Standard High-Power Fiber-Optic Light Cables"
+        ],
+        "category": "Hysteroscopy & Endoscopy"
+      },
+      {
+        "name": "Hystero Resectoscope",
+        "image": null,
+        "features": [
+          "Continuous Flow Hysteroscopic Resection System for Submucosal Myomectomy & Endometrial Ablation",
+          "Passive & Active Ergonomic Finger-Ring Working Elements with Smooth Spring Action",
+          "Comprehensive Range of Bipolar & Monopolar Cutting Loops, Rollerballs & Coagulation Electrodes",
+          "Rotatable 360° Outer Sheath with Hydro-Dynamic Irrigation & Evacuation Stopcocks",
+          "Seamless Integration with High-Frequency Electrosurgical Generators & Fluid Management Systems"
+        ],
+        "category": "Hysteroscopic Surgery"
+      },
+      {
+        "name": "Morcellator",
+        "image": null,
+        "features": [
+          "Gynecological Intrauterine & Laparoscopic Electric Tissue Morcellation System",
+          "High-Torque Microprocessor Console with Continuously Variable Speed Control",
+          "Rotary Hollow Cylindrical Blades in 12mm, 15mm, and 18mm Diameters with Protective Blade Shields",
+          "Ergonomic Lightweight Handpiece Engineered for Rapid Extraction of Large Uterine Myomas & Fibroids",
+          "Includes Tenaculum Tissue Grasping Forceps & Multi-Function Waterproof Foot Switch"
+        ],
+        "category": "Tissue Extraction Systems"
+      },
+      {
+        "name": "Uterine Manipulator",
+        "image": null,
+        "features": [
+          "Multi-Functional Articulated Uterine Manipulator & Injector for Laparoscopic Pelvic Procedures",
+          "Complete Set of Ergonomic Delrin/Ceramic Cervical Cups (S, M, L) for Precise Colpotomy Delineation",
+          "Integrated Chromopertubation Dye Injection Luer-Lock Port for Tubal Patency Evaluation",
+          "Multi-Axis Locking Mechanism Supporting Safe Anteversion, Retroversion & Lateral Motion",
+          "Provides Optimal Pelvic Exposure & Ureter Protection During Total Laparoscopic Hysterectomy (TLH)"
+        ],
+        "category": "Gynecological Surgery"
+      },
+      {
+        "name": "Laparoscopic Access",
+        "image": null,
+        "features": [
+          "Reusable & Single-Use Optical, Bladed and Bladeless Laparoscopic Trocar Systems",
+          "5mm, 10mm, 12mm, and 15mm Cannula Sleeves with Universal Durable Silicone Leak-Proof Valves",
+          "Hasson Open Laparoscopy Blunt Cannula System with Adjustable Fascial Suture Fixation Wings",
+          "Spring-Loaded Veress Insufflation Needles with Audible Click & Visual Position Indicators",
+          "Integrated High-Flow Luer-Lock Gas Inflow Stopcocks for Stable Pneumoperitoneum Maintenance"
+        ],
+        "category": "Laparoscopic Access & Ports"
+      },
+      {
+        "name": "Laparoscopic Forceps",
+        "image": null,
+        "features": [
+          "Extensive Assortment of 5mm & 10mm Graspers, Dissectors, Scissors & Biopsy Forceps (330mm / 430mm)",
+          "Babcock, Maryland, Allis, Johan, Clinching & Fenestrated Atraumatic Jaw Configurations",
+          "Dual-Action Bipolar Coagulation Forceps with Fully Insulated Stainless Steel Shafts",
+          "360-Degree Continuous Rotation Wheel on Ergonomic Ratchet & Non-Ratchet Finger Handles",
+          "Fast Modular 3-Piece Disassembly for Seamless Cleaning, High-Level Decontamination & Autoclaving"
+        ],
+        "category": "Laparoscopic Instruments"
+      },
+      {
+        "name": "Laparoscopic Suturing Instrument",
+        "image": null,
+        "features": [
+          "Precision Endoscopic Needle Holders with Straight, Left-Curved & Self-Righting Heavy-Duty Jaws",
+          "High-Grip Tungsten Carbide Diamond-Dusted Inserts Preventing Needle Slippage or Twisting",
+          "Ergonomic Axial Handle with Ultra-Smooth Multi-Tooth Release Ratchet Mechanism",
+          "Extracorporeal and Intracorporeal Endoscopic Knot Pushers & Suture Thread Passers",
+          "Engineered for Controlled Tissue Approximation and Tension-Free Deep Pelvic Vaginal Cuff Closure"
+        ],
+        "category": "Laparoscopic Instruments"
+      },
+      {
+        "name": "Twins & Singleton Fetal Maternal Doppler Monitor (CTG)",
+        "image": null,
+        "features": [
+          "High-Sensitivity 12-Crystal Pulse Wave Ultrasound Doppler Transducer (1.0 MHz)",
+          "Simultaneous Twin FHR (Fetal Heart Rate), TOCO Contraction & Automatic Fetal Movement (AFM)",
+          "12.1-Inch High-Brightness Tilt Color LCD Display with 24-Hour Continuous Waveform Review",
+          "Built-in High-Speed 152mm Thermal Printer with Synchronous Graph Grid Output",
+          "Advanced CTG Clinical Scoring System (Fischer / Krebs) and Programmable Alarm Thresholds"
+        ],
+        "category": "Fetal Monitoring"
+      },
+      {
+        "name": "Multi-Function Electric Delivery & Obstetric Operating Bed",
+        "image": null,
+        "features": [
+          "Electro-Hydraulic Synchronized Linear Actuators for Height, Trendelenburg & Backrest Elevation",
+          "Retractable Leg Section Converting Instantly from Labor Bed into Full Obstetric Delivery Table",
+          "Ergonomic Integrated Polyurethane Leg Supports, Padded Handgrips & Stainless Basin",
+          "Seamless Waterproof Antimicrobial Memory Mattress Resistant to Disinfectants & Fluids",
+          "Emergency CPR Quick-Release Lever and Battery Backup for Uninterrupted Power Operation"
+        ],
+        "category": "Obstetric Furniture"
+      },
+      {
+        "name": "Vacuum Delivery Extractor & Infant Suction Unit",
+        "image": null,
+        "features": [
+          "Oil-Free Maintenance-Free High-Capacity Piston Vacuum Pump (Flow Rate ≥30 L/min)",
+          "Precise Stepless Negative Pressure Regulation (0 to -0.09 MPa) with Visual Dial Gauge",
+          "Rigid & Soft Silicone Vacuum Delivery Cups (Silc Cups) in Multiple Diameters",
+          "Dual Anti-Overflow Safety Protection Bottles with Hydrophobic Microbial Filters",
+          "Foot Pedal Controlled Vacuum Release for Safe, Rapid Pressure Venting during Contractions"
+        ],
+        "category": "Labor & Delivery"
+      },
+      {
+        "name": "Portable Point-of-Care Obstetric Ultrasound",
+        "image": null,
+        "features": [
+          "Multi-Frequency Broadband Convex Transducer (2.5 MHz - 5.0 MHz) for Deep Obstetric Imaging",
+          "Preset Gestational Age Calculations (BPD, HC, AC, FL, CRL) & Automated Amniotic Fluid Index (AFI)",
+          "High-Resolution 15-Inch Anti-Glare Medical Display with 160° Wide Viewing Angle",
+          "Color Doppler, Power Doppler & Pulsed Wave (PW) Spectral Flow Analysis",
+          "Compact Magnesium-Alloy Laptop Chassis with Fast Boot-Up & Integrated Patient DICOM Archive"
+        ],
+        "category": "Obstetric Ultrasound"
+      }
     ],
     "keySpecs": [
-      "12.1-inch color touchscreen with 24-hour CTG waveform replay",
-      "Ergonomic multi-position delivery beds with motorized height and Trendelenburg adjustments"
+      "12-inch color touchscreen fetal monitors and multi-crystal wireless CTG transducers",
+      "Ergonomic multi-position motorized delivery beds and oil-free vacuum extraction units",
+      "High-definition video colposcopy with green filter and continuous flow rigid hysteroscopy",
+      "Bipolar hysteroscopic resectoscopes, electric morcellators and laparoscopic instrumentation"
     ]
   },
   {
@@ -104,18 +350,182 @@
     "departmentGroup": "Critical Care & Emergency",
     "featured": false,
     "tagline": "Life Support & Critical Monitoring",
-    "description": "Turbine and pneumatic-driven critical care ventilators, modular bedside patient monitors, central nursing monitoring stations, and infusion arrays.",
+    "description": "Comprehensive intensive care systems, advanced invasive/non-invasive ventilators, manual & automated external defibrillators, flexible video bronchoscopes, enteral feeding pumps, blood warmers, and modular telemetry monitoring.",
     "equipmentHighlights": [
-      "Invasive / Non-Invasive Critical Care ICU Ventilators",
-      "15\" Modular Multi-Parameter Patient Monitors (ECG, SpO2, NIBP, IBP, EtCO2)",
-      "Central Monitoring Station Networks (up to 64 bedside units)",
-      "Multi-Channel Syringe Pumps & Volumetric Infusion Workstations",
-      "Medical Gas Delivery Pendants & ICU Electric Beds"
+      {
+        "name": "Manual External Defibrillator",
+        "image": null,
+        "features": [
+          "Biphasic Truncated Exponential (BTE) Waveform Delivering Shock Energy up to 360 Joules",
+          "Integrated 3/5-Lead ECG Monitoring, Manual Defibrillation, Synchronized Cardioversion & Non-Invasive Pacing",
+          "High-Contrast 7-Inch Color Screen Displaying Real-Time Waveforms, Heart Rate, SpO2 & Energy Selection",
+          "Ultra-Fast Capacitor Charging Under 5 Seconds to 200 Joules for Rapid Resuscitation Delivery",
+          "Includes Reusable Adult and Pediatric External Paddles with Audible/Visual Contact Impedance Bar"
+        ],
+        "category": "Emergency Resuscitation"
+      },
+      {
+        "name": "Automated External Defibrillator (AED)",
+        "image": null,
+        "features": [
+          "Intelligent Automated Arrhythmia Analysis (VF/VT Detection) with Fail-Safe Shock Guidance",
+          "Clear Voice Prompts & Visual Graphic Animations Guiding CPR Compression Depth and Cadence",
+          "Pre-Connected Universal Adult/Pediatric Defibrillation Electrode Pads with Cable Self-Test",
+          "Automated Daily, Weekly, and Monthly Self-Testing of Battery, Internal Circuitry, and Software",
+          "IP55 Water and Dust Ingress Protection with Rugged Drop-Tested Casing and 5-Year Standby Battery"
+        ],
+        "category": "Emergency Resuscitation"
+      },
+      {
+        "name": "Feeding Pump",
+        "image": null,
+        "features": [
+          "Precision Microprocessor Peristaltic Linear Pumping Mechanism for Accurate Enteral Nutrition Delivery",
+          "Flow Rate Range from 1 to 400 mL/h with High Volumetric Accuracy (±5%) and Bolus Options",
+          "Multi-Sensor Acoustic and Visual Alarms for Tube Occlusion, Empty Bag, Air-in-Line, and Door Ajar",
+          "Continuous, Intermittent, and Reverse-Flushing Feeding Programs with Volume-Totalizer Review",
+          "Lightweight Ergonomic Bedside Casing with Universal Pole Clamp and 5-Hour Rechargeable Battery"
+        ],
+        "category": "Infusion & Nutrition"
+      },
+      {
+        "name": "Laryngoscope Intubation Kits",
+        "image": null,
+        "features": [
+          "High-Definition Digital Video Laryngoscope Blade with High-Lumen Cold LED & Anti-Fog Camera Lens",
+          "Complete Set of Curved Macintosh (Sizes 1-4) & Straight Miller Blades (Sizes 0-3) in Autoclavable Case",
+          "3.5-Inch Omnidirectional Rotatable Anti-Glare LCD Screen Supporting Real-Time Photo/Video Capture",
+          "Lightweight Ergonomic Rechargeable Handle with Magnetic Fast-Charging Desktop Base",
+          "Engineered for Rapid Tracheal Intubation in Routine, Difficult Airway, and Emergency Crash Scenarios"
+        ],
+        "category": "Airway Management"
+      },
+      {
+        "name": "Emergency Ventilator",
+        "image": null,
+        "features": [
+          "Pneumatic and Turbine-Driven Portable Transport Ventilator Built for Intensive Care & Ambulance Transit",
+          "Comprehensive Ventilation Modes: A/C-V, A/C-P, SIMV-V, SIMV-P, CPAP/PSV, and Automated CPR Mode",
+          "Electronic Internal Air/Oxygen Blender with Wide Adjustable FiO2 Range from 40% to 100%",
+          "5.7-Inch High-Contrast Color LCD Screen Displaying Dynamic Pressure-Time Waveforms & Peak Airway Alarms",
+          "Rugged Shock-Proof Housing with Hot-Swappable Rechargeable Battery Providing Over 6 Hours Autonomy"
+        ],
+        "category": "Respiratory Care"
+      },
+      {
+        "name": "Bag Valve Masks",
+        "image": null,
+        "features": [
+          "Medical-Grade 100% Autoclavable Transparent Silicone Self-Inflating Resuscitator Bag",
+          "Integrated 40 - 60 cmH2O Pressure-Limiting Pop-Off Valve Preventing Barotrauma and Lung Overdistension",
+          "Oxygen Reservoir Bag & Tubing Assembly Capable of Delivering up to 99% - 100% Inspired Oxygen",
+          "Textured Non-Slip Grip Surface Delivering Consistent, Controlled Single-Handed Tidal Volumes",
+          "Supplied with Full Range of Adult, Child, and Infant Anatomical Air-Cushioned Masks & PEEP Valve Adaptor"
+        ],
+        "category": "Airway & Resuscitation"
+      },
+      {
+        "name": "Flexible Electronic Bronchoscope",
+        "image": null,
+        "features": [
+          "High-Definition Distal-Tip CMOS Video Chip Delivering Ultra-Sharp Endobronchial Visualization",
+          "Wide Distal Tip Articulation (210° Up / 130° Down) Enabling Precise Navigation into Segmental Bronchi",
+          "Dedicated 2.0mm - 2.8mm Suction/Instrument Channel for Bronchoalveolar Lavage (BAL) and Biopsy",
+          "Fully Waterproof Submersible Design Compatible with Low-Temperature Hydrogen Peroxide Plasma Disinfection",
+          "Seamless Plug-and-Play Output to ICU Mobile Video Towers and Portable Bedside Tablet Monitors"
+        ],
+        "category": "Endoscopic Diagnostics"
+      },
+      {
+        "name": "Blood Warmer",
+        "image": null,
+        "features": [
+          "High-Efficiency Dry-Heat Aluminum Alloy Microprocessor Warming Plates Accommodating Standard IV Sets",
+          "Ultra-Fast Thermal Response Warming Infused Blood & Fluids to 37°C - 41°C in Under 2 Minutes",
+          "Dual Independent Hardware & Software Temperature Sensors with Automatic 42°C Overheat Cutoff Protection",
+          "Compatible with Flow Rates from 1 to 600 mL/h for Whole Blood, Packed RBCs, Plasma & Normal Saline",
+          "Bright Digital Real-Time Temperature Readout with Universal Heavy-Duty Bedside IV Pole Mount"
+        ],
+        "category": "Fluid Management"
+      },
+      {
+        "name": "Invasive / Non-Invasive Critical Care ICU Ventilator",
+        "image": null,
+        "features": [
+          "High-Performance Turbine/Pneumatic Critical Care Ventilator Suitable for Adult, Pediatric & Neonatal Patients",
+          "Advanced Ventilation Modes: PRVC, SIMV, PSV, APRV, Bi-Level, and Integrated High-Flow Nasal Cannula (HFNC)",
+          "Real-Time Graphic Loops (P-V, F-V, P-F) with Automated Calculation of Lung Compliance and Airway Resistance",
+          "Integrated Microstream EtCO2 Capnography and Synchronized Ultrasonic Nebulization Module",
+          "15.6-Inch Tilting Touchscreen Display with Dual Hot-Swappable Batteries Providing Over 4 Hours Backup"
+        ],
+        "category": "Respiratory Care"
+      },
+      {
+        "name": "15\" Modular Multi-Parameter Patient Monitor",
+        "image": null,
+        "features": [
+          "15-Inch High-Resolution Anti-Glare Color Touchscreen Displaying up to 12 Synchronous ECG Waveforms",
+          "Comprehensive Clinical Parameters: 3/5/12-Lead ECG, Masimo SpO2, NIBP, Dual Temp, Dual IBP & EtCO2",
+          "Arrhythmia Analysis, ST Elevation Tracking, and 120-Hour Full-Disclosure Holographic Trend Storage",
+          "Modular Plug-and-Play Architecture Supporting Advanced Cardiac Output (CO) and Bispectral Index (BIS)",
+          "Direct Wired & Wireless Network Link to Central Nursing Telemetry Monitoring Stations"
+        ],
+        "category": "Patient Monitoring"
+      },
+      {
+        "name": "Central Monitoring Station Network",
+        "image": null,
+        "features": [
+          "High-Capacity Centralized Server Supporting Bi-Directional Synchronous Linking for up to 64 Bedside Monitors",
+          "Dual 24-Inch Medical Displays Showing Real-Time Waveforms, Critical Parameter Trends & Multilevel Alarms",
+          "Automated Alarm Forwarding with Multi-Tone Audio Alerts, Visual Beacons & Remote Mobile Paging",
+          "72-Hour Full-Disclosure Multi-Lead Waveform Review and 20,000 Alarm Event Archival Log",
+          "Seamless HL7 / DICOM Bi-Directional Compatibility with Hospital PACS and Electronic Medical Records (EMR)"
+        ],
+        "category": "Centralized Monitoring"
+      },
+      {
+        "name": "Multi-Channel Syringe Pump & Volumetric Infusion Workstation",
+        "image": null,
+        "features": [
+          "Stackable Modular Docking Station Accommodating from 2 to 12 Syringe and Volumetric Infusion Pumps",
+          "High Delivery Precision (±2%) with Automatic Syringe Brand and Size Calibration (5mL to 60mL)",
+          "Anti-Bolus Safety Feature Automatically Relieving Trapped Line Pressure Upon Downstream Occlusion",
+          "Comprehensive Multi-Category Drug Library with Dose Error Reduction System (DERS) Protection",
+          "Unified Single-Cord AC Power Management with Centralized Relay and Wireless Telemetry Link"
+        ],
+        "category": "Infusion & Nutrition"
+      },
+      {
+        "name": "ICU Electric Multi-Position Medical Bed",
+        "image": null,
+        "features": [
+          "Quad-Actuator Motorized Drive Controlling Height, Backrest, Knee-Gatch, Trendelenburg & Reverse Trendelenburg",
+          "Integrated Dual-Sided Siderail Controls with One-Touch Cardiac Chair, Vascular Relief & Examination Angles",
+          "Dual Emergency CPR Manual Quick-Release Handles on Both Sides of Headrest for Instant Flattening",
+          "Integrated Precision Patient Weighing Scale with Weight Shift History and Bed-Exit Alarm System",
+          "Radiolucent Backrest Deck Accommodating Direct C-Arm Fluoroscopy and X-Ray Cassette Insertion"
+        ],
+        "category": "Critical Care Furniture"
+      },
+      {
+        "name": "Ceiling Medical Gas & Equipment Delivery Pendant",
+        "image": null,
+        "features": [
+          "Heavy-Duty Extruded High-Tensile Aluminum Arm with 340° Smooth Swivel Rotation and Pneumatic Brakes",
+          "Integrated Multi-Gas Terminal Outlets (O2, Medical Air, Vacuum, AGSS) Compliant with ISO Standards",
+          "High-Capacity Electrical Receptacles, RJ45 Data Ethernet Jacks, and Grounding Equalization Terminals",
+          "Height-Adjustable Stainless Steel Shelves, IV Fluid Poles, and Articulated Monitor Mounting Brackets",
+          "Clears Bedside Floor Space Providing Total 360-Degree Clinical Access Around the Critical Patient"
+        ],
+        "category": "ICU Infrastructure"
+      }
     ],
     "keySpecs": [
-      "Smart lung mechanics ventilation modes (PRVC, SIMV, PSV, Bi-Level)",
-      "Microstream EtCO2 and hemodynamic monitoring integration",
-      "Backup battery backup exceeding 4 hours of autonomous operation"
+      "Biphasic manual and automated external defibrillators with pacing and synchronized cardioversion",
+      "Turbine critical care ventilators, emergency transport units and flexible electronic bronchoscopes",
+      "15-inch modular multi-parameter monitors with 64-bed central station telemetry",
+      "Enteral nutrition feeding pumps, blood warmers, video laryngoscopes and stackable infusion arrays"
     ]
   },
   {
@@ -124,17 +534,120 @@
     "departmentGroup": "Diagnostics & Specialty",
     "featured": false,
     "tagline": "Optical Diagnostics & Microsurgery",
-    "description": "Diagnostic slit lamps, auto-refractometers, visual acuity projectors, and ophthalmic operating microscopes for clinics and surgical suites.",
+    "description": "Complete ophthalmic suites including surgical microscopes, digital slit lamps, visual field perimeters, automated lensmeters, tonometers, and motorized refraction chairs.",
     "equipmentHighlights": [
-      "Digital Slit Lamp Imaging Systems with Beam Splitter & HD Camera",
-      "Surgical Ophthalmic Microscopes with Coaxial Illumination",
-      "Auto Refractometer / Keratometers",
-      "Non-Contact Tonometer with Corneal Thickness Compensation",
-      "Phacoemulsification Cataract Surgery Units"
+      {
+        "name": "Automated Digital Lensmeter (Focimeter)",
+        "image": null,
+        "features": [
+          "Hartmann Sensor Multi-Point Measurement Technology for Precision Refraction",
+          "Automatic Progressive Addition Lens (PAL) Detection & Rapid Mapping",
+          "Integrated UV / High-Energy Blue Light Transmittance & Optical Center PD Sensor",
+          "Green LED Measurement Light Source (540nm) Requiring No ABBE Compensation",
+          "7-Inch Color Tilt Touchscreen with High-Speed Automatic Thermal Printer"
+        ],
+        "category": "Refraction & Optics"
+      },
+      {
+        "name": "Handheld Portable Rebound Tonometer",
+        "image": null,
+        "features": [
+          "Gentle Rebound Sensing Principle: Zero Anesthesia Drops Required",
+          "Instant Accurate Intraocular Pressure (IOP) Readings in Under 1 Second",
+          "Automatic Position Sensing with LED Visual Fixation & Guidance Indicators",
+          "Multi-Measurement Average Calculation with Quality Indicator Feedback",
+          "Portable Lightweight Battery-Operated Design with Sanitary Disposable Probes"
+        ],
+        "category": "Ocular Diagnostics"
+      },
+      {
+        "name": "Ophthalmic Surgical Operating Microscope with Coaxial Red Reflex",
+        "image": null,
+        "features": [
+          "Stereo Coaxial Red Reflex Illumination Engineered for Cataract & Vitrectomy",
+          "5-Step Apochromatic Galilean Optical Magnification Changer (Schott Glass)",
+          "Integrated Beam Splitter with 4K UHD Video Recording System for Theatre Screens",
+          "Motorized XY Coupling & Smooth Multi-Function Foot Pedal Focus/Zoom",
+          "Retinal Phototoxicity Filter & Optional Stereoscopic Assistant Viewing Tube"
+        ],
+        "category": "Ophthalmic Surgery"
+      },
+      {
+        "name": "Automated Perimeter Visual Field Analyzer",
+        "image": null,
+        "features": [
+          "Full Field Static Perimetry with Standard White-on-White & Blue-on-Yellow Testing",
+          "Fast Interactive Glaucoma Screening Protocols (24-2, 30-2, 10-2 & Macular)",
+          "High-Resolution Infrared Video Eye-Tracking with Real-Time Gaze Fixation Loss Alarms",
+          "Glaucoma Progression Analysis (GPA) Software Generating VFI Trend Probability",
+          "Standard Humphrey-Compatible Data Export & Network DICOM Interface"
+        ],
+        "category": "Glaucoma Diagnostics"
+      },
+      {
+        "name": "Motorized Ophthalmic Examination Chair & Stand Unit",
+        "image": null,
+        "features": [
+          "Smooth Whisper-Quiet Electro-Hydraulic Up/Down Elevation & Reclining Backrest",
+          "Counterbalanced Swivel Refractor Arm for Slit Lamp & Phoropter Positioning",
+          "Integrated Dual-Well Instrument Console for Retinoscope & Ophthalmoscope Charging",
+          "Foot Pedal Control & Multi-Position Memory Recall Buttons on Side Console",
+          "Durable Medical-Grade Upholstery with Heavy Cast-Iron Anti-Tip Base"
+        ],
+        "category": "Refraction & Optics"
+      },
+      {
+        "name": "Rechargeable Portable Streak Retinoscope & Direct Ophthalmoscope Set",
+        "image": null,
+        "features": [
+          "Streak Retinoscope with 360° Continuous Single-Sleeve Vergence & Rotation",
+          "Direct Ophthalmoscope Featuring 28 Lens Powers (-35D to +40D) & 6 Apertures",
+          "Bright Xenon Halogen / Day-White Warm LED Light Sources for True Fundus Color",
+          "Dual Desktop Docking Station with Fast Contactless Induction Charging",
+          "Dustproof Hermetic Optical Seals with Heavy-Duty Knurled Metal Handles"
+        ],
+        "category": "Diagnostic Optics"
+      },
+      {
+        "name": "Digital Slit Lamp Imaging System with Beam Splitter & HD Camera",
+        "image": null,
+        "features": [
+          "Tower-Style Haag-Streit Optical System with 5-Step Drum Magnification",
+          "High-Definition Medical Digital Camera with Background Diffuser Illumination",
+          "Precision Joy-Stick Trigger for Instant High-Resolution Anterior Segment Capture",
+          "Cobalt Blue, Heat Absorption, Red-Free & Neutral Density Color Filters",
+          "Complete Patient Archive & Corneal Pathology Analysis Software Suite"
+        ],
+        "category": "Diagnostic Optics"
+      },
+      {
+        "name": "Auto Refractometer / Keratometer",
+        "image": null,
+        "features": [
+          "Rotary Prism Technology for Ultra-Fast Objective Refraction & Corneal Curvature",
+          "Auto-Tracking 3D Pupil Alignment with Automatic Fogging Visual Target",
+          "Retro-Illumination Mode for Cataract Opacity & Contact Lens Fitting Evaluation",
+          "Corneal & Pupil Diameter Measurement with High-Speed Auto-Cutter Printer"
+        ],
+        "category": "Refraction & Optics"
+      },
+      {
+        "name": "Phacoemulsification Cataract Surgery System",
+        "image": null,
+        "features": [
+          "Advanced 40kHz Ultrasonic Handpiece with Dual Linear Power Modulation",
+          "Precision Peristaltic Suction & High-Speed Anterior Vitrectomy Cutter (up to 4,000 cpm)",
+          "High-Sensitivity Chamber Stability Sensor Preventing Anterior Chamber Collapse",
+          "Programmable Surgeon Profiles with Multi-Function Foot Pedal Flow Control"
+        ],
+        "category": "Ophthalmic Surgery"
+      }
     ],
     "keySpecs": [
-      "Five-step Galilean magnification changer with Schott optical glass",
-      "Stereo coaxial illumination with red reflex enhancement for vitreoretinal and cataract surgery"
+      "Five-step Galilean magnification changer with Schott apochromatic optical glass",
+      "Stereo coaxial illumination with enhanced red reflex for vitreoretinal and cataract surgery",
+      "Full automated visual field perimetry with Humphrey-compatible protocols",
+      "Rebound and non-contact intraocular pressure tonometry without corneal anesthesia"
     ]
   },
   {
@@ -143,23 +656,212 @@
     "departmentGroup": "Diagnostics & Specialty",
     "featured": false,
     "tagline": "Ergonomic Dental Suites",
-    "description": "Complete dental treatment chairs, digital intraoral sensors, ultrasonic scalers, and panoramic dental X-ray systems.",
+    "description": "Complete dental treatment chairs, 3D CBCT & panoramic OPG systems, Class B autoclaves, intraoral X-rays, endo motors, and surgical implant workstations.",
     "equipmentHighlights": [
-      "Comprehensive Luxury Electric Dental Unit Chairs",
-      "Digital Intraoral X-Ray Sensors (CMOS technology)",
-      "High-Frequency Portable Dental X-Ray Units",
-      "Piezoelectric Ultrasonic Scalers & LED Curing Lights",
-      "Oil-Free Dental Air Compressors with Dryers"
+      {
+        "name": "Luxury Electric Dental Treatment Chair Unit",
+        "image": null,
+        "features": [
+          "Synchronized Ergonomic Backrest & Seamless Memory Foam Upholstery",
+          "Multifunctional Foot Controller & Touch Assistant Control Panel",
+          "Sensor-Activated LED Shadowless Oral Operating Light",
+          "Automated Disinfection & Timed Flushing Cuspidor System",
+          "Whisper-Quiet Low-Voltage DC Motor Drive Mechanism"
+        ],
+        "category": "Dental Units"
+      },
+      {
+        "name": "Class B Medical Autoclave Steam Sterilizer 23L",
+        "image": null,
+        "features": [
+          "European Class B Standard with 3-Phase Fractionated Pre-Vacuum",
+          "23-Liter Solid 304 Stainless Steel Seamless Pressure Chamber",
+          "Independent Steam Generator & Built-in Water Quality Conductivity Sensor",
+          "Automated High-Temperature Vacuum Drying Cycle & Thermal Micro-Printer",
+          "Engineered for Hollow Instruments, Implant Kits & Wrapped Surgical Trays"
+        ],
+        "category": "Sterilization"
+      },
+      {
+        "name": "Class B Dental Vacuum Autoclave 18L",
+        "image": null,
+        "features": [
+          "Triple Pulsed Vacuum Sterilization Technology for Deep Penetration",
+          "18-Liter Compact Chamber Form-Factor for Busy Dental Operatories",
+          "High-Precision Microprocessor Temperature & Pressure Regulation",
+          "Dual Clean Water & Separated Waste Water Storage Reservoirs",
+          "Rapid Cycle Protocols for Handpieces and Urgent Turnaround Tools"
+        ],
+        "category": "Sterilization"
+      },
+      {
+        "name": "High-Frequency Portable Handheld Dental X-Ray Unit",
+        "image": null,
+        "features": [
+          "High-Frequency Inverter DC 60kV / 2mA Radiation Output",
+          "0.4mm Micro-Focal Spot for Ultra-Sharp Diagnostic Radiography",
+          "Double Lead-Shielded Enclosure with Minimal Scatter Radiation Exposure",
+          "High-Capacity Rechargeable Lithium Battery (150+ Exposures per Charge)",
+          "Universal Compatibility with Digital CMOS Sensors & Phosphor Plates"
+        ],
+        "category": "Dental Imaging"
+      },
+      {
+        "name": "Wall-Mounted Intraoral Dental X-Ray System",
+        "image": null,
+        "features": [
+          "Balanced Scissor-Arm Mechanism with Smooth 360° Position Control",
+          "Microprocessor Digital Timer with Patient & Tooth Anatomical Presets",
+          "Constant Potential DC Generator Delivering Consistent Low-Dose Radiation",
+          "Extended Arm Reach Suitable for Multi-Operatory Clinical Layouts",
+          "Remote Exposure Handswitch with Dual Visual/Acoustic Radiation Alarms"
+        ],
+        "category": "Dental Imaging"
+      },
+      {
+        "name": "Digital Panoramic Dental OPG X-Ray Machine",
+        "image": null,
+        "features": [
+          "Full Orthopantomogram (OPG), Bitewing & TMJ Diagnostic Imaging Modes",
+          "High-Sensitivity CMOS Flat Panel Sensor with Real-Time Image Reconstruction",
+          "Multi-Focal Layer Autofocusing with Automated Spine Shadow Compensation",
+          "Low-Dose Pediatric & Adult Pulsed Exposure Programs for Radiation Safety",
+          "DICOM 3.0 & Dental Practice Management PACS Network Integration"
+        ],
+        "category": "Dental Radiology"
+      },
+      {
+        "name": "3D Dental Cone Beam CT (CBCT) & Cephalometric Imaging System",
+        "image": null,
+        "features": [
+          "3-in-1 Multimodal Platform: High-Definition 3D CBCT, Panoramic OPG & Ceph",
+          "Selectable Multi-Field of View (FOV from 5x5cm to 16x10cm Full Maxillofacial)",
+          "75μm Ultra-Fine Voxel Resolution for Precision Implant & Airway Diagnostics",
+          "AI-Powered Mandibular Nerve Canal Tracing & 3D Bone Density Mapping",
+          "Ultra-Fast 4.9-Second Scout Scan with Low-Dose Pulsed Tube Technology"
+        ],
+        "category": "Dental Radiology"
+      },
+      {
+        "name": "Endo-Smart Pro Wireless Rotary Endo Motor with Built-in Apex Locator",
+        "image": null,
+        "features": [
+          "Integrated Apex Locator with Real-Time Apical Action & Auto-Reverse",
+          "360° Rotatable Miniature Contra-Angle Head for Posterior Access",
+          "Continuous Rotation & Reciprocating Motion Modes (100 - 1,200 RPM)",
+          "Wireless Induction Charging Base with High-Contrast OLED Display",
+          "9 Programmable Memory Settings with Precision Torque Control (0.4 - 5.0 N.cm)"
+        ],
+        "category": "Endodontics"
+      },
+      {
+        "name": "Endo-Master Brushless Reciprocating Rotary Endo Motor",
+        "image": null,
+        "features": [
+          "Ultra-Quiet German Brushless Motor with Adjustable Reciprocating Angles",
+          "Stepless Speed Regulation (100 - 2,500 RPM) with Dynamic Real-Time Feedback",
+          "Auto Torque Calibration & Micro-Sensor File Jam Protection",
+          "Color LCD Display with Dynamic Torque Waveform Visualization",
+          "Preloaded Protocols for Leading NiTi Systems (Protaper, WaveOne, Reciproc)"
+        ],
+        "category": "Endodontics"
+      },
+      {
+        "name": "Mini-Endo LED Cordless Endodontic Treatment Motor",
+        "image": null,
+        "features": [
+          "Ultra-Bright Focused LED Head for Shadowless Root Canal Illumination",
+          "Ergonomic Lightweight Pen-Grip Body (Under 100 Grams)",
+          "6 Operating Modes: Forward, Reverse, Reciprocating & Auto-Stop",
+          "High-Performance Lithium-Ion Battery for 30+ Canal Preparations",
+          "Push-Button Mini Chuck for Quick and Secure File Replacement"
+        ],
+        "category": "Endodontics"
+      },
+      {
+        "name": "Surgical Dental Implantation System & Motor Workstation",
+        "image": null,
+        "features": [
+          "Heavy-Duty Brushless Surgical Motor with up to 80 N.cm Maximum Torque",
+          "20:1 Gear Reduction Surgical Handpiece with Internal/External Irrigation",
+          "Integrated High-Flow Saline Peristaltic Pump with Touch Flow Adjustment",
+          "Multi-Function Waterproof Foot Pedal for Hands-Free Surgical Operation",
+          "Real-Time Bone Density Resistance Monitoring & Torque Graphing"
+        ],
+        "category": "Implantology"
+      },
+      {
+        "name": "Brushless Electric Dental Micromotor System",
+        "image": null,
+        "features": [
+          "Wide Stepless Speed Regulation from 2,000 to 40,000 RPM",
+          "Universal ISO E-Type Interface for Straight & Contra-Angle Handpieces",
+          "Stable Constant Torque Output with Zero Vibration & Minimal Thermal Emission",
+          "Forward and Reverse Direction Switch with Variable Speed Foot Control",
+          "Fully Autoclavable Motor Core Built for Rigorous Daily Use"
+        ],
+        "category": "Dental Handpieces"
+      },
+      {
+        "name": "Broad-Spectrum Cordless LED Dental Curing Light",
+        "image": null,
+        "features": [
+          "Broad-Band Multi-Wave LED (385nm - 515nm) Curing All Photoinitiators",
+          "High Power Optical Output up to 2,500 mW/cm² for 1-Second Fast Polymerization",
+          "360° Rotatable Magnetic Curing Lens with Flat Light Guide",
+          "Multiple Operating Modes: Turbo, Normal, Orthodontic & Pulse Modes",
+          "Built-in Precision Light Intensity Testing Radiometer"
+        ],
+        "category": "Operative Dentistry"
+      },
+      {
+        "name": "Ultrasonic Piezo Dental Scaler & Air Polisher 2-in-1 Combo",
+        "image": null,
+        "features": [
+          "Dual Integrated Functionality: Ultrasonic Scaling & Air Powder Polishing",
+          "Clog-Resistant Micro-Nozzle for Efficient Biofilm and Plaque Removal",
+          "Intelligent Frequency Tracking (28kHz - 32kHz) for Patient Comfort",
+          "Dual Detachable Autoclavable Handpieces with Independent Water Delivery",
+          "Dual Powder Reservoirs Supporting Sodium Bicarbonate & Glycine Powders"
+        ],
+        "category": "Periodontics"
+      },
+      {
+        "name": "High-Speed Fiber Optic Air Turbine Handpiece",
+        "image": null,
+        "features": [
+          "Triple Water Spray Cooling with Anti-Retraction Zero-Suck-Back Valve",
+          "Dynamic Balanced Ceramic Bearings with Speeds Exceeding 400,000 RPM",
+          "Integrated Cellular Glass Fiber Optic Rod (25,000 Lux Day-White Light)",
+          "Push-Button Bur Locking Chuck with Enhanced High-Retention Grip",
+          "Titanium Alloy Body with Scratch-Resistant Micro-Textured Finish"
+        ],
+        "category": "Dental Handpieces"
+      },
+      {
+        "name": "Contra-Angle Geared Handpiece (1:5 Speed-Increasing & 1:1 Direct)",
+        "image": null,
+        "features": [
+          "1:5 Speed-Increasing Red-Band Gear Ratio Reaching 200,000 RPM",
+          "Quadruple Port Internal Water Spray & High-Transmittance Fiber Optics",
+          "Precision-Ground Helical Gears for Quiet Operation & Low Heat Generation",
+          "Diamond-Like Carbon (DLC) Coated Ceramic Ball Bearings",
+          "Standard E-Type Coupling Compatible with All Dental Micromotors"
+        ],
+        "category": "Dental Handpieces"
+      }
     ],
     "keySpecs": [
-      "Seamless memory foam upholstery with synchronized backrest movement",
-      "Whisper-quiet DC motor operation with intuitive foot controls"
+      "Comprehensive operatory infrastructure covering restorative, endodontic, implant & hygiene workflows",
+      "European Class B 18L & 23L fractionated vacuum sterilization compliance",
+      "High-frequency DC intraoral radiography with minimal radiation scattering",
+      "High-torque brushless micromotors and optical handpieces with ISO E-type standard"
     ]
   },
   {
     "slug": "orthopedics",
     "name": "Orthopedics & Traumatology",
-    "departmentGroup": "Endoscopy & Surgery",
+    "departmentGroup": "Operating Theatre",
     "featured": false,
     "tagline": "Reconstruction & Power Surgery",
     "description": "Surgical power tools, orthopedic traction operating tables, arthroscopy systems, and bone fracture fixation instrument sets.",
@@ -177,7 +879,7 @@
   {
     "slug": "gastroenterology",
     "name": "Gastroenterology & GI Endoscopy",
-    "departmentGroup": "Endoscopy & Surgery",
+    "departmentGroup": "Operating Theatre",
     "featured": false,
     "tagline": "Luminal Diagnosis & Intervention",
     "description": "Video gastroscope and colonoscope workstations, high-definition electronic processors, and endoscopic electrocautery accessories.",
@@ -196,7 +898,7 @@
   {
     "slug": "gynecology",
     "name": "Gynecology & Women's Health",
-    "departmentGroup": "Endoscopy & Surgery",
+    "departmentGroup": "Operating Theatre",
     "featured": false,
     "tagline": "Hysteroscopy & Outpatient Gynae Care",
     "description": "Diagnostic and operative continuous-flow hysteroscopy systems, high-definition video colposcopes, and LEEP electrosurgery units.",
@@ -273,17 +975,146 @@
     "departmentGroup": "Diagnostics & Specialty",
     "featured": false,
     "tagline": "Endoscopic Otolaryngology",
-    "description": "Integrated ENT treatment workstations, rigid sinuscopes, otoscopes, laryngoscopes, and ENT surgical micro-debriders.",
+    "description": "Comprehensive otolaryngology solutions including integrated ENT units, motorized treatment chairs, endoscopy video towers, electronic flexible laryngoscopes, diagnostic audiometers, tympanometers, portable otoscopes, ENT surgical shavers, coblator radiofrequency systems, and surgical headlights.",
     "equipmentHighlights": [
-      "Luxury Integrated ENT Examination & Treatment Workstations",
-      "Rigid Sinuscopes, Otoscopes, and Laryngoscopes (0°, 30°, 70°)",
-      "High-Definition ENT Camera Systems with Built-In LED Illumination",
-      "ENT Surgical Shaver / Debrider Systems",
-      "Diagnostic Tympanometers & Audiometers"
+      {
+        "name": "Audiometer",
+        "image": null,
+        "features": [
+          "Pure Tone Air Conduction (125 Hz - 8,000 Hz) and Bone Conduction (250 Hz - 8,000 Hz) Testing",
+          "Comprehensive Speech Audiometry & Masking Channels (Narrow Band & White Noise)",
+          "Dual High-Fidelity Audiometric Headsets with Patient Response Push Button",
+          "USB PC Data Transfer with NOAH Software Compatibility & Electronic Health Record Export",
+          "High-Contrast Digital LCD Display with Direct Real-Time Audiogram Curve Plotting"
+        ],
+        "category": "Audiology & Hearing"
+      },
+      {
+        "name": "Tympanometer (Middle Ear Analyzer)",
+        "image": null,
+        "features": [
+          "Standard 226 Hz Diagnostic Probe Tone with 1,000 Hz High-Frequency Mode for Infant Screening",
+          "Automatic Middle Ear Compliance, Ear Canal Volume & Peak Pressure Gradient Analysis",
+          "Ipsilateral and Contralateral Acoustic Stapedial Reflex Threshold & Decay Testing",
+          "Integrated High-Speed Thermal Graphic Printer for Instant Clinical Documentation",
+          "Ergonomic Lightweight Handheld Probe with Real-Time Seal Indicator Light"
+        ],
+        "category": "Audiology & Hearing"
+      },
+      {
+        "name": "Portable Otoscopes",
+        "image": null,
+        "features": [
+          "High-Lumen Fiber-Optic LED Illumination Delivering True Color Rendering without Heat",
+          "3x Swivel Scratch-Resistant Optical Magnification Viewing Window",
+          "Pneumatic Testing Port for Tympanic Membrane Mobility and Middle Ear Pressure Assessment",
+          "Long-Lasting Rechargeable Lithium-Ion Handle with Fast Desktop USB Charging Stand",
+          "Includes Set of Reusable & Disposable Specula Tips in Multi-Diameter Sizes"
+        ],
+        "category": "Diagnostic Examination"
+      },
+      {
+        "name": "ENT Endoscopy Units",
+        "image": null,
+        "features": [
+          "Full HD Medical CMOS Video Camera Control Unit with Digital Dynamic Edge Enhancement",
+          "High-Intensity Medical Cold LED Light Source (80W - 100W, ≥50,000 Hours Lifespan)",
+          "24-Inch to 32-Inch High-Resolution Anti-Glare Medical Display Screen",
+          "One-Touch Full HD Video Recording & Still Image Capture to USB Drive / Hospital PACS",
+          "Integrated Anti-Fog Rigid Scope Warming Wells on Mobile Stainless Steel Trolley"
+        ],
+        "category": "Endoscopic Imaging"
+      },
+      {
+        "name": "Electronic Flexible Laryngoscope",
+        "image": null,
+        "features": [
+          "Ultra-Slim 2.8mm - 3.8mm Insertion Tube Outer Diameter for Maximum Patient Comfort",
+          "High-Resolution Distal-Tip Chip-on-Tip CMOS Sensor with Integrated LED Light Delivery",
+          "130° Up and 130° Down Smooth Distal Tip Articulation for Accurate Laryngeal Navigation",
+          "Fully Submersible Waterproof Design Compatible with Chemical Disinfection and Low-Temp Plasma",
+          "Auxiliary Suction / Working Channel for Secretion Removal and Targeted Biopsy"
+        ],
+        "category": "Endoscopic Imaging"
+      },
+      {
+        "name": "Rigid Sinuscopes (0°, 30°, 70°)",
+        "image": null,
+        "features": [
+          "German High-Definition Rod-Lens Optical System Delivering Crystal-Clear Sharpness",
+          "0°, 30°, and 70° Direction of View Options for Detailed Paranasal Sinus Visualization",
+          "High-Grade Scratch-Resistant Sapphire Distal Window with Anti-Fog Coating",
+          "Standard 2.7mm and 4.0mm Outer Diameters Compatible with Standard Light Cables",
+          "Fully Autoclavable (134°C / 273°F) and Chemical Sterilization Resistant"
+        ],
+        "category": "Endoscopic Imaging"
+      },
+      {
+        "name": "ENT Shaver",
+        "image": null,
+        "features": [
+          "High-Torque Microprocessor Console with Variable Oscillating Speed up to 12,000 RPM",
+          "Continuous Suction-Irrigation Flushing Preventing Clogging during Polyposis Removal",
+          "Full Range of Straight and Pre-Bent Sinus Blades, Adenoid Cutters & Diamond Burrs",
+          "Lightweight Ergonomic Titanium Handpiece with 360-Degree Rotatable Blade Hub",
+          "Multi-Function Waterproof Foot Pedal for Hands-Free Direction, Speed & Rinse Control"
+        ],
+        "category": "Surgical Systems"
+      },
+      {
+        "name": "Radiofrequency Surgical System (Coblator)",
+        "image": null,
+        "features": [
+          "Low-Temperature Controlled Plasma Dissociation Minimizing Thermal Tissue Damage",
+          "Simultaneous Precision Ablation, Rapid Hemostatic Coagulation & Saline Flushing",
+          "Specialized Wands for Coblation Tonsillectomy, Adenoidectomy & Turbinate Reduction",
+          "Significantly Reduced Post-Operative Pain and Accelerated Mucosal Epithelization",
+          "Smart Generator Console with Automatic Plasma Wand Recognition & Digital Power Display"
+        ],
+        "category": "Surgical Systems"
+      },
+      {
+        "name": "ENT Unit",
+        "image": null,
+        "features": [
+          "Integrated Oil-Free Vacuum Suction Pump with Automatic Drainage and Anti-Overflow Bottle",
+          "Dual Heated Medicine Spray Nozzles & 37°C Thermostatic Constant-Temperature Ear Washing System",
+          "Built-In Pre-Heating Wells for Rigid Sinuscopes and Laryngoscopes Preventing Condensation",
+          "Tempered Anti-Bacterial Worktop with Silent Rolling Drawers & UV Sterilization Basin",
+          "Central Touchscreen Console Controlling Chair Movement, Light Source, and Pump Functions"
+        ],
+        "category": "ENT Workstations"
+      },
+      {
+        "name": "ENT Treatment Chair",
+        "image": null,
+        "features": [
+          "Whisper-Quiet Low-Voltage DC Motor Driven Height, Backrest and Legrest Elevation",
+          "Full 180-Degree Horizontal Flat Bed Conversion for Minor Office Surgical Procedures",
+          "Smooth 360-Degree Swivel Rotation with Electro-Mechanical Floor Locking System",
+          "Multi-Position Articulated Cushion Headrest Suitable for Adult and Pediatric Anatomy",
+          "Heavy-Duty Solid Steel Base with Seamless Medical Grade Antibacterial Leather"
+        ],
+        "category": "Treatment Furniture"
+      },
+      {
+        "name": "ENT Headlight",
+        "image": null,
+        "features": [
+          "Ultra-Bright Medical Cold White LED Illumination (Up to 50,000 Lux Intensity)",
+          "Continuously Adjustable Optical Spot Diameter (10mm - 110mm at 400mm Working Distance)",
+          "Ergonomic Lightweight Padded Headband Ensuring Weightless All-Day Wearability",
+          "Dual Hot-Swappable Rechargeable Lithium-Polymer Batteries for Continuous Operation",
+          "Compatible with Clip-On Surgical Magnification Loupes for Deep Cavity Inspection"
+        ],
+        "category": "Surgical Illumination"
+      }
     ],
     "keySpecs": [
       "Integrated suction, medication spraying, pre-heating and ear-wash channels",
-      "High-resolution sapphire lens optics with wide depth of field"
+      "High-resolution sapphire lens optics with wide depth of field",
+      "Diagnostic pure-tone and speech audiometry with 226 Hz / 1,000 Hz middle ear tympanometry",
+      "Low-temperature plasma radiofrequency coblation and high-speed sinus micro-debridement"
     ]
   },
   {
@@ -292,17 +1123,782 @@
     "departmentGroup": "Diagnostics & Specialty",
     "featured": false,
     "tagline": "Active Recovery & Physical Therapy",
-    "description": "Combined electrotherapy and ultrasound units, shortwave diathermy, traction tables, and continuous passive motion (CPM) devices.",
+    "description": "Complete rehabilitation suites featuring passive hand training systems, compression therapy, shockwave machines, medical treadmills, computerized traction beds, Bobath training beds, and electrotherapy.",
     "equipmentHighlights": [
-      "Multi-Channel Electrotherapy & Ultrasound Combination Units",
-      "Shortwave & Microwave Diathermy Therapy Systems",
-      "Computerized Lumbar & Cervical Traction Decompression Beds",
-      "Lower Limb Continuous Passive Motion (CPM) Machines",
-      "Shockwave Therapy Systems for Musculoskeletal Pain"
+      {
+        "name": "Pneumatic Hand Rehabilitation & Passive Finger Training System",
+        "image": null,
+        "features": [
+          "Bionic Pneumatic Flexible Actuators for Safe Finger Flexion & Extension",
+          "Passive, Assistive, Resistance & Mirror-Therapy Neurological Modes",
+          "Adjustable Range of Motion (ROM) with Real-Time Grip Sensor Feedback",
+          "Indicated for Stroke Recovery, Tendon Repairs & Hemiplegic Hand Retraining",
+          "Touchscreen Control Console Supporting Isolated Single-Finger Exercises"
+        ],
+        "category": "Neurological Rehabilitation"
+      },
+      {
+        "name": "Sequential Pneumatic Intermittent Compression Therapy System",
+        "image": null,
+        "features": [
+          "4-to-8 Chamber Gradient Sequential Pressure Delivery (20 - 250 mmHg)",
+          "Clinically Proven for DVT Prevention, Lymphoedema & Venous Insufficiency",
+          "Durable Overlapping Arm, Leg & Waist Compression Sleeves with Zipper Enclosures",
+          "Whisper-Quiet Piston Air Pump with Precise Microprocessor Cycle Timing",
+          "Peristaltic, Sequential & Wave Chamber Inflation Modes"
+        ],
+        "category": "Compression Therapy"
+      },
+      {
+        "name": "Knuckle & Wrist Joint Active/Passive Rehabilitation Training System",
+        "image": null,
+        "features": [
+          "Continuous Passive Motion (CPM) & Interactive Active Resistance Training",
+          "Multi-Axis Motion: Palmar Flexion, Dorsiflexion, Radial & Ulnar Deviation",
+          "High-Precision Torque Sensor with Instant Spasm & Overload Protection",
+          "Interactive Visual Gamified Biofeedback Display for Patient Engagement",
+          "Quick-Mount Ergonomic Forearm Support Adapting to Adult & Pediatric Hands"
+        ],
+        "category": "Upper Limb Rehabilitation"
+      },
+      {
+        "name": "Medical Rehabilitation Ergometer Static Bicycle",
+        "image": null,
+        "features": [
+          "Bi-Directional Electromagnetic Resistance Braking up to 1,000 Watts",
+          "Ultra-Low Step-Through Frame Design with Swivel 360° Orthopedic Seat",
+          "Active / Passive Motorized Assistance for Neurological & Hemiplegic Patients",
+          "Automated Spasm Detection Circuit with Instant Protective Motor Reversal",
+          "Color Console Displaying Wattage, RPM, Symmetry Index & Heart Rate"
+        ],
+        "category": "Cardiopulmonary & Exercise"
+      },
+      {
+        "name": "Extracorporeal Radial Shockwave Therapy (ESWT) Machine",
+        "image": null,
+        "features": [
+          "Ballistic Electromagnetic Shockwave Generator (1.0 - 5.0 Bar Pressure Output)",
+          "Wide Frequency Range (1 - 22 Hz) for Deep Tendinopathy & Myofascial Trigger Points",
+          "Preloaded Evidence-Based Clinical Protocols for Plantar Fasciitis & Calcific Tendinitis",
+          "Lightweight Aluminum Handpiece with Complete Set of Radial & Focused Transmitters",
+          "Full-Color Touchscreen with Anatomical Body Map Illustrated Treatment Guide"
+        ],
+        "category": "Pain Management & Shockwave"
+      },
+      {
+        "name": "Medical Rehabilitation Treadmill with Safety Harness & Handrails",
+        "image": null,
+        "features": [
+          "Ultra-Low Starting Velocity of 0.1 km/h with 0.1 km/h Fine Speed Adjustments",
+          "Continuous Full-Length Parallel Safety Handrails with Padded Grip",
+          "Adjustable Overhead Unweighting Body Support Safety Harness Framework",
+          "Bi-Directional Walking Belt Supporting Forward & Reverse Gait Retraining",
+          "Triple-Cushioned Impact-Absorbing Running Deck Protecting Weight-Bearing Joints"
+        ],
+        "category": "Gait & Mobility Training"
+      },
+      {
+        "name": "Electric Multi-Section Physiotherapy & Treatment Bed",
+        "image": null,
+        "features": [
+          "3-to-5 Section Articulated Treatment Surface with Motorized Height & Trendelenburg",
+          "Full-Perimeter All-Around Foot Switch Bar for Hands-Free Bed Elevation",
+          "Ergonomic Facial Breathing Hole with Removable Cushion & Folding Armrests",
+          "Heavy-Duty Solid Steel Chassis Supporting Safe Working Load up to 250 kg",
+          "Retractable Heavy-Duty Castor Wheels with Central Foot Braking Mechanism"
+        ],
+        "category": "Treatment Furniture"
+      },
+      {
+        "name": "Computerized Cervical & Lumbar Decompression Traction Bed",
+        "image": null,
+        "features": [
+          "Microprocessor Controlled Continuous, Intermittent & Progressive Traction Patterns",
+          "Simultaneous or Independent Cervical & Lumbar Multi-Angle Spinal Distraction",
+          "Automatic Force Compensation with Handheld Patient Emergency Stop Interlock",
+          "Friction-Free Split-Section Rolling Tabletop to Isolate Targeted Spinal Segments",
+          "Color Digital Touchscreen Console Storing Personalized Patient Protocols"
+        ],
+        "category": "Spinal Decompression"
+      },
+      {
+        "name": "Bobath Neurological Rehabilitation Training Bed (Extra-Wide)",
+        "image": null,
+        "features": [
+          "Extra-Wide Platform (120cm - 140cm) Facilitating Therapist-Assisted Neuro Exercises",
+          "Heavy-Duty Dual Linear Actuators Supporting Maximum Working Load up to 300 kg",
+          "Ultra-Low Minimum Bed Height (45cm) for Safe Direct Wheelchair Lateral Transfers",
+          "High-Resilience Medical Grade Foam Offering Firm Support for Neuro-Developmental Therapy",
+          "Handheld Remote & Foot Controller for Smooth, Whisper-Quiet Electric Height Adjustment"
+        ],
+        "category": "Treatment Furniture"
+      },
+      {
+        "name": "Physical Therapy Agility Ladder & Gait Speed Coordination Set",
+        "image": null,
+        "features": [
+          "Heavy-Duty Flat Rungs with Adjustable Spacing for Foot Clearance Retraining",
+          "High-Contrast Clinical Visual Colors for Proprioceptive & Motor-Planning Drills",
+          "Non-Slip Textured Bottom Surface Engineered for Smooth Clinic Rehabilitation Floors",
+          "Quick-Snap Modular Interlocking Clips for Straight-Line, Zig-Zag & Dual-Lane Tracks",
+          "Compact Lightweight Roll-Up Storage with Moisture-Resistant Carrying Bag"
+        ],
+        "category": "Gait & Mobility Training"
+      },
+      {
+        "name": "Dual-Channel Digital TENS & EMS Electrotherapy Machine",
+        "image": null,
+        "features": [
+          "Dual Isolated Independent Output Channels for Simultaneous Multi-Zone Therapy",
+          "Combined TENS (Pain Management) and EMS (Muscle Re-education & Atrophy Prevention)",
+          "5 Pulse Modes: Burst, Continuous, Modulation, Strength-Duration & Bi-Phasic Surge",
+          "Clear Backlit Digital LCD Display Showing Real-Time Intensity, Timer & Frequency",
+          "Includes Long-Life Reusable Adhesive Hydrogel Electrodes & Lead Cables"
+        ],
+        "category": "Electrotherapy"
+      },
+      {
+        "name": "Clinical Hydrocollator Moist Heat Hot Pack Heating Unit",
+        "image": null,
+        "features": [
+          "Heavy-Gauge Seamless Stainless Steel Tank with Corrosion-Proof Thermostat",
+          "Precision Temperature Control Maintaining Water at Optimal 71°C - 74°C Heat",
+          "Equipped with Clinical-Grade Natural Bentonite Moist Heat Hot Packs",
+          "Dual-Wall Thermal Insulation for Superior Heat Retention & Exterior Safety",
+          "Front Brass Drain Valve for Convenient Clinic Cleaning and Water Evacuation"
+        ],
+        "category": "Thermotherapy"
+      }
     ],
     "keySpecs": [
-      "Preset clinical evidence-based treatment protocols with body-map diagrams",
-      "Dual-frequency ultrasound (1 MHz and 3 MHz) for superficial and deep tissue treatment"
+      "Bionic pneumatic hand rehabilitation and passive wrist/knuckle continuous motion training",
+      "Ballistic radial extracorporeal shockwave therapy (ESWT) up to 5.0 Bar",
+      "Computerized multi-mode cervical and lumbar spinal decompression traction",
+      "Medical-grade unweighted gait retraining treadmills and ergometer static bicycles"
+    ]
+  },
+  {
+    "slug": "operating-theatre",
+    "name": "Operating Theatre",
+    "departmentGroup": "Operating Theatre",
+    "featured": false,
+    "tagline": "Aseptic Theatre Architecture & Surgical Energy",
+    "description": "Complete operating theatre infrastructure, advanced electro-hydraulic surgical tables, shadowless LED surgical lights, electrosurgical generator units, anesthesia workstations, and surgical smoke evacuators.",
+    "equipmentHighlights": [
+      {
+        "name": "Electro-Hydraulic Operating Table",
+        "image": null,
+        "features": [
+          "Universal Multi-Position Surgical Table for General, Orthopedic, Neuro & Gynecological Surgery",
+          "Electro-Hydraulic Motorized Drive for Height, Trendelenburg, Lateral Tilt & Longitudinal Slide",
+          "Carbon-Fiber C-Arm Radiolucent Tabletop Deck with 350 kg Safe Working Load Capacity",
+          "Integrated Motorized Kidney Bridge and Split Detachable Leg Section Assembly",
+          "Dual Control System via Handheld Cable Remote Controller and Column Standby Console"
+        ],
+        "category": "Surgical Tables & Positioning"
+      },
+      {
+        "name": "Double-Dome Shadowless LED Surgical Light",
+        "image": null,
+        "features": [
+          "Ceiling-Mounted Double-Dome Cold LED Optical Lens Array (160,000 Lux + 120,000 Lux)",
+          "Continuously Adjustable Color Temperature (3,800K - 5,000K) for Superior Tissue Discrimination",
+          "Aerodynamic Open-Petal Ultra-Thin Canopy Engineered for Cleanroom Laminar Airflow",
+          "Integrated Deep Cavity Illumination Mode and Endosurgery Ambient Green Illumination Mode",
+          "Equipped with Center Sterile Detachable Autoclavable Handle and Optional Full HD Camera"
+        ],
+        "category": "Surgical Illumination"
+      },
+      {
+        "name": "High-Frequency Electrosurgical Unit (ESU)",
+        "image": null,
+        "features": [
+          "Microprocessor-Controlled High-Frequency Generator with Monopolar Cut (350W) and Coag (120W)",
+          "Advanced Vessel Sealing System Delivering Permanent Thermal Fusion for Vessels up to 7mm",
+          "Bipolar Micro-Coagulation with Auto-Stop Impedance Sensing Function Preventing Tissue Sticking",
+          "Neutral Return Electrode Contact Quality Monitoring System (CQM) with Auto-Lockout",
+          "Multi-Channel Memory Storing up to 20 Custom Surgical Procedure Settings"
+        ],
+        "category": "Electrosurgery & Energy"
+      },
+      {
+        "name": "Integrated Anesthesia Workstation",
+        "image": null,
+        "features": [
+          "Pneumatically Driven & Electronically Controlled Ventilator for Adult, Pediatric & Neonatal Anesthesia",
+          "Ventilation Modes: VCV, PCV, SIMV-V, SIMV-P, PSV, Manual, and Spontaneous Respiration",
+          "Dual Selectatec-Compatible Vaporizer Manifold for Isoflurane, Sevoflurane & Desflurane",
+          "Integrated Heated Absorber System with Fast CO2 Canister Bypass During Active Surgery",
+          "Active Anesthetic Gas Scavenging System (AGSS) Ensuring Total Theatre Staff Protection"
+        ],
+        "category": "Anesthesia Systems"
+      },
+      {
+        "name": "Surgical Smoke Evacuation System",
+        "image": null,
+        "features": [
+          "High-Efficiency 4-Stage Ultra-Low Penetration Air (ULPA) Filtration Capturing 0.12µm Particles (99.999%)",
+          "Integrated Activated Virgin Coconut Shell Charcoal Filter for Complete Odor & Toxic Gas Adsorption",
+          "Whisper-Quiet Multi-Speed High-Velocity Suction Turbine (Quiet Mode <50 dB)",
+          "Synchronized Wireless Sensor Automatically Activating Suction Upon ESU Energy Triggering",
+          "Digital Filter Life Indicator with Easy Single-Motion Hygienic Filter Replacement"
+        ],
+        "category": "Theatre Safety & Environment"
+      },
+      {
+        "name": "Medical Ceiling Pendant for Surgery",
+        "image": null,
+        "features": [
+          "Heavy-Duty Extruded High-Tensile Aluminum Double-Articulated Ceiling Arm with 340° Rotation",
+          "Integrated Multi-Gas Outlets (O2, Vacuum, Air, N2O, AGSS) Compliant with ISO Standards",
+          "High-Voltage Electrical Outlets, Equipotential Grounding Studs & Gigabit RJ45 Data Ports",
+          "Reinforced Stainless Steel Instrument Shelves, Infusion Arms, and Monitor Mount Arms",
+          "Electro-Pneumatic Braking Mechanism Ensuring Rock-Solid Positional Stability During Procedures"
+        ],
+        "category": "Theatre Architecture"
+      },
+      {
+        "name": "Surgical Scrub Sink",
+        "image": null,
+        "features": [
+          "Seamless Heavy-Gauge SUS304 Brushed Stainless Steel Basin with Anti-Splash Curvature",
+          "Dual Infrared Sensor Hands-Free Water Delivery with Manual Knee-Pedal Override",
+          "Thermostatic Water Mixing Valve Maintaining Factory-Calibrated Consistent Temperature",
+          "Automated Sensor-Activated Liquid Soap / Iodine Dispensers with Anti-Clog Nozzles",
+          "Integrated Digital Scrub Timer and UV Water Disinfection Chamber"
+        ],
+        "category": "Aseptic Theatre Infrastructure"
+      },
+      {
+        "name": "Patient Warming System",
+        "image": null,
+        "features": [
+          "Microprocessor Forced-Air Convective Warming Console Preventing Perioperative Hypothermia",
+          "4 Preset Temperature Settings (Ambient, 32°C, 38°C, 43°C) with High-Precision Flow Sensor",
+          "Multi-Layer Washable Anti-Bacterial Air Hose with Secure Click-Lock Blanket Connector",
+          "Compatible with Full Range of Adult, Pediatric, Upper Body, and Lower Body Disposable Warming Blankets",
+          "High-Efficiency 0.2µm HEPA Air Filter Ensuring Sterile Laminar Theatre Air Delivery"
+        ],
+        "category": "Patient Thermal Care"
+      }
+    ],
+    "keySpecs": [
+      "Electro-hydraulic multi-position surgical tables with 350 kg weight capacity and full C-arm radiolucency",
+      "Double-dome cold LED surgical lights up to 160,000 Lux with optional surgical camera integration",
+      "High-frequency electrosurgical generators with vessel sealing and advanced smoke evacuation",
+      "Integrated anesthesia delivery workstations with vaporizer manifolds and AGSS scavenging"
+    ]
+  },
+  {
+    "slug": "laboratory",
+    "name": "Laboratory",
+    "departmentGroup": "Laboratory",
+    "featured": false,
+    "tagline": "Precision Analytical Pathology & Hemostasis",
+    "description": "Automated clinical biochemistry analyzers, 5-part hematology systems, electrolyte analyzers, blood gas analyzers, point-of-care diagnostics, biosafety cabinets, blood tube roll mixers, centrifuges, and cold-chain storage.",
+    "equipmentHighlights": [
+      {
+        "name": "5-Part Differential Hematology Analyzer",
+        "image": null,
+        "features": [
+          "Tri-Angle Semiconductor Laser Scatter and Chemical Dye Flow Cytometry Technology",
+          "Comprehensive 29-Parameter Complete Blood Count (CBC) with 5-Part White Blood Cell Differentiation",
+          "High Throughput Processing up to 60 Samples per Hour with Only 20 µL Whole Blood Sample Volume",
+          "10.4-Inch High-Resolution Color Touchscreen with Intuitive Linux-Based Analysis Software",
+          "Automatic Clot Detection, Bubble Elimination & High-Pressure Reagent Flushing System"
+        ],
+        "category": "Hematology"
+      },
+      {
+        "name": "Automated Clinical Biochemistry Analyzer",
+        "image": null,
+        "features": [
+          "Random Access, Fully Automated Photometric & Turbidimetric Clinical Chemistry Analyzer",
+          "Constant Throughput of 200 Tests per Hour with On-Board Refrigerated Reagent Carousel (24 Hours)",
+          "80 Sample Positions, 40 Reagent Positions & 44 High-Durability Optical Reaction Cuvettes",
+          "Liquid Level Detection, Vertical and Horizontal Collision Protection & Reagent Inventory Tracking",
+          "High-Precision Micro-Syringe Pipetting Down to 2 µL with Internal and External Probe Washing"
+        ],
+        "category": "Clinical Chemistry"
+      },
+      {
+        "name": "Automated Electrolyte Analyzer (ISE)",
+        "image": null,
+        "features": [
+          "Advanced Direct Ion-Selective Electrode (ISE) Technology with Long-Life Maintenance-Free Electrodes",
+          "Rapid Testing of K+, Na+, Cl-, Ca2+, and pH Electrolyte Levels in Under 45 Seconds",
+          "Integrated All-in-One Closed Liquid Reagent Pack with Automated Calibration & Waste Management",
+          "Built-in Thermal Graphic Printer for Instant Clinical Record Documentation",
+          "Sample Carousel Accommodating Serum, Plasma, Whole Blood, and Diluted Urine Samples"
+        ],
+        "category": "Clinical Chemistry"
+      },
+      {
+        "name": "High-Speed Refrigerated Centrifuge",
+        "image": null,
+        "features": [
+          "Maintenance-Free Brushless Induction Motor Delivering Speeds up to 16,000 RPM (24,000 x g)",
+          "CFC-Free Eco-Friendly Refrigeration Unit with Continuous Temperature Range from -20°C to +40°C",
+          "Interchangeable Rotor Capacity Accommodating Microtubes, 15mL/50mL Falcon Tubes & Blood Collection Tubes",
+          "Digital Touchscreen Panel Displaying Simultaneous RPM/RCF, Chamber Temperature, and Timer",
+          "Electronic Motorized Safety Lid Interlock with Automated Rotor Imbalance Detection Sensor"
+        ],
+        "category": "Centrifugation"
+      },
+      {
+        "name": "Biological Binocular / Trinocular Laboratory Microscope",
+        "image": null,
+        "features": [
+          "Infinity-Corrected Plan Achromatic Optical System (4x, 10x, 40x Spring, 100x Spring/Oil)",
+          "30° Inclined 360° Swiveling Siedentopf Viewing Head with Interpupillary Distance Adjustment",
+          "Double-Layer Mechanical Specimen Stage (140mm x 140mm) with Ergonomic Coaxial Low-Drive Controls",
+          "Continuously Variable 3W Cold White LED Kohler Illumination with Field Iris Diaphragm",
+          "Dedicated Camera Phototube Interface for High-Definition Digital Imaging & Tele-Pathology"
+        ],
+        "category": "Microscopy & Pathology"
+      },
+      {
+        "name": "Microplate ELISA Reader & Washer",
+        "image": null,
+        "features": [
+          "8-Channel Optical Fiber Photometric System Supporting 96-Well Standard Microplate Assays",
+          "Wavelength Range from 400nm to 750nm with Pre-Installed Interference Filters (405, 450, 492, 630 nm)",
+          "Automated Microplate Strip Washer with 8-Needle and 12-Needle Aspirate/Dispense Manifolds",
+          "Programmable Shaking and Incubation Modes Ensuring Complete Cross-Reaction Elimination",
+          "Comprehensive Diagnostic Assay Software for Infectious Disease, Hormones, and Immunology Panels"
+        ],
+        "category": "Immunology & Serology"
+      },
+      {
+        "name": "Semi-Automated Coagulation Analyzer",
+        "image": null,
+        "features": [
+          "Advanced Magnetic Bead Ball-Method Detection Immune to Icteric, Lipemic, and Hemolyzed Samples",
+          "Performs Routine Screening Tests: PT (Prothrombin Time), APTT, TT, Fibrinogen, and Coagulation Factors",
+          "4 Independent Incubation Channels and 4 Dedicated Optical Reading Positions (37°C Constant)",
+          "Built-in Precision Electronic Pipette Link Automatically Triggering Timing Upon Reagent Dispensing",
+          "Integrated Micro-Thermal Printer and High-Capacity Internal Memory for Calibration Curves"
+        ],
+        "category": "Hemostasis"
+      },
+      {
+        "name": "Medical Laboratory Refrigerator & Plasma Freezer",
+        "image": null,
+        "features": [
+          "Microprocessor Precision Temperature Controller (+4°C Refrigerator / -20°C to -40°C Deep Freezer)",
+          "High-Efficiency Whisper-Quiet Inverter Compressor with Forced-Air Circulation Ensuring ±1.5°C Uniformity",
+          "Multi-Pane Heated Vacuum Glass Door Preventing Condensation Formation in High Humidity Climates",
+          "Comprehensive Multi-Hazard Alarm System for High/Low Temperature, Power Failure & Sensor Error",
+          "Includes Heavy-Duty Stainless Steel Storage Drawers and USB Data Logger for GMP/GLP Compliance"
+        ],
+        "category": "Cold-Chain Storage"
+      },
+      {
+        "name": "Blood Tube Roller Mixer",
+        "image": null,
+        "features": [
+          "Continuous Simultaneous Rocking and Rolling Motion Ensuring Gentle, Uniform Anticoagulant Tube Mixing",
+          "6-to-8 Heavy-Duty Rollers Accommodating Standard Vacutainers, Blood Collection Tubes & Reagent Bottles",
+          "Adjustable Speed Regulation from 10 to 80 RPM with Whisper-Quiet Smooth Brushless Motor Drive",
+          "Chemical-Resistant Easy-to-Clean Roller Surface Compatible with Cold Rooms and Laboratory Incubators",
+          "Dual Operating Modes: Continuous Running and Digital Countdown Timer (1 to 999 Minutes) with LED Display"
+        ],
+        "category": "Sample Preparation & Mixing"
+      },
+      {
+        "name": "Point-of-Care (POC) Analyzer",
+        "image": null,
+        "features": [
+          "Portable Handheld Quantitative Immunoassay Diagnostic System Delivering Results in Under 5 Minutes",
+          "Comprehensive Test Panels: Cardiac (cTnI, CK-MB, Myo), D-Dimer, Procalcitonin (PCT), CRP, and HbA1c",
+          "Microfluidic and Advanced Time-Resolved Fluorescent Immunoassay with Only 10 - 20 µL Whole Blood",
+          "Integrated Barcode Scanner for Automatic Cartridge Lot Calibration & Patient ID Assignment",
+          "Color Touchscreen Interface with Thermal Graphic Printer and Seamless Wireless LIS / HIS Connectivity"
+        ],
+        "category": "Point-of-Care Diagnostics"
+      },
+      {
+        "name": "Arterial Blood Gas (ABG) Analyzer",
+        "image": null,
+        "features": [
+          "Micro-Sample Blood Gas Analysis (Under 65 µL Whole Blood) Delivering Results in Under 60 Seconds",
+          "Direct Measured Parameters: pH, pCO2, pO2, Na+, K+, Cl-, Ca2+, Glucose, Lactate & Total Hemoglobin",
+          "Maintenance-Free All-in-One Multi-Test Cartridge Integrating Sensor Chip, Fluidics & Calibration Solutions",
+          "Automated Continuous Liquid Quality Control (Auto-QC) Ensuring Complete Regulatory Compliance",
+          "10.4-Inch Color Touchscreen with Built-in Acid-Base Nomogram Graphing and Direct Hospital LIS Export"
+        ],
+        "category": "Critical Care Diagnostics"
+      },
+      {
+        "name": "Class II Biosafety Cabinet (Type A2)",
+        "image": null,
+        "features": [
+          "Dual ULPA Supply and Exhaust Filters Providing 99.999% Filtration Efficiency for 0.12 µm Particles (ISO Class 4)",
+          "70% Clean Laminar Air Recirculation and 30% Exhaust Protecting Personnel, Product, and Environment",
+          "Motorized 6mm Laminated UV-Proof Safety Glass Sash with Anti-Pinch Optical Safety Sensors",
+          "Heavy-Gauge Seamless AISI 304 Stainless Steel Interior Work Zone with Spill-Containment Sump Basin",
+          "Microprocessor Control Center with Real-Time Airflow Velocity Sensors, Filter Life Counter & Audio Alarms"
+        ],
+        "category": "Laboratory Safety & Containment"
+      }
+    ],
+    "keySpecs": [
+      "Automated 5-part differential hematology analyzers and high-throughput random access clinical chemistry",
+      "Direct ion-selective electrolyte analyzers, arterial blood gas (ABG) units and microplate ELISA readers",
+      "Rapid point-of-care (POC) cardiac and infection analyzers, roller mixers and Class II Type A2 biosafety cabinets",
+      "Infinity-corrected clinical laboratory microscopes, refrigerated centrifuges and certified cold-chain storage"
+    ]
+  },
+  {
+    "slug": "general-hospital-materials",
+    "name": "General Hospital Materials",
+    "departmentGroup": "General Hospital Materials",
+    "featured": false,
+    "tagline": "Patient Care, Hospital Furniture & Ward Essentials",
+    "description": "Complete general hospital materials, ward furniture, manual & electric hospital beds, patient stretchers, dirty & clean linen trolleys, mayo stands, consultation & stool chairs, wheelchairs, examination lights & headlights, diagnostic monitors (ECG, EEG, patient monitors, ultrasound), oxygen concentrators, nebulisers, suction units, and vertical & horizontal autoclaves.",
+    "equipmentHighlights": [
+      {
+        "name": "Electric 3-Function Hospital Ward Bed",
+        "image": null,
+        "features": [
+          "Triple-Motor Electric Actuator System Controlling Backrest Elevation, Knee-Gatch & Bed Height",
+          "Collapsible 6-Bar Aluminum Alloy Safety Siderails with One-Touch Quick-Drop Latch",
+          "Detachable Molded High-Strength ABS Head and Foot Boards with Patient Information Card Slot",
+          "Perforated Cold-Rolled Steel Sheet Sleeping Deck Offering Superior Ventilation & Disinfection",
+          "Central Braking Castor Wheel System with 5-Inch Dust-Proof Medical Swivel Rollers"
+        ],
+        "category": "Hospital Furniture"
+      },
+      {
+        "name": "Manual 2-Crank Hospital Patient Bed",
+        "image": null,
+        "features": [
+          "Dual Retractable Mechanical Folding Crank Handles with Built-in Overload Limit Protection",
+          "Independent Smooth Manual Adjustment for Backrest (0° - 75°) and Leg Section (0° - 40°)",
+          "High-Durability Tubular Steel Frame with Electrostatic Powder Anti-Bacterial Coating",
+          "Four Corner Protective Bumper Wheels and 4 Standard Stainless IV Drip Pole Receptacles",
+          "Collapsible Aluminum Siderails and 4 Individual Locking Diagonal Medical Castors"
+        ],
+        "category": "Hospital Furniture"
+      },
+      {
+        "name": "Hydraulic Patient Transport Stretcher",
+        "image": null,
+        "features": [
+          "Double Hydraulic Pump Foot Pedal Controls for Smooth Bed Elevation & Trendelenburg Tilt (±18°)",
+          "Collapsible Full-Length Stainless Steel Side Guardrails for Total Fall Prevention during Transit",
+          "Central Directional Steering 5th Wheel Mechanism Enabling Effortless Single-Porter Maneuverability",
+          "Includes Waterproof Antimicrobial High-Density Foam Transfer Mattress with Fixing Straps",
+          "Equipped with Collapsible Stainless IV Pole, Oxygen Cylinder Cradle, and Perimeter Bumpers"
+        ],
+        "category": "Patient Transport"
+      },
+      {
+        "name": "Emergency Medical Crash Cart",
+        "image": null,
+        "features": [
+          "High-Impact ABS Composite Surface with Raised Perimeter Spill-Containment Lips",
+          "5 Color-Coded Modular Pull-Out Drawers with Flexible Internal Dividers and Central Breakaway Lock",
+          "Defibrillator Swivel Platform Tray, Oxygen Tank Holder, and Rigid Acrylic CPR Cardiac Board",
+          "Slide-Out Writing Workspace Shelf, Dual Waste Bins & Needle Disposal Sharps Container Bracket",
+          "Heavy-Duty 5-Inch Non-Marking Silent Castor Wheels (2 with Directional Brakes)"
+        ],
+        "category": "Emergency & Ward Trolleys"
+      },
+      {
+        "name": "Stainless Steel Surgical Dressing & Instrument Trolley",
+        "image": null,
+        "features": [
+          "Fabricated from Heavy-Gauge Medical-Grade AISI 304 Seamless Polished Stainless Steel",
+          "Dual Shelf Trays with Three-Sided Perimeter Retaining Guardrails Preventing Instrument Drops",
+          "Seamless Argon-Arc Welded Construction Ensuring Total Freedom from Crevices and Corrosion",
+          "Smooth 3-Inch Noise-Free Polyurethane Swivel Castors with Anti-Hair Wrap Thread Guards",
+          "Includes Stainless Steel Debris Waste Basin and Removable Instrument Disinfection Pail"
+        ],
+        "category": "Ward & Theatre Trolleys"
+      },
+      {
+        "name": "Heavy-Duty Mobile IV Infusion Stand",
+        "image": null,
+        "features": [
+          "Weighted Low-Center-of-Gravity 5-Leg Die-Cast Stainless Steel Base with Anti-Tip Geometry",
+          "4 Sturdy Stainless Steel Ram-Horn Hanging Hooks Supporting Multiple Heavy Infusion Bags & Pumps",
+          "Single-Handed Screw-Collar or Pneumatic Lift Adjustment Mechanism (120cm - 210cm Range)",
+          "Smooth-Rolling Silent Medical Castors Engineered for Effortless Patient Ambulation",
+          "Dedicated Infusion Pump Mounting Bracket Bar and Power Cord Cable Management Clip"
+        ],
+        "category": "Ward Essentials"
+      },
+      {
+        "name": "Bedside Medical Cabinet & Locker",
+        "image": null,
+        "features": [
+          "Durable High-Strength Molded ABS Plastic Construction Resistant to Disinfectants and Stains",
+          "Top Pull-Out Writing/Drink Tray, Upper Drawer with Lock, and Spacious Lower Storage Locker",
+          "Concealed Retractable Stainless Steel Towel Rails on Both Sides and Rear Shoe Shelf",
+          "Pneumatic Gas-Spring Height-Adjustable Overbed Dining Surface with Anti-Spill Beveled Edges",
+          "4 Silent Swivel Castors with Foot Brakes Allowing Easy Mobility for Ward Floor Disinfection"
+        ],
+        "category": "Hospital Furniture"
+      },
+      {
+        "name": "Clinical Examination & Treatment Table",
+        "image": null,
+        "features": [
+          "Heavy-Duty Rectangular Steel Frame Coated with Antimicrobial Electrostatic Powder Finish",
+          "Manual Multi-Position Ratchet Headrest Adjustment from 0° to 60° for Patient Comfort",
+          "Seamless High-Resilience Medical Foam Mattress Upholstered in Stain-Resistant Vinyl",
+          "Integrated Chrome Sanitary Paper Roll Dispenser Bracket Mounted at Head Section",
+          "Non-Slip Protective Leveling Rubber Floor Feet Providing Rock-Solid Procedural Stability"
+        ],
+        "category": "Clinical Examination"
+      },
+      {
+        "name": "Dirty & Clean Linen Collection Trolley",
+        "image": null,
+        "features": [
+          "Dual-Compartment Design Physically Separating Clean Ward Linen and Soiled Laundry Collection",
+          "Heavy-Duty Tubular Stainless Steel / Epoxy Frame with Protective Perimeter Corner Bumpers",
+          "Heavy-Duty Waterproof, Flame-Retardant Oxford Canvas Laundry Bags with Quick-Release Clips",
+          "Foot-Pedal Operated Lid Opening for Hygienic Hands-Free Soiled Linen Disposal",
+          "4 Smooth-Rolling Silent 100mm Medical Swivel Castor Wheels with Diagonal Foot Brakes"
+        ],
+        "category": "Hospital Logistics & Trolleys"
+      },
+      {
+        "name": "Stainless Steel Mayo Instrument Trolley",
+        "image": null,
+        "features": [
+          "Seamless Heavy-Gauge AISI 304 Surgical Stainless Steel Removable Tray (600mm x 450mm)",
+          "Smooth Screw-Collar or Pneumatic Gas-Spring Height Adjustment from 850mm to 1300mm",
+          "Low-Clearance Cantilever Base Frame Sliding Effortlessly Beneath Operating Tables and Beds",
+          "Corrosion-Proof, Heat-Resistant, and Fully Compatible with High-Temperature Autoclaving",
+          "Dual-Wheel Antistatic Polyurethane Swivel Castors for Silent, Effortless Theatre Repositioning"
+        ],
+        "category": "Theatre & Ward Furniture"
+      },
+      {
+        "name": "Medical Consultation & Doctor Chair",
+        "image": null,
+        "features": [
+          "Ergonomic Contoured Lumbar Support Cushion Promoting Healthy Posture during Long Shifts",
+          "Heavy-Duty Pneumatic Gas-Lift Cylinder Providing Smooth Height Adjustment (450mm - 580mm)",
+          "Smooth 360-Degree Swivel Mechanism Mounted on Reinforced 5-Star Chrome Base Frame",
+          "Breathable High-Grade Medical PU Leather Resistant to Clinical Wipes and Hospital Disinfectants",
+          "Hooded Twin-Wheel Non-Marking Floor Castors Suitable for Vinyl, Tile, and Clinic Floors"
+        ],
+        "category": "Clinic & Doctor Furniture"
+      },
+      {
+        "name": "Ergonomic Swivel Medical Stool Chair",
+        "image": null,
+        "features": [
+          "Round Thick Padded Seat Cushion with High-Density Antimicrobial Foam for Clinical Procedures",
+          "Pneumatic Height Elevation Foot-Ring or Hand-Lever Adjustment from 480mm to 640mm",
+          "Seamless Fluid-Resistant Medical Upholstery Easily Wiped Down Between Patient Visits",
+          "Heavy-Duty Solid Die-Cast Aluminum 5-Point Star Base Engineered for Maximum Stability",
+          "Smooth Silent Nylon Castor Wheels Allowing Hands-Free Gliding Around the Examination Area"
+        ],
+        "category": "Clinic & Doctor Furniture"
+      },
+      {
+        "name": "Foldable Hospital Wheelchair",
+        "image": null,
+        "features": [
+          "Heavy-Duty Cross-Brace Chrome-Plated Carbon Steel Frame Supporting Patient Loads up to 125 kg",
+          "Dual-Action Attendant Handbrakes and Direct User Push-to-Lock Parking Brakes",
+          "Detachable Swing-Away Legrests with Adjustable Heel Loops and Flip-Up Padded Armrests",
+          "Solid Puncture-Proof Polyurethane Front Swivel Castors (8\") and 24\" Rear Spoke Mag Wheels",
+          "Flame-Retardant, Breathable, Waterproof Vinyl Seat Upholstery with Rear Document Pocket"
+        ],
+        "category": "Patient Mobility & Transfer"
+      },
+      {
+        "name": "Mobile LED Examination Light",
+        "image": null,
+        "features": [
+          "High-Intensity Medical Cold White LED Engine Delivering up to 40,000 Lux Intensity at 0.5m",
+          "Flexible 360-Degree Gooseneck Articulated Arm Allowing Pinpoint Optical Beam Orientation",
+          "Continuously Variable Rotary Brightness Dimmer for Customized Clinical Tissue Assessment",
+          "High Color Rendering Index (CRI ≥93) and 4,500K Color Temperature for True Anatomical Contrast",
+          "Weighted 5-Castor Anti-Tip Mobile Base Gliding Effortlessly Between Hospital Examination Rooms"
+        ],
+        "category": "Clinical Examination"
+      },
+      {
+        "name": "Medical Surgical LED Headlight",
+        "image": null,
+        "features": [
+          "Ultra-Bright Medical Cold White LED Illumination Generating up to 35,000 Lux at 400mm",
+          "Continuously Adjustable Optical Spot Diameter (10mm - 90mm) with Fine Mechanical Focus Ring",
+          "Ergonomic Lightweight Padded Crown Headband Eliminating Forehead Pressure and Fatigue",
+          "Dual Hot-Swappable Rechargeable Lithium-Polymer Batteries Supporting 10+ Hours Continuous Operation",
+          "Direct Optical Alignment Compatible with Clip-On Surgical Magnification Loupes (2.5x to 3.5x)"
+        ],
+        "category": "Diagnostic Illumination"
+      },
+      {
+        "name": "Non-Contact Infrared Forehead Thermometer",
+        "image": null,
+        "features": [
+          "Medical-Grade Optical Infrared Sensor Delivering Accurate Temperature Readings in Under 1 Second",
+          "Non-Contact Distance Measurement (3cm - 5cm) Completely Eliminating Cross-Infection Risks",
+          "Tri-Color Backlit LCD Screen (Green: Normal, Yellow: Low Fever, Red: High Temperature Alarm)",
+          "Dual Mode Selection: Human Body Temperature (32.0°C - 42.9°C) and Object / Liquid Surface Mode",
+          "32-Record Internal Memory Recall with Automatic Power-Off Battery Preservation Circuitry"
+        ],
+        "category": "Vital Signs & Screening"
+      },
+      {
+        "name": "Digital Upper Arm Blood Pressure Monitor",
+        "image": null,
+        "features": [
+          "Oscillometric Digital Measurement of Systolic, Diastolic Blood Pressure, and Pulse Rate",
+          "Intelligent Automated Inflation Technology Adjusting Pressure for Gentle, Pain-Free Cuff Fitting",
+          "Irregular Heartbeat (IHB) Arrhythmia Detector and WHO Blood Pressure Color Level Indicator",
+          "Large Backlit High-Contrast Digital LCD Screen with Dual-User 99-Reading Historical Memory",
+          "Supplied with Universal Conical Adult/Large Cuff (22cm - 42cm) and Dual Battery/AC Power Options"
+        ],
+        "category": "Vital Signs & Screening"
+      },
+      {
+        "name": "Fingertip Pulse Oximeter",
+        "image": null,
+        "features": [
+          "Dual-Wavelength Precision Optical Sensor Delivering Instant SpO2 and Pulse Rate (PR) Readings",
+          "Four-Direction Rotatable Bright OLED Display with Real-Time Plethysmogram Waveform and Perfusion Index (PI)",
+          "Advanced Motion-Tolerant Low-Perfusion Algorithm Functioning Reliably During Weak Peripheral Flow",
+          "Configurable High and Low Audio-Visual Warning Alarms for Critical Hypoxia and Abnormal Heart Rates",
+          "Automatic Finger Insertion Detection and Smart Auto-Power-Off After 8 Seconds of Inactivity"
+        ],
+        "category": "Vital Signs & Screening"
+      },
+      {
+        "name": "12-Lead Electrocardiograph (ECG) Machine",
+        "image": null,
+        "features": [
+          "Simultaneous 12-Lead ECG Acquisition with Glasgow Automated Clinical Diagnostic Interpretation",
+          "7-Inch to 10-Inch High-Resolution Color Touchscreen Displaying Real-Time 12-Lead Rhythm Curves",
+          "High-Resolution Thermal Array Printer (110mm / 216mm Roll or Z-Fold) with Multiple Print Layouts",
+          "Multi-Stage Digital Filters for Baseline Drift, AC Mains Interference, and Muscle Tremor Elimination",
+          "Internal Memory Storing Over 1,000 ECG Traces with USB/SD Export and Direct PDF Report Output"
+        ],
+        "category": "Cardiology & Diagnostics"
+      },
+      {
+        "name": "Digital Electroencephalograph (EEG) Machine",
+        "image": null,
+        "features": [
+          "24 to 32 Channel High-Fidelity EEG Signal Amplifier with Ultra-Low Electronic Noise and High CMRR",
+          "Synchronous Video EEG Module with Infrared Night-Vision Camera for Continuous Seizure Monitoring",
+          "Real-Time Digital Frequency Filtering, Spectral Power Topography, and Automated Spike-Wave Detection",
+          "Programmable Multi-Frequency Optical Photic Stimulator with Automated Flash Sequence Testing",
+          "Integrated Medical Cart Workstation with Patient Event Pushbutton and Comprehensive Analysis Software"
+        ],
+        "category": "Neurology & Diagnostics"
+      },
+      {
+        "name": "Multi-Parameter Bedside Patient Monitor",
+        "image": null,
+        "features": [
+          "12.1-Inch High-Resolution Color TFT Screen Displaying up to 8 Synchronous Vital Sign Waveforms",
+          "Core Parameters: 3/5-Lead ECG, SpO2, NIBP, Respiration, Pulse Rate, and Dual Skin Temperature",
+          "Advanced Arrhythmia Analysis, S-T Segment Elevation Monitoring, and Pacemaker Detection System",
+          "120-Hour Tabular and Graphic Trend Review with 360-Degree High-Visibility Alarm Beacon Light",
+          "Internal Rechargeable Lithium Battery Supporting 4+ Hours Continuous Monitoring with Nurse Call Port"
+        ],
+        "category": "Patient Monitoring"
+      },
+      {
+        "name": "Portable Diagnostic Ultrasound System",
+        "image": null,
+        "features": [
+          "Compact Magnesium-Alloy Laptop Chassis with 15-Inch Anti-Glare High-Definition Tilting Display",
+          "Broadband Multi-Frequency Convex and Linear Probe Support for Abdominal, Vascular, and OB/GYN Imaging",
+          "Full Digital Beamforming with Tissue Harmonic Imaging (THI) and Multi-Beam Parallel Processing",
+          "Versatile Scanning Modes: B, 2B, 4B, B/M, and M with 8-Segment Time Gain Compensation (TGC) Sliders",
+          "One-Touch Fast Image Archiving, Comprehensive Clinical Measurement Calculators, and DICOM 3.0"
+        ],
+        "category": "Diagnostic Imaging"
+      },
+      {
+        "name": "Medical Ultrasonic & Compressor Nebuliser Machine",
+        "image": null,
+        "features": [
+          "Heavy-Duty Oil-Free Piston Compressor Engineered for Continuous Clinical Aerosol Drug Inhalation",
+          "Consistent Fine Aerosol Particle Delivery with Mass Median Aerodynamic Diameter (MMAD) <3.0 µm",
+          "High Nebulization Rate (≥0.35 mL/min) Ensuring Rapid and Deep Pulmonary Alveolar Deposition",
+          "Ultra-Low Operating Noise (<55 dBA) Suitable for Pediatric Wards, Adult Clinics, and Home Recovery",
+          "Supplied Complete with Adult Mask, Pediatric Mask, Angled Mouthpiece, and Kink-Resistant Air Tubing"
+        ],
+        "category": "Respiratory Therapy"
+      },
+      {
+        "name": "Medical Oxygen Concentrator (5L - 10L)",
+        "image": null,
+        "features": [
+          "Imported High-Efficiency Lithium Molecular Sieve Beds Delivering Medical Oxygen Purity (93% ± 3%)",
+          "Dual-Flow Meter Output Supporting Simultaneous Continuous Oxygen Therapy for Two Bedside Patients",
+          "Integrated Oxygen Sensing Indicator (OSI) with Real-Time Purity Display and Acoustic Warning Alarms",
+          "Whisper-Quiet Multi-Stage Sound-Dampening Cabinet with Internal High/Low Pressure Safety Relief Valves",
+          "Equipped with Heavy-Duty Swivel Wheels, Integrated Humidifier Bottle Cradle, and Nebulization Port"
+        ],
+        "category": "Respiratory Therapy"
+      },
+      {
+        "name": "Portable Phlegm Suction Machine",
+        "image": null,
+        "features": [
+          "Oil-Free Maintenance-Free Lubrication Piston Pump Preventing Aerosolized Oil-Mist Room Contamination",
+          "Continuously Stepless Negative Pressure Regulation up to -0.075 MPa with Front Needle Dial Gauge",
+          "High Suction Flow Capacity (≥18 L/min) for Rapid Secretion, Sputum, and Phlegm Airway Clearance",
+          "1,000 mL Shatter-Proof Polycarbonate Collection Canister with Mechanical Anti-Overflow Float Valve",
+          "Compact Lightweight Portable Housing with Ergonomic Carrying Handle for Bedside and Ward Transfer"
+        ],
+        "category": "Suction & Airway Clearance"
+      },
+      {
+        "name": "High-Vacuum Mobile Surgical Suction Machine",
+        "image": null,
+        "features": [
+          "High-Output Dual-Piston Oil-Free Vacuum Pump Delivering High Flow (≥40 L/min) and Deep Vacuum (-0.09 MPa)",
+          "Dual 2,500 mL Graduated Autoclavable Polycarbonate Collection Bottles with Dual Overflow Protection",
+          "Hands-Free Waterproof Foot Pedal Switch and Console Dial for Rapid Clinical Suction Control",
+          "Quiet Operation (≤60 dB) with Hydrophobic Microbial Filter Preventing Pathogenic Airborne Dispersion",
+          "Reinforced Hospital Trolley Chassis Mounted on 4 Heavy-Duty Antistatic Swivel Castors with Brakes"
+        ],
+        "category": "Suction & Theatre Systems"
+      },
+      {
+        "name": "Vertical Pressure Steam Sterilizer Autoclave",
+        "image": null,
+        "features": [
+          "Heavy-Gauge Seamless AISI 304 Stainless Steel Vertical Chamber (Capacity: 50L - 75L)",
+          "Microprocessor Automatic Controller with Digital Display of Temperature, Pressure, and Sterilization Time",
+          "Operating Sterilization Temperatures up to 134°C (0.22 MPa Pressure) with Post-Cycle Drying Program",
+          "Multi-Tier Safety Interlocks: Over-Pressure Safety Relief Valve, Handwheel Safety Lock, and Low Water Cutoff",
+          "Supplied with Dual Stainless Steel Wire Mesh Sterilization Baskets for Instruments, Linen, and Glassware"
+        ],
+        "category": "Sterilization & Infection Control"
+      },
+      {
+        "name": "Horizontal Cylindrical Pressure Autoclave",
+        "image": null,
+        "features": [
+          "Large-Capacity Horizontal Jacketed Cylindrical Chamber (150L - 300L) Designed for CSSD and Large Wards",
+          "High-Efficiency Vacuum Pulsating Pre-Exhaust Cycle Ensuring Complete Air Removal and Deep Steam Penetration",
+          "Radial Locking Door with Mechanical and Pressure-Sensitive Dual Safety Interlock Mechanisms",
+          "Automatic Vacuum Post-Drying System Producing Completely Dry Surgical Packs Ready for Sterile Storage",
+          "Integrated Microprocessor PLC Control System with Built-in Thermal Printer Recording Sterilization Batches"
+        ],
+        "category": "Sterilization & Infection Control"
+      }
+    ],
+    "keySpecs": [
+      "Electric and manual multi-function hospital ward beds with hydraulic patient transport stretchers",
+      "Grade 304 stainless steel mayo stands, dirty & clean linen collection trolleys and modular crash carts",
+      "12-lead ECG machines, digital EEG workstations, bedside multi-parameter monitors and portable ultrasound",
+      "Medical oxygen concentrators, nebulisers, high-vacuum suction units, and vertical & horizontal steam autoclaves"
     ]
   }
 ]

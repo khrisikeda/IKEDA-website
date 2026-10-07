@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
     products = products.filter((p) => {
       const nameMatch = p.name.toLowerCase().includes(q);
       const descMatch = p.description.toLowerCase().includes(q);
-      const equipMatch = (p.equipmentHighlights || []).some((item) => item.toLowerCase().includes(q));
+      const equipMatch = (p.equipmentHighlights || []).some((item) => { const str = typeof item === 'object' && item !== null ? (item.name || '') : String(item); return str.toLowerCase().includes(q); });
       return nameMatch || descMatch || equipMatch;
     });
   }

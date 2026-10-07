@@ -414,23 +414,70 @@ function initClarityVisualizer() {
 }
 
 /* ==========================================================================
-   5. Scroll-Triggered Reveal Animations Engine
+   5. Scroll-Triggered Reveal Animations Engine (Smooth Sequential Cascade)
    ========================================================================== */
 function initScrollAnimations() {
-  const revealElements = document.querySelectorAll('.reveal-on-scroll');
-  if (!revealElements.length) return;
+  const heroSection = document.querySelector('.hero');
+  const towerSection = document.querySelector('#tower-explorer');
+
+  // 1. Trigger hero elements on load and smoothly cascade into the Tower Explorer section
+  if (heroSection) {
+    const triggerHeroAndSequence = () => {
+      heroSection.classList.add('in-view');
+      const heroStaggers = heroSection.querySelectorAll('.pork-stagger-parent, .pork-fade-up, .word-mask-inner');
+      heroStaggers.forEach((el) => el.classList.add('in-view'));
+
+      // Seamlessly cascade into the Tower Explorer section without waiting for scroll
+      if (towerSection) {
+        setTimeout(() => {
+          towerSection.classList.add('in-view');
+          const towerItems = towerSection.querySelectorAll('.pork-fade-up, .word-mask-inner');
+          towerItems.forEach((el, index) => {
+            if (!el.classList.contains('in-view')) {
+              el.style.transitionDelay = `${index * 0.14}s`;
+              el.classList.add('in-view');
+            }
+          });
+        }, 550);
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      setTimeout(triggerHeroAndSequence, 50);
+    } else {
+      window.addEventListener('load', () => setTimeout(triggerHeroAndSequence, 50));
+    }
+  }
+
+  // 2. IntersectionObserver for other scroll-triggered sections (instant smooth trigger)
+  const targets = document.querySelectorAll(
+    '.pork-fade-up, .pork-stagger-parent, .cards-stagger-parent, .reveal-on-scroll'
+  );
+  if (!targets.length) return;
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        observer.unobserve(entry.target);
+        const el = entry.target;
+        el.classList.add('in-view');
+        el.classList.add('revealed');
+
+        // Trigger any nested children that have pork-fade-up or word-mask-inner
+        const childStaggers = el.querySelectorAll('.pork-fade-up, .word-mask-inner');
+        childStaggers.forEach((c, idx) => {
+          if (!c.classList.contains('in-view')) {
+            c.style.transitionDelay = `${idx * 0.08}s`;
+            c.classList.add('in-view');
+          }
+        });
+
+        observer.unobserve(el);
       }
     });
   }, {
-    threshold: 0.12,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0.02,
+    rootMargin: '0px 0px 80px 0px'
   });
 
-  revealElements.forEach(el => observer.observe(el));
+  targets.forEach((el) => observer.observe(el));
 }

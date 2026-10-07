@@ -7,7 +7,7 @@
   <meta name="description" content="Get in touch with IKEDA ENDOSCOPY AFRICA Ltd for hospital equipment inquiries, laparoscopy surgical suite quotes, technical servicing, and tender consultations in Kigali, Rwanda.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -17,15 +17,59 @@
     <div class="wrap">
       <div class="brand-wrapper">
         <a href="/" class="brand">
-          IKEDA <span style="font-weight:400; color:#94a3b8;">|</span> ENDOSCOPY
-          <span class="brand-badge">AFRICA Ltd</span>
+          IKEDA ENDOSCOPY AFRICA LTD
         </a>
       </div>
 
       <nav>
         <ul class="main-nav" id="main-nav">
           <li><a href="/">Home</a></li>
-          <li><a href="/products">Products &amp; Solutions</a></li>
+          <li class="nav-item-dropdown">
+            <a href="/products" class="dropdown-trigger">
+              <span>Products</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu" aria-label="Departments">
+              <a href="/products?group=General+Hospital+Materials" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">General Hospital Materials</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Operating+Theatre" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Operating Theatre</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Critical+Care+%26+Emergency" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Critical Care &amp; Emergency</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Maternal+%26+Infant" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Maternal &amp; Infant</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Diagnostics+%26+Specialty" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Diagnostic &amp; Specialty</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Laboratory" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Laboratory</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </li>
           <li><a href="/about">About Us</a></li>
           <li><a href="/manufacturers">Manufacturers</a></li>
           <li><a href="/contact" aria-current="page">Contact</a></li>
@@ -40,20 +84,27 @@
 
   <!-- DRE Medical-Style Banner -->
   <section class="hero" style="padding: 4.5rem 0 3.5rem;">
-    <div class="wrap">
-      <span class="eyebrow eyebrow-dark">Direct Consultation &amp; Support</span>
-      <h1>Request a Quote &amp; Equipment Consultation</h1>
-      <p class="lede" style="max-width: 75ch; margin-bottom: 1.5rem;">
+    <div class="wrap pork-stagger-parent">
+      <span class="eyebrow eyebrow-dark pork-fade-up">Direct Consultation &amp; Support</span>
+      <h1 class="pork-fade-up">
+        <span class="word-mask-wrap"><span class="word-mask-inner hero-highlight" data-word-idx="1">Request</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner hero-highlight" data-word-idx="2">a</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner hero-highlight" data-word-idx="3">Quote</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="4">&amp;</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="5">Equipment</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="6">Consultation</span></span>
+      </h1>
+      <p class="lede pork-fade-up" style="max-width: 75ch; margin-bottom: 1.5rem;">
         Connect directly with our biomedical sales and service engineering team in Kigali. We provide full tender documentation, technical specs, facility site assessment, and warranty service.
       </p>
     </div>
   </section>
 
   <!-- Contact Form & Sidebar Section -->
-  <section>
-    <div class="wrap contact-grid">
+  <section class="reveal-on-scroll pork-fade-up">
+    <div class="wrap contact-grid pork-stagger-parent">
       <!-- Contact Form -->
-      <div class="contact-card">
+      <div class="contact-card pork-fade-up">
         <span class="eyebrow">RFQ Submission</span>
         <h2>Send an Inquiry or Request Quotation</h2>
         <p style="margin-bottom: 2rem;">
@@ -73,13 +124,16 @@
                 <option value="Laparoscopy &amp; Surgery">Laparoscopy &amp; Minimally Invasive Surgery</option>
                 <option value="Urology &amp; Endourology">Urology &amp; Endourology</option>
                 <option value="Intensive Care Unit (ICU)">Intensive Care Unit (ICU)</option>
-                <option value="Neonatology &amp; Newborn Care">Neonatology &amp; Newborn Care</option>
+                <option value="Neonatal &amp; Pediatric Care">Neonatal &amp; Pediatric Care</option>
                 <option value="Maternity &amp; Obstetrics">Maternity &amp; Obstetrics</option>
                 <option value="Radiology &amp; Imaging">Radiology &amp; Imaging</option>
                 <option value="Gastroenterology">Gastroenterology &amp; GI Endoscopy</option>
                 <option value="ENT Equipment">ENT Examination &amp; Surgery</option>
                 <option value="Emergency &amp; Casualty">Emergency &amp; Casualty Care</option>
                 <option value="Orthopedics">Orthopedics &amp; Power Tools</option>
+                <option value="Operating Theatre">Operating Theatre &amp; Surgical Infrastructure</option>
+                <option value="Laboratory">Clinical Laboratory &amp; Diagnostics</option>
+                <option value="General Hospital Materials">General Hospital Materials &amp; Ward Infrastructure</option>
                 <option value="Service &amp; Maintenance">Biomedical Servicing &amp; Maintenance</option>
               </select>
             </div>
@@ -106,7 +160,8 @@
               <span>✉️</span> Submit Request Quote
             </button>
             <a href="https://wa.me/250795360359?text=Hello%20IKEDA%20ENDOSCOPY%20AFRICA%20Ltd,%20I%20would%20like%20to%20request%20information." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-              <span>💬</span> Message via WhatsApp
+              <img src="/images/whatsapp-icon.svg" alt="" class="wa-btn-icon" width="20" height="20" aria-hidden="true" />
+              <span>Message via WhatsApp</span>
             </a>
           </div>
 
@@ -115,8 +170,8 @@
       </div>
 
       <!-- Contact Info Sidebar -->
-      <div>
-        <div class="contact-sidebar-card">
+      <div class="pork-fade-up">
+        <div class="contact-sidebar-card pork-fade-up">
           <span class="eyebrow eyebrow-dark">Head Office</span>
           <h3>Reach Us Directly</h3>
           <p>We are situated in Kigali, providing responsive clinical and biomedical support across Rwanda and East Africa.</p>
@@ -163,7 +218,7 @@
         </div>
 
         <!-- Embedded Map Container -->
-        <div class="map-container" id="map-embed">
+        <div class="map-container pork-fade-up" id="map-embed">
           <span style="display:flex; height:100%; align-items:center; justify-content:center; color:var(--ink-muted);">Loading map location&hellip;</span>
         </div>
       </div>
@@ -175,7 +230,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <h3 style="font-size:1.2rem;">IKEDA <span style="color:#94a3b8;">|</span> ENDOSCOPY AFRICA Ltd</h3>
+          <h3 style="font-size:1.2rem;">IKEDA ENDOSCOPY AFRICA Ltd</h3>
           <p style="color:#94a3b8; max-width:38ch; font-size:0.92rem;">
             Specialists in multi-specialty medical instrumentation, 4K endoscopic laparoscopy systems, and turnkey hospital departmental equipment across Africa.
           </p>
@@ -196,7 +251,7 @@
         <div>
           <h3>Department Divisions</h3>
           <ul class="footer-links">
-            <li><a href="/products?group=Endoscopy+%26+Surgery">Endoscopy &amp; Surgery</a></li>
+            <li><a href="/products?group=Operating+Theatre">Operating Theatre</a></li>
             <li><a href="/products?group=Critical+Care+%26+Emergency">Critical Care &amp; ICU</a></li>
             <li><a href="/products?group=Maternal+%26+Infant">Maternal &amp; Neonatology</a></li>
             <li><a href="/products?group=Diagnostics+%26+Specialty">Diagnostics &amp; Imaging</a></li>

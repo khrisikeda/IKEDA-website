@@ -7,7 +7,7 @@
   <meta name="description" content="Explore 16 medical equipment departments by IKEDA ENDOSCOPY AFRICA Ltd, including 4K laparoscopy video towers, urology, ICU ventilators, neonatal incubators, radiology C-arms, and surgical instruments.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -17,15 +17,59 @@
     <div class="wrap">
       <div class="brand-wrapper">
         <a href="/" class="brand">
-          IKEDA <span style="font-weight:400; color:#94a3b8;">|</span> ENDOSCOPY
-          <span class="brand-badge">AFRICA Ltd</span>
+          IKEDA ENDOSCOPY AFRICA LTD
         </a>
       </div>
 
       <nav>
         <ul class="main-nav" id="main-nav">
           <li><a href="/">Home</a></li>
-          <li><a href="/products" aria-current="page">Products &amp; Solutions</a></li>
+          <li class="nav-item-dropdown">
+            <a href="/products" class="dropdown-trigger" aria-current="page">
+              <span>Products</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu" aria-label="Departments">
+              <a href="/products?group=General+Hospital+Materials" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">General Hospital Materials</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Operating+Theatre" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Operating Theatre</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Critical+Care+%26+Emergency" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Critical Care &amp; Emergency</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Maternal+%26+Infant" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Maternal &amp; Infant</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Diagnostics+%26+Specialty" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Diagnostic &amp; Specialty</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Laboratory" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Laboratory</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </li>
           <li><a href="/about">About Us</a></li>
           <li><a href="/manufacturers">Manufacturers</a></li>
           <li><a href="/contact">Contact</a></li>
@@ -40,16 +84,24 @@
 
   <!-- DRE Medical-Style Banner -->
   <section class="hero" style="padding: 4.5rem 0 3.5rem;">
-    <div class="wrap">
-      <span class="eyebrow eyebrow-dark">Equipment Catalog &amp; Hospital Systems</span>
-      <h1>Sixteen Hospital Departments. One Trusted Partner.</h1>
-      <p class="lede" style="max-width: 75ch; margin-bottom: 1.5rem;">
+    <div class="wrap pork-stagger-parent">
+      <span class="eyebrow eyebrow-dark pork-fade-up">Equipment Catalog &amp; Hospital Systems</span>
+      <h1 class="pork-fade-up">
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="1">Sixteen</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="2">Hospital</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="3">Departments.</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner hero-highlight" data-word-idx="4">One</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner hero-highlight" data-word-idx="5">Trusted</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner hero-highlight" data-word-idx="6">Partner.</span></span>
+      </h1>
+      <p class="lede pork-fade-up" style="max-width: 75ch; margin-bottom: 1.5rem;">
         From advanced 4K laparoscopic video towers for surgical theaters to neonatal incubators and ICU mechanical ventilators, discover our comprehensive hospital technology range backed by certified engineering.
       </p>
-      <div class="hero-cta">
+      <div class="hero-cta pork-fade-up">
         <a href="/contact" class="btn btn-cyan">Request Quote</a>
         <a href="https://wa.me/250795360359?text=Hello%20IKEDA%20ENDOSCOPY%20AFRICA%20Ltd,%20I%20would%20like%20a%20product%20quote." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-          <span>💬</span> WhatsApp Direct
+          <img src="/images/whatsapp-icon.svg" alt="" class="wa-btn-icon" width="20" height="20" aria-hidden="true" />
+          <span>WhatsApp Direct</span>
         </a>
       </div>
     </div>
@@ -57,15 +109,17 @@
 
   <!-- Interactive Search & Filtering Catalog -->
   <section>
-    <div class="wrap">
+    <div class="wrap pork-stagger-parent">
       <!-- Filter Bar -->
-      <div class="filter-bar">
+      <div class="filter-bar pork-fade-up">
         <div class="filter-pills">
-          <button class="filter-btn active" data-group="All">All Departments (16)</button>
-          <button class="filter-btn" data-group="Endoscopy & Surgery">Endoscopy &amp; Surgery</button>
+          <button class="filter-btn active" data-group="All">All Departments (19)</button>
+          <button class="filter-btn" data-group="Operating Theatre">Operating Theatre</button>
           <button class="filter-btn" data-group="Critical Care & Emergency">Critical Care &amp; Emergency</button>
           <button class="filter-btn" data-group="Maternal & Infant">Maternal &amp; Infant</button>
           <button class="filter-btn" data-group="Diagnostics & Specialty">Diagnostics &amp; Specialty</button>
+          <button class="filter-btn" data-group="Laboratory">Laboratory</button>
+          <button class="filter-btn" data-group="General Hospital Materials">General Hospital Materials</button>
         </div>
 
         <div class="search-box">
@@ -75,21 +129,21 @@
       </div>
 
       <!-- Dynamic Product Category Grid -->
-      <div id="category-grid" class="category-grid" aria-live="polite">
+      <div id="category-grid" class="category-grid cards-stagger-parent" aria-live="polite">
         <p style="padding:2rem; text-align:center;">Loading medical equipment catalog&hellip;</p>
       </div>
     </div>
   </section>
 
   <!-- RFQ Call to Action -->
-  <section class="section-alt">
-    <div class="wrap center" style="text-align:center; max-width: 720px; margin: 0 auto;">
-      <span class="eyebrow">Custom Procurements &amp; Tenders</span>
-      <h2>Need a Specific Configuration or Technical Specification?</h2>
-      <p style="margin: 0 auto 2rem;">
+  <section class="section-alt reveal-on-scroll pork-fade-up">
+    <div class="wrap center pork-stagger-parent" style="text-align:center; max-width: 720px; margin: 0 auto;">
+      <span class="eyebrow pork-fade-up">Custom Procurements &amp; Tenders</span>
+      <h2 class="pork-fade-up">Need a Specific Configuration or Technical Specification?</h2>
+      <p class="pork-fade-up" style="margin: 0 auto 2rem;">
         Our biomedical consultants work directly with clinical hospital directors, theatre managers, and procurement boards to deliver custom-configured surgical suites and complete ward installations.
       </p>
-      <div class="hero-cta" style="justify-content:center;">
+      <div class="hero-cta pork-fade-up" style="justify-content:center;">
         <a href="/contact" class="btn btn-cyan">Request Quote &amp; Specification Sheet</a>
         <a href="tel:+250795360359" class="btn btn-outline">Call +250 795 360 359</a>
       </div>
@@ -101,7 +155,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <h3 style="font-size:1.2rem;">IKEDA <span style="color:#94a3b8;">|</span> ENDOSCOPY AFRICA Ltd</h3>
+          <h3 style="font-size:1.2rem;">IKEDA ENDOSCOPY AFRICA Ltd</h3>
           <p style="color:#94a3b8; max-width:38ch; font-size:0.92rem;">
             Specialists in multi-specialty medical instrumentation, 4K endoscopic laparoscopy systems, and turnkey hospital departmental equipment across Africa.
           </p>
@@ -122,7 +176,7 @@
         <div>
           <h3>Department Divisions</h3>
           <ul class="footer-links">
-            <li><a href="/products?group=Endoscopy+%26+Surgery">Endoscopy &amp; Surgery</a></li>
+            <li><a href="/products?group=Operating+Theatre">Operating Theatre</a></li>
             <li><a href="/products?group=Critical+Care+%26+Emergency">Critical Care &amp; ICU</a></li>
             <li><a href="/products?group=Maternal+%26+Infant">Maternal &amp; Neonatology</a></li>
             <li><a href="/products?group=Diagnostics+%26+Specialty">Diagnostics &amp; Imaging</a></li>

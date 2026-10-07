@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Check URL query parameters for pre-selected department
   const urlParams = new URLSearchParams(window.location.search);
   const requestedDept = urlParams.get('dept');
+  const requestedProduct = urlParams.get('product');
+  const messageArea = document.getElementById('message');
+  if (messageArea && requestedProduct && !messageArea.value) {
+    messageArea.value = `Hello, I would like to request an official quotation, specification sheet, and delivery timeframe for ${requestedProduct}.`;
+  }
   const deptSelect = document.getElementById('department');
   if (deptSelect && requestedDept) {
     // Add or select the option

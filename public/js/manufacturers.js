@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     const manufacturers = await fetchJSON('/api/manufacturers');
     grid.innerHTML = manufacturers.map(renderCard).join('');
+    if (typeof triggerGridAnimations === 'function') {
+      triggerGridAnimations(grid);
+    }
   } catch (err) {
     grid.innerHTML = '<p class="err-msg">Manufacturer directory could not be loaded at this time.</p>';
     console.error(err);
@@ -30,7 +33,7 @@ function renderCard(m) {
     : '';
 
   return `
-    <article class="manufacturer-card${featuredClass}">
+    <article class="manufacturer-card pork-fade-up${featuredClass}">
       <div style="display:flex; justify-content:space-between; align-items:center;">
         ${tierBadge}
         ${countryBadge}

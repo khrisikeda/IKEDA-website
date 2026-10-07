@@ -7,7 +7,7 @@
   <meta name="description" content="Meet the global medical device manufacturers and OEM partners behind IKEDA ENDOSCOPY AFRICA Ltd's surgical and multi-specialty equipment catalog.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -17,15 +17,59 @@
     <div class="wrap">
       <div class="brand-wrapper">
         <a href="/" class="brand">
-          IKEDA <span style="font-weight:400; color:#94a3b8;">|</span> ENDOSCOPY
-          <span class="brand-badge">AFRICA Ltd</span>
+          IKEDA ENDOSCOPY AFRICA LTD
         </a>
       </div>
 
       <nav>
         <ul class="main-nav" id="main-nav">
           <li><a href="/">Home</a></li>
-          <li><a href="/products">Products &amp; Solutions</a></li>
+          <li class="nav-item-dropdown">
+            <a href="/products" class="dropdown-trigger">
+              <span>Products</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu" aria-label="Departments">
+              <a href="/products?group=General+Hospital+Materials" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">General Hospital Materials</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Operating+Theatre" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Operating Theatre</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Critical+Care+%26+Emergency" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Critical Care &amp; Emergency</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Maternal+%26+Infant" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Maternal &amp; Infant</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Diagnostics+%26+Specialty" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Diagnostic &amp; Specialty</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Laboratory" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Laboratory</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </li>
           <li><a href="/about">About Us</a></li>
           <li><a href="/manufacturers" aria-current="page">Manufacturers</a></li>
           <li><a href="/contact">Contact</a></li>
@@ -40,13 +84,19 @@
 
   <!-- DRE Medical-Style Banner -->
   <section class="hero" style="padding: 4.5rem 0 3.5rem;">
-    <div class="wrap">
-      <span class="eyebrow eyebrow-dark">Global Standards &amp; Certifications</span>
-      <h1>Trusted Manufacturers Behind Every Device</h1>
-      <p class="lede" style="max-width: 75ch; margin-bottom: 1.5rem;">
+    <div class="wrap pork-stagger-parent">
+      <span class="eyebrow eyebrow-dark pork-fade-up">Global Standards &amp; Certifications</span>
+      <h1 class="pork-fade-up">
+        <span class="word-mask-wrap"><span class="word-mask-inner hero-highlight" data-word-idx="1">Trusted</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner hero-highlight" data-word-idx="2">Manufacturers</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="3">Behind</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="4">Every</span></span>
+        <span class="word-mask-wrap"><span class="word-mask-inner" data-word-idx="5">Device.</span></span>
+      </h1>
+      <p class="lede pork-fade-up" style="max-width: 75ch; margin-bottom: 1.5rem;">
         We represent leading ISO13485 and CE certified medical technology manufacturers worldwide. Our relationships guarantee direct OEM pricing, authentic manufacturer spare parts, and direct factory technical engineering backing.
       </p>
-      <div class="hero-cta">
+      <div class="hero-cta pork-fade-up">
         <a href="/contact" class="btn btn-cyan">Request Tender Documentation</a>
         <a href="/products" class="btn btn-ghost">Explore Products</a>
       </div>
@@ -55,28 +105,28 @@
 
   <!-- Manufacturers Grid -->
   <section>
-    <div class="wrap">
-      <div class="section-head">
+    <div class="wrap pork-stagger-parent">
+      <div class="section-head pork-fade-up">
         <span class="eyebrow">Authorized Distribution &amp; Supply</span>
         <h2>Our Manufacturing Partners</h2>
         <p>Explore our strategic OEM and specialty device partners across surgery, critical care, endoscopy, and diagnostics.</p>
       </div>
 
-      <div id="manufacturer-grid" class="manufacturer-grid" aria-live="polite">
+      <div id="manufacturer-grid" class="manufacturer-grid cards-stagger-parent" aria-live="polite">
         <p style="padding:2rem; text-align:center;">Loading authorized manufacturers&hellip;</p>
       </div>
     </div>
   </section>
 
   <!-- Verification Note -->
-  <section class="section-alt">
-    <div class="wrap center" style="text-align:center; max-width:760px; margin: 0 auto;">
-      <span class="eyebrow">Quality &amp; Compliance Guarantee</span>
-      <h2>Strict Hospital Standards Compliance</h2>
-      <p style="margin: 0 auto 1.8rem;">
+  <section class="section-alt reveal-on-scroll pork-fade-up">
+    <div class="wrap center pork-stagger-parent" style="text-align:center; max-width:760px; margin: 0 auto;">
+      <span class="eyebrow pork-fade-up">Quality &amp; Compliance Guarantee</span>
+      <h2 class="pork-fade-up">Strict Hospital Standards Compliance</h2>
+      <p class="pork-fade-up" style="margin: 0 auto 1.8rem;">
         Every device imported and distributed by IKEDA ENDOSCOPY AFRICA Ltd complies with international regulatory standards including CE medical directives, ISO 13485 quality systems, and regional medical devices regulatory oversight.
       </p>
-      <div class="hero-cta" style="justify-content:center;">
+      <div class="hero-cta pork-fade-up" style="justify-content:center;">
         <a href="/contact" class="btn btn-cyan">Request Quote &amp; Specification</a>
         <a href="/products" class="btn btn-outline">Explore Product Catalog</a>
       </div>
@@ -88,7 +138,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <h3 style="font-size:1.2rem;">IKEDA <span style="color:#94a3b8;">|</span> ENDOSCOPY AFRICA Ltd</h3>
+          <h3 style="font-size:1.2rem;">IKEDA ENDOSCOPY AFRICA Ltd</h3>
           <p style="color:#94a3b8; max-width:38ch; font-size:0.92rem;">
             Specialists in multi-specialty medical instrumentation, 4K endoscopic laparoscopy systems, and turnkey hospital departmental equipment across Africa.
           </p>
@@ -109,7 +159,7 @@
         <div>
           <h3>Department Divisions</h3>
           <ul class="footer-links">
-            <li><a href="/products?group=Endoscopy+%26+Surgery">Endoscopy &amp; Surgery</a></li>
+            <li><a href="/products?group=Operating+Theatre">Operating Theatre</a></li>
             <li><a href="/products?group=Critical+Care+%26+Emergency">Critical Care &amp; ICU</a></li>
             <li><a href="/products?group=Maternal+%26+Infant">Maternal &amp; Neonatology</a></li>
             <li><a href="/products?group=Diagnostics+%26+Specialty">Diagnostics &amp; Imaging</a></li>
