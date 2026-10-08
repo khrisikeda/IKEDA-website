@@ -2435,6 +2435,13 @@ section {
   margin-bottom: 3.5rem;
 }
 
+.footer-grid.footer-grid-2col,
+.footer-grid:has(> div:nth-child(2):last-child) {
+  grid-template-columns: 1.6fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
 .footer-grid h3 {
   color: #ffffff;
   font-size: 1.15rem;
