@@ -75,9 +75,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    const btnText = submitBtn ? (submitBtn.querySelector('.btn-text') || submitBtn.querySelector('span')) : null;
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Submitting inquiry...';
+      if (btnText) {
+        btnText.textContent = 'Sending Quotation...';
+      } else {
+        submitBtn.textContent = 'Sending Quotation...';
+      }
     }
 
     const payload = {
@@ -111,7 +116,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit Inquiry';
+        if (btnText) {
+          btnText.textContent = 'Send Quotation';
+        } else {
+          submitBtn.textContent = 'Send Quotation';
+        }
       }
     }
   });
