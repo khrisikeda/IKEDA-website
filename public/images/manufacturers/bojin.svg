@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Bojin Official Surgical Instrument Emblem -->
+  <g transform="translate(12, 10)">
+    <rect x="2" y="2" width="46" height="46" rx="8" fill="#005baa"/>
+    <path d="M25 8 L39 25 L25 42 L11 25 Z" fill="#ffffff"/>
+    <path d="M25 15 L33 25 L25 35 L17 25 Z" fill="#005baa"/>
+    <circle cx="25" cy="25" r="4" fill="#38bdf8"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="27" fill="#005baa" letter-spacing="0.06em">BOJIN</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.8" fill="#0284c7" letter-spacing="0.2em">SURGICAL POWER TOOLS</text>
+</svg>

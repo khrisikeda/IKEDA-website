@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Degguan Official Surgical Light Emblem -->
+  <g transform="translate(12, 10)">
+    <circle cx="25" cy="25" r="23" fill="#1e3a8a"/>
+    <circle cx="25" cy="25" r="10" fill="#f59e0b"/>
+    <circle cx="25" cy="25" r="4.5" fill="#ffffff"/>
+    <circle cx="25" cy="10" r="2.5" fill="#fef08a"/>
+    <circle cx="40" cy="25" r="2.5" fill="#fef08a"/>
+    <circle cx="25" cy="40" r="2.5" fill="#fef08a"/>
+    <circle cx="10" cy="25" r="2.5" fill="#fef08a"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="24" fill="#1e3a8a" letter-spacing="0.04em">DEGGUAN</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.8" fill="#d97706" letter-spacing="0.2em">SURGICAL LIGHTING</text>
+</svg>

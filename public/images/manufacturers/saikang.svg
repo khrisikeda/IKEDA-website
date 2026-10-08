@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Saikang Official Hospital Furniture Emblem -->
+  <g transform="translate(12, 10)">
+    <rect x="2" y="2" width="46" height="46" rx="10" fill="#009e49"/>
+    <!-- Medical Bed & Care Silhouette -->
+    <path d="M10 32 L10 19 M10 26 L40 26 M40 19 L40 32" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="18" cy="17" r="4" fill="#ffffff"/>
+    <path d="M13 26 L23 17 L36 26" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="24" fill="#005bac" letter-spacing="0.05em">SAIKANG</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.8" fill="#009e49" letter-spacing="0.22em">ICU &amp; HOSPITAL BEDS</text>
+</svg>

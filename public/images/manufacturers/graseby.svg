@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="100%" height="100%">
+  <defs>
+    <style>
+      .smiths-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 13px; font-weight: 700; fill: #00529b; letter-spacing: -0.2px; }
+      .smiths-med { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 13px; font-weight: 400; fill: #00a3e0; letter-spacing: -0.2px; }
+      .graseby-brand { font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 32px; font-weight: 800; fill: #002d62; letter-spacing: -0.5px; }
+      .graseby-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 8px; font-weight: 700; fill: #64748b; letter-spacing: 1.5px; }
+    </style>
+  </defs>
+  <!-- Smiths Medical Corporate Arcs -->
+  <g transform="translate(18, 12)">
+    <path d="M0,12 C4,4 14,0 22,2 C16,4 8,8 6,14 Z" fill="#00529b"/>
+    <path d="M5,16 C10,6 22,2 30,5 C24,8 14,12 11,18 Z" fill="#00a3e0"/>
+    <text x="36" y="15" class="smiths-text">smiths <tspan class="smiths-med">medical</tspan></text>
+  </g>
+  <!-- Graseby Wordmark -->
+  <g transform="translate(18, 48)">
+    <text x="0" y="0" class="graseby-brand">Graseby<tspan font-size="16" dy="-14" font-weight="600" fill="#00a3e0">®</tspan></text>
+    <text x="1" y="14" class="graseby-sub">SYRINGE &amp; INFUSION SYSTEMS</text>
+  </g>
+</svg>

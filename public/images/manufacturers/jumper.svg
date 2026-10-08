@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Jumper Official Medical Emblem -->
+  <g transform="translate(12, 10)">
+    <circle cx="25" cy="25" r="23" fill="#e4007f"/>
+    <!-- Heart & Baby Care Silhouette -->
+    <path d="M25 15 C20 10, 12 16, 17 25 L25 35 L33 25 C38 16, 30 10, 25 15 Z" fill="#ffffff"/>
+    <circle cx="25" cy="21" r="3.5" fill="#e4007f"/>
+  </g>
+  <!-- Wordmark in official Jumper styling -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="26" fill="#004ea2" letter-spacing="0.02em">Jumper</text>
+  <text x="178" y="24" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#004ea2">®</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.8" fill="#e4007f" letter-spacing="0.22em">MATERNAL &amp; MEDICAL</text>
+</svg>

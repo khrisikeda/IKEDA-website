@@ -1,56 +1,194 @@
 [
   {
-    "name": "IKEDA Medical",
-    "tier": "Flagship OEM Partner",
-    "categories": ["Laparoscopy", "Endoscopy", "VATS", "ENT", "Gynecology"],
-    "description": "Global manufacturer of medical endoscopy video systems, 4K UHD camera control units, cold LED illumination, and surgical monitors.",
-    "website": "https://www.ikeda-endoscopy.com",
-    "country": "International / OEM",
+    "id": "ikeda",
+    "name": "IKEDA",
+    "fullName": "IKEDA Medical",
+    "logo": "/images/manufacturers/ikeda.png",
+    "specialty": "4K Endoscopy & Laparoscopy Video Towers",
     "featured": true
   },
   {
-    "name": "Mindray Medical",
-    "tier": "Critical Care & Diagnostic Partner",
-    "categories": ["Intensive Care", "Radiology", "Emergency", "Maternity"],
-    "description": "Leading global developer of patient monitoring systems, life-support ventilators, portable ultrasound, and defibrillators.",
-    "website": "https://www.mindray.com",
-    "country": "Global",
+    "id": "yongfa",
+    "name": "Yongfa",
+    "fullName": "Jiangsu Yongfa Medical",
+    "logo": "/images/manufacturers/yongfa.png",
+    "specialty": "Operating Theatre Tables & Hospital Furniture",
+    "featured": false
+  },
+  {
+    "id": "coxo",
+    "name": "COXO",
+    "fullName": "COXO Medical Instrument",
+    "logo": "/images/manufacturers/coxo.png",
+    "specialty": "Dental Handpieces & Surgical Rotary Motors",
+    "featured": false
+  },
+  {
+    "id": "biolight",
+    "name": "Biolight",
+    "fullName": "Biolight Meditech",
+    "logo": "/images/manufacturers/biolight.png",
+    "specialty": "Patient Monitoring Systems & Hemodialysis",
     "featured": true
   },
   {
-    "name": "Comen Medical",
-    "tier": "Maternal & Neonatal Specialist",
-    "categories": ["Neonatology", "Maternity", "Pediatrics", "Intensive Care"],
-    "description": "Specialized electro-medical systems focusing on infant incubators, phototherapy units, infant radiant warmers, and fetal monitors.",
-    "website": "https://en.comen.com",
-    "country": "Global",
+    "id": "jumper",
+    "name": "Jumper Medical",
+    "fullName": "Jumper Medical Equipment",
+    "logo": "/images/manufacturers/jumper.png",
+    "specialty": "Fetal Monitoring, Dopplers & Maternal Care",
     "featured": false
   },
   {
-    "name": "SonoScape Medical",
-    "tier": "Endoscopy & Ultrasound Partner",
-    "categories": ["Gastroenterology", "Radiology", "Urology"],
-    "description": "High-performance diagnostic ultrasound systems and flexible video endoscopy workstations for GI and pulmonology.",
-    "website": "https://www.sonoscape.com",
-    "country": "Global",
+    "id": "bojin",
+    "name": "Bojin Medical",
+    "fullName": "Bojin Medical Instrument",
+    "logo": "/images/manufacturers/bojin.png",
+    "specialty": "Orthopedic Power Tools & Surgical Saws",
     "featured": false
   },
   {
-    "name": "BOWA Electronic",
-    "tier": "Surgical Energy Partner",
-    "categories": ["Laparoscopy", "General Surgery", "Gynecology", "Urology"],
-    "description": "High-frequency electrosurgery and ultrasonic energy systems engineered for precision tissue coagulation and dissection.",
-    "website": "https://www.bowa-medical.com",
-    "country": "Germany",
+    "id": "tianrun",
+    "name": "Tianrun",
+    "fullName": "Anhui Tianrun Medical",
+    "logo": "/images/manufacturers/tianrun.svg",
+    "specialty": "Sterilization Packaging & CSSD Consumables",
     "featured": false
   },
   {
-    "name": "Optomic Medical",
-    "tier": "Surgical Optics & ENT Partner",
-    "categories": ["ENT", "Ophthalmology", "Gynecology"],
-    "description": "Manufacturer of advanced surgical operating microscopes, video colposcopes, and specialized diagnostic workstations.",
-    "website": "https://www.optomic.com",
-    "country": "Spain",
+    "id": "dengguan",
+    "name": "Dengguan",
+    "fullName": "Jiangsu Dengguan Medical",
+    "logo": "/images/manufacturers/dengguan.png",
+    "specialty": "Medical Autoclaves & Steam Sterilizers",
+    "featured": false
+  },
+  {
+    "id": "siger",
+    "name": "Siger",
+    "fullName": "Zhuhai Siger Medical",
+    "logo": "/images/manufacturers/siger.png",
+    "specialty": "Dental Treatment Centers & Operatory Units",
+    "featured": false
+  },
+  {
+    "id": "seeshen",
+    "name": "Seeshen",
+    "fullName": "Seesheen Medical Technology",
+    "logo": "/images/manufacturers/seeshen.png",
+    "specialty": "Flexible Video Endoscopes & Bronchoscopy",
+    "featured": false
+  },
+  {
+    "id": "saikang",
+    "name": "Saikang",
+    "fullName": "Saikang Medical Equipment",
+    "logo": "/images/manufacturers/saikang.png",
+    "specialty": "ICU Electric Hospital Beds & Patient Care",
+    "featured": false
+  },
+  {
+    "id": "syseye",
+    "name": "Syseye",
+    "fullName": "Bio NewVision SYSEYE",
+    "logo": "/images/manufacturers/syseye.png",
+    "specialty": "Ophthalmic Slit Lamps & Diagnostic Optics",
+    "featured": false
+  },
+  {
+    "id": "melison",
+    "name": "Melison",
+    "fullName": "Melison Medical Instrument",
+    "logo": "/images/manufacturers/melison.png",
+    "specialty": "Audiometry & Infant Hearing Screening Devices",
+    "featured": false
+  },
+  {
+    "id": "keweisi",
+    "name": "Keweisi",
+    "fullName": "Keweisi Medical Lighting",
+    "logo": "/images/manufacturers/keweisi.png",
+    "specialty": "Surgical Lighting & Medical Display Systems",
+    "featured": false
+  },
+  {
+    "id": "eighteeth",
+    "name": "Eighteeth",
+    "fullName": "Eighteeth Medical (Sifary)",
+    "logo": "/images/manufacturers/eighteeth.svg",
+    "specialty": "Endo Motors, Apex Locators & Dental Technology",
+    "featured": false
+  },
+  {
+    "id": "being",
+    "name": "Being Medical",
+    "fullName": "Foshan Being Medical Equipment",
+    "logo": "/images/manufacturers/being.png",
+    "specialty": "Dental Turbines, Handpieces & Clinical Units",
+    "featured": false
+  },
+  {
+    "id": "disonmed",
+    "name": "Disonmed",
+    "fullName": "Zhengzhou Dison Instrument",
+    "logo": "/images/manufacturers/disonmed.png",
+    "specialty": "Infant Incubators & Neonatal Radiant Warmers",
+    "featured": false
+  },
+  {
+    "id": "sonoscape",
+    "name": "SonoScape",
+    "fullName": "SonoScape Medical Corp.",
+    "logo": "/images/manufacturers/sonoscape.svg",
+    "specialty": "Diagnostic Ultrasound & HD GI Endoscopy Systems",
+    "featured": true
+  },
+  {
+    "id": "amoul",
+    "name": "Amoul",
+    "fullName": "Amoul Medical (Ambulanc Tech)",
+    "logo": "/images/manufacturers/amoul.png",
+    "specialty": "Emergency Ventilators, CPR & Critical Care",
+    "featured": false
+  },
+  {
+    "id": "graseby",
+    "name": "Graseby",
+    "fullName": "Graseby Medical (Smiths Medical)",
+    "logo": "/images/manufacturers/graseby.svg",
+    "specialty": "Syringe Pumps & Targeted Infusion Technology",
+    "featured": false
+  },
+  {
+    "id": "mbelec",
+    "name": "M&B Electronic",
+    "fullName": "Beijing M&B Electronic Instruments",
+    "logo": "/images/manufacturers/mb.png",
+    "specialty": "Multi-Parameter Patient Monitors & ECG Systems",
+    "featured": false
+  },
+  {
+    "id": "alltion",
+    "name": "Alltion",
+    "fullName": "Alltion (Wuzhou) Co., Ltd.",
+    "logo": "/images/manufacturers/alltion.png",
+    "specialty": "Surgical & Dental Operating Microscopes",
+    "featured": false
+  },
+  {
+    "id": "haobro",
+    "name": "Haobro",
+    "fullName": "Suzhou Haobro Medical Device",
+    "logo": "/images/manufacturers/haobro.svg",
+    "specialty": "Physical Therapy & Robotic Rehabilitation",
+    "featured": false
+  },
+  {
+    "id": "gigaa",
+    "name": "Gigaa Laser",
+    "fullName": "Wuhan Gigaa Optronics Technology",
+    "logo": "/images/manufacturers/gigaa.png",
+    "specialty": "Surgical Diode Lasers & Clinical Phototherapy",
     "featured": false
   }
 ]

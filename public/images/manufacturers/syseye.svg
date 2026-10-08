@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Syseye Official Ophthalmic Eye Mark -->
+  <g transform="translate(12, 10)">
+    <circle cx="25" cy="25" r="23" fill="#003459"/>
+    <path d="M9 25 C15 15, 35 15, 41 25 C35 35, 15 35, 9 25 Z" stroke="#00a8e8" stroke-width="3" fill="none"/>
+    <circle cx="25" cy="25" r="7.5" fill="#00a8e8"/>
+    <circle cx="25" cy="25" r="3" fill="#ffffff"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="25" fill="#003459" letter-spacing="0.05em">SYSEYE</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.8" fill="#00a8e8" letter-spacing="0.2em">OPHTHALMIC OPTICS</text>
+</svg>

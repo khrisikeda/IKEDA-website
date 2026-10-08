@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Yongfa Official Medical Emblem -->
+  <g transform="translate(12, 10)">
+    <rect x="2" y="2" width="46" height="46" rx="10" fill="#004098"/>
+    <!-- Stylized YF wings -->
+    <path d="M12 14 L25 30 L38 14" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 30 L25 41" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="25" cy="20" r="4" fill="#38bdf8"/>
+    <path d="M14 26 L25 18 L36 26" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="76" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="25" fill="#004098" letter-spacing="0.04em">YONGFA</text>
+  <text x="77" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#0284c7" letter-spacing="0.22em">MEDICAL FURNITURE</text>
+</svg>

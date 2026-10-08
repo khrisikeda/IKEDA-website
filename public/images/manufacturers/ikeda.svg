@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Official IKEDA Wings & Blue Dot Emblem -->
+  <g transform="translate(10, 8)">
+    <!-- Blue Dot -->
+    <circle cx="38" cy="40" r="7.5" fill="#008cd6"/>
+    
+    <!-- Left Wing -->
+    <path d="M 37.5 31.5 C 34 26, 25 18, 9 14.5 C 5 13.5, 4.5 15.5, 6.5 17.5 C 13.5 25, 26 31.5, 37.5 32.5 Z" fill="#111111"/>
+    
+    <!-- Right Wing -->
+    <path d="M 38.5 31.5 C 42 26, 51 18, 67 14.5 C 71 13.5, 71.5 15.5, 69.5 17.5 C 62.5 25, 50 31.5, 38.5 32.5 Z" fill="#111111"/>
+  </g>
+
+  <!-- Official IKEDA Wordmark -->
+  <text x="88" y="42" font-family="'Arial Black', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="31" fill="#111111" letter-spacing="0.04em">IKEDA</text>
+  
+  <!-- Registered Trademark ® -->
+  <g transform="translate(204, 13)">
+    <circle cx="6.5" cy="6.5" r="5.5" stroke="#111111" stroke-width="1.1" fill="none"/>
+    <text x="6.5" y="9.2" font-family="Arial, sans-serif" font-weight="bold" font-size="6.8" fill="#111111" text-anchor="middle">R</text>
+  </g>
+</svg>

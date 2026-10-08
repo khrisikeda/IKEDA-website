@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     const manufacturers = await fetchJSON('/api/manufacturers');
-    grid.innerHTML = manufacturers.map(renderCard).join('');
+    grid.innerHTML = manufacturers.map(renderManufacturerCard).join('');
     if (typeof triggerGridAnimations === 'function') {
       triggerGridAnimations(grid);
     }
@@ -14,34 +14,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
-function renderCard(m) {
-  const tags = (m.categories || [])
-    .map((c) => `<span class="tag">${c}</span>`)
-    .join('');
-
-  const featuredClass = m.featured ? ' is-featured' : '';
-  const tierBadge = m.tier
-    ? `<div class="manufacturer-badge">${m.tier}</div>`
-    : '';
-
-  const countryBadge = m.country
-    ? `<span style="font-size:0.8rem; color:var(--ink-muted);">${m.country}</span>`
-    : '';
-
-  const link = m.website
-    ? `<p style="margin-top:1.2rem; margin-bottom:0;"><a href="${m.website}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size:0.84rem; padding:0.45rem 1rem;">Official Website &rarr;</a></p>`
-    : '';
-
+function renderManufacturerCard(m) {
   return `
-    <article class="manufacturer-card pork-fade-up${featuredClass}">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        ${tierBadge}
-        ${countryBadge}
+    <article class="manufacturer-logo-card pork-fade-up">
+      <div class="manufacturer-logo-box">
+        <img src="${m.logo}" alt="${m.name} Logo" class="manufacturer-logo-img" loading="lazy" />
       </div>
-      <h3>${m.name}</h3>
-      <p>${m.description || 'Authorized partner supplying medical-grade systems across hospitals in Africa.'}</p>
-      <div class="manufacturer-tags">${tags}</div>
-      ${link}
+      <div class="manufacturer-info">
+        <h3 class="manufacturer-brand-name">${m.name}</h3>
+        <span class="manufacturer-specialty-label">${m.specialty || ''}</span>
+      </div>
     </article>
   `;
 }

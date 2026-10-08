@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- COXO Official Brandmark -->
+  <g transform="translate(14, 12)">
+    <!-- Stylized Dental Handpiece Rotary Icon -->
+    <circle cx="23" cy="23" r="22" fill="#ff6600"/>
+    <path d="M12 23 C12 14, 34 14, 34 23 C34 30, 27 34, 23 34 C19 34, 12 30, 12 23 Z" fill="#ffffff"/>
+    <circle cx="23" cy="20" r="3" fill="#ff6600"/>
+  </g>
+  <!-- Wordmark in official corporate blue & orange -->
+  <text x="74" y="41" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="32" fill="#004ea2" letter-spacing="-0.01em">COXO</text>
+  <text x="180" y="24" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#004ea2">®</text>
+  <text x="75" y="55" font-family="'Inter', sans-serif" font-weight="700" font-size="8.5" fill="#ff6600" letter-spacing="0.22em">DENTAL INSTRUMENT</text>
+</svg>

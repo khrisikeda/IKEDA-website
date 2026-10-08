@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Seesheen Official Endoscopy Mark -->
+  <g transform="translate(12, 10)">
+    <circle cx="25" cy="25" r="23" fill="#003366"/>
+    <path d="M11 25 C11 14, 25 14, 25 25 C25 36, 39 36, 39 25" stroke="#00a0e9" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <circle cx="11" cy="25" r="3.5" fill="#38bdf8"/>
+    <circle cx="39" cy="25" r="4.5" fill="#ffffff"/>
+    <circle cx="39" cy="25" r="2" fill="#00a0e9"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="25" fill="#003366" letter-spacing="0.04em">SEESHEN</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.8" fill="#00a0e9" letter-spacing="0.22em">VIDEO ENDOSCOPES</text>
+</svg>

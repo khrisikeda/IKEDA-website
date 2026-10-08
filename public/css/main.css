@@ -2159,57 +2159,120 @@ section {
 }
 
 /* ==========================================================================
-   Manufacturers Grid
+   Manufacturers Grid & Logos Showcase
    ========================================================================== */
 
-.manufacturer-card {
+.manufacturer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.manufacturer-logo-card {
   background: #ffffff;
   border-radius: var(--radius-md);
   border: 1px solid var(--gray-200);
-  padding: 2.2rem;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.manufacturer-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--blue-primary);
+.manufacturer-logo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(2, 132, 199, 0.12), 0 0 0 1px rgba(0, 229, 255, 0.4);
+  border-color: var(--cyan-accent);
 }
 
-.manufacturer-card.is-featured {
-  border: 2px solid var(--blue-primary);
-}
-
-.manufacturer-badge {
-  font-size: 0.74rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: var(--mono);
-  color: var(--blue-primary);
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.06em;
-}
-
-.manufacturer-card h3 {
-  font-size: 1.35rem;
-  margin-bottom: 0.6rem;
-  color: var(--ink);
-}
-
-.manufacturer-card p {
-  font-size: 0.92rem;
-  color: var(--ink-light);
-  flex-grow: 1;
-}
-
-.manufacturer-tags {
+.manufacturer-logo-box {
+  width: 100%;
+  height: 96px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 1.2rem 0;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gray-200);
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.manufacturer-logo-card:hover .manufacturer-logo-box {
+  border-color: var(--blue-primary);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.12);
+}
+
+.manufacturer-logo-img {
+  max-width: 100%;
+  max-height: 56px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.manufacturer-logo-card:hover .manufacturer-logo-img {
+  transform: scale(1.04);
+}
+
+.manufacturer-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manufacturer-brand-name {
+  font-family: var(--heading);
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 0 0 0.3rem 0;
+  letter-spacing: -0.015em;
+  transition: color 0.2s ease;
+}
+
+.manufacturer-logo-card:hover .manufacturer-brand-name {
+  color: var(--blue-primary);
+}
+
+.manufacturer-specialty-label {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .manufacturer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .manufacturer-logo-card {
+    padding: 1.1rem 0.85rem;
+  }
+
+  .manufacturer-logo-box {
+    height: 75px;
+    padding: 0.5rem;
+  }
+
+  .manufacturer-brand-name {
+    font-size: 1rem;
+  }
+
+  .manufacturer-specialty-label {
+    font-size: 0.74rem;
+  }
 }
 
 /* ==========================================================================

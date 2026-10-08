@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Biolight Official Emblem (ECG Pulse & Heart Arc) -->
+  <g transform="translate(12, 10)">
+    <rect x="2" y="2" width="46" height="46" rx="10" fill="#005bac"/>
+    <path d="M7 25 L16 25 L19 14 L23 36 L27 18 L30 30 L34 25 L43 25" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="23" cy="36" r="3.5" fill="#e60012"/>
+  </g>
+  <!-- Official Wordmark -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="25" fill="#005bac" letter-spacing="0.04em">BIOLIGHT</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#e60012" letter-spacing="0.22em">PATIENT MONITORING</text>
+</svg>

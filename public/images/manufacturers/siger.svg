@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Siger Official Dental Emblem -->
+  <g transform="translate(12, 10)">
+    <circle cx="25" cy="25" r="23" fill="#0066b3"/>
+    <path d="M12 25 A13 13 0 0 1 38 25" stroke="#ffffff" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M17 28 C17 33, 25 37, 25 37 C25 37, 33 33, 33 28" stroke="#7dd3fc" stroke-width="2.5" fill="none"/>
+    <circle cx="25" cy="25" r="3.5" fill="#ffffff"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="28" fill="#0c2340" letter-spacing="0.06em">SIGER</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.8" fill="#0066b3" letter-spacing="0.22em">DENTAL UNITS &amp; CHAIRS</text>
+</svg>
