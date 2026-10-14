@@ -2513,15 +2513,173 @@ section {
 
 .contact-info-item {
   display: flex;
-  gap: 0.85rem;
-  align-items: flex-start;
+  gap: 1rem;
+  align-items: center;
 }
 
 .contact-info-icon {
-  font-size: 1.2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(0, 229, 255, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
   color: var(--cyan-accent);
   flex-shrink: 0;
-  margin-top: 2px;
+  transition: all 0.25s ease;
+}
+
+/* Google Maps Icon Badge */
+.gmaps-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.gmaps-icon-badge:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 6px 20px rgba(66, 133, 244, 0.5);
+}
+
+.gmaps-icon-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Google Phone Icon Badge */
+.gphone-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.gphone-icon-badge:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 6px 20px rgba(0, 87, 203, 0.5);
+}
+
+.gphone-icon-badge img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Gmail Icon Badge */
+.gmail-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.gmail-icon-badge:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.45);
+}
+
+.gmail-icon-badge img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Schedule / Working Hours Badge */
+.schedule-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.schedule-icon-badge:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 6px 20px rgba(26, 115, 232, 0.45);
+}
+
+.schedule-icon-badge img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Uiverse smart-wasp-46 Phone Button (https://uiverse.io/andrew-demchenk0/smart-wasp-46) */
+.smart-wasp-phone-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: #30C04F;
+  box-shadow: 0 4px 14px rgba(48, 192, 79, 0.38);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.smart-wasp-phone-btn:hover {
+  background-color: #2bac47;
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 6px 20px rgba(48, 192, 79, 0.55);
+}
+
+.smart-wasp-phone-btn:active {
+  transform: scale(0.95);
+}
+
+.smart-wasp-phone-btn svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+  stroke: #ffffff;
+  fill: none;
 }
 
 .map-container {
