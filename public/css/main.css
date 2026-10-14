@@ -620,20 +620,20 @@ p {
   font-family: inherit;
   font-size: 1.05rem;
   font-weight: 700;
-  background: royalblue;
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
   color: #ffffff;
   padding: 0.75em 1.4em;
   padding-left: 1.05em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.25s ease;
   cursor: pointer;
   text-decoration: none;
-  box-shadow: 0 4px 18px rgba(65, 105, 225, 0.42);
+  box-shadow: 0 4px 18px rgba(37, 99, 235, 0.38);
   line-height: 1.2;
   position: relative;
 }
@@ -670,9 +670,10 @@ p {
 }
 
 .btn-smart-moth:hover {
-  background: #2563eb;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
   color: #ffffff;
   box-shadow: 0 6px 26px rgba(37, 99, 235, 0.55), 0 0 16px rgba(0, 229, 255, 0.3);
+  transform: translateY(-1px);
 }
 
 .btn-smart-moth:hover .svg-wrapper {
@@ -690,7 +691,37 @@ p {
 }
 
 .btn-smart-moth:active {
-  transform: scale(0.95);
+  transform: scale(0.96);
+}
+
+/* WhatsApp Variant: solid original WhatsApp brand green */
+.btn-smart-moth.btn-smart-whatsapp,
+.btn-smart-moth.btn-whatsapp {
+  background: #25d366;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.42);
+}
+
+.btn-smart-moth.btn-smart-whatsapp:hover,
+.btn-smart-moth.btn-whatsapp:hover {
+  background: #20ba59;
+  color: #ffffff;
+  box-shadow: 0 6px 26px rgba(37, 211, 102, 0.6);
+  transform: translateY(-1px);
+}
+
+.btn-smart-moth.btn-smart-whatsapp:hover svg,
+.btn-smart-moth.btn-whatsapp:hover svg {
+  transform: translateX(5.5em) rotate(15deg) scale(1.2);
+}
+
+.btn-smart-moth.btn-smart-whatsapp:hover span,
+.btn-smart-moth.btn-smart-whatsapp:hover .btn-text,
+.btn-smart-moth.btn-whatsapp:hover span,
+.btn-smart-moth.btn-whatsapp:hover .btn-text {
+  transform: translateX(16em);
+  opacity: 0;
 }
 
 @keyframes fly-1 {
