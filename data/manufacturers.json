@@ -72,10 +72,10 @@
     "featured": false
   },
   {
-    "id": "seeshen",
-    "name": "Seeshen",
+    "id": "seesheen",
+    "name": "Seesheen",
     "fullName": "Seesheen Medical Technology",
-    "logo": "/images/manufacturers/seeshen.png",
+    "logo": "/images/manufacturers/seesheen.png",
     "specialty": "Flexible Video Endoscopes & Bronchoscopy",
     "featured": false
   },
@@ -189,6 +189,22 @@
     "fullName": "Wuhan Gigaa Optronics Technology",
     "logo": "/images/manufacturers/gigaa.png",
     "specialty": "Surgical Diode Lasers & Clinical Phototherapy",
+    "featured": false
+  },
+  {
+    "id": "yuwell",
+    "name": "Yuwell",
+    "fullName": "Jiangsu Yuyue Medical Equipment & Supply",
+    "logo": "/images/manufacturers/yuwell.png",
+    "specialty": "Oxygen Concentrators, Suction & Respiratory Therapy",
+    "featured": true
+  },
+  {
+    "id": "folee",
+    "name": "Folee Medical",
+    "fullName": "Jiangsu Folee Medical Equipment",
+    "logo": "/images/manufacturers/folee.png",
+    "specialty": "Clinical Oxygen Generators, Nebulizers & Suction Units",
     "featured": false
   }
 ]

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70" fill="none">
+  <!-- Yuwell Official Emblem: Medical Heart & Care Pulse -->
+  <g transform="translate(14, 11)">
+    <rect x="2" y="2" width="44" height="44" rx="12" fill="#E53935"/>
+    <path d="M14 24 L20 24 L24 14 L28 34 L32 24 L38 24" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="24" cy="14" r="3" fill="#ffffff"/>
+  </g>
+  <!-- Official Yuwell Red Wordmark -->
+  <text x="72" y="39" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="28" fill="#E53935" letter-spacing="-0.02em">yuwell</text>
+  <text x="73" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.5" fill="#0f172a" letter-spacing="0.22em">RESPIRATORY &amp; OXYGEN</text>
+</svg>

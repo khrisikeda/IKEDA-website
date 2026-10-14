@@ -7,7 +7,7 @@
     <circle cx="39" cy="25" r="4.5" fill="#ffffff"/>
     <circle cx="39" cy="25" r="2" fill="#00a0e9"/>
   </g>
-  <!-- Wordmark -->
-  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="25" fill="#003366" letter-spacing="0.04em">SEESHEN</text>
-  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.8" fill="#00a0e9" letter-spacing="0.22em">VIDEO ENDOSCOPES</text>
+  <!-- Wordmark matching exact Seesheen typography -->
+  <text x="74" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="25" fill="#0f172a" letter-spacing="-0.01em">Seesheen</text>
+  <text x="75" y="52" font-family="'Inter', sans-serif" font-weight="700" font-size="8.5" fill="#00a0e9" letter-spacing="0.22em">VIDEO ENDOSCOPES</text>
 </svg>
