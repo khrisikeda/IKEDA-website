@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clinical Blog &amp; Articles | IKEDA ENDOSCOPY AFRICA Ltd</title>
+  <meta name="description" content="Clinical publications, minimally invasive surgery advancements, operating theatre design, and biomedical maintenance insights from IKEDA ENDOSCOPY AFRICA specialists.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <style>
+    .blog-hero {
+      position: relative;
+      background: linear-gradient(135deg, #060a12 0%, #0d1e38 100%);
+      color: #ffffff;
+      padding: 5rem 0 4rem;
+      border-bottom: 1px solid rgba(0, 229, 255, 0.15);
+      overflow: hidden;
+    }
+    .blog-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.2rem;
+      margin: 2.5rem 0 1rem;
+    }
+    .blog-search-box {
+      position: relative;
+      min-width: 280px;
+      max-width: 380px;
+      flex: 1;
+    }
+    .blog-search-input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 2.6rem;
+      border: 1px solid var(--gray-200);
+      border-radius: 999px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: all 0.2s ease;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .blog-search-input:focus {
+      border-color: var(--cyan-accent);
+      box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.15);
+    }
+    .blog-search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Frosted Obsidian Glass -->
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand-wrapper">
+        <a href="/" class="brand">
+          IKEDA ENDOSCOPY AFRICA LTD
+        </a>
+      </div>
+
+      <nav>
+        <ul class="main-nav" id="main-nav">
+          <li><a href="/">Home</a></li>
+          <li class="nav-item-dropdown">
+            <a href="/products" class="dropdown-trigger">
+              <span>Products</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu" role="menu" aria-label="Departments">
+              <a href="/products?group=General+Hospital+Materials" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">General Hospital Materials</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Operating+Theatre" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Operating Theatre</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Critical+Care+%26+Emergency" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Critical Care &amp; Emergency</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Maternal+%26+Infant" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Maternal &amp; Infant</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Diagnostics+%26+Specialty" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Diagnostic &amp; Specialty</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="/products?group=Laboratory" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-text">Laboratory</span>
+                <svg class="item-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/manufacturers">Manufacturers</a></li>
+          <li><a href="/blog" aria-current="page" class="active">Blog &amp; Articles</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog Hero Section -->
+  <section class="blog-hero">
+    <div class="wrap pork-stagger-parent" style="max-width: 900px;">
+      <span class="eyebrow eyebrow-dark pork-fade-up">Clinical Knowledge &amp; Biomedical Engineering</span>
+      <h1 class="pork-fade-up" style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin: 0.5rem 0 1rem; color: #ffffff;">
+        Clinical Insights, Blog &amp; Articles
+      </h1>
+      <p class="pork-fade-up" style="font-size: 1.15rem; color: #cbd5e1; line-height: 1.6; margin: 0;">
+        Authoritative guides, whitepapers, and clinical recommendations on 4K laparoscopy, operating theatre architecture, sterilization protocols, and healthcare technology across Africa.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Listing Section -->
+  <section class="section">
+    <div class="wrap">
+      <!-- Search & Filters -->
+      <div class="blog-controls">
+        <div class="filter-pills" id="category-pills" role="tablist" aria-label="Filter articles by category">
+          <button class="filter-btn active" data-category="All" role="tab" aria-selected="true">All Publications</button>
+          <button class="filter-btn" data-category="Clinical Endoscopy" role="tab" aria-selected="false">Clinical Endoscopy</button>
+          <button class="filter-btn" data-category="Biomedical Engineering" role="tab" aria-selected="false">Biomedical Engineering</button>
+          <button class="filter-btn" data-category="Hospital Infrastructure" role="tab" aria-selected="false">Hospital Infrastructure</button>
+        </div>
+
+        <div class="blog-search-box">
+          <span class="blog-search-icon">🔍</span>
+          <input type="search" id="blog-search" class="blog-search-input" placeholder="Search articles, topics, keywords..." aria-label="Search articles" />
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="blog-grid" id="blog-grid" aria-live="polite">
+        <p style="padding: 2rem; text-align: center; color: var(--ink-muted); grid-column: 1 / -1;">Loading clinical articles&hellip;</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready to Equip CTA Section -->
+  <section style="background: linear-gradient(135deg, #060a12 0%, #0c182c 100%); color:#ffffff; padding: 4.5rem 0; border-top:1px solid rgba(0,229,255,0.15);" class="reveal-on-scroll pork-fade-up">
+    <div class="wrap center pork-stagger-parent" style="text-align:center; max-width:840px; margin:0 auto;">
+      <span class="eyebrow eyebrow-dark pork-fade-up">Biomedical Advisory &amp; Support</span>
+      <h2 class="pork-fade-up" style="color:#ffffff; font-size:clamp(1.8rem, 3vw, 2.4rem);">Have Questions About Medical Equipment or Protocols?</h2>
+      <p class="pork-fade-up" style="color:#cbd5e1; font-size:1.1rem; margin-bottom:2rem; line-height:1.6;">
+        Our biomedical engineering and clinical product specialists in Kigali provide customized advisory, technical datasheets, and hospital theatre audits.
+      </p>
+      <div class="hero-cta pork-fade-up" style="justify-content:center;">
+        <a href="/contact" class="btn btn-cyan">Contact Our Specialists</a>
+        <a href="tel:+250795360359" class="btn btn-ghost">📞 +250 795 360 359</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3 style="font-size:1.25rem;">IKEDA ENDOSCOPY AFRICA Ltd</h3>
+          <p style="color:#94a3b8; max-width:38ch; font-size:0.92rem; line-height:1.6;">
+            Specialists in multi-specialty medical instrumentation, 4K endoscopic laparoscopy systems, and turnkey hospital departmental equipment across Africa.
+          </p>
+          <p style="color:var(--cyan-accent); font-size:0.85rem; margin-top:1rem; font-weight:600; font-family:var(--mono);">
+            📍 Kigali, Kicukiro, Masaka, Cyimo, Kabeza — Rwanda
+          </p>
+        </div>
+        <div>
+          <h3>Quick Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products &amp; Solutions</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/manufacturers">Manufacturers</a></li>
+            <li><a href="/blog">Blog &amp; Articles</a></li>
+            <li><a href="/contact">Contact &amp; Location</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Department Divisions</h3>
+          <ul class="footer-links">
+            <li><a href="/products?group=Operating+Theatre">Operating Theatre</a></li>
+            <li><a href="/products?group=Critical+Care+%26+Emergency">Critical Care &amp; ICU</a></li>
+            <li><a href="/products?group=Maternal+%26+Infant">Maternal &amp; Neonatology</a></li>
+            <li><a href="/products?group=Diagnostics+%26+Specialty">Diagnostics &amp; Imaging</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Direct Contact</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+250795360359">📞 +250 795 360 359</a></li>
+            <li><a href="mailto:ikedasurgery@gmail.com">✉️ ikedasurgery@gmail.com</a></li>
+            <li><a href="/contact">📍 Kigali, Kicukiro, Masaka, Cyimo, Kabeza</a></li>
+            <li><a href="https://wa.me/250795360359" target="_blank" rel="noopener noreferrer" style="color:var(--cyan-accent);">💬 Chat via WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> IKEDA ENDOSCOPY AFRICA Ltd. All Rights Reserved.</span>
+        <span>Minimally Invasive Medical Technologies &amp; Hospital Equipment</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/articles-modal.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const grid = document.getElementById('blog-grid');
+      const searchInput = document.getElementById('blog-search');
+      const pillsContainer = document.getElementById('category-pills');
+
+      let allArticles = [];
+      let activeCategory = 'All';
+      let searchQuery = '';
+
+      try {
+        const res = await fetch('/api/articles');
+        allArticles = await res.json();
+        render();
+      } catch (e) {
+        grid.innerHTML = '<p style="text-align:center; padding:2rem; color:red;">Failed to load articles.</p>';
+      }
+
+      function render() {
+        let filtered = allArticles;
+        if (activeCategory !== 'All') {
+          filtered = filtered.filter(a => a.category === activeCategory);
+        }
+        if (searchQuery.trim()) {
+          const q = searchQuery.toLowerCase();
+          filtered = filtered.filter(a =>
+            a.title.toLowerCase().includes(q) ||
+            a.excerpt.toLowerCase().includes(q) ||
+            (a.tags && a.tags.some(t => t.toLowerCase().includes(q)))
+          );
+        }
+
+        if (filtered.length === 0) {
+          grid.innerHTML = '<p style="text-align:center; padding:3rem; color:var(--ink-muted); grid-column:1/-1;">No articles match your search criteria.</p>';
+          return;
+        }
+
+        grid.innerHTML = filtered.map(a => `
+          <article class="blog-card" data-article-id="${a.id}" tabindex="0" role="button" aria-label="Read ${a.title}">
+            <div class="blog-card-media">
+              <span class="blog-card-badge">${a.category}</span>
+              <img src="${a.image}" alt="${a.title}" class="blog-card-img" loading="lazy" />
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span>📅 ${a.date}</span>
+                <span>&bull;</span>
+                <span>⏱️ ${a.readTime}</span>
+              </div>
+              <h3 class="blog-card-title">${a.title}</h3>
+              <p class="blog-card-excerpt">${a.excerpt}</p>
+              <div class="blog-card-footer">
+                <div class="blog-author-info">
+                  <div class="blog-author-avatar">${a.author.split(' ').map(n=>n[0]).join('').substring(0,2)}</div>
+                  <span class="blog-author-name">${a.author}</span>
+                </div>
+                <span class="blog-read-link">Read Article &rarr;</span>
+              </div>
+            </div>
+          </article>
+        `).join('');
+      }
+
+      pillsContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('.filter-btn');
+        if (btn) {
+          pillsContainer.querySelectorAll('.filter-btn').forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          activeCategory = btn.getAttribute('data-category');
+          render();
+        }
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value;
+          render();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

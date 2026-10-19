@@ -229,6 +229,39 @@ function renderCard(cat) {
 
       <p>${cat.description}</p>
 
+      <!-- Featured Product Picture Gallery in Category Card -->
+      ${(() => {
+        const itemsWithImages = (cat.equipmentHighlights || []).filter(
+          (it) => typeof it === 'object' && it !== null && it.image
+        );
+        const featuredThumbs = itemsWithImages.slice(0, 2);
+        if (featuredThumbs.length === 0) return '';
+        return `
+          <div class="category-card-thumbs-grid" aria-label="Featured equipment previews">
+            ${featuredThumbs.map((item) => {
+              const itemIdx = cat.equipmentHighlights.indexOf(item);
+              return `
+                <button type="button" 
+                        class="category-card-thumb-item equipment-row-btn" 
+                        data-cat-slug="${cat.slug}" 
+                        data-item-idx="${itemIdx}"
+                        aria-haspopup="dialog"
+                        aria-label="View specifications for ${escapeHtml(item.name)}">
+                  <div class="thumb-img-box">
+                    <img src="${escapeHtml(item.image)}" 
+                         alt="${escapeHtml(item.name)}" 
+                         loading="lazy" 
+                         class="cat-preview-img"
+                         onerror="this.style.display='none';" />
+                  </div>
+                  <span class="thumb-item-name">${escapeHtml(item.name)}</span>
+                </button>
+              `;
+            }).join('')}
+          </div>
+        `;
+      })()}
+
       <!-- Expandable Products Subsection -->
       <div class="products-subsection" id="subsection-${cat.slug}" aria-hidden="true">
         <div class="products-subsection-inner">
@@ -240,6 +273,10 @@ function renderCard(cat) {
           <ul class="subsection-products-list">
             ${(cat.equipmentHighlights || []).map((item, idx) => {
               const name = typeof item === 'object' && item !== null ? item.name : item;
+              const imgUrl = typeof item === 'object' && item !== null ? item.image : null;
+              const thumbHtml = imgUrl
+                ? `<span class="equipment-row-thumb-wrap"><img src="${escapeHtml(imgUrl)}" alt="" class="equipment-row-thumb" loading="lazy" /></span>`
+                : `<span class="equipment-row-thumb-wrap equipment-row-thumb-placeholder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></span>`;
               return `
                 <li class="subsection-product-item">
                   <button type="button" 
@@ -247,7 +284,7 @@ function renderCard(cat) {
                           data-cat-slug="${cat.slug}" 
                           data-item-idx="${idx}"
                           aria-haspopup="dialog">
-                    <span class="product-item-bullet" aria-hidden="true"></span>
+                    ${thumbHtml}
                     <span class="product-item-name">${escapeHtml(name)}</span>
                     <span class="equipment-row-arrow" aria-hidden="true">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -281,8 +318,12 @@ function renderCard(cat) {
       <!-- Clickable Equipment Rows (Replaces old grey box, heading & bullet list) -->
       ${(cat.equipmentHighlights && cat.equipmentHighlights.length > 0) ? `
         <div class="equipment-clickable-group" id="preview-list-${cat.slug}">
-          ${cat.equipmentHighlights.map((item, idx) => {
+          ${cat.equipmentHighlights.slice(0, 6).map((item, idx) => {
             const name = typeof item === 'object' && item !== null ? item.name : item;
+            const imgUrl = typeof item === 'object' && item !== null ? item.image : null;
+            const thumbHtml = imgUrl
+              ? `<span class="equipment-row-thumb-wrap"><img src="${escapeHtml(imgUrl)}" alt="" class="equipment-row-thumb" loading="lazy" /></span>`
+              : `<span class="equipment-row-thumb-wrap equipment-row-thumb-placeholder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></span>`;
             return `
               <button type="button" 
                       class="equipment-row-btn" 
@@ -290,6 +331,7 @@ function renderCard(cat) {
                       data-item-idx="${idx}"
                       aria-haspopup="dialog"
                       aria-label="View details for ${escapeHtml(name)}">
+                ${thumbHtml}
                 <span class="equipment-row-name">${escapeHtml(name)}</span>
                 <span class="equipment-row-arrow" aria-hidden="true">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -524,21 +566,22 @@ function getProductData(catSlug, itemIdx) {
   if (typeof rawItem === 'object' && rawItem !== null) {
     name = rawItem.name || '';
     image = rawItem.image || null;
-    features = Array.isArray(rawItem.features) && rawItem.features.length > 0
-      ? rawItem.features
-      : (cat.keySpecs && cat.keySpecs.length > 0 ? cat.keySpecs : []);
+    if (Array.isArray(rawItem.features) && rawItem.features.length > 0) {
+      features = rawItem.features;
+    } else if (rawItem.specification && rawItem.specification.trim()) {
+      features = rawItem.specification.split('\n').map(l => l.trim()).filter(Boolean);
+    } else if (cat.keySpecs && cat.keySpecs.length > 0) {
+      features = cat.keySpecs;
+    } else {
+      features = ['Technical specifications available upon request.', 'Please contact our clinical engineering team for configuration details and quotation.'];
+    }
     category = rawItem.category || cat.name;
   } else {
     name = String(rawItem);
     image = cat.image || null;
     features = cat.keySpecs && cat.keySpecs.length > 0
       ? cat.keySpecs
-      : [
-        'Wired Connection & Signal Synchronization',
-        'High-Definition Visual Display & Waveform Output',
-        'Precision Clinical Parameter Monitoring',
-        'Hospital-Grade Durable Build & Ergonomic Design'
-      ];
+      : ['Technical specifications available upon request.', 'Please contact our clinical engineering team for configuration details and quotation.'];
     category = cat.name;
   }
 
@@ -600,9 +643,10 @@ function openProductModal(catSlug, itemIdx) {
   titleEl.textContent = data.name;
 
   // Bulleted features
-  featuresListEl.innerHTML = (data.features || []).map((feat) => `
-    <li>${escapeHtml(feat)}</li>
-  `).join('');
+  featuresListEl.innerHTML = (data.features || []).map((feat) => {
+    const cleanFeat = typeof feat === 'string' ? feat.replace(/^[•●⚫\-\*]\s*/, '') : String(feat);
+    return `<li>${escapeHtml(cleanFeat)}</li>`;
+  }).join('');
 
   // Category Link
   catLinkEl.textContent = data.category;

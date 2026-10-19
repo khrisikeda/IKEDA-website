@@ -1,0 +1,2339 @@
+{
+  "total_pdf_products": 217,
+  "total_db_items": 174,
+  "exact_matches": [
+    [
+      "Emergency ventilator",
+      "Emergency Ventilator",
+      "Intensive Care Unit (ICU)"
+    ],
+    [
+      "ENT shaver",
+      "ENT Shaver",
+      "ENT (Ear, Nose & Throat)"
+    ],
+    [
+      "ENT UNIT",
+      "ENT Unit",
+      "ENT (Ear, Nose & Throat)"
+    ]
+  ],
+  "near_matches": [
+    [
+      "Stainless steel trolley",
+      "Stainless Steel Mayo Instrument Trolley",
+      "0.75",
+      "General Hospital Materials"
+    ],
+    [
+      "Stainless steel trolley",
+      "Stainless Steel Mayo Instrument Trolley",
+      "0.75",
+      "General Hospital Materials"
+    ],
+    [
+      "Consultation chair",
+      "Medical Consultation & Doctor Chair",
+      "0.72",
+      "General Hospital Materials"
+    ],
+    [
+      "Consultation chair",
+      "Medical Consultation & Doctor Chair",
+      "0.72",
+      "General Hospital Materials"
+    ],
+    [
+      "Portable Examination light 201W-1",
+      "Mobile LED Examination Light",
+      "0.74",
+      "General Hospital Materials"
+    ],
+    [
+      "Oxygen concentrator 5L Y007-5W",
+      "Medical Oxygen Concentrator (5L - 10L)",
+      "0.75",
+      "General Hospital Materials"
+    ],
+    [
+      "portable phlegm suction H003-A With battery",
+      "Portable Phlegm Suction Machine",
+      "0.74",
+      "General Hospital Materials"
+    ],
+    [
+      "portable phlegm suction H003-C",
+      "Portable Phlegm Suction Machine",
+      "0.81",
+      "General Hospital Materials"
+    ],
+    [
+      "Infrared Forehead Thermometer YUWELL YT-1C",
+      "Non-Contact Infrared Forehead Thermometer",
+      "0.73",
+      "General Hospital Materials"
+    ],
+    [
+      "Finger Pulse oximeter YUWELL YX105",
+      "Fingertip Pulse Oximeter",
+      "0.73",
+      "General Hospital Materials"
+    ],
+    [
+      "Hydraulic Patient Transportatio n Stretcher",
+      "Hydraulic Patient Transport Stretcher",
+      "0.93",
+      "General Hospital Materials"
+    ],
+    [
+      "BN-100 Radiant warmer",
+      "Infant Radiant Warmer",
+      "0.76",
+      "Neonatal & Pediatric Care"
+    ],
+    [
+      "Ureteroscope",
+      "Hysteroscope",
+      "0.75",
+      "Maternity & Obstetrics"
+    ],
+    [
+      "Shaver",
+      "ENT Shaver",
+      "0.80",
+      "ENT (Ear, Nose & Throat)"
+    ],
+    [
+      "Otoscopes",
+      "Colposcope",
+      "0.74",
+      "Maternity & Obstetrics"
+    ],
+    [
+      "Otoscopes",
+      "Colposcope",
+      "0.74",
+      "Maternity & Obstetrics"
+    ],
+    [
+      "Rigid sinoscopes 0° ___ Ø 4 × 175",
+      "Rigid Sinuscopes (0°, 30°, 70°)",
+      "0.80",
+      "ENT (Ear, Nose & Throat)"
+    ],
+    [
+      "Rigid sinoscopes 30° ___ Ø 4 × 175",
+      "Rigid Sinuscopes (0°, 30°, 70°)",
+      "0.83",
+      "ENT (Ear, Nose & Throat)"
+    ],
+    [
+      "Radiofrequen cy surgical system",
+      "Radiofrequency Surgical System (Coblator)",
+      "0.88",
+      "ENT (Ear, Nose & Throat)"
+    ],
+    [
+      "High-speed Air Turbine Handpieces CX207-W",
+      "High-Speed Fiber Optic Air Turbine Handpiece",
+      "0.77",
+      "Dentistry & Oral Surgery"
+    ],
+    [
+      "High-speed Air Turbine Handpieces with LED 45° 佛山稳健",
+      "High-Speed Fiber Optic Air Turbine Handpiece",
+      "0.74",
+      "Dentistry & Oral Surgery"
+    ],
+    [
+      "Low speed Air turbine handpiece",
+      "High-Speed Fiber Optic Air Turbine Handpiece",
+      "0.74",
+      "Dentistry & Oral Surgery"
+    ]
+  ],
+  "pdf_to_add": [
+    [
+      "Dirty & clean trolley",
+      "General Medical Devices",
+      1,
+      "/images/products/dirty-clean-trolley.jpeg",
+      true
+    ],
+    [
+      "Mayo trolley",
+      "General Medical Devices",
+      1,
+      "/images/products/mayo-trolley.png",
+      true
+    ],
+    [
+      "Mayo trolley",
+      "General Medical Devices",
+      2,
+      "/images/products/mayo-trolley.png",
+      true
+    ],
+    [
+      "Mayo trolley",
+      "General Medical Devices",
+      2,
+      "/images/products/mayo-trolley-1.jpeg",
+      true
+    ],
+    [
+      "Medication trolley",
+      "General Medical Devices",
+      2,
+      "/images/products/medication-trolley.jpeg",
+      true
+    ],
+    [
+      "Manual hospital bed- 2 Cranks YFC261L",
+      "ENT",
+      3,
+      "/images/products/manual-hospital-bed-2-cranks-yfc261l.jpeg",
+      true
+    ],
+    [
+      "Manual hospital bed- 3 Cranks YFC363K(II)",
+      "ENT",
+      3,
+      "/images/products/manual-hospital-bed-3-cranks-yfc363k-ii.jpeg",
+      true
+    ],
+    [
+      "Motorized hospital bed 3 functions With Manual Backup YFD3618K(I)",
+      "ENT",
+      4,
+      "/images/products/motorized-hospital-bed-3-functions-with-manual-backup-yfd361.jpeg",
+      true
+    ],
+    [
+      "Motorized hospital bed 5 functions YFD5611K",
+      "ENT",
+      5,
+      "/images/products/motorized-hospital-bed-5-functions-yfd5611k.jpeg",
+      true
+    ],
+    [
+      "Motorized hospital bed 5 functions Saikang D8d8y",
+      "ENT",
+      6,
+      "/images/products/motorized-hospital-bed-5-functions-saikang-d8d8y.jpeg",
+      true
+    ],
+    [
+      "Motorized ICU bed",
+      "ENT",
+      6,
+      "/images/products/motorized-icu-bed.jpeg",
+      true
+    ],
+    [
+      "Orthopedic traction bed",
+      "ENT",
+      7,
+      "/images/products/orthopedic-traction-bed.jpeg",
+      true
+    ],
+    [
+      "Mattress Saikang",
+      "ENT",
+      8,
+      "/images/products/mattress-saikang.jpeg",
+      true
+    ],
+    [
+      "Mattress Yongfa",
+      "ENT",
+      8,
+      "/images/products/mattress-yongfa.jpeg",
+      true
+    ],
+    [
+      "[Unnamed Ward Privacy Screen on Page 8]",
+      "ENT",
+      8,
+      "/images/products/unnamed-ward-privacy-screen-on-page-8.jpeg",
+      false
+    ],
+    [
+      "Bedside cabinet",
+      "ENT",
+      9,
+      "/images/products/bedside-cabinet.jpeg",
+      true
+    ],
+    [
+      "Overbed table H042",
+      "ENT",
+      9,
+      "/images/products/overbed-table-h042.png",
+      true
+    ],
+    [
+      "Overbed table H046-2",
+      "ENT",
+      9,
+      "/images/products/overbed-table-h046-2.jpeg",
+      true
+    ],
+    [
+      "Air Mattress",
+      "ENT",
+      9,
+      "/images/products/air-mattress.jpeg",
+      false
+    ],
+    [
+      "Examination table X09",
+      "ENT",
+      9,
+      "/images/products/examination-table-x09.jpeg",
+      true
+    ],
+    [
+      "Stool",
+      "ENT",
+      10,
+      "/images/products/stool.jpeg",
+      true
+    ],
+    [
+      "Stool- SKE8012",
+      "ENT",
+      10,
+      "/images/products/stool-ske8012.jpeg",
+      true
+    ],
+    [
+      "Wheel chair SKE03",
+      "ENT",
+      11,
+      "/images/products/wheel-chair-ske03.jpeg",
+      true
+    ],
+    [
+      "Wall mounted diagnostic set",
+      "ENT",
+      11,
+      "/images/products/wall-mounted-diagnostic-set.jpeg",
+      true
+    ],
+    [
+      "Headlight KD-203AY-4",
+      "ENT",
+      12,
+      "/images/products/headlight-kd-203ay-4.jpeg",
+      true
+    ],
+    [
+      "Ultrasonic Nebulizer W001",
+      "ENT",
+      12,
+      "/images/products/ultrasonic-nebulizer-w001.jpeg",
+      true
+    ],
+    [
+      "Air compressing nebulizer W003",
+      "ENT",
+      12,
+      "/images/products/air-compressing-nebulizer-w003.jpeg",
+      true
+    ],
+    [
+      "Air compressing nebulizer W004",
+      "ENT",
+      13,
+      "/images/products/air-compressing-nebulizer-w004.jpeg",
+      true
+    ],
+    [
+      "Air compressing nebulizer W006",
+      "ENT",
+      13,
+      "/images/products/air-compressing-nebulizer-w006.jpeg",
+      true
+    ],
+    [
+      "Mesh nebulizer WW02",
+      "ENT",
+      14,
+      "/images/products/mesh-nebulizer-ww02.jpeg",
+      true
+    ],
+    [
+      "Mesh Nebulizer WW04",
+      "ENT",
+      14,
+      "/images/products/mesh-nebulizer-ww04.jpeg",
+      true
+    ],
+    [
+      "Oxygen concentrator 10L Y007F-10W/2",
+      "ENT",
+      15,
+      "/images/products/oxygen-concentrator-10l-y007f-10w-2.jpeg",
+      true
+    ],
+    [
+      "Suction unit H001 20L/min",
+      "ENT",
+      16,
+      "/images/products/suction-unit-h001-20l-min.jpeg",
+      true
+    ],
+    [
+      "Suction unit H001-A 40L/min",
+      "ENT",
+      16,
+      "/images/products/suction-unit-h001-a-40l-min.jpeg",
+      true
+    ],
+    [
+      "Suction unit H002 20L/min",
+      "ENT",
+      16,
+      "/images/products/suction-unit-h002-20l-min.jpeg",
+      true
+    ],
+    [
+      "Armpit Thermometer YUWELL YT312",
+      "ENT",
+      17,
+      "/images/products/armpit-thermometer-yuwell-yt312.jpeg",
+      true
+    ],
+    [
+      "Blood pressure monitor FOLEE DX-B6Y",
+      "ENT",
+      17,
+      "/images/products/blood-pressure-monitor-folee-dx-b6y.jpeg",
+      true
+    ],
+    [
+      "Blood pressure monitor YUWELL YE670A",
+      "ENT",
+      18,
+      "/images/products/blood-pressure-monitor-yuwell-ye670a.jpeg",
+      false
+    ],
+    [
+      "Wrist Blood pressure monitor YUWELL YE8300B",
+      "ENT",
+      18,
+      "/images/products/wrist-blood-pressure-monitor-yuwell-ye8300b.jpeg",
+      false
+    ],
+    [
+      "Patient monitor BIOLIGHT M12 Standard option",
+      "ENT",
+      18,
+      "/images/products/patient-monitor-biolight-m12-standard-option.jpeg",
+      true
+    ],
+    [
+      "Patient monitor BIOLIGHT M12 Full option",
+      "ENT",
+      19,
+      "/images/products/patient-monitor-biolight-m12-full-option.jpeg",
+      true
+    ],
+    [
+      "Ultrasound machine E2 SONOSCAPE",
+      "ENT",
+      19,
+      "/images/products/ultrasound-machine-e2-sonoscape.jpeg",
+      true
+    ],
+    [
+      "Ultrasound machine S12 SONOSCAPE",
+      "ENT",
+      19,
+      "/images/products/ultrasound-machine-s12-sonoscape.jpeg",
+      false
+    ],
+    [
+      "Anesthesia laryngoscope",
+      "ENT",
+      20,
+      "/images/products/anesthesia-laryngoscope.jpeg",
+      true
+    ],
+    [
+      "Hydraulic operating table (Hydraulic for height adjustment)",
+      "ENT",
+      20,
+      "/images/products/hydraulic-operating-table-hydraulic-for-height-adjustment.jpeg",
+      true
+    ],
+    [
+      "Motorized operating table",
+      "ENT",
+      20,
+      "/images/products/motorized-operating-table.jpeg",
+      true
+    ],
+    [
+      "Orthopedic traction",
+      "ENT",
+      20,
+      "/images/products/orthopedic-traction.jpeg",
+      true
+    ],
+    [
+      "Gynecology surgical table",
+      "ENT",
+      21,
+      "/images/products/gynecology-surgical-table.jpeg",
+      true
+    ],
+    [
+      "Portable surgical light 2012L-1",
+      "ENT",
+      22,
+      "/images/products/portable-surgical-light-2012l-1.png",
+      true
+    ],
+    [
+      "Portable surgical light 2012L-5",
+      "ENT",
+      22,
+      "/images/products/portable-surgical-light-2012l-5.jpeg",
+      true
+    ],
+    [
+      "Surgical light",
+      "ENT",
+      22,
+      "/images/products/surgical-light.png",
+      true
+    ],
+    [
+      "Surgical pendant",
+      "ENT",
+      23,
+      null,
+      false
+    ],
+    [
+      "Anesthesia machine",
+      "ENT",
+      23,
+      null,
+      false
+    ],
+    [
+      "Ventilator",
+      "ENT",
+      23,
+      "/images/products/ventilator.jpeg",
+      true
+    ],
+    [
+      "ESU Monopolar & Bipolar Diathermy",
+      "ENT",
+      24,
+      "/images/products/esu-monopolar-bipolar-diathermy.jpeg",
+      true
+    ],
+    [
+      "Laparoscopy tower",
+      "ENT",
+      24,
+      null,
+      false
+    ],
+    [
+      "C arm Xray machine",
+      "ENT",
+      24,
+      null,
+      false
+    ],
+    [
+      "AED (with CE & MDR certificate",
+      "ENT",
+      25,
+      "/images/products/aed-with-ce-mdr-certificate.jpeg",
+      true
+    ],
+    [
+      "Defibrillator monitor",
+      "ENT",
+      25,
+      "/images/products/defibrillator-monitor.jpeg",
+      true
+    ],
+    [
+      "ICU Ventilator",
+      "ENT",
+      26,
+      "/images/products/icu-ventilator.jpeg",
+      false
+    ],
+    [
+      "Bronchoscop e",
+      "ENT",
+      26,
+      null,
+      false
+    ],
+    [
+      "Resuscitation bag Adult",
+      "ENT",
+      27,
+      "/images/products/resuscitation-bag-adult.jpeg",
+      true
+    ],
+    [
+      "Resuscitation bag Pediatric",
+      "ENT",
+      27,
+      null,
+      false
+    ],
+    [
+      "Resuscitation bag Infant",
+      "ENT",
+      27,
+      null,
+      false
+    ],
+    [
+      "Vein finder",
+      "ENT",
+      27,
+      "/images/products/vein-finder.jpeg",
+      false
+    ],
+    [
+      "12 Channel ECG-E70",
+      "ENT",
+      28,
+      "/images/products/12-channel-ecg-e70.jpeg",
+      true
+    ],
+    [
+      "Holter ECG",
+      "ENT",
+      29,
+      null,
+      false
+    ],
+    [
+      "Spirometer with screen",
+      "ENT",
+      29,
+      "/images/products/spirometer-with-screen.jpeg",
+      true
+    ],
+    [
+      "CTG Machine Jumper",
+      "ENT",
+      31,
+      "/images/products/ctg-machine-jumper.jpeg",
+      true
+    ],
+    [
+      "CTG Machine F80",
+      "ENT",
+      31,
+      "/images/products/ctg-machine-f80.jpeg",
+      true
+    ],
+    [
+      "CTG Machine F90",
+      "Pediatric & Neonatal",
+      32,
+      "/images/products/ctg-machine-f90.jpeg",
+      true
+    ],
+    [
+      "CTG-Jumper JPD-600P",
+      "Pediatric & Neonatal",
+      32,
+      "/images/products/ctg-jumper-jpd-600p.jpeg",
+      false
+    ],
+    [
+      "Baby incubator BB100",
+      "Pediatric & Neonatal",
+      33,
+      "/images/products/baby-incubator-bb100.jpeg",
+      true
+    ],
+    [
+      "Baby incubator BB200",
+      "Pediatric & Neonatal",
+      33,
+      "/images/products/baby-incubator-bb200.jpeg",
+      true
+    ],
+    [
+      "Baby crib",
+      "ENT",
+      34,
+      "/images/products/baby-crib.jpeg",
+      true
+    ],
+    [
+      "Drills & saws",
+      "Orthopedics",
+      36,
+      null,
+      false
+    ],
+    [
+      "Surgical table Manual",
+      "Orthopedics",
+      36,
+      "/images/products/surgical-table-manual.jpeg",
+      true
+    ],
+    [
+      "Surgical table Electrical",
+      "Physiotherapy",
+      37,
+      "/images/products/surgical-table-electrical.jpeg",
+      true
+    ],
+    [
+      "Extension for lower extremities",
+      "Physiotherapy",
+      37,
+      "/images/products/extension-for-lower-extremities.jpeg",
+      true
+    ],
+    [
+      "Infrared therapy light",
+      "Physiotherapy",
+      38,
+      "/images/products/infrared-therapy-light.jpeg",
+      true
+    ],
+    [
+      "Infrared therapy light",
+      "Physiotherapy",
+      38,
+      "/images/products/infrared-therapy-light-1.jpeg",
+      true
+    ],
+    [
+      "Passive hand training system",
+      "Physiotherapy",
+      39,
+      "/images/products/passive-hand-training-system.jpeg",
+      false
+    ],
+    [
+      "Vibration expectoration device",
+      "Physiotherapy",
+      39,
+      "/images/products/vibration-expectoration-device.jpeg",
+      true
+    ],
+    [
+      "Treadmill",
+      "Physiotherapy",
+      39,
+      "/images/products/treadmill.jpeg",
+      true
+    ],
+    [
+      "Rehabilitation bed",
+      "Physiotherapy",
+      39,
+      "/images/products/rehabilitation-bed.jpeg",
+      false
+    ],
+    [
+      "Traction bed",
+      "Physiotherapy",
+      40,
+      "/images/products/traction-bed.jpeg",
+      true
+    ],
+    [
+      "Elbow, joint, rehabilitation device",
+      "Physiotherapy",
+      40,
+      "/images/products/elbow-joint-rehabilitation-device.jpeg",
+      false
+    ],
+    [
+      "Ultrasonic Physio Therapy Device",
+      "Physiotherapy",
+      40,
+      "/images/products/ultrasonic-physio-therapy-device.jpeg",
+      true
+    ],
+    [
+      "Direct Ophthalmosco pe YUEJIN",
+      "Ophthalmology",
+      41,
+      "/images/products/direct-ophthalmosco-pe-yuejin.jpeg",
+      true
+    ],
+    [
+      "Direct Ophthalmosco pe 66 Vision YZ11D",
+      "Ophthalmology",
+      41,
+      "/images/products/direct-ophthalmosco-pe-66-vision-yz11d.jpeg",
+      true
+    ],
+    [
+      "Binocular indirect ophthalmoscop e 66 Vision",
+      "Ophthalmology",
+      41,
+      "/images/products/binocular-indirect-ophthalmoscop-e-66-vision.jpeg",
+      true
+    ],
+    [
+      "Streak Retinoscope YZ24B",
+      "ENT",
+      42,
+      "/images/products/streak-retinoscope-yz24b.jpeg",
+      true
+    ],
+    [
+      "Auto Kerato Refractometer COT ARK 7600",
+      "ENT",
+      42,
+      "/images/products/auto-kerato-refractometer-cot-ark-7600.jpeg",
+      true
+    ],
+    [
+      "Keratometer 66 Vision",
+      "ENT",
+      42,
+      "/images/products/keratometer-66-vision.jpeg",
+      true
+    ],
+    [
+      "Lens meter COT-L900",
+      "ENT",
+      43,
+      "/images/products/lens-meter-cot-l900.jpeg",
+      true
+    ],
+    [
+      "Optical frame heater COT-W84I",
+      "ENT",
+      43,
+      "/images/products/optical-frame-heater-cot-w84i.jpeg",
+      true
+    ],
+    [
+      "Slit lamp KANGHUA SLM-2ER",
+      "ENT",
+      43,
+      "/images/products/slit-lamp-kanghua-slm-2er.png",
+      true
+    ],
+    [
+      "Slit lamp S360 Mediworks",
+      "ENT",
+      44,
+      "/images/products/slit-lamp-s360-mediworks.jpeg",
+      true
+    ],
+    [
+      "Slit lamp 66 Vision YZ5G",
+      "ENT",
+      44,
+      "/images/products/slit-lamp-66-vision-yz5g.jpeg",
+      true
+    ],
+    [
+      "Digital Slit Lamp Microscope YZ5S",
+      "ENT",
+      45,
+      "/images/products/digital-slit-lamp-microscope-yz5s.jpeg",
+      true
+    ],
+    [
+      "Binocular Handheld Slit Lamp Microscope YZ3",
+      "ENT",
+      46,
+      "/images/products/binocular-handheld-slit-lamp-microscope-yz3.jpeg",
+      true
+    ],
+    [
+      "Applanation Tonometer Mediworks T170",
+      "ENT",
+      46,
+      "/images/products/applanation-tonometer-mediworks-t170.jpeg",
+      true
+    ],
+    [
+      "Schiotz Tonometer 66 Vision YZ7A",
+      "ENT",
+      47,
+      "/images/products/schiotz-tonometer-66-vision-yz7a.jpeg",
+      true
+    ],
+    [
+      "Applanation Tonometer (Goldman tonometer) 66 Vision YZ30R",
+      "ENT",
+      47,
+      "/images/products/applanation-tonometer-goldman-tonometer-66-vision-yz30r.jpeg",
+      true
+    ],
+    [
+      "Applanation Tonometer 66 Vision YZ30T",
+      "ENT",
+      47,
+      "/images/products/applanation-tonometer-66-vision-yz30t.jpeg",
+      true
+    ],
+    [
+      "Applanation Tonometer 66 Vision YZ30X",
+      "ENT",
+      47,
+      "/images/products/applanation-tonometer-66-vision-yz30x.jpeg",
+      true
+    ],
+    [
+      "20D Lens 66 Vision",
+      "ENT",
+      48,
+      "/images/products/20d-lens-66-vision.jpeg",
+      true
+    ],
+    [
+      "78D Lens 66 Vision",
+      "ENT",
+      48,
+      "/images/products/78d-lens-66-vision.jpeg",
+      true
+    ],
+    [
+      "90D Lens 66 Vision",
+      "ENT",
+      48,
+      "/images/products/90d-lens-66-vision.jpeg",
+      true
+    ],
+    [
+      "Gonioscopy 3 mirror lens",
+      "ENT",
+      48,
+      "/images/products/gonioscopy-3-mirror-lens.jpeg",
+      false
+    ],
+    [
+      "Optical Biometer",
+      "ENT",
+      48,
+      null,
+      false
+    ],
+    [
+      "Non- contact tonometer",
+      "ENT",
+      49,
+      "/images/products/non-contact-tonometer.jpeg",
+      true
+    ],
+    [
+      "Rebound tonometer Handheld",
+      "ENT",
+      50,
+      "/images/products/rebound-tonometer-handheld.png",
+      true
+    ],
+    [
+      "Portable fundus camera (Un-dilated retina camera) WEIZHEN WZ-1300",
+      "ENT",
+      50,
+      "/images/products/portable-fundus-camera-un-dilated-retina-camera-weizhen-wz-1.jpeg",
+      true
+    ],
+    [
+      "OCT Optical Coherence Tomography",
+      "ENT",
+      51,
+      "/images/products/oct-optical-coherence-tomography.jpeg",
+      true
+    ],
+    [
+      "Visual acuity screen",
+      "ENT",
+      51,
+      "/images/products/visual-acuity-screen.jpeg",
+      true
+    ],
+    [
+      "Trial lens set Metal",
+      "ENT",
+      52,
+      "/images/products/trial-lens-set-metal.jpeg",
+      true
+    ],
+    [
+      "Trial lens set Plastic",
+      "ENT",
+      52,
+      "/images/products/trial-lens-set-plastic.jpeg",
+      true
+    ],
+    [
+      "Trial frame Adult",
+      "ENT",
+      52,
+      "/images/products/trial-frame-adult.jpeg",
+      true
+    ],
+    [
+      "Trial frame Adult Pediatric",
+      "ENT",
+      53,
+      "/images/products/trial-frame-adult-pediatric.jpeg",
+      true
+    ],
+    [
+      "Near vision chart",
+      "ENT",
+      53,
+      "/images/products/near-vision-chart.jpeg",
+      true
+    ],
+    [
+      "Color vision chart",
+      "ENT",
+      53,
+      "/images/products/color-vision-chart.jpeg",
+      false
+    ],
+    [
+      "Anterior segment operating microscope",
+      "ENT",
+      53,
+      "/images/products/anterior-segment-operating-microscope.jpeg",
+      true
+    ],
+    [
+      "Electric lifting table",
+      "ENT",
+      54,
+      "/images/products/electric-lifting-table.jpeg",
+      false
+    ],
+    [
+      "Examination stools",
+      "ENT",
+      54,
+      "/images/products/examination-stools.jpeg",
+      true
+    ],
+    [
+      "Pure tone audiometry",
+      "ENT",
+      55,
+      "/images/products/pure-tone-audiometry.jpeg",
+      true
+    ],
+    [
+      "Middle ear anayzer",
+      "ENT",
+      55,
+      "/images/products/middle-ear-anayzer.jpeg",
+      true
+    ],
+    [
+      "ENT",
+      "ENT",
+      56,
+      "/images/products/ent.jpeg",
+      true
+    ],
+    [
+      "diagnostic set",
+      "ENT",
+      56,
+      "/images/products/diagnostic-set.png",
+      true
+    ],
+    [
+      "ENT diagnostic set",
+      "ENT",
+      57,
+      "/images/products/ent-diagnostic-set.jpeg",
+      true
+    ],
+    [
+      "Wall mounted diagnostic set",
+      "ENT",
+      57,
+      "/images/products/wall-mounted-diagnostic-set.jpeg",
+      true
+    ],
+    [
+      "ENT Endoscopy Unit (Rigid)- 24 Inch PREMIUM HD COMPACT",
+      "ENT",
+      58,
+      "/images/products/ent-endoscopy-unit-rigid-24-inch-premium-hd-compact.jpeg",
+      true
+    ],
+    [
+      "Flexible Digital Nasal laryngoscope",
+      "ENT",
+      58,
+      "/images/products/flexible-digital-nasal-laryngoscope.jpeg",
+      true
+    ],
+    [
+      "ENT Microscope ，Surgical & Diagnostic",
+      "ENT",
+      60,
+      "/images/products/ent-microscope-surgical-diagnostic.jpeg",
+      true
+    ],
+    [
+      "ENT Chair - Motorized",
+      "ENT",
+      61,
+      "/images/products/ent-chair-motorized.jpeg",
+      true
+    ],
+    [
+      "Dental chair Siger V6000",
+      "ENT",
+      62,
+      "/images/products/dental-chair-siger-v6000.jpeg",
+      true
+    ],
+    [
+      "Dental chair Siger U100",
+      "ENT",
+      63,
+      "/images/products/dental-chair-siger-u100.jpeg",
+      true
+    ],
+    [
+      "Dental chair Siger U200",
+      "ENT",
+      64,
+      "/images/products/dental-chair-siger-u200.jpeg",
+      true
+    ],
+    [
+      "Dental chair Siger S30",
+      "ENT",
+      64,
+      "/images/products/dental-chair-siger-s30.jpeg",
+      true
+    ],
+    [
+      "Air compressor SA 075",
+      "ENT",
+      65,
+      "/images/products/air-compressor-sa-075.jpeg",
+      true
+    ],
+    [
+      "Air compressor SA 150",
+      "ENT",
+      66,
+      "/images/products/air-compressor-sa-150.jpeg",
+      true
+    ],
+    [
+      "Air compressor SA 220",
+      "ENT",
+      66,
+      "/images/products/air-compressor-sa-220.jpeg",
+      true
+    ],
+    [
+      "Air compressor SA 300",
+      "ENT",
+      67,
+      "/images/products/air-compressor-sa-300.jpeg",
+      true
+    ],
+    [
+      "Air compressor HY-100",
+      "ENT",
+      67,
+      "/images/products/air-compressor-hy-100.jpeg",
+      true
+    ],
+    [
+      "Air compressor HY-200",
+      "ENT",
+      67,
+      "/images/products/air-compressor-hy-200.jpeg",
+      true
+    ],
+    [
+      "Air compressor HYT-300",
+      "ENT",
+      68,
+      "/images/products/air-compressor-hyt-300.jpeg",
+      true
+    ],
+    [
+      "Ultrasonic cleaner",
+      "ENT",
+      69,
+      "/images/products/ultrasonic-cleaner.jpeg",
+      true
+    ],
+    [
+      "Dental Surgical Microscope",
+      "ENT",
+      69,
+      "/images/products/dental-surgical-microscope.jpeg",
+      true
+    ],
+    [
+      "Autoclave 23L- DENGGUAN",
+      "ENT",
+      70,
+      "/images/products/autoclave-23l-dengguan.jpeg",
+      true
+    ],
+    [
+      "Autoclave 23L- SIGER",
+      "ENT",
+      71,
+      "/images/products/autoclave-23l-siger.jpeg",
+      true
+    ],
+    [
+      "Dental Xray Machine - Siger",
+      "ENT",
+      71,
+      "/images/products/dental-xray-machine-siger.jpeg",
+      true
+    ],
+    [
+      "Dental Xray Machine - Eighteeth",
+      "ENT",
+      71,
+      "/images/products/dental-xray-machine-eighteeth.jpeg",
+      true
+    ],
+    [
+      "X Ray sensor NanoPix -E 1.3 Brand: Eight teeth",
+      "ENT",
+      72,
+      "/images/products/x-ray-sensor-nanopix-e-1-3-brand-eight-teeth.png",
+      true
+    ],
+    [
+      "X Ray sensor NanoPix 1 Brand: Eight teeth",
+      "ENT",
+      72,
+      "/images/products/x-ray-sensor-nanopix-1-brand-eight-teeth.png",
+      true
+    ],
+    [
+      "X ray sensor NanoPix 1.5 Brand: Eight teeth",
+      "ENT",
+      72,
+      "/images/products/x-ray-sensor-nanopix-1-5-brand-eight-teeth.png",
+      true
+    ],
+    [
+      "X Ray sensor NanoPix 2 Brand: Eight teeth",
+      "ENT",
+      72,
+      "/images/products/x-ray-sensor-nanopix-2-brand-eight-teeth.png",
+      true
+    ],
+    [
+      "Ultrasonic scaler VRN",
+      "ENT",
+      72,
+      "/images/products/ultrasonic-scaler-vrn.jpeg",
+      true
+    ],
+    [
+      "LED scaler handpiece",
+      "ENT",
+      73,
+      "/images/products/led-scaler-handpiece.jpeg",
+      true
+    ],
+    [
+      "Micro motor- C PUMA EX",
+      "ENT",
+      73,
+      "/images/products/micro-motor-c-puma-ex.jpeg",
+      true
+    ],
+    [
+      "Micro motor- C PUMA MASTER",
+      "ENT",
+      73,
+      "/images/products/micro-motor-c-puma-master.jpeg",
+      true
+    ],
+    [
+      "Endo Motors- C-SMART MINI AP+",
+      "ENT",
+      73,
+      "/images/products/endo-motors-c-smart-mini-ap.jpeg",
+      true
+    ],
+    [
+      "Endo Motors- C-SMART MINI AP+",
+      "ENT",
+      73,
+      "/images/products/endo-motors-c-smart-mini-ap.jpeg",
+      true
+    ],
+    [
+      "Endo Motors- C-SMART-I PILOT",
+      "ENT",
+      74,
+      "/images/products/endo-motors-c-smart-i-pilot.jpeg",
+      true
+    ],
+    [
+      "Endo Motors- C-SMART-I PILOT",
+      "ENT",
+      74,
+      "/images/products/endo-motors-c-smart-i-pilot-1.jpeg",
+      true
+    ],
+    [
+      "Dental Implantation Systems C SAILOR S1",
+      "ENT",
+      74,
+      "/images/products/dental-implantation-systems-c-sailor-s1.png",
+      true
+    ],
+    [
+      "Dental Implantation Systems C-SAILOR PRO+",
+      "ENT",
+      74,
+      "/images/products/dental-implantation-systems-c-sailor-pro.jpeg",
+      true
+    ],
+    [
+      "Curing Lights Q1",
+      "ENT",
+      75,
+      "/images/products/curing-lights-q1.png",
+      true
+    ],
+    [
+      "Curing Lights Swift",
+      "ENT",
+      75,
+      "/images/products/curing-lights-swift.png",
+      true
+    ],
+    [
+      "Curing Lights Nano",
+      "ENT",
+      75,
+      "/images/products/curing-lights-nano.png",
+      true
+    ],
+    [
+      "Curing Lights Halo",
+      "ENT",
+      76,
+      "/images/products/curing-lights-halo.png",
+      true
+    ],
+    [
+      "Root apex locator- C- ROOT I(V)",
+      "ENT",
+      76,
+      "/images/products/root-apex-locator-c-root-i-v.png",
+      true
+    ],
+    [
+      "Dental Scaler and Air Polisher PT-MASTER",
+      "ENT",
+      76,
+      "/images/products/dental-scaler-and-air-polisher-pt-master.jpeg",
+      true
+    ],
+    [
+      "High-speed Air Turbine Handpieces with LED CX207-F",
+      "ENT",
+      76,
+      "/images/products/high-speed-air-turbine-handpieces-with-led-cx207-f.jpeg",
+      true
+    ],
+    [
+      "High-speed Air Turbine Handpieces with LED 45° COXO",
+      "ENT",
+      77,
+      "/images/products/high-speed-air-turbine-handpieces-with-led-45-coxo.png",
+      false
+    ],
+    [
+      "High-speed Air Turbine Handpieces without LED 45° COXO",
+      "ENT",
+      77,
+      "/images/products/high-speed-air-turbine-handpieces-without-led-45-coxo.png",
+      false
+    ],
+    [
+      "High-speed Air Turbine Handpieces without LED 45° 佛山稳健",
+      "ENT",
+      77,
+      "/images/products/high-speed-air-turbine-handpieces-without-led-45.png",
+      false
+    ],
+    [
+      "Gutta percha cutter C BLADE",
+      "ENT",
+      78,
+      "/images/products/gutta-percha-cutter-c-blade.jpeg",
+      true
+    ],
+    [
+      "Endo file Hand file NITI",
+      "ENT",
+      78,
+      "/images/products/endo-file-hand-file-niti.jpeg",
+      false
+    ],
+    [
+      "Sterilizing sealer Manual",
+      "ENT",
+      78,
+      "/images/products/sterilizing-sealer-manual.jpeg",
+      true
+    ],
+    [
+      "Sterilizing sealer Manual",
+      "ENT",
+      79,
+      "/images/products/sterilizing-sealer-manual.jpeg",
+      true
+    ],
+    [
+      "Sterilizing sealer Automatic",
+      "ENT",
+      79,
+      "/images/products/sterilizing-sealer-automatic.jpeg",
+      true
+    ],
+    [
+      "100L Steam sterilizer DGL-100B",
+      "Laboratory",
+      80,
+      "/images/products/100l-steam-sterilizer-dgl-100b.jpeg",
+      true
+    ],
+    [
+      "100L Steam sterilizer DGLS-100B",
+      "Laboratory",
+      80,
+      "/images/products/100l-steam-sterilizer-dgls-100b.jpeg",
+      true
+    ],
+    [
+      "Centrifuge",
+      "ENT",
+      81,
+      "/images/products/centrifuge.jpeg",
+      true
+    ],
+    [
+      "Roll mixer",
+      "ENT",
+      81,
+      "/images/products/roll-mixer.jpeg",
+      true
+    ],
+    [
+      "Biological Microscope- EX 21-B",
+      "ENT",
+      81,
+      "/images/products/biological-microscope-ex-21-b.jpeg",
+      true
+    ],
+    [
+      "Biological Microscope- EX 33-B",
+      "Laboratory",
+      83,
+      "/images/products/biological-microscope-ex-33-b.jpeg",
+      true
+    ],
+    [
+      "Laboratory refrigerator",
+      "Laboratory",
+      83,
+      "/images/products/laboratory-refrigerator.jpeg",
+      true
+    ],
+    [
+      "Forced air oven (Touch screen), with flash driver port, 35L",
+      "Laboratory",
+      84,
+      "/images/products/forced-air-oven-touch-screen-with-flash-driver-port-35l.jpeg",
+      true
+    ],
+    [
+      "Forced air oven (LCD) 35L",
+      "Laboratory",
+      84,
+      "/images/products/forced-air-oven-lcd-35l.png",
+      true
+    ],
+    [
+      "Forced air oven (Touch screen), with flash driver port, 59L",
+      "Laboratory",
+      85,
+      "/images/products/forced-air-oven-touch-screen-with-flash-driver-port-59l.jpeg",
+      true
+    ],
+    [
+      "Forced air oven (LCD) 59L",
+      "Laboratory",
+      85,
+      "/images/products/forced-air-oven-lcd-59l.png",
+      true
+    ]
+  ],
+  "db_to_remove": [
+    [
+      "Ikeda 4K UHD Integrated Endoscopy Tower System",
+      "Laparoscopy & Minimally Invasive Surgery",
+      "Operating Theatre"
+    ],
+    [
+      "Full HD 1080p Medical Video Processor & CCU",
+      "Laparoscopy & Minimally Invasive Surgery",
+      "Operating Theatre"
+    ],
+    [
+      "High-Flow Automatic CO2 Insufflator (30L - 45L/min with Gas Heater)",
+      "Laparoscopy & Minimally Invasive Surgery",
+      "Operating Theatre"
+    ],
+    [
+      "High-Lumen Medical Cold LED Light Source (80W - 120W)",
+      "Laparoscopy & Minimally Invasive Surgery",
+      "Operating Theatre"
+    ],
+    [
+      "32\" and 55\" Medical Grade 4K/FHD Surgical Displays",
+      "Laparoscopy & Minimally Invasive Surgery",
+      "Operating Theatre"
+    ],
+    [
+      "Autoclavable HD Rigid Laparoscopes (0° & 30°, 5.5mm & 10mm)",
+      "Laparoscopy & Minimally Invasive Surgery",
+      "Operating Theatre"
+    ],
+    [
+      "Modular Laparoscopic Hand Instruments, Trocar Cannulas & Clip Appliers",
+      "Laparoscopy & Minimally Invasive Surgery",
+      "Operating Theatre"
+    ],
+    [
+      "Continuous-Flow Bipolar & Monopolar Resectoscope Sets",
+      "Urology & Endourology",
+      "Operating Theatre"
+    ],
+    [
+      "Semi-Rigid & Flexible Ureterorenoscopes (URS)",
+      "Urology & Endourology",
+      "Operating Theatre"
+    ],
+    [
+      "Percutaneous Nephroscopes with Triturating Forceps",
+      "Urology & Endourology",
+      "Operating Theatre"
+    ],
+    [
+      "High-Power Holmium Laser Compatible Working Elements",
+      "Urology & Endourology",
+      "Operating Theatre"
+    ],
+    [
+      "Optical Urethrotome & Cystoscopy Sheath Sets",
+      "Urology & Endourology",
+      "Operating Theatre"
+    ],
+    [
+      "HD Thoracoscopes (0° & 30°, extended working length)",
+      "Video-Assisted Thoracoscopic Surgery (VATS)",
+      "Operating Theatre"
+    ],
+    [
+      "Double-Curved VATS Grasping, Dissecting & Biopsy Forceps",
+      "Video-Assisted Thoracoscopic Surgery (VATS)",
+      "Operating Theatre"
+    ],
+    [
+      "Endoscopic Vessel Sealing and Ultrasonic Dissection Devices",
+      "Video-Assisted Thoracoscopic Surgery (VATS)",
+      "Operating Theatre"
+    ],
+    [
+      "Thoracic Trocar Sets with Flexible Sleeve Portals",
+      "Video-Assisted Thoracoscopic Surgery (VATS)",
+      "Operating Theatre"
+    ],
+    [
+      "Neonatal CPAP Machine",
+      "Neonatal & Pediatric Care",
+      "Maternal & Infant"
+    ],
+    [
+      "Jaundice Detector",
+      "Neonatal & Pediatric Care",
+      "Maternal & Infant"
+    ],
+    [
+      "Infant Beds",
+      "Neonatal & Pediatric Care",
+      "Maternal & Infant"
+    ],
+    [
+      "Microprocessor Infant Incubator",
+      "Neonatal & Pediatric Care",
+      "Maternal & Infant"
+    ],
+    [
+      "Intensive LED Phototherapy Unit",
+      "Neonatal & Pediatric Care",
+      "Maternal & Infant"
+    ],
+    [
+      "Neonatal High-Frequency Ventilator",
+      "Neonatal & Pediatric Care",
+      "Maternal & Infant"
+    ],
+    [
+      "Neonatal Multi-Parameter Monitor",
+      "Neonatal & Pediatric Care",
+      "Maternal & Infant"
+    ],
+    [
+      "Handheld Neonatal Pulse Oximeter",
+      "Neonatal & Pediatric Care",
+      "Maternal & Infant"
+    ],
+    [
+      "Hystero Resectoscope",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Morcellator",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Uterine Manipulator",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Laparoscopic Access",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Laparoscopic Forceps",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Laparoscopic Suturing Instrument",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Twins & Singleton Fetal Maternal Doppler Monitor (CTG)",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Multi-Function Electric Delivery & Obstetric Operating Bed",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Vacuum Delivery Extractor & Infant Suction Unit",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Portable Point-of-Care Obstetric Ultrasound",
+      "Maternity & Obstetrics",
+      "Maternal & Infant"
+    ],
+    [
+      "Manual External Defibrillator",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Automated External Defibrillator (AED)",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Feeding Pump",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Laryngoscope Intubation Kits",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Bag Valve Masks",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Flexible Electronic Bronchoscope",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Blood Warmer",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Invasive / Non-Invasive Critical Care ICU Ventilator",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "15\" Modular Multi-Parameter Patient Monitor",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Central Monitoring Station Network",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Multi-Channel Syringe Pump & Volumetric Infusion Workstation",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "ICU Electric Multi-Position Medical Bed",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Ceiling Medical Gas & Equipment Delivery Pendant",
+      "Intensive Care Unit (ICU)",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Automated Digital Lensmeter (Focimeter)",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Handheld Portable Rebound Tonometer",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Ophthalmic Surgical Operating Microscope with Coaxial Red Reflex",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Automated Perimeter Visual Field Analyzer",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Motorized Ophthalmic Examination Chair & Stand Unit",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Rechargeable Portable Streak Retinoscope & Direct Ophthalmoscope Set",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Digital Slit Lamp Imaging System with Beam Splitter & HD Camera",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Auto Refractometer / Keratometer",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Phacoemulsification Cataract Surgery System",
+      "Ophthalmology & Eye Care",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Luxury Electric Dental Treatment Chair Unit",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Class B Medical Autoclave Steam Sterilizer 23L",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Class B Dental Vacuum Autoclave 18L",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "High-Frequency Portable Handheld Dental X-Ray Unit",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Wall-Mounted Intraoral Dental X-Ray System",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Digital Panoramic Dental OPG X-Ray Machine",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "3D Dental Cone Beam CT (CBCT) & Cephalometric Imaging System",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Endo-Smart Pro Wireless Rotary Endo Motor with Built-in Apex Locator",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Endo-Master Brushless Reciprocating Rotary Endo Motor",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Mini-Endo LED Cordless Endodontic Treatment Motor",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Surgical Dental Implantation System & Motor Workstation",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Brushless Electric Dental Micromotor System",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Broad-Spectrum Cordless LED Dental Curing Light",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Ultrasonic Piezo Dental Scaler & Air Polisher 2-in-1 Combo",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Contra-Angle Geared Handpiece (1:5 Speed-Increasing & 1:1 Direct)",
+      "Dentistry & Oral Surgery",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Autoclavable Bone Cannulated Drills, Sagittal Saws & Reamers",
+      "Orthopedics & Traumatology",
+      "Operating Theatre"
+    ],
+    [
+      "HD Arthroscopy Systems with Shaver Consoles and RF Electrodes",
+      "Orthopedics & Traumatology",
+      "Operating Theatre"
+    ],
+    [
+      "Carbon-Fiber Radiolucent Orthopedic Extension Traction Tables",
+      "Orthopedics & Traumatology",
+      "Operating Theatre"
+    ],
+    [
+      "Large & Small Fragment Trauma Instrument Trays",
+      "Orthopedics & Traumatology",
+      "Operating Theatre"
+    ],
+    [
+      "Electronic Video Gastroscopes & Video Colonoscopes",
+      "Gastroenterology & GI Endoscopy",
+      "Operating Theatre"
+    ],
+    [
+      "HD Video Endoscopy Processor with Digital Chromoendoscopy (Hemoglobin Enhancement)",
+      "Gastroenterology & GI Endoscopy",
+      "Operating Theatre"
+    ],
+    [
+      "Carbon Dioxide GI Insufflation Regulators",
+      "Gastroenterology & GI Endoscopy",
+      "Operating Theatre"
+    ],
+    [
+      "Endoscope Automatic Washer-Disinfectors (AER)",
+      "Gastroenterology & GI Endoscopy",
+      "Operating Theatre"
+    ],
+    [
+      "Polypectomy Snares, Injection Needles & Hemostatic Hemoclips",
+      "Gastroenterology & GI Endoscopy",
+      "Operating Theatre"
+    ],
+    [
+      "Compact Office & Operative Hysteroscope Sets with Sheaths",
+      "Gynecology & Women's Health",
+      "Operating Theatre"
+    ],
+    [
+      "HD Digital Video Colposcopes with Green Filter Software Analysis",
+      "Gynecology & Women's Health",
+      "Operating Theatre"
+    ],
+    [
+      "LEEP / LLETZ High-Frequency Radiofrequency Generators with Smoke Evacuation",
+      "Gynecology & Women's Health",
+      "Operating Theatre"
+    ],
+    [
+      "Cryosurgical Systems for Cervical Lesion Management",
+      "Gynecology & Women's Health",
+      "Operating Theatre"
+    ],
+    [
+      "Multi-Parameter Pediatric Monitors with Custom Neonatal/Child Algorithms",
+      "Pediatrics & Child Health",
+      "Maternal & Infant"
+    ],
+    [
+      "Pediatric Crash & Emergency Resuscitation Carts",
+      "Pediatrics & Child Health",
+      "Maternal & Infant"
+    ],
+    [
+      "Pediatric Vein Finders (Near-Infrared Projection)",
+      "Pediatrics & Child Health",
+      "Maternal & Infant"
+    ],
+    [
+      "Child Treatment & Observation Beds with Safety Railings",
+      "Pediatrics & Child Health",
+      "Maternal & Infant"
+    ],
+    [
+      "High-Frequency Mobile Surgical C-Arm X-Ray Systems",
+      "Radiology & Diagnostic Imaging",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Wireless Flat-Panel Digital Radiography (DR) Detectors",
+      "Radiology & Diagnostic Imaging",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Floor-Mounted and Ceiling Suspension High-Frequency X-Ray Units",
+      "Radiology & Diagnostic Imaging",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Color Doppler Diagnostic Ultrasound (Cardio, Vascular, Abdominal)",
+      "Radiology & Diagnostic Imaging",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Lead Protection Equipment & Radiation Shielding Glass",
+      "Radiology & Diagnostic Imaging",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Biphasic Defibrillator Monitors with Pacing & 12-Lead ECG",
+      "Emergency & Casualty Care",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Public Access Automated External Defibrillators (AED)",
+      "Emergency & Casualty Care",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Portable Turbine Emergency Transport Ventilators",
+      "Emergency & Casualty Care",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Emergency Crash Carts with Lockable Drug Drawers",
+      "Emergency & Casualty Care",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Hydraulic Multi-Position Ambulance & Patient Transfer Stretchers",
+      "Emergency & Casualty Care",
+      "Critical Care & Emergency"
+    ],
+    [
+      "Audiometer",
+      "ENT (Ear, Nose & Throat)",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Tympanometer (Middle Ear Analyzer)",
+      "ENT (Ear, Nose & Throat)",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Portable Otoscopes",
+      "ENT (Ear, Nose & Throat)",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "ENT Endoscopy Units",
+      "ENT (Ear, Nose & Throat)",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Electronic Flexible Laryngoscope",
+      "ENT (Ear, Nose & Throat)",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "ENT Treatment Chair",
+      "ENT (Ear, Nose & Throat)",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "ENT Headlight",
+      "ENT (Ear, Nose & Throat)",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Pneumatic Hand Rehabilitation & Passive Finger Training System",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Sequential Pneumatic Intermittent Compression Therapy System",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Knuckle & Wrist Joint Active/Passive Rehabilitation Training System",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Medical Rehabilitation Ergometer Static Bicycle",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Extracorporeal Radial Shockwave Therapy (ESWT) Machine",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Medical Rehabilitation Treadmill with Safety Harness & Handrails",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Electric Multi-Section Physiotherapy & Treatment Bed",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Computerized Cervical & Lumbar Decompression Traction Bed",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Bobath Neurological Rehabilitation Training Bed (Extra-Wide)",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Physical Therapy Agility Ladder & Gait Speed Coordination Set",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Dual-Channel Digital TENS & EMS Electrotherapy Machine",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Clinical Hydrocollator Moist Heat Hot Pack Heating Unit",
+      "Physiotherapy & Rehabilitation",
+      "Diagnostics & Specialty"
+    ],
+    [
+      "Electro-Hydraulic Operating Table",
+      "Operating Theatre",
+      "Operating Theatre"
+    ],
+    [
+      "Double-Dome Shadowless LED Surgical Light",
+      "Operating Theatre",
+      "Operating Theatre"
+    ],
+    [
+      "High-Frequency Electrosurgical Unit (ESU)",
+      "Operating Theatre",
+      "Operating Theatre"
+    ],
+    [
+      "Integrated Anesthesia Workstation",
+      "Operating Theatre",
+      "Operating Theatre"
+    ],
+    [
+      "Surgical Smoke Evacuation System",
+      "Operating Theatre",
+      "Operating Theatre"
+    ],
+    [
+      "Medical Ceiling Pendant for Surgery",
+      "Operating Theatre",
+      "Operating Theatre"
+    ],
+    [
+      "Surgical Scrub Sink",
+      "Operating Theatre",
+      "Operating Theatre"
+    ],
+    [
+      "Patient Warming System",
+      "Operating Theatre",
+      "Operating Theatre"
+    ],
+    [
+      "5-Part Differential Hematology Analyzer",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Automated Clinical Biochemistry Analyzer",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Automated Electrolyte Analyzer (ISE)",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "High-Speed Refrigerated Centrifuge",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Biological Binocular / Trinocular Laboratory Microscope",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Microplate ELISA Reader & Washer",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Semi-Automated Coagulation Analyzer",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Medical Laboratory Refrigerator & Plasma Freezer",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Blood Tube Roller Mixer",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Point-of-Care (POC) Analyzer",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Arterial Blood Gas (ABG) Analyzer",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Class II Biosafety Cabinet (Type A2)",
+      "Laboratory",
+      "Laboratory"
+    ],
+    [
+      "Electric 3-Function Hospital Ward Bed",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Manual 2-Crank Hospital Patient Bed",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Emergency Medical Crash Cart",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Stainless Steel Surgical Dressing & Instrument Trolley",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Heavy-Duty Mobile IV Infusion Stand",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Bedside Medical Cabinet & Locker",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Clinical Examination & Treatment Table",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Dirty & Clean Linen Collection Trolley",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Ergonomic Swivel Medical Stool Chair",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Foldable Hospital Wheelchair",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Medical Surgical LED Headlight",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Digital Upper Arm Blood Pressure Monitor",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "12-Lead Electrocardiograph (ECG) Machine",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Digital Electroencephalograph (EEG) Machine",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Multi-Parameter Bedside Patient Monitor",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Portable Diagnostic Ultrasound System",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Medical Ultrasonic & Compressor Nebuliser Machine",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "High-Vacuum Mobile Surgical Suction Machine",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Vertical Pressure Steam Sterilizer Autoclave",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ],
+    [
+      "Horizontal Cylindrical Pressure Autoclave",
+      "General Hospital Materials",
+      "General Hospital Materials"
+    ]
+  ],
+  "missing_image": [
+    "Surgical pendant",
+    "Anesthesia machine",
+    "Laparoscopy tower",
+    "C arm Xray machine",
+    "Emergency ventilator",
+    "Bronchoscop e",
+    "Resuscitation bag Pediatric",
+    "Resuscitation bag Infant",
+    "Holter ECG",
+    "Ureteroscope",
+    "Drills & saws",
+    "Shaver",
+    "Optical Biometer"
+  ],
+  "missing_spec": [
+    "[Unnamed Ward Privacy Screen on Page 8]",
+    "Air Mattress",
+    "Consultation chair",
+    "Infrared Forehead Thermometer YUWELL YT-1C",
+    "Blood pressure monitor YUWELL YE670A",
+    "Wrist Blood pressure monitor YUWELL YE8300B",
+    "Ultrasound machine S12 SONOSCAPE",
+    "Surgical pendant",
+    "Anesthesia machine",
+    "Laparoscopy tower",
+    "C arm Xray machine",
+    "ICU Ventilator",
+    "Emergency ventilator",
+    "Bronchoscop e",
+    "Resuscitation bag Pediatric",
+    "Resuscitation bag Infant",
+    "Vein finder",
+    "Holter ECG",
+    "CTG-Jumper JPD-600P",
+    "Ureteroscope",
+    "Drills & saws",
+    "Shaver",
+    "Passive hand training system",
+    "Rehabilitation bed",
+    "Elbow, joint, rehabilitation device",
+    "Gonioscopy 3 mirror lens",
+    "Optical Biometer",
+    "Color vision chart",
+    "Electric lifting table",
+    "High-speed Air Turbine Handpieces with LED 45° COXO",
+    "High-speed Air Turbine Handpieces without LED 45° COXO",
+    "High-speed Air Turbine Handpieces with LED 45° 佛山稳健",
+    "High-speed Air Turbine Handpieces without LED 45° 佛山稳健",
+    "Endo file Hand file NITI"
+  ]
+}
