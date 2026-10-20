@@ -638,32 +638,38 @@ p {
   position: relative;
 }
 
-.btn-smart-moth span,
-.btn-smart-moth .btn-text {
+.btn-smart-moth > span,
+.btn-smart-moth > .btn-text {
   display: inline-block;
-  margin-left: 0.35em;
-  transition: all 0.3s ease-in-out;
+  margin-left: 1.85em;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
   color: #ffffff;
   white-space: nowrap;
 }
 
 .btn-smart-moth .svg-wrapper-1 {
+  position: absolute;
+  left: 1.15em;
+  top: 50%;
+  transform: translate(0, -50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
 
 .btn-smart-moth .svg-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-smart-moth svg {
   display: block;
   transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
   width: 22px;
   height: 22px;
@@ -676,17 +682,22 @@ p {
   transform: translateY(-1px);
 }
 
+.btn-smart-moth:hover .svg-wrapper-1 {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .btn-smart-moth:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
 .btn-smart-moth:hover svg {
-  transform: translateX(3.6em) rotate(45deg) scale(1.15);
+  transform: rotate(45deg) scale(1.15);
 }
 
-.btn-smart-moth:hover span,
-.btn-smart-moth:hover .btn-text {
-  transform: translateX(12em);
+.btn-smart-moth:hover > span,
+.btn-smart-moth:hover > .btn-text {
+  transform: translateX(16em);
   opacity: 0;
 }
 
@@ -713,13 +724,13 @@ p {
 
 .btn-smart-moth.btn-smart-whatsapp:hover svg,
 .btn-smart-moth.btn-whatsapp:hover svg {
-  transform: translateX(5.5em) rotate(15deg) scale(1.2);
+  transform: rotate(15deg) scale(1.2);
 }
 
-.btn-smart-moth.btn-smart-whatsapp:hover span,
-.btn-smart-moth.btn-smart-whatsapp:hover .btn-text,
-.btn-smart-moth.btn-whatsapp:hover span,
-.btn-smart-moth.btn-whatsapp:hover .btn-text {
+.btn-smart-moth.btn-smart-whatsapp:hover > span,
+.btn-smart-moth.btn-smart-whatsapp:hover > .btn-text,
+.btn-smart-moth.btn-whatsapp:hover > span,
+.btn-smart-moth.btn-whatsapp:hover > .btn-text {
   transform: translateX(16em);
   opacity: 0;
 }
@@ -733,10 +744,10 @@ p {
   box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-.btn-smart-moth.btn-smart-phone span,
-.btn-smart-moth.btn-smart-phone .btn-text,
-.btn-smart-moth.btn-phone span,
-.btn-smart-moth.btn-phone .btn-text {
+.btn-smart-moth.btn-smart-phone > span,
+.btn-smart-moth.btn-smart-phone > .btn-text,
+.btn-smart-moth.btn-phone > span,
+.btn-smart-moth.btn-phone > .btn-text {
   color: #0f172a;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
@@ -787,14 +798,14 @@ p {
 
 .btn-smart-moth.btn-smart-phone:hover svg,
 .btn-smart-moth.btn-phone:hover svg {
-  transform: translateX(5.5em) scale(1.15);
+  transform: scale(1.15);
   color: #0284c7;
 }
 
-.btn-smart-moth.btn-smart-phone:hover span,
-.btn-smart-moth.btn-smart-phone:hover .btn-text,
-.btn-smart-moth.btn-phone:hover span,
-.btn-smart-moth.btn-phone:hover .btn-text {
+.btn-smart-moth.btn-smart-phone:hover > span,
+.btn-smart-moth.btn-smart-phone:hover > .btn-text,
+.btn-smart-moth.btn-phone:hover > span,
+.btn-smart-moth.btn-phone:hover > .btn-text {
   transform: translateX(16em);
   opacity: 0;
 }
@@ -822,18 +833,27 @@ p {
   box-shadow: 0 3px 12px rgba(37, 99, 235, 0.32);
 }
 
+.btn-smart-moth.btn-smart-moth-sm .svg-wrapper-1 {
+  left: 0.82em;
+}
+
+.btn-smart-moth.btn-smart-moth-sm > span,
+.btn-smart-moth.btn-smart-moth-sm > .btn-text {
+  margin-left: 1.55em;
+}
+
 .btn-smart-moth.btn-smart-moth-sm svg {
   width: 17px;
   height: 17px;
 }
 
 .btn-smart-moth.btn-smart-moth-sm:hover svg {
-  transform: translateX(2.6em) rotate(45deg) scale(1.12);
+  transform: rotate(45deg) scale(1.12);
 }
 
-.btn-smart-moth.btn-smart-moth-sm:hover span,
-.btn-smart-moth.btn-smart-moth-sm:hover .btn-text {
-  transform: translateX(9em);
+.btn-smart-moth.btn-smart-moth-sm:hover > span,
+.btn-smart-moth.btn-smart-moth-sm:hover > .btn-text {
+  transform: translateX(12em);
   opacity: 0;
 }
 
