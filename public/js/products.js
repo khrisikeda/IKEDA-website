@@ -31,9 +31,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (lower.includes('diagnostic')) {
       return 'Diagnostics & Specialty';
     }
-    if (lower.includes('lab')) {
-      return 'Laboratory';
-    }
     if (lower.includes('general') || lower.includes('material')) {
       return 'General Hospital Materials';
     }
