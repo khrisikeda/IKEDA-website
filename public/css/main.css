@@ -2442,6 +2442,50 @@ section {
   max-width: 95ch;
 }
 
+/* Nested Section Groups inside Subsections (e.g. VATS Telescopes, Energy, Disposables) */
+.category-nested-group {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.category-nested-group:first-child {
+  margin-top: 0.25rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+.category-nested-group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.nested-group-badge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #0369a1;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  padding: 0.18rem 0.65rem;
+  border-radius: 6px;
+}
+
+.nested-group-count {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #64748b;
+  font-family: var(--mono, monospace);
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 0.12rem 0.5rem;
+  border-radius: 9999px;
+}
+
 /* Category Card Footer Count */
 .category-card-footer {
   margin-top: auto;

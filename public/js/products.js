@@ -239,7 +239,8 @@ function renderFilteredProducts() {
         product.subsections.some((sub) => {
           const subTitle = (sub.title || '').toLowerCase();
           const subDesc = (sub.description || '').toLowerCase();
-          return subTitle.includes(searchQuery) || subDesc.includes(searchQuery);
+          const groupMatch = sub.groups && sub.groups.some(g => (g.title || '').toLowerCase().includes(searchQuery));
+          return subTitle.includes(searchQuery) || subDesc.includes(searchQuery) || groupMatch;
         }));
 
     return matchesGroup && matchesSearch;
@@ -343,17 +344,45 @@ function renderCard(cat) {
 
     const subsectionsHtml = subsectionsToRender.map((sub) => {
       const subId = getSubsectionId(sub.title);
-      return `
-        <section class="category-subsection-block" id="${subId}" aria-labelledby="heading-${subId}">
-          <div class="category-subsection-header">
-            <div class="category-subsection-title-wrap">
-              <span class="category-subsection-dot" aria-hidden="true"></span>
-              <h4 class="category-subsection-title" id="heading-${subId}">${escapeHtml(sub.title)}</h4>
-              <span class="category-subsection-count">${sub.items.length} System${sub.items.length === 1 ? '' : 's'}</span>
-            </div>
-            ${sub.description ? `<p class="category-subsection-desc">${escapeHtml(sub.description)}</p>` : ''}
-          </div>
+      const hasGroups = Array.isArray(sub.groups) && sub.groups.length > 0;
 
+      let bodyHtml = '';
+      if (hasGroups) {
+        bodyHtml = sub.groups.map((grp) => {
+          let grpItems = grp.items || [];
+          if (searchQuery) {
+            const grpTitleMatches = grp.title && grp.title.toLowerCase().includes(searchQuery);
+            if (!grpTitleMatches) {
+              grpItems = grpItems.filter((item) => {
+                const name = typeof item === 'object' && item !== null ? (item.name || '') : String(item);
+                const spec = typeof item === 'object' && item !== null ? (item.specification || '') : '';
+                return name.toLowerCase().includes(searchQuery) || spec.toLowerCase().includes(searchQuery);
+              });
+            }
+          }
+          if (grpItems.length === 0) return '';
+
+          return `
+            <div class="category-nested-group">
+              <div class="category-nested-group-header">
+                <span class="nested-group-badge">${escapeHtml(grp.title)}</span>
+                <span class="nested-group-count">${grpItems.length} System${grpItems.length === 1 ? '' : 's'}</span>
+              </div>
+              <div class="category-card-thumbs-grid" aria-label="${escapeHtml(grp.title)} Products">
+                ${grpItems.map((item) => {
+                  const name = typeof item === 'object' && item !== null ? item.name : item;
+                  const globalIdx = cat.equipmentHighlights.findIndex((h) => {
+                    const hName = typeof h === 'object' && h !== null ? h.name : h;
+                    return hName === name;
+                  });
+                  return renderThumbItem(item, cat, globalIdx >= 0 ? globalIdx : 0);
+                }).join('')}
+              </div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        bodyHtml = `
           <div class="category-card-thumbs-grid" aria-label="${escapeHtml(sub.title)} Products">
             ${sub.items.map((item) => {
               const name = typeof item === 'object' && item !== null ? item.name : item;
@@ -364,6 +393,20 @@ function renderCard(cat) {
               return renderThumbItem(item, cat, globalIdx >= 0 ? globalIdx : 0);
             }).join('')}
           </div>
+        `;
+      }
+
+      return `
+        <section class="category-subsection-block" id="${subId}" aria-labelledby="heading-${subId}">
+          <div class="category-subsection-header">
+            <div class="category-subsection-title-wrap">
+              <span class="category-subsection-dot" aria-hidden="true"></span>
+              <h4 class="category-subsection-title" id="heading-${subId}">${escapeHtml(sub.title)}</h4>
+              <span class="category-subsection-count">${sub.items.length} System${sub.items.length === 1 ? '' : 's'}</span>
+            </div>
+            ${sub.description ? `<p class="category-subsection-desc">${escapeHtml(sub.description)}</p>` : ''}
+          </div>
+          ${bodyHtml}
         </section>
       `;
     }).join('');
@@ -695,12 +738,14 @@ function getProductData(catSlug, itemIdx) {
   let specification = '';
   let category = cat.name;
   let subtitle = '';
+  let section = '';
 
   if (typeof rawItem === 'object' && rawItem !== null) {
     name = rawItem.name || '';
     image = rawItem.image || null;
     specification = rawItem.specification || '';
     subtitle = rawItem.subtitle || '';
+    section = rawItem.section || '';
     if (Array.isArray(rawItem.features) && rawItem.features.length > 0) {
       features = rawItem.features;
     } else if (rawItem.specification && rawItem.specification.trim()) {
@@ -727,7 +772,7 @@ function getProductData(catSlug, itemIdx) {
     category = cat.name;
   }
 
-  return { name, image, features, specification, category, subtitle, catSlug, departmentGroup: cat.departmentGroup };
+  return { name, image, features, specification, category, subtitle, section, catSlug, departmentGroup: cat.departmentGroup };
 }
 
 function formatNoticeLines(specText, features) {
@@ -872,7 +917,9 @@ function openProductModal(catSlug, itemIdx) {
   const crumbDept = document.getElementById('mic-crumb-dept');
   const crumbProd = document.getElementById('mic-crumb-product');
   if (crumbDept) {
-    if (data.subtitle && data.subtitle !== data.category) {
+    if (data.section) {
+      crumbDept.textContent = `${data.subtitle || data.category} / ${data.section}`;
+    } else if (data.subtitle && data.subtitle !== data.category) {
       crumbDept.textContent = `${data.category} / ${data.subtitle}`;
     } else {
       crumbDept.textContent = data.departmentGroup || data.category;
@@ -911,7 +958,7 @@ function openProductModal(catSlug, itemIdx) {
       </div>
       <div class="mic-attr-row">
         <dt>Specialty / Subtitle</dt>
-        <dd>${escapeHtml(data.subtitle || data.category)}</dd>
+        <dd>${escapeHtml(data.section ? `${data.subtitle} (${data.section})` : (data.subtitle || data.category))}</dd>
       </div>
       <div class="mic-attr-row">
         <dt>Department</dt>
