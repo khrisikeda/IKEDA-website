@@ -461,8 +461,16 @@ function renderCard(cat) {
         <span class="category-card-count">
           <span class="count-badge">${totalProducts}</span> Product${totalProducts === 1 ? '' : 's'}
         </span>
-        <a href="/contact?dept=${encodeURIComponent(cat.name)}" class="quote-link">
-          Request Quote &rarr;
+        <a href="/contact?dept=${encodeURIComponent(cat.name)}" class="btn-smart-moth btn-smart-moth-sm" aria-label="Send Quotation Request">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="17" height="17">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+              </svg>
+            </div>
+          </div>
+          <span class="btn-text">Send Quotation Request</span>
         </a>
       </div>
     </article>
@@ -589,9 +597,16 @@ function initProductModal() {
 
             <!-- Actions / Contact Buttons (Made-in-China format) -->
             <div class="mic-action-group">
-              <a href="/contact" class="mic-btn-inquiry" id="product-modal-quote-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span>Send Inquiry / Request Quote</span>
+              <a href="/contact" class="btn-smart-moth mic-btn-inquiry" id="product-modal-quote-btn" aria-label="Send Quotation Request">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span class="btn-text">Send Quotation Request</span>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" class="mic-btn-chat" id="product-modal-wa-btn">
                 <img src="/images/whatsapp-icon.svg" alt="" width="20" height="20" aria-hidden="true" />

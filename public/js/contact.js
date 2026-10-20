@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (submitBtn) {
       submitBtn.disabled = true;
       if (btnText) {
-        btnText.textContent = 'Sending Quotation...';
+        btnText.textContent = 'Sending Quotation Request...';
       } else {
-        submitBtn.textContent = 'Sending Quotation...';
+        submitBtn.textContent = 'Sending Quotation Request...';
       }
     }
 
@@ -117,9 +117,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (submitBtn) {
         submitBtn.disabled = false;
         if (btnText) {
-          btnText.textContent = 'Send Quotation';
+          btnText.textContent = 'Send Quotation Request';
         } else {
-          submitBtn.textContent = 'Send Quotation';
+          submitBtn.textContent = 'Send Quotation Request';
         }
       }
     }
