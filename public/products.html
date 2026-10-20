@@ -132,7 +132,6 @@
       <!-- Filter Bar -->
       <div class="filter-bar pork-fade-up">
         <div class="filter-pills">
-          <button class="filter-btn active" data-group="All">All Departments (19)</button>
           <button class="filter-btn" data-group="Operating Theatre">Operating Theatre</button>
           <button class="filter-btn" data-group="Critical Care & Emergency">Critical Care &amp; Emergency</button>
           <button class="filter-btn" data-group="Maternal & Infant">Maternal &amp; Infant</button>
@@ -141,9 +140,15 @@
           <button class="filter-btn" data-group="General Hospital Materials">General Hospital Materials</button>
         </div>
 
-        <div class="search-box">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="product-search" placeholder="Search systems (e.g. laparoscopy, ventilator)..." aria-label="Search equipment catalog">
+        <div class="filter-actions-right">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="product-search" placeholder="Search systems (e.g. laparoscopy, ventilator)..." aria-label="Search equipment catalog">
+          </div>
+          <button type="button" class="btn-toggle-all-cards" id="btn-toggle-all-cards" title="Expand or collapse all products">
+            <span id="toggle-all-text">Expand All</span>
+            <span class="toggle-all-arrow">▾</span>
+          </button>
         </div>
       </div>
 

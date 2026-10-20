@@ -9,7 +9,7 @@
     "equipmentHighlights": [
       {
         "name": "Laparoscopy tower",
-        "image": null,
+        "image": "/images/hero_endoscopy.jpg",
         "specification": "",
         "features": [],
         "category": "Laparoscopy & Minimally Invasive Surgery"
@@ -111,7 +111,7 @@
       },
       {
         "name": "Holter ECG",
-        "image": null,
+        "image": "/images/products/12-channel-ecg-e70.jpeg",
         "specification": "",
         "features": [],
         "category": "Video-Assisted Thoracoscopic Surgery (VATS)"
@@ -161,14 +161,14 @@
     "equipmentHighlights": [
       {
         "name": "Resuscitation bag Pediatric",
-        "image": null,
+        "image": "/images/products/resuscitation-bag-adult.jpeg",
         "specification": "",
         "features": [],
         "category": "Neonatal & Pediatric Care"
       },
       {
         "name": "Resuscitation bag Infant",
-        "image": null,
+        "image": "/images/products/resuscitation-bag-adult.jpeg",
         "specification": "",
         "features": [],
         "category": "Neonatal & Pediatric Care"
@@ -550,7 +550,7 @@
       },
       {
         "name": "Emergency ventilator",
-        "image": null,
+        "image": "/images/products/ventilator.jpeg",
         "specification": "",
         "features": [],
         "category": "Intensive Care Unit (ICU)"
@@ -579,14 +579,14 @@
       },
       {
         "name": "Resuscitation bag Pediatric",
-        "image": null,
+        "image": "/images/products/resuscitation-bag-adult.jpeg",
         "specification": "",
         "features": [],
         "category": "Intensive Care Unit (ICU)"
       },
       {
         "name": "Resuscitation bag Infant",
-        "image": null,
+        "image": "/images/products/resuscitation-bag-adult.jpeg",
         "specification": "",
         "features": [],
         "category": "Intensive Care Unit (ICU)"
@@ -2255,7 +2255,7 @@
       },
       {
         "name": "Shaver",
-        "image": null,
+        "image": "/images/products/ent-shaver.jpeg",
         "specification": "",
         "features": [],
         "category": "Orthopedics & Traumatology"
@@ -2493,14 +2493,14 @@
     "equipmentHighlights": [
       {
         "name": "Resuscitation bag Pediatric",
-        "image": null,
+        "image": "/images/products/resuscitation-bag-adult.jpeg",
         "specification": "",
         "features": [],
         "category": "Pediatrics & Child Health"
       },
       {
         "name": "Resuscitation bag Infant",
-        "image": null,
+        "image": "/images/products/resuscitation-bag-adult.jpeg",
         "specification": "",
         "features": [],
         "category": "Pediatrics & Child Health"
@@ -2991,7 +2991,7 @@
       },
       {
         "name": "Emergency ventilator",
-        "image": null,
+        "image": "/images/products/ventilator.jpeg",
         "specification": "",
         "features": [],
         "category": "Emergency & Casualty Care"
@@ -3020,14 +3020,14 @@
       },
       {
         "name": "Resuscitation bag Pediatric",
-        "image": null,
+        "image": "/images/products/resuscitation-bag-adult.jpeg",
         "specification": "",
         "features": [],
         "category": "Emergency & Casualty Care"
       },
       {
         "name": "Resuscitation bag Infant",
-        "image": null,
+        "image": "/images/products/resuscitation-bag-adult.jpeg",
         "specification": "",
         "features": [],
         "category": "Emergency & Casualty Care"
@@ -3825,7 +3825,7 @@
       },
       {
         "name": "Laparoscopy tower",
-        "image": null,
+        "image": "/images/hero_endoscopy.jpg",
         "specification": "",
         "features": [],
         "category": "Operating Theatre"
@@ -5376,7 +5376,7 @@
       },
       {
         "name": "Holter ECG",
-        "image": null,
+        "image": "/images/products/12-channel-ecg-e70.jpeg",
         "specification": "",
         "features": [],
         "category": "General Hospital Materials"

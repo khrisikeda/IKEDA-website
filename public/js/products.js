@@ -1,12 +1,14 @@
 let allProducts = [];
 let activeGroup = 'All';
 let searchQuery = '';
+let isAllExpanded = false;
 let lastFocusedElement = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
   const grid = document.getElementById('category-grid');
   const searchInput = document.getElementById('product-search');
   const filterBtns = document.querySelectorAll('.filter-btn');
+  const toggleAllBtn = document.getElementById('btn-toggle-all-cards');
 
   if (!grid) return;
 
@@ -45,21 +47,51 @@ document.addEventListener('DOMContentLoaded', async () => {
     activeGroup = normalizeGroupName(requestedGroup);
   }
 
-  // Set up filter buttons
+  // Set up filter buttons (toggle on click)
   filterBtns.forEach((btn) => {
-    if (btn.dataset.group.toLowerCase() === activeGroup.toLowerCase()) {
+    if (activeGroup !== 'All' && btn.dataset.group.toLowerCase() === activeGroup.toLowerCase()) {
       btn.classList.add('active');
     } else {
       btn.classList.remove('active');
     }
 
     btn.addEventListener('click', () => {
+      const isAlreadyActive = btn.classList.contains('active');
       filterBtns.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeGroup = btn.dataset.group;
+      if (isAlreadyActive) {
+        activeGroup = 'All';
+      } else {
+        btn.classList.add('active');
+        activeGroup = btn.dataset.group;
+      }
       renderFilteredProducts();
     });
   });
+
+  // Global Expand / Collapse All button
+  if (toggleAllBtn) {
+    toggleAllBtn.addEventListener('click', () => {
+      isAllExpanded = !isAllExpanded;
+      toggleAllBtn.classList.toggle('is-expanded', isAllExpanded);
+      const textSpan = document.getElementById('toggle-all-text');
+      if (textSpan) {
+        textSpan.textContent = isAllExpanded ? 'Collapse All' : 'Expand All';
+      }
+      document.querySelectorAll('.category-card-thumbs-grid').forEach((gridEl) => {
+        gridEl.classList.toggle('is-expanded', isAllExpanded);
+      });
+      document.querySelectorAll('.btn-toggle-more-icons').forEach((btn) => {
+        btn.setAttribute('aria-expanded', String(isAllExpanded));
+        const btnText = btn.querySelector('.btn-toggle-text');
+        const total = btn.dataset.total || '';
+        if (btnText) {
+          btnText.textContent = isAllExpanded
+            ? 'Show fewer products'
+            : `View all ${total} products (${parseInt(total, 10) - 6} more)`;
+        }
+      });
+    });
+  }
 
   // Handle dropdown department clicks while already on products page
   document.querySelectorAll('.dropdown-item').forEach((item) => {
@@ -106,10 +138,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Load products from API
   try {
     allProducts = await fetchJSON('/api/products');
-    const allBtn = document.querySelector('.filter-btn[data-group="All"]');
-    if (allBtn && allProducts.length) {
-      allBtn.textContent = `All Departments (${allProducts.length})`;
-    }
     renderFilteredProducts();
 
     // Check if an anchor hash exists (e.g. #laparoscopy)
@@ -120,9 +148,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (targetEl) {
           targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
           targetEl.classList.add('is-specialty');
-          const titleBtn = targetEl.querySelector('.category-title-btn');
-          if (titleBtn && !titleBtn.classList.contains('is-open')) {
-            titleBtn.click();
+          const gridEl = targetEl.querySelector('.category-card-thumbs-grid');
+          if (gridEl) gridEl.classList.add('is-expanded');
+          const moreBtn = targetEl.querySelector('.btn-toggle-more-icons');
+          if (moreBtn) {
+            moreBtn.setAttribute('aria-expanded', 'true');
+            const txt = moreBtn.querySelector('.btn-toggle-text');
+            if (txt) txt.textContent = 'Show fewer products';
           }
         }
       }, 300);
@@ -170,14 +202,14 @@ function renderFilteredProducts() {
       <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;">
         <h3>No matching departments found</h3>
         <p>Try refining your search keyword or clearing the filter.</p>
-        <button class="btn btn-outline" onclick="resetFilters()">View All Departments</button>
+        <button class="btn btn-outline" onclick="resetFilters()">View All Products</button>
       </div>
     `;
     return;
   }
 
   grid.innerHTML = filtered.map(renderCard).join('');
-  initSubsectionInteractions();
+  initMoreIconsInteractions();
   initProductRowInteractions();
 
   if (typeof triggerGridAnimations === 'function') {
@@ -191,7 +223,7 @@ window.resetFilters = function () {
   const searchInput = document.getElementById('product-search');
   if (searchInput) searchInput.value = '';
   document.querySelectorAll('.filter-btn').forEach((b) => {
-    b.classList.toggle('active', b.dataset.group === 'All');
+    b.classList.remove('active');
   });
   renderFilteredProducts();
 };
@@ -202,7 +234,11 @@ function renderCard(cat) {
     ? `<span class="badge badge-specialty">${cat.tagline || 'Flagship Specialty'}</span>`
     : `<span class="badge">${cat.tagline || cat.departmentGroup || 'Department'}</span>`;
 
-  const totalProducts = (cat.equipmentHighlights || []).length;
+  const items = cat.equipmentHighlights || [];
+  const totalProducts = items.length;
+  const initialLimit = 6;
+  const hasMore = totalProducts > initialLimit;
+  const shouldExpand = isAllExpanded || (activeGroup !== 'All' && activeGroup !== '') || Boolean(searchQuery);
 
   return `
     <article class="category-card pork-fade-up${specialtyClass}" id="${cat.slug}">
@@ -211,145 +247,65 @@ function renderCard(cat) {
         ${badge}
       </div>
 
-      <!-- Clickable Title: Reveals/Hides Products Subsection -->
-      <h3 class="category-title-wrap">
-        <button type="button" 
-                class="category-title-btn" 
-                id="btn-title-${cat.slug}"
-                aria-expanded="false" 
-                aria-controls="subsection-${cat.slug}"
-                data-target="subsection-${cat.slug}"
-                title="Click to view all products in ${cat.name}">
-          <span class="category-title-text">${cat.name}</span>
-          <span class="category-title-chevron" aria-hidden="true">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </span>
-        </button>
-      </h3>
+      <h3 class="category-card-title">${escapeHtml(cat.name)}</h3>
 
-      <p>${cat.description}</p>
+      <p class="category-card-desc">${escapeHtml(cat.description)}</p>
 
-      <!-- Featured Product Picture Gallery in Category Card -->
-      ${(() => {
-        const itemsWithImages = (cat.equipmentHighlights || []).filter(
-          (it) => typeof it === 'object' && it !== null && it.image
-        );
-        const featuredThumbs = itemsWithImages.slice(0, 2);
-        if (featuredThumbs.length === 0) return '';
-        return `
-          <div class="category-card-thumbs-grid" aria-label="Featured equipment previews">
-            ${featuredThumbs.map((item) => {
-              const itemIdx = cat.equipmentHighlights.indexOf(item);
-              return `
-                <button type="button" 
-                        class="category-card-thumb-item equipment-row-btn" 
-                        data-cat-slug="${cat.slug}" 
-                        data-item-idx="${itemIdx}"
-                        aria-haspopup="dialog"
-                        aria-label="View specifications for ${escapeHtml(item.name)}">
-                  <div class="thumb-img-box">
-                    <img src="${escapeHtml(item.image)}" 
-                         alt="${escapeHtml(item.name)}" 
-                         loading="lazy" 
-                         class="cat-preview-img"
-                         onerror="this.style.display='none';" />
+      <!-- Large Product Icon Grid (All products rendered as large icons) -->
+      <div class="category-card-thumbs-grid${shouldExpand ? ' is-expanded' : ''}" 
+           id="grid-${cat.slug}" 
+           aria-label="Products in ${escapeHtml(cat.name)}">
+        ${items.map((item, idx) => {
+          const name = typeof item === 'object' && item !== null ? item.name : item;
+          const imgUrl = typeof item === 'object' && item !== null ? item.image : null;
+          const isExtra = idx >= initialLimit;
+          const extraClass = isExtra ? ' is-extra-icon' : '';
+
+          return `
+            <button type="button" 
+                    class="category-card-thumb-item equipment-row-btn${extraClass}" 
+                    data-cat-slug="${cat.slug}" 
+                    data-item-idx="${idx}"
+                    aria-haspopup="dialog"
+                    aria-label="View specifications for ${escapeHtml(name)}">
+              <div class="thumb-img-box">
+                ${imgUrl ? `
+                  <img src="${escapeHtml(imgUrl)}" 
+                       alt="${escapeHtml(name)}" 
+                       loading="lazy" 
+                       class="cat-preview-img"
+                       onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" />
+                  <div class="thumb-img-placeholder" style="display:none;" aria-hidden="true">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
                   </div>
-                  <span class="thumb-item-name">${escapeHtml(item.name)}</span>
-                </button>
-              `;
-            }).join('')}
-          </div>
-        `;
-      })()}
-
-      <!-- Expandable Products Subsection -->
-      <div class="products-subsection" id="subsection-${cat.slug}" aria-hidden="true">
-        <div class="products-subsection-inner">
-          <div class="subsection-header">
-            <span class="subsection-kicker">Cataloged Products &amp; Equipment (${totalProducts})</span>
-            <span class="subsection-badge">Full Specification</span>
-          </div>
-
-          <ul class="subsection-products-list">
-            ${(cat.equipmentHighlights || []).map((item, idx) => {
-              const name = typeof item === 'object' && item !== null ? item.name : item;
-              const imgUrl = typeof item === 'object' && item !== null ? item.image : null;
-              const thumbHtml = imgUrl
-                ? `<span class="equipment-row-thumb-wrap"><img src="${escapeHtml(imgUrl)}" alt="" class="equipment-row-thumb" loading="lazy" /></span>`
-                : `<span class="equipment-row-thumb-wrap equipment-row-thumb-placeholder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></span>`;
-              return `
-                <li class="subsection-product-item">
-                  <button type="button" 
-                          class="subsection-product-btn equipment-row-btn" 
-                          data-cat-slug="${cat.slug}" 
-                          data-item-idx="${idx}"
-                          aria-haspopup="dialog">
-                    ${thumbHtml}
-                    <span class="product-item-name">${escapeHtml(name)}</span>
-                    <span class="equipment-row-arrow" aria-hidden="true">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                      </svg>
-                    </span>
-                  </button>
-                </li>
-              `;
-            }).join('')}
-          </ul>
-
-          ${(cat.keySpecs && cat.keySpecs.length > 0) ? `
-            <div class="subsection-specs-wrap">
-              <div class="subsection-specs-title">Technical Highlights &amp; Standards</div>
-              <ul class="subsection-specs-list">
-                ${cat.keySpecs.map(spec => `<li>${escapeHtml(spec)}</li>`).join('')}
-              </ul>
-            </div>
-          ` : ''}
-
-          <div class="subsection-footer-cta">
-            <a href="/contact?dept=${encodeURIComponent(cat.name)}" class="btn btn-cyan btn-sm" style="width:100%; text-align:center; justify-content:center;">
-              Request Quote &rarr;
-            </a>
-          </div>
-        </div>
+                ` : `
+                  <div class="thumb-img-placeholder" aria-hidden="true">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  </div>
+                `}
+              </div>
+              <span class="thumb-item-name">${escapeHtml(name)}</span>
+            </button>
+          `;
+        }).join('')}
       </div>
 
-      <!-- Clickable Equipment Rows (Replaces old grey box, heading & bullet list) -->
-      ${(cat.equipmentHighlights && cat.equipmentHighlights.length > 0) ? `
-        <div class="equipment-clickable-group" id="preview-list-${cat.slug}">
-          ${cat.equipmentHighlights.slice(0, 6).map((item, idx) => {
-            const name = typeof item === 'object' && item !== null ? item.name : item;
-            const imgUrl = typeof item === 'object' && item !== null ? item.image : null;
-            const thumbHtml = imgUrl
-              ? `<span class="equipment-row-thumb-wrap"><img src="${escapeHtml(imgUrl)}" alt="" class="equipment-row-thumb" loading="lazy" /></span>`
-              : `<span class="equipment-row-thumb-wrap equipment-row-thumb-placeholder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></span>`;
-            return `
-              <button type="button" 
-                      class="equipment-row-btn" 
-                      data-cat-slug="${cat.slug}" 
-                      data-item-idx="${idx}"
-                      aria-haspopup="dialog"
-                      aria-label="View details for ${escapeHtml(name)}">
-                ${thumbHtml}
-                <span class="equipment-row-name">${escapeHtml(name)}</span>
-                <span class="equipment-row-arrow" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </span>
-              </button>
-            `;
-          }).join('')}
-        </div>
+      ${hasMore ? `
+        <button type="button" 
+                class="btn-toggle-more-icons" 
+                data-target="grid-${cat.slug}" 
+                data-total="${totalProducts}"
+                aria-expanded="${shouldExpand ? 'true' : 'false'}" 
+                aria-controls="grid-${cat.slug}">
+          <span class="btn-toggle-text">${shouldExpand ? 'Show fewer products' : `View all ${totalProducts} products (${totalProducts - initialLimit} more)`}</span>
+          <span class="btn-toggle-chevron" aria-hidden="true">▾</span>
+        </button>
       ` : ''}
 
       <div class="category-card-footer">
-        <button type="button" class="tag-btn" data-target="subsection-${cat.slug}" aria-controls="subsection-${cat.slug}" title="Toggle products view">
-          <span class="tag-count">${totalProducts} Systems Cataloged</span>
-          <span class="tag-action">▾</span>
-        </button>
+        <span class="category-card-count">
+          <span class="count-badge">${totalProducts}</span> Product${totalProducts === 1 ? '' : 's'}
+        </span>
         <a href="/contact?dept=${encodeURIComponent(cat.name)}" class="quote-link">
           Request Quote &rarr;
         </a>
@@ -358,49 +314,23 @@ function renderCard(cat) {
   `;
 }
 
-function initSubsectionInteractions() {
-  const toggleSubsection = (targetId) => {
-    const subsection = document.getElementById(targetId);
-    if (!subsection) return;
-
-    const isOpen = subsection.classList.contains('is-open');
-    const slug = targetId.replace('subsection-', '');
-    const titleBtn = document.getElementById(`btn-title-${slug}`);
-    const tagBtns = document.querySelectorAll(`[data-target="${targetId}"]`);
-    const previewList = document.getElementById(`preview-list-${slug}`);
-
-    if (isOpen) {
-      subsection.classList.remove('is-open');
-      subsection.setAttribute('aria-hidden', 'true');
-      if (titleBtn) {
-        titleBtn.classList.remove('is-open');
-        titleBtn.setAttribute('aria-expanded', 'false');
-      }
-      tagBtns.forEach((b) => {
-        const action = b.querySelector('.tag-action');
-        if (action) action.textContent = '▾';
-      });
-      // Keep equipment rows visible
-    } else {
-      subsection.classList.add('is-open');
-      subsection.setAttribute('aria-hidden', 'false');
-      if (titleBtn) {
-        titleBtn.classList.add('is-open');
-        titleBtn.setAttribute('aria-expanded', 'true');
-      }
-      tagBtns.forEach((b) => {
-        const action = b.querySelector('.tag-action');
-        if (action) action.textContent = '▴';
-      });
-      // Keep equipment rows visible
-    }
-  };
-
-  document.querySelectorAll('.category-title-btn, .tag-btn').forEach((btn) => {
+function initMoreIconsInteractions() {
+  document.querySelectorAll('.btn-toggle-more-icons').forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const targetId = btn.dataset.target;
-      if (targetId) toggleSubsection(targetId);
+      const gridEl = document.getElementById(targetId);
+      if (!gridEl) return;
+
+      const isExpanded = gridEl.classList.toggle('is-expanded');
+      btn.setAttribute('aria-expanded', String(isExpanded));
+      const total = btn.dataset.total || '';
+      const textSpan = btn.querySelector('.btn-toggle-text');
+      if (textSpan) {
+        textSpan.textContent = isExpanded
+          ? 'Show fewer products'
+          : `View all ${total} products (${parseInt(total, 10) - 6} more)`;
+      }
     });
   });
 }
@@ -760,8 +690,6 @@ function filterByProductCategory(categoryName, departmentGroup) {
   } else {
     // Filter by search query
     filterBtns.forEach((b) => b.classList.remove('active'));
-    const allBtn = document.querySelector('.filter-btn[data-group="All"]');
-    if (allBtn) allBtn.classList.add('active');
     activeGroup = 'All';
     if (searchInput) {
       searchInput.value = categoryName;
