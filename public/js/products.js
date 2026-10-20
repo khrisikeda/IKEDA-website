@@ -1,14 +1,12 @@
 let allProducts = [];
 let activeGroup = 'All';
 let searchQuery = '';
-let isAllExpanded = false;
 let lastFocusedElement = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
   const grid = document.getElementById('category-grid');
   const searchInput = document.getElementById('product-search');
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const toggleAllBtn = document.getElementById('btn-toggle-all-cards');
 
   if (!grid) return;
 
@@ -65,30 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
-  // Global Expand / Collapse All button
-  if (toggleAllBtn) {
-    toggleAllBtn.addEventListener('click', () => {
-      isAllExpanded = !isAllExpanded;
-      toggleAllBtn.classList.toggle('is-expanded', isAllExpanded);
-      const textSpan = document.getElementById('toggle-all-text');
-      if (textSpan) {
-        textSpan.textContent = isAllExpanded ? 'Collapse All' : 'Expand All';
-      }
-      document.querySelectorAll('.category-card-thumbs-grid').forEach((gridEl) => {
-        gridEl.classList.toggle('is-expanded', isAllExpanded);
-      });
-      document.querySelectorAll('.btn-toggle-more-icons').forEach((btn) => {
-        btn.setAttribute('aria-expanded', String(isAllExpanded));
-        const btnText = btn.querySelector('.btn-toggle-text');
-        const total = btn.dataset.total || '';
-        if (btnText) {
-          btnText.textContent = isAllExpanded
-            ? 'Show fewer products'
-            : `View all ${total} products (${parseInt(total, 10) - 6} more)`;
-        }
-      });
-    });
-  }
+
 
   // Handle dropdown department clicks while already on products page
   document.querySelectorAll('.dropdown-item').forEach((item) => {
@@ -124,11 +99,37 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderFilteredProducts();
   });
 
-  // Set up instant search
+  // Set up instant search & search button interaction
+  const searchBtn = document.getElementById('product-search-btn');
+
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value.trim().toLowerCase();
       renderFilteredProducts();
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        searchQuery = searchInput.value.trim().toLowerCase();
+        renderFilteredProducts();
+        if (searchQuery && grid) {
+          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  }
+
+  if (searchBtn) {
+    searchBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (searchInput) {
+        searchQuery = searchInput.value.trim().toLowerCase();
+      }
+      renderFilteredProducts();
+      if (searchQuery && grid) {
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   }
 
@@ -145,14 +146,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (targetEl) {
           targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
           targetEl.classList.add('is-specialty');
-          const gridEl = targetEl.querySelector('.category-card-thumbs-grid');
-          if (gridEl) gridEl.classList.add('is-expanded');
-          const moreBtn = targetEl.querySelector('.btn-toggle-more-icons');
-          if (moreBtn) {
-            moreBtn.setAttribute('aria-expanded', 'true');
-            const txt = moreBtn.querySelector('.btn-toggle-text');
-            if (txt) txt.textContent = 'Show fewer products';
-          }
         }
       }, 300);
     }
@@ -206,7 +199,6 @@ function renderFilteredProducts() {
   }
 
   grid.innerHTML = filtered.map(renderCard).join('');
-  initMoreIconsInteractions();
   initProductRowInteractions();
 
   if (typeof triggerGridAnimations === 'function') {
@@ -233,34 +225,33 @@ function renderCard(cat) {
 
   const items = cat.equipmentHighlights || [];
   const totalProducts = items.length;
-  const initialLimit = 6;
-  const hasMore = totalProducts > initialLimit;
-  const shouldExpand = isAllExpanded || (activeGroup !== 'All' && activeGroup !== '') || Boolean(searchQuery);
 
   return `
     <article class="category-card pork-fade-up${specialtyClass}" id="${cat.slug}">
       <div class="category-card-header">
-        <span class="category-dept-group">${cat.departmentGroup || 'Hospital Care'}</span>
-        ${badge}
+        <div class="category-card-header-left">
+          <span class="category-dept-group">${cat.departmentGroup || 'Hospital Care'}</span>
+          <h3 class="category-card-title">${escapeHtml(cat.name)}</h3>
+        </div>
+        <div class="category-card-header-right">
+          ${badge}
+          <span class="category-header-count">${totalProducts} System${totalProducts === 1 ? '' : 's'}</span>
+        </div>
       </div>
-
-      <h3 class="category-card-title">${escapeHtml(cat.name)}</h3>
 
       <p class="category-card-desc">${escapeHtml(cat.description)}</p>
 
-      <!-- Large Product Icon Grid (All products rendered as large icons) -->
-      <div class="category-card-thumbs-grid${shouldExpand ? ' is-expanded' : ''}" 
+      <!-- Large Product Icon Grid - All products displayed directly -->
+      <div class="category-card-thumbs-grid" 
            id="grid-${cat.slug}" 
            aria-label="Products in ${escapeHtml(cat.name)}">
         ${items.map((item, idx) => {
           const name = typeof item === 'object' && item !== null ? item.name : item;
           const imgUrl = typeof item === 'object' && item !== null ? item.image : null;
-          const isExtra = idx >= initialLimit;
-          const extraClass = isExtra ? ' is-extra-icon' : '';
 
           return `
             <button type="button" 
-                    class="category-card-thumb-item equipment-row-btn${extraClass}" 
+                    class="category-card-thumb-item equipment-row-btn" 
                     data-cat-slug="${cat.slug}" 
                     data-item-idx="${idx}"
                     aria-haspopup="dialog"
@@ -287,18 +278,6 @@ function renderCard(cat) {
         }).join('')}
       </div>
 
-      ${hasMore ? `
-        <button type="button" 
-                class="btn-toggle-more-icons" 
-                data-target="grid-${cat.slug}" 
-                data-total="${totalProducts}"
-                aria-expanded="${shouldExpand ? 'true' : 'false'}" 
-                aria-controls="grid-${cat.slug}">
-          <span class="btn-toggle-text">${shouldExpand ? 'Show fewer products' : `View all ${totalProducts} products (${totalProducts - initialLimit} more)`}</span>
-          <span class="btn-toggle-chevron" aria-hidden="true">▾</span>
-        </button>
-      ` : ''}
-
       <div class="category-card-footer">
         <span class="category-card-count">
           <span class="count-badge">${totalProducts}</span> Product${totalProducts === 1 ? '' : 's'}
@@ -309,27 +288,6 @@ function renderCard(cat) {
       </div>
     </article>
   `;
-}
-
-function initMoreIconsInteractions() {
-  document.querySelectorAll('.btn-toggle-more-icons').forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = btn.dataset.target;
-      const gridEl = document.getElementById(targetId);
-      if (!gridEl) return;
-
-      const isExpanded = gridEl.classList.toggle('is-expanded');
-      btn.setAttribute('aria-expanded', String(isExpanded));
-      const total = btn.dataset.total || '';
-      const textSpan = btn.querySelector('.btn-toggle-text');
-      if (textSpan) {
-        textSpan.textContent = isExpanded
-          ? 'Show fewer products'
-          : `View all ${total} products (${parseInt(total, 10) - 6} more)`;
-      }
-    });
-  });
 }
 
 function initProductRowInteractions() {
