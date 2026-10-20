@@ -1,57 +1,307 @@
 [
   {
-    "slug": "laparoscopy",
-    "name": "Laparoscopy & Minimally Invasive Surgery",
+    "slug": "operating-theatre",
+    "name": "Operating Theatre",
     "departmentGroup": "Operating Theatre",
-    "featured": true,
-    "tagline": "Our Core Flagship Specialty",
-    "description": "State-of-the-art 4K Ultra HD and Full HD laparoscopic video towers, camera control units, cold LED illumination, CO2 insufflators, and precision rigid optics for general surgery, gynecology, and urology.",
+    "featured": false,
+    "tagline": "Turnkey Surgical Suites & Minimally Invasive Towers",
+    "description": "Complete operating theatre infrastructure, advanced electro-hydraulic surgical tables, shadowless LED surgical lights, electrosurgical generator units, anesthesia workstations, and specialized surgical towers across Laparoscopy, Urology, VATS, Orthopedics, Gastroenterology, and Gynecology.",
     "equipmentHighlights": [
+      {
+        "name": "Anesthesia laryngoscope",
+        "image": "/images/products/anesthesia-laryngoscope.jpeg",
+        "specification": "Power supply: 1.5VX2 \"C\" type \nBattery (No. 2) \nBulb: 2.5V/0.45A \nBlade size: 92, 114, 134 mm",
+        "features": [
+          "Power supply: 1.5VX2 \"C\" type",
+          "Battery (No. 2)",
+          "Bulb: 2.5V/0.45A",
+          "Blade size: 92, 114, 134 mm"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Hydraulic operating table (hydraulic for height adjustment)",
+        "image": "/images/products/hydraulic-operating-table-hydraulic-for-height-adjustment.jpeg",
+        "specification": "►External size (LxWxH): \n2100x480x(720-920) mm \n►Reverse trendelenburg:30° \n►Trendelenburg: 20° \n►Lateral tilt left/right: 0-18° \n►Head plate up/down:45°/ -90° \n►Back plate up/down: 75°/-18° \n►Leg plate down/outwards: 90°/ \n90° \n►Kidney bridge elevation: 120mm",
+        "features": [
+          "►External size (LxWxH):",
+          "2100x480x(720-920) mm",
+          "►Reverse trendelenburg:30°",
+          "►Trendelenburg: 20°",
+          "►Lateral tilt left/right: 0-18°",
+          "►Head plate up/down:45°/ -90°",
+          "►Back plate up/down: 75°/-18°",
+          "►Leg plate down/outwards: 90°/",
+          "90°",
+          "►Kidney bridge elevation: 120mm"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Motorized operating table",
+        "image": "/images/products/motorized-operating-table.jpeg",
+        "specification": "External size (LxWxH): 2080x520x \n(745-995) mm \n►Reverse trendelenburg: 25° \n►Trendelenburg: -25° \n►Lateral tilt left/right: 15° \n►Head plate up/down:45°/ -90° \n►Back plate up/down: 50° \n►Leg plate down/outwards: 90°/ \n90° \n►Kidney bridge elevation: 80mm \n►Tabletop longitude shifting: \n400mm(gas spring controlled)",
+        "features": [
+          "External size (LxWxH): 2080x520x",
+          "(745-995) mm",
+          "►Reverse trendelenburg: 25°",
+          "►Trendelenburg: -25°",
+          "►Lateral tilt left/right: 15°",
+          "►Head plate up/down:45°/ -90°",
+          "►Back plate up/down: 50°",
+          "►Leg plate down/outwards: 90°/",
+          "90°",
+          "►Kidney bridge elevation: 80mm",
+          "►Tabletop longitude shifting:",
+          "400mm(gas spring controlled)"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Orthopedic traction",
+        "image": "/images/products/orthopedic-traction.jpeg",
+        "specification": "►Length: 1400mm \n►Height:650-870mm   \n►Traction shoes translation \ndistance:200mm \n►Traction frame translation \ndistance:600mm \n►Leg support frame translation \ndistance:550mm \n►Base support frame outwards: \n60°",
+        "features": [
+          "►Length: 1400mm",
+          "►Height:650-870mm",
+          "►Traction shoes translation",
+          "distance:200mm",
+          "►Traction frame translation",
+          "distance:600mm",
+          "►Leg support frame translation",
+          "distance:550mm",
+          "►Base support frame outwards:",
+          "60°"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Gynecology surgical table",
+        "image": "/images/products/gynecology-surgical-table.jpeg",
+        "specification": "Standard accessories:  \nArm support--1pair， \nHandle--1pair  \nFixing clamp--1pair， \nKnee cruth--1pair  \nPedal--1pair， \nLeg support--1piece  \nWaste basin--1piece， \nHand remote--1piec",
+        "features": [
+          "Standard accessories:",
+          "Arm support--1pair，",
+          "Handle--1pair",
+          "Fixing clamp--1pair，",
+          "Knee cruth--1pair",
+          "Pedal--1pair，",
+          "Leg support--1piece",
+          "Waste basin--1piece，",
+          "Hand remote--1piec"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Hydraulic patient transportation stretcher",
+        "image": "/images/products/hydraulic-patient-transportatio-n-stretcher.jpeg",
+        "specification": "Size: L2120*W800*H610-930mm \nFunctions: \n1. Height adjustment: 610-930mm \n2. Trendelenburg and Reverse-\nTrendelenburg：0 - 10° \n3. Back section adjustable from: 0 \nto 80° \n4. Foot section adjustable from 0 \nto 35° \n5. X-ray translucent function of \nback section is available \nMain Features： \nMetal frame with electrophoresis \nand powder coating \nWith pushing handle on the head \nend, with a crank to \noperate the foot section Side rails: \n2pcs, Aluminum alloy, collapsible \nBack section is operated by gas \nspring \nWith the middle castor for steer \ndirection, Bumper castors on\n4 corners Castors: \nDustproof castors with central \nlocking system \nCastor diameter of 200mm \nEquipped with 1 \nI.V. pole, 1 mattress, urine hooks",
+        "features": [
+          "Size: L2120*W800*H610-930mm",
+          "Functions:",
+          "1. Height adjustment: 610-930mm",
+          "2. Trendelenburg and Reverse-",
+          "Trendelenburg：0 - 10°",
+          "3. Back section adjustable from: 0",
+          "to 80°",
+          "4. Foot section adjustable from 0",
+          "to 35°",
+          "5. X-ray translucent function of",
+          "back section is available",
+          "Main Features：",
+          "Metal frame with electrophoresis",
+          "and powder coating",
+          "With pushing handle on the head",
+          "end, with a crank to",
+          "operate the foot section Side rails:",
+          "2pcs, Aluminum alloy, collapsible",
+          "Back section is operated by gas",
+          "spring",
+          "With the middle castor for steer",
+          "direction, Bumper castors on",
+          "4 corners Castors:",
+          "Dustproof castors with central",
+          "locking system",
+          "Castor diameter of 200mm",
+          "Equipped with 1",
+          "I.V. pole, 1 mattress, urine hooks"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Portable surgical light (2012-5)",
+        "image": "/images/products/portable-surgical-light-2012l-5.jpeg",
+        "specification": "1.Voltage：AC90~240V 50~60Hz \n2.Lamp head diameter：≈300mm \n3.Product specification：LED 70W \n4.Working distance：700mm \n5.Product color temperature：\n5300±500K \n6.Center illuminance：≥50000Lux \n(three levels decreasing） \n7.G.W.：18.84KG",
+        "features": [
+          "1.Voltage：AC90~240V 50~60Hz",
+          "2.Lamp head diameter：≈300mm",
+          "3.Product specification：LED 70W",
+          "4.Working distance：700mm",
+          "5.Product color temperature：",
+          "5300±500K",
+          "6.Center illuminance：≥50000Lux",
+          "(three levels decreasing）",
+          "7.G.W.：18.84KG"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Surgical light",
+        "image": "/images/products/surgical-light.png",
+        "specification": "Diameter of light head(mm): \n730/730; ►Lamp Head Thickness: \n105/105; ►Central illuminance at \n1m(Lux): 40,000–160,000 lux (10 \nadjustable levels); ►Color \nTemperature (Kelvin): 4,000–5,500 \nK (11 adjustable \nlevels); ►Color Rendering Index \n(CRI): ≥93; ►Lighting Spot \nDiameter (d10): 200–300 mm (5 \nadjustable \nlevels); ►Spot distribution \n(d50/d10): 51%; ►Depth of the \nlight column (60% Ec): 700 mm; \n►Maximum Total Irradiance (Ee): \n<600 W/m²; ►Radiant energy\nEe/Ec (mw/m2 lux): ≤4 ; \n►Shadow-free rate in deep \ncavities: 98%; ►Shadow-free rate \nwith a single baffle: ≥46%; \n►Shadow-free rate in deep \ncavities with a single baffle: ≥45%; \n►Shadow-free rate with double \nbaffles: ≥41%; ►Shadow-free rate \nin deep cavities with double \nbaffles: ≥40%; ►Bulb Brand: \nGenuine imported Osram \n(Germany) LEDs; ►Bulb Quantity: \n72+72; ►Bulb Power(w): <1 W; \n►Average Bulb \nLife(hours):≥50,000",
+        "features": [
+          "Diameter of light head(mm):",
+          "730/730; ►Lamp Head Thickness:",
+          "105/105; ►Central illuminance at",
+          "1m(Lux): 40,000–160,000 lux (10",
+          "adjustable levels); ►Color",
+          "Temperature (Kelvin): 4,000–5,500",
+          "K (11 adjustable",
+          "levels); ►Color Rendering Index",
+          "(CRI): ≥93; ►Lighting Spot",
+          "Diameter (d10): 200–300 mm (5",
+          "adjustable",
+          "levels); ►Spot distribution",
+          "(d50/d10): 51%; ►Depth of the",
+          "light column (60% Ec): 700 mm;",
+          "►Maximum Total Irradiance (Ee):",
+          "<600 W/m²; ►Radiant energy",
+          "Ee/Ec (mw/m2 lux): ≤4 ;",
+          "►Shadow-free rate in deep",
+          "cavities: 98%; ►Shadow-free rate",
+          "with a single baffle: ≥46%;",
+          "►Shadow-free rate in deep",
+          "cavities with a single baffle: ≥45%;",
+          "►Shadow-free rate with double",
+          "baffles: ≥41%; ►Shadow-free rate",
+          "in deep cavities with double",
+          "baffles: ≥40%; ►Bulb Brand:",
+          "Genuine imported Osram",
+          "(Germany) LEDs; ►Bulb Quantity:",
+          "72+72; ►Bulb Power(w): <1 W;",
+          "►Average Bulb",
+          "Life(hours):≥50,000"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Surgical pendants",
+        "image": "/images/products/surgical-pendants.jpg",
+        "specification": "Ceiling-mounted surgical pendant with high-load articulated arm system. Load capacity: 180-250kg. Rotation: 340° with pneumatic braking system. Medical gas outlets: Oxygen (O2), Nitrous Oxide (N2O), Medical Air, Vacuum. Electrical: 8 universal sockets, RJ45 data interface, equipotential grounding. Accessories: Dual height-adjustable stainless steel equipment shelves and monitor bracket.",
+        "features": [
+          "Ceiling-mounted articulating pendant for surgical suites and operating theatre instrumentation",
+          "Heavy-duty load capacity of 180-250kg equipped with fail-safe pneumatic friction brakes",
+          "340° horizontal arm rotation for flexible theatre positioning and ergonomic workflow",
+          "Integrated medical gas terminal outlets: O2, N2O, Medical Air, and Vacuum",
+          "8 universal electrical outlets, RJ45 hospital network data ports, and equipotential earthing",
+          "Dual stainless steel equipment shelves with adjustable patient monitor mounting arm"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Anesthesia machine",
+        "image": "/images/products/anesthesia-machine.jpg",
+        "specification": "Advanced multi-mode anesthesia workstation for adult, pediatric, and neonatal surgery. Integrated 10.4-inch color TFT display for real-time airway pressure, tidal volume, frequency, and P-V/F-T loops. Modes: VCV, PCV, SIMV, PSV, Manual. High-precision dual Selectatec vaporizer mount with interlock system. Integrated heated patient breathing circuit with CO2 absorber and anti-hypoxic safety guard.",
+        "features": [
+          "Integrated 10.4-inch color TFT display for waveforms (P-T, F-T, P-V loop) and monitoring",
+          "Comprehensive ventilation modes: VCV, PCV, SIMV, PSV, and Manual mode",
+          "High-precision dual Selectatec vaporizer manifold with automatic interlock safety",
+          "Integrated heated patient breathing circuit with fast-bypass CO2 canister absorber",
+          "Dual-tube flowmeter for O2, N2O, and Air with hypoxic guard protection mechanism",
+          "Multi-parameter alarm system with built-in emergency backup battery"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "Ventilator",
+        "image": "/images/products/ventilator.jpeg",
+        "specification": "Invasive ventilation mode \nVCV, PCV, PRVC, VS, V-SIMV, P-\nSIMV, PRVC-SIMV, CPAP/PSV, \nNIPPV, Apnea Ventilation, APRV, \nDuoLevel, AMV, nCPAP; Optional: \nPSV-S/T. \nNon invasive ventilation mode \nPCV, PRVC, VS, CPAP/PSV, P-SIMV, \nPRVC-SIMV, DuoLevel, APRV, AMV, \nApnea Ventilation, nCPAP, NIPPV; \nOptional: PSV-S/T. \nOxygen therapy\nProvide high flow oxygen therapy \n(HFNC) function through nasal \nhumidification (Maximum \n100L/min).",
+        "features": [
+          "Invasive ventilation mode",
+          "VCV, PCV, PRVC, VS, V-SIMV, P-",
+          "SIMV, PRVC-SIMV, CPAP/PSV,",
+          "NIPPV, Apnea Ventilation, APRV,",
+          "DuoLevel, AMV, nCPAP; Optional:",
+          "PSV-S/T.",
+          "Non invasive ventilation mode",
+          "PCV, PRVC, VS, CPAP/PSV, P-SIMV,",
+          "PRVC-SIMV, DuoLevel, APRV, AMV,",
+          "Apnea Ventilation, nCPAP, NIPPV;",
+          "Optional: PSV-S/T.",
+          "Oxygen therapy",
+          "Provide high flow oxygen therapy",
+          "(HFNC) function through nasal",
+          "humidification (Maximum",
+          "100L/min)."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "ESU Monopolar& Bipolar",
+        "image": "/images/products/esu-monopolar-bipolar-diathermy.jpeg",
+        "specification": "Multifunctional Cautery for both \ncutting and coagulating \n1,Monopolar cut: pure cut : 300W; \nblend cut ⅰ:250W; blend cut \nⅱ:150W                                                  \n2, Monopolar coagulation: Point \nCoag: 120W; Jet Coag: 100W              \n3, Bipolar Coagulation: 70W                \n4, Main Frequency: 450 KHZ",
+        "features": [
+          "Multifunctional Cautery for both",
+          "cutting and coagulating",
+          "1,Monopolar cut: pure cut : 300W;",
+          "blend cut ⅰ:250W; blend cut",
+          "ⅱ:150W",
+          "2, Monopolar coagulation: Point",
+          "Coag: 120W; Jet Coag: 100W",
+          "3, Bipolar Coagulation: 70W",
+          "4, Main Frequency: 450 KHZ"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
+        "name": "c arm x ray machine",
+        "image": "/images/products/c-arm-xray-machine.jpg",
+        "specification": "High-frequency mobile surgical C-arm fluoroscopy X-ray system. Generator: 110kV / 5kW rotating anode tube with micro-focus 0.3/0.6mm. Image intensifier: 9-inch high-definition triple-field intensifier. Display: Dual 19-inch high-resolution medical LCD workstation monitors. Digital processing: Recursive noise reduction, last image hold (LIH), edge enhancement, pulse fluoroscopy, and DICOM 3.0 network PACS compatibility.",
+        "features": [
+          "High-frequency 110kV / 5kW mobile surgical C-arm fluoroscopy system",
+          "9-inch triple-field high-definition image intensifier with ultra-low radiation dose",
+          "Dual 19-inch medical LCD display cart with real-time digital image processing workstation",
+          "Advanced digital imaging: recursive filtering, edge enhancement, and Last Image Hold (LIH)",
+          "Full motorized orbital, horizontal, and angular movements with laser cross localizer",
+          "Standard DICOM 3.0 networking interface for hospital PACS and surgical archiving"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
       {
         "name": "Laparoscopy tower",
         "image": "/images/hero_endoscopy.jpg",
         "specification": "",
         "features": [],
-        "category": "Laparoscopy & Minimally Invasive Surgery"
-      }
-    ],
-    "keySpecs": [
-      "3840 x 2160 native resolution with zero-latency transmission",
-      "Optical optical fiber bundles with universal Storz/Wolf adaptors",
-      "Smoke evacuation and peristaltic suction-irrigation integration",
-      "CE & ISO13485 certified surgical grade stainless steel construction"
-    ]
-  },
-  {
-    "slug": "urology",
-    "name": "Urology & Endourology",
-    "departmentGroup": "Operating Theatre",
-    "featured": false,
-    "tagline": "Transurethral & Percutaneous Precision",
-    "description": "Comprehensive diagnostic and surgical equipment for urological procedures, including transurethral resection (TURP/TURBT), ureteroscopy, and percutaneous stone management.",
-    "equipmentHighlights": [
+        "category": "Laparoscopy & Minimally Invasive Surgery",
+        "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+      },
       {
-        "name": "Ureteroscope",
-        "image": null,
-        "specification": "",
-        "features": [],
-        "category": "Urology & Endourology"
-      }
-    ],
-    "keySpecs": [
-      "Wide-angle optical system with Sapphire distal lens tip",
-      "Standard and active rotatable continuous irrigation sheaths",
-      "Compatible with high-definition endoscopic camera heads"
-    ]
-  },
-  {
-    "slug": "vats",
-    "name": "Video-Assisted Thoracoscopic Surgery (VATS)",
-    "departmentGroup": "Operating Theatre",
-    "featured": false,
-    "tagline": "Minimally Invasive Thoracic Care",
-    "description": "Advanced video-assisted thoracoscopic surgery systems tailored for minimally invasive thoracic, pulmonary, and mediastinal interventions.",
-    "equipmentHighlights": [
+        "name": "Semi-Rigid Ureteroscope",
+        "image": "/images/products/ureteroscope.jpg",
+        "specification": "Precision optical semi-rigid ureterorenoscope. Direction of view: 0° / 12°, working length: 430mm, sheath diameter: 8.0/9.8 Fr, working channel: 4.8 Fr for laser fiber and stone baskets. Universal Storz/Wolf light guide adapter, integrated dual stopcocks for continuous irrigation, autoclavable optical lens.",
+        "features": [
+          "Semi-rigid stainless steel optical tube with high-resolution quartz fibers",
+          "Working channel diameter: 4.8 Fr compatible with holmium laser fibers and baskets",
+          "Distal tip atraumatic design for smooth ureteral insertion",
+          "Integrated dual irrigation stopcocks with Luer-lock connection",
+          "Universal light cable post compatible with Storz, Wolf, and Olympus light guides"
+        ],
+        "category": "Urology & Endourology",
+        "subtitle": "Urology & Endourology"
+      },
       {
         "name": "12 Channel ECG-E70",
         "image": "/images/products/12-channel-ecg-e70.jpeg",
@@ -107,14 +357,16 @@
           "rechargeable battery, AC-",
           "DC seamless conversion"
         ],
-        "category": "Video-Assisted Thoracoscopic Surgery (VATS)"
+        "category": "Video-Assisted Thoracoscopic Surgery (VATS)",
+        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)"
       },
       {
         "name": "Holter ECG",
         "image": "/images/products/12-channel-ecg-e70.jpeg",
         "specification": "",
         "features": [],
-        "category": "Video-Assisted Thoracoscopic Surgery (VATS)"
+        "category": "Video-Assisted Thoracoscopic Surgery (VATS)",
+        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)"
       },
       {
         "name": "Spirometer with screen",
@@ -143,12 +395,864 @@
           "measurement and post-",
           "bronchodilator test."
         ],
-        "category": "Video-Assisted Thoracoscopic Surgery (VATS)"
+        "category": "Video-Assisted Thoracoscopic Surgery (VATS)",
+        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)"
+      },
+      {
+        "name": "Drills & saws",
+        "image": "/images/products/drills-and-saws.jpg",
+        "specification": "Medical surgical cannulated bone drill and oscillating sagittal saw handpieces. High-speed cannulated drill 0-1200 RPM, sagittal saw 0-15000 CPM, 14.4V rechargeable Li-ion battery, fully autoclavable up to 135°C, variable speed trigger.",
+        "features": [
+          "Multi-function orthopedic power handpieces for trauma, joint, and spine surgery",
+          "Cannulated surgical bone drill with forward, reverse, and variable speed trigger",
+          "High-frequency oscillating sagittal saw with quick-lock blade mechanism",
+          "Includes 14.4V sterile battery casing, charging console, and keyless chuck"
+        ],
+        "category": "Orthopedics & Traumatology",
+        "subtitle": "Orthopedics & Traumatology"
+      },
+      {
+        "name": "Shaver",
+        "image": "/images/products/ent-shaver.jpeg",
+        "specification": "",
+        "features": [],
+        "category": "Orthopedics & Traumatology",
+        "subtitle": "Orthopedics & Traumatology"
+      },
+      {
+        "name": "Surgical table Manual",
+        "image": "/images/products/surgical-table-manual.jpeg",
+        "specification": "Size:2050*500*770-1020mm \nStandard Configurations: \nAnesthesia protective screen 1 \npiece \nShoulder support 1 set  \nArmrest 1 set  \nBody support 1 set  \nLeg support 1 set  \nFoot board 1 set  \nMattress 1 set \nProduct function:  \nHeadboard upwards/downwards \n≥45°/ ≥90°  \nBackboard upwards/downwards \n≥60°/ ≥15°  \nLeg board Downwards / \noutreached ≥ 90°  \nForward tilt/ Backward tilt ≥25° / \n≥20°  \nLeft and right tilt ≥18°  \nWaist bridge lifting ≥120mm \nLongitudinal translation ≥300 ㎜",
+        "features": [
+          "Size:2050*500*770-1020mm",
+          "Standard Configurations:",
+          "Anesthesia protective screen 1",
+          "piece",
+          "Shoulder support 1 set",
+          "Armrest 1 set",
+          "Body support 1 set",
+          "Leg support 1 set",
+          "Foot board 1 set",
+          "Mattress 1 set",
+          "Product function:",
+          "Headboard upwards/downwards",
+          "≥45°/ ≥90°",
+          "Backboard upwards/downwards",
+          "≥60°/ ≥15°",
+          "Leg board Downwards /",
+          "outreached ≥ 90°",
+          "Forward tilt/ Backward tilt ≥25° /",
+          "≥20°",
+          "Left and right tilt ≥18°",
+          "Waist bridge lifting ≥120mm",
+          "Longitudinal translation ≥300 ㎜"
+        ],
+        "category": "Orthopedics & Traumatology",
+        "subtitle": "Orthopedics & Traumatology"
+      },
+      {
+        "name": "Surgical table Electrical",
+        "image": "/images/products/surgical-table-electrical.jpeg",
+        "specification": "Size:2000*500*550-800mm \nStandard Configurations:  \nAnesthesia protective screen 1 \npiece  \nShoulder support 1 set  \nArm rest 1 set  \nBody support 1 set  \nLeg support 1 set  \nMattress 1 set  \nHand held operator 1 set \nProduct function:  \nHeadboard upwards/downwards \n≥55°/ ≥90°  \nBackboard upwards/downwards \n≥65°/ ≥30°  \nLeg board downwards/ outreached \n≥ 90°  \nForward tilt/ Backward tilt ≥30 \n/ °≥25°  \nLeft and right tilt ≥20°  \nWaist bridge lifting ≥120mm \nTranslation distance 350mm",
+        "features": [
+          "Size:2000*500*550-800mm",
+          "Standard Configurations:",
+          "Anesthesia protective screen 1",
+          "piece",
+          "Shoulder support 1 set",
+          "Arm rest 1 set",
+          "Body support 1 set",
+          "Leg support 1 set",
+          "Mattress 1 set",
+          "Hand held operator 1 set",
+          "Product function:",
+          "Headboard upwards/downwards",
+          "≥55°/ ≥90°",
+          "Backboard upwards/downwards",
+          "≥65°/ ≥30°",
+          "Leg board downwards/ outreached",
+          "≥ 90°",
+          "Forward tilt/ Backward tilt ≥30",
+          "/ °≥25°",
+          "Left and right tilt ≥20°",
+          "Waist bridge lifting ≥120mm",
+          "Translation distance 350mm"
+        ],
+        "category": "Orthopedics & Traumatology",
+        "subtitle": "Orthopedics & Traumatology"
+      },
+      {
+        "name": "Extension for lower extremities",
+        "image": "/images/products/extension-for-lower-extremities.jpeg",
+        "specification": "Technical parameters Main length: \n≥1900mm; Main body width: ≥\n400mm; \nMinimum height: 750mm; Lifting \nstroke: ≥250mm; \nPedal extension distance: ≥\n1000mm; \nPedal height adjustment: ≥\n400mm; \nPedal Angle range: ≥90°; \nPedal adjustment distance: ≥\n200mm;",
+        "features": [
+          "Technical parameters Main length:",
+          "≥1900mm; Main body width: ≥",
+          "400mm;",
+          "Minimum height: 750mm; Lifting",
+          "stroke: ≥250mm;",
+          "Pedal extension distance: ≥",
+          "1000mm;",
+          "Pedal height adjustment: ≥",
+          "400mm;",
+          "Pedal Angle range: ≥90°;",
+          "Pedal adjustment distance: ≥",
+          "200mm;"
+        ],
+        "category": "Orthopedics & Traumatology",
+        "subtitle": "Orthopedics & Traumatology"
+      },
+      {
+        "name": "Electronic Video Gastroscope / Endoscope",
+        "image": "/images/products/video-gastroscope.jpg",
+        "specification": "High-definition flexible video gastroscope. Field of view: 140°, depth of field: 3-100mm, insertion tube outer diameter: 9.6mm, working channel: 2.8mm, angulation: Up 210°, Down 90°, Left/Right 100°. Built-in CMOS image sensor with water jet channel.",
+        "features": [
+          "High-resolution CMOS optical sensor delivering crisp endoscopic mucosal visualization",
+          "Wide 140° field of view with 3-100mm surgical depth of field",
+          "Slim 9.6mm insertion tube with four-way distal tip angulation (Up 210°, Down 90°)",
+          "2.8mm instrument working channel compatible with standard biopsy forceps and snares",
+          "Integrated forward auxiliary water jet for clearing bleeding sites and mucus"
+        ],
+        "category": "Gastroenterology & GI Endoscopy",
+        "subtitle": "Gastroenterology & GI Endoscopy"
+      },
+      {
+        "name": "CTG Machine Jumper",
+        "image": "/images/products/ctg-machine-jumper.jpeg",
+        "specification": "• \nDimensions: 307x 296x 10 \n• \nNet weight: 3.2 kgs \n• \nScreen size: TFT LCD Color \nscreen \n• \nUltrasonic working frequency: \n1.0 MHz ±5% \n• \nRecording paper: 152mm \nthermal paper \n• \nRecording paper speed: 1, 2, 3 \ncm/min \nFHR NIBP SPO2 TOCO TEMP MHR \nFM and Twin monitoring",
+        "features": [
+          "•",
+          "Dimensions: 307x 296x 10",
+          "•",
+          "Net weight: 3.2 kgs",
+          "•",
+          "Screen size: TFT LCD Color",
+          "screen",
+          "•",
+          "Ultrasonic working frequency:",
+          "1.0 MHz ±5%",
+          "•",
+          "Recording paper: 152mm",
+          "thermal paper",
+          "•",
+          "Recording paper speed: 1, 2, 3",
+          "cm/min",
+          "FHR NIBP SPO2 TOCO TEMP MHR",
+          "FM and Twin monitoring"
+        ],
+        "category": "Gynecology & Women's Health",
+        "subtitle": "Gynecology & Women's Health"
+      },
+      {
+        "name": "CTG Machine F80",
+        "image": "/images/products/ctg-machine-f80.jpeg",
+        "specification": "12\" TFT color screen, 0-70°\nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
+        "features": [
+          "12\" TFT color screen, 0-70°",
+          "foldable",
+          "12 Crystal IPX1 waterproof Probe",
+          "Built-in large capability",
+          "rechargeable lithium-ion battery",
+          "Built-in Z-fold paper thermal",
+          "printer with adjustable tracing",
+          "speed",
+          "Built-in CTG analysis system",
+          "Multiple display interfaces can be",
+          "easily switched",
+          "TWIN monitoring function &",
+          "clinical event mark function",
+          "CTG data storage & review for",
+          "120h",
+          "Support connecting to central",
+          "monitoring system"
+        ],
+        "category": "Gynecology & Women's Health",
+        "subtitle": "Gynecology & Women's Health"
+      },
+      {
+        "name": "CTG Machine F90",
+        "image": "/images/products/ctg-machine-f90.jpeg",
+        "specification": "12\" TFT color screen, 0-70° \nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nMonitor the maternal and fetal \nparameters simultaneously \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
+        "features": [
+          "12\" TFT color screen, 0-70°",
+          "foldable",
+          "12 Crystal IPX1 waterproof Probe",
+          "Built-in large capability",
+          "rechargeable lithium-ion battery",
+          "Built-in Z-fold paper thermal",
+          "printer with adjustable tracing",
+          "speed",
+          "Built-in CTG analysis system",
+          "Multiple display interfaces can be",
+          "easily switched",
+          "Monitor the maternal and fetal",
+          "parameters simultaneously",
+          "TWIN monitoring function &",
+          "clinical event mark function",
+          "CTG data storage & review for",
+          "120h",
+          "Support connecting to central",
+          "monitoring system"
+        ],
+        "category": "Gynecology & Women's Health",
+        "subtitle": "Gynecology & Women's Health"
+      },
+      {
+        "name": "CTG-Jumper JPD-600P",
+        "image": "/images/products/ctg-jumper-jpd-600p.jpeg",
+        "specification": "",
+        "features": [],
+        "category": "Gynecology & Women's Health",
+        "subtitle": "Gynecology & Women's Health"
       }
     ],
     "keySpecs": [
-      "Anti-fogging optical elements with high-temperature autoclavability",
-      "Extended 33cm–38cm shaft lengths with 360° rotational rings"
+      "Electro-hydraulic multi-position surgical tables with 350 kg weight capacity and full C-arm radiolucency",
+      "Double-dome cold LED surgical lights up to 160,000 Lux with optional surgical camera integration",
+      "High-frequency electrosurgical generators with vessel sealing and advanced smoke evacuation",
+      "Integrated anesthesia delivery workstations with vaporizer manifolds and AGSS scavenging"
+    ],
+    "subsections": [
+      {
+        "title": "General Operating Theatre Equipment",
+        "description": "Core surgical tables, shadowless LED illumination, anesthesia workstations, surgical pendants, ventilators, electrosurgical diathermy, and mobile C-arm fluoroscopy.",
+        "items": [
+          {
+            "name": "Anesthesia laryngoscope",
+            "image": "/images/products/anesthesia-laryngoscope.jpeg",
+            "specification": "Power supply: 1.5VX2 \"C\" type \nBattery (No. 2) \nBulb: 2.5V/0.45A \nBlade size: 92, 114, 134 mm",
+            "features": [
+              "Power supply: 1.5VX2 \"C\" type",
+              "Battery (No. 2)",
+              "Bulb: 2.5V/0.45A",
+              "Blade size: 92, 114, 134 mm"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Hydraulic operating table (hydraulic for height adjustment)",
+            "image": "/images/products/hydraulic-operating-table-hydraulic-for-height-adjustment.jpeg",
+            "specification": "►External size (LxWxH): \n2100x480x(720-920) mm \n►Reverse trendelenburg:30° \n►Trendelenburg: 20° \n►Lateral tilt left/right: 0-18° \n►Head plate up/down:45°/ -90° \n►Back plate up/down: 75°/-18° \n►Leg plate down/outwards: 90°/ \n90° \n►Kidney bridge elevation: 120mm",
+            "features": [
+              "►External size (LxWxH):",
+              "2100x480x(720-920) mm",
+              "►Reverse trendelenburg:30°",
+              "►Trendelenburg: 20°",
+              "►Lateral tilt left/right: 0-18°",
+              "►Head plate up/down:45°/ -90°",
+              "►Back plate up/down: 75°/-18°",
+              "►Leg plate down/outwards: 90°/",
+              "90°",
+              "►Kidney bridge elevation: 120mm"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Motorized operating table",
+            "image": "/images/products/motorized-operating-table.jpeg",
+            "specification": "External size (LxWxH): 2080x520x \n(745-995) mm \n►Reverse trendelenburg: 25° \n►Trendelenburg: -25° \n►Lateral tilt left/right: 15° \n►Head plate up/down:45°/ -90° \n►Back plate up/down: 50° \n►Leg plate down/outwards: 90°/ \n90° \n►Kidney bridge elevation: 80mm \n►Tabletop longitude shifting: \n400mm(gas spring controlled)",
+            "features": [
+              "External size (LxWxH): 2080x520x",
+              "(745-995) mm",
+              "►Reverse trendelenburg: 25°",
+              "►Trendelenburg: -25°",
+              "►Lateral tilt left/right: 15°",
+              "►Head plate up/down:45°/ -90°",
+              "►Back plate up/down: 50°",
+              "►Leg plate down/outwards: 90°/",
+              "90°",
+              "►Kidney bridge elevation: 80mm",
+              "►Tabletop longitude shifting:",
+              "400mm(gas spring controlled)"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Orthopedic traction",
+            "image": "/images/products/orthopedic-traction.jpeg",
+            "specification": "►Length: 1400mm \n►Height:650-870mm   \n►Traction shoes translation \ndistance:200mm \n►Traction frame translation \ndistance:600mm \n►Leg support frame translation \ndistance:550mm \n►Base support frame outwards: \n60°",
+            "features": [
+              "►Length: 1400mm",
+              "►Height:650-870mm",
+              "►Traction shoes translation",
+              "distance:200mm",
+              "►Traction frame translation",
+              "distance:600mm",
+              "►Leg support frame translation",
+              "distance:550mm",
+              "►Base support frame outwards:",
+              "60°"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Gynecology surgical table",
+            "image": "/images/products/gynecology-surgical-table.jpeg",
+            "specification": "Standard accessories:  \nArm support--1pair， \nHandle--1pair  \nFixing clamp--1pair， \nKnee cruth--1pair  \nPedal--1pair， \nLeg support--1piece  \nWaste basin--1piece， \nHand remote--1piec",
+            "features": [
+              "Standard accessories:",
+              "Arm support--1pair，",
+              "Handle--1pair",
+              "Fixing clamp--1pair，",
+              "Knee cruth--1pair",
+              "Pedal--1pair，",
+              "Leg support--1piece",
+              "Waste basin--1piece，",
+              "Hand remote--1piec"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Hydraulic patient transportation stretcher",
+            "image": "/images/products/hydraulic-patient-transportatio-n-stretcher.jpeg",
+            "specification": "Size: L2120*W800*H610-930mm \nFunctions: \n1. Height adjustment: 610-930mm \n2. Trendelenburg and Reverse-\nTrendelenburg：0 - 10° \n3. Back section adjustable from: 0 \nto 80° \n4. Foot section adjustable from 0 \nto 35° \n5. X-ray translucent function of \nback section is available \nMain Features： \nMetal frame with electrophoresis \nand powder coating \nWith pushing handle on the head \nend, with a crank to \noperate the foot section Side rails: \n2pcs, Aluminum alloy, collapsible \nBack section is operated by gas \nspring \nWith the middle castor for steer \ndirection, Bumper castors on\n4 corners Castors: \nDustproof castors with central \nlocking system \nCastor diameter of 200mm \nEquipped with 1 \nI.V. pole, 1 mattress, urine hooks",
+            "features": [
+              "Size: L2120*W800*H610-930mm",
+              "Functions:",
+              "1. Height adjustment: 610-930mm",
+              "2. Trendelenburg and Reverse-",
+              "Trendelenburg：0 - 10°",
+              "3. Back section adjustable from: 0",
+              "to 80°",
+              "4. Foot section adjustable from 0",
+              "to 35°",
+              "5. X-ray translucent function of",
+              "back section is available",
+              "Main Features：",
+              "Metal frame with electrophoresis",
+              "and powder coating",
+              "With pushing handle on the head",
+              "end, with a crank to",
+              "operate the foot section Side rails:",
+              "2pcs, Aluminum alloy, collapsible",
+              "Back section is operated by gas",
+              "spring",
+              "With the middle castor for steer",
+              "direction, Bumper castors on",
+              "4 corners Castors:",
+              "Dustproof castors with central",
+              "locking system",
+              "Castor diameter of 200mm",
+              "Equipped with 1",
+              "I.V. pole, 1 mattress, urine hooks"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Portable surgical light (2012-5)",
+            "image": "/images/products/portable-surgical-light-2012l-5.jpeg",
+            "specification": "1.Voltage：AC90~240V 50~60Hz \n2.Lamp head diameter：≈300mm \n3.Product specification：LED 70W \n4.Working distance：700mm \n5.Product color temperature：\n5300±500K \n6.Center illuminance：≥50000Lux \n(three levels decreasing） \n7.G.W.：18.84KG",
+            "features": [
+              "1.Voltage：AC90~240V 50~60Hz",
+              "2.Lamp head diameter：≈300mm",
+              "3.Product specification：LED 70W",
+              "4.Working distance：700mm",
+              "5.Product color temperature：",
+              "5300±500K",
+              "6.Center illuminance：≥50000Lux",
+              "(three levels decreasing）",
+              "7.G.W.：18.84KG"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Surgical light",
+            "image": "/images/products/surgical-light.png",
+            "specification": "Diameter of light head(mm): \n730/730; ►Lamp Head Thickness: \n105/105; ►Central illuminance at \n1m(Lux): 40,000–160,000 lux (10 \nadjustable levels); ►Color \nTemperature (Kelvin): 4,000–5,500 \nK (11 adjustable \nlevels); ►Color Rendering Index \n(CRI): ≥93; ►Lighting Spot \nDiameter (d10): 200–300 mm (5 \nadjustable \nlevels); ►Spot distribution \n(d50/d10): 51%; ►Depth of the \nlight column (60% Ec): 700 mm; \n►Maximum Total Irradiance (Ee): \n<600 W/m²; ►Radiant energy\nEe/Ec (mw/m2 lux): ≤4 ; \n►Shadow-free rate in deep \ncavities: 98%; ►Shadow-free rate \nwith a single baffle: ≥46%; \n►Shadow-free rate in deep \ncavities with a single baffle: ≥45%; \n►Shadow-free rate with double \nbaffles: ≥41%; ►Shadow-free rate \nin deep cavities with double \nbaffles: ≥40%; ►Bulb Brand: \nGenuine imported Osram \n(Germany) LEDs; ►Bulb Quantity: \n72+72; ►Bulb Power(w): <1 W; \n►Average Bulb \nLife(hours):≥50,000",
+            "features": [
+              "Diameter of light head(mm):",
+              "730/730; ►Lamp Head Thickness:",
+              "105/105; ►Central illuminance at",
+              "1m(Lux): 40,000–160,000 lux (10",
+              "adjustable levels); ►Color",
+              "Temperature (Kelvin): 4,000–5,500",
+              "K (11 adjustable",
+              "levels); ►Color Rendering Index",
+              "(CRI): ≥93; ►Lighting Spot",
+              "Diameter (d10): 200–300 mm (5",
+              "adjustable",
+              "levels); ►Spot distribution",
+              "(d50/d10): 51%; ►Depth of the",
+              "light column (60% Ec): 700 mm;",
+              "►Maximum Total Irradiance (Ee):",
+              "<600 W/m²; ►Radiant energy",
+              "Ee/Ec (mw/m2 lux): ≤4 ;",
+              "►Shadow-free rate in deep",
+              "cavities: 98%; ►Shadow-free rate",
+              "with a single baffle: ≥46%;",
+              "►Shadow-free rate in deep",
+              "cavities with a single baffle: ≥45%;",
+              "►Shadow-free rate with double",
+              "baffles: ≥41%; ►Shadow-free rate",
+              "in deep cavities with double",
+              "baffles: ≥40%; ►Bulb Brand:",
+              "Genuine imported Osram",
+              "(Germany) LEDs; ►Bulb Quantity:",
+              "72+72; ►Bulb Power(w): <1 W;",
+              "►Average Bulb",
+              "Life(hours):≥50,000"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Surgical pendants",
+            "image": "/images/products/surgical-pendants.jpg",
+            "specification": "Ceiling-mounted surgical pendant with high-load articulated arm system. Load capacity: 180-250kg. Rotation: 340° with pneumatic braking system. Medical gas outlets: Oxygen (O2), Nitrous Oxide (N2O), Medical Air, Vacuum. Electrical: 8 universal sockets, RJ45 data interface, equipotential grounding. Accessories: Dual height-adjustable stainless steel equipment shelves and monitor bracket.",
+            "features": [
+              "Ceiling-mounted articulating pendant for surgical suites and operating theatre instrumentation",
+              "Heavy-duty load capacity of 180-250kg equipped with fail-safe pneumatic friction brakes",
+              "340° horizontal arm rotation for flexible theatre positioning and ergonomic workflow",
+              "Integrated medical gas terminal outlets: O2, N2O, Medical Air, and Vacuum",
+              "8 universal electrical outlets, RJ45 hospital network data ports, and equipotential earthing",
+              "Dual stainless steel equipment shelves with adjustable patient monitor mounting arm"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Anesthesia machine",
+            "image": "/images/products/anesthesia-machine.jpg",
+            "specification": "Advanced multi-mode anesthesia workstation for adult, pediatric, and neonatal surgery. Integrated 10.4-inch color TFT display for real-time airway pressure, tidal volume, frequency, and P-V/F-T loops. Modes: VCV, PCV, SIMV, PSV, Manual. High-precision dual Selectatec vaporizer mount with interlock system. Integrated heated patient breathing circuit with CO2 absorber and anti-hypoxic safety guard.",
+            "features": [
+              "Integrated 10.4-inch color TFT display for waveforms (P-T, F-T, P-V loop) and monitoring",
+              "Comprehensive ventilation modes: VCV, PCV, SIMV, PSV, and Manual mode",
+              "High-precision dual Selectatec vaporizer manifold with automatic interlock safety",
+              "Integrated heated patient breathing circuit with fast-bypass CO2 canister absorber",
+              "Dual-tube flowmeter for O2, N2O, and Air with hypoxic guard protection mechanism",
+              "Multi-parameter alarm system with built-in emergency backup battery"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Ventilator",
+            "image": "/images/products/ventilator.jpeg",
+            "specification": "Invasive ventilation mode \nVCV, PCV, PRVC, VS, V-SIMV, P-\nSIMV, PRVC-SIMV, CPAP/PSV, \nNIPPV, Apnea Ventilation, APRV, \nDuoLevel, AMV, nCPAP; Optional: \nPSV-S/T. \nNon invasive ventilation mode \nPCV, PRVC, VS, CPAP/PSV, P-SIMV, \nPRVC-SIMV, DuoLevel, APRV, AMV, \nApnea Ventilation, nCPAP, NIPPV; \nOptional: PSV-S/T. \nOxygen therapy\nProvide high flow oxygen therapy \n(HFNC) function through nasal \nhumidification (Maximum \n100L/min).",
+            "features": [
+              "Invasive ventilation mode",
+              "VCV, PCV, PRVC, VS, V-SIMV, P-",
+              "SIMV, PRVC-SIMV, CPAP/PSV,",
+              "NIPPV, Apnea Ventilation, APRV,",
+              "DuoLevel, AMV, nCPAP; Optional:",
+              "PSV-S/T.",
+              "Non invasive ventilation mode",
+              "PCV, PRVC, VS, CPAP/PSV, P-SIMV,",
+              "PRVC-SIMV, DuoLevel, APRV, AMV,",
+              "Apnea Ventilation, nCPAP, NIPPV;",
+              "Optional: PSV-S/T.",
+              "Oxygen therapy",
+              "Provide high flow oxygen therapy",
+              "(HFNC) function through nasal",
+              "humidification (Maximum",
+              "100L/min)."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "ESU Monopolar& Bipolar",
+            "image": "/images/products/esu-monopolar-bipolar-diathermy.jpeg",
+            "specification": "Multifunctional Cautery for both \ncutting and coagulating \n1,Monopolar cut: pure cut : 300W; \nblend cut ⅰ:250W; blend cut \nⅱ:150W                                                  \n2, Monopolar coagulation: Point \nCoag: 120W; Jet Coag: 100W              \n3, Bipolar Coagulation: 70W                \n4, Main Frequency: 450 KHZ",
+            "features": [
+              "Multifunctional Cautery for both",
+              "cutting and coagulating",
+              "1,Monopolar cut: pure cut : 300W;",
+              "blend cut ⅰ:250W; blend cut",
+              "ⅱ:150W",
+              "2, Monopolar coagulation: Point",
+              "Coag: 120W; Jet Coag: 100W",
+              "3, Bipolar Coagulation: 70W",
+              "4, Main Frequency: 450 KHZ"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "c arm x ray machine",
+            "image": "/images/products/c-arm-xray-machine.jpg",
+            "specification": "High-frequency mobile surgical C-arm fluoroscopy X-ray system. Generator: 110kV / 5kW rotating anode tube with micro-focus 0.3/0.6mm. Image intensifier: 9-inch high-definition triple-field intensifier. Display: Dual 19-inch high-resolution medical LCD workstation monitors. Digital processing: Recursive noise reduction, last image hold (LIH), edge enhancement, pulse fluoroscopy, and DICOM 3.0 network PACS compatibility.",
+            "features": [
+              "High-frequency 110kV / 5kW mobile surgical C-arm fluoroscopy system",
+              "9-inch triple-field high-definition image intensifier with ultra-low radiation dose",
+              "Dual 19-inch medical LCD display cart with real-time digital image processing workstation",
+              "Advanced digital imaging: recursive filtering, edge enhancement, and Last Image Hold (LIH)",
+              "Full motorized orbital, horizontal, and angular movements with laser cross localizer",
+              "Standard DICOM 3.0 networking interface for hospital PACS and surgical archiving"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          }
+        ]
+      },
+      {
+        "title": "Laparoscopy & Minimally Invasive Surgery",
+        "description": "4K Ultra HD and Full HD laparoscopic video towers, camera control units, cold LED illumination, CO2 insufflators, and precision surgical optics.",
+        "items": [
+          {
+            "name": "Laparoscopy tower",
+            "image": "/images/hero_endoscopy.jpg",
+            "specification": "",
+            "features": [],
+            "category": "Laparoscopy & Minimally Invasive Surgery",
+            "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+          }
+        ]
+      },
+      {
+        "title": "Urology & Endourology",
+        "description": "Diagnostic and operative endourological instruments, transurethral resectoscopes, and precision semi-rigid ureteroscopy systems.",
+        "items": [
+          {
+            "name": "Semi-Rigid Ureteroscope",
+            "image": "/images/products/ureteroscope.jpg",
+            "specification": "Precision optical semi-rigid ureterorenoscope. Direction of view: 0° / 12°, working length: 430mm, sheath diameter: 8.0/9.8 Fr, working channel: 4.8 Fr for laser fiber and stone baskets. Universal Storz/Wolf light guide adapter, integrated dual stopcocks for continuous irrigation, autoclavable optical lens.",
+            "features": [
+              "Semi-rigid stainless steel optical tube with high-resolution quartz fibers",
+              "Working channel diameter: 4.8 Fr compatible with holmium laser fibers and baskets",
+              "Distal tip atraumatic design for smooth ureteral insertion",
+              "Integrated dual irrigation stopcocks with Luer-lock connection",
+              "Universal light cable post compatible with Storz, Wolf, and Olympus light guides"
+            ],
+            "category": "Urology & Endourology",
+            "subtitle": "Urology & Endourology"
+          }
+        ]
+      },
+      {
+        "title": "Video-Assisted Thoracoscopic Surgery (VATS)",
+        "description": "Minimally invasive thoracic endoscopic video systems, cardiopulmonary function diagnostics, and specialized thoracic monitoring.",
+        "items": [
+          {
+            "name": "12 Channel ECG-E70",
+            "image": "/images/products/12-channel-ecg-e70.jpeg",
+            "specification": "• \n8 inch color LCD screen, \nfull touch screen design \n• \nFast keyboard operation, \nconvenient \n• \nSupport data dump, \nplayback, reanalysis, with \nSD card, U disk storage \nfunction \n• \nInnovative fast baseline \ncorrection algorithms \nallow quick stabilization of \nthe baseline \n• \nUsing 24-bit high-\nresolution and high-speed \ndata sampling to ensure \nthat the sampling \nwaveform is true \n• \nTwelve-lead \nsynchronization analysis, \nsupport for report preview \nand report format \nadjustment \n• \nMultiple recording report \nformats are available \n• \nWith defibrillation \nprotection, pacing pulse \ndisplay function \n• \nSupport data to date the \ndirectory management, \nuser-friendly search \n• \nSupport roll paper and \nstack paper design \n• \nStacked paper with \nprecise positioning design \n• \nBuilt-in high-capacity \nrechargeable battery, AC-\nDC seamless conversion",
+            "features": [
+              "•",
+              "8 inch color LCD screen,",
+              "full touch screen design",
+              "•",
+              "Fast keyboard operation,",
+              "convenient",
+              "•",
+              "Support data dump,",
+              "playback, reanalysis, with",
+              "SD card, U disk storage",
+              "function",
+              "•",
+              "Innovative fast baseline",
+              "correction algorithms",
+              "allow quick stabilization of",
+              "the baseline",
+              "•",
+              "Using 24-bit high-",
+              "resolution and high-speed",
+              "data sampling to ensure",
+              "that the sampling",
+              "waveform is true",
+              "•",
+              "Twelve-lead",
+              "synchronization analysis,",
+              "support for report preview",
+              "and report format",
+              "adjustment",
+              "•",
+              "Multiple recording report",
+              "formats are available",
+              "•",
+              "With defibrillation",
+              "protection, pacing pulse",
+              "display function",
+              "•",
+              "Support data to date the",
+              "directory management,",
+              "user-friendly search",
+              "•",
+              "Support roll paper and",
+              "stack paper design",
+              "•",
+              "Stacked paper with",
+              "precise positioning design",
+              "•",
+              "Built-in high-capacity",
+              "rechargeable battery, AC-",
+              "DC seamless conversion"
+            ],
+            "category": "Video-Assisted Thoracoscopic Surgery (VATS)",
+            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)"
+          },
+          {
+            "name": "Holter ECG",
+            "image": "/images/products/12-channel-ecg-e70.jpeg",
+            "specification": "",
+            "features": [],
+            "category": "Video-Assisted Thoracoscopic Surgery (VATS)",
+            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)"
+          },
+          {
+            "name": "Spirometer with screen",
+            "image": "/images/products/spirometer-with-screen.jpeg",
+            "specification": "Meet the ATS, NIOSH, ERS and \nDIAGNOSIS standard. \n Multi-language display and \nmeasurement report. \nWith precise flow sensor, easy to \nclean. \n5.7\" 320×240 dots LCD, memory \ncapacity 500 measurement \nrecords. \nBuilt-in 110mm thermal printer \nSmall size, light weight and easy to \ncarry. \ncan be connected to PC station \nthrough USB port, performing a \npulmonary function test directly \nwith PC station, also thousands of \nmeasurement-records can be \nstored. \nPC workstation supports the \nmeasurement and post-\nbronchodilator test.",
+            "features": [
+              "Meet the ATS, NIOSH, ERS and",
+              "DIAGNOSIS standard.",
+              "Multi-language display and",
+              "measurement report.",
+              "With precise flow sensor, easy to",
+              "clean.",
+              "5.7\" 320×240 dots LCD, memory",
+              "capacity 500 measurement",
+              "records.",
+              "Built-in 110mm thermal printer",
+              "Small size, light weight and easy to",
+              "carry.",
+              "can be connected to PC station",
+              "through USB port, performing a",
+              "pulmonary function test directly",
+              "with PC station, also thousands of",
+              "measurement-records can be",
+              "stored.",
+              "PC workstation supports the",
+              "measurement and post-",
+              "bronchodilator test."
+            ],
+            "category": "Video-Assisted Thoracoscopic Surgery (VATS)",
+            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)"
+          }
+        ]
+      },
+      {
+        "title": "Orthopedics & Traumatology",
+        "description": "Surgical bone power drill and saw tools, arthroscopy shavers, orthopedic traction operating tables, and lower limb extensions.",
+        "items": [
+          {
+            "name": "Drills & saws",
+            "image": "/images/products/drills-and-saws.jpg",
+            "specification": "Medical surgical cannulated bone drill and oscillating sagittal saw handpieces. High-speed cannulated drill 0-1200 RPM, sagittal saw 0-15000 CPM, 14.4V rechargeable Li-ion battery, fully autoclavable up to 135°C, variable speed trigger.",
+            "features": [
+              "Multi-function orthopedic power handpieces for trauma, joint, and spine surgery",
+              "Cannulated surgical bone drill with forward, reverse, and variable speed trigger",
+              "High-frequency oscillating sagittal saw with quick-lock blade mechanism",
+              "Includes 14.4V sterile battery casing, charging console, and keyless chuck"
+            ],
+            "category": "Orthopedics & Traumatology",
+            "subtitle": "Orthopedics & Traumatology"
+          },
+          {
+            "name": "Shaver",
+            "image": "/images/products/ent-shaver.jpeg",
+            "specification": "",
+            "features": [],
+            "category": "Orthopedics & Traumatology",
+            "subtitle": "Orthopedics & Traumatology"
+          },
+          {
+            "name": "Surgical table Manual",
+            "image": "/images/products/surgical-table-manual.jpeg",
+            "specification": "Size:2050*500*770-1020mm \nStandard Configurations: \nAnesthesia protective screen 1 \npiece \nShoulder support 1 set  \nArmrest 1 set  \nBody support 1 set  \nLeg support 1 set  \nFoot board 1 set  \nMattress 1 set \nProduct function:  \nHeadboard upwards/downwards \n≥45°/ ≥90°  \nBackboard upwards/downwards \n≥60°/ ≥15°  \nLeg board Downwards / \noutreached ≥ 90°  \nForward tilt/ Backward tilt ≥25° / \n≥20°  \nLeft and right tilt ≥18°  \nWaist bridge lifting ≥120mm \nLongitudinal translation ≥300 ㎜",
+            "features": [
+              "Size:2050*500*770-1020mm",
+              "Standard Configurations:",
+              "Anesthesia protective screen 1",
+              "piece",
+              "Shoulder support 1 set",
+              "Armrest 1 set",
+              "Body support 1 set",
+              "Leg support 1 set",
+              "Foot board 1 set",
+              "Mattress 1 set",
+              "Product function:",
+              "Headboard upwards/downwards",
+              "≥45°/ ≥90°",
+              "Backboard upwards/downwards",
+              "≥60°/ ≥15°",
+              "Leg board Downwards /",
+              "outreached ≥ 90°",
+              "Forward tilt/ Backward tilt ≥25° /",
+              "≥20°",
+              "Left and right tilt ≥18°",
+              "Waist bridge lifting ≥120mm",
+              "Longitudinal translation ≥300 ㎜"
+            ],
+            "category": "Orthopedics & Traumatology",
+            "subtitle": "Orthopedics & Traumatology"
+          },
+          {
+            "name": "Surgical table Electrical",
+            "image": "/images/products/surgical-table-electrical.jpeg",
+            "specification": "Size:2000*500*550-800mm \nStandard Configurations:  \nAnesthesia protective screen 1 \npiece  \nShoulder support 1 set  \nArm rest 1 set  \nBody support 1 set  \nLeg support 1 set  \nMattress 1 set  \nHand held operator 1 set \nProduct function:  \nHeadboard upwards/downwards \n≥55°/ ≥90°  \nBackboard upwards/downwards \n≥65°/ ≥30°  \nLeg board downwards/ outreached \n≥ 90°  \nForward tilt/ Backward tilt ≥30 \n/ °≥25°  \nLeft and right tilt ≥20°  \nWaist bridge lifting ≥120mm \nTranslation distance 350mm",
+            "features": [
+              "Size:2000*500*550-800mm",
+              "Standard Configurations:",
+              "Anesthesia protective screen 1",
+              "piece",
+              "Shoulder support 1 set",
+              "Arm rest 1 set",
+              "Body support 1 set",
+              "Leg support 1 set",
+              "Mattress 1 set",
+              "Hand held operator 1 set",
+              "Product function:",
+              "Headboard upwards/downwards",
+              "≥55°/ ≥90°",
+              "Backboard upwards/downwards",
+              "≥65°/ ≥30°",
+              "Leg board downwards/ outreached",
+              "≥ 90°",
+              "Forward tilt/ Backward tilt ≥30",
+              "/ °≥25°",
+              "Left and right tilt ≥20°",
+              "Waist bridge lifting ≥120mm",
+              "Translation distance 350mm"
+            ],
+            "category": "Orthopedics & Traumatology",
+            "subtitle": "Orthopedics & Traumatology"
+          },
+          {
+            "name": "Extension for lower extremities",
+            "image": "/images/products/extension-for-lower-extremities.jpeg",
+            "specification": "Technical parameters Main length: \n≥1900mm; Main body width: ≥\n400mm; \nMinimum height: 750mm; Lifting \nstroke: ≥250mm; \nPedal extension distance: ≥\n1000mm; \nPedal height adjustment: ≥\n400mm; \nPedal Angle range: ≥90°; \nPedal adjustment distance: ≥\n200mm;",
+            "features": [
+              "Technical parameters Main length:",
+              "≥1900mm; Main body width: ≥",
+              "400mm;",
+              "Minimum height: 750mm; Lifting",
+              "stroke: ≥250mm;",
+              "Pedal extension distance: ≥",
+              "1000mm;",
+              "Pedal height adjustment: ≥",
+              "400mm;",
+              "Pedal Angle range: ≥90°;",
+              "Pedal adjustment distance: ≥",
+              "200mm;"
+            ],
+            "category": "Orthopedics & Traumatology",
+            "subtitle": "Orthopedics & Traumatology"
+          }
+        ]
+      },
+      {
+        "title": "Gastroenterology & GI Endoscopy",
+        "description": "High-definition flexible video gastroscope and colonoscope workstations, digital video processors, and endoscopic electrocautery accessories.",
+        "items": [
+          {
+            "name": "Electronic Video Gastroscope / Endoscope",
+            "image": "/images/products/video-gastroscope.jpg",
+            "specification": "High-definition flexible video gastroscope. Field of view: 140°, depth of field: 3-100mm, insertion tube outer diameter: 9.6mm, working channel: 2.8mm, angulation: Up 210°, Down 90°, Left/Right 100°. Built-in CMOS image sensor with water jet channel.",
+            "features": [
+              "High-resolution CMOS optical sensor delivering crisp endoscopic mucosal visualization",
+              "Wide 140° field of view with 3-100mm surgical depth of field",
+              "Slim 9.6mm insertion tube with four-way distal tip angulation (Up 210°, Down 90°)",
+              "2.8mm instrument working channel compatible with standard biopsy forceps and snares",
+              "Integrated forward auxiliary water jet for clearing bleeding sites and mucus"
+            ],
+            "category": "Gastroenterology & GI Endoscopy",
+            "subtitle": "Gastroenterology & GI Endoscopy"
+          }
+        ]
+      },
+      {
+        "title": "Gynecology & Women's Health",
+        "description": "Specialized gynecological examination, operative hysteroscopy towers, and digital multi-parameter fetal maternal CTG monitoring systems.",
+        "items": [
+          {
+            "name": "CTG Machine Jumper",
+            "image": "/images/products/ctg-machine-jumper.jpeg",
+            "specification": "• \nDimensions: 307x 296x 10 \n• \nNet weight: 3.2 kgs \n• \nScreen size: TFT LCD Color \nscreen \n• \nUltrasonic working frequency: \n1.0 MHz ±5% \n• \nRecording paper: 152mm \nthermal paper \n• \nRecording paper speed: 1, 2, 3 \ncm/min \nFHR NIBP SPO2 TOCO TEMP MHR \nFM and Twin monitoring",
+            "features": [
+              "•",
+              "Dimensions: 307x 296x 10",
+              "•",
+              "Net weight: 3.2 kgs",
+              "•",
+              "Screen size: TFT LCD Color",
+              "screen",
+              "•",
+              "Ultrasonic working frequency:",
+              "1.0 MHz ±5%",
+              "•",
+              "Recording paper: 152mm",
+              "thermal paper",
+              "•",
+              "Recording paper speed: 1, 2, 3",
+              "cm/min",
+              "FHR NIBP SPO2 TOCO TEMP MHR",
+              "FM and Twin monitoring"
+            ],
+            "category": "Gynecology & Women's Health",
+            "subtitle": "Gynecology & Women's Health"
+          },
+          {
+            "name": "CTG Machine F80",
+            "image": "/images/products/ctg-machine-f80.jpeg",
+            "specification": "12\" TFT color screen, 0-70°\nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
+            "features": [
+              "12\" TFT color screen, 0-70°",
+              "foldable",
+              "12 Crystal IPX1 waterproof Probe",
+              "Built-in large capability",
+              "rechargeable lithium-ion battery",
+              "Built-in Z-fold paper thermal",
+              "printer with adjustable tracing",
+              "speed",
+              "Built-in CTG analysis system",
+              "Multiple display interfaces can be",
+              "easily switched",
+              "TWIN monitoring function &",
+              "clinical event mark function",
+              "CTG data storage & review for",
+              "120h",
+              "Support connecting to central",
+              "monitoring system"
+            ],
+            "category": "Gynecology & Women's Health",
+            "subtitle": "Gynecology & Women's Health"
+          },
+          {
+            "name": "CTG Machine F90",
+            "image": "/images/products/ctg-machine-f90.jpeg",
+            "specification": "12\" TFT color screen, 0-70° \nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nMonitor the maternal and fetal \nparameters simultaneously \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
+            "features": [
+              "12\" TFT color screen, 0-70°",
+              "foldable",
+              "12 Crystal IPX1 waterproof Probe",
+              "Built-in large capability",
+              "rechargeable lithium-ion battery",
+              "Built-in Z-fold paper thermal",
+              "printer with adjustable tracing",
+              "speed",
+              "Built-in CTG analysis system",
+              "Multiple display interfaces can be",
+              "easily switched",
+              "Monitor the maternal and fetal",
+              "parameters simultaneously",
+              "TWIN monitoring function &",
+              "clinical event mark function",
+              "CTG data storage & review for",
+              "120h",
+              "Support connecting to central",
+              "monitoring system"
+            ],
+            "category": "Gynecology & Women's Health",
+            "subtitle": "Gynecology & Women's Health"
+          },
+          {
+            "name": "CTG-Jumper JPD-600P",
+            "image": "/images/products/ctg-jumper-jpd-600p.jpeg",
+            "specification": "",
+            "features": [],
+            "category": "Gynecology & Women's Health",
+            "subtitle": "Gynecology & Women's Health"
+          }
+        ]
+      }
     ]
   },
   {
@@ -303,23 +1407,6 @@
     "description": "Comprehensive gynecological endoscopy suites, advanced digital colposcopy, diagnostic and operative hysteroscopy, intrauterine tissue morcellation, uterine manipulation, and precision laparoscopic instruments.",
     "equipmentHighlights": [
       {
-        "name": "Gynecology surgical table",
-        "image": "/images/products/gynecology-surgical-table.jpeg",
-        "specification": "Standard accessories:  \nArm support--1pair， \nHandle--1pair  \nFixing clamp--1pair， \nKnee cruth--1pair  \nPedal--1pair， \nLeg support--1piece  \nWaste basin--1piece， \nHand remote--1piec",
-        "features": [
-          "Standard accessories:",
-          "Arm support--1pair，",
-          "Handle--1pair",
-          "Fixing clamp--1pair，",
-          "Knee cruth--1pair",
-          "Pedal--1pair，",
-          "Leg support--1piece",
-          "Waste basin--1piece，",
-          "Hand remote--1piec"
-        ],
-        "category": "Maternity & Obstetrics"
-      },
-      {
         "name": "CTG Machine Jumper",
         "image": "/images/products/ctg-machine-jumper.jpeg",
         "specification": "• \nDimensions: 307x 296x 10 \n• \nNet weight: 3.2 kgs \n• \nScreen size: TFT LCD Color \nscreen \n• \nUltrasonic working frequency: \n1.0 MHz ±5% \n• \nRecording paper: 152mm \nthermal paper \n• \nRecording paper speed: 1, 2, 3 \ncm/min \nFHR NIBP SPO2 TOCO TEMP MHR \nFM and Twin monitoring",
@@ -463,30 +1550,6 @@
           "RESP, NIBP, SPO2, 2-TEMP,",
           "Microflow CO2",
           "Battery 11.1V 2500mAh"
-        ],
-        "category": "Intensive Care Unit (ICU)"
-      },
-      {
-        "name": "Ventilator",
-        "image": "/images/products/ventilator.jpeg",
-        "specification": "Invasive ventilation mode \nVCV, PCV, PRVC, VS, V-SIMV, P-\nSIMV, PRVC-SIMV, CPAP/PSV, \nNIPPV, Apnea Ventilation, APRV, \nDuoLevel, AMV, nCPAP; Optional: \nPSV-S/T. \nNon invasive ventilation mode \nPCV, PRVC, VS, CPAP/PSV, P-SIMV, \nPRVC-SIMV, DuoLevel, APRV, AMV, \nApnea Ventilation, nCPAP, NIPPV; \nOptional: PSV-S/T. \nOxygen therapy\nProvide high flow oxygen therapy \n(HFNC) function through nasal \nhumidification (Maximum \n100L/min).",
-        "features": [
-          "Invasive ventilation mode",
-          "VCV, PCV, PRVC, VS, V-SIMV, P-",
-          "SIMV, PRVC-SIMV, CPAP/PSV,",
-          "NIPPV, Apnea Ventilation, APRV,",
-          "DuoLevel, AMV, nCPAP; Optional:",
-          "PSV-S/T.",
-          "Non invasive ventilation mode",
-          "PCV, PRVC, VS, CPAP/PSV, P-SIMV,",
-          "PRVC-SIMV, DuoLevel, APRV, AMV,",
-          "Apnea Ventilation, nCPAP, NIPPV;",
-          "Optional: PSV-S/T.",
-          "Oxygen therapy",
-          "Provide high flow oxygen therapy",
-          "(HFNC) function through nasal",
-          "humidification (Maximum",
-          "100L/min)."
         ],
         "category": "Intensive Care Unit (ICU)"
       },
@@ -2221,269 +3284,6 @@
     ]
   },
   {
-    "slug": "orthopedics",
-    "name": "Orthopedics & Traumatology",
-    "departmentGroup": "Operating Theatre",
-    "featured": false,
-    "tagline": "Reconstruction & Power Surgery",
-    "description": "Surgical power tools, orthopedic traction operating tables, arthroscopy systems, and bone fracture fixation instrument sets.",
-    "equipmentHighlights": [
-      {
-        "name": "Orthopedic traction",
-        "image": "/images/products/orthopedic-traction.jpeg",
-        "specification": "►Length: 1400mm \n►Height:650-870mm   \n►Traction shoes translation \ndistance:200mm \n►Traction frame translation \ndistance:600mm \n►Leg support frame translation \ndistance:550mm \n►Base support frame outwards: \n60°",
-        "features": [
-          "►Length: 1400mm",
-          "►Height:650-870mm",
-          "►Traction shoes translation",
-          "distance:200mm",
-          "►Traction frame translation",
-          "distance:600mm",
-          "►Leg support frame translation",
-          "distance:550mm",
-          "►Base support frame outwards:",
-          "60°"
-        ],
-        "category": "Orthopedics & Traumatology"
-      },
-      {
-        "name": "Drills & saws",
-        "image": null,
-        "specification": "",
-        "features": [],
-        "category": "Orthopedics & Traumatology"
-      },
-      {
-        "name": "Shaver",
-        "image": "/images/products/ent-shaver.jpeg",
-        "specification": "",
-        "features": [],
-        "category": "Orthopedics & Traumatology"
-      },
-      {
-        "name": "Surgical table Manual",
-        "image": "/images/products/surgical-table-manual.jpeg",
-        "specification": "Size:2050*500*770-1020mm \nStandard Configurations: \nAnesthesia protective screen 1 \npiece \nShoulder support 1 set  \nArmrest 1 set  \nBody support 1 set  \nLeg support 1 set  \nFoot board 1 set  \nMattress 1 set \nProduct function:  \nHeadboard upwards/downwards \n≥45°/ ≥90°  \nBackboard upwards/downwards \n≥60°/ ≥15°  \nLeg board Downwards / \noutreached ≥ 90°  \nForward tilt/ Backward tilt ≥25° / \n≥20°  \nLeft and right tilt ≥18°  \nWaist bridge lifting ≥120mm \nLongitudinal translation ≥300 ㎜",
-        "features": [
-          "Size:2050*500*770-1020mm",
-          "Standard Configurations:",
-          "Anesthesia protective screen 1",
-          "piece",
-          "Shoulder support 1 set",
-          "Armrest 1 set",
-          "Body support 1 set",
-          "Leg support 1 set",
-          "Foot board 1 set",
-          "Mattress 1 set",
-          "Product function:",
-          "Headboard upwards/downwards",
-          "≥45°/ ≥90°",
-          "Backboard upwards/downwards",
-          "≥60°/ ≥15°",
-          "Leg board Downwards /",
-          "outreached ≥ 90°",
-          "Forward tilt/ Backward tilt ≥25° /",
-          "≥20°",
-          "Left and right tilt ≥18°",
-          "Waist bridge lifting ≥120mm",
-          "Longitudinal translation ≥300 ㎜"
-        ],
-        "category": "Orthopedics & Traumatology"
-      },
-      {
-        "name": "Surgical table Electrical",
-        "image": "/images/products/surgical-table-electrical.jpeg",
-        "specification": "Size:2000*500*550-800mm \nStandard Configurations:  \nAnesthesia protective screen 1 \npiece  \nShoulder support 1 set  \nArm rest 1 set  \nBody support 1 set  \nLeg support 1 set  \nMattress 1 set  \nHand held operator 1 set \nProduct function:  \nHeadboard upwards/downwards \n≥55°/ ≥90°  \nBackboard upwards/downwards \n≥65°/ ≥30°  \nLeg board downwards/ outreached \n≥ 90°  \nForward tilt/ Backward tilt ≥30 \n/ °≥25°  \nLeft and right tilt ≥20°  \nWaist bridge lifting ≥120mm \nTranslation distance 350mm",
-        "features": [
-          "Size:2000*500*550-800mm",
-          "Standard Configurations:",
-          "Anesthesia protective screen 1",
-          "piece",
-          "Shoulder support 1 set",
-          "Arm rest 1 set",
-          "Body support 1 set",
-          "Leg support 1 set",
-          "Mattress 1 set",
-          "Hand held operator 1 set",
-          "Product function:",
-          "Headboard upwards/downwards",
-          "≥55°/ ≥90°",
-          "Backboard upwards/downwards",
-          "≥65°/ ≥30°",
-          "Leg board downwards/ outreached",
-          "≥ 90°",
-          "Forward tilt/ Backward tilt ≥30",
-          "/ °≥25°",
-          "Left and right tilt ≥20°",
-          "Waist bridge lifting ≥120mm",
-          "Translation distance 350mm"
-        ],
-        "category": "Orthopedics & Traumatology"
-      },
-      {
-        "name": "Extension for lower extremities",
-        "image": "/images/products/extension-for-lower-extremities.jpeg",
-        "specification": "Technical parameters Main length: \n≥1900mm; Main body width: ≥\n400mm; \nMinimum height: 750mm; Lifting \nstroke: ≥250mm; \nPedal extension distance: ≥\n1000mm; \nPedal height adjustment: ≥\n400mm; \nPedal Angle range: ≥90°; \nPedal adjustment distance: ≥\n200mm;",
-        "features": [
-          "Technical parameters Main length:",
-          "≥1900mm; Main body width: ≥",
-          "400mm;",
-          "Minimum height: 750mm; Lifting",
-          "stroke: ≥250mm;",
-          "Pedal extension distance: ≥",
-          "1000mm;",
-          "Pedal height adjustment: ≥",
-          "400mm;",
-          "Pedal Angle range: ≥90°;",
-          "Pedal adjustment distance: ≥",
-          "200mm;"
-        ],
-        "category": "Orthopedics & Traumatology"
-      }
-    ],
-    "keySpecs": [
-      "Brushless motor drills with 0-1200 RPM stepless speed regulation",
-      "Full C-arm fluoroscopy compatibility without shadow interference"
-    ]
-  },
-  {
-    "slug": "gastroenterology",
-    "name": "Gastroenterology & GI Endoscopy",
-    "departmentGroup": "Operating Theatre",
-    "featured": false,
-    "tagline": "Luminal Diagnosis & Intervention",
-    "description": "Video gastroscope and colonoscope workstations, high-definition electronic processors, and endoscopic electrocautery accessories.",
-    "equipmentHighlights": [
-      {
-        "name": "Bronchoscop e",
-        "image": null,
-        "specification": "",
-        "features": [],
-        "category": "Gastroenterology & GI Endoscopy"
-      }
-    ],
-    "keySpecs": [
-      "Mega-pixel CMOS tip sensor with 140° super-wide field of view",
-      "Auxiliary forward water jet channel for fast mucosal clearing"
-    ]
-  },
-  {
-    "slug": "gynecology",
-    "name": "Gynecology & Women's Health",
-    "departmentGroup": "Operating Theatre",
-    "featured": false,
-    "tagline": "Hysteroscopy & Outpatient Gynae Care",
-    "description": "Diagnostic and operative continuous-flow hysteroscopy systems, high-definition video colposcopes, and LEEP electrosurgery units.",
-    "equipmentHighlights": [
-      {
-        "name": "Gynecology surgical table",
-        "image": "/images/products/gynecology-surgical-table.jpeg",
-        "specification": "Standard accessories:  \nArm support--1pair， \nHandle--1pair  \nFixing clamp--1pair， \nKnee cruth--1pair  \nPedal--1pair， \nLeg support--1piece  \nWaste basin--1piece， \nHand remote--1piec",
-        "features": [
-          "Standard accessories:",
-          "Arm support--1pair，",
-          "Handle--1pair",
-          "Fixing clamp--1pair，",
-          "Knee cruth--1pair",
-          "Pedal--1pair，",
-          "Leg support--1piece",
-          "Waste basin--1piece，",
-          "Hand remote--1piec"
-        ],
-        "category": "Gynecology & Women's Health"
-      },
-      {
-        "name": "CTG Machine Jumper",
-        "image": "/images/products/ctg-machine-jumper.jpeg",
-        "specification": "• \nDimensions: 307x 296x 10 \n• \nNet weight: 3.2 kgs \n• \nScreen size: TFT LCD Color \nscreen \n• \nUltrasonic working frequency: \n1.0 MHz ±5% \n• \nRecording paper: 152mm \nthermal paper \n• \nRecording paper speed: 1, 2, 3 \ncm/min \nFHR NIBP SPO2 TOCO TEMP MHR \nFM and Twin monitoring",
-        "features": [
-          "•",
-          "Dimensions: 307x 296x 10",
-          "•",
-          "Net weight: 3.2 kgs",
-          "•",
-          "Screen size: TFT LCD Color",
-          "screen",
-          "•",
-          "Ultrasonic working frequency:",
-          "1.0 MHz ±5%",
-          "•",
-          "Recording paper: 152mm",
-          "thermal paper",
-          "•",
-          "Recording paper speed: 1, 2, 3",
-          "cm/min",
-          "FHR NIBP SPO2 TOCO TEMP MHR",
-          "FM and Twin monitoring"
-        ],
-        "category": "Gynecology & Women's Health"
-      },
-      {
-        "name": "CTG Machine F80",
-        "image": "/images/products/ctg-machine-f80.jpeg",
-        "specification": "12\" TFT color screen, 0-70°\nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
-        "features": [
-          "12\" TFT color screen, 0-70°",
-          "foldable",
-          "12 Crystal IPX1 waterproof Probe",
-          "Built-in large capability",
-          "rechargeable lithium-ion battery",
-          "Built-in Z-fold paper thermal",
-          "printer with adjustable tracing",
-          "speed",
-          "Built-in CTG analysis system",
-          "Multiple display interfaces can be",
-          "easily switched",
-          "TWIN monitoring function &",
-          "clinical event mark function",
-          "CTG data storage & review for",
-          "120h",
-          "Support connecting to central",
-          "monitoring system"
-        ],
-        "category": "Gynecology & Women's Health"
-      },
-      {
-        "name": "CTG Machine F90",
-        "image": "/images/products/ctg-machine-f90.jpeg",
-        "specification": "12\" TFT color screen, 0-70° \nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nMonitor the maternal and fetal \nparameters simultaneously \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
-        "features": [
-          "12\" TFT color screen, 0-70°",
-          "foldable",
-          "12 Crystal IPX1 waterproof Probe",
-          "Built-in large capability",
-          "rechargeable lithium-ion battery",
-          "Built-in Z-fold paper thermal",
-          "printer with adjustable tracing",
-          "speed",
-          "Built-in CTG analysis system",
-          "Multiple display interfaces can be",
-          "easily switched",
-          "Monitor the maternal and fetal",
-          "parameters simultaneously",
-          "TWIN monitoring function &",
-          "clinical event mark function",
-          "CTG data storage & review for",
-          "120h",
-          "Support connecting to central",
-          "monitoring system"
-        ],
-        "category": "Gynecology & Women's Health"
-      },
-      {
-        "name": "CTG-Jumper JPD-600P",
-        "image": "/images/products/ctg-jumper-jpd-600p.jpeg",
-        "specification": "",
-        "features": [],
-        "category": "Gynecology & Women's Health"
-      }
-    ],
-    "keySpecs": [
-      "Ultra-fine 2.9mm and 4.0mm rod lenses for atraumatic outpatient hysteroscopy",
-      "Integrated image capture and patient archive management software"
-    ]
-  },
-  {
     "slug": "pediatrics",
     "name": "Pediatrics & Child Health",
     "departmentGroup": "Maternal & Infant",
@@ -2645,13 +3445,6 @@
       {
         "name": "Ultrasound machine S12 SONOSCAPE",
         "image": "/images/products/ultrasound-machine-s12-sonoscape.jpeg",
-        "specification": "",
-        "features": [],
-        "category": "Radiology & Diagnostic Imaging"
-      },
-      {
-        "name": "C arm Xray machine",
-        "image": null,
         "specification": "",
         "features": [],
         "category": "Radiology & Diagnostic Imaging"
@@ -3561,483 +4354,6 @@
       "Ballistic radial extracorporeal shockwave therapy (ESWT) up to 5.0 Bar",
       "Computerized multi-mode cervical and lumbar spinal decompression traction",
       "Medical-grade unweighted gait retraining treadmills and ergometer static bicycles"
-    ]
-  },
-  {
-    "slug": "operating-theatre",
-    "name": "Operating Theatre",
-    "departmentGroup": "Operating Theatre",
-    "featured": false,
-    "tagline": "Aseptic Theatre Architecture & Surgical Energy",
-    "description": "Complete operating theatre infrastructure, advanced electro-hydraulic surgical tables, shadowless LED surgical lights, electrosurgical generator units, anesthesia workstations, and surgical smoke evacuators.",
-    "equipmentHighlights": [
-      {
-        "name": "Anesthesia laryngoscope",
-        "image": "/images/products/anesthesia-laryngoscope.jpeg",
-        "specification": "Power supply: 1.5VX2 \"C\" type \nBattery (No. 2) \nBulb: 2.5V/0.45A \nBlade size: 92, 114, 134 mm",
-        "features": [
-          "Power supply: 1.5VX2 \"C\" type",
-          "Battery (No. 2)",
-          "Bulb: 2.5V/0.45A",
-          "Blade size: 92, 114, 134 mm"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Hydraulic operating table (Hydraulic for height adjustment)",
-        "image": "/images/products/hydraulic-operating-table-hydraulic-for-height-adjustment.jpeg",
-        "specification": "►External size (LxWxH): \n2100x480x(720-920) mm \n►Reverse trendelenburg:30° \n►Trendelenburg: 20° \n►Lateral tilt left/right: 0-18° \n►Head plate up/down:45°/ -90° \n►Back plate up/down: 75°/-18° \n►Leg plate down/outwards: 90°/ \n90° \n►Kidney bridge elevation: 120mm",
-        "features": [
-          "►External size (LxWxH):",
-          "2100x480x(720-920) mm",
-          "►Reverse trendelenburg:30°",
-          "►Trendelenburg: 20°",
-          "►Lateral tilt left/right: 0-18°",
-          "►Head plate up/down:45°/ -90°",
-          "►Back plate up/down: 75°/-18°",
-          "►Leg plate down/outwards: 90°/",
-          "90°",
-          "►Kidney bridge elevation: 120mm"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Motorized operating table",
-        "image": "/images/products/motorized-operating-table.jpeg",
-        "specification": "External size (LxWxH): 2080x520x \n(745-995) mm \n►Reverse trendelenburg: 25° \n►Trendelenburg: -25° \n►Lateral tilt left/right: 15° \n►Head plate up/down:45°/ -90° \n►Back plate up/down: 50° \n►Leg plate down/outwards: 90°/ \n90° \n►Kidney bridge elevation: 80mm \n►Tabletop longitude shifting: \n400mm(gas spring controlled)",
-        "features": [
-          "External size (LxWxH): 2080x520x",
-          "(745-995) mm",
-          "►Reverse trendelenburg: 25°",
-          "►Trendelenburg: -25°",
-          "►Lateral tilt left/right: 15°",
-          "►Head plate up/down:45°/ -90°",
-          "►Back plate up/down: 50°",
-          "►Leg plate down/outwards: 90°/",
-          "90°",
-          "►Kidney bridge elevation: 80mm",
-          "►Tabletop longitude shifting:",
-          "400mm(gas spring controlled)"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Orthopedic traction",
-        "image": "/images/products/orthopedic-traction.jpeg",
-        "specification": "►Length: 1400mm \n►Height:650-870mm   \n►Traction shoes translation \ndistance:200mm \n►Traction frame translation \ndistance:600mm \n►Leg support frame translation \ndistance:550mm \n►Base support frame outwards: \n60°",
-        "features": [
-          "►Length: 1400mm",
-          "►Height:650-870mm",
-          "►Traction shoes translation",
-          "distance:200mm",
-          "►Traction frame translation",
-          "distance:600mm",
-          "►Leg support frame translation",
-          "distance:550mm",
-          "►Base support frame outwards:",
-          "60°"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Gynecology surgical table",
-        "image": "/images/products/gynecology-surgical-table.jpeg",
-        "specification": "Standard accessories:  \nArm support--1pair， \nHandle--1pair  \nFixing clamp--1pair， \nKnee cruth--1pair  \nPedal--1pair， \nLeg support--1piece  \nWaste basin--1piece， \nHand remote--1piec",
-        "features": [
-          "Standard accessories:",
-          "Arm support--1pair，",
-          "Handle--1pair",
-          "Fixing clamp--1pair，",
-          "Knee cruth--1pair",
-          "Pedal--1pair，",
-          "Leg support--1piece",
-          "Waste basin--1piece，",
-          "Hand remote--1piec"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Hydraulic Patient Transportatio n Stretcher",
-        "image": "/images/products/hydraulic-patient-transportatio-n-stretcher.jpeg",
-        "specification": "Size: L2120*W800*H610-930mm \nFunctions: \n1. Height adjustment: 610-930mm \n2. Trendelenburg and Reverse-\nTrendelenburg：0 - 10° \n3. Back section adjustable from: 0 \nto 80° \n4. Foot section adjustable from 0 \nto 35° \n5. X-ray translucent function of \nback section is available \nMain Features： \nMetal frame with electrophoresis \nand powder coating \nWith pushing handle on the head \nend, with a crank to \noperate the foot section Side rails: \n2pcs, Aluminum alloy, collapsible \nBack section is operated by gas \nspring \nWith the middle castor for steer \ndirection, Bumper castors on\n4 corners Castors: \nDustproof castors with central \nlocking system \nCastor diameter of 200mm \nEquipped with 1 \nI.V. pole, 1 mattress, urine hooks",
-        "features": [
-          "Size: L2120*W800*H610-930mm",
-          "Functions:",
-          "1. Height adjustment: 610-930mm",
-          "2. Trendelenburg and Reverse-",
-          "Trendelenburg：0 - 10°",
-          "3. Back section adjustable from: 0",
-          "to 80°",
-          "4. Foot section adjustable from 0",
-          "to 35°",
-          "5. X-ray translucent function of",
-          "back section is available",
-          "Main Features：",
-          "Metal frame with electrophoresis",
-          "and powder coating",
-          "With pushing handle on the head",
-          "end, with a crank to",
-          "operate the foot section Side rails:",
-          "2pcs, Aluminum alloy, collapsible",
-          "Back section is operated by gas",
-          "spring",
-          "With the middle castor for steer",
-          "direction, Bumper castors on",
-          "4 corners Castors:",
-          "Dustproof castors with central",
-          "locking system",
-          "Castor diameter of 200mm",
-          "Equipped with 1",
-          "I.V. pole, 1 mattress, urine hooks"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Portable surgical light 2012L-1",
-        "image": "/images/products/portable-surgical-light-2012l-1.png",
-        "specification": "1. Voltage: AC90~240V 50Hz~60Hz \n2. Bulb power: LED 3W*12 \n3. Color temperature :4000~5000K \n4. Bulb life: ≥ 50000h \n5. Working distance: 700mm \n6. Center illumination: ≥45000 Lux \n(Note: linearly adjustable) \n7. Minimum spot diameter: \nφ80±10mm \n8. Substrate temperature: ≤55℃ \n9. Lamp holder diameter: 200mm \n10. Net weight: 7.5KG",
-        "features": [
-          "1. Voltage: AC90~240V 50Hz~60Hz",
-          "2. Bulb power: LED 3W*12",
-          "3. Color temperature :4000~5000K",
-          "4. Bulb life: ≥ 50000h",
-          "5. Working distance: 700mm",
-          "6. Center illumination: ≥45000 Lux",
-          "(Note: linearly adjustable)",
-          "7. Minimum spot diameter:",
-          "φ80±10mm",
-          "8. Substrate temperature: ≤55℃",
-          "9. Lamp holder diameter: 200mm",
-          "10. Net weight: 7.5KG"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Portable surgical light 2012L-5",
-        "image": "/images/products/portable-surgical-light-2012l-5.jpeg",
-        "specification": "1.Voltage：AC90~240V 50~60Hz \n2.Lamp head diameter：≈300mm \n3.Product specification：LED 70W \n4.Working distance：700mm \n5.Product color temperature：\n5300±500K \n6.Center illuminance：≥50000Lux \n(three levels decreasing） \n7.G.W.：18.84KG",
-        "features": [
-          "1.Voltage：AC90~240V 50~60Hz",
-          "2.Lamp head diameter：≈300mm",
-          "3.Product specification：LED 70W",
-          "4.Working distance：700mm",
-          "5.Product color temperature：",
-          "5300±500K",
-          "6.Center illuminance：≥50000Lux",
-          "(three levels decreasing）",
-          "7.G.W.：18.84KG"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Surgical light",
-        "image": "/images/products/surgical-light.png",
-        "specification": "Diameter of light head(mm): \n730/730; ►Lamp Head Thickness: \n105/105; ►Central illuminance at \n1m(Lux): 40,000–160,000 lux (10 \nadjustable levels); ►Color \nTemperature (Kelvin): 4,000–5,500 \nK (11 adjustable \nlevels); ►Color Rendering Index \n(CRI): ≥93; ►Lighting Spot \nDiameter (d10): 200–300 mm (5 \nadjustable \nlevels); ►Spot distribution \n(d50/d10): 51%; ►Depth of the \nlight column (60% Ec): 700 mm; \n►Maximum Total Irradiance (Ee): \n<600 W/m²; ►Radiant energy\nEe/Ec (mw/m2 lux): ≤4 ; \n►Shadow-free rate in deep \ncavities: 98%; ►Shadow-free rate \nwith a single baffle: ≥46%; \n►Shadow-free rate in deep \ncavities with a single baffle: ≥45%; \n►Shadow-free rate with double \nbaffles: ≥41%; ►Shadow-free rate \nin deep cavities with double \nbaffles: ≥40%; ►Bulb Brand: \nGenuine imported Osram \n(Germany) LEDs; ►Bulb Quantity: \n72+72; ►Bulb Power(w): <1 W; \n►Average Bulb \nLife(hours):≥50,000",
-        "features": [
-          "Diameter of light head(mm):",
-          "730/730; ►Lamp Head Thickness:",
-          "105/105; ►Central illuminance at",
-          "1m(Lux): 40,000–160,000 lux (10",
-          "adjustable levels); ►Color",
-          "Temperature (Kelvin): 4,000–5,500",
-          "K (11 adjustable",
-          "levels); ►Color Rendering Index",
-          "(CRI): ≥93; ►Lighting Spot",
-          "Diameter (d10): 200–300 mm (5",
-          "adjustable",
-          "levels); ►Spot distribution",
-          "(d50/d10): 51%; ►Depth of the",
-          "light column (60% Ec): 700 mm;",
-          "►Maximum Total Irradiance (Ee):",
-          "<600 W/m²; ►Radiant energy",
-          "Ee/Ec (mw/m2 lux): ≤4 ;",
-          "►Shadow-free rate in deep",
-          "cavities: 98%; ►Shadow-free rate",
-          "with a single baffle: ≥46%;",
-          "►Shadow-free rate in deep",
-          "cavities with a single baffle: ≥45%;",
-          "►Shadow-free rate with double",
-          "baffles: ≥41%; ►Shadow-free rate",
-          "in deep cavities with double",
-          "baffles: ≥40%; ►Bulb Brand:",
-          "Genuine imported Osram",
-          "(Germany) LEDs; ►Bulb Quantity:",
-          "72+72; ►Bulb Power(w): <1 W;",
-          "►Average Bulb",
-          "Life(hours):≥50,000"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Surgical pendant",
-        "image": null,
-        "specification": "",
-        "features": [],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Anesthesia machine",
-        "image": null,
-        "specification": "",
-        "features": [],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Ventilator",
-        "image": "/images/products/ventilator.jpeg",
-        "specification": "Invasive ventilation mode \nVCV, PCV, PRVC, VS, V-SIMV, P-\nSIMV, PRVC-SIMV, CPAP/PSV, \nNIPPV, Apnea Ventilation, APRV, \nDuoLevel, AMV, nCPAP; Optional: \nPSV-S/T. \nNon invasive ventilation mode \nPCV, PRVC, VS, CPAP/PSV, P-SIMV, \nPRVC-SIMV, DuoLevel, APRV, AMV, \nApnea Ventilation, nCPAP, NIPPV; \nOptional: PSV-S/T. \nOxygen therapy\nProvide high flow oxygen therapy \n(HFNC) function through nasal \nhumidification (Maximum \n100L/min).",
-        "features": [
-          "Invasive ventilation mode",
-          "VCV, PCV, PRVC, VS, V-SIMV, P-",
-          "SIMV, PRVC-SIMV, CPAP/PSV,",
-          "NIPPV, Apnea Ventilation, APRV,",
-          "DuoLevel, AMV, nCPAP; Optional:",
-          "PSV-S/T.",
-          "Non invasive ventilation mode",
-          "PCV, PRVC, VS, CPAP/PSV, P-SIMV,",
-          "PRVC-SIMV, DuoLevel, APRV, AMV,",
-          "Apnea Ventilation, nCPAP, NIPPV;",
-          "Optional: PSV-S/T.",
-          "Oxygen therapy",
-          "Provide high flow oxygen therapy",
-          "(HFNC) function through nasal",
-          "humidification (Maximum",
-          "100L/min)."
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "ESU Monopolar & Bipolar Diathermy",
-        "image": "/images/products/esu-monopolar-bipolar-diathermy.jpeg",
-        "specification": "Multifunctional Cautery for both \ncutting and coagulating \n1,Monopolar cut: pure cut : 300W; \nblend cut ⅰ:250W; blend cut \nⅱ:150W                                                  \n2, Monopolar coagulation: Point \nCoag: 120W; Jet Coag: 100W              \n3, Bipolar Coagulation: 70W                \n4, Main Frequency: 450 KHZ",
-        "features": [
-          "Multifunctional Cautery for both",
-          "cutting and coagulating",
-          "1,Monopolar cut: pure cut : 300W;",
-          "blend cut ⅰ:250W; blend cut",
-          "ⅱ:150W",
-          "2, Monopolar coagulation: Point",
-          "Coag: 120W; Jet Coag: 100W",
-          "3, Bipolar Coagulation: 70W",
-          "4, Main Frequency: 450 KHZ"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Laparoscopy tower",
-        "image": "/images/hero_endoscopy.jpg",
-        "specification": "",
-        "features": [],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "C arm Xray machine",
-        "image": null,
-        "specification": "",
-        "features": [],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Surgical table Manual",
-        "image": "/images/products/surgical-table-manual.jpeg",
-        "specification": "Size:2050*500*770-1020mm \nStandard Configurations: \nAnesthesia protective screen 1 \npiece \nShoulder support 1 set  \nArmrest 1 set  \nBody support 1 set  \nLeg support 1 set  \nFoot board 1 set  \nMattress 1 set \nProduct function:  \nHeadboard upwards/downwards \n≥45°/ ≥90°  \nBackboard upwards/downwards \n≥60°/ ≥15°  \nLeg board Downwards / \noutreached ≥ 90°  \nForward tilt/ Backward tilt ≥25° / \n≥20°  \nLeft and right tilt ≥18°  \nWaist bridge lifting ≥120mm \nLongitudinal translation ≥300 ㎜",
-        "features": [
-          "Size:2050*500*770-1020mm",
-          "Standard Configurations:",
-          "Anesthesia protective screen 1",
-          "piece",
-          "Shoulder support 1 set",
-          "Armrest 1 set",
-          "Body support 1 set",
-          "Leg support 1 set",
-          "Foot board 1 set",
-          "Mattress 1 set",
-          "Product function:",
-          "Headboard upwards/downwards",
-          "≥45°/ ≥90°",
-          "Backboard upwards/downwards",
-          "≥60°/ ≥15°",
-          "Leg board Downwards /",
-          "outreached ≥ 90°",
-          "Forward tilt/ Backward tilt ≥25° /",
-          "≥20°",
-          "Left and right tilt ≥18°",
-          "Waist bridge lifting ≥120mm",
-          "Longitudinal translation ≥300 ㎜"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Surgical table Electrical",
-        "image": "/images/products/surgical-table-electrical.jpeg",
-        "specification": "Size:2000*500*550-800mm \nStandard Configurations:  \nAnesthesia protective screen 1 \npiece  \nShoulder support 1 set  \nArm rest 1 set  \nBody support 1 set  \nLeg support 1 set  \nMattress 1 set  \nHand held operator 1 set \nProduct function:  \nHeadboard upwards/downwards \n≥55°/ ≥90°  \nBackboard upwards/downwards \n≥65°/ ≥30°  \nLeg board downwards/ outreached \n≥ 90°  \nForward tilt/ Backward tilt ≥30 \n/ °≥25°  \nLeft and right tilt ≥20°  \nWaist bridge lifting ≥120mm \nTranslation distance 350mm",
-        "features": [
-          "Size:2000*500*550-800mm",
-          "Standard Configurations:",
-          "Anesthesia protective screen 1",
-          "piece",
-          "Shoulder support 1 set",
-          "Arm rest 1 set",
-          "Body support 1 set",
-          "Leg support 1 set",
-          "Mattress 1 set",
-          "Hand held operator 1 set",
-          "Product function:",
-          "Headboard upwards/downwards",
-          "≥55°/ ≥90°",
-          "Backboard upwards/downwards",
-          "≥65°/ ≥30°",
-          "Leg board downwards/ outreached",
-          "≥ 90°",
-          "Forward tilt/ Backward tilt ≥30",
-          "/ °≥25°",
-          "Left and right tilt ≥20°",
-          "Waist bridge lifting ≥120mm",
-          "Translation distance 350mm"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Autoclave 23L- DENGGUAN",
-        "image": "/images/products/autoclave-23l-dengguan.jpeg",
-        "specification": "Capacity: 23L \nPower supply: 220-240 V, 50 HZ \nQuality Stainless Steel inner \nchamber, sealed cover \nMicrocomputer control \nLCD Display of temperature, \npressure, procedures, touch \nbuttons Safety interlocking device \nautomatic discharge of cool air, \nautomatic steam exhaust at end \nWith BD test, Helix test, Vacuum \ntest \nEuropean class B standard \nIntegrated steam generator supply \nsaturated steam very quickly 12 \nprograms preset",
-        "features": [
-          "Capacity: 23L",
-          "Power supply: 220-240 V, 50 HZ",
-          "Quality Stainless Steel inner",
-          "chamber, sealed cover",
-          "Microcomputer control",
-          "LCD Display of temperature,",
-          "pressure, procedures, touch",
-          "buttons Safety interlocking device",
-          "automatic discharge of cool air,",
-          "automatic steam exhaust at end",
-          "With BD test, Helix test, Vacuum",
-          "test",
-          "European class B standard",
-          "Integrated steam generator supply",
-          "saturated steam very quickly 12",
-          "programs preset"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Autoclave 23L- SIGER",
-        "image": "/images/products/autoclave-23l-siger.jpeg",
-        "specification": "Full color LCD screen \n320*480px high-definition,  \n10 levels of brightness available. \nHygienic and practical water tank \nLarge capacity data logger \nBuilt-in printer \nAutomatic water supply function \nWater quality testing function \n230V-2300W \nChamber size: 23L \nExternal dimension: \n720x460x450mm \nNet weight: 49Kg",
-        "features": [
-          "Full color LCD screen",
-          "320*480px high-definition,",
-          "10 levels of brightness available.",
-          "Hygienic and practical water tank",
-          "Large capacity data logger",
-          "Built-in printer",
-          "Automatic water supply function",
-          "Water quality testing function",
-          "230V-2300W",
-          "Chamber size: 23L",
-          "External dimension:",
-          "720x460x450mm",
-          "Net weight: 49Kg"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Sterilizing sealer Manual",
-        "image": "/images/products/sterilizing-sealer-manual.jpeg",
-        "specification": "Sealing Width: ≤300 mm  \nCutting Width: ≤300 mm ( \nMain Function: Cut and seal paper-\nplastic sterilization roll bags \nSealing Line Width: 10 mm \nWork Temperature: 60–220°C, set \narbitrarily \nAC Power: 110V/220V ±10%, \n50/60Hz \nNote: \n① the device is used only by \nturning the handle, without \nadditional pressure. \n② It is strictly prohibited to seal \nTyvek bags (120°C low-\ntemperature bags)!",
-        "features": [
-          "Sealing Width: ≤300 mm",
-          "Cutting Width: ≤300 mm (",
-          "Main Function: Cut and seal paper-",
-          "plastic sterilization roll bags",
-          "Sealing Line Width: 10 mm",
-          "Work Temperature: 60–220°C, set",
-          "arbitrarily",
-          "AC Power: 110V/220V ±10%,",
-          "50/60Hz",
-          "Note:",
-          "① the device is used only by",
-          "turning the handle, without",
-          "additional pressure.",
-          "② It is strictly prohibited to seal",
-          "Tyvek bags (120°C low-",
-          "temperature bags)!"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "Sterilizing sealer Automatic",
-        "image": "/images/products/sterilizing-sealer-automatic.jpeg",
-        "specification": "Sealing Margin: 0–35 mm \nadjustable \nSealing Speed: 10 ± 0.5 m/min (can \nbe upgraded to 18 m/min) \nAC Power: 110V/220V ±10%, \n50/60Hz \nSealing Line Width: 12 mm \nWorking Temperature: 60–220°C, \nset arbitrarily \nTemperature Deviation: ≤1% \nFunction Type: Continuous sealing, \nsealing counting \nHeat and Cool: Room temperature \nrises to 180°C in less than 40 s, \nauxiliary cooling design \nParameter Setting: Built-in clock, \nparameter settings, automatic \nstorage function",
-        "features": [
-          "Sealing Margin: 0–35 mm",
-          "adjustable",
-          "Sealing Speed: 10 ± 0.5 m/min (can",
-          "be upgraded to 18 m/min)",
-          "AC Power: 110V/220V ±10%,",
-          "50/60Hz",
-          "Sealing Line Width: 12 mm",
-          "Working Temperature: 60–220°C,",
-          "set arbitrarily",
-          "Temperature Deviation: ≤1%",
-          "Function Type: Continuous sealing,",
-          "sealing counting",
-          "Heat and Cool: Room temperature",
-          "rises to 180°C in less than 40 s,",
-          "auxiliary cooling design",
-          "Parameter Setting: Built-in clock,",
-          "parameter settings, automatic",
-          "storage function"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "100L Steam sterilizer DGL-100B",
-        "image": "/images/products/100l-steam-sterilizer-dgl-100b.jpeg",
-        "specification": "4.5KW \nDesign pressure: 0.25 Mpa \nDesign temperature: 139℃ \nRated working pressure：0.22MPa \nRated working temperature: 134°C \nSterilization temperature range: \n116 ~ 134°C \nSterilization time range: 4 ~ 120 \nmin \nChamber size: Ø 450*615mm \nSize: 620*610*1275mm \nNet weight: 106Kg",
-        "features": [
-          "4.5KW",
-          "Design pressure: 0.25 Mpa",
-          "Design temperature: 139℃",
-          "Rated working pressure：0.22MPa",
-          "Rated working temperature: 134°C",
-          "Sterilization temperature range:",
-          "116 ~ 134°C",
-          "Sterilization time range: 4 ~ 120",
-          "min",
-          "Chamber size: Ø 450*615mm",
-          "Size: 620*610*1275mm",
-          "Net weight: 106Kg"
-        ],
-        "category": "Operating Theatre"
-      },
-      {
-        "name": "100L Steam sterilizer DGLS-100B",
-        "image": "/images/products/100l-steam-sterilizer-dgls-100b.jpeg",
-        "specification": "4.5KW \nDesign pressure: 0.25 Mpa \nDesign temperature: 139℃ \nRated working pressure：0.22MPa \nRated working temperature: 134°C \nSterilization temperature range: \n116 ~ 134°C \nSterilization time range: 4 ~ 120 \nmin \nChamber size: Ø 450*615mm \nSize: 617*627*1135mm \nNet weight: 78Kg",
-        "features": [
-          "4.5KW",
-          "Design pressure: 0.25 Mpa",
-          "Design temperature: 139℃",
-          "Rated working pressure：0.22MPa",
-          "Rated working temperature: 134°C",
-          "Sterilization temperature range:",
-          "116 ~ 134°C",
-          "Sterilization time range: 4 ~ 120",
-          "min",
-          "Chamber size: Ø 450*615mm",
-          "Size: 617*627*1135mm",
-          "Net weight: 78Kg"
-        ],
-        "category": "Operating Theatre"
-      }
-    ],
-    "keySpecs": [
-      "Electro-hydraulic multi-position surgical tables with 350 kg weight capacity and full C-arm radiolucency",
-      "Double-dome cold LED surgical lights up to 160,000 Lux with optional surgical camera integration",
-      "High-frequency electrosurgical generators with vessel sealing and advanced smoke evacuation",
-      "Integrated anesthesia delivery workstations with vaporizer manifolds and AGSS scavenging"
     ]
   },
   {
@@ -5088,51 +5404,6 @@
           "Chamber size: Ø 450*615mm",
           "Size: 617*627*1135mm",
           "Net weight: 78Kg"
-        ],
-        "category": "General Hospital Materials"
-      },
-      {
-        "name": "Autoclave 23L- DENGGUAN",
-        "image": "/images/products/autoclave-23l-dengguan.jpeg",
-        "specification": "Capacity: 23L \nPower supply: 220-240 V, 50 HZ \nQuality Stainless Steel inner \nchamber, sealed cover \nMicrocomputer control \nLCD Display of temperature, \npressure, procedures, touch \nbuttons Safety interlocking device \nautomatic discharge of cool air, \nautomatic steam exhaust at end \nWith BD test, Helix test, Vacuum \ntest \nEuropean class B standard \nIntegrated steam generator supply \nsaturated steam very quickly 12 \nprograms preset",
-        "features": [
-          "Capacity: 23L",
-          "Power supply: 220-240 V, 50 HZ",
-          "Quality Stainless Steel inner",
-          "chamber, sealed cover",
-          "Microcomputer control",
-          "LCD Display of temperature,",
-          "pressure, procedures, touch",
-          "buttons Safety interlocking device",
-          "automatic discharge of cool air,",
-          "automatic steam exhaust at end",
-          "With BD test, Helix test, Vacuum",
-          "test",
-          "European class B standard",
-          "Integrated steam generator supply",
-          "saturated steam very quickly 12",
-          "programs preset"
-        ],
-        "category": "General Hospital Materials"
-      },
-      {
-        "name": "Autoclave 23L- SIGER",
-        "image": "/images/products/autoclave-23l-siger.jpeg",
-        "specification": "Full color LCD screen \n320*480px high-definition,  \n10 levels of brightness available. \nHygienic and practical water tank \nLarge capacity data logger \nBuilt-in printer \nAutomatic water supply function \nWater quality testing function \n230V-2300W \nChamber size: 23L \nExternal dimension: \n720x460x450mm \nNet weight: 49Kg",
-        "features": [
-          "Full color LCD screen",
-          "320*480px high-definition,",
-          "10 levels of brightness available.",
-          "Hygienic and practical water tank",
-          "Large capacity data logger",
-          "Built-in printer",
-          "Automatic water supply function",
-          "Water quality testing function",
-          "230V-2300W",
-          "Chamber size: 23L",
-          "External dimension:",
-          "720x460x450mm",
-          "Net weight: 49Kg"
         ],
         "category": "General Hospital Materials"
       },
