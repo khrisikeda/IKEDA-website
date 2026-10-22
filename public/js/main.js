@@ -1,3 +1,27 @@
+// Cross-Platform Native System Font Detection
+(function initPlatformFont() {
+  try {
+    const nav = window.navigator || {};
+    const platform = (nav.userAgentData && nav.userAgentData.platform) || nav.platform || '';
+    const ua = nav.userAgent || '';
+    const root = document.documentElement;
+
+    if (/Win/i.test(platform) || /Windows/i.test(ua)) {
+      root.classList.add('os-windows');
+    } else if (
+      /Mac|iPhone|iPad|iPod/i.test(platform) ||
+      /Macintosh|Mac OS X|iPhone|iPad|iPod/i.test(ua) ||
+      (nav.maxTouchPoints > 2 && /Mac/i.test(platform))
+    ) {
+      root.classList.add('os-apple');
+    } else if (/Android|Linux/i.test(platform) || /Android|Linux/i.test(ua)) {
+      root.classList.add('os-android-linux');
+    }
+  } catch (e) {
+    /* Fallback to CSS cascading system font stack */
+  }
+})();
+
 // Main shared application logic
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile nav toggle

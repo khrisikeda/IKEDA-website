@@ -365,17 +365,252 @@
         "subtitle": "Laparoscopy & Minimally Invasive Surgery"
       },
       {
-        "name": "Semi-Rigid Ureteroscope",
-        "image": "/images/products/ureteroscope.jpg",
-        "specification": "Precision optical semi-rigid ureterorenoscope. Direction of view: 0° / 12°, working length: 430mm, sheath diameter: 8.0/9.8 Fr, working channel: 4.8 Fr for laser fiber and stone baskets. Universal Storz/Wolf light guide adapter, integrated dual stopcocks for continuous irrigation, autoclavable optical lens.",
+        "name": "Cystoscope",
+        "image": "/images/products/transurethral-cystoscope.jpg",
+        "specification": "Direction of view: 0°, 30°, 70° \nDiameter: 4 mm \nWorking length: 302 mm \nSheaths: 17Fr, 19Fr, 21Fr, 23Fr continuous irrigation \nAlbarran bridge: Single & double horn deflector \nStopcocks: Dual 360° rotating Luer-lock \nSterilization: Fully autoclavable & soaking compatible (IPX8)",
         "features": [
-          "Semi-rigid stainless steel optical tube with high-resolution quartz fibers",
-          "Working channel diameter: 4.8 Fr compatible with holmium laser fibers and baskets",
-          "Distal tip atraumatic design for smooth ureteral insertion",
-          "Integrated dual irrigation stopcocks with Luer-lock connection",
-          "Universal light cable post compatible with Storz, Wolf, and Olympus light guides"
+          "High-definition rod-lens optical system with sapphire distal objective window",
+          "0°, 30°, and 70° direction of view for comprehensive bladder inspection",
+          "17Fr to 23Fr outer and inner continuous flow diagnostic & operative sheaths",
+          "Albarran deflecting bridge for precise ureteral catheter and stent placement",
+          "Dual 360° rotating stopcocks maintain stable distension and clear visualization"
         ],
-        "category": "Urology & Endourology",
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Resectoscope (diathermy, coblation, laser)",
+        "image": "/images/products/turp-saline-resectoscope.jpg",
+        "specification": "Modes: Monopolar diathermy, bipolar saline coblation, laser fiber guide \nCaliber: 24/26 Fr double sheath continuous irrigation \nRotation: 360° independent inner sheath rotation \nWorking element: Passive & active titanium spring action \nBeak: Heat-resistant ceramic insulated tip \nElectrodes: Cutting loops, roller balls, coagulation balls, laser adapters",
+        "features": [
+          "Multi-energy versatility: Monopolar electrosurgery, Bipolar Saline Coblation, and Laser",
+          "Continuous double-sheath irrigation system with 360° rotatable inner sheath",
+          "Passive and active ergonomic titanium working elements with thumb ring",
+          "Ceramic insulated distal beak prevents mucosal burning and stray current injury",
+          "Comprehensive electrode set for TURP, TURBT, and bladder neck incisions"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Rigid ureteroscope",
+        "image": "/images/products/ureteroscope.jpg",
+        "specification": "Direction of view: 5° / 12° \nTip caliber: 6.0/7.5 Fr and 8.0/9.8 Fr tapered sheath \nWorking length: 430 mm \nInstrument channel: 4.8 Fr for laser fibers and baskets \nLight adapter: Universal Storz/Wolf/Olympus connection \nIrrigation: Integrated dual stopcocks with Luer-lock \nConstruction: Autoclavable laser-welded stainless steel",
+        "features": [
+          "Semi-rigid tapered atraumatic tip (6.0/7.5 Fr and 8.0/9.8 Fr) for smooth entry",
+          "High-density quartz optical fiber bundle for edge-to-edge optical resolution",
+          "Spacious 4.8 Fr working channel accommodates laser fibers up to 550µm and baskets",
+          "Dual Luer-lock stopcocks provide high-flow irrigation for visual clarity",
+          "Hermetically sealed autoclavable design withstands repeated sterilization"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Flexible ureteroscope",
+        "image": "/images/products/flexible-ureteroscope.jpg",
+        "specification": "Distal tip outer diameter: 7.5 Fr (2.5 mm) \nInsertion tube: 8.4 Fr with hydrophilic coating \nDeflection angle: 275° Up / 275° Down continuous active articulation \nWorking channel: 3.6 Fr (1.2 mm) \nWorking length: 670 mm \nImage sensor: High-definition digital CMOS chip-on-the-tip with integrated LED \nControls: Deflection lock lever, dual customizable image capture buttons",
+        "features": [
+          "275° two-way active articulation reaches challenging lower calyx renal calculi",
+          "Slim 7.5 Fr atraumatic bullet-tip design minimizes ureteral dilation requirement",
+          "3.6 Fr working channel allows simultaneous laser fiber passage and adequate irrigation",
+          "High-definition digital CMOS camera delivers crisp real-time surgical telemetry",
+          "Ergonomic lightweight handpiece reduces surgeon hand fatigue during long RIRS procedures"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Stone basket",
+        "image": "/images/products/disposable-laparoscopic-graspers.jpg",
+        "specification": "Material: Shape-memory superelastic nitinol alloy \nSheath diameter: 1.5 Fr, 1.8 Fr, 2.2 Fr \nWorking length: 115 cm \nGeometry: 4-wire tipless, 6-wire helical, and flat-wire configurations \nHandle: Ergonomic thumb-controlled slider with quick-release detachable mechanism \nCompatibility: Suitable for flexible ureteroscopes (F-URS) and semi-rigid URS",
+        "features": [
+          "Kink-resistant superelastic nitinol alloy maintains basket shape under heavy capture loads",
+          "Tipless configuration allows direct stone engagement flush against the caliceal wall",
+          "Low-profile 1.5 Fr/1.8 Fr PTFE sheath maintains high irrigation flow during ureteroscopy",
+          "Detachable handle enables quick scope removal during difficult or large stone impaction",
+          "4-wire and 6-wire options optimize retrieval for both fragmented gravel and intact calculi"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Ureteral sheath access",
+        "image": "/images/products/laparoscopic-access-instruments.jpg",
+        "specification": "Sizes: 9.5/11.5 Fr, 10/12 Fr, 11/13 Fr, 12/14 Fr \nLengths: 28 cm, 35 cm, 45 cm \nReinforcement: Stainless steel embedded spiral coil (kink-resistant) \nCoating: Hydrophilic lubricious coating on outer sheath and dilator \nRadiopacity: Dual platinum marker rings at distal and proximal tip \nDilator: Seamless tapered atraumatic dilator with secure snap-lock hub",
+        "features": [
+          "Reinforced embedded stainless steel coil prevents sheath buckling and ureteral pinching",
+          "Hydrophilic coating reduces insertion force by over 80% to protect ureteral mucosa",
+          "Facilitates repeated scope passages without repeated trauma to the ureteral orifice",
+          "Continuous intrarenal pressure decompression prevents pyelovenous backflow",
+          "High-contrast radiopaque marker bands allow accurate positioning under fluoroscopy"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Stents",
+        "image": "/images/products/disposable-plastic-trocars.jpg",
+        "specification": "Type: Double J (DJ) ureteral stent set \nMaterial: Biocompatible radiopaque polyurethane / medical silicone \nCalibers: 4.5 Fr, 4.8 Fr, 6.0 Fr, 7.0 Fr \nLengths: 24 cm, 26 cm, 28 cm, and multi-length 22-30 cm \nCoating: Hydrophilic anti-encrustation coating (3-6 months indwelling) \nAccessories: Position pusher catheter, stainless steel PTFE guidewire, retrieval suture",
+        "features": [
+          "Thermally responsive biocompatible material softens at body temperature for patient comfort",
+          "High-density radiopaque compound ensures clear visualization under X-ray and fluoroscopy",
+          "Tapered memory pigtail loops prevent proximal renal and distal bladder migration",
+          "Multi-hole radial drainage configuration maintains robust urinary flow around calculus",
+          "Supplied complete with guidewire, pusher catheter, and braided suture tether"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Guide wires",
+        "image": "/images/products/endo-file-hand-file-niti.jpeg",
+        "specification": "Core: Superelastic shape-memory nitinol core \nDiameters: 0.032\", 0.035\", 0.038\" \nLengths: 150 cm, 260 cm (exchange length) \nCoating: Full-length hydrophilic polymer jacket and high-contrast Zebra torque polyurethane \nTip style: 3 cm and 5 cm platinum floppy tip (straight and 45° angled) \nTorque transmission: 1:1 responsive rotational torque",
+        "features": [
+          "Nitinol core resists permanent kinking and provides high column strength for catheter push",
+          "Hydrophilic coating provides frictionless navigation across strictures and tortuous ureters",
+          "Helical dual-color Zebra pattern provides clear visual feedback of longitudinal wire movement",
+          "Soft, flexible floppy tip minimizes risk of ureteral dissection or mucosal false routing",
+          "Gold and platinum radiopaque distal coil provides unmistakable fluoroscopic brightness"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Dilation ballons",
+        "image": "/images/products/air-compressing-nebulizer-w004.jpeg",
+        "specification": "Balloon diameter: 4 mm, 5 mm, 6 mm, 7 mm, 8 mm, 10 mm \nBalloon length: 4 cm, 6 cm, 8 cm, 10 cm \nCatheter size: 5 Fr / 6 Fr (length 75 cm / 90 cm) \nMaterial: High-pressure non-compliant medical grade nylon \nBurst pressure rating: 20–30 atmospheres (atm) \nAccessories: High-pressure 30 atm inflation syringe with analog gauge and stopcock",
+        "features": [
+          "Non-compliant nylon balloon ensures uniform radial expansion without dog-boning",
+          "High pressure rating up to 30 atm overcomes dense fibrous ureteral strictures",
+          "Dual gold radiopaque marker bands delineate exact balloon working borders under fluoroscopy",
+          "Low deflation profile enables smooth post-dilation withdrawal through ureteral sheaths",
+          "Includes dedicated 30 atm calibrated syringe with quick-release pressure dump trigger"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "PCNL sets",
+        "image": "/images/products/laparoscopic-access-instruments.jpg",
+        "specification": "Nephroscope: 20.8 Fr / 24 Fr rigid nephroscope, 12° wide-angle optics \nWorking length: 220 mm, instrument channel: 11.5 Fr \nPuncture needles: 18G two-part echogenic Chiba initial puncture needle \nDilators: Fascial dilators (8–16 Fr), Amplatz renal dilator set (10–30 Fr) \nWorking sheaths: Peel-away and reusable radiopaque Amplatz sheaths (24–30 Fr) \nForceps: Rigid two-prong and three-prong stone grasping forceps",
+        "features": [
+          "Complete percutaneous access set for staghorn and caliceal stone clearance",
+          "Wide-angle continuous-irrigation rigid nephroscope with high visual throughput",
+          "Full range of Amplatz progressive serial dilators with matched working access sheaths",
+          "Heavy-duty alligator and tri-prong stone retrieval forceps for rapid calculus removal",
+          "Echogenic puncture needle facilitates ultrasound and fluoroscopic-guided caliceal access"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Holmium laser",
+        "image": "/images/products/holmium-laser-urology.jpg",
+        "specification": "Laser type: Pulsed Holmium:YAG (Ho:YAG) \nWavelength: 2,100 nm (infrared) \nMaximum power output: 30W – 100W variable \nPulse energy: 0.2 J to 4.0 J \nRepetition rate: 5 Hz to 80 Hz \nOperating modes: Fine Dusting, Fragmentation, Pop-corn, Coagulation \nFiber compatibility: 200 µm, 272 µm, 365 µm, 550 µm, 1000 µm \nAiming beam: 532 nm green laser with adjustable intensity",
+        "features": [
+          "2,100 nm infrared wavelength delivers explosive optical vaporization of all stone types",
+          "Dual operating modalities: High-frequency dusting and high-energy fragmentation",
+          "Effective on calcium oxalate monohydrate, uric acid, cystine, and struvite stones",
+          "Smart RFID optical fiber connector automatically calibrates safety limits and power ceilings",
+          "Color touchscreen with pre-programmed clinical parameters for bladder, ureter, and kidney"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Thulium laser",
+        "image": "/images/products/plasma-surgical-ablation-system.jpg",
+        "specification": "Laser medium: Thulium Fiber Laser (TFL) / Tm:YAG \nWavelength: 1,940 nm (peak water absorption resonance) \nMaximum power: 50W – 60W continuous/pulsed \nPulse frequency: Up to 2,000 Hz \nPulse energy: Micro-pulses down to 0.025 J up to 3.0 J \nOptical fiber: Ultra-fine 150 µm, 200 µm, 272 µm \nApplications: Stone dust pulverization, ThuLEP prostate enucleation, bladder tumors",
+        "features": [
+          "1,940 nm wavelength matches water absorption peak—4x higher absorption than Holmium",
+          "Ultra-high frequency up to 2,000 Hz pulverizes stones into fine dust with zero retropulsion",
+          "Enables stone dusting through 150 µm fibers while maintaining 100% ureteroscope deflection",
+          "Shallow 0.2 mm penetration depth delivers exceptional, bloodless prostate enucleation (ThuLEP)",
+          "Compact air-cooled solid-state architecture with standard single-phase electrical power"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Litotripsy punch",
+        "image": "/images/products/laparoscopic-clip-appliers.jpg",
+        "specification": "Type: Mechanical optical bladder stone punch crusher (Lithotrite) \nPattern: Mauermayer and Hendrickson continuous-flow design \nCaliber: 24 Fr outer sheath \nMechanism: Heavy-duty rack-and-pinion screw compression \nOptics: Direct-view 0° / 30° telescope compatibility \nMaterial: Heat-treated hardened surgical martensitic stainless steel",
+        "features": [
+          "Heavy-duty mechanical crushing jaws destroy hard, large calcified bladder stones",
+          "Powerful rack-and-pinion screw mechanism provides effortless hand lever mechanical advantage",
+          "Integrated central telescope lumen allows direct continuous vision during stone grasping",
+          "Shielded fenestrated jaw protects bladder mucosa and trigone from accidental pinching",
+          "Compatible with standard continuous flow irrigation sheaths for rapid gravel evacuation"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Urethome",
+        "image": "/images/products/rigid-sinoscopes-0-4-175.jpeg",
+        "specification": "Type: Sachse optical internal urethrotomy instrument set \nSheath caliber: 21 Fr with dual irrigation stopcocks \nTelescope: 0° straight-view telescope (4 mm / 2.9 mm, 302 mm) \nWorking element: Single-action passive spring mechanism with thumb ring \nBlades: Straight, round-edge, sickle/falciform, and wave-edge cold knives \nSafety channel: Integrated supplementary channel for 0.038\" safety guidewire",
+        "features": [
+          "Cold-knife optical stricturotomy preserves vascular erectile tissue without thermal injury",
+          "Interchangeable micro-honed blades: straight, circular, falciform, and wave cutting profiles"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Optical forceps",
+        "image": "/images/products/laparoscopic-graspers-dissectors.jpg",
+        "specification": "Shaft caliber: 7 Fr, 8 Fr, 9 Fr \nWorking length: 390 mm to 420 mm \nJaw types: Double-action cupped biopsy, alligator foreign body, mouse-tooth stone grasping \nActuation: Ergonomic scissor handle with fine tactile spring-return \nCompatibility: Operative cystoscope and resectoscope bridge channels \nMaterial: High-tensile surgical stainless steel, fully autoclavable",
+        "features": [
+          "Cupped micro-ground biopsy jaws deliver uncrushed, clean specimens for pathology",
+          "Alligator and mouse-tooth serrated jaws provide positive non-slip grip on stents and stone fragments",
+          "Rigid reinforced shaft resists rotational bending and transmission torque loss",
+          "Universal bridge locking mechanism locks securely into standard Albarran deflecting bridges",
+          "Fully autoclavable and chemical disinfection compliant (IPX8)"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Uroflowmeter",
+        "image": "/images/products/middle-ear-anayzer.jpeg",
+        "specification": "Transducer: Wireless high-precision digital gravimetric load-cell sensor \nFlow rate range: 0 to 50 mL/s (accuracy ±1%) \nVolume range: 0 to 1,000 mL (accuracy ±1%) \nParameters calculated: Maximum flow (Qmax), average flow (Qave), voided volume, flow time, time to Qmax \nDisplay: Wireless diagnostic tablet / PC workstation with Bluetooth telemetry \nPrinter: Built-in high-speed thermal report printer \nStandard: Compliant with International Continence Society (ICS) guidelines",
+        "features": [
+          "Precision gravimetric load-cell transducer eliminates post-voiding urine artifact",
+          "Fully automated testing with auto-start, auto-stop, and acoustic artifact filtering",
+          "Instant plotting of real-time continuous voiding flow curve and acceleration nomogram",
+          "Wireless Bluetooth communication between patient commode stand and clinician console",
+          "Integrated thermal printer generates standardized patient clinical diagnostic reports"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Laparoscopic irrigation and sucker",
+        "image": "/images/products/endoscopic-suction-irrigation-devices.jpg",
+        "specification": "Cannula diameter: 5 mm and 10 mm interchangeable shafts \nWorking length: 330 mm and 450 mm (bariatric/deep pelvic) \nValves: Dual color-coded trumpet valves (Blue: Irrigation, White: Suction) \nCannula tip: Radial multi-hole atraumatic suction perforations \nElectrocautery: Integrated 4 mm monopolar HF connector pin on handle \nMaterial: Medical grade stainless steel and chemical-resistant polymer",
+        "features": [
+          "High-flow dual trumpet valves provide effortless finger-tip irrigation and suction control",
+          "5mm and 10mm interchangeable cannulas with atraumatic radial perforations prevent organ capture",
+          "Integrated high-frequency monopolar cautery connection enables simultaneous suction and coagulation",
+          "Quick-disassembly modular design allows thorough lumen flushing and autoclave sterilization",
+          "Clear transparent handle allows visual monitoring of fluid, blood, and clot evacuation"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Irrigation ligation forceps",
+        "image": "/images/products/laparoscopic-hf-instruments.jpg",
+        "specification": "Shaft diameter: 5 mm \nWorking length: 330 mm / 430 mm \nRotation: 360° continuous index finger knob rotation \nFunction: Bipolar vessel ligation & simultaneous central saline irrigation \nConnector: Standard 2-pin universal bipolar generator plug \nIrrigation port: Integrated female Luer-lock connector with shutoff valve \nInsulation: Heavy-duty heat-resistant PEEK polymer insulation",
+        "features": [
+          "Dual-action functionality: Bipolar vessel ligation/sealing and simultaneous saline irrigation",
+          "Central flushing channel cleans bleeding target margins without exchanging instruments",
+          "360° continuous rotation knob allows comfortable jaw orientation from any trocar angle",
+          "High-performance PEEK insulation withstands repetitive high-voltage electrosurgery",
+          "Universal 2-pin bipolar connector and standard Luer-lock port compatible with all major surgical consoles"
+        ],
+        "category": "Operating Theatre",
         "subtitle": "Urology & Endourology"
       },
       {
@@ -1300,20 +1535,255 @@
       },
       {
         "title": "Urology & Endourology",
-        "description": "Diagnostic and operative endourological instruments, transurethral resectoscopes, and precision semi-rigid ureteroscopy systems.",
+        "description": "Diagnostic and operative endourological instruments, transurethral resectoscopes, semi-rigid and flexible ureterorenoscopes, laser lithotripsy systems, percutaneous nephrolithotomy sets, and urodynamic diagnostic workstations.",
         "items": [
           {
-            "name": "Semi-Rigid Ureteroscope",
-            "image": "/images/products/ureteroscope.jpg",
-            "specification": "Precision optical semi-rigid ureterorenoscope. Direction of view: 0° / 12°, working length: 430mm, sheath diameter: 8.0/9.8 Fr, working channel: 4.8 Fr for laser fiber and stone baskets. Universal Storz/Wolf light guide adapter, integrated dual stopcocks for continuous irrigation, autoclavable optical lens.",
+            "name": "Cystoscope",
+            "image": "/images/products/transurethral-cystoscope.jpg",
+            "specification": "Direction of view: 0°, 30°, 70° \nDiameter: 4 mm \nWorking length: 302 mm \nSheaths: 17Fr, 19Fr, 21Fr, 23Fr continuous irrigation \nAlbarran bridge: Single & double horn deflector \nStopcocks: Dual 360° rotating Luer-lock \nSterilization: Fully autoclavable & soaking compatible (IPX8)",
             "features": [
-              "Semi-rigid stainless steel optical tube with high-resolution quartz fibers",
-              "Working channel diameter: 4.8 Fr compatible with holmium laser fibers and baskets",
-              "Distal tip atraumatic design for smooth ureteral insertion",
-              "Integrated dual irrigation stopcocks with Luer-lock connection",
-              "Universal light cable post compatible with Storz, Wolf, and Olympus light guides"
+              "High-definition rod-lens optical system with sapphire distal objective window",
+              "0°, 30°, and 70° direction of view for comprehensive bladder inspection",
+              "17Fr to 23Fr outer and inner continuous flow diagnostic & operative sheaths",
+              "Albarran deflecting bridge for precise ureteral catheter and stent placement",
+              "Dual 360° rotating stopcocks maintain stable distension and clear visualization"
             ],
-            "category": "Urology & Endourology",
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Resectoscope (diathermy, coblation, laser)",
+            "image": "/images/products/turp-saline-resectoscope.jpg",
+            "specification": "Modes: Monopolar diathermy, bipolar saline coblation, laser fiber guide \nCaliber: 24/26 Fr double sheath continuous irrigation \nRotation: 360° independent inner sheath rotation \nWorking element: Passive & active titanium spring action \nBeak: Heat-resistant ceramic insulated tip \nElectrodes: Cutting loops, roller balls, coagulation balls, laser adapters",
+            "features": [
+              "Multi-energy versatility: Monopolar electrosurgery, Bipolar Saline Coblation, and Laser",
+              "Continuous double-sheath irrigation system with 360° rotatable inner sheath",
+              "Passive and active ergonomic titanium working elements with thumb ring",
+              "Ceramic insulated distal beak prevents mucosal burning and stray current injury",
+              "Comprehensive electrode set for TURP, TURBT, and bladder neck incisions"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Rigid ureteroscope",
+            "image": "/images/products/ureteroscope.jpg",
+            "specification": "Direction of view: 5° / 12° \nTip caliber: 6.0/7.5 Fr and 8.0/9.8 Fr tapered sheath \nWorking length: 430 mm \nInstrument channel: 4.8 Fr for laser fibers and baskets \nLight adapter: Universal Storz/Wolf/Olympus connection \nIrrigation: Integrated dual stopcocks with Luer-lock \nConstruction: Autoclavable laser-welded stainless steel",
+            "features": [
+              "Semi-rigid tapered atraumatic tip (6.0/7.5 Fr and 8.0/9.8 Fr) for smooth entry",
+              "High-density quartz optical fiber bundle for edge-to-edge optical resolution",
+              "Spacious 4.8 Fr working channel accommodates laser fibers up to 550µm and baskets",
+              "Dual Luer-lock stopcocks provide high-flow irrigation for visual clarity",
+              "Hermetically sealed autoclavable design withstands repeated sterilization"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Flexible ureteroscope",
+            "image": "/images/products/flexible-ureteroscope.jpg",
+            "specification": "Distal tip outer diameter: 7.5 Fr (2.5 mm) \nInsertion tube: 8.4 Fr with hydrophilic coating \nDeflection angle: 275° Up / 275° Down continuous active articulation \nWorking channel: 3.6 Fr (1.2 mm) \nWorking length: 670 mm \nImage sensor: High-definition digital CMOS chip-on-the-tip with integrated LED \nControls: Deflection lock lever, dual customizable image capture buttons",
+            "features": [
+              "275° two-way active articulation reaches challenging lower calyx renal calculi",
+              "Slim 7.5 Fr atraumatic bullet-tip design minimizes ureteral dilation requirement",
+              "3.6 Fr working channel allows simultaneous laser fiber passage and adequate irrigation",
+              "High-definition digital CMOS camera delivers crisp real-time surgical telemetry",
+              "Ergonomic lightweight handpiece reduces surgeon hand fatigue during long RIRS procedures"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Stone basket",
+            "image": "/images/products/disposable-laparoscopic-graspers.jpg",
+            "specification": "Material: Shape-memory superelastic nitinol alloy \nSheath diameter: 1.5 Fr, 1.8 Fr, 2.2 Fr \nWorking length: 115 cm \nGeometry: 4-wire tipless, 6-wire helical, and flat-wire configurations \nHandle: Ergonomic thumb-controlled slider with quick-release detachable mechanism \nCompatibility: Suitable for flexible ureteroscopes (F-URS) and semi-rigid URS",
+            "features": [
+              "Kink-resistant superelastic nitinol alloy maintains basket shape under heavy capture loads",
+              "Tipless configuration allows direct stone engagement flush against the caliceal wall",
+              "Low-profile 1.5 Fr/1.8 Fr PTFE sheath maintains high irrigation flow during ureteroscopy",
+              "Detachable handle enables quick scope removal during difficult or large stone impaction",
+              "4-wire and 6-wire options optimize retrieval for both fragmented gravel and intact calculi"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Ureteral sheath access",
+            "image": "/images/products/laparoscopic-access-instruments.jpg",
+            "specification": "Sizes: 9.5/11.5 Fr, 10/12 Fr, 11/13 Fr, 12/14 Fr \nLengths: 28 cm, 35 cm, 45 cm \nReinforcement: Stainless steel embedded spiral coil (kink-resistant) \nCoating: Hydrophilic lubricious coating on outer sheath and dilator \nRadiopacity: Dual platinum marker rings at distal and proximal tip \nDilator: Seamless tapered atraumatic dilator with secure snap-lock hub",
+            "features": [
+              "Reinforced embedded stainless steel coil prevents sheath buckling and ureteral pinching",
+              "Hydrophilic coating reduces insertion force by over 80% to protect ureteral mucosa",
+              "Facilitates repeated scope passages without repeated trauma to the ureteral orifice",
+              "Continuous intrarenal pressure decompression prevents pyelovenous backflow",
+              "High-contrast radiopaque marker bands allow accurate positioning under fluoroscopy"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Stents",
+            "image": "/images/products/disposable-plastic-trocars.jpg",
+            "specification": "Type: Double J (DJ) ureteral stent set \nMaterial: Biocompatible radiopaque polyurethane / medical silicone \nCalibers: 4.5 Fr, 4.8 Fr, 6.0 Fr, 7.0 Fr \nLengths: 24 cm, 26 cm, 28 cm, and multi-length 22-30 cm \nCoating: Hydrophilic anti-encrustation coating (3-6 months indwelling) \nAccessories: Position pusher catheter, stainless steel PTFE guidewire, retrieval suture",
+            "features": [
+              "Thermally responsive biocompatible material softens at body temperature for patient comfort",
+              "High-density radiopaque compound ensures clear visualization under X-ray and fluoroscopy",
+              "Tapered memory pigtail loops prevent proximal renal and distal bladder migration",
+              "Multi-hole radial drainage configuration maintains robust urinary flow around calculus",
+              "Supplied complete with guidewire, pusher catheter, and braided suture tether"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Guide wires",
+            "image": "/images/products/endo-file-hand-file-niti.jpeg",
+            "specification": "Core: Superelastic shape-memory nitinol core \nDiameters: 0.032\", 0.035\", 0.038\" \nLengths: 150 cm, 260 cm (exchange length) \nCoating: Full-length hydrophilic polymer jacket and high-contrast Zebra torque polyurethane \nTip style: 3 cm and 5 cm platinum floppy tip (straight and 45° angled) \nTorque transmission: 1:1 responsive rotational torque",
+            "features": [
+              "Nitinol core resists permanent kinking and provides high column strength for catheter push",
+              "Hydrophilic coating provides frictionless navigation across strictures and tortuous ureters",
+              "Helical dual-color Zebra pattern provides clear visual feedback of longitudinal wire movement",
+              "Soft, flexible floppy tip minimizes risk of ureteral dissection or mucosal false routing",
+              "Gold and platinum radiopaque distal coil provides unmistakable fluoroscopic brightness"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Dilation ballons",
+            "image": "/images/products/air-compressing-nebulizer-w004.jpeg",
+            "specification": "Balloon diameter: 4 mm, 5 mm, 6 mm, 7 mm, 8 mm, 10 mm \nBalloon length: 4 cm, 6 cm, 8 cm, 10 cm \nCatheter size: 5 Fr / 6 Fr (length 75 cm / 90 cm) \nMaterial: High-pressure non-compliant medical grade nylon \nBurst pressure rating: 20–30 atmospheres (atm) \nAccessories: High-pressure 30 atm inflation syringe with analog gauge and stopcock",
+            "features": [
+              "Non-compliant nylon balloon ensures uniform radial expansion without dog-boning",
+              "High pressure rating up to 30 atm overcomes dense fibrous ureteral strictures",
+              "Dual gold radiopaque marker bands delineate exact balloon working borders under fluoroscopy",
+              "Low deflation profile enables smooth post-dilation withdrawal through ureteral sheaths",
+              "Includes dedicated 30 atm calibrated syringe with quick-release pressure dump trigger"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "PCNL sets",
+            "image": "/images/products/laparoscopic-access-instruments.jpg",
+            "specification": "Nephroscope: 20.8 Fr / 24 Fr rigid nephroscope, 12° wide-angle optics \nWorking length: 220 mm, instrument channel: 11.5 Fr \nPuncture needles: 18G two-part echogenic Chiba initial puncture needle \nDilators: Fascial dilators (8–16 Fr), Amplatz renal dilator set (10–30 Fr) \nWorking sheaths: Peel-away and reusable radiopaque Amplatz sheaths (24–30 Fr) \nForceps: Rigid two-prong and three-prong stone grasping forceps",
+            "features": [
+              "Complete percutaneous access set for staghorn and caliceal stone clearance",
+              "Wide-angle continuous-irrigation rigid nephroscope with high visual throughput",
+              "Full range of Amplatz progressive serial dilators with matched working access sheaths",
+              "Heavy-duty alligator and tri-prong stone retrieval forceps for rapid calculus removal",
+              "Echogenic puncture needle facilitates ultrasound and fluoroscopic-guided caliceal access"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Holmium laser",
+            "image": "/images/products/holmium-laser-urology.jpg",
+            "specification": "Laser type: Pulsed Holmium:YAG (Ho:YAG) \nWavelength: 2,100 nm (infrared) \nMaximum power output: 30W – 100W variable \nPulse energy: 0.2 J to 4.0 J \nRepetition rate: 5 Hz to 80 Hz \nOperating modes: Fine Dusting, Fragmentation, Pop-corn, Coagulation \nFiber compatibility: 200 µm, 272 µm, 365 µm, 550 µm, 1000 µm \nAiming beam: 532 nm green laser with adjustable intensity",
+            "features": [
+              "2,100 nm infrared wavelength delivers explosive optical vaporization of all stone types",
+              "Dual operating modalities: High-frequency dusting and high-energy fragmentation",
+              "Effective on calcium oxalate monohydrate, uric acid, cystine, and struvite stones",
+              "Smart RFID optical fiber connector automatically calibrates safety limits and power ceilings",
+              "Color touchscreen with pre-programmed clinical parameters for bladder, ureter, and kidney"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Thulium laser",
+            "image": "/images/products/plasma-surgical-ablation-system.jpg",
+            "specification": "Laser medium: Thulium Fiber Laser (TFL) / Tm:YAG \nWavelength: 1,940 nm (peak water absorption resonance) \nMaximum power: 50W – 60W continuous/pulsed \nPulse frequency: Up to 2,000 Hz \nPulse energy: Micro-pulses down to 0.025 J up to 3.0 J \nOptical fiber: Ultra-fine 150 µm, 200 µm, 272 µm \nApplications: Stone dust pulverization, ThuLEP prostate enucleation, bladder tumors",
+            "features": [
+              "1,940 nm wavelength matches water absorption peak—4x higher absorption than Holmium",
+              "Ultra-high frequency up to 2,000 Hz pulverizes stones into fine dust with zero retropulsion",
+              "Enables stone dusting through 150 µm fibers while maintaining 100% ureteroscope deflection",
+              "Shallow 0.2 mm penetration depth delivers exceptional, bloodless prostate enucleation (ThuLEP)",
+              "Compact air-cooled solid-state architecture with standard single-phase electrical power"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Litotripsy punch",
+            "image": "/images/products/laparoscopic-clip-appliers.jpg",
+            "specification": "Type: Mechanical optical bladder stone punch crusher (Lithotrite) \nPattern: Mauermayer and Hendrickson continuous-flow design \nCaliber: 24 Fr outer sheath \nMechanism: Heavy-duty rack-and-pinion screw compression \nOptics: Direct-view 0° / 30° telescope compatibility \nMaterial: Heat-treated hardened surgical martensitic stainless steel",
+            "features": [
+              "Heavy-duty mechanical crushing jaws destroy hard, large calcified bladder stones",
+              "Powerful rack-and-pinion screw mechanism provides effortless hand lever mechanical advantage",
+              "Integrated central telescope lumen allows direct continuous vision during stone grasping",
+              "Shielded fenestrated jaw protects bladder mucosa and trigone from accidental pinching",
+              "Compatible with standard continuous flow irrigation sheaths for rapid gravel evacuation"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Urethome",
+            "image": "/images/products/rigid-sinoscopes-0-4-175.jpeg",
+            "specification": "Type: Sachse optical internal urethrotomy instrument set \nSheath caliber: 21 Fr with dual irrigation stopcocks \nTelescope: 0° straight-view telescope (4 mm / 2.9 mm, 302 mm) \nWorking element: Single-action passive spring mechanism with thumb ring \nBlades: Straight, round-edge, sickle/falciform, and wave-edge cold knives \nSafety channel: Integrated supplementary channel for 0.038\" safety guidewire",
+            "features": [
+              "Cold-knife optical stricturotomy preserves vascular erectile tissue without thermal injury",
+              "Interchangeable micro-honed blades: straight, circular, falciform, and wave cutting profiles"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Optical forceps",
+            "image": "/images/products/laparoscopic-graspers-dissectors.jpg",
+            "specification": "Shaft caliber: 7 Fr, 8 Fr, 9 Fr \nWorking length: 390 mm to 420 mm \nJaw types: Double-action cupped biopsy, alligator foreign body, mouse-tooth stone grasping \nActuation: Ergonomic scissor handle with fine tactile spring-return \nCompatibility: Operative cystoscope and resectoscope bridge channels \nMaterial: High-tensile surgical stainless steel, fully autoclavable",
+            "features": [
+              "Cupped micro-ground biopsy jaws deliver uncrushed, clean specimens for pathology",
+              "Alligator and mouse-tooth serrated jaws provide positive non-slip grip on stents and stone fragments",
+              "Rigid reinforced shaft resists rotational bending and transmission torque loss",
+              "Universal bridge locking mechanism locks securely into standard Albarran deflecting bridges",
+              "Fully autoclavable and chemical disinfection compliant (IPX8)"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Uroflowmeter",
+            "image": "/images/products/middle-ear-anayzer.jpeg",
+            "specification": "Transducer: Wireless high-precision digital gravimetric load-cell sensor \nFlow rate range: 0 to 50 mL/s (accuracy ±1%) \nVolume range: 0 to 1,000 mL (accuracy ±1%) \nParameters calculated: Maximum flow (Qmax), average flow (Qave), voided volume, flow time, time to Qmax \nDisplay: Wireless diagnostic tablet / PC workstation with Bluetooth telemetry \nPrinter: Built-in high-speed thermal report printer \nStandard: Compliant with International Continence Society (ICS) guidelines",
+            "features": [
+              "Precision gravimetric load-cell transducer eliminates post-voiding urine artifact",
+              "Fully automated testing with auto-start, auto-stop, and acoustic artifact filtering",
+              "Instant plotting of real-time continuous voiding flow curve and acceleration nomogram",
+              "Wireless Bluetooth communication between patient commode stand and clinician console",
+              "Integrated thermal printer generates standardized patient clinical diagnostic reports"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Laparoscopic irrigation and sucker",
+            "image": "/images/products/endoscopic-suction-irrigation-devices.jpg",
+            "specification": "Cannula diameter: 5 mm and 10 mm interchangeable shafts \nWorking length: 330 mm and 450 mm (bariatric/deep pelvic) \nValves: Dual color-coded trumpet valves (Blue: Irrigation, White: Suction) \nCannula tip: Radial multi-hole atraumatic suction perforations \nElectrocautery: Integrated 4 mm monopolar HF connector pin on handle \nMaterial: Medical grade stainless steel and chemical-resistant polymer",
+            "features": [
+              "High-flow dual trumpet valves provide effortless finger-tip irrigation and suction control",
+              "5mm and 10mm interchangeable cannulas with atraumatic radial perforations prevent organ capture",
+              "Integrated high-frequency monopolar cautery connection enables simultaneous suction and coagulation",
+              "Quick-disassembly modular design allows thorough lumen flushing and autoclave sterilization",
+              "Clear transparent handle allows visual monitoring of fluid, blood, and clot evacuation"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Irrigation ligation forceps",
+            "image": "/images/products/laparoscopic-hf-instruments.jpg",
+            "specification": "Shaft diameter: 5 mm \nWorking length: 330 mm / 430 mm \nRotation: 360° continuous index finger knob rotation \nFunction: Bipolar vessel ligation & simultaneous central saline irrigation \nConnector: Standard 2-pin universal bipolar generator plug \nIrrigation port: Integrated female Luer-lock connector with shutoff valve \nInsulation: Heavy-duty heat-resistant PEEK polymer insulation",
+            "features": [
+              "Dual-action functionality: Bipolar vessel ligation/sealing and simultaneous saline irrigation",
+              "Central flushing channel cleans bleeding target margins without exchanging instruments",
+              "360° continuous rotation knob allows comfortable jaw orientation from any trocar angle",
+              "High-performance PEEK insulation withstands repetitive high-voltage electrosurgery",
+              "Universal 2-pin bipolar connector and standard Luer-lock port compatible with all major surgical consoles"
+            ],
+            "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"
           }
         ]
