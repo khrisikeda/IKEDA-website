@@ -6,6 +6,7 @@ const manufacturersRouter = require('./routes/manufacturers');
 const contactRouter = require('./routes/contact');
 const companyRouter = require('./routes/company');
 const articlesRouter = require('./routes/articles');
+const aiRouter = require('./routes/ai');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -26,6 +27,7 @@ app.use('/api/contact', contactRouter);
 app.use('/api/company', companyRouter);
 app.use('/api/articles', articlesRouter);
 app.use('/api/blog', articlesRouter);
+app.use('/api/ai', aiRouter);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
