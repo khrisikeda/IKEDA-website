@@ -24,6 +24,10 @@
 
 // Main shared application logic
 document.addEventListener('DOMContentLoaded', () => {
+  const assistantScript = document.createElement('script');
+  assistantScript.src = '/js/ai-chat.js';
+  document.body.appendChild(assistantScript);
+
   // Mobile nav toggle
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');

@@ -23,8 +23,153 @@ function loadData() {
   return { products, company };
 }
 
+function normalizeWords(text) {
+  return (text.toLowerCase().match(/[a-z0-9]+/g) || []).map(term => {
+    const aliases = {
+      baby: 'infant', babies: 'infant', newborn: 'infant', neonate: 'infant', neonatal: 'infant',
+      cot: 'bed', theatre: 'operating', surgery: 'surgical',
+      picture: 'image', pictures: 'image', photo: 'image', photos: 'image', cost: 'price'
+    };
+    return aliases[term] || term;
+  });
+}
+
+function getCatalogItems(products) {
+  const catalogItems = [];
+  const seen = new Set();
+
+  products.forEach(category => {
+    const highlights = Array.isArray(category.equipmentHighlights) ? category.equipmentHighlights : [];
+    const visit = value => {
+      if (Array.isArray(value)) {
+        value.forEach(visit);
+        return;
+      }
+      if (!value || typeof value !== 'object') return;
+
+      if (typeof value.name === 'string' && (value.image || value.specification || value.features)) {
+        const hlIdx = highlights.findIndex(h => {
+          const hName = typeof h === 'object' && h !== null ? h.name : h;
+          return hName && hName.trim().toLowerCase() === value.name.trim().toLowerCase();
+        });
+        const item = {
+          name: value.name,
+          category: value.category || category.name,
+          subtitle: value.subtitle || '',
+          image: value.image || '',
+          specification: value.specification || '',
+          features: Array.isArray(value.features) ? value.features : [],
+          slug: category.slug,
+          itemIdx: hlIdx >= 0 ? hlIdx : 0
+        };
+        const key = item.name.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+        if (!seen.has(key)) {
+          seen.add(key);
+          catalogItems.push(item);
+        }
+      }
+
+      Object.values(value).forEach(visit);
+    };
+
+    visit(category.equipmentHighlights);
+    visit(category.subsections);
+  });
+
+  return catalogItems;
+}
+
+function detectQuestionType(query) {
+  if (/\b(compare|difference|versus|vs\.?|which one|better)\b/i.test(query)) return 'compare';
+  if (/\b(price|pricing|cost|how much|quotation|quote|budget)\b/i.test(query)) return 'price';
+  if (/\b(in stock|available|availability|deliver|delivery time|when can|how soon)\b/i.test(query)) return 'availability';
+  if (/\b(image|photo|picture|see|look like|show me)\b/i.test(query)) return 'image';
+  if (/\b(spec|specification|specs|dimension|size|weight|power|capacity|voltage|feature|features|what can|how does)\b/i.test(query)) return 'specification';
+  return 'general';
+}
+
+function findCatalogProducts(query, products, contextProductNames = []) {
+  const ignoredTerms = new Set([
+    'a', 'about', 'am', 'an', 'and', 'are', 'can', 'could', 'details', 'do', 'does',
+    'for', 'give', 'have', 'hello', 'hey', 'hi', 'how', 'i', 'in', 'is', 'it', 'me',
+    'of', 'on', 'please', 'product', 'products', 'show', 'some', 'tell', 'that', 'the',
+    'there', 'this', 'to', 'want', 'what', 'which', 'with', 'would', 'you'
+  ]);
+  const words = normalizeWords(query);
+  const isFollowUp = /\b(it|that|those|them|they|this|these|its|their|same|one|more|another)\b/i.test(query);
+  const contextNames = isFollowUp ? new Set(contextProductNames.map(name => name.toLowerCase())) : new Set();
+  const intentTerms = new Set(['weight', 'mass', 'dimension', 'dimensions', 'size', 'length', 'width', 'height', 'voltage', 'power', 'wattage', 'frequency', 'capacity', 'load', 'price', 'pricing', 'cost', 'availability', 'available', 'stock', 'delivery', 'spec', 'specification', 'specs', 'feature', 'features', 'image', 'show', 'photo', 'picture', 'compare', 'comparison', 'difference', 'versus', 'vs']);
+  const terms = words.filter(term => term.length > 1 && !ignoredTerms.has(term) && !intentTerms.has(term));
+  if (!terms.length && !contextNames.size) return [];
+
+  const scored = getCatalogItems(products).map(item => {
+    const searchable = normalizeWords([item.name, item.category, item.subtitle, item.specification, ...item.features].join(' '));
+    const nameWords = normalizeWords(item.name);
+    const matchedTerms = terms.filter(term => searchable.includes(term));
+    const nameMatches = terms.filter(term => nameWords.includes(term));
+    const contextMatch = contextNames.has(item.name.toLowerCase());
+    const score = nameMatches.length * 10 + matchedTerms.length * 2 + (contextMatch ? 100 : 0);
+    return { ...item, score, nameMatches: nameMatches.length, matchedTerms: matchedTerms.length, contextMatch };
+  }).filter(item => item.matchedTerms > 0 || item.contextMatch);
+
+  scored.sort((left, right) => right.score - left.score);
+  if (isFollowUp && contextNames.size) {
+    const contextual = scored.filter(item => item.contextMatch);
+    if (contextual.length) {
+      return contextual.slice(0, 3).map(({ score, nameMatches, matchedTerms, contextMatch, ...item }) => item);
+    }
+  }
+  const best = scored[0];
+  if (!best || best.nameMatches === 0) return [];
+  const results = scored.filter(item => item.nameMatches === best.nameMatches && item.score === best.score);
+  return results.slice(0, 3).map(({ score, nameMatches, matchedTerms, contextMatch, ...item }) => item);
+}
+
+function buildCatalogReply(query, matches) {
+  const type = detectQuestionType(query);
+  const names = matches.map(product => `**${product.name}**`).join(', ');
+
+  if (type === 'price') {
+    return `I couldn't find a published price for ${names} in the catalog. Prices depend on configuration and delivery; use the quotation link and our team can provide a current quote.`;
+  }
+  if (type === 'availability') {
+    return `The online catalog doesn’t show live stock or delivery availability for ${names}. Please contact the sales team for current availability and lead time.`;
+  }
+  if (type === 'image') {
+    return `Here ${matches.length === 1 ? 'is' : 'are'} the catalog ${matches.length === 1 ? 'image' : 'images'} I found for ${names}.`;
+  }
+  if (type === 'specification') {
+    const available = matches.filter(product => product.specification || product.features.length);
+    const unavailable = matches.filter(product => !product.specification && !product.features.length);
+    const requestedDetail = /\b(weight|mass)\b/i.test(query) ? 'weight' :
+      /\b(dimension|dimensions|size|length|width|height)\b/i.test(query) ? 'dimensions' :
+        /\b(voltage|power|wattage|frequency)\b/i.test(query) ? 'electrical specifications' :
+          /\b(capacity|load|payload)\b/i.test(query) ? 'capacity or load rating' : '';
+    const requestedDetailAvailable = !requestedDetail || matches.some(product =>
+      `${product.specification} ${product.features.join(' ')}`.toLowerCase().includes(requestedDetail === 'dimensions' ? 'size' : requestedDetail)
+    );
+    if (requestedDetail && !requestedDetailAvailable) {
+      return `I couldn't find a ${requestedDetail} listed for ${names} in the catalog. I’ve included the other recorded specifications below.`;
+    }
+    let response = available.length
+      ? `Here ${available.length === 1 ? 'are the details' : 'are the matching products and their details'} I found for ${available.map(product => `**${product.name}**`).join(', ')}. I’ve included the catalog specifications below.`
+      : `I found ${names}, but the catalog doesn’t list technical specifications for ${matches.length === 1 ? 'it' : 'them'} yet.`;
+    if (unavailable.length && available.length) {
+      response += ` The catalog has no specifications listed for ${unavailable.map(product => `**${product.name}**`).join(', ')}.`;
+    }
+    return response;
+  }
+  if (type === 'compare') {
+    return `I found these catalog options to compare: ${names}. Expand each specification card below to review the listed details side by side.`;
+  }
+  if (/\b(more|another|other options)\b/i.test(query)) {
+    return `Here is what I found for ${names}. Would you like its specifications, image, or a quotation?`;
+  }
+  return `I found ${matches.length === 1 ? 'a catalog match' : 'catalog matches'} for your request: ${names}. Open a card for the available specifications and product image.`;
+}
+
 // Comprehensive clinical knowledge search & response generator
-function generateAIResponse(userQuery) {
+function generateAIResponse(userQuery, context = {}) {
   const q = (userQuery || '').toLowerCase().trim();
   const { products, company } = loadData();
 
@@ -41,6 +186,26 @@ function generateAIResponse(userQuery) {
       actions: [
         { label: "Browse Catalog", url: "/products" },
         { label: "Request Quote", url: "/contact" }
+      ]
+    };
+  }
+
+  if (/^(hi|hello|hey|good morning|good afternoon|good evening)(\s+(there|ikeda|team))?[!. ]*$/i.test(q)) {
+    return {
+      reply: 'Hello! What equipment are you looking for? You can describe the department, product, or specification you need.',
+      suggestions: ['Find an operating table', 'Show neonatal equipment', 'Ask about a ventilator', 'Request a quotation']
+    };
+  }
+
+  const catalogProducts = findCatalogProducts(q, products, context.products || []);
+  if (catalogProducts.length) {
+    return {
+      reply: buildCatalogReply(userQuery, catalogProducts),
+      products: catalogProducts,
+      suggestions: ['Request a quotation', 'Show more product options', 'Talk to a product specialist'],
+      actions: [
+        { label: 'Browse Product Catalog', url: `/products?search=${encodeURIComponent(userQuery)}` },
+        { label: 'Request a Quotation', url: `/contact?subject=${encodeURIComponent(`Product inquiry: ${userQuery}`)}` }
       ]
     };
   }
@@ -321,6 +486,21 @@ function generateAIResponse(userQuery) {
     };
   }
 
+  if (/\b(more|another|other options|that one|which one|it)\b/i.test(q)) {
+    return {
+      reply: 'Which product are you referring to? Tell me its name or department and I can look up the available specifications, images, and quotation options.',
+      suggestions: ['Operating Theatre', 'Critical Care & Emergency', 'Maternal & Infant', 'Diagnostics & Specialty']
+    };
+  }
+
+  if (/\b(looking for|need|want|search|find|recommend|suggest|looking to buy)\b/i.test(q)) {
+    return {
+      reply: `I couldn't find a close product match for **"${userQuery}"** in the catalog. What department or clinical use should I search for? I can check the equipment listings and share the details that are available.`,
+      suggestions: ['Operating Theatre', 'Critical Care & Emergency', 'Maternal & Infant', 'Diagnostics & Specialty'],
+      actions: [{ label: 'Browse All Products', url: '/products' }]
+    };
+  }
+
   // 12. HELPFUL GENERAL FALLBACK
   return {
     reply: `Thank you for asking about **"${userQuery}"**. \n\nIKEDA ENDOSCOPY AFRICA supplies multi-specialty clinical equipment across 16 hospital divisions — specializing in 4K & HD Laparoscopic Towers, Endourology, VATS, ICU Ventilators, Infant Incubators, C-Arm Radiology, and Surgical Instrumentation.\n\nWould you like me to connect you with our Kigali biomedical team or prepare an official quotation?`,
@@ -341,8 +521,8 @@ function generateAIResponse(userQuery) {
 
 // POST /api/ai/chat
 router.post('/chat', (req, res) => {
-  const { message } = req.body || {};
-  const response = generateAIResponse(message);
+  const { message, context } = req.body || {};
+  const response = generateAIResponse(message, context);
   res.json(response);
 });
 

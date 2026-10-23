@@ -11,7 +11,7 @@
   const widget = document.createElement('div');
   widget.id = 'ikeda-ai-widget';
   widget.innerHTML = `
-    <button id="ai-fab" aria-label="Open IKEDA AI Assistant" title="IKEDA AI Assistant">
+    <button id="ai-fab" aria-label="Open IKEDA AI Assistant" aria-expanded="false" aria-controls="ai-panel" title="Ask IKEDA for product help">
       <span class="ai-fab-icon" aria-hidden="true">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 2a7 7 0 0 1 7 7v1a7 7 0 0 1-14 0V9a7 7 0 0 1 7-7z"/>
@@ -25,7 +25,7 @@
       <span class="ai-fab-pulse"></span>
     </button>
 
-    <div id="ai-panel" class="ai-panel-hidden" role="dialog" aria-label="IKEDA AI Clinical Assistant">
+    <div id="ai-panel" class="ai-panel-hidden" role="dialog" aria-label="IKEDA AI Clinical Assistant" aria-modal="false" aria-hidden="true">
       <div class="ai-panel-header">
         <div class="ai-panel-header-left">
           <div class="ai-avatar">
@@ -73,6 +73,7 @@
 
   let isOpen = false;
   let isFirstOpen = true;
+  let recentProducts = [];
 
   // ── Toggle Panel ───────────────────────────────────────────────────────
   function openPanel() {
@@ -80,6 +81,8 @@
     panel.classList.remove('ai-panel-hidden');
     panel.classList.add('ai-panel-visible');
     fab.classList.add('ai-fab-active');
+    fab.setAttribute('aria-expanded', 'true');
+    panel.setAttribute('aria-hidden', 'false');
     input.focus();
 
     if (isFirstOpen) {
@@ -93,6 +96,8 @@
     panel.classList.remove('ai-panel-visible');
     panel.classList.add('ai-panel-hidden');
     fab.classList.remove('ai-fab-active');
+    fab.setAttribute('aria-expanded', 'false');
+    panel.setAttribute('aria-hidden', 'true');
   }
 
   fab.addEventListener('click', () => isOpen ? closePanel() : openPanel());
@@ -114,11 +119,20 @@
     bubble.className = 'ai-msg ai-msg-' + sender;
 
     if (sender === 'bot') {
-      // Parse markdown-lite bold **text**
-      let html = content
-        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\n/g, '<br>');
-      bubble.innerHTML = '<div class="ai-msg-content">' + html + '</div>';
+      const body = document.createElement('div');
+      body.className = 'ai-msg-content';
+      content.split(/(\*\*.+?\*\*|\n)/g).forEach(part => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          const strong = document.createElement('strong');
+          strong.textContent = part.slice(2, -2);
+          body.appendChild(strong);
+        } else if (part === '\n') {
+          body.appendChild(document.createElement('br'));
+        } else if (part) {
+          body.appendChild(document.createTextNode(part));
+        }
+      });
+      bubble.appendChild(body);
     } else {
       bubble.textContent = content;
     }
@@ -168,6 +182,8 @@
       const btn = document.createElement('a');
       btn.className = 'ai-action-btn';
       btn.textContent = action.label;
+      const url = new URL(action.url, window.location.origin);
+      if (!['http:', 'https:', 'tel:'].includes(url.protocol)) return;
       btn.href = action.url;
 
       if (action.url.startsWith('http') || action.url.startsWith('tel:')) {
@@ -178,6 +194,111 @@
     });
 
     messagesEl.appendChild(wrapper);
+    scrollDown();
+  }
+
+  function renderProducts(products) {
+    if (!Array.isArray(products) || !products.length) return;
+
+    products.forEach(product => {
+      const card = document.createElement('article');
+      card.className = 'ai-product-card';
+
+      if (product.image) {
+        const imageUrl = new URL(product.image, window.location.origin);
+        if (imageUrl.origin === window.location.origin) {
+          const image = document.createElement('img');
+          image.className = 'ai-product-image';
+          image.src = imageUrl.href;
+          image.alt = product.name || 'Catalog product';
+          image.loading = 'lazy';
+          image.addEventListener('error', () => image.remove());
+          card.appendChild(image);
+        }
+      }
+
+      const details = document.createElement('div');
+      details.className = 'ai-product-details';
+      const title = document.createElement('strong');
+      title.className = 'ai-product-title';
+      title.textContent = product.name || 'Catalog product';
+      details.appendChild(title);
+
+      const categoryLabel = [product.category, product.subtitle].filter(Boolean).join(' · ');
+      if (categoryLabel) {
+        const category = document.createElement('span');
+        category.className = 'ai-product-category';
+        category.textContent = categoryLabel;
+        details.appendChild(category);
+      }
+
+      const specification = document.createElement('details');
+      specification.className = 'ai-product-specs';
+      const summary = document.createElement('summary');
+      summary.textContent = 'View specifications';
+      specification.appendChild(summary);
+
+      const specificationText = product.specification || (Array.isArray(product.features) ? product.features.join('\n') : '');
+      if (specificationText) {
+        const specText = document.createElement('p');
+        specText.textContent = specificationText;
+        specification.appendChild(specText);
+      }
+      if (Array.isArray(product.features) && product.features.length) {
+        const featureList = document.createElement('ul');
+        product.features.forEach(feature => {
+          const featureItem = document.createElement('li');
+          featureItem.textContent = feature;
+          featureList.appendChild(featureItem);
+        });
+        specification.appendChild(featureList);
+      }
+      details.appendChild(specification);
+
+      // Build deep-link parameters for exact product targeting in catalog
+      const catalogParams = new URLSearchParams();
+      if (product.name) catalogParams.set('product', product.name);
+      if (product.slug) catalogParams.set('cat', product.slug);
+      if (typeof product.itemIdx === 'number') catalogParams.set('idx', product.itemIdx);
+      if (product.name) catalogParams.set('search', product.name);
+      const targetCatalogHref = `/products?${catalogParams.toString()}`;
+
+      function navigateToCatalogProduct(e) {
+        const isProductsPage = window.location.pathname.replace(/\.html$/, '').endsWith('/products');
+        if (isProductsPage && typeof window.openCatalogProduct === 'function') {
+          if (e) e.preventDefault();
+          closePanel();
+          window.openCatalogProduct({
+            name: product.name,
+            catSlug: product.slug,
+            itemIdx: product.itemIdx
+          });
+          return true;
+        }
+        return false;
+      }
+
+      title.style.cursor = 'pointer';
+      title.title = 'View in catalog';
+      title.addEventListener('click', (e) => {
+        if (!navigateToCatalogProduct(e)) {
+          window.location.href = targetCatalogHref;
+        }
+      });
+
+      const catalogLink = document.createElement('a');
+      catalogLink.className = 'ai-product-link';
+      catalogLink.href = targetCatalogHref;
+      catalogLink.textContent = 'Open in catalog';
+      catalogLink.setAttribute('aria-label', `Open ${product.name || 'product'} in catalog`);
+      catalogLink.addEventListener('click', (e) => {
+        navigateToCatalogProduct(e);
+      });
+      details.appendChild(catalogLink);
+      card.appendChild(details);
+      messagesEl.appendChild(card);
+    });
+
     scrollDown();
   }
 
@@ -198,7 +319,7 @@
       const res = await fetch('/api/ai/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: message })
+        body: JSON.stringify({ message: message, context: { products: recentProducts } })
       });
 
       // Simulate a slight human delay (300-800ms)
@@ -211,6 +332,11 @@
       const data = await res.json();
 
       addMessage(data.reply || 'I apologize, I was unable to process that. Please try again.', 'bot');
+
+      if (data.products && data.products.length) {
+        renderProducts(data.products);
+        recentProducts = data.products.map(product => product.name).filter(Boolean);
+      }
 
       if (data.actions && data.actions.length) {
         renderActions(data.actions);

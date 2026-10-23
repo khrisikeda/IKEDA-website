@@ -92,10 +92,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Handle browser back/forward navigation
   window.addEventListener('popstate', () => {
     const params = new URLSearchParams(window.location.search);
+    const pProd = params.get('product');
+    if (pProd) {
+      handleProductDeepLink({
+        name: pProd,
+        catSlug: params.get('cat'),
+        itemIdx: params.get('idx')
+      }, false);
+      return;
+    }
+    closeProductModal();
     activeGroup = normalizeGroupName(params.get('group') || 'All');
     filterBtns.forEach((b) => {
       b.classList.toggle('active', b.dataset.group.toLowerCase() === activeGroup.toLowerCase());
     });
+    const pSearch = params.get('search');
+    searchQuery = pSearch ? pSearch.trim().toLowerCase() : '';
+    if (searchInput) searchInput.value = pSearch || '';
     renderFilteredProducts();
   });
 
@@ -138,8 +151,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     allProducts = await fetchJSON('/api/products');
     renderFilteredProducts();
 
-    // Check if an anchor hash exists (e.g. #laparoscopy, #urology)
-    if (window.location.hash) {
+    // Check if deep link parameters are present (?product=... or ?search=...)
+    const requestedProduct = urlParams.get('product');
+    const requestedCat = urlParams.get('cat');
+    const requestedIdx = urlParams.get('idx');
+    const requestedSearch = urlParams.get('search');
+
+    if (requestedProduct) {
+      handleProductDeepLink({
+        name: requestedProduct,
+        catSlug: requestedCat,
+        itemIdx: requestedIdx
+      }, false);
+    } else if (requestedSearch) {
+      searchQuery = requestedSearch.trim().toLowerCase();
+      if (searchInput) searchInput.value = requestedSearch;
+      renderFilteredProducts();
+      if (grid) {
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else if (window.location.hash) {
       const rawHash = window.location.hash.substring(1).toLowerCase();
       setTimeout(() => {
         let targetEl = document.getElementById(rawHash);
@@ -913,6 +944,163 @@ function renderProductImageHTML(imageSrc, productName) {
     </div>
   `;
 }
+
+function findProductInCatalog(productName, catSlug, itemIdx) {
+  if (!allProducts || !allProducts.length) return null;
+
+  const targetName = (productName || '').trim().toLowerCase();
+
+  // 1. If catSlug is provided, search that category first
+  if (catSlug) {
+    const cat = allProducts.find((c) => c.slug === catSlug);
+    if (cat && cat.equipmentHighlights) {
+      if (itemIdx !== undefined && itemIdx !== null && !isNaN(parseInt(itemIdx, 10))) {
+        const idx = parseInt(itemIdx, 10);
+        if (cat.equipmentHighlights[idx]) {
+          const h = cat.equipmentHighlights[idx];
+          const hName = (typeof h === 'object' && h !== null ? h.name : h) || '';
+          if (!targetName || hName.toLowerCase() === targetName || hName.toLowerCase().includes(targetName) || targetName.includes(hName.toLowerCase())) {
+            return { cat, catSlug: cat.slug, itemIdx: idx, name: hName };
+          }
+        }
+      }
+      const exactIdx = cat.equipmentHighlights.findIndex((h) => {
+        const hName = (typeof h === 'object' && h !== null ? h.name : h) || '';
+        return hName.trim().toLowerCase() === targetName;
+      });
+      if (exactIdx !== -1) {
+        const h = cat.equipmentHighlights[exactIdx];
+        return { cat, catSlug: cat.slug, itemIdx: exactIdx, name: typeof h === 'object' ? h.name : h };
+      }
+      const partialIdx = cat.equipmentHighlights.findIndex((h) => {
+        const hName = (typeof h === 'object' && h !== null ? h.name : h) || '';
+        return hName.toLowerCase().includes(targetName) || targetName.includes(hName.toLowerCase());
+      });
+      if (partialIdx !== -1) {
+        const h = cat.equipmentHighlights[partialIdx];
+        return { cat, catSlug: cat.slug, itemIdx: partialIdx, name: typeof h === 'object' ? h.name : h };
+      }
+    }
+  }
+
+  // 2. Search across all categories by name
+  if (targetName) {
+    for (const cat of allProducts) {
+      if (!cat.equipmentHighlights) continue;
+      const idx = cat.equipmentHighlights.findIndex((h) => {
+        const hName = (typeof h === 'object' && h !== null ? h.name : h) || '';
+        return hName.trim().toLowerCase() === targetName;
+      });
+      if (idx !== -1) {
+        const h = cat.equipmentHighlights[idx];
+        return { cat, catSlug: cat.slug, itemIdx: idx, name: typeof h === 'object' ? h.name : h };
+      }
+    }
+
+    for (const cat of allProducts) {
+      if (!cat.equipmentHighlights) continue;
+      const idx = cat.equipmentHighlights.findIndex((h) => {
+        const hName = (typeof h === 'object' && h !== null ? h.name : h) || '';
+        return hName.toLowerCase().includes(targetName) || targetName.includes(hName.toLowerCase());
+      });
+      if (idx !== -1) {
+        const h = cat.equipmentHighlights[idx];
+        return { cat, catSlug: cat.slug, itemIdx: idx, name: typeof h === 'object' ? h.name : h };
+      }
+    }
+
+    // Check subsections
+    for (const cat of allProducts) {
+      if (!cat.subsections) continue;
+      for (const sub of cat.subsections) {
+        const items = sub.items || [];
+        for (const sItem of items) {
+          const sName = (typeof sItem === 'object' && sItem !== null ? sItem.name : sItem) || '';
+          if (sName.toLowerCase() === targetName || sName.toLowerCase().includes(targetName) || targetName.includes(sName.toLowerCase())) {
+            let hlIdx = (cat.equipmentHighlights || []).findIndex((h) => {
+              const hName = (typeof h === 'object' && h !== null ? h.name : h) || '';
+              return hName.toLowerCase() === sName.toLowerCase();
+            });
+            return { cat, catSlug: cat.slug, itemIdx: hlIdx >= 0 ? hlIdx : 0, name: sName };
+          }
+        }
+      }
+    }
+  }
+
+  return null;
+}
+
+function handleProductDeepLink(params, shouldUpdateHistory = false) {
+  if (!params) return false;
+  const match = findProductInCatalog(params.name, params.catSlug, params.itemIdx);
+  if (!match) return false;
+
+  // Make sure product's department group is not filtered out
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  if (activeGroup !== 'All' && activeGroup.toLowerCase() !== (match.cat.departmentGroup || '').toLowerCase()) {
+    activeGroup = 'All';
+    filterBtns.forEach((b) => {
+      b.classList.toggle('active', b.dataset.group === 'All');
+    });
+  }
+
+  // Clear search filter so the product item is rendered
+  if (searchQuery) {
+    searchQuery = '';
+    const searchInput = document.getElementById('product-search');
+    if (searchInput) searchInput.value = '';
+  }
+
+  renderFilteredProducts();
+
+  if (shouldUpdateHistory) {
+    const query = new URLSearchParams();
+    query.set('product', match.name);
+    query.set('cat', match.catSlug);
+    query.set('idx', match.itemIdx);
+    history.pushState(null, '', `${window.location.pathname}?${query.toString()}`);
+  }
+
+  // Find thumbnail button element and highlight it, then open modal
+  setTimeout(() => {
+    let btn = document.querySelector(`.equipment-row-btn[data-cat-slug="${match.catSlug}"][data-item-idx="${match.itemIdx}"]`);
+    if (!btn) {
+      const allBtns = document.querySelectorAll('.equipment-row-btn');
+      for (const b of allBtns) {
+        const nameEl = b.querySelector('.thumb-item-name');
+        const text = nameEl ? nameEl.textContent.trim().toLowerCase() : '';
+        if (text && (text === match.name.toLowerCase() || text.includes(match.name.toLowerCase()) || match.name.toLowerCase().includes(text))) {
+          btn = b;
+          break;
+        }
+      }
+    }
+
+    document.querySelectorAll('.is-product-highlight').forEach((el) => el.classList.remove('is-product-highlight'));
+
+    if (btn) {
+      btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      btn.classList.add('is-product-highlight');
+      lastFocusedElement = btn;
+    } else {
+      const catEl = document.getElementById(match.catSlug);
+      if (catEl) {
+        catEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    setTimeout(() => {
+      openProductModal(match.catSlug, match.itemIdx);
+    }, 450);
+  }, 120);
+
+  return true;
+}
+
+window.openCatalogProduct = function (params) {
+  return handleProductDeepLink(params, true);
+};
 
 function openProductModal(catSlug, itemIdx) {
   const data = getProductData(catSlug, itemIdx);
