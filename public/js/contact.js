@@ -1,18 +1,31 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  // Check URL query parameters for pre-selected department
+  // Check URL query parameters for pre-selected department and pre-filled inquiry list
   const urlParams = new URLSearchParams(window.location.search);
   const requestedDept = urlParams.get('dept');
   const requestedProduct = urlParams.get('product');
+  const requestedMessage = urlParams.get('message');
+  const requestedItems = urlParams.get('items');
+  const requestedSubject = urlParams.get('subject');
   const messageArea = document.getElementById('message');
-  if (messageArea && requestedProduct && !messageArea.value) {
-    messageArea.value = `Hello, I would like to request an official quotation, specification sheet, and delivery timeframe for ${requestedProduct}.`;
+
+  if (messageArea && (requestedMessage || requestedItems || requestedProduct || requestedSubject)) {
+    if (requestedMessage) {
+      messageArea.value = requestedMessage;
+    } else if (requestedItems) {
+      messageArea.value = `Hello IKEDA Team,\n\nI would like to request an official proforma quotation for the following equipment list:\n\n${requestedItems}\n\nPlease include technical datasheets, warranty, delivery lead time, and installation in Rwanda.`;
+    } else if (requestedProduct) {
+      messageArea.value = `Hello, I would like to request an official quotation, specification sheet, and delivery timeframe for ${requestedProduct}.`;
+    } else if (requestedSubject) {
+      messageArea.value = `Hello IKEDA Team,\n\nI would like to inquire about: ${requestedSubject}.\n\nPlease provide formal quotation and equipment options.`;
+    }
   }
+
   const deptSelect = document.getElementById('department');
   if (deptSelect && requestedDept) {
-    // Add or select the option
     let found = false;
     for (let i = 0; i < deptSelect.options.length; i++) {
-      if (deptSelect.options[i].value.toLowerCase() === requestedDept.toLowerCase()) {
+      if (deptSelect.options[i].value.toLowerCase() === requestedDept.toLowerCase() ||
+          deptSelect.options[i].text.toLowerCase().includes(requestedDept.toLowerCase())) {
         deptSelect.selectedIndex = i;
         found = true;
         break;
@@ -21,6 +34,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!found) {
       const newOption = new Option(requestedDept, requestedDept, true, true);
       deptSelect.add(newOption);
+    }
+  }
+
+  if (requestedMessage || requestedItems || requestedProduct || requestedSubject) {
+    const formEl = document.getElementById('contact-form');
+    if (formEl) {
+      setTimeout(() => {
+        formEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 350);
     }
   }
 

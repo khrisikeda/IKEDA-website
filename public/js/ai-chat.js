@@ -48,8 +48,6 @@
 
       <div id="ai-messages" class="ai-messages"></div>
 
-      <div id="ai-suggestions" class="ai-suggestions"></div>
-
       <form id="ai-form" class="ai-input-bar" autocomplete="off">
         <input id="ai-input" type="text" placeholder="Ask about equipment, prices, specs…" aria-label="Type your question" maxlength="300" />
         <button type="submit" id="ai-send" aria-label="Send message" title="Send">
@@ -66,7 +64,6 @@
   const panel = document.getElementById('ai-panel');
   const closeBtn = document.getElementById('ai-close');
   const messagesEl = document.getElementById('ai-messages');
-  const suggestionsEl = document.getElementById('ai-suggestions');
   const form = document.getElementById('ai-form');
   const input = document.getElementById('ai-input');
   const sendBtn = document.getElementById('ai-send');
@@ -74,6 +71,14 @@
   let isOpen = false;
   let isFirstOpen = true;
   let recentProducts = [];
+  let allRequestedProducts = [];
+  let consultationContext = {
+    active: false,
+    facilityType: '',
+    specialty: '',
+    tier: '',
+    items: []
+  };
 
   // ── Toggle Panel ───────────────────────────────────────────────────────
   function openPanel() {
@@ -157,20 +162,6 @@
     if (el) el.remove();
   }
 
-  function renderSuggestions(suggestions) {
-    suggestionsEl.innerHTML = '';
-    if (!suggestions || !suggestions.length) return;
-
-    suggestions.forEach(text => {
-      const chip = document.createElement('button');
-      chip.className = 'ai-chip';
-      chip.textContent = text;
-      chip.addEventListener('click', () => {
-        sendToAI(text);
-      });
-      suggestionsEl.appendChild(chip);
-    });
-  }
 
   function renderActions(actions) {
     if (!actions || !actions.length) return;
@@ -202,7 +193,20 @@
 
     products.forEach(product => {
       const card = document.createElement('article');
-      card.className = 'ai-product-card';
+      card.className = product.isRecommended ? 'ai-product-card ai-product-card-recommended' : 'ai-product-card';
+
+      // Recommendation badge for top pick
+      if (product.isRecommended) {
+        const badge = document.createElement('div');
+        badge.className = 'ai-product-badge-recommended';
+        badge.innerHTML = `
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+          </svg>
+          <span>${product.recommendationBadge || 'Top Recommendation'}</span>
+        `;
+        card.appendChild(badge);
+      }
 
       if (product.image) {
         const imageUrl = new URL(product.image, window.location.origin);
@@ -230,6 +234,17 @@
         category.className = 'ai-product-category';
         category.textContent = categoryLabel;
         details.appendChild(category);
+      }
+
+      // Recommendation rationale callout
+      if (product.recommendationReason) {
+        const reasonBox = document.createElement('div');
+        reasonBox.className = product.isRecommended ? 'ai-product-reason ai-product-reason-recommended' : 'ai-product-reason';
+        const reasonLabel = document.createElement('strong');
+        reasonLabel.textContent = product.isRecommended ? '⭐ Clinical Choice: ' : 'Comparison: ';
+        reasonBox.appendChild(reasonLabel);
+        reasonBox.appendChild(document.createTextNode(product.recommendationReason));
+        details.appendChild(reasonBox);
       }
 
       const specification = document.createElement('details');
@@ -308,7 +323,6 @@
       addMessage(message, 'user');
     }
 
-    suggestionsEl.innerHTML = '';
     input.value = '';
     input.disabled = true;
     sendBtn.disabled = true;
@@ -319,7 +333,14 @@
       const res = await fetch('/api/ai/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: message, context: { products: recentProducts } })
+        body: JSON.stringify({
+          message: message,
+          context: {
+            products: recentProducts,
+            allRequestedProducts: allRequestedProducts,
+            consultation: consultationContext
+          }
+        })
       });
 
       // Simulate a slight human delay (300-800ms)
@@ -331,24 +352,35 @@
 
       const data = await res.json();
 
+      if (data.consultation) {
+        consultationContext = { ...consultationContext, ...data.consultation };
+        if (Array.isArray(data.consultation.items)) {
+          data.consultation.items.forEach(name => {
+            if (typeof name === 'string' && !allRequestedProducts.includes(name)) {
+              allRequestedProducts.push(name);
+            }
+          });
+        }
+      }
+
       addMessage(data.reply || 'I apologize, I was unable to process that. Please try again.', 'bot');
 
       if (data.products && data.products.length) {
         renderProducts(data.products);
         recentProducts = data.products.map(product => product.name).filter(Boolean);
+        recentProducts.forEach(name => {
+          if (!allRequestedProducts.includes(name)) {
+            allRequestedProducts.push(name);
+          }
+        });
       }
 
       if (data.actions && data.actions.length) {
         renderActions(data.actions);
       }
-
-      if (data.suggestions && data.suggestions.length) {
-        renderSuggestions(data.suggestions);
-      }
     } catch (err) {
       removeTyping();
       addMessage('I apologize for the interruption. Please try again or contact us directly at +250 795 360 359.', 'bot');
-      renderSuggestions(['Request Quotation', '4K Laparoscopy', 'Contact Sales']);
     }
 
     input.disabled = false;
