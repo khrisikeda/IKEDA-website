@@ -1,4 +1,79 @@
 document.addEventListener('DOMContentLoaded', async () => {
+  // Helper to render AI RFQ Review Banner above existing contact form
+  function displayRfqReviewBanner(rfq) {
+    const existing = document.getElementById('rfq-review-banner');
+    if (existing) existing.remove();
+
+    const formEl = document.getElementById('contact-form');
+    if (!formEl) return;
+
+    const banner = document.createElement('div');
+    banner.id = 'rfq-review-banner';
+    banner.className = 'rfq-review-banner';
+
+    const itemCount = Array.isArray(rfq.items) ? rfq.items.length : 0;
+    const score = rfq.completeness && rfq.completeness.score ? rfq.completeness.score : null;
+
+    banner.innerHTML = `
+      <div class="rfq-banner-top">
+        <div class="rfq-banner-title">
+          <span class="rfq-banner-icon">📋</span>
+          <div>
+            <strong>Quotation Inquiry Pre-Filled by AI Assistant</strong>
+            <span class="rfq-banner-dept">${rfq.department || 'Department Equipment Package'}</span>
+          </div>
+        </div>
+        ${score ? `<span class="rfq-banner-score">${score}% Clinical Readiness</span>` : ''}
+      </div>
+      <p class="rfq-banner-instructions">
+        Your recommended equipment package (<strong>${itemCount} item${itemCount === 1 ? '' : 's'}</strong>) has been structured and entered into the inquiry field below. 
+        Please review your selections, adjust quantities if needed, enter your contact information, and click <strong>Send Quotation Request</strong> when ready to submit.
+      </p>
+      <div class="rfq-banner-actions">
+        <span class="rfq-banner-notice">✓ Form is fully editable • No inquiry is sent without your explicit click below</span>
+      </div>
+    `;
+
+    formEl.parentNode.insertBefore(banner, formEl);
+  }
+
+  // Globally accessible populate function for on-page AI chat integration
+  window.populateContactFormWithRfq = function(rfq) {
+    if (!rfq) return;
+    const messageArea = document.getElementById('message');
+    const deptSelect = document.getElementById('department');
+
+    if (messageArea && rfq.formattedMessage) {
+      messageArea.value = rfq.formattedMessage;
+    }
+
+    if (deptSelect && rfq.department) {
+      let found = false;
+      for (let i = 0; i < deptSelect.options.length; i++) {
+        if (deptSelect.options[i].value.toLowerCase() === rfq.department.toLowerCase() ||
+            deptSelect.options[i].text.toLowerCase().includes(rfq.department.toLowerCase()) ||
+            rfq.department.toLowerCase().includes(deptSelect.options[i].value.toLowerCase())) {
+          deptSelect.selectedIndex = i;
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        const newOption = new Option(rfq.department, rfq.department, true, true);
+        deptSelect.add(newOption);
+      }
+    }
+
+    displayRfqReviewBanner(rfq);
+
+    const formEl = document.getElementById('contact-form');
+    if (formEl) {
+      setTimeout(() => {
+        formEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 250);
+    }
+  };
+
   // Check URL query parameters for pre-selected department and pre-filled inquiry list
   const urlParams = new URLSearchParams(window.location.search);
   const requestedDept = urlParams.get('dept');
@@ -8,7 +83,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   const requestedSubject = urlParams.get('subject');
   const messageArea = document.getElementById('message');
 
-  if (messageArea && (requestedMessage || requestedItems || requestedProduct || requestedSubject)) {
+  // Check if there is a pending AI RFQ payload in sessionStorage
+  const storedRfqRaw = sessionStorage.getItem('ikeda_rfq_payload');
+  if (storedRfqRaw) {
+    try {
+      const storedRfq = JSON.parse(storedRfqRaw);
+      window.populateContactFormWithRfq(storedRfq);
+    } catch (e) {
+      console.error('Failed to parse stored RFQ payload:', e);
+    }
+  } else if (messageArea && (requestedMessage || requestedItems || requestedProduct || requestedSubject)) {
     if (requestedMessage) {
       messageArea.value = requestedMessage;
     } else if (requestedItems) {
@@ -21,7 +105,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   const deptSelect = document.getElementById('department');
-  if (deptSelect && requestedDept) {
+  if (deptSelect && requestedDept && !storedRfqRaw) {
     let found = false;
     for (let i = 0; i < deptSelect.options.length; i++) {
       if (deptSelect.options[i].value.toLowerCase() === requestedDept.toLowerCase() ||
@@ -37,7 +121,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  if (requestedMessage || requestedItems || requestedProduct || requestedSubject) {
+  if ((requestedMessage || requestedItems || requestedProduct || requestedSubject) && !storedRfqRaw) {
     const formEl = document.getElementById('contact-form');
     if (formEl) {
       setTimeout(() => {
@@ -130,6 +214,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       const result = await res.json();
       status.textContent = `Thank you, ${payload.name}! We have received your inquiry regarding ${payload.department}. Our biomedical support team will contact you shortly. Reference: ${result.id || 'Confirmed'}`;
       status.className = 'form-status show ok';
+      sessionStorage.removeItem('ikeda_rfq_payload');
+      const revBanner = document.getElementById('rfq-review-banner');
+      if (revBanner) revBanner.remove();
       form.reset();
     } catch (err) {
       status.textContent = 'We encountered an error submitting your request. Please call us directly or message via WhatsApp.';

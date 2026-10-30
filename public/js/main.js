@@ -25,7 +25,7 @@
 // Main shared application logic
 document.addEventListener('DOMContentLoaded', () => {
   const assistantScript = document.createElement('script');
-  assistantScript.src = '/js/ai-chat.js';
+  assistantScript.src = '/js/ai-chat.js?v=3.5';
   document.body.appendChild(assistantScript);
 
   // Mobile nav toggle

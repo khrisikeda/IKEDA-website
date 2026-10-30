@@ -4110,6 +4110,519 @@ section,
 }
 
 /* ==========================================================================
+   AI Procurement Assistant — Markdown & Interactive Quotation Components
+   ========================================================================== */
+
+/* Markdown in AI Chat */
+.ai-msg-content .ai-h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--medical-slate);
+  margin: 10px 0 6px 0;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.ai-msg-content .ai-h5 {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--blue-primary);
+  margin: 8px 0 4px 0;
+}
+
+.ai-msg-content .ai-p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+.ai-msg-content .ai-quote {
+  margin: 8px 0;
+  padding: 6px 10px;
+  background: #f0f9ff;
+  border-left: 3px solid var(--blue-primary);
+  color: #0c4a6e;
+  font-size: 0.8rem;
+  font-style: italic;
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+}
+
+.ai-msg-content .ai-hr {
+  border: 0;
+  border-top: 1px solid var(--gray-200);
+  margin: 12px 0;
+}
+
+.ai-msg-content .ai-list {
+  margin: 4px 0 8px 16px;
+  padding: 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.ai-msg-content .ai-list li {
+  margin-bottom: 3px;
+}
+
+/* Comparison Tables in Chat */
+.ai-table-wrap {
+  overflow-x: auto;
+  margin: 8px 0;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xs);
+}
+
+.ai-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.76rem;
+  text-align: left;
+}
+
+.ai-table th {
+  background: #f8fafc;
+  color: var(--medical-slate);
+  font-weight: 700;
+  padding: 6px 8px;
+  border-bottom: 1.5px solid var(--gray-300);
+  white-space: nowrap;
+}
+
+.ai-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--gray-200);
+  vertical-align: top;
+  line-height: 1.35;
+}
+
+.ai-table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ── Interactive Department Procurement & RFQ Card ────────────────────── */
+.ai-rfq-card {
+  background: #0f1c2e;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 8px 0;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.2);
+}
+
+.ai-rfq-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+}
+
+.ai-rfq-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ai-rfq-dept-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #38bdf8;
+}
+
+.ai-rfq-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.ai-rfq-badge {
+  flex-shrink: 0;
+  background: rgba(2, 132, 199, 0.25);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ai-rfq-score-num {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Collapsible Completeness Audit */
+.ai-rfq-details {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+}
+
+.ai-rfq-details summary {
+  color: #38bdf8;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ai-rfq-audit-body {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ai-rfq-audit-sec {
+  margin-bottom: 6px;
+}
+
+.ai-rfq-audit-sec strong {
+  color: #e2e8f0;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ai-rfq-audit-sec ul {
+  margin: 3px 0 0 14px;
+  padding: 0;
+  list-style: none;
+}
+
+.ai-rfq-audit-sec li {
+  margin-bottom: 2px;
+  color: #94a3b8;
+  line-height: 1.35;
+}
+
+.ai-rfq-gaps-sec li {
+  color: #fde047;
+}
+
+/* Item List */
+.ai-rfq-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.ai-rfq-category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ai-rfq-category-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+}
+
+.ai-rfq-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.ai-rfq-item-row:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.ai-rfq-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.ai-rfq-item-top {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.ai-rfq-item-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.ai-rfq-mfg-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  font-size: 0.62rem;
+  font-family: var(--mono);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.ai-rfq-item-tag {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.ai-rfq-tag-essential {
+  background: rgba(2, 132, 199, 0.3);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.ai-rfq-tag-recommended {
+  background: rgba(168, 85, 247, 0.25);
+  color: #d8b4fe;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.ai-rfq-tag-optional {
+  background: rgba(148, 163, 184, 0.2);
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.ai-rfq-item-specs {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  line-height: 1.25;
+}
+
+/* Stepper Controls */
+.ai-rfq-qty-stepper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.ai-rfq-qty-btn {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0;
+  transition: background 0.15s;
+}
+
+.ai-rfq-qty-btn:hover {
+  background: var(--blue-primary);
+}
+
+.ai-rfq-qty-val {
+  min-width: 18px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ai-rfq-remove-btn {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 0;
+  margin-left: 2px;
+  transition: background 0.15s;
+}
+
+.ai-rfq-remove-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+/* Permission Prompt Box */
+.ai-rfq-permission-box {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(2, 132, 199, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 8px;
+}
+
+.ai-rfq-prompt-text {
+  font-size: 0.78rem;
+  color: #e2e8f0;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.ai-rfq-prompt-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ai-rfq-btn-accept {
+  background: var(--blue-primary);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.15s ease;
+}
+
+.ai-rfq-btn-accept:hover {
+  background: var(--blue-hover);
+}
+
+.ai-rfq-btn-decline {
+  background: transparent;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.ai-rfq-btn-decline:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.ai-rfq-success-msg {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 0.76rem;
+  color: #86efac;
+  line-height: 1.35;
+}
+
+.ai-rfq-muted-note {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  line-height: 1.35;
+}
+
+/* ── Contact Page RFQ Review Banner ───────────────────────────────────── */
+.rfq-review-banner {
+  background: #0e2b4d;
+  color: #ffffff;
+  border: 1.5px solid var(--blue-primary);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.15);
+}
+
+.rfq-banner-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.rfq-banner-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.rfq-banner-icon {
+  font-size: 1.5rem;
+}
+
+.rfq-banner-title strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rfq-banner-dept {
+  font-size: 0.85rem;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.rfq-banner-score {
+  background: rgba(2, 132, 199, 0.3);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.rfq-banner-instructions {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+  margin-bottom: 0.75rem;
+}
+
+.rfq-banner-instructions strong {
+  color: #ffffff;
+}
+
+.rfq-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.rfq-banner-notice {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+/* ==========================================================================
    Responsive Adaptations
    ========================================================================== */
 

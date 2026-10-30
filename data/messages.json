@@ -1,5 +1,14 @@
 [
   {
+    "id": "MSG-1793353395705",
+    "name": "Dr. Diane Uwase",
+    "email": "diane@kigalidental.rw",
+    "phone": "+250 788 123 456",
+    "department": "General Consultation & Outpatient Clinic (OPD)",
+    "message": "Hello IKEDA Team,\n\nI would like to request an official proforma quotation, technical specification datasheets, and delivery terms for our General Consultation & Outpatient Clinic (OPD).\n\n📋 REQUESTED DEPARTMENT EQUIPMENT LIST:\n\n🏥 CAPITAL MEDICAL EQUIPMENT:\n1. Wall mounted diagnostic set (IKEDA OEM) — Qty: 1 unit(s) [ESSENTIAL]\n   • Specs: Coaxial ophthalmoscope head, fiber-optic otoscope head, spiral coiled anti-theft cords, automated sensor power cradle.\n2. 12 Channel ECG-E70 (IKEDA OEM) — Qty: 1 unit(s) [ESSENTIAL]\n   • Specs: 8-inch color LCD touch screen, simultaneous 12-lead acquisition, automated Glasgow ECG interpretation algorithm, thermal roll printer.\n3. Blood pressure monitor YUWELL YE670A (Yuwell) — Qty: 1 unit(s) [ESSENTIAL]\n   • Specs: Large backlight LCD screen, 74 groups of memory, irregular heartbeat (IHB) detection, voice broadcast function.\n\nPlease include formal quotation pricing, CE/ISO certificates, transport and delivery lead times to Kigali, and on-site biomedical engineering installation terms.\n\nFacility Name:\nContact Person:",
+    "receivedAt": "2026-10-30T09:43:15.705Z"
+  },
+  {
     "id": "MSG-1790070270722",
     "name": "Dr. Brian Omondi",
     "email": "bomondi@nairobihospital.org",

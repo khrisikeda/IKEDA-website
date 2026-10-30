@@ -72,6 +72,8 @@
   let isFirstOpen = true;
   let recentProducts = [];
   let allRequestedProducts = [];
+  let conversationHistory = [];
+  let activeProcurementSession = null;
   let consultationContext = {
     active: false,
     facilityType: '',
@@ -119,6 +121,103 @@
     });
   }
 
+  function formatInline(str) {
+    if (!str) return '';
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.+?)\*/g, '<em>$1</em>');
+  }
+
+  function formatMarkdown(text) {
+    if (!text) return '';
+    const lines = text.split('\n');
+    let html = '';
+    let inTable = false;
+    let inList = false;
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+
+      // Markdown Tables
+      if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+        if (!inTable) {
+          if (inList) { html += '</ul>'; inList = false; }
+          html += '<div class="ai-table-wrap"><table class="ai-table">';
+          inTable = true;
+        }
+        const cells = line.trim().split('|').slice(1, -1).map(c => c.trim());
+        if (cells.every(c => /^:?-+:?$/.test(c))) {
+          continue;
+        }
+        const isHeader = !html.includes('<tbody>') && (i === 0 || !lines[i-1].trim().startsWith('|') || /^:?-+:?$/.test((lines[i+1] || '').trim().split('|').slice(1, -1)[0]));
+        html += '<tr>';
+        cells.forEach(cell => {
+          const formatted = formatInline(cell);
+          html += isHeader ? `<th>${formatted}</th>` : `<td>${formatted}</td>`;
+        });
+        html += '</tr>';
+        continue;
+      } else if (inTable) {
+        html += '</table></div>';
+        inTable = false;
+      }
+
+      // Headings
+      if (line.startsWith('### ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<h4 class="ai-h4">${formatInline(line.slice(4))}</h4>`;
+        continue;
+      }
+      if (line.startsWith('#### ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<h5 class="ai-h5">${formatInline(line.slice(5))}</h5>`;
+        continue;
+      }
+
+      // Blockquote
+      if (line.startsWith('> ')) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<blockquote class="ai-quote">${formatInline(line.slice(2))}</blockquote>`;
+        continue;
+      }
+
+      // Horizontal Divider
+      if (/^---|\*\*\*|___$/.test(line.trim())) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += '<hr class="ai-hr" />';
+        continue;
+      }
+
+      // Bullet Lists
+      if (/^[•\-\*]\s+/.test(line.trim())) {
+        if (!inList) {
+          html += '<ul class="ai-list">';
+          inList = true;
+        }
+        const itemContent = line.trim().replace(/^[•\-\*]\s+/, '');
+        html += `<li>${formatInline(itemContent)}</li>`;
+        continue;
+      } else if (inList && line.trim() === '') {
+        html += '</ul>';
+        inList = false;
+      }
+
+      // Normal text paragraphs
+      if (line.trim()) {
+        if (inList) { html += '</ul>'; inList = false; }
+        html += `<p class="ai-p">${formatInline(line)}</p>`;
+      }
+    }
+
+    if (inTable) html += '</table></div>';
+    if (inList) html += '</ul>';
+
+    return html;
+  }
+
   function addMessage(content, sender) {
     const bubble = document.createElement('div');
     bubble.className = 'ai-msg ai-msg-' + sender;
@@ -126,17 +225,7 @@
     if (sender === 'bot') {
       const body = document.createElement('div');
       body.className = 'ai-msg-content';
-      content.split(/(\*\*.+?\*\*|\n)/g).forEach(part => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-          const strong = document.createElement('strong');
-          strong.textContent = part.slice(2, -2);
-          body.appendChild(strong);
-        } else if (part === '\n') {
-          body.appendChild(document.createElement('br'));
-        } else if (part) {
-          body.appendChild(document.createTextNode(part));
-        }
-      });
+      body.innerHTML = formatMarkdown(content);
       bubble.appendChild(body);
     } else {
       bubble.textContent = content;
@@ -317,10 +406,283 @@
     scrollDown();
   }
 
+  // ── Render Intelligent Procurement Quotation Card ──────────────────────
+  function renderProcurementCard(rfqPayload, permissionPrompt) {
+    if (!rfqPayload || !Array.isArray(rfqPayload.items)) return;
+
+    const card = document.createElement('div');
+    card.className = 'ai-rfq-card';
+
+    // State for interactive items and quantity adjustments
+    const items = rfqPayload.items.map(it => ({ ...it, qty: it.qty || 1 }));
+    let completeness = { ...rfqPayload.completeness };
+
+    function buildFormattedMessage() {
+      let msg = `Hello IKEDA Team,\n\nI would like to request an official proforma quotation, technical specification datasheets, and delivery terms for our ${rfqPayload.department}.\n\n`;
+      msg += `📋 REQUESTED DEPARTMENT EQUIPMENT LIST:\n\n`;
+
+      const cats = {
+        equipment: items.filter(i => i.category === 'equipment'),
+        instruments: items.filter(i => i.category === 'instruments'),
+        accessories: items.filter(i => i.category === 'accessories'),
+        consumables: items.filter(i => i.category === 'consumables')
+      };
+
+      if (cats.equipment.length) {
+        msg += `🏥 CAPITAL MEDICAL EQUIPMENT:\n`;
+        cats.equipment.forEach((it, idx) => {
+          msg += `${idx + 1}. ${it.name} (${it.manufacturer || 'OEM'}) — Qty: ${it.qty} unit(s) [${(it.importance || 'Essential').toUpperCase()}]\n   • Specs: ${it.specs || 'Standard OEM specifications'}\n`;
+        });
+        msg += `\n`;
+      }
+      if (cats.instruments.length) {
+        msg += `✂️ SURGICAL & CLINICAL INSTRUMENTS:\n`;
+        cats.instruments.forEach((it, idx) => {
+          msg += `${idx + 1}. ${it.name} (${it.manufacturer || 'OEM'}) — Qty: ${it.qty} set(s) [${(it.importance || 'Essential').toUpperCase()}]\n`;
+        });
+        msg += `\n`;
+      }
+      if (cats.accessories.length) {
+        msg += `🔌 ACCESSORIES & INFRASTRUCTURE:\n`;
+        cats.accessories.forEach((it, idx) => {
+          msg += `${idx + 1}. ${it.name} — Qty: ${it.qty} unit(s) [${(it.importance || 'Recommended').toUpperCase()}]\n`;
+        });
+        msg += `\n`;
+      }
+      if (cats.consumables.length) {
+        msg += `📦 STERILIZATION & CONSUMABLE PACKAGES:\n`;
+        cats.consumables.forEach((it, idx) => {
+          msg += `${idx + 1}. ${it.name} — Qty: ${it.qty} unit(s) [${(it.importance || 'Essential').toUpperCase()}]\n`;
+        });
+        msg += `\n`;
+      }
+
+      msg += `Please include formal quotation pricing, CE/ISO certificates, transport and delivery lead times to Kigali, and on-site biomedical engineering installation terms.\n\nFacility Name:\nContact Person:`;
+      return msg;
+    }
+
+    // Header with department & completeness badge
+    const header = document.createElement('div');
+    header.className = 'ai-rfq-header';
+    header.innerHTML = `
+      <div class="ai-rfq-title-wrap">
+        <span class="ai-rfq-dept-badge">Procurement Blueprint</span>
+        <strong class="ai-rfq-title">${rfqPayload.department}</strong>
+      </div>
+      <div class="ai-rfq-badge" id="rfq-score-badge">
+        <span class="ai-rfq-score-num">${completeness.score}%</span> Readiness
+      </div>
+    `;
+    card.appendChild(header);
+
+    // Collapsible Completeness Audit & Domain Coverage
+    if (completeness.coveredDomains && completeness.coveredDomains.length) {
+      const auditDetails = document.createElement('details');
+      auditDetails.className = 'ai-rfq-details';
+      const auditSummary = document.createElement('summary');
+      auditSummary.innerHTML = `<span>📊 Department Completeness Audit (${completeness.status || 'Foundational Core'})</span>`;
+      auditDetails.appendChild(auditSummary);
+
+      const auditContent = document.createElement('div');
+      auditContent.className = 'ai-rfq-audit-body';
+      let auditHtml = `<div class="ai-rfq-audit-sec"><strong>Covered Clinical Domains:</strong><ul>`;
+      completeness.coveredDomains.forEach(d => {
+        auditHtml += `<li>✓ ${d}</li>`;
+      });
+      auditHtml += `</ul></div>`;
+
+      if (completeness.gaps && completeness.gaps.length) {
+        auditHtml += `<div class="ai-rfq-audit-sec ai-rfq-gaps-sec"><strong>Essential Gaps &amp; Clinical Considerations:</strong><ul>`;
+        completeness.gaps.forEach(g => {
+          auditHtml += `<li>⚠️ <strong>${g.item}</strong> (${g.domain}): ${g.clinicalNecessity}</li>`;
+        });
+        auditHtml += `</ul></div>`;
+      }
+      auditContent.innerHTML = auditHtml;
+      auditDetails.appendChild(auditContent);
+      card.appendChild(auditDetails);
+    }
+
+    // Items list container
+    const itemsContainer = document.createElement('div');
+    itemsContainer.className = 'ai-rfq-items-list';
+
+    function renderItems() {
+      itemsContainer.innerHTML = '';
+
+      const categories = [
+        { key: 'equipment', title: '🏥 Capital Medical Equipment', items: items.filter(i => i.category === 'equipment') },
+        { key: 'instruments', title: '✂️ Surgical & Clinical Instruments', items: items.filter(i => i.category === 'instruments') },
+        { key: 'accessories', title: '🔌 Accessories & Infrastructure', items: items.filter(i => i.category === 'accessories') },
+        { key: 'consumables', title: '📦 Consumables & Reprocessing Packages', items: items.filter(i => i.category === 'consumables') }
+      ];
+
+      categories.forEach(cat => {
+        if (!cat.items.length) return;
+
+        const catBlock = document.createElement('div');
+        catBlock.className = 'ai-rfq-category-block';
+        catBlock.innerHTML = `<div class="ai-rfq-category-title">${cat.title} (${cat.items.length})</div>`;
+
+        cat.items.forEach(it => {
+          const row = document.createElement('div');
+          row.className = 'ai-rfq-item-row';
+
+          const importanceTag = (it.importance || 'essential').toLowerCase();
+          const info = document.createElement('div');
+          info.className = 'ai-rfq-item-info';
+          info.innerHTML = `
+            <div class="ai-rfq-item-top">
+              <span class="ai-rfq-item-name">${it.name}</span>
+              <span class="ai-rfq-mfg-tag">${it.manufacturer || 'OEM'}</span>
+              <span class="ai-rfq-item-tag ai-rfq-tag-${importanceTag}">${importanceTag.toUpperCase()}</span>
+            </div>
+            ${it.specs ? `<div class="ai-rfq-item-specs">${it.specs.slice(0, 110)}${it.specs.length > 110 ? '...' : ''}</div>` : ''}
+          `;
+
+          const controls = document.createElement('div');
+          controls.className = 'ai-rfq-qty-stepper';
+
+          const minusBtn = document.createElement('button');
+          minusBtn.type = 'button';
+          minusBtn.className = 'ai-rfq-qty-btn';
+          minusBtn.textContent = '−';
+          minusBtn.title = 'Decrease quantity';
+          minusBtn.addEventListener('click', () => {
+            if (it.qty > 1) {
+              it.qty -= 1;
+              qtyVal.textContent = it.qty;
+              if (activeProcurementSession) activeProcurementSession.items = items;
+            }
+          });
+
+          const qtyVal = document.createElement('span');
+          qtyVal.className = 'ai-rfq-qty-val';
+          qtyVal.textContent = it.qty;
+
+          const plusBtn = document.createElement('button');
+          plusBtn.type = 'button';
+          plusBtn.className = 'ai-rfq-qty-btn';
+          plusBtn.textContent = '+';
+          plusBtn.title = 'Increase quantity';
+          plusBtn.addEventListener('click', () => {
+            it.qty += 1;
+            qtyVal.textContent = it.qty;
+            if (activeProcurementSession) activeProcurementSession.items = items;
+          });
+
+          const removeBtn = document.createElement('button');
+          removeBtn.type = 'button';
+          removeBtn.className = 'ai-rfq-remove-btn';
+          removeBtn.innerHTML = '&times;';
+          removeBtn.title = 'Remove item from quote';
+          removeBtn.addEventListener('click', () => {
+            const idx = items.indexOf(it);
+            if (idx > -1) {
+              items.splice(idx, 1);
+              if (activeProcurementSession) activeProcurementSession.items = items;
+              renderItems();
+            }
+          });
+
+          controls.appendChild(minusBtn);
+          controls.appendChild(qtyVal);
+          controls.appendChild(plusBtn);
+          controls.appendChild(removeBtn);
+
+          row.appendChild(info);
+          row.appendChild(controls);
+          catBlock.appendChild(row);
+        });
+
+        itemsContainer.appendChild(catBlock);
+      });
+    }
+
+    renderItems();
+    card.appendChild(itemsContainer);
+
+    // Permission Prompt Box (Step 1)
+    const promptBox = document.createElement('div');
+    promptBox.className = 'ai-rfq-permission-box';
+
+    const promptText = (permissionPrompt && permissionPrompt.text)
+      ? permissionPrompt.text
+      : `I have prepared a recommended equipment and consumables list for your ${rfqPayload.department}. Would you like me to automatically populate your Quotation Inquiry form with these products, quantities, and available details?`;
+
+    promptBox.innerHTML = `
+      <div class="ai-rfq-prompt-text">${promptText}</div>
+      <div class="ai-rfq-prompt-actions">
+        <button type="button" class="ai-rfq-btn-accept" id="rfq-accept-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Yes, fill in my quotation inquiry
+        </button>
+        <button type="button" class="ai-rfq-btn-decline" id="rfq-decline-btn">
+          No, I would like to do it myself
+        </button>
+      </div>
+    `;
+
+    const acceptBtn = promptBox.querySelector('#rfq-accept-btn');
+    const declineBtn = promptBox.querySelector('#rfq-decline-btn');
+
+    acceptBtn.addEventListener('click', () => {
+      const finalMsg = buildFormattedMessage();
+      const payloadToSave = {
+        department: rfqPayload.department,
+        departmentKey: rfqPayload.departmentKey,
+        completeness: completeness,
+        items: items,
+        formattedMessage: finalMsg
+      };
+
+      if (activeProcurementSession) {
+        activeProcurementSession.items = items;
+        activeProcurementSession.stage = 'populated_form';
+        activeProcurementSession.pendingPermissionPrompt = false;
+      }
+
+      promptBox.innerHTML = `
+        <div class="ai-rfq-success-msg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <span><strong>Quotation Loaded:</strong> Your inquiry form has been pre-filled with ${items.length} items. Please review and approve before final submission.</span>
+        </div>
+      `;
+
+      // Check if on /contact page
+      if (typeof window.populateContactFormWithRfq === 'function') {
+        window.populateContactFormWithRfq(payloadToSave);
+        closePanel();
+      } else {
+        sessionStorage.setItem('ikeda_rfq_payload', JSON.stringify(payloadToSave));
+        window.location.href = `/contact?dept=${encodeURIComponent(rfqPayload.department)}&rfq=ai`;
+      }
+    });
+
+    declineBtn.addEventListener('click', () => {
+      promptBox.innerHTML = `
+        <div class="ai-rfq-muted-note">
+          Understood! You can review the equipment list above or configure your quotation inquiry manually anytime.
+        </div>
+      `;
+    });
+
+    card.appendChild(promptBox);
+    messagesEl.appendChild(card);
+    scrollDown();
+  }
+
   // ── API Communication ──────────────────────────────────────────────────
   async function sendToAI(message) {
     if (message) {
       addMessage(message, 'user');
+      conversationHistory.push({ role: 'user', content: message });
+      if (conversationHistory.length > 12) conversationHistory.shift();
     }
 
     input.value = '';
@@ -336,6 +698,8 @@
         body: JSON.stringify({
           message: message,
           context: {
+            history: conversationHistory,
+            procurementSession: activeProcurementSession,
             products: recentProducts,
             allRequestedProducts: allRequestedProducts,
             consultation: consultationContext
@@ -352,6 +716,15 @@
 
       const data = await res.json();
 
+      if (data.procurementSession) {
+        activeProcurementSession = data.procurementSession;
+      }
+
+      if (data.reply) {
+        conversationHistory.push({ role: 'bot', content: data.reply });
+        if (conversationHistory.length > 12) conversationHistory.shift();
+      }
+
       if (data.consultation) {
         consultationContext = { ...consultationContext, ...data.consultation };
         if (Array.isArray(data.consultation.items)) {
@@ -365,7 +738,29 @@
 
       addMessage(data.reply || 'I apologize, I was unable to process that. Please try again.', 'bot');
 
-      if (data.products && data.products.length) {
+      // Check if user requested form population or bot triggered action === 'fill_form'
+      if (data.action === 'fill_form' && data.rfqPayload) {
+        const payloadToSave = data.rfqPayload;
+        sessionStorage.setItem('ikeda_rfq_payload', JSON.stringify(payloadToSave));
+        if (typeof window.populateContactFormWithRfq === 'function') {
+          window.populateContactFormWithRfq(payloadToSave);
+          closePanel();
+        } else {
+          setTimeout(() => {
+            window.location.href = `/contact?dept=${encodeURIComponent(payloadToSave.department || '')}&rfq=ai`;
+          }, 1000);
+        }
+      } else if (data.rfqPayload) {
+        renderProcurementCard(data.rfqPayload, data.permissionPrompt);
+        if (Array.isArray(data.rfqPayload.items)) {
+          recentProducts = data.rfqPayload.items.map(p => p.name).filter(Boolean);
+          recentProducts.forEach(name => {
+            if (!allRequestedProducts.includes(name)) {
+              allRequestedProducts.push(name);
+            }
+          });
+        }
+      } else if (data.products && data.products.length) {
         renderProducts(data.products);
         recentProducts = data.products.map(product => product.name).filter(Boolean);
         recentProducts.forEach(name => {

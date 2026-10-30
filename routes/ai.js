@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const procurementAssistant = require('../services/procurementAssistant');
 
 const router = express.Router();
 
@@ -1218,6 +1219,12 @@ function generateAIResponse(userQuery, context = {}) {
     };
   }
 
+  // 1A. ACTIVE PROCUREMENT CONVERSATIONAL CONTINUITY (Suite Logique Priority)
+  if (context && context.procurementSession && (context.procurementSession.pendingPermissionPrompt || (context.procurementSession.items && context.procurementSession.items.length > 0))) {
+    const procurementRes = procurementAssistant.handleProcurementQuery(userQuery, context, products);
+    if (procurementRes) return procurementRes;
+  }
+
   // 2. GREETINGS & SALUTATIONS
   if (/^(hi|hello|hey|good\s+(morning|afternoon|evening|day)|greetings)(\s+(there|ikeda|team|doctor|dr))?[!. ]*$/i.test(q)) {
     return {
@@ -1250,6 +1257,10 @@ function generateAIResponse(userQuery, context = {}) {
       ]
     };
   }
+
+  // 4A. INTELLIGENT MEDICAL PROCUREMENT ASSISTANT (Department Blueprints, Completeness, Comparisons, RFQ)
+  const procurementRes = procurementAssistant.handleProcurementQuery(userQuery, context, products);
+  if (procurementRes) return procurementRes;
 
   // 4B. HOSPITAL DEPARTMENT DECIDER & CLINICAL PLACEMENT ENGINE
   const deptDeciderRes = resolveDepartmentDeciderQuery(q, products);
