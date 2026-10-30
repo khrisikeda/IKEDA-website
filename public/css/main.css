@@ -908,7 +908,7 @@ section,
 }
 
 .hero-highlight {
-  color: #38bdf8;
+  color: #ffffff;
   background: none;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
@@ -3351,10 +3351,55 @@ section,
 }
 
 .contact-sidebar-card {
-  background: #f8fafc;
-  border: 1px solid var(--gray-200);
+  background: linear-gradient(150deg, #0e2b4d 0%, #0a1b30 100%);
+  border: 1px solid #1a3d66;
   border-radius: var(--radius-md);
   padding: 2.25rem;
+  color: #ffffff;
+  box-shadow: 0 12px 32px -4px rgba(10, 27, 48, 0.25);
+}
+
+.contact-sidebar-card h3 {
+  color: #ffffff;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-sidebar-card p {
+  color: #cbd5e1;
+  line-height: 1.55;
+}
+
+.contact-sidebar-card .contact-info-item {
+  color: #cbd5e1;
+}
+
+.contact-sidebar-card .contact-info-item strong {
+  color: #ffffff;
+}
+
+.contact-sidebar-card .contact-info-item p {
+  color: #cbd5e1;
+}
+
+.contact-sidebar-card .contact-info-item a[data-company="phone"] {
+  color: #38bdf8 !important;
+}
+
+.contact-sidebar-card .contact-info-item a[data-company="email"] {
+  color: #ffffff !important;
+}
+
+.contact-sidebar-card .btn-ghost {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-sidebar-card .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: #38bdf8;
+  color: #ffffff;
 }
 
 .field-row {
