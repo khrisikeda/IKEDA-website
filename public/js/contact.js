@@ -1,41 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  // Helper to render AI RFQ Review Banner above existing contact form
-  function displayRfqReviewBanner(rfq) {
-    const existing = document.getElementById('rfq-review-banner');
-    if (existing) existing.remove();
-
-    const formEl = document.getElementById('contact-form');
-    if (!formEl) return;
-
-    const banner = document.createElement('div');
-    banner.id = 'rfq-review-banner';
-    banner.className = 'rfq-review-banner';
-
-    const itemCount = Array.isArray(rfq.items) ? rfq.items.length : 0;
-    const score = rfq.completeness && rfq.completeness.score ? rfq.completeness.score : null;
-
-    banner.innerHTML = `
-      <div class="rfq-banner-top">
-        <div class="rfq-banner-title">
-          <span class="rfq-banner-icon">📋</span>
-          <div>
-            <strong>Quotation Inquiry Pre-Filled by AI Assistant</strong>
-            <span class="rfq-banner-dept">${rfq.department || 'Department Equipment Package'}</span>
-          </div>
-        </div>
-        ${score ? `<span class="rfq-banner-score">${score}% Clinical Readiness</span>` : ''}
-      </div>
-      <p class="rfq-banner-instructions">
-        Your recommended equipment package (<strong>${itemCount} item${itemCount === 1 ? '' : 's'}</strong>) has been structured and entered into the inquiry field below. 
-        Please review your selections, adjust quantities if needed, enter your contact information, and click <strong>Send Quotation Request</strong> when ready to submit.
-      </p>
-      <div class="rfq-banner-actions">
-        <span class="rfq-banner-notice">✓ Form is fully editable • No inquiry is sent without your explicit click below</span>
-      </div>
-    `;
-
-    formEl.parentNode.insertBefore(banner, formEl);
-  }
+  // Ensure any legacy banner is removed if present
+  const existingBanner = document.getElementById('rfq-review-banner');
+  if (existingBanner) existingBanner.remove();
 
   // Globally accessible populate function for on-page AI chat integration
   window.populateContactFormWithRfq = function(rfq) {
@@ -63,8 +29,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         deptSelect.add(newOption);
       }
     }
-
-    displayRfqReviewBanner(rfq);
 
     const formEl = document.getElementById('contact-form');
     if (formEl) {
