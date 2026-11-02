@@ -135,6 +135,27 @@
         "subtitle": "General Operating Theatre Equipment"
       },
       {
+        "name": "Portable surgical light 2012L-1",
+        "image": "/images/products/portable-surgical-light-2012l-1.jpeg",
+        "specification": "1. Voltage: AC90~240V 50Hz~60Hz \n2. Bulb power: LED 3W*12 \n3. Color temperature :4000~5000K \n4. Bulb life: ≥ 50000h \n5. Working distance: 700mm \n6. Center illumination: ≥45000 Lux \n(Note: linearly adjustable) \n7. Minimum spot diameter: \nφ80±10mm \n8. Substrate temperature: ≤55℃ \n9. Lamp holder diameter: 200mm \n10. Net weight: 7.5KG",
+        "features": [
+          "1. Voltage: AC90~240V 50Hz~60Hz",
+          "2. Bulb power: LED 3W*12",
+          "3. Color temperature :4000~5000K",
+          "4. Bulb life: ≥ 50000h",
+          "5. Working distance: 700mm",
+          "6. Center illumination: ≥45000 Lux",
+          "(Note: linearly adjustable)",
+          "7. Minimum spot diameter:",
+          "φ80±10mm",
+          "8. Substrate temperature: ≤55℃",
+          "9. Lamp holder diameter: 200mm",
+          "10. Net weight: 7.5KG"
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "General Operating Theatre Equipment"
+      },
+      {
         "name": "Portable surgical light (2012-5)",
         "image": "/images/products/portable-surgical-light-2012l-5.jpeg",
         "specification": "1.Voltage：AC90~240V 50~60Hz \n2.Lamp head diameter：≈300mm \n3.Product specification：LED 70W \n4.Working distance：700mm \n5.Product color temperature：\n5300±500K \n6.Center illuminance：≥50000Lux \n(three levels decreasing） \n7.G.W.：18.84KG",
@@ -1068,33 +1089,6 @@
         "subtitle": "Gastroenterology & GI Endoscopy"
       },
       {
-        "name": "CTG Machine Jumper",
-        "image": "/images/products/ctg-machine-jumper.jpeg",
-        "specification": "• \nDimensions: 307x 296x 10 \n• \nNet weight: 3.2 kgs \n• \nScreen size: TFT LCD Color \nscreen \n• \nUltrasonic working frequency: \n1.0 MHz ±5% \n• \nRecording paper: 152mm \nthermal paper \n• \nRecording paper speed: 1, 2, 3 \ncm/min \nFHR NIBP SPO2 TOCO TEMP MHR \nFM and Twin monitoring",
-        "features": [
-          "•",
-          "Dimensions: 307x 296x 10",
-          "•",
-          "Net weight: 3.2 kgs",
-          "•",
-          "Screen size: TFT LCD Color",
-          "screen",
-          "•",
-          "Ultrasonic working frequency:",
-          "1.0 MHz ±5%",
-          "•",
-          "Recording paper: 152mm",
-          "thermal paper",
-          "•",
-          "Recording paper speed: 1, 2, 3",
-          "cm/min",
-          "FHR NIBP SPO2 TOCO TEMP MHR",
-          "FM and Twin monitoring"
-        ],
-        "category": "Gynecology & Women's Health",
-        "subtitle": "Gynecology & Women's Health"
-      },
-      {
         "name": "CTG Machine F80",
         "image": "/images/products/ctg-machine-f80.jpeg",
         "specification": "12\" TFT color screen, 0-70°\nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
@@ -1291,6 +1285,27 @@
               "Castor diameter of 200mm",
               "Equipped with 1",
               "I.V. pole, 1 mattress, urine hooks"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "General Operating Theatre Equipment"
+          },
+          {
+            "name": "Portable surgical light 2012L-1",
+            "image": "/images/products/portable-surgical-light-2012l-1.jpeg",
+            "specification": "1. Voltage: AC90~240V 50Hz~60Hz \n2. Bulb power: LED 3W*12 \n3. Color temperature :4000~5000K \n4. Bulb life: ≥ 50000h \n5. Working distance: 700mm \n6. Center illumination: ≥45000 Lux \n(Note: linearly adjustable) \n7. Minimum spot diameter: \nφ80±10mm \n8. Substrate temperature: ≤55℃ \n9. Lamp holder diameter: 200mm \n10. Net weight: 7.5KG",
+            "features": [
+              "1. Voltage: AC90~240V 50Hz~60Hz",
+              "2. Bulb power: LED 3W*12",
+              "3. Color temperature :4000~5000K",
+              "4. Bulb life: ≥ 50000h",
+              "5. Working distance: 700mm",
+              "6. Center illumination: ≥45000 Lux",
+              "(Note: linearly adjustable)",
+              "7. Minimum spot diameter:",
+              "φ80±10mm",
+              "8. Substrate temperature: ≤55℃",
+              "9. Lamp holder diameter: 200mm",
+              "10. Net weight: 7.5KG"
             ],
             "category": "Operating Theatre",
             "subtitle": "General Operating Theatre Equipment"
@@ -2628,33 +2643,6 @@
         "description": "Specialized gynecological examination, operative hysteroscopy towers, and digital multi-parameter fetal maternal CTG monitoring systems.",
         "items": [
           {
-            "name": "CTG Machine Jumper",
-            "image": "/images/products/ctg-machine-jumper.jpeg",
-            "specification": "• \nDimensions: 307x 296x 10 \n• \nNet weight: 3.2 kgs \n• \nScreen size: TFT LCD Color \nscreen \n• \nUltrasonic working frequency: \n1.0 MHz ±5% \n• \nRecording paper: 152mm \nthermal paper \n• \nRecording paper speed: 1, 2, 3 \ncm/min \nFHR NIBP SPO2 TOCO TEMP MHR \nFM and Twin monitoring",
-            "features": [
-              "•",
-              "Dimensions: 307x 296x 10",
-              "•",
-              "Net weight: 3.2 kgs",
-              "•",
-              "Screen size: TFT LCD Color",
-              "screen",
-              "•",
-              "Ultrasonic working frequency:",
-              "1.0 MHz ±5%",
-              "•",
-              "Recording paper: 152mm",
-              "thermal paper",
-              "•",
-              "Recording paper speed: 1, 2, 3",
-              "cm/min",
-              "FHR NIBP SPO2 TOCO TEMP MHR",
-              "FM and Twin monitoring"
-            ],
-            "category": "Gynecology & Women's Health",
-            "subtitle": "Gynecology & Women's Health"
-          },
-          {
             "name": "CTG Machine F80",
             "image": "/images/products/ctg-machine-f80.jpeg",
             "specification": "12\" TFT color screen, 0-70°\nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
@@ -2872,32 +2860,6 @@
     "description": "Comprehensive gynecological endoscopy suites, advanced digital colposcopy, diagnostic and operative hysteroscopy, intrauterine tissue morcellation, uterine manipulation, and precision laparoscopic instruments.",
     "equipmentHighlights": [
       {
-        "name": "CTG Machine Jumper",
-        "image": "/images/products/ctg-machine-jumper.jpeg",
-        "specification": "• \nDimensions: 307x 296x 10 \n• \nNet weight: 3.2 kgs \n• \nScreen size: TFT LCD Color \nscreen \n• \nUltrasonic working frequency: \n1.0 MHz ±5% \n• \nRecording paper: 152mm \nthermal paper \n• \nRecording paper speed: 1, 2, 3 \ncm/min \nFHR NIBP SPO2 TOCO TEMP MHR \nFM and Twin monitoring",
-        "features": [
-          "•",
-          "Dimensions: 307x 296x 10",
-          "•",
-          "Net weight: 3.2 kgs",
-          "•",
-          "Screen size: TFT LCD Color",
-          "screen",
-          "•",
-          "Ultrasonic working frequency:",
-          "1.0 MHz ±5%",
-          "•",
-          "Recording paper: 152mm",
-          "thermal paper",
-          "•",
-          "Recording paper speed: 1, 2, 3",
-          "cm/min",
-          "FHR NIBP SPO2 TOCO TEMP MHR",
-          "FM and Twin monitoring"
-        ],
-        "category": "Maternity & Obstetrics"
-      },
-      {
         "name": "CTG Machine F80",
         "image": "/images/products/ctg-machine-f80.jpeg",
         "specification": "12\" TFT color screen, 0-70°\nfoldable \n12 Crystal IPX1 waterproof Probe \nBuilt-in large capability \nrechargeable lithium-ion battery \nBuilt-in Z-fold paper thermal \nprinter with adjustable tracing \nspeed \nBuilt-in CTG analysis system \nMultiple display interfaces can be \neasily switched \nTWIN monitoring function & \nclinical event mark function \nCTG data storage & review for \n120h \nSupport connecting to central \nmonitoring system",
@@ -3078,16 +3040,32 @@
       },
       {
         "name": "Emergency ventilator",
-        "image": "/images/products/ventilator.jpeg",
-        "specification": "",
-        "features": [],
+        "image": "/images/products/emergency-ventilator.jpeg",
+        "specification": "Compact portable emergency & transport mechanical ventilator for ambulances, ER resuscitation, and inter-hospital ICU transfer.\nVentilation modes: VCV, PCV, SIMV, CPAP, Manual / CPR mode\nTidal volume: 50 – 2000 mL (Adult & Pediatric capable)\nRespiratory rate: 4 – 99 bpm\nFiO2 concentration: 40% – 100% adjustable\nBattery: Internal rechargeable lithium battery providing ≥ 6 hours continuous operation",
+        "features": [
+          "Compact portable emergency & transport mechanical ventilator for ambulances, ER resuscitation, and inter-hospital ICU transfer.",
+          "Ventilation modes: VCV, PCV, SIMV, CPAP, Manual / CPR mode",
+          "Tidal volume: 50 – 2000 mL (Adult & Pediatric capable)",
+          "Respiratory rate: 4 – 99 bpm",
+          "FiO2 concentration: 40% – 100% adjustable",
+          "Battery: Internal rechargeable lithium battery providing ≥ 6 hours continuous operation"
+        ],
         "category": "Intensive Care Unit (ICU)"
       },
       {
-        "name": "Bronchoscop e",
-        "image": null,
-        "specification": "",
-        "features": [],
+        "name": "Bronchoscope",
+        "image": "/images/products/bronchoscope.jpeg",
+        "specification": "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.\nInsertion tube outer diameter: 5.2mm / 5.8mm\nWorking channel diameter: 2.2mm / 2.8mm\nWorking length: 600mm\nField of view: 120° wide-angle\nDepth of field: 3–50mm\nAngulation range: Up 180°, Down 130°\nDisplay: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording",
+        "features": [
+          "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.",
+          "Insertion tube outer diameter: 5.2mm / 5.8mm",
+          "Working channel diameter: 2.2mm / 2.8mm",
+          "Working length: 600mm",
+          "Field of view: 120° wide-angle",
+          "Depth of field: 3–50mm",
+          "Angulation range: Up 180°, Down 130°",
+          "Display: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording"
+        ],
         "category": "Intensive Care Unit (ICU)"
       },
       {
@@ -3124,6 +3102,150 @@
         "image": "/images/products/vein-finder.jpeg",
         "specification": "",
         "features": [],
+        "category": "Intensive Care Unit (ICU)"
+      },
+      {
+        "name": "Syringe pump MS51EC",
+        "image": "/images/products/syringe-pump-ms51ec.jpeg",
+        "specification": "Syringe Compatibility: Supports \nstandard syringe sizes from 2 ml to \n60 ml (including 5 ml, 10 ml, 20 ml, \n30 ml, and 50/60 ml).  \nFlow Rate Range: Approximately \n0.1 ml/h to 1200 ml/h (depending \non the syringe size).  \nInfusion Accuracy: ± 2% to ± 3% \nafter calibration.  \nDisplay & Control: Color \ntouchscreen LCD combined with \npush-button operation.  \nInfusion Modes: Includes Rate \nMode, Time Mode, Volume \nControl (VTBI up to 9999.9 ml), \nWeight Mode, and Drug Library \nsupport.  \nSafety Alarms: Visual and acoustic \nalarms for occlusion, air-in-line, \nend-of-infusion, syringe \nmisplacement, and low battery.  \nPower & Battery: Operates on AC \n100–240V (50/60 Hz) with a built-\nin rechargeable backup battery \n(providing around 6 hours of \noperation depending on usage).  \nConnectivity: Optional wireless \nWi-Fi networking for integration \nwith hospital information systems \n(HIS) or nurse stations.  \nPhysical Dimensions: Compact \ndesign measuring roughly 27.8 × \n14.5 × 10.6 cm and weighing about \n1.5 kg - 2 kg.",
+        "features": [
+          "Syringe Compatibility: Supports",
+          "standard syringe sizes from 2 ml to",
+          "60 ml (including 5 ml, 10 ml, 20 ml,",
+          "30 ml, and 50/60 ml).",
+          "Flow Rate Range: Approximately",
+          "0.1 ml/h to 1200 ml/h (depending",
+          "on the syringe size).",
+          "Infusion Accuracy: ± 2% to ± 3%",
+          "after calibration.",
+          "Display & Control: Color",
+          "touchscreen LCD combined with",
+          "push-button operation.",
+          "Infusion Modes: Includes Rate",
+          "Mode, Time Mode, Volume",
+          "Control (VTBI up to 9999.9 ml),",
+          "Weight Mode, and Drug Library"
+        ],
+        "category": "Intensive Care Unit (ICU)"
+      },
+      {
+        "name": "Syringe pump Graseby2100",
+        "image": "/images/products/syringe-pump-graseby2100.jpeg",
+        "specification": "Infusion Rate Range: 0.1 mL/h to \n1200 mL/h (depending on syringe \nsize)  \nBody Weight Mode: Automatically \ncalculates infusion rates using \nmass units (mcg/kg/min or \nmg/kg/h; patient weight range \n0.1–300 kg)  \nSyringe Compatibility: Works with \nstandard brands like BD Plastipak, \nTerumo, Fresenius, B Braun, and \nothers (20 mL, 30 mL, and 50 mL \nsizes)  \nOcclusion Pressure: Three \nadjustable levels (Low: 300 mmHg, \nMedium: 500 mmHg, High: 800 \nmmHg) with post-occlusion bolus \nreduction\nProgramming: Simple 4-step \nprogramming sequence with on-\nscreen syringe loading guidance  \nPower Supply: AC mains (110–\n120V or 220–230V) with a built-in \nrechargeable Ni-MH battery \nproviding roughly 4 hours of \noperation at 5 mL/h  \nDimensions & Weight: \nApproximately 307 mm × 133 mm \n× 128 mm; weight is about 2.1 kg",
+        "features": [
+          "Infusion Rate Range: 0.1 mL/h to",
+          "1200 mL/h (depending on syringe",
+          "size)",
+          "Body Weight Mode: Automatically",
+          "calculates infusion rates using",
+          "mass units (mcg/kg/min or",
+          "mg/kg/h; patient weight range",
+          "0.1–300 kg)",
+          "Syringe Compatibility: Works with",
+          "standard brands like BD Plastipak,",
+          "Terumo, Fresenius, B Braun, and",
+          "others (20 mL, 30 mL, and 50 mL",
+          "sizes)",
+          "Occlusion Pressure: Three",
+          "adjustable levels (Low: 300 mmHg,",
+          "Medium: 500 mmHg, High: 800"
+        ],
+        "category": "Intensive Care Unit (ICU)"
+      },
+      {
+        "name": "Syringe pump MS37plus",
+        "image": "/images/products/syringe-pump-ms37plus.jpeg",
+        "specification": "Display: HD Large color touch \nscreen (e.g., 4.3-inch IPS \ntouchscreen)  \nCompatible Syringe Sizes: \nAutomatically identifies and \nsupports 2/3 mL, 5 mL, 10 mL, 20 \nmL, 30 mL, and 50/60 mL  \nInfusion Flow Rate Range: \nContinuous adjustment typically \nfrom 0.01 mL/h up to 2100 mL/h \n(or up to 3100 mL/h depending on \nconfiguration)  \nInfusion Volume Range (VTBI): \n0.01 to 9999.99 mL (0.01 mL \nincrements)  \nAccuracy: Maintained within ±2% \nfor infusion flow rate and volume \nunder recommended conditions  \nOperational Modes: \nContinuous infusion \nPCA (Patient-Controlled Analgesia) \nsupport \nTCI (Target-Controlled Infusion) \noperational modes \nPeriodic/timed infusion",
+        "features": [
+          "Display: HD Large color touch",
+          "screen (e.g., 4.3-inch IPS",
+          "touchscreen)",
+          "Compatible Syringe Sizes:",
+          "Automatically identifies and",
+          "supports 2/3 mL, 5 mL, 10 mL, 20",
+          "mL, 30 mL, and 50/60 mL",
+          "Infusion Flow Rate Range:",
+          "Continuous adjustment typically",
+          "from 0.01 mL/h up to 2100 mL/h",
+          "(or up to 3100 mL/h depending on",
+          "configuration)",
+          "Infusion Volume Range (VTBI):",
+          "0.01 to 9999.99 mL (0.01 mL",
+          "increments)",
+          "Accuracy: Maintained within ±2%"
+        ],
+        "category": "Intensive Care Unit (ICU)"
+      },
+      {
+        "name": "Infusion pump MI 23",
+        "image": "/images/products/infusion-pump-mi-23.jpeg",
+        "specification": "Flow Rate Range: 0.01 to 1800 \nml/h (with ±3% to ±5% accuracy \ndepending on the exact \nconfiguration)  \nVolume Infused (VTBI): 0.01 to \n9999.99 ml  \nKVO (Keep Vein Open) Rate: \nVariable (0.01 to 3 ml/h)  \nOcclusion Pressure Levels: \nAdjustable (e.g., High and Low \nlevels)  \nPower Supply: 100–240V AC \nadapter (15V DC output) and a \nrechargeable internal Lithium \nbattery (lasting over 6 to 7 hours \nof continuous operation)  \nPhysical Dimensions & Weight: \nApproximately 1.5 kg, compact\nbuild (e.g., ~132 x 165 mm or 131 x \n95 x 168 mm) with a pole-mount \nbracket  \nSafety & Alarms: Equipped with \nultrasonic air-in-line detection, \nupstream/downstream occlusion \nsensors, smart occlusion pressure \nrelease, and high/low priority \nsound and light alerts (for door \nopen, air-in-line, low battery, and \ncompletion)  \nClassification: Class II, Type CF, \nIPX2 (or IP22) water/dust \nresistance rating \nConnectivity: Features like Wi-Fi \ndata transfer or integration \nsupport depending on the specific \nmodel generation",
+        "features": [
+          "Flow Rate Range: 0.01 to 1800",
+          "ml/h (with ±3% to ±5% accuracy",
+          "depending on the exact",
+          "configuration)",
+          "Volume Infused (VTBI): 0.01 to",
+          "9999.99 ml",
+          "KVO (Keep Vein Open) Rate:",
+          "Variable (0.01 to 3 ml/h)",
+          "Occlusion Pressure Levels:",
+          "Adjustable (e.g., High and Low",
+          "levels)",
+          "Power Supply: 100–240V AC",
+          "adapter (15V DC output) and a",
+          "rechargeable internal Lithium",
+          "battery (lasting over 6 to 7 hours",
+          "of continuous operation)"
+        ],
+        "category": "Intensive Care Unit (ICU)"
+      },
+      {
+        "name": "Infusion pump Graseby1200",
+        "image": "/images/products/infusion-pump-graseby1200.jpeg",
+        "specification": "Infusion Rate Range: 1 to 1200 \nmL/h  \nInfusion Accuracy: ±5% \nCompatibility: Supports 9 different \ndisposable infusion set brands \n(with pre-calibrated options for \nbrands like B. Braun and JMS).  \nProgramming Modes: Direct rate \ncalculation or volume/time \ncalculation.  \nSafety & Alarms: Features post-\nocclusion bolus reduction, an \nultrasonic air sensor, anti-free-flow \nmechanisms, and alarms for \nlow/depleted battery, tubing \nocclusion, and open door. \nPower Supply: AC power (110–\n230V) and a built-in rechargeable \nLithium-Ion / Lithium Iron \nPhosphate battery (providing over \n5.5 hours of operation at lower \nflow rates). \nPhysical Dimensions: \nApproximately 282 mm x 170 mm \nx 120 mm  \nWeight: 2 kg",
+        "features": [
+          "Infusion Rate Range: 1 to 1200",
+          "mL/h",
+          "Infusion Accuracy: ±5%",
+          "Compatibility: Supports 9 different",
+          "disposable infusion set brands",
+          "(with pre-calibrated options for",
+          "brands like B. Braun and JMS).",
+          "Programming Modes: Direct rate",
+          "calculation or volume/time",
+          "calculation.",
+          "Safety & Alarms: Features post-",
+          "occlusion bolus reduction, an",
+          "ultrasonic air sensor, anti-free-flow",
+          "mechanisms, and alarms for",
+          "low/depleted battery, tubing",
+          "occlusion, and open door."
+        ],
+        "category": "Intensive Care Unit (ICU)"
+      },
+      {
+        "name": "Infusion pump MI 27plus",
+        "image": "/images/products/infusion-pump-mi-27plus.jpeg",
+        "specification": "Volume infused: 0.01-9999.99mL, \nstep by 0.01mL \nFlow rate: 0.01-2000mL/h, step by \n0.01mL/h \nTime infused： \n00h00min~99h59min, step by 1 \nmin \nAccuracy： ±4.8% ±3% (MDK \nInfusion set) \nPurge / Bolus rate： \n1mL/h~2000mL/h; step by 1mL/h \nvolume 0.01~9999.99ml adjustable \nInfusion Mode： RVT, Dose, \nWeight, Relay, Gradient, Drip, First \nDelivery, Drug, Loading Dose, \nMicro, Sequence, Intermittent, etc \nDERS： intelligent medication \nsystem \nInformation Transmission： \nSupport WIFI,HL7,Wired \nKVO flow rate： Adaptable or \nAutomatic \nAlarm： 18 kinds of alarms \nOcclusion pressure：10 \nlevels ,Maximum: 120 kPa±10kPa, \nMinimum: 30 kPa±20kPa \nBubble sensitivity： Minimum \ndetectable≥5μl Bubble, 8-speed \nadjustable",
+        "features": [
+          "Volume infused: 0.01-9999.99mL,",
+          "step by 0.01mL",
+          "Flow rate: 0.01-2000mL/h, step by",
+          "0.01mL/h",
+          "Time infused：",
+          "00h00min~99h59min, step by 1",
+          "min",
+          "Accuracy： ±4.8% ±3% (MDK",
+          "Infusion set)",
+          "Purge / Bolus rate：",
+          "1mL/h~2000mL/h; step by 1mL/h",
+          "volume 0.01~9999.99ml adjustable",
+          "Infusion Mode： RVT, Dose,",
+          "Weight, Relay, Gradient, Drip, First",
+          "Delivery, Drug, Loading Dose,",
+          "Micro, Sequence, Intermittent, etc"
+        ],
         "category": "Intensive Care Unit (ICU)"
       }
     ],
@@ -3306,6 +3428,30 @@
           "x",
           "(W)125x",
           "(H)250mm"
+        ],
+        "category": "Ophthalmology & Eye Care"
+      },
+      {
+        "name": "A/B Ultrasound",
+        "image": "/images/products/ab-ultrasound-ophthalmology.jpeg",
+        "specification": "A scan parameter \n• 10MHz with Fixation Red Light \n• Resolution: 0.01mm \n• Accuracy: ±0.1mm \n• Measuring Range: 15-40mm \n• Measuring parameters: ACD, \nLens, Vitreous body, AL \n• Measuring method: Contact and \nImmersion \n• Modes: Support Normal, \nCataract, Aphakic and Special eye\nmodel \n• IOL formulas: SRK-T, SRK-II, \nBINKHORST, HOLLADAY, HOFFER-Q, \nHAIGIS. \nSave up to 100 group of results \nB scan parameter \n• 10MHz probe, 10 frames/sec \n• Scanning Angle: 53° \n• Gain: 0-120dB adjustable, steps \nmanually adjustable TGC \n• Distance, circumference, area, \nvolume and angle measurement \n• Pseudo-color: 8 kinds \n• Cine Loop: 128 frames, \nmeasurement available \n• Post processing: 8 kinds",
+        "features": [
+          "A scan parameter",
+          "• 10MHz with Fixation Red Light",
+          "• Resolution: 0.01mm",
+          "• Accuracy: ±0.1mm",
+          "• Measuring Range: 15-40mm",
+          "• Measuring parameters: ACD,",
+          "Lens, Vitreous body, AL",
+          "• Measuring method: Contact and",
+          "Immersion",
+          "• Modes: Support Normal,",
+          "Cataract, Aphakic and Special eye",
+          "model",
+          "• IOL formulas: SRK-T, SRK-II,",
+          "BINKHORST, HOLLADAY, HOFFER-Q,",
+          "HAIGIS.",
+          "Save up to 100 group of results"
         ],
         "category": "Ophthalmology & Eye Care"
       },
@@ -3591,9 +3737,16 @@
       },
       {
         "name": "Optical Biometer",
-        "image": null,
-        "specification": "",
-        "features": [],
+        "image": "/images/products/optical-biometer.jpeg",
+        "specification": "Non-contact ophthalmic optical biometer for high-precision axial length, corneal curvature, anterior chamber depth (ACD), lens thickness (LT), and white-to-white (WTW) measurement.\nAxial length range: 14.0 – 38.0 mm (Resolution: 0.01 mm)\nCorneal curvature radius: 5.0 – 13.0 mm\nAnterior chamber depth: 1.5 – 6.5 mm\nBuilt-in IOL calculation formulas: SRK/T, Haigis, Hoffer Q, Holladay 1, Barrett Universal II\nDisplay: 10.1-inch multi-touch color screen with auto-tracking and chin-rest motorized alignment",
+        "features": [
+          "Non-contact ophthalmic optical biometer for high-precision axial length, corneal curvature, anterior chamber depth (ACD), lens thickness (LT), and white-to-white (WTW) measurement.",
+          "Axial length range: 14.0 – 38.0 mm (Resolution: 0.01 mm)",
+          "Corneal curvature radius: 5.0 – 13.0 mm",
+          "Anterior chamber depth: 1.5 – 6.5 mm",
+          "Built-in IOL calculation formulas: SRK/T, Haigis, Hoffer Q, Holladay 1, Barrett Universal II",
+          "Display: 10.1-inch multi-touch color screen with auto-tracking and chin-rest motorized alignment"
+        ],
         "category": "Ophthalmology & Eye Care"
       },
       {
@@ -5249,16 +5402,32 @@
       },
       {
         "name": "Emergency ventilator",
-        "image": "/images/products/ventilator.jpeg",
-        "specification": "",
-        "features": [],
+        "image": "/images/products/emergency-ventilator.jpeg",
+        "specification": "Compact portable emergency & transport mechanical ventilator for ambulances, ER resuscitation, and inter-hospital ICU transfer.\nVentilation modes: VCV, PCV, SIMV, CPAP, Manual / CPR mode\nTidal volume: 50 – 2000 mL (Adult & Pediatric capable)\nRespiratory rate: 4 – 99 bpm\nFiO2 concentration: 40% – 100% adjustable\nBattery: Internal rechargeable lithium battery providing ≥ 6 hours continuous operation",
+        "features": [
+          "Compact portable emergency & transport mechanical ventilator for ambulances, ER resuscitation, and inter-hospital ICU transfer.",
+          "Ventilation modes: VCV, PCV, SIMV, CPAP, Manual / CPR mode",
+          "Tidal volume: 50 – 2000 mL (Adult & Pediatric capable)",
+          "Respiratory rate: 4 – 99 bpm",
+          "FiO2 concentration: 40% – 100% adjustable",
+          "Battery: Internal rechargeable lithium battery providing ≥ 6 hours continuous operation"
+        ],
         "category": "Emergency & Casualty Care"
       },
       {
-        "name": "Bronchoscop e",
-        "image": null,
-        "specification": "",
-        "features": [],
+        "name": "Bronchoscope",
+        "image": "/images/products/bronchoscope.jpeg",
+        "specification": "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.\nInsertion tube outer diameter: 5.2mm / 5.8mm\nWorking channel diameter: 2.2mm / 2.8mm\nWorking length: 600mm\nField of view: 120° wide-angle\nDepth of field: 3–50mm\nAngulation range: Up 180°, Down 130°\nDisplay: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording",
+        "features": [
+          "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.",
+          "Insertion tube outer diameter: 5.2mm / 5.8mm",
+          "Working channel diameter: 2.2mm / 2.8mm",
+          "Working length: 600mm",
+          "Field of view: 120° wide-angle",
+          "Depth of field: 3–50mm",
+          "Angulation range: Up 180°, Down 130°",
+          "Display: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording"
+        ],
         "category": "Emergency & Casualty Care"
       },
       {
@@ -5295,6 +5464,150 @@
         "image": "/images/products/vein-finder.jpeg",
         "specification": "",
         "features": [],
+        "category": "Emergency & Casualty Care"
+      },
+      {
+        "name": "Syringe pump MS51EC",
+        "image": "/images/products/syringe-pump-ms51ec.jpeg",
+        "specification": "Syringe Compatibility: Supports \nstandard syringe sizes from 2 ml to \n60 ml (including 5 ml, 10 ml, 20 ml, \n30 ml, and 50/60 ml).  \nFlow Rate Range: Approximately \n0.1 ml/h to 1200 ml/h (depending \non the syringe size).  \nInfusion Accuracy: ± 2% to ± 3% \nafter calibration.  \nDisplay & Control: Color \ntouchscreen LCD combined with \npush-button operation.  \nInfusion Modes: Includes Rate \nMode, Time Mode, Volume \nControl (VTBI up to 9999.9 ml), \nWeight Mode, and Drug Library \nsupport.  \nSafety Alarms: Visual and acoustic \nalarms for occlusion, air-in-line, \nend-of-infusion, syringe \nmisplacement, and low battery.  \nPower & Battery: Operates on AC \n100–240V (50/60 Hz) with a built-\nin rechargeable backup battery \n(providing around 6 hours of \noperation depending on usage).  \nConnectivity: Optional wireless \nWi-Fi networking for integration \nwith hospital information systems \n(HIS) or nurse stations.  \nPhysical Dimensions: Compact \ndesign measuring roughly 27.8 × \n14.5 × 10.6 cm and weighing about \n1.5 kg - 2 kg.",
+        "features": [
+          "Syringe Compatibility: Supports",
+          "standard syringe sizes from 2 ml to",
+          "60 ml (including 5 ml, 10 ml, 20 ml,",
+          "30 ml, and 50/60 ml).",
+          "Flow Rate Range: Approximately",
+          "0.1 ml/h to 1200 ml/h (depending",
+          "on the syringe size).",
+          "Infusion Accuracy: ± 2% to ± 3%",
+          "after calibration.",
+          "Display & Control: Color",
+          "touchscreen LCD combined with",
+          "push-button operation.",
+          "Infusion Modes: Includes Rate",
+          "Mode, Time Mode, Volume",
+          "Control (VTBI up to 9999.9 ml),",
+          "Weight Mode, and Drug Library"
+        ],
+        "category": "Emergency & Casualty Care"
+      },
+      {
+        "name": "Syringe pump Graseby2100",
+        "image": "/images/products/syringe-pump-graseby2100.jpeg",
+        "specification": "Infusion Rate Range: 0.1 mL/h to \n1200 mL/h (depending on syringe \nsize)  \nBody Weight Mode: Automatically \ncalculates infusion rates using \nmass units (mcg/kg/min or \nmg/kg/h; patient weight range \n0.1–300 kg)  \nSyringe Compatibility: Works with \nstandard brands like BD Plastipak, \nTerumo, Fresenius, B Braun, and \nothers (20 mL, 30 mL, and 50 mL \nsizes)  \nOcclusion Pressure: Three \nadjustable levels (Low: 300 mmHg, \nMedium: 500 mmHg, High: 800 \nmmHg) with post-occlusion bolus \nreduction\nProgramming: Simple 4-step \nprogramming sequence with on-\nscreen syringe loading guidance  \nPower Supply: AC mains (110–\n120V or 220–230V) with a built-in \nrechargeable Ni-MH battery \nproviding roughly 4 hours of \noperation at 5 mL/h  \nDimensions & Weight: \nApproximately 307 mm × 133 mm \n× 128 mm; weight is about 2.1 kg",
+        "features": [
+          "Infusion Rate Range: 0.1 mL/h to",
+          "1200 mL/h (depending on syringe",
+          "size)",
+          "Body Weight Mode: Automatically",
+          "calculates infusion rates using",
+          "mass units (mcg/kg/min or",
+          "mg/kg/h; patient weight range",
+          "0.1–300 kg)",
+          "Syringe Compatibility: Works with",
+          "standard brands like BD Plastipak,",
+          "Terumo, Fresenius, B Braun, and",
+          "others (20 mL, 30 mL, and 50 mL",
+          "sizes)",
+          "Occlusion Pressure: Three",
+          "adjustable levels (Low: 300 mmHg,",
+          "Medium: 500 mmHg, High: 800"
+        ],
+        "category": "Emergency & Casualty Care"
+      },
+      {
+        "name": "Syringe pump MS37plus",
+        "image": "/images/products/syringe-pump-ms37plus.jpeg",
+        "specification": "Display: HD Large color touch \nscreen (e.g., 4.3-inch IPS \ntouchscreen)  \nCompatible Syringe Sizes: \nAutomatically identifies and \nsupports 2/3 mL, 5 mL, 10 mL, 20 \nmL, 30 mL, and 50/60 mL  \nInfusion Flow Rate Range: \nContinuous adjustment typically \nfrom 0.01 mL/h up to 2100 mL/h \n(or up to 3100 mL/h depending on \nconfiguration)  \nInfusion Volume Range (VTBI): \n0.01 to 9999.99 mL (0.01 mL \nincrements)  \nAccuracy: Maintained within ±2% \nfor infusion flow rate and volume \nunder recommended conditions  \nOperational Modes: \nContinuous infusion \nPCA (Patient-Controlled Analgesia) \nsupport \nTCI (Target-Controlled Infusion) \noperational modes \nPeriodic/timed infusion",
+        "features": [
+          "Display: HD Large color touch",
+          "screen (e.g., 4.3-inch IPS",
+          "touchscreen)",
+          "Compatible Syringe Sizes:",
+          "Automatically identifies and",
+          "supports 2/3 mL, 5 mL, 10 mL, 20",
+          "mL, 30 mL, and 50/60 mL",
+          "Infusion Flow Rate Range:",
+          "Continuous adjustment typically",
+          "from 0.01 mL/h up to 2100 mL/h",
+          "(or up to 3100 mL/h depending on",
+          "configuration)",
+          "Infusion Volume Range (VTBI):",
+          "0.01 to 9999.99 mL (0.01 mL",
+          "increments)",
+          "Accuracy: Maintained within ±2%"
+        ],
+        "category": "Emergency & Casualty Care"
+      },
+      {
+        "name": "Infusion pump MI 23",
+        "image": "/images/products/infusion-pump-mi-23.jpeg",
+        "specification": "Flow Rate Range: 0.01 to 1800 \nml/h (with ±3% to ±5% accuracy \ndepending on the exact \nconfiguration)  \nVolume Infused (VTBI): 0.01 to \n9999.99 ml  \nKVO (Keep Vein Open) Rate: \nVariable (0.01 to 3 ml/h)  \nOcclusion Pressure Levels: \nAdjustable (e.g., High and Low \nlevels)  \nPower Supply: 100–240V AC \nadapter (15V DC output) and a \nrechargeable internal Lithium \nbattery (lasting over 6 to 7 hours \nof continuous operation)  \nPhysical Dimensions & Weight: \nApproximately 1.5 kg, compact\nbuild (e.g., ~132 x 165 mm or 131 x \n95 x 168 mm) with a pole-mount \nbracket  \nSafety & Alarms: Equipped with \nultrasonic air-in-line detection, \nupstream/downstream occlusion \nsensors, smart occlusion pressure \nrelease, and high/low priority \nsound and light alerts (for door \nopen, air-in-line, low battery, and \ncompletion)  \nClassification: Class II, Type CF, \nIPX2 (or IP22) water/dust \nresistance rating \nConnectivity: Features like Wi-Fi \ndata transfer or integration \nsupport depending on the specific \nmodel generation",
+        "features": [
+          "Flow Rate Range: 0.01 to 1800",
+          "ml/h (with ±3% to ±5% accuracy",
+          "depending on the exact",
+          "configuration)",
+          "Volume Infused (VTBI): 0.01 to",
+          "9999.99 ml",
+          "KVO (Keep Vein Open) Rate:",
+          "Variable (0.01 to 3 ml/h)",
+          "Occlusion Pressure Levels:",
+          "Adjustable (e.g., High and Low",
+          "levels)",
+          "Power Supply: 100–240V AC",
+          "adapter (15V DC output) and a",
+          "rechargeable internal Lithium",
+          "battery (lasting over 6 to 7 hours",
+          "of continuous operation)"
+        ],
+        "category": "Emergency & Casualty Care"
+      },
+      {
+        "name": "Infusion pump Graseby1200",
+        "image": "/images/products/infusion-pump-graseby1200.jpeg",
+        "specification": "Infusion Rate Range: 1 to 1200 \nmL/h  \nInfusion Accuracy: ±5% \nCompatibility: Supports 9 different \ndisposable infusion set brands \n(with pre-calibrated options for \nbrands like B. Braun and JMS).  \nProgramming Modes: Direct rate \ncalculation or volume/time \ncalculation.  \nSafety & Alarms: Features post-\nocclusion bolus reduction, an \nultrasonic air sensor, anti-free-flow \nmechanisms, and alarms for \nlow/depleted battery, tubing \nocclusion, and open door. \nPower Supply: AC power (110–\n230V) and a built-in rechargeable \nLithium-Ion / Lithium Iron \nPhosphate battery (providing over \n5.5 hours of operation at lower \nflow rates). \nPhysical Dimensions: \nApproximately 282 mm x 170 mm \nx 120 mm  \nWeight: 2 kg",
+        "features": [
+          "Infusion Rate Range: 1 to 1200",
+          "mL/h",
+          "Infusion Accuracy: ±5%",
+          "Compatibility: Supports 9 different",
+          "disposable infusion set brands",
+          "(with pre-calibrated options for",
+          "brands like B. Braun and JMS).",
+          "Programming Modes: Direct rate",
+          "calculation or volume/time",
+          "calculation.",
+          "Safety & Alarms: Features post-",
+          "occlusion bolus reduction, an",
+          "ultrasonic air sensor, anti-free-flow",
+          "mechanisms, and alarms for",
+          "low/depleted battery, tubing",
+          "occlusion, and open door."
+        ],
+        "category": "Emergency & Casualty Care"
+      },
+      {
+        "name": "Infusion pump MI 27plus",
+        "image": "/images/products/infusion-pump-mi-27plus.jpeg",
+        "specification": "Volume infused: 0.01-9999.99mL, \nstep by 0.01mL \nFlow rate: 0.01-2000mL/h, step by \n0.01mL/h \nTime infused： \n00h00min~99h59min, step by 1 \nmin \nAccuracy： ±4.8% ±3% (MDK \nInfusion set) \nPurge / Bolus rate： \n1mL/h~2000mL/h; step by 1mL/h \nvolume 0.01~9999.99ml adjustable \nInfusion Mode： RVT, Dose, \nWeight, Relay, Gradient, Drip, First \nDelivery, Drug, Loading Dose, \nMicro, Sequence, Intermittent, etc \nDERS： intelligent medication \nsystem \nInformation Transmission： \nSupport WIFI,HL7,Wired \nKVO flow rate： Adaptable or \nAutomatic \nAlarm： 18 kinds of alarms \nOcclusion pressure：10 \nlevels ,Maximum: 120 kPa±10kPa, \nMinimum: 30 kPa±20kPa \nBubble sensitivity： Minimum \ndetectable≥5μl Bubble, 8-speed \nadjustable",
+        "features": [
+          "Volume infused: 0.01-9999.99mL,",
+          "step by 0.01mL",
+          "Flow rate: 0.01-2000mL/h, step by",
+          "0.01mL/h",
+          "Time infused：",
+          "00h00min~99h59min, step by 1",
+          "min",
+          "Accuracy： ±4.8% ±3% (MDK",
+          "Infusion set)",
+          "Purge / Bolus rate：",
+          "1mL/h~2000mL/h; step by 1mL/h",
+          "volume 0.01~9999.99ml adjustable",
+          "Infusion Mode： RVT, Dose,",
+          "Weight, Relay, Gradient, Drip, First",
+          "Delivery, Drug, Loading Dose,",
+          "Micro, Sequence, Intermittent, etc"
+        ],
         "category": "Emergency & Casualty Care"
       }
     ],
@@ -5719,8 +6032,31 @@
         "category": "Physiotherapy & Rehabilitation"
       },
       {
-        "name": "Infrared therapy light",
-        "image": "/images/products/infrared-therapy-light.jpeg",
+        "name": "Infrared therapy light YSHT-IIA",
+        "image": "/images/products/infrared-therapy-light-ysht-iia.jpeg",
+        "specification": "Power supply voltage: AC220V \n(50HZ) \nPower: 400W \nInfrared thermal radiation therapy \nlamp elevation angle: 60 ° (YSHT-I) \nAdjustable height of infrared \nthermal radiation therapy lamp: \n50-135cm (YSHT-II) \nInfrared thermal radiation therapy \nlamp head rotation angle: 360 ° \n(YSHT-II) \nTiming: 0-60 minutes (mechanical); \n0-95 minutes (electronic) \nInfrared peak wavelength: 6-10 μ \nm",
+        "features": [
+          "Power supply voltage: AC220V",
+          "(50HZ)",
+          "Power: 400W",
+          "Infrared thermal radiation therapy",
+          "lamp elevation angle: 60 ° (YSHT-I)",
+          "Adjustable height of infrared",
+          "thermal radiation therapy lamp:",
+          "50-135cm (YSHT-II)",
+          "Infrared thermal radiation therapy",
+          "lamp head rotation angle: 360 °",
+          "(YSHT-II)",
+          "Timing: 0-60 minutes (mechanical);",
+          "0-95 minutes (electronic)",
+          "Infrared peak wavelength: 6-10 μ",
+          "m"
+        ],
+        "category": "Physiotherapy & Rehabilitation"
+      },
+      {
+        "name": "Infrared therapy light YSHT-II",
+        "image": "/images/products/infrared-therapy-light-ysht-ii.jpeg",
         "specification": "Power supply voltage: AC220V \n(50HZ) \nPower: 400W \nInfrared thermal radiation therapy \nlamp elevation angle: 60 ° (YSHT-I) \nAdjustable height of infrared \nthermal radiation therapy lamp: \n50-135cm (YSHT-II) \nInfrared thermal radiation therapy \nlamp head rotation angle: 360 ° \n(YSHT-II) \nTiming: 0-60 minutes (mechanical); \n0-95 minutes (electronic) \nInfrared peak wavelength: 6-10 μ \nm",
         "features": [
           "Power supply voltage: AC220V",
@@ -6748,9 +7084,16 @@
       },
       {
         "name": "Holter ECG",
-        "image": "/images/products/12-channel-ecg-e70.jpeg",
-        "specification": "",
-        "features": [],
+        "image": "/images/products/holter-ecg.jpeg",
+        "specification": "24/48-hour 3-channel / 12-channel digital ambulatory Holter ECG recorder and analysis system.\nSampling rate: Up to 10,000 Hz with pacemaker pulse detection\nDisplay: OLED color screen for real-time ECG waveform preview and lead check\nStorage: Removable SD card / USB high-speed transfer\nProtection: IP27 waterproof and dustproof compact wearable casing\nSoftware: Comprehensive arrhythmia, ST-segment, HRV, and sleep apnea analysis workstation software",
+        "features": [
+          "24/48-hour 3-channel / 12-channel digital ambulatory Holter ECG recorder and analysis system.",
+          "Sampling rate: Up to 10,000 Hz with pacemaker pulse detection",
+          "Display: OLED color screen for real-time ECG waveform preview and lead check",
+          "Storage: Removable SD card / USB high-speed transfer",
+          "Protection: IP27 waterproof and dustproof compact wearable casing",
+          "Software: Comprehensive arrhythmia, ST-segment, HRV, and sleep apnea analysis workstation software"
+        ],
         "category": "General Hospital Materials"
       },
       {

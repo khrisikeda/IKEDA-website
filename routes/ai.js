@@ -1493,7 +1493,7 @@ function generateAIResponse(userQuery, context = {}) {
     return {
       reply: "I am the **IKEDA Clinical AI Assistant**, the dedicated digital advisor for **IKEDA ENDOSCOPY AFRICA Ltd** based in Kigali, Rwanda.\n\n" +
         "**Here is how I can assist you:**\n" +
-        "• **Equipment Consultation**: Provide technical parameters, clinical features, and optics details across our 16 hospital divisions.\n" +
+        "• **Equipment Consultation**: Provide technical parameters, clinical features, and optics details across every hospital department.\n" +
         "• **Smart Recommendations & Comparisons**: Guide you between configurations (such as 4K UHD vs Full HD towers, or motorized vs hydraulic tables) based on your hospital's procedure volume.\n" +
         "• **Official Quotations & Procurement**: Explain tender support, pricing procedures, and connect you with sales engineers for proforma invoices.\n" +
         "• **Biomedical & Showroom Access**: Guide you to our Masaka showroom (opposite IRCAD Africa), explain warranties, and arrange hands-on demonstrations.",
@@ -1527,7 +1527,7 @@ function generateAIResponse(userQuery, context = {}) {
   if (/\b(what\s*(do\s*you|does\s*ikeda)\s*(sell|supply|offer|have|provide)|what\s*are\s*your\s*products|product\s*list|all\s*products|what\s*equipment|catalog\s*overview|which\s*products)\b/i.test(q) ||
       /^(products|equipment|catalog|offerings)$/i.test(q)) {
     return {
-      reply: "**IKEDA ENDOSCOPY AFRICA** manufactures and distributes medical technologies across **16 comprehensive hospital divisions**:\n\n" +
+      reply: "**IKEDA ENDOSCOPY AFRICA** manufactures and distributes medical technologies across **every hospital department**:\n\n" +
         "1. **Minimally Invasive Surgery**: 4K UHD & 1080p Full HD Laparoscopy Towers, 4K ICG Fluorescence, Compact Foldable Systems, and Sapphire-lens Telescopes (0°/30°).\n" +
         "2. **Urology & Endourology**: Holmium & Thulium surgical lasers, rigid & flexible ureteroscopes, nephroscopes, PCNL sets, lithotripters, and double-J stents.\n" +
         "3. **VATS & Advanced Energy**: Video-assisted thoracic surgery, Harmonic ultrasonic scalpels, LigaSure bipolar vessel sealers, and plasma surgical ablation.\n" +
@@ -2012,7 +2012,7 @@ function generateAIResponse(userQuery, context = {}) {
   // 19. INTELLIGENT CLINICAL FALLBACK (No awkward robotic repetition)
   return {
     reply: `I understand your inquiry regarding **"${userQuery}"**.\n\n` +
-      `**IKEDA ENDOSCOPY AFRICA** specializes in medical technologies across 16 hospital divisions — notably **4K & HD Laparoscopic Towers, Endourology, VATS, ICU Ventilators, Infant Incubators, Surgical Tables, and C-Arm Radiology**.\n\n` +
+      `**IKEDA ENDOSCOPY AFRICA** specializes in medical technologies across every hospital department — notably **4K & HD Laparoscopic Towers, Endourology, VATS, ICU Ventilators, Infant Incubators, Surgical Tables, and C-Arm Radiology**.\n\n` +
       `Could you specify the clinical department, procedure, or equipment parameters you need? Alternatively, you can explore our complete catalog or connect directly with our Kigali engineering desk.`,
     actions: [
       { label: "Browse Product Catalog", url: "/products" },
