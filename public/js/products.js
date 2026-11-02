@@ -26,8 +26,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (lower.includes('maternal') || lower.includes('infant') || lower.includes('neonat')) {
       return 'Maternal & Infant';
     }
-    if (lower.includes('diagnostic')) {
-      return 'Diagnostics & Specialty';
+    if (lower.includes('radiology') || lower.includes('imaging') || lower.includes('diagnostic')) {
+      return 'Radiology & Diagnostic Imaging';
+    }
+    if (lower.includes('ophthalm') || lower.includes('eye')) {
+      return 'Ophthalmology & Eye Care';
+    }
+    if (lower.includes('dent') || lower.includes('oral')) {
+      return 'Dentistry & Oral Surgery';
+    }
+    if (lower.includes('ent') || lower.includes('ear') || lower.includes('throat') || lower.includes('otolaryng')) {
+      return 'ENT (Ear, Nose & Throat)';
+    }
+    if (lower.includes('physio') || lower.includes('rehab')) {
+      return 'Physiotherapy & Rehabilitation';
     }
     if (lower.includes('general') || lower.includes('material')) {
       return 'General Hospital Materials';

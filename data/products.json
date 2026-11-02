@@ -3137,7 +3137,7 @@
   {
     "slug": "ophthalmology",
     "name": "Ophthalmology & Eye Care",
-    "departmentGroup": "Diagnostics & Specialty",
+    "departmentGroup": "Ophthalmology & Eye Care",
     "featured": false,
     "tagline": "Optical Diagnostics & Microsurgery",
     "description": "Complete ophthalmic suites including surgical microscopes, digital slit lamps, visual field perimeters, automated lensmeters, tonometers, and motorized refraction chairs.",
@@ -3926,7 +3926,7 @@
   {
     "slug": "dentistry",
     "name": "Dentistry & Oral Surgery",
-    "departmentGroup": "Diagnostics & Specialty",
+    "departmentGroup": "Dentistry & Oral Surgery",
     "featured": false,
     "tagline": "Ergonomic Dental Suites",
     "description": "Complete dental treatment chairs, 3D CBCT & panoramic OPG systems, Class B autoclaves, intraoral X-rays, endo motors, and surgical implant workstations.",
@@ -4892,7 +4892,7 @@
   {
     "slug": "radiology",
     "name": "Radiology & Diagnostic Imaging",
-    "departmentGroup": "Diagnostics & Specialty",
+    "departmentGroup": "Radiology & Diagnostic Imaging",
     "featured": false,
     "tagline": "Fluoroscopy, X-Ray & Ultrasound",
     "description": "High-frequency mobile C-arm systems for operating theatres, digital radiography (DR) flat-panel suites, and multi-probe ultrasound.",
@@ -5306,7 +5306,7 @@
   {
     "slug": "ent",
     "name": "ENT (Ear, Nose & Throat)",
-    "departmentGroup": "Diagnostics & Specialty",
+    "departmentGroup": "ENT (Ear, Nose & Throat)",
     "featured": false,
     "tagline": "Endoscopic Otolaryngology",
     "description": "Comprehensive otolaryngology solutions including integrated ENT units, motorized treatment chairs, endoscopy video towers, electronic flexible laryngoscopes, diagnostic audiometers, tympanometers, portable otoscopes, ENT surgical shavers, coblator radiofrequency systems, and surgical headlights.",
@@ -5698,7 +5698,7 @@
   {
     "slug": "physiotherapy",
     "name": "Physiotherapy & Rehabilitation",
-    "departmentGroup": "Diagnostics & Specialty",
+    "departmentGroup": "Physiotherapy & Rehabilitation",
     "featured": false,
     "tagline": "Active Recovery & Physical Therapy",
     "description": "Complete rehabilitation suites featuring passive hand training systems, compression therapy, shockwave machines, medical treadmills, computerized traction beds, Bobath training beds, and electrotherapy.",
