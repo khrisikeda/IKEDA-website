@@ -81,10 +81,20 @@
     }
   }
 
+  let currentArticleId = null;
+
+  // Use the French version of an article when the site is in French
+  function localized(article) {
+    const lang = window.IKEDA_I18N ? window.IKEDA_I18N.lang : 'en';
+    return lang === 'fr' && article.fr ? { ...article, ...article.fr } : article;
+  }
+
   async function openArticle(articleId) {
     const articles = await getArticles();
-    const article = articles.find(a => a.id === articleId || a.slug === articleId);
-    if (!article) return;
+    const found = articles.find(a => a.id === articleId || a.slug === articleId);
+    if (!found) return;
+    const article = localized(found);
+    currentArticleId = articleId;
 
     createModal();
     const backdrop = document.getElementById('article-modal-backdrop');
@@ -132,6 +142,12 @@
     if (articleParam) {
       openArticle(articleParam);
     }
+  });
+
+  // Re-render an open article when the visitor switches language
+  window.addEventListener('ikeda:langchange', () => {
+    const backdrop = document.getElementById('article-modal-backdrop');
+    if (currentArticleId && backdrop && backdrop.classList.contains('active')) openArticle(currentArticleId);
   });
 
   window.openArticleModal = openArticle;

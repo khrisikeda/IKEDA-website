@@ -1,17 +1,86 @@
 /* ==========================================================================
-   IKEDA AI Clinical Assistant — Interactive Chat Widget
-   Floating popup with glassmorphism, typing indicators, quick-reply chips,
-   and action buttons. Connects to /api/ai/chat backend.
+   IKEDA Assistant — Interactive Chat Widget (English / Français)
+   Floating chat with product cards, department quotation builder and a
+   running "My inquiry" list that is compiled into a clear quotation request
+   for WhatsApp or the contact form. Connects to /api/ai/chat.
    ========================================================================== */
 
 (function () {
   'use strict';
 
+  const WHATSAPP_DEFAULT = '250795360359';
+  const STORE_KEY = 'ikeda_assistant_v4';
+
+  // ── UI text ────────────────────────────────────────────────────────────
+  const UI = {
+    en: {
+      open: 'Open IKEDA Assistant', title: 'IKEDA Assistant', status: 'Equipment advisor · EN / FR',
+      placeholder: 'Ask about equipment, departments, quotes…', send: 'Send message', close: 'Close',
+      myInquiry: 'My inquiry', viewSpecs: 'View specifications', openCatalog: 'Open in catalog',
+      add: '＋ Add to inquiry', added: '✓ In inquiry', bestChoice: '⭐ Best match: ', alt: 'Note: ',
+      inqTitle: 'Quotation request', inqBadge: 'Ready to send', inqEmpty: 'Your list is empty. Ask me about products, or add items from product cards.',
+      products: 'Products', questions: 'Your questions', yourDetails: 'Your details (optional)',
+      name: 'Name / title', facility: 'Hospital / clinic', location: 'City, country', preview: 'Message preview',
+      sendWa: 'Send on WhatsApp', fillForm: 'Fill inquiry form', copy: 'Copy', copied: 'Copied ✓', qty: 'Qty',
+      remove: 'Remove', decrease: 'Decrease quantity', increase: 'Increase quantity',
+      error: 'Sorry, something went wrong. Please try again or contact us on WhatsApp at +250 795 360 359.',
+      fallback: 'Sorry, I could not process that. Please try again.',
+      rfqAccept: 'Yes, add these to my inquiry', rfqDecline: 'No thanks',
+      rfqAdded: (n) => `Added ${n} items to your inquiry.`, rfqDeclined: 'No problem — you can review the list above anytime.',
+      rfqPrompt: (d) => `Would you like me to add this recommended list for your ${d} to your quotation request?`
+    },
+    fr: {
+      open: "Ouvrir l'assistant IKEDA", title: 'Assistant IKEDA', status: 'Conseiller équipements · FR / EN',
+      placeholder: 'Équipements, services, devis…', send: 'Envoyer', close: 'Fermer',
+      myInquiry: 'Ma demande', viewSpecs: 'Voir les caractéristiques', openCatalog: 'Voir dans le catalogue',
+      add: '＋ Ajouter à la demande', added: '✓ Dans la demande', bestChoice: '⭐ Meilleur choix : ', alt: 'Note : ',
+      inqTitle: 'Demande de devis', inqBadge: 'Prête à envoyer', inqEmpty: 'Votre liste est vide. Posez-moi vos questions sur les produits ou ajoutez des articles depuis les fiches.',
+      products: 'Produits', questions: 'Vos questions', yourDetails: 'Vos coordonnées (facultatif)',
+      name: 'Nom / fonction', facility: 'Hôpital / clinique', location: 'Ville, pays', preview: 'Aperçu du message',
+      sendWa: 'Envoyer sur WhatsApp', fillForm: 'Remplir le formulaire', copy: 'Copier', copied: 'Copié ✓', qty: 'Qté',
+      remove: 'Retirer', decrease: 'Diminuer la quantité', increase: 'Augmenter la quantité',
+      error: 'Désolé, une erreur est survenue. Réessayez ou contactez-nous sur WhatsApp au +250 795 360 359.',
+      fallback: "Désolé, je n'ai pas pu traiter votre message. Veuillez réessayer.",
+      rfqAccept: 'Oui, ajouter à ma demande', rfqDecline: 'Non merci',
+      rfqAdded: (n) => `${n} articles ajoutés à votre demande.`, rfqDeclined: 'Pas de souci — vous pouvez revoir la liste ci-dessus à tout moment.',
+      rfqPrompt: (d) => `Voulez-vous que j'ajoute cette liste recommandée pour « ${d} » à votre demande de devis ?`
+    }
+  };
+
+  // ── Persistent state (survives page changes within the visit) ─────────
+  function loadState() {
+    try {
+      const raw = sessionStorage.getItem(STORE_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch (e) { /* storage unavailable */ }
+    return null;
+  }
+
+  const saved = loadState() || {};
+  const browserLang = ((navigator.language || 'en') + '').toLowerCase().startsWith('fr') ? 'fr' : 'en';
+  const state = {
+    // The site's language switch (i18n.js) wins; otherwise the last chat language
+    lang: (window.IKEDA_I18N && window.IKEDA_I18N.lang) || saved.lang || browserLang,
+    inquiry: Array.isArray(saved.inquiry) ? saved.inquiry : [],   // [{ name, category, qty, source }]
+    notes: Array.isArray(saved.notes) ? saved.notes : [],         // client questions
+    details: saved.details || { name: '', facility: '', location: '' },
+    project: saved.project || '',
+    whatsapp: saved.whatsapp || WHATSAPP_DEFAULT
+  };
+
+  function saveState() {
+    try {
+      sessionStorage.setItem(STORE_KEY, JSON.stringify(state));
+    } catch (e) { /* storage unavailable */ }
+  }
+
+  const L = () => UI[state.lang] || UI.en;
+
   // ── Build DOM ──────────────────────────────────────────────────────────
   const widget = document.createElement('div');
   widget.id = 'ikeda-ai-widget';
   widget.innerHTML = `
-    <button id="ai-fab" aria-label="Open IKEDA AI Assistant" aria-expanded="false" aria-controls="ai-panel" title="Ask IKEDA for product help">
+    <button id="ai-fab" aria-expanded="false" aria-controls="ai-panel">
       <span class="ai-fab-icon" aria-hidden="true">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 2a7 7 0 0 1 7 7v1a7 7 0 0 1-14 0V9a7 7 0 0 1 7-7z"/>
@@ -25,7 +94,7 @@
       <span class="ai-fab-pulse"></span>
     </button>
 
-    <div id="ai-panel" class="ai-panel-hidden" role="dialog" aria-label="IKEDA AI Clinical Assistant" aria-modal="false" aria-hidden="true">
+    <div id="ai-panel" class="ai-panel-hidden" role="dialog" aria-modal="false" aria-hidden="true">
       <div class="ai-panel-header">
         <div class="ai-panel-header-left">
           <div class="ai-avatar">
@@ -37,27 +106,31 @@
             </svg>
           </div>
           <div>
-            <strong class="ai-panel-title">IKEDA AI Assistant</strong>
-            <span class="ai-panel-status"><span class="ai-status-dot"></span> Clinical Equipment Advisor</span>
+            <strong class="ai-panel-title" id="ai-title"></strong>
+            <span class="ai-panel-status"><span class="ai-status-dot"></span> <span id="ai-status"></span></span>
           </div>
         </div>
-        <button id="ai-close" aria-label="Close AI Assistant" title="Close">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
+        <div class="ai-header-actions">
+          <button type="button" id="ai-inq-chip" class="ai-inq-chip" hidden>
+            <span aria-hidden="true">📋</span> <span id="ai-inq-chip-label"></span> <span id="ai-inq-count" class="ai-inq-count">0</span>
+          </button>
+          <button id="ai-close" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
       </div>
 
-      <div id="ai-messages" class="ai-messages"></div>
+      <div id="ai-messages" class="ai-messages" aria-live="polite"></div>
 
       <form id="ai-form" class="ai-input-bar" autocomplete="off">
-        <input id="ai-input" type="text" placeholder="Ask about equipment, prices, specs…" aria-label="Type your question" maxlength="300" />
-        <button type="submit" id="ai-send" aria-label="Send message" title="Send">
+        <input id="ai-input" type="text" maxlength="400" />
+        <button type="submit" id="ai-send">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
       </form>
     </div>
   `;
 
-  // ── Inject into page ───────────────────────────────────────────────────
   document.body.appendChild(widget);
 
   const fab = document.getElementById('ai-fab');
@@ -67,20 +140,49 @@
   const form = document.getElementById('ai-form');
   const input = document.getElementById('ai-input');
   const sendBtn = document.getElementById('ai-send');
+  const inqChip = document.getElementById('ai-inq-chip');
 
   let isOpen = false;
   let isFirstOpen = true;
   let recentProducts = [];
-  let allRequestedProducts = [];
   let conversationHistory = [];
   let activeProcurementSession = null;
-  let consultationContext = {
-    active: false,
-    facilityType: '',
-    specialty: '',
-    tier: '',
-    items: []
-  };
+  let consultationContext = { active: false, facilityType: '', specialty: '', tier: '', items: [] };
+
+  function applyLanguage() {
+    const t = L();
+    fab.setAttribute('aria-label', t.open);
+    fab.title = t.open;
+    panel.setAttribute('aria-label', t.title);
+    document.getElementById('ai-title').textContent = t.title;
+    document.getElementById('ai-status').textContent = t.status;
+    document.getElementById('ai-inq-chip-label').textContent = t.myInquiry;
+    closeBtn.setAttribute('aria-label', t.close);
+    closeBtn.title = t.close;
+    input.placeholder = t.placeholder;
+    input.setAttribute('aria-label', t.placeholder);
+    sendBtn.setAttribute('aria-label', t.send);
+    sendBtn.title = t.send;
+  }
+
+  function updateInquiryChip() {
+    const count = state.inquiry.length + state.notes.length;
+    inqChip.hidden = count === 0;
+    document.getElementById('ai-inq-count').textContent = String(state.inquiry.length || count);
+  }
+
+  applyLanguage();
+  updateInquiryChip();
+
+  // Follow the site's EN / FR switch
+  window.addEventListener('ikeda:langchange', (e) => {
+    const next = e.detail && e.detail.lang;
+    if (!UI[next] || next === state.lang) return;
+    state.lang = next;
+    saveState();
+    applyLanguage();
+    syncProductButtons();
+  });
 
   // ── Toggle Panel ───────────────────────────────────────────────────────
   function openPanel() {
@@ -94,7 +196,7 @@
 
     if (isFirstOpen) {
       isFirstOpen = false;
-      sendToAI('');  // trigger welcome message
+      sendToAI(''); // welcome message
     }
   }
 
@@ -107,8 +209,9 @@
     panel.setAttribute('aria-hidden', 'true');
   }
 
-  fab.addEventListener('click', () => isOpen ? closePanel() : openPanel());
+  fab.addEventListener('click', () => (isOpen ? closePanel() : openPanel()));
   closeBtn.addEventListener('click', closePanel);
+  inqChip.addEventListener('click', () => renderInquiryCard());
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && isOpen) closePanel();
@@ -121,12 +224,18 @@
     });
   }
 
-  function formatInline(str) {
-    if (!str) return '';
-    return str
+  function escapeHtml(str) {
+    return String(str == null ? '' : str)
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function formatInline(str) {
+    if (!str) return '';
+    return escapeHtml(str)
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.+?)\*/g, '<em>$1</em>');
   }
@@ -148,13 +257,11 @@
           html += '<div class="ai-table-wrap"><table class="ai-table">';
           inTable = true;
         }
-        const cells = line.trim().split('|').slice(1, -1).map(c => c.trim());
-        if (cells.every(c => /^:?-+:?$/.test(c))) {
-          continue;
-        }
-        const isHeader = !html.includes('<tbody>') && (i === 0 || !lines[i-1].trim().startsWith('|') || /^:?-+:?$/.test((lines[i+1] || '').trim().split('|').slice(1, -1)[0]));
+        const cells = line.trim().split('|').slice(1, -1).map((c) => c.trim());
+        if (cells.every((c) => /^:?-+:?$/.test(c))) continue;
+        const isHeader = !html.includes('<tbody>') && (i === 0 || !lines[i - 1].trim().startsWith('|') || /^:?-+:?$/.test((lines[i + 1] || '').trim().split('|').slice(1, -1)[0]));
         html += '<tr>';
-        cells.forEach(cell => {
+        cells.forEach((cell) => {
           const formatted = formatInline(cell);
           html += isHeader ? `<th>${formatted}</th>` : `<td>${formatted}</td>`;
         });
@@ -185,19 +292,19 @@
       }
 
       // Horizontal Divider
-      if (/^---|\*\*\*|___$/.test(line.trim())) {
+      if (/^(---|\*\*\*|___)$/.test(line.trim())) {
         if (inList) { html += '</ul>'; inList = false; }
         html += '<hr class="ai-hr" />';
         continue;
       }
 
       // Bullet Lists
-      if (/^[•\-\*]\s+/.test(line.trim())) {
+      if (/^[•\-*]\s+/.test(line.trim())) {
         if (!inList) {
           html += '<ul class="ai-list">';
           inList = true;
         }
-        const itemContent = line.trim().replace(/^[•\-\*]\s+/, '');
+        const itemContent = line.trim().replace(/^[•\-*]\s+/, '');
         html += `<li>${formatInline(itemContent)}</li>`;
         continue;
       } else if (inList && line.trim() === '') {
@@ -205,7 +312,7 @@
         inList = false;
       }
 
-      // Normal text paragraphs
+      // Paragraphs
       if (line.trim()) {
         if (inList) { html += '</ul>'; inList = false; }
         html += `<p class="ai-p">${formatInline(line)}</p>`;
@@ -214,7 +321,6 @@
 
     if (inTable) html += '</table></div>';
     if (inList) html += '</ul>';
-
     return html;
   }
 
@@ -251,21 +357,23 @@
     if (el) el.remove();
   }
 
-
   function renderActions(actions) {
     if (!actions || !actions.length) return;
-
     const wrapper = document.createElement('div');
     wrapper.className = 'ai-actions';
 
-    actions.forEach(action => {
+    actions.forEach((action) => {
+      let url;
+      try {
+        url = new URL(action.url, window.location.origin);
+      } catch (e) {
+        return;
+      }
+      if (!['http:', 'https:', 'tel:'].includes(url.protocol)) return;
       const btn = document.createElement('a');
       btn.className = 'ai-action-btn';
       btn.textContent = action.label;
-      const url = new URL(action.url, window.location.origin);
-      if (!['http:', 'https:', 'tel:'].includes(url.protocol)) return;
       btn.href = action.url;
-
       if (action.url.startsWith('http') || action.url.startsWith('tel:')) {
         btn.target = '_blank';
         btn.rel = 'noopener noreferrer';
@@ -277,47 +385,361 @@
     scrollDown();
   }
 
+  function renderSuggestions(suggestions) {
+    if (!Array.isArray(suggestions) || !suggestions.length) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'ai-suggestions';
+    suggestions.forEach((text) => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'ai-suggestion-chip';
+      chip.textContent = text;
+      chip.addEventListener('click', () => {
+        wrapper.remove();
+        sendToAI(text);
+      });
+      wrapper.appendChild(chip);
+    });
+    messagesEl.appendChild(wrapper);
+    scrollDown();
+  }
+
+  // ── Inquiry list ───────────────────────────────────────────────────────
+  function inquiryKey(name) {
+    return String(name || '').trim().toLowerCase();
+  }
+
+  function isInInquiry(name) {
+    return state.inquiry.some((it) => inquiryKey(it.name) === inquiryKey(name));
+  }
+
+  function addToInquiry(item, source) {
+    if (!item || !item.name) return;
+    const existing = state.inquiry.find((it) => inquiryKey(it.name) === inquiryKey(item.name));
+    const qty = Math.max(1, parseInt(item.qty, 10) || 1);
+    if (existing) {
+      if (qty > existing.qty) existing.qty = qty;
+    } else {
+      state.inquiry.push({ name: item.name, category: item.category || '', qty, source: source || 'asked' });
+    }
+    saveState();
+    updateInquiryChip();
+  }
+
+  function removeFromInquiry(name) {
+    state.inquiry = state.inquiry.filter((it) => inquiryKey(it.name) !== inquiryKey(name));
+    saveState();
+    updateInquiryChip();
+  }
+
+  function addNote(text) {
+    const note = String(text || '').trim();
+    if (!note) return;
+    if (state.notes.some((n) => n.toLowerCase() === note.toLowerCase())) return;
+    state.notes.push(note);
+    if (state.notes.length > 8) state.notes.shift();
+    saveState();
+    updateInquiryChip();
+  }
+
+  function buildInquiryLetter() {
+    const fr = state.lang === 'fr';
+    const lines = [];
+    lines.push(fr ? 'Bonjour IKEDA Endoscopy Africa,' : 'Hello IKEDA Endoscopy Africa,');
+    lines.push('');
+    if (state.inquiry.length) {
+      lines.push(fr ? 'Je souhaite recevoir un devis pour :' : 'I would like to request a quotation for:');
+      state.inquiry.forEach((it, i) => {
+        lines.push(`${i + 1}. ${it.name} — ${fr ? 'Qté :' : 'Qty:'} ${it.qty}`);
+      });
+    } else {
+      lines.push(fr ? 'Je souhaite obtenir des informations et un devis.' : 'I would like some information and a quotation.');
+    }
+    if (state.project) {
+      lines.push('');
+      lines.push(`${fr ? 'Projet / service :' : 'Project / department:'} ${state.project}`);
+    }
+    if (state.notes.length) {
+      lines.push('');
+      lines.push(fr ? 'Mes questions :' : 'My questions:');
+      state.notes.forEach((n) => lines.push(`• ${n}`));
+    }
+    lines.push('');
+    lines.push(fr
+      ? 'Merci de joindre les caractéristiques techniques, la garantie et les conditions de livraison et d’installation.'
+      : 'Please include specifications, warranty, and delivery & installation terms.');
+    const d = state.details || {};
+    if (d.name || d.facility || d.location) {
+      lines.push('');
+      if (d.name) lines.push(`${fr ? 'Nom' : 'Name'}: ${d.name}`);
+      if (d.facility) lines.push(`${fr ? 'Établissement' : 'Facility'}: ${d.facility}`);
+      if (d.location) lines.push(`${fr ? 'Localisation' : 'Location'}: ${d.location}`);
+    }
+    lines.push('');
+    lines.push(fr ? 'Merci.' : 'Thank you.');
+    return lines.join('\n');
+  }
+
+  function renderInquiryCard() {
+    const t = L();
+    const card = document.createElement('div');
+    card.className = 'ai-rfq-card ai-inq-card';
+
+    const header = document.createElement('div');
+    header.className = 'ai-rfq-header';
+    header.innerHTML = `
+      <div class="ai-rfq-title-wrap">
+        <span class="ai-rfq-dept-badge">${escapeHtml(t.inqBadge)}</span>
+        <strong class="ai-rfq-title">${escapeHtml(t.inqTitle)}</strong>
+      </div>`;
+    card.appendChild(header);
+
+    const body = document.createElement('div');
+    card.appendChild(body);
+
+    const preview = document.createElement('textarea');
+    preview.className = 'ai-inq-preview';
+    preview.rows = 8;
+    preview.setAttribute('aria-label', t.preview);
+    let previewEdited = false;
+    preview.addEventListener('input', () => { previewEdited = true; });
+
+    function refreshPreview() {
+      if (!previewEdited) preview.value = buildInquiryLetter();
+    }
+
+    function renderBody() {
+      body.innerHTML = '';
+
+      // Products
+      const prodTitle = document.createElement('div');
+      prodTitle.className = 'ai-rfq-category-title';
+      prodTitle.textContent = `${t.products} (${state.inquiry.length})`;
+      body.appendChild(prodTitle);
+
+      if (!state.inquiry.length) {
+        const empty = document.createElement('p');
+        empty.className = 'ai-inq-empty';
+        empty.textContent = t.inqEmpty;
+        body.appendChild(empty);
+      }
+
+      state.inquiry.forEach((it) => {
+        const row = document.createElement('div');
+        row.className = 'ai-rfq-item-row';
+        const info = document.createElement('div');
+        info.className = 'ai-rfq-item-info';
+        const nameEl = document.createElement('span');
+        nameEl.className = 'ai-rfq-item-name';
+        nameEl.textContent = it.name;
+        info.appendChild(nameEl);
+        if (it.category) {
+          const cat = document.createElement('div');
+          cat.className = 'ai-rfq-item-specs';
+          cat.textContent = it.category;
+          info.appendChild(cat);
+        }
+
+        const controls = document.createElement('div');
+        controls.className = 'ai-rfq-qty-stepper';
+        const minus = document.createElement('button');
+        minus.type = 'button';
+        minus.className = 'ai-rfq-qty-btn';
+        minus.textContent = '−';
+        minus.title = t.decrease;
+        minus.setAttribute('aria-label', `${t.decrease}: ${it.name}`);
+        const val = document.createElement('span');
+        val.className = 'ai-rfq-qty-val';
+        val.textContent = it.qty;
+        const plus = document.createElement('button');
+        plus.type = 'button';
+        plus.className = 'ai-rfq-qty-btn';
+        plus.textContent = '+';
+        plus.title = t.increase;
+        plus.setAttribute('aria-label', `${t.increase}: ${it.name}`);
+        const del = document.createElement('button');
+        del.type = 'button';
+        del.className = 'ai-rfq-remove-btn';
+        del.textContent = '×';
+        del.title = t.remove;
+        del.setAttribute('aria-label', `${t.remove}: ${it.name}`);
+
+        minus.addEventListener('click', () => {
+          if (it.qty > 1) { it.qty -= 1; val.textContent = it.qty; saveState(); refreshPreview(); }
+        });
+        plus.addEventListener('click', () => {
+          it.qty += 1; val.textContent = it.qty; saveState(); refreshPreview();
+        });
+        del.addEventListener('click', () => {
+          removeFromInquiry(it.name); syncProductButtons(); renderBody(); refreshPreview();
+        });
+
+        controls.append(minus, val, plus, del);
+        row.append(info, controls);
+        body.appendChild(row);
+      });
+
+      // Questions
+      if (state.notes.length) {
+        const qTitle = document.createElement('div');
+        qTitle.className = 'ai-rfq-category-title ai-inq-section';
+        qTitle.textContent = t.questions;
+        body.appendChild(qTitle);
+        state.notes.forEach((n, idx) => {
+          const row = document.createElement('div');
+          row.className = 'ai-inq-note-row';
+          const txt = document.createElement('span');
+          txt.textContent = n;
+          const del = document.createElement('button');
+          del.type = 'button';
+          del.className = 'ai-rfq-remove-btn';
+          del.textContent = '×';
+          del.title = t.remove;
+          del.setAttribute('aria-label', `${t.remove}: ${n}`);
+          del.addEventListener('click', () => {
+            state.notes.splice(idx, 1); saveState(); updateInquiryChip(); renderBody(); refreshPreview();
+          });
+          row.append(txt, del);
+          body.appendChild(row);
+        });
+      }
+
+      // Contact details
+      const dTitle = document.createElement('div');
+      dTitle.className = 'ai-rfq-category-title ai-inq-section';
+      dTitle.textContent = t.yourDetails;
+      body.appendChild(dTitle);
+      const fields = document.createElement('div');
+      fields.className = 'ai-inq-fields';
+      [['name', t.name], ['facility', t.facility], ['location', t.location]].forEach(([key, label]) => {
+        const field = document.createElement('input');
+        field.type = 'text';
+        field.className = 'ai-inq-input';
+        field.placeholder = label;
+        field.setAttribute('aria-label', label);
+        field.maxLength = 120;
+        field.value = (state.details && state.details[key]) || '';
+        field.addEventListener('input', () => {
+          state.details[key] = field.value;
+          saveState();
+          refreshPreview();
+        });
+        fields.appendChild(field);
+      });
+      body.appendChild(fields);
+
+      // Preview
+      const pTitle = document.createElement('div');
+      pTitle.className = 'ai-rfq-category-title ai-inq-section';
+      pTitle.textContent = t.preview;
+      body.appendChild(pTitle);
+      body.appendChild(preview);
+    }
+
+    renderBody();
+    refreshPreview();
+
+    // Send buttons
+    const buttons = document.createElement('div');
+    buttons.className = 'ai-inq-buttons';
+
+    const waBtn = document.createElement('button');
+    waBtn.type = 'button';
+    waBtn.className = 'ai-rfq-btn-accept ai-inq-wa';
+    waBtn.textContent = t.sendWa;
+    waBtn.addEventListener('click', () => {
+      const url = `https://wa.me/${state.whatsapp || WHATSAPP_DEFAULT}?text=${encodeURIComponent(preview.value)}`;
+      window.open(url, '_blank', 'noopener');
+    });
+
+    const formBtn = document.createElement('button');
+    formBtn.type = 'button';
+    formBtn.className = 'ai-rfq-btn-accept';
+    formBtn.textContent = t.fillForm;
+    formBtn.addEventListener('click', () => {
+      const payload = { formattedMessage: preview.value };
+      if (state.project) payload.department = state.project;
+      if (typeof window.populateContactFormWithRfq === 'function') {
+        window.populateContactFormWithRfq(payload);
+        closePanel();
+      } else {
+        try {
+          sessionStorage.setItem('ikeda_rfq_payload', JSON.stringify(payload));
+        } catch (e) { /* storage unavailable */ }
+        window.location.href = '/contact?rfq=ai';
+      }
+    });
+
+    const copyBtn = document.createElement('button');
+    copyBtn.type = 'button';
+    copyBtn.className = 'ai-rfq-btn-decline';
+    copyBtn.textContent = t.copy;
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(preview.value);
+      } catch (e) {
+        preview.select();
+        document.execCommand('copy');
+      }
+      copyBtn.textContent = t.copied;
+      setTimeout(() => { copyBtn.textContent = t.copy; }, 1800);
+    });
+
+    buttons.append(waBtn, formBtn, copyBtn);
+    card.appendChild(buttons);
+    messagesEl.appendChild(card);
+    scrollDown();
+  }
+
+  // Keep "Add to inquiry" buttons in sync after removals
+  function syncProductButtons() {
+    const t = L();
+    messagesEl.querySelectorAll('.ai-add-btn').forEach((btn) => {
+      const added = isInInquiry(btn.dataset.name);
+      btn.textContent = added ? t.added : t.add;
+      btn.classList.toggle('is-added', added);
+      btn.setAttribute('aria-pressed', added ? 'true' : 'false');
+    });
+  }
+
   function renderProducts(products) {
     if (!Array.isArray(products) || !products.length) return;
+    const t = L();
 
-    products.forEach(product => {
+    products.forEach((product) => {
       const card = document.createElement('article');
       card.className = product.isRecommended ? 'ai-product-card ai-product-card-recommended' : 'ai-product-card';
 
-      // Recommendation badge for top pick
-      if (product.isRecommended) {
+      if (product.isRecommended && product.recommendationBadge) {
         const badge = document.createElement('div');
         badge.className = 'ai-product-badge-recommended';
-        badge.innerHTML = `
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-          </svg>
-          <span>${product.recommendationBadge || 'Top Recommendation'}</span>
-        `;
+        badge.textContent = product.recommendationBadge;
         card.appendChild(badge);
       }
 
       if (product.image) {
-        const imageUrl = new URL(product.image, window.location.origin);
-        if (imageUrl.origin === window.location.origin) {
-          const image = document.createElement('img');
-          image.className = 'ai-product-image';
-          image.src = imageUrl.href;
-          image.alt = product.name || 'Catalog product';
-          image.loading = 'lazy';
-          image.addEventListener('error', () => image.remove());
-          card.appendChild(image);
-        }
+        try {
+          const imageUrl = new URL(product.image, window.location.origin);
+          if (imageUrl.origin === window.location.origin) {
+            const image = document.createElement('img');
+            image.className = 'ai-product-image';
+            image.src = imageUrl.href;
+            image.alt = product.name || '';
+            image.loading = 'lazy';
+            image.addEventListener('error', () => image.remove());
+            card.appendChild(image);
+          }
+        } catch (e) { /* bad image url */ }
       }
 
       const details = document.createElement('div');
       details.className = 'ai-product-details';
       const title = document.createElement('strong');
       title.className = 'ai-product-title';
-      title.textContent = product.name || 'Catalog product';
+      title.textContent = product.name || '';
       details.appendChild(title);
 
-      const categoryLabel = [product.category, product.subtitle].filter(Boolean).join(' · ');
+      const categoryLabel = [product.category, product.subtitle].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(' · ');
       if (categoryLabel) {
         const category = document.createElement('span');
         category.className = 'ai-product-category';
@@ -325,356 +747,249 @@
         details.appendChild(category);
       }
 
-      // Recommendation rationale callout
       if (product.recommendationReason) {
         const reasonBox = document.createElement('div');
         reasonBox.className = product.isRecommended ? 'ai-product-reason ai-product-reason-recommended' : 'ai-product-reason';
-        const reasonLabel = document.createElement('strong');
-        reasonLabel.textContent = product.isRecommended ? '⭐ Clinical Choice: ' : 'Comparison: ';
-        reasonBox.appendChild(reasonLabel);
-        reasonBox.appendChild(document.createTextNode(product.recommendationReason));
+        reasonBox.textContent = product.recommendationReason;
         details.appendChild(reasonBox);
       }
 
       const specification = document.createElement('details');
       specification.className = 'ai-product-specs';
       const summary = document.createElement('summary');
-      summary.textContent = 'View specifications';
+      summary.textContent = t.viewSpecs;
       specification.appendChild(summary);
-
-      const specificationText = product.specification || (Array.isArray(product.features) ? product.features.join('\n') : '');
-      if (specificationText) {
-        const specText = document.createElement('p');
-        specText.textContent = specificationText;
-        specification.appendChild(specText);
-      }
       if (Array.isArray(product.features) && product.features.length) {
         const featureList = document.createElement('ul');
-        product.features.forEach(feature => {
-          const featureItem = document.createElement('li');
-          featureItem.textContent = feature;
-          featureList.appendChild(featureItem);
+        product.features.forEach((feature) => {
+          const li = document.createElement('li');
+          li.textContent = String(feature).replace(/^►\s*/, '');
+          featureList.appendChild(li);
         });
         specification.appendChild(featureList);
+      } else if (product.specification) {
+        const specText = document.createElement('p');
+        specText.textContent = product.specification;
+        specification.appendChild(specText);
       }
       details.appendChild(specification);
 
-      // Build deep-link parameters for exact product targeting in catalog
-      const catalogParams = new URLSearchParams();
-      if (product.name) catalogParams.set('product', product.name);
-      if (product.slug) catalogParams.set('cat', product.slug);
-      if (typeof product.itemIdx === 'number') catalogParams.set('idx', product.itemIdx);
-      if (product.name) catalogParams.set('search', product.name);
-      const targetCatalogHref = `/products?${catalogParams.toString()}`;
+      // Catalog deep link
+      const params = new URLSearchParams();
+      if (product.name) params.set('product', product.name);
+      if (product.slug) params.set('cat', product.slug);
+      if (typeof product.itemIdx === 'number') params.set('idx', product.itemIdx);
+      if (product.name) params.set('search', product.name);
+      const catalogHref = `/products?${params.toString()}`;
 
-      function navigateToCatalogProduct(e) {
-        const isProductsPage = window.location.pathname.replace(/\.html$/, '').endsWith('/products');
-        if (isProductsPage && typeof window.openCatalogProduct === 'function') {
+      function goToCatalog(e) {
+        const onProductsPage = window.location.pathname.replace(/\.html$/, '').endsWith('/products');
+        if (onProductsPage && typeof window.openCatalogProduct === 'function') {
           if (e) e.preventDefault();
           closePanel();
-          window.openCatalogProduct({
-            name: product.name,
-            catSlug: product.slug,
-            itemIdx: product.itemIdx
-          });
+          window.openCatalogProduct({ name: product.name, catSlug: product.slug, itemIdx: product.itemIdx });
           return true;
         }
         return false;
       }
 
       title.style.cursor = 'pointer';
-      title.title = 'View in catalog';
+      title.title = t.openCatalog;
       title.addEventListener('click', (e) => {
-        if (!navigateToCatalogProduct(e)) {
-          window.location.href = targetCatalogHref;
-        }
+        if (!goToCatalog(e)) window.location.href = catalogHref;
+      });
+
+      const linkRow = document.createElement('div');
+      linkRow.className = 'ai-product-link-row';
+
+      const addBtn = document.createElement('button');
+      addBtn.type = 'button';
+      addBtn.className = 'ai-add-btn';
+      addBtn.dataset.name = product.name;
+      addBtn.addEventListener('click', () => {
+        if (isInInquiry(product.name)) removeFromInquiry(product.name);
+        else addToInquiry(product, 'asked');
+        syncProductButtons();
       });
 
       const catalogLink = document.createElement('a');
       catalogLink.className = 'ai-product-link';
-      catalogLink.href = targetCatalogHref;
-      catalogLink.textContent = 'Open in catalog';
-      catalogLink.setAttribute('aria-label', `Open ${product.name || 'product'} in catalog`);
-      catalogLink.addEventListener('click', (e) => {
-        navigateToCatalogProduct(e);
-      });
-      details.appendChild(catalogLink);
+      catalogLink.href = catalogHref;
+      catalogLink.textContent = t.openCatalog;
+      catalogLink.addEventListener('click', (e) => goToCatalog(e));
+
+      linkRow.append(addBtn, catalogLink);
+      details.appendChild(linkRow);
       card.appendChild(details);
       messagesEl.appendChild(card);
     });
 
+    syncProductButtons();
     scrollDown();
   }
 
-  // ── Render Intelligent Procurement Quotation Card ──────────────────────
-  function renderProcurementCard(rfqPayload, permissionPrompt) {
+  // ── Department quotation builder card (from the procurement engine) ────
+  function renderProcurementCard(rfqPayload) {
     if (!rfqPayload || !Array.isArray(rfqPayload.items)) return;
+    const t = L();
 
     const card = document.createElement('div');
     card.className = 'ai-rfq-card';
+    const items = rfqPayload.items.map((it) => ({ ...it, qty: it.qty || 1 }));
+    const completeness = { ...(rfqPayload.completeness || {}) };
 
-    // State for interactive items and quantity adjustments
-    const items = rfqPayload.items.map(it => ({ ...it, qty: it.qty || 1 }));
-    let completeness = { ...rfqPayload.completeness };
-
-    function buildFormattedMessage() {
-      let msg = `Hello IKEDA Team,\n\nI would like to request an official proforma quotation, technical specification datasheets, and delivery terms for our ${rfqPayload.department}.\n\n`;
-      msg += `📋 REQUESTED DEPARTMENT EQUIPMENT LIST:\n\n`;
-
-      const cats = {
-        equipment: items.filter(i => i.category === 'equipment'),
-        instruments: items.filter(i => i.category === 'instruments'),
-        accessories: items.filter(i => i.category === 'accessories'),
-        consumables: items.filter(i => i.category === 'consumables')
-      };
-
-      if (cats.equipment.length) {
-        msg += `🏥 CAPITAL MEDICAL EQUIPMENT:\n`;
-        cats.equipment.forEach((it, idx) => {
-          msg += `${idx + 1}. ${it.name} (${it.manufacturer || 'OEM'}) — Qty: ${it.qty} unit(s) [${(it.importance || 'Essential').toUpperCase()}]\n   • Specs: ${it.specs || 'Standard OEM specifications'}\n`;
-        });
-        msg += `\n`;
-      }
-      if (cats.instruments.length) {
-        msg += `✂️ SURGICAL & CLINICAL INSTRUMENTS:\n`;
-        cats.instruments.forEach((it, idx) => {
-          msg += `${idx + 1}. ${it.name} (${it.manufacturer || 'OEM'}) — Qty: ${it.qty} set(s) [${(it.importance || 'Essential').toUpperCase()}]\n`;
-        });
-        msg += `\n`;
-      }
-      if (cats.accessories.length) {
-        msg += `🔌 ACCESSORIES & INFRASTRUCTURE:\n`;
-        cats.accessories.forEach((it, idx) => {
-          msg += `${idx + 1}. ${it.name} — Qty: ${it.qty} unit(s) [${(it.importance || 'Recommended').toUpperCase()}]\n`;
-        });
-        msg += `\n`;
-      }
-      if (cats.consumables.length) {
-        msg += `📦 STERILIZATION & CONSUMABLE PACKAGES:\n`;
-        cats.consumables.forEach((it, idx) => {
-          msg += `${idx + 1}. ${it.name} — Qty: ${it.qty} unit(s) [${(it.importance || 'Essential').toUpperCase()}]\n`;
-        });
-        msg += `\n`;
-      }
-
-      msg += `Please include formal quotation pricing, CE/ISO certificates, transport and delivery lead times to Kigali, and on-site biomedical engineering installation terms.\n\nFacility Name:\nContact Person:`;
-      return msg;
-    }
-
-    // Header with department & completeness badge
     const header = document.createElement('div');
     header.className = 'ai-rfq-header';
     header.innerHTML = `
       <div class="ai-rfq-title-wrap">
-        <span class="ai-rfq-dept-badge">Procurement Blueprint</span>
-        <strong class="ai-rfq-title">${rfqPayload.department}</strong>
+        <span class="ai-rfq-dept-badge">${state.lang === 'fr' ? 'Liste recommandée' : 'Recommended list'}</span>
+        <strong class="ai-rfq-title">${escapeHtml(rfqPayload.department)}</strong>
       </div>
-      <div class="ai-rfq-badge" id="rfq-score-badge">
-        <span class="ai-rfq-score-num">${completeness.score}%</span> Readiness
-      </div>
+      ${completeness.score != null ? `<div class="ai-rfq-badge"><span class="ai-rfq-score-num">${escapeHtml(completeness.score)}%</span> ${state.lang === 'fr' ? 'Complétude' : 'Readiness'}</div>` : ''}
     `;
     card.appendChild(header);
 
-    // Collapsible Completeness Audit & Domain Coverage
-    if (completeness.coveredDomains && completeness.coveredDomains.length) {
-      const auditDetails = document.createElement('details');
-      auditDetails.className = 'ai-rfq-details';
-      const auditSummary = document.createElement('summary');
-      auditSummary.innerHTML = `<span>📊 Department Completeness Audit (${completeness.status || 'Foundational Core'})</span>`;
-      auditDetails.appendChild(auditSummary);
-
-      const auditContent = document.createElement('div');
-      auditContent.className = 'ai-rfq-audit-body';
-      let auditHtml = `<div class="ai-rfq-audit-sec"><strong>Covered Clinical Domains:</strong><ul>`;
-      completeness.coveredDomains.forEach(d => {
-        auditHtml += `<li>✓ ${d}</li>`;
-      });
-      auditHtml += `</ul></div>`;
-
-      if (completeness.gaps && completeness.gaps.length) {
-        auditHtml += `<div class="ai-rfq-audit-sec ai-rfq-gaps-sec"><strong>Essential Gaps &amp; Clinical Considerations:</strong><ul>`;
-        completeness.gaps.forEach(g => {
-          auditHtml += `<li>⚠️ <strong>${g.item}</strong> (${g.domain}): ${g.clinicalNecessity}</li>`;
+    if (Array.isArray(completeness.coveredDomains) && completeness.coveredDomains.length) {
+      const audit = document.createElement('details');
+      audit.className = 'ai-rfq-details';
+      const s = document.createElement('summary');
+      s.textContent = `📊 ${state.lang === 'fr' ? 'Analyse de complétude' : 'Completeness check'} (${completeness.status || ''})`;
+      audit.appendChild(s);
+      const content = document.createElement('div');
+      content.className = 'ai-rfq-audit-body';
+      let html = `<div class="ai-rfq-audit-sec"><strong>${state.lang === 'fr' ? 'Domaines couverts' : 'Covered areas'}:</strong><ul>`;
+      completeness.coveredDomains.forEach((d) => { html += `<li>✓ ${escapeHtml(d)}</li>`; });
+      html += '</ul></div>';
+      if (Array.isArray(completeness.gaps) && completeness.gaps.length) {
+        html += `<div class="ai-rfq-audit-sec ai-rfq-gaps-sec"><strong>${state.lang === 'fr' ? 'Éléments manquants' : 'Gaps to consider'}:</strong><ul>`;
+        completeness.gaps.forEach((g) => {
+          html += `<li>⚠️ <strong>${escapeHtml(g.item)}</strong> (${escapeHtml(g.domain)}): ${escapeHtml(g.clinicalNecessity)}</li>`;
         });
-        auditHtml += `</ul></div>`;
+        html += '</ul></div>';
       }
-      auditContent.innerHTML = auditHtml;
-      auditDetails.appendChild(auditContent);
-      card.appendChild(auditDetails);
+      content.innerHTML = html;
+      audit.appendChild(content);
+      card.appendChild(audit);
     }
 
-    // Items list container
-    const itemsContainer = document.createElement('div');
-    itemsContainer.className = 'ai-rfq-items-list';
+    const list = document.createElement('div');
+    list.className = 'ai-rfq-items-list';
 
     function renderItems() {
-      itemsContainer.innerHTML = '';
-
-      const categories = [
-        { key: 'equipment', title: '🏥 Capital Medical Equipment', items: items.filter(i => i.category === 'equipment') },
-        { key: 'instruments', title: '✂️ Surgical & Clinical Instruments', items: items.filter(i => i.category === 'instruments') },
-        { key: 'accessories', title: '🔌 Accessories & Infrastructure', items: items.filter(i => i.category === 'accessories') },
-        { key: 'consumables', title: '📦 Consumables & Reprocessing Packages', items: items.filter(i => i.category === 'consumables') }
+      list.innerHTML = '';
+      const groups = [
+        ['equipment', '🏥 ' + (state.lang === 'fr' ? 'Équipements' : 'Equipment')],
+        ['instruments', '✂️ Instruments'],
+        ['accessories', '🔌 ' + (state.lang === 'fr' ? 'Accessoires' : 'Accessories')],
+        ['consumables', '📦 ' + (state.lang === 'fr' ? 'Consommables' : 'Consumables')]
       ];
+      groups.forEach(([key, label]) => {
+        const groupItems = items.filter((i) => (i.category || 'equipment') === key);
+        if (!groupItems.length) return;
+        const block = document.createElement('div');
+        block.className = 'ai-rfq-category-block';
+        const bt = document.createElement('div');
+        bt.className = 'ai-rfq-category-title';
+        bt.textContent = `${label} (${groupItems.length})`;
+        block.appendChild(bt);
 
-      categories.forEach(cat => {
-        if (!cat.items.length) return;
-
-        const catBlock = document.createElement('div');
-        catBlock.className = 'ai-rfq-category-block';
-        catBlock.innerHTML = `<div class="ai-rfq-category-title">${cat.title} (${cat.items.length})</div>`;
-
-        cat.items.forEach(it => {
+        groupItems.forEach((it) => {
           const row = document.createElement('div');
           row.className = 'ai-rfq-item-row';
-
-          const importanceTag = (it.importance || 'essential').toLowerCase();
           const info = document.createElement('div');
           info.className = 'ai-rfq-item-info';
-          info.innerHTML = `
-            <div class="ai-rfq-item-top">
-              <span class="ai-rfq-item-name">${it.name}</span>
-              <span class="ai-rfq-mfg-tag">${it.manufacturer || 'OEM'}</span>
-              <span class="ai-rfq-item-tag ai-rfq-tag-${importanceTag}">${importanceTag.toUpperCase()}</span>
-            </div>
-            ${it.specs ? `<div class="ai-rfq-item-specs">${it.specs.slice(0, 110)}${it.specs.length > 110 ? '...' : ''}</div>` : ''}
-          `;
+          const top = document.createElement('div');
+          top.className = 'ai-rfq-item-top';
+          const nm = document.createElement('span');
+          nm.className = 'ai-rfq-item-name';
+          nm.textContent = it.name;
+          top.appendChild(nm);
+          info.appendChild(top);
+          if (it.specs) {
+            const sp = document.createElement('div');
+            sp.className = 'ai-rfq-item-specs';
+            sp.textContent = it.specs.length > 110 ? it.specs.slice(0, 110) + '…' : it.specs;
+            info.appendChild(sp);
+          }
 
           const controls = document.createElement('div');
           controls.className = 'ai-rfq-qty-stepper';
-
-          const minusBtn = document.createElement('button');
-          minusBtn.type = 'button';
-          minusBtn.className = 'ai-rfq-qty-btn';
-          minusBtn.textContent = '−';
-          minusBtn.title = 'Decrease quantity';
-          minusBtn.addEventListener('click', () => {
-            if (it.qty > 1) {
-              it.qty -= 1;
-              qtyVal.textContent = it.qty;
-              if (activeProcurementSession) activeProcurementSession.items = items;
-            }
-          });
-
-          const qtyVal = document.createElement('span');
-          qtyVal.className = 'ai-rfq-qty-val';
-          qtyVal.textContent = it.qty;
-
-          const plusBtn = document.createElement('button');
-          plusBtn.type = 'button';
-          plusBtn.className = 'ai-rfq-qty-btn';
-          plusBtn.textContent = '+';
-          plusBtn.title = 'Increase quantity';
-          plusBtn.addEventListener('click', () => {
-            it.qty += 1;
-            qtyVal.textContent = it.qty;
-            if (activeProcurementSession) activeProcurementSession.items = items;
-          });
-
-          const removeBtn = document.createElement('button');
-          removeBtn.type = 'button';
-          removeBtn.className = 'ai-rfq-remove-btn';
-          removeBtn.innerHTML = '&times;';
-          removeBtn.title = 'Remove item from quote';
-          removeBtn.addEventListener('click', () => {
-            const idx = items.indexOf(it);
-            if (idx > -1) {
-              items.splice(idx, 1);
-              if (activeProcurementSession) activeProcurementSession.items = items;
-              renderItems();
-            }
-          });
-
-          controls.appendChild(minusBtn);
-          controls.appendChild(qtyVal);
-          controls.appendChild(plusBtn);
-          controls.appendChild(removeBtn);
-
-          row.appendChild(info);
-          row.appendChild(controls);
-          catBlock.appendChild(row);
+          const minus = document.createElement('button');
+          minus.type = 'button'; minus.className = 'ai-rfq-qty-btn'; minus.textContent = '−'; minus.title = t.decrease;
+          const val = document.createElement('span');
+          val.className = 'ai-rfq-qty-val'; val.textContent = it.qty;
+          const plus = document.createElement('button');
+          plus.type = 'button'; plus.className = 'ai-rfq-qty-btn'; plus.textContent = '+'; plus.title = t.increase;
+          const del = document.createElement('button');
+          del.type = 'button'; del.className = 'ai-rfq-remove-btn'; del.textContent = '×'; del.title = t.remove;
+          minus.addEventListener('click', () => { if (it.qty > 1) { it.qty -= 1; val.textContent = it.qty; sync(); } });
+          plus.addEventListener('click', () => { it.qty += 1; val.textContent = it.qty; sync(); });
+          del.addEventListener('click', () => { items.splice(items.indexOf(it), 1); sync(); renderItems(); });
+          controls.append(minus, val, plus, del);
+          row.append(info, controls);
+          block.appendChild(row);
         });
-
-        itemsContainer.appendChild(catBlock);
+        list.appendChild(block);
       });
     }
 
-    renderItems();
-    card.appendChild(itemsContainer);
+    function sync() {
+      if (activeProcurementSession) activeProcurementSession.items = items;
+    }
 
-    // Permission Prompt Box (Step 1)
+    renderItems();
+    card.appendChild(list);
+
     const promptBox = document.createElement('div');
     promptBox.className = 'ai-rfq-permission-box';
+    const promptText = document.createElement('div');
+    promptText.className = 'ai-rfq-prompt-text';
+    promptText.textContent = t.rfqPrompt(rfqPayload.department);
+    const acts = document.createElement('div');
+    acts.className = 'ai-rfq-prompt-actions';
+    const accept = document.createElement('button');
+    accept.type = 'button'; accept.className = 'ai-rfq-btn-accept'; accept.textContent = t.rfqAccept;
+    const decline = document.createElement('button');
+    decline.type = 'button'; decline.className = 'ai-rfq-btn-decline'; decline.textContent = t.rfqDecline;
+    acts.append(accept, decline);
+    promptBox.append(promptText, acts);
 
-    const promptText = (permissionPrompt && permissionPrompt.text)
-      ? permissionPrompt.text
-      : `I have prepared a recommended equipment and consumables list for your ${rfqPayload.department}. Would you like me to automatically populate your Quotation Inquiry form with these products, quantities, and available details?`;
-
-    promptBox.innerHTML = `
-      <div class="ai-rfq-prompt-text">${promptText}</div>
-      <div class="ai-rfq-prompt-actions">
-        <button type="button" class="ai-rfq-btn-accept" id="rfq-accept-btn">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-          Yes, fill in my quotation inquiry
-        </button>
-        <button type="button" class="ai-rfq-btn-decline" id="rfq-decline-btn">
-          No, I would like to do it myself
-        </button>
-      </div>
-    `;
-
-    const acceptBtn = promptBox.querySelector('#rfq-accept-btn');
-    const declineBtn = promptBox.querySelector('#rfq-decline-btn');
-
-    acceptBtn.addEventListener('click', () => {
-      const finalMsg = buildFormattedMessage();
-      const payloadToSave = {
-        department: rfqPayload.department,
-        departmentKey: rfqPayload.departmentKey,
-        completeness: completeness,
-        items: items,
-        formattedMessage: finalMsg
-      };
-
+    accept.addEventListener('click', () => {
+      addProcurementItems({ ...rfqPayload, items });
       if (activeProcurementSession) {
         activeProcurementSession.items = items;
         activeProcurementSession.stage = 'populated_form';
         activeProcurementSession.pendingPermissionPrompt = false;
       }
-
-      promptBox.innerHTML = `
-        <div class="ai-rfq-success-msg">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-          </svg>
-          <span><strong>Quotation Loaded:</strong> Your inquiry form has been pre-filled with ${items.length} items. Please review and approve before final submission.</span>
-        </div>
-      `;
-
-      // Check if on /contact page
-      if (typeof window.populateContactFormWithRfq === 'function') {
-        window.populateContactFormWithRfq(payloadToSave);
-        closePanel();
-      } else {
-        sessionStorage.setItem('ikeda_rfq_payload', JSON.stringify(payloadToSave));
-        window.location.href = `/contact?dept=${encodeURIComponent(rfqPayload.department)}&rfq=ai`;
-      }
+      promptBox.innerHTML = '';
+      const ok = document.createElement('div');
+      ok.className = 'ai-rfq-success-msg';
+      ok.textContent = '✓ ' + t.rfqAdded(items.length);
+      promptBox.appendChild(ok);
+      renderInquiryCard();
     });
 
-    declineBtn.addEventListener('click', () => {
-      promptBox.innerHTML = `
-        <div class="ai-rfq-muted-note">
-          Understood! You can review the equipment list above or configure your quotation inquiry manually anytime.
-        </div>
-      `;
+    decline.addEventListener('click', () => {
+      promptBox.innerHTML = '';
+      const note = document.createElement('div');
+      note.className = 'ai-rfq-muted-note';
+      note.textContent = t.rfqDeclined;
+      promptBox.appendChild(note);
     });
 
     card.appendChild(promptBox);
     messagesEl.appendChild(card);
     scrollDown();
+  }
+
+  function addProcurementItems(rfq) {
+    if (!rfq || !Array.isArray(rfq.items)) return;
+    rfq.items.forEach((it) => addToInquiry({ name: it.name, category: rfq.department, qty: it.qty || 1 }, 'recommended'));
+    if (rfq.department) {
+      state.project = rfq.department;
+      saveState();
+    }
+    syncProductButtons();
   }
 
   // ── API Communication ──────────────────────────────────────────────────
@@ -688,94 +1003,78 @@
     input.value = '';
     input.disabled = true;
     sendBtn.disabled = true;
-
-    const typing = showTyping();
+    showTyping();
 
     try {
       const res = await fetch('/api/ai/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          message: message,
+          message,
           context: {
+            lang: state.lang,
             history: conversationHistory,
             procurementSession: activeProcurementSession,
             products: recentProducts,
-            allRequestedProducts: allRequestedProducts,
-            consultation: consultationContext
+            allRequestedProducts: state.inquiry.map((it) => it.name),
+            consultation: consultationContext,
+            inquiryCount: state.inquiry.length + state.notes.length
           }
         })
       });
 
-      // Simulate a slight human delay (300-800ms)
-      await new Promise(r => setTimeout(r, 350 + Math.random() * 450));
-
       removeTyping();
-
       if (!res.ok) throw new Error('Server error');
-
       const data = await res.json();
 
-      if (data.procurementSession) {
-        activeProcurementSession = data.procurementSession;
+      if (data.lang && data.lang !== state.lang) {
+        state.lang = data.lang;
+        saveState();
+        applyLanguage();
       }
-
+      if (data.whatsapp) {
+        state.whatsapp = String(data.whatsapp).replace(/[^0-9]/g, '') || WHATSAPP_DEFAULT;
+        saveState();
+      }
+      if (data.procurementSession) activeProcurementSession = data.procurementSession;
       if (data.reply) {
         conversationHistory.push({ role: 'bot', content: data.reply });
         if (conversationHistory.length > 12) conversationHistory.shift();
       }
-
       if (data.consultation) {
         consultationContext = { ...consultationContext, ...data.consultation };
-        if (Array.isArray(data.consultation.items)) {
-          data.consultation.items.forEach(name => {
-            if (typeof name === 'string' && !allRequestedProducts.includes(name)) {
-              allRequestedProducts.push(name);
-            }
-          });
+        if (consultationContext.specialty && !state.project) {
+          state.project = String(consultationContext.specialty);
+          saveState();
         }
       }
+      if (data.inquiryNote) addNote(data.inquiryNote);
 
-      addMessage(data.reply || 'I apologize, I was unable to process that. Please try again.', 'bot');
+      addMessage(data.reply || L().fallback, 'bot');
 
-      // Check if user requested form population or bot triggered action === 'fill_form'
-      if (data.action === 'fill_form' && data.rfqPayload) {
-        const payloadToSave = data.rfqPayload;
-        sessionStorage.setItem('ikeda_rfq_payload', JSON.stringify(payloadToSave));
-        if (typeof window.populateContactFormWithRfq === 'function') {
-          window.populateContactFormWithRfq(payloadToSave);
-          closePanel();
-        } else {
-          setTimeout(() => {
-            window.location.href = `/contact?dept=${encodeURIComponent(payloadToSave.department || '')}&rfq=ai`;
-          }, 1000);
-        }
+      if (data.action === 'compile_inquiry') {
+        (data.addToInquiry || []).forEach((p) => addToInquiry(p, 'asked'));
+        if (state.inquiry.length || state.notes.length) renderInquiryCard();
+      } else if (data.action === 'fill_form' && data.rfqPayload) {
+        // The client agreed to the recommended department list: merge it into
+        // the inquiry so everything is sent together.
+        addProcurementItems(data.rfqPayload);
+        renderInquiryCard();
       } else if (data.rfqPayload) {
-        renderProcurementCard(data.rfqPayload, data.permissionPrompt);
-        if (Array.isArray(data.rfqPayload.items)) {
-          recentProducts = data.rfqPayload.items.map(p => p.name).filter(Boolean);
-          recentProducts.forEach(name => {
-            if (!allRequestedProducts.includes(name)) {
-              allRequestedProducts.push(name);
-            }
-          });
-        }
-      } else if (data.products && data.products.length) {
+        renderProcurementCard(data.rfqPayload);
+        recentProducts = data.rfqPayload.items.map((p) => p.name).filter(Boolean);
+      } else if (Array.isArray(data.products) && data.products.length) {
+        // Recommended products are added automatically; others via "Add to inquiry"
+        data.products.filter((p) => p.isRecommended).forEach((p) => addToInquiry(p, 'recommended'));
         renderProducts(data.products);
-        recentProducts = data.products.map(product => product.name).filter(Boolean);
-        recentProducts.forEach(name => {
-          if (!allRequestedProducts.includes(name)) {
-            allRequestedProducts.push(name);
-          }
-        });
+        recentProducts = data.products.map((p) => p.name).filter(Boolean);
       }
 
-      if (data.actions && data.actions.length) {
-        renderActions(data.actions);
-      }
+      if (Array.isArray(data.actions) && data.actions.length) renderActions(data.actions);
+      if (Array.isArray(data.suggestions) && data.suggestions.length) renderSuggestions(data.suggestions);
     } catch (err) {
       removeTyping();
-      addMessage('I apologize for the interruption. Please try again or contact us directly at +250 795 360 359.', 'bot');
+      addMessage(L().error, 'bot');
     }
 
     input.disabled = false;
@@ -783,12 +1082,10 @@
     input.focus();
   }
 
-  // ── Form Submit ────────────────────────────────────────────────────────
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const msg = input.value.trim();
     if (!msg) return;
     sendToAI(msg);
   });
-
 })();

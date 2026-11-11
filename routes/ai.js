@@ -2,13 +2,27 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const procurementAssistant = require('../services/procurementAssistant');
+const assistant = require('../services/assistant');
 
 const router = express.Router();
 
 const PRODUCTS_FILE = path.join(__dirname, '..', 'data', 'products.json');
 const COMPANY_FILE = path.join(__dirname, '..', 'data', 'company.json');
 
+// Cached data, reloaded only when the JSON files change (was re-read on every message)
+let dataCache = { key: '', products: [], company: {} };
+
+function fileMtime(file) {
+  try {
+    return fs.statSync(file).mtimeMs;
+  } catch (e) {
+    return 0;
+  }
+}
+
 function loadData() {
+  const key = `${fileMtime(PRODUCTS_FILE)}|${fileMtime(COMPANY_FILE)}`;
+  if (dataCache.key === key) return dataCache;
   let products = [];
   let company = {};
   try {
@@ -20,8 +34,10 @@ function loadData() {
     }
   } catch (e) {
     console.error('Error loading AI data:', e);
+    return dataCache;
   }
-  return { products, company };
+  dataCache = { key, products, company };
+  return dataCache;
 }
 
 function normalizeWords(text) {
@@ -1547,11 +1563,9 @@ function generateAIResponse(userQuery, context = {}) {
   // 8. DELIVERY, SHIPPING, LOGISTICS & REGIONAL REACH
   if (/\b(deliver|delivery|shipping|ship|lead\s*time|dispatch|transit|transport|how\s*long\s*(to\s*get|does\s*it\s*take|to\s*arrive)|deliver\s*to)\b/i.test(q)) {
     return {
-      reply: "Yes, **IKEDA ENDOSCOPY AFRICA** provides guaranteed door-to-door delivery and clinical deployment across Rwanda and East Africa:\n\n" +
-        "🚚 **Kigali Deliveries**: In-stock equipment is delivered within **24–48 hours** directly to your facility.\n" +
-        "🏥 **Upcountry Rwanda**: Direct bonded transport to district, provincial, and teaching hospitals across Northern, Southern, Eastern, and Western Provinces.\n" +
-        "🌍 **Regional East Africa**: Active export corridors to **Burundi, DR Congo (Goma, Bukavu, Kinshasa), Uganda, Tanzania, and Kenya**, managing customs documentation, freight logistics, and transit insurance.\n" +
-        "🔧 **Full Turnkey Installation**: Major clinical equipment is delivered with on-site biomedical engineers who perform installation, electrical safety validation, and clinical handling training for theatre staff.",
+      reply: "**IKEDA ENDOSCOPY AFRICA** supplies hospitals and clinics in Rwanda, East Africa and across Africa.\n\n" +
+        "🚚 **Delivery time** depends on stock, destination and customs, so our team confirms the exact delivery terms in your official quotation.\n" +
+        "🔧 **Installation & training**: Our biomedical engineers can install equipment on site and train your staff on safe use.",
       actions: [
         { label: "Inquire About Delivery / Lead Times", url: "/contact?subject=Delivery+and+Lead+Time+Inquiry" },
         { label: "WhatsApp Logistics Desk", url: "https://wa.me/250795360359?text=Hello%20IKEDA,%20I%20would%20like%20to%20inquire%20about%20delivery%20to%20my%20hospital" }
@@ -1751,7 +1765,7 @@ function generateAIResponse(userQuery, context = {}) {
     if (candidateItems.length > 0) {
       const formattedItems = candidateItems.map((it, idx) => `${idx + 1}. ${typeof it === 'string' ? it : it.name}`).join('\n');
       return {
-        reply: `We provide **formal proforma quotations** within 12–24 business hours across Rwanda and East Africa.\n\n` +
+        reply: `We provide **formal proforma quotations** across Rwanda, East Africa and beyond. Prices are only given in an official quotation.\n\n` +
           `📋 **Requested Equipment for Quotation:**\n${formattedItems}\n\n` +
           `All official quotations include technical datasheets, CE/ISO certificates, transport, biomedical installation, and manufacturer warranty.\n\n` +
           `Click **Send Inquiry for Quotation** below to submit this complete equipment list immediately for an official proforma quote.`,
@@ -1771,9 +1785,9 @@ function generateAIResponse(userQuery, context = {}) {
 
     return {
       reply: "We provide **formal proforma quotations, tender bidding support, and flexible hospital supply contracts** across Rwanda and East Africa.\n\n" +
-        "• **Turnaround Time**: Formal quotations issued within 12–24 business hours.\n" +
-        "• **What is Included**: Equipment specifications, CE/FDA/ISO certifications, freight to facility, on-site installation, clinical training, and manufacturer warranty.\n" +
-        "• **Fast-Track WhatsApp**: You can also receive an instant proforma quote via WhatsApp by sending your equipment list directly to our sales desk.",
+        "• **Prices**: We don't publish prices online; they are given in an official quotation.\n" +
+        "• **What is Included**: Equipment specifications, certifications, delivery and installation terms, and warranty details.\n" +
+        "• **WhatsApp**: You can also send your equipment list directly to our sales team on WhatsApp.",
       actions: [
         { label: "Submit Online Quote Request", url: "/contact#quote-form" },
         { label: "Instant WhatsApp Quotation", url: "https://wa.me/250795360359?text=Hello%20IKEDA,%20I%20would%20like%20to%20request%20an%20official%20quotation" },
@@ -2023,10 +2037,21 @@ function generateAIResponse(userQuery, context = {}) {
 }
 
 // POST /api/ai/chat
+// The smart assistant (services/assistant) handles language, business rules,
+// site search and inquiry compilation, and calls generateAIResponse for the
+// specialised consultation flows (clinic setup, comparisons, definitions).
 router.post('/chat', (req, res) => {
   const { message, context } = req.body || {};
-  const response = generateAIResponse(message, context);
-  res.json(response);
+  const safeContext = context && typeof context === 'object' ? context : {};
+  try {
+    const response = assistant.respond(typeof message === 'string' ? message : '', safeContext, {
+      generate: (query, ctx) => generateAIResponse(query, ctx)
+    });
+    res.json(response);
+  } catch (err) {
+    console.error('Assistant error:', err);
+    res.status(500).json({ error: 'Assistant unavailable' });
+  }
 });
 
 // GET /api/ai/suggestions - Quick default starters

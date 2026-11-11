@@ -56,9 +56,7 @@ router.post('/', (req, res) => {
   res.status(201).json({ success: true, id: entry.id });
 });
 
-// GET /api/contact - list messages (for demo/admin purposes)
-router.get('/', (req, res) => {
-  res.json(readMessages());
-});
+// Inquiries contain customer personal data, so there is no public endpoint to
+// list them. They are stored in data/messages.json on the server.
 
 module.exports = router;

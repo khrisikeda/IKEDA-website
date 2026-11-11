@@ -1,5 +1,13 @@
-const express = require('express');
 const path = require('path');
+
+// Load .env (Node 20.12+ built-in; no dotenv dependency needed)
+try {
+  process.loadEnvFile(path.join(__dirname, '.env'));
+} catch (err) {
+  // No .env file: rely on real environment variables (e.g. on the host)
+}
+
+const express = require('express');
 
 const productsRouter = require('./routes/products');
 const manufacturersRouter = require('./routes/manufacturers');
@@ -64,7 +72,7 @@ app.use((req, res) => {
 // Central error handler
 app.use((err, req, res, next) => {
   console.error('Unhandled server error:', err);
-  res.status(500).json({ error: 'Internal server error', message: err.message });
+  res.status(500).json({ error: 'Internal server error' });
 });
 
 app.listen(PORT, () => {

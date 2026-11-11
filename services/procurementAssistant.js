@@ -2327,7 +2327,7 @@ function handleProcurementQuery(userQuery, context = {}, rawProducts = []) {
 
     // 4. Quotation Notice
     reply += `#### 💰 Quotation & Pricing Architecture\n`;
-    reply += `All catalog items are sourced directly from verified ISO13485 / CE certified OEM manufacturers with formal proforma quotations issued within 12–24 business hours. Pricing depends on optional tools, power configuration, and shipping destination to Kigali.\n\n`;
+    reply += `All catalog items are sourced directly from verified ISO13485 / CE certified OEM manufacturers. Prices are only given in a formal proforma quotation and depend on optional tools, power configuration, and shipping destination to Kigali.\n\n`;
 
     // 5. Explicit Permission Prompt
     reply += `---\n\n`;
