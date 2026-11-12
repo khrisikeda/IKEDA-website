@@ -13,7 +13,6 @@ const productsRouter = require('./routes/products');
 const manufacturersRouter = require('./routes/manufacturers');
 const contactRouter = require('./routes/contact');
 const companyRouter = require('./routes/company');
-const articlesRouter = require('./routes/articles');
 const aiRouter = require('./routes/ai');
 
 const app = express();
@@ -33,8 +32,6 @@ app.use('/api/products', productsRouter);
 app.use('/api/manufacturers', manufacturersRouter);
 app.use('/api/contact', contactRouter);
 app.use('/api/company', companyRouter);
-app.use('/api/articles', articlesRouter);
-app.use('/api/blog', articlesRouter);
 app.use('/api/ai', aiRouter);
 
 // Health check endpoint
@@ -48,12 +45,10 @@ app.get('/api/health', (req, res) => {
 });
 
 // Explicit clean routes for primary pages
-const cleanPages = ['about', 'products', 'manufacturers', 'contact', 'blog', 'articles'];
+const cleanPages = ['about', 'products', 'manufacturers', 'contact'];
 cleanPages.forEach((page) => {
   app.get(`/${page}`, (req, res) => {
-    // If blog or articles, serve blog.html
-    const targetFile = (page === 'articles' || page === 'blog') ? 'blog.html' : `${page}.html`;
-    res.sendFile(path.join(__dirname, 'public', targetFile));
+    res.sendFile(path.join(__dirname, 'public', `${page}.html`));
   });
 });
 

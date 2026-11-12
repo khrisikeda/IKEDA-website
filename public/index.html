@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <script>(function () { try { var n = navigator, p = (n.userAgentData && n.userAgentData.platform) || n.platform || "", u = n.userAgent || "", c = document.documentElement.classList; if (/Win/i.test(p) || /Windows/i.test(u)) { c.add("os-windows"); } else if (/Mac|iPhone|iPad|iPod/i.test(p) || /Macintosh|Mac OS X|iPhone|iPad|iPod/i.test(u) || (n.maxTouchPoints > 2 && /Mac/i.test(p))) { c.add("os-apple"); } else if (/Android|Linux/i.test(p) || /Android|Linux/i.test(u)) { c.add("os-android-linux"); } } catch (e) { } })();</script>
-  <script src="/js/i18n.js?v=1"></script>
-  <link rel="stylesheet" href="/css/main.css?v=3.5">
+  <script src="/js/i18n.js?v=4"></script>
+  <link rel="stylesheet" href="/css/main.css?v=3.11">
 </head>
 
 <body>
@@ -106,7 +106,6 @@
           </li>
           <li><a href="/about">About Us</a></li>
           <li><a href="/manufacturers">Manufacturers</a></li>
-          <li><a href="/blog">Blog &amp; Articles</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
@@ -147,159 +146,23 @@
     </div>
   </section>
 
-  <!-- FEATURE: Interactive 4K Endoscopy Tower Explorer -->
-  <section class="tower-explorer-section" id="tower-explorer">
+  <!-- Equipment showcase: a few products from every department -->
+  <section class="home-showcase-section" id="home-showcase">
     <div class="wrap pork-stagger-parent">
       <div class="section-head center pork-fade-up">
-        <span class="eyebrow">Cutting-Edge Technology Explorer</span>
-        <h2>The IKEDA 4K Endoscopic Laparoscopy Tower</h2>
-        <p style="color:var(--ink-light); font-size:1.1rem; max-width:740px; margin:0 auto;">
-          Select any modular component below to inspect real-time surgical optics, telemetry specifications, and
-          operating theatre capabilities.
+        <span class="eyebrow">Our Equipment Range</span>
+        <h2>Explore Equipment by Department</h2>
+        <p class="home-showcase-lead">
+          A selection from each department. Click any item to see its details and request a quote.
         </p>
       </div>
 
-      <!-- Interactive Tab Selector Navigation -->
-      <div class="tower-tab-nav pork-fade-up" role="tablist">
-        <button class="tower-tab-btn active" data-component="camera" role="tab" aria-selected="true">
-          <span class="tab-indicator-dot"></span>
-          <span>4K Camera System &amp; Head</span>
-        </button>
-        <button class="tower-tab-btn" data-component="monitor" role="tab" aria-selected="false">
-          <span class="tab-indicator-dot"></span>
-          <span>32" 4K Surgical Monitor</span>
-        </button>
-        <button class="tower-tab-btn" data-component="light" role="tab" aria-selected="false">
-          <span class="tab-indicator-dot"></span>
-          <span>LED Cold Light Source</span>
-        </button>
-        <button class="tower-tab-btn" data-component="insufflator" role="tab" aria-selected="false">
-          <span class="tab-indicator-dot"></span>
-          <span>Smart CO2 Insufflator</span>
-        </button>
+      <div class="home-showcase-rows" id="home-showcase-rows" aria-live="polite">
+        <p class="home-showcase-status">Loading equipment…</p>
       </div>
-
-      <!-- Tower Visual Schematic & Dynamic Spec Panel -->
-      <div class="tower-grid pork-fade-up">
-        <!-- Visual Schematic Stack -->
-        <div class="tower-graphic-card">
-          <div
-            style="font-family:var(--mono); font-size:0.78rem; color:var(--blue-primary); margin-bottom:1.5rem; text-transform:uppercase; letter-spacing:0.08em; display:flex; align-items:center; gap:0.5rem; font-weight:600;">
-            <span class="beacon-dot"></span>
-            <span>TOWER TELEMETRY SCHEMATIC</span>
-          </div>
-
-          <div class="tower-schematic-stack">
-            <div class="schematic-box" data-component="monitor">
-              <div>
-                <div class="schematic-box-title">32" 4K Medical Monitor</div>
-                <div class="schematic-box-meta">3840×2160 • BT.2020 Color</div>
-              </div>
-              <div class="schematic-pulse-dot"></div>
-            </div>
-
-            <div class="schematic-box active" data-component="camera">
-              <div>
-                <div class="schematic-box-title">4K UHD Camera Control Unit</div>
-                <div class="schematic-box-meta">Sony CMOS • 60 FPS • Edge Filter</div>
-              </div>
-              <div class="schematic-pulse-dot"></div>
-            </div>
-
-            <div class="schematic-box" data-component="light">
-              <div>
-                <div class="schematic-box-title">LED Cold Light Source</div>
-                <div class="schematic-box-meta">5700K Daylight • 20,000h Life</div>
-              </div>
-              <div class="schematic-pulse-dot"></div>
-            </div>
-
-            <div class="schematic-box" data-component="insufflator">
-              <div>
-                <div class="schematic-box-title">Smart High-Flow CO2 Unit</div>
-                <div class="schematic-box-meta">45 L/min • 37°C Preheated Gas</div>
-              </div>
-              <div class="schematic-pulse-dot"></div>
-            </div>
-          </div>
-
-          <div
-            style="margin-top:2rem; width:100%; border-top:1px solid var(--gray-200); padding-top:1.2rem; display:flex; justify-content:space-between; align-items:center; font-family:var(--mono); font-size:0.75rem; color:var(--ink-muted);">
-            <span>MODULAR ARCHITECTURE</span>
-            <span style="color:var(--blue-primary); font-weight:600;">AUTOCLAVE COMPLIANT</span>
-          </div>
-        </div>
-
-        <!-- Dynamic Spec Details Panel -->
-        <div class="tower-spec-card" id="tower-spec-panel">
-          <div class="tower-spec-header">
-            <div>
-              <span class="eyebrow" id="tower-component-dept">Multi-Specialty Laparoscopy</span>
-              <h3 id="tower-component-title" style="margin-bottom:0.2rem;">4K Ultra HD Endoscopic Camera
-                Unit &amp; Sensor Head</h3>
-            </div>
-            <span class="tower-spec-badge" id="tower-component-badge">Sony 4K CMOS Array</span>
-          </div>
-
-          <p id="tower-component-lead" style="color:var(--ink-light); font-size:1.02rem; line-height:1.6;">
-            Quadruple Full-HD resolution providing unprecedented microvascular delineation and natural tissue texture
-            depth for safe, precise surgical margins.
-          </p>
-
-          <!-- Metrics Grid -->
-          <div class="tower-spec-metrics-grid" id="tower-component-specs">
-            <div class="tower-spec-metric">
-              <div class="tower-spec-label">Sensor</div>
-              <div class="tower-spec-val">1/1.8" Progressive CMOS</div>
-            </div>
-            <div class="tower-spec-metric">
-              <div class="tower-spec-label">Frame Rate</div>
-              <div class="tower-spec-val">60 FPS Ultra-Fluid</div>
-            </div>
-            <div class="tower-spec-metric">
-              <div class="tower-spec-label">Enhancement</div>
-              <div class="tower-spec-val">Dual-Wavelength Spectral Edge</div>
-            </div>
-            <div class="tower-spec-metric">
-              <div class="tower-spec-label">Controls</div>
-              <div class="tower-spec-val">4 Ergonomic Programmable Buttons</div>
-            </div>
-          </div>
-
-          <!-- Feature Highlights Checklist -->
-          <ul class="tower-features-list" id="tower-component-features">
-            <li>
-              <span class="tower-check">✓</span>
-              <span>Automated white balance and intelligent smoke/mist reduction filter</span>
-            </li>
-            <li>
-              <span class="tower-check">✓</span>
-              <span>Micro-capillary enhancement mode for clear lesion margin distinction</span>
-            </li>
-            <li>
-              <span class="tower-check">✓</span>
-              <span>IPX8 waterproof rated camera head withstands full autoclave &amp; soaking</span>
-            </li>
-          </ul>
-
-          <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
-            <a href="/products#laparoscopy" class="btn btn-outline">View Full System Specs</a>
-            <a href="/contact?dept=Laparoscopy" class="btn-smart-moth" aria-label="Send Quotation Request">
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path fill="currentColor"
-                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-              <span class="btn-text">Send Quotation Request</span>
-            </a>
-          </div>
-        </div>
-      </div>
+      <noscript>
+        <p class="home-showcase-status"><a href="/products">Browse the full product catalog →</a></p>
+      </noscript>
     </div>
   </section>
 
@@ -555,127 +418,6 @@
     </div>
   </section>
 
-  <!-- Clinical Insights, Blog & Articles Section -->
-  <section class="home-blog-section reveal-on-scroll pork-fade-up" id="blog-section">
-    <div class="wrap pork-stagger-parent">
-      <div
-        style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1.5rem; margin-bottom: 0.5rem;">
-        <div>
-          <span class="eyebrow pork-fade-up">Clinical Insights &amp; Publications</span>
-          <h2 class="pork-fade-up" style="margin-bottom: 0.6rem;">Latest Biomedical Insights &amp; Articles</h2>
-          <p class="pork-fade-up"
-            style="max-width: 640px; color: var(--ink-muted); margin: 0; font-size: 1.05rem; line-height: 1.6;">
-            Clinical developments, operating theatre planning guidance, and endoscopy maintenance protocols authored by
-            IKEDA clinical specialists and biomedical engineers.
-          </p>
-        </div>
-        <div class="pork-fade-up">
-          <a href="/blog" class="btn btn-outline"
-            style="display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600;">
-            <span>Explore All Articles</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="blog-grid" id="home-blog-grid">
-        <!-- Article 1 -->
-        <article class="blog-card pork-fade-up" data-article-id="advancing-4k-laparoscopy-africa" tabindex="0"
-          role="button" aria-label="Read article on Advancing Minimally Invasive Surgery in Africa">
-          <div class="blog-card-media">
-            <span class="blog-card-badge">Clinical Endoscopy</span>
-            <img src="/images/articles/article-laparoscopy-4k.jpg" alt="4K Laparoscopic Endoscopy Surgery Suite"
-              class="blog-card-img" loading="lazy" />
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>📅 October 10, 2026</span>
-              <span>&bull;</span>
-              <span>⏱️ 5 min read</span>
-            </div>
-            <h3 class="blog-card-title">Advancing Minimally Invasive Surgery in Africa: The Clinical Power of 4K
-              Laparoscopy</h3>
-            <p class="blog-card-excerpt">
-              How 4K Ultra-HD endoscopic visualization and optical magnification reduce theatre procedure times, enhance
-              laparoscopic dissection precision, and shorten patient recovery times in regional surgical centers.
-            </p>
-            <div class="blog-card-footer">
-              <div class="blog-author-info">
-                <div class="blog-author-avatar">JH</div>
-                <span class="blog-author-name">Dr. Jean-Pierre Hakizimana</span>
-              </div>
-              <span class="blog-read-link">Read Article &rarr;</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article 2 -->
-        <article class="blog-card pork-fade-up" data-article-id="biomedical-sterilization-rigid-endoscopes" tabindex="0"
-          role="button" aria-label="Read article on Sterilization and Care Protocols for Rigid Endoscopes">
-          <div class="blog-card-media">
-            <span class="blog-card-badge">Biomedical Engineering</span>
-            <img src="/images/articles/article-biomedical-sterilization.jpg"
-              alt="Biomedical Engineer Inspecting Rigid Endoscope Optics" class="blog-card-img" loading="lazy" />
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>📅 September 28, 2026</span>
-              <span>&bull;</span>
-              <span>⏱️ 6 min read</span>
-            </div>
-            <h3 class="blog-card-title">Biomedical Longevity: Sterilization, Care &amp; Testing Protocols for Rigid
-              Endoscopes</h3>
-            <p class="blog-card-excerpt">
-              A comprehensive clinical protocol for hospital nursing staff and biomedical technicians on leak testing,
-              low-temperature plasma sterilization, rod lens protection, and optical fiber integrity.
-            </p>
-            <div class="blog-card-footer">
-              <div class="blog-author-info">
-                <div class="blog-author-avatar">EM</div>
-                <span class="blog-author-name">Eric Mugabo, Bio-Eng</span>
-              </div>
-              <span class="blog-read-link">Read Article &rarr;</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article 3 -->
-        <article class="blog-card pork-fade-up" data-article-id="turnkey-operating-theatre-procurement" tabindex="0"
-          role="button" aria-label="Read article on Modern Operating Theatre Planning">
-          <div class="blog-card-media">
-            <span class="blog-card-badge">Hospital Infrastructure</span>
-            <img src="/images/articles/article-theatre-infrastructure.jpg"
-              alt="Modern Operating Theatre with Ceiling Pendants" class="blog-card-img" loading="lazy" />
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>📅 September 15, 2026</span>
-              <span>&bull;</span>
-              <span>⏱️ 7 min read</span>
-            </div>
-            <h3 class="blog-card-title">Modern Operating Theatre Planning: Turnkey Equipping for Regional &amp; Teaching
-              Hospitals</h3>
-            <p class="blog-card-excerpt">
-              Key procurement and engineering considerations for integrating ceiling pendant arms, LED shadowless
-              operating lights, medical gas pipeline systems, and high-flow insufflators into newly commissioned
-              surgical theatres.
-            </p>
-            <div class="blog-card-footer">
-              <div class="blog-author-info">
-                <div class="blog-author-avatar">IK</div>
-                <span class="blog-author-name">IKEDA Advisory Board</span>
-              </div>
-              <span class="blog-read-link">Read Article &rarr;</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- Ready to Equip CTA Section -->
   <section
     style="background: linear-gradient(180deg, #0b1727 0%, #0f172a 100%); color:#ffffff; padding: 5rem 0; border-top:1px solid #1e3557; border-bottom:1px solid #1e3557;"
@@ -747,7 +489,6 @@
             <li><a href="/products">Products &amp; Solutions</a></li>
             <li><a href="/about">About Us</a></li>
             <li><a href="/manufacturers">Manufacturers</a></li>
-            <li><a href="/blog">Blog &amp; Articles</a></li>
             <li><a href="/contact">Contact &amp; Location</a></li>
           </ul>
         </div>
@@ -790,9 +531,8 @@
     </div>
   </footer>
 
-  <script src="/js/main.js?v=2.7"></script>
-  <script src="/js/home-interactive.js"></script>
-  <script src="/js/articles-modal.js"></script>
+  <script src="/js/main.js?v=2.8"></script>
+  <script src="/js/home-interactive.js?v=3"></script>
 </body>
 
 </html>

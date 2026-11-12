@@ -1,6 +1,5 @@
 {
   "strings": {
-    "Departments": "Services",
     "Toggle navigation menu": "Ouvrir ou fermer le menu",
     "Send Quotation Request": "Envoyer la demande de devis",
     "Sending Quotation Request...": "Envoi de la demande de devis…",
@@ -16,9 +15,7 @@
     "Products": "Produits",
     "About Us": "À propos",
     "Manufacturers": "Fabricants",
-    "Blog & Articles": "Blog et articles",
     "Contact": "Contact",
-
     "General Hospital Materials": "Matériel hospitalier général",
     "Operating Theatre": "Bloc opératoire",
     "Critical Care & Emergency": "Soins critiques et urgences",
@@ -45,33 +42,8 @@
     "Surgical Instruments": "Instruments chirurgicaux",
     "Disposable Materials": "Consommables à usage unique",
     "HF Bipolar & Monopolar, Harmonic & LigaSure": "HF bipolaire et monopolaire, Harmonic et LigaSure",
-
-    "Cutting-Edge Technology Explorer": "Découvrez notre technologie de pointe",
-    "4K Camera System & Head": "Système et tête de caméra 4K",
-    "32\" 4K Surgical Monitor": "Moniteur chirurgical 4K 32\"",
     "LED Cold Light Source": "Source de lumière froide LED",
-    "Smart CO2 Insufflator": "Insufflateur CO2 intelligent",
-    "TOWER TELEMETRY SCHEMATIC": "SCHÉMA DE LA COLONNE",
-    "32\" 4K Medical Monitor": "Moniteur médical 4K 32\"",
-    "3840×2160 • BT.2020 Color": "3840×2160 • couleur BT.2020",
-    "4K UHD Camera Control Unit": "Unité de contrôle caméra 4K UHD",
-    "Sony CMOS • 60 FPS • Edge Filter": "CMOS Sony • 60 i/s • filtre de contours",
-    "5700K Daylight • 20,000h Life": "Lumière du jour 5700K • 20 000 h de durée de vie",
-    "Smart High-Flow CO2 Unit": "Unité CO2 haut débit intelligente",
-    "45 L/min • 37°C Preheated Gas": "45 L/min • gaz préchauffé à 37 °C",
-    "MODULAR ARCHITECTURE": "ARCHITECTURE MODULAIRE",
-    "AUTOCLAVE COMPLIANT": "COMPATIBLE AUTOCLAVE",
-    "Multi-Specialty Laparoscopy": "Laparoscopie multispécialités",
-    "Sony 4K CMOS Array": "Capteur CMOS 4K Sony",
     "Sensor": "Capteur",
-    "1/1.8\" Progressive CMOS": "CMOS progressif 1/1,8\"",
-    "Frame Rate": "Fréquence d'images",
-    "60 FPS Ultra-Fluid": "60 i/s ultra-fluide",
-    "Enhancement": "Amélioration d'image",
-    "Dual-Wavelength Spectral Edge": "Contours spectraux à double longueur d'onde",
-    "Controls": "Commandes",
-    "4 Ergonomic Programmable Buttons": "4 boutons ergonomiques programmables",
-    "View Full System Specs": "Voir toutes les caractéristiques",
     "Optical Resolution Simulator": "Simulateur de résolution optique",
     "Legacy 1080p HD (2 Megapixels)": "HD 1080p classique (2 mégapixels)",
     "IKEDA 4K Ultra HD (8.3 Megapixels)": "IKEDA 4K Ultra HD (8,3 mégapixels)",
@@ -111,20 +83,7 @@
     "Direct Manufacturer Partnerships": "Partenariats directs avec les fabricants",
     "Biomedical After-Sales & Parts": "Service après-vente biomédical et pièces",
     "Clinical Onboarding & Hands-On Training": "Prise en main clinique et formation pratique",
-    "Clinical Insights & Publications": "Publications et regards cliniques",
-    "Latest Biomedical Insights & Articles": "Nos derniers articles biomédicaux",
-    "Explore All Articles": "Voir tous les articles",
-    "Clinical Endoscopy": "Endoscopie clinique",
-    "📅 October 10, 2026": "📅 10 octobre 2026",
-    "📅 September 28, 2026": "📅 28 septembre 2026",
-    "📅 September 15, 2026": "📅 15 septembre 2026",
-    "October 10, 2026": "10 octobre 2026",
-    "September 28, 2026": "28 septembre 2026",
-    "September 15, 2026": "15 septembre 2026",
-    "Read Article →": "Lire l'article →",
     "Biomedical Engineering": "Ingénierie biomédicale",
-    "Hospital Infrastructure": "Infrastructure hospitalière",
-    "IKEDA Advisory Board": "Comité consultatif IKEDA",
     "RAPID RESPONSE BIOMEDICAL ADVISORY": "CONSEIL BIOMÉDICAL RÉACTIF",
     "Quick Navigation": "Navigation rapide",
     "Products & Solutions": "Produits et solutions",
@@ -167,9 +126,6 @@
     "Safety Relief": "Sécurité",
     "Dual Acoustic & Visual Overpressure": "Alarme de surpression sonore et visuelle",
     "Close article modal": "Fermer l'article",
-    "Consult with Our Biomedical Team": "Consultez notre équipe biomédicale",
-    "Request Technical Consultation →": "Demander une consultation technique →",
-
     "IKEDA ENDOSCOPY AFRICA Ltd | 4K Laparoscopic Towers & Multi-Specialty Medical Technology": "IKEDA ENDOSCOPY AFRICA Ltd | Colonnes de laparoscopie 4K et technologie médicale multispécialités",
     "IKEDA ENDOSCOPY AFRICA Ltd equips hospitals across Rwanda and East Africa with 4K Ultra HD laparoscopic endoscopy video towers, optical rigid scopes, and comprehensive multi-department clinical equipment.": "IKEDA ENDOSCOPY AFRICA Ltd équipe les hôpitaux du Rwanda et d'Afrique de l'Est en colonnes vidéo de laparoscopie 4K Ultra HD, optiques rigides et équipements cliniques pour tous les services.",
     "IKEDA ENDOSCOPY AFRICA — Operating within your budget & clinical standard.": "IKEDA ENDOSCOPY AFRICA — À la hauteur de votre *budget* et de vos *exigences* cliniques.",
@@ -178,14 +134,7 @@
     "Modern Operating Theatre with Ceiling Pendants": "Bloc opératoire moderne avec bras plafonniers",
     "Multi-Specialty Medical Equipment & Endoscopy Leader": "Spécialiste de l'endoscopie et de l'équipement médical multispécialités",
     "Delivering cost-effective, high-quality, and durable products supported by comprehensive and dependable services.": "Des produits durables, de qualité et au juste prix, accompagnés de services complets et fiables.",
-    "The IKEDA 4K Endoscopic Laparoscopy Tower": "La colonne de laparoscopie endoscopique 4K IKEDA",
-    "Select any modular component below to inspect real-time surgical optics, telemetry specifications, and operating theatre capabilities.": "Sélectionnez un module ci-dessous pour découvrir son optique chirurgicale, ses caractéristiques techniques et ses capacités au bloc opératoire.",
-    "4K Ultra HD Endoscopic Camera Unit & Sensor Head": "Unité de caméra endoscopique 4K Ultra HD et tête de capteur",
-    "Quadruple Full-HD resolution providing unprecedented microvascular delineation and natural tissue texture depth for safe, precise surgical margins.": "Une résolution quatre fois supérieure à la Full HD pour une visualisation inédite des microvaisseaux et des tissus, au service de marges chirurgicales sûres et précises.",
     "Quadruple Full-HD resolution providing unprecedented microvascular delineation and natural tissue texture depth.": "Une résolution quatre fois supérieure à la Full HD pour une visualisation inédite des microvaisseaux et du relief naturel des tissus.",
-    "Automated white balance and intelligent smoke/mist reduction filter": "Balance des blancs automatique et filtre intelligent anti-fumée et anti-buée",
-    "Micro-capillary enhancement mode for clear lesion margin distinction": "Mode d'accentuation des microcapillaires pour bien distinguer les limites des lésions",
-    "IPX8 waterproof rated camera head withstands full autoclave & soaking": "Tête de caméra étanche IPX8, compatible autoclave et immersion",
     "Experience 4K Ultra HD Endoscopic Precision": "Découvrez la précision endoscopique 4K Ultra HD",
     "Drag the interactive optical lens slider below to see how 4K Ultra HD resolves micro-vessels, subtle tissue margins, and deep anatomical cavities compared to standard 1080p legacy cameras.": "Faites glisser le curseur ci-dessous pour voir comment la 4K Ultra HD révèle les microvaisseaux, les limites tissulaires et les cavités anatomiques profondes par rapport aux caméras 1080p classiques.",
     "Precision Laparoscopy for General Surgery, Gynecology & Urology": "Laparoscopie de précision pour la chirurgie générale, la gynécologie et l'urologie",
@@ -210,13 +159,6 @@
     "Sourcing authentic, CE & ISO-certified medical systems directly from leading global manufacturers with guaranteed warranties.": "Des équipements médicaux authentiques, certifiés CE et ISO, achetés directement auprès de grands fabricants internationaux, avec garantie.",
     "Local engineering teams on call across Rwanda and East Africa, carrying genuine spare components, optical fiber light cables, and maintenance kits.": "Des équipes techniques locales disponibles au Rwanda et en Afrique de l'Est, avec pièces d'origine, câbles de lumière à fibre optique et kits de maintenance.",
     "We train theatre nursing staff, surgeons, and facility bio-technicians on operation, disinfection, sterilization, and care protocols.": "Nous formons les infirmiers de bloc, les chirurgiens et les techniciens biomédicaux à l'utilisation, la désinfection, la stérilisation et l'entretien.",
-    "Clinical developments, operating theatre planning guidance, and endoscopy maintenance protocols authored by IKEDA clinical specialists and biomedical engineers.": "Avancées cliniques, conseils d'aménagement de bloc opératoire et protocoles d'entretien en endoscopie, rédigés par les spécialistes cliniques et ingénieurs biomédicaux d'IKEDA.",
-    "Advancing Minimally Invasive Surgery in Africa: The Clinical Power of 4K Laparoscopy": "Faire progresser la chirurgie mini-invasive en Afrique : l'apport clinique de la laparoscopie 4K",
-    "How 4K Ultra-HD endoscopic visualization and optical magnification reduce theatre procedure times, enhance laparoscopic dissection precision, and shorten patient recovery times in regional surgical centers.": "Comment la visualisation endoscopique 4K Ultra HD et le grossissement optique réduisent la durée des interventions, améliorent la précision de la dissection laparoscopique et raccourcissent la récupération des patients dans les centres chirurgicaux régionaux.",
-    "Biomedical Longevity: Sterilization, Care & Testing Protocols for Rigid Endoscopes": "Longévité biomédicale : protocoles de stérilisation, d'entretien et de contrôle des endoscopes rigides",
-    "A comprehensive clinical protocol for hospital nursing staff and biomedical technicians on leak testing, low-temperature plasma sterilization, rod lens protection, and optical fiber integrity.": "Un protocole complet pour le personnel infirmier et les techniciens biomédicaux : test d'étanchéité, stérilisation plasma basse température, protection des lentilles et intégrité de la fibre optique.",
-    "Modern Operating Theatre Planning: Turnkey Equipping for Regional & Teaching Hospitals": "Concevoir un bloc opératoire moderne : équipement clé en main pour les hôpitaux régionaux et universitaires",
-    "Key procurement and engineering considerations for integrating ceiling pendant arms, LED shadowless operating lights, medical gas pipeline systems, and high-flow insufflators into newly commissioned surgical theatres.": "Les points clés d'achat et d'ingénierie pour intégrer bras plafonniers, scialytiques LED, réseaux de gaz médicaux et insufflateurs haut débit dans un nouveau bloc opératoire.",
     "Equip Your Hospital or Theatre Suite Today": "Équipez votre hôpital ou votre bloc opératoire dès aujourd'hui",
     "Speak directly with our clinical equipment specialists in Kigali. Receive technical specification sheets, facility assessments, and customized pro-forma quotation packages.": "Échangez directement avec nos spécialistes à Kigali. Recevez fiches techniques, évaluations de votre établissement et devis proforma personnalisés.",
     "Specialists in multi-specialty medical instrumentation, 4K endoscopic laparoscopy systems, and turnkey hospital departmental equipment across Africa.": "Spécialistes de l'instrumentation médicale multispécialités, des systèmes de laparoscopie endoscopique 4K et de l'équipement clé en main des services hospitaliers en Afrique.",
@@ -236,8 +178,6 @@
     "Intelligent gas pre-heating eliminates scope lens fogging during entry": "Préchauffage intelligent du gaz contre la buée sur l'optique",
     "High-speed auto-compensation ensures stable cavity during smoke evacuation": "Compensation automatique rapide pour une cavité stable pendant l'évacuation des fumées",
     "Dedicated pediatric and bariatric operating cavity modes": "Modes dédiés pédiatrie et chirurgie bariatrique",
-    "Planning an operating theatre upgrade or requiring technical specifications for surgical endoscopy systems?": "Vous prévoyez de moderniser un bloc opératoire ou avez besoin des caractéristiques techniques d'un système d'endoscopie ?",
-
     "Learn about IKEDA ENDOSCOPY AFRICA Ltd — Rwanda and East Africa's dedicated partner in medical endoscopic equipment, hospital surgical suites, and local biomedical engineering.": "Découvrez IKEDA ENDOSCOPY AFRICA Ltd, partenaire du Rwanda et de l'Afrique de l'Est pour l'équipement d'endoscopie médicale, les blocs chirurgicaux et l'ingénierie biomédicale locale.",
     "About Us | IKEDA ENDOSCOPY AFRICA Ltd": "À propos | IKEDA ENDOSCOPY AFRICA Ltd",
     "Who We Are": "Qui sommes-nous",
@@ -271,7 +211,6 @@
     "Whether upgrading an existing operating theatre with 4K video or outfitting a complete new clinic wing, our team is ready to assist.": "Qu'il s'agisse de passer un bloc existant à la vidéo 4K ou d'équiper une nouvelle aile de clinique, notre équipe est prête à vous accompagner.",
     "Schedule Consultation": "Planifier une consultation",
     "WhatsApp Direct": "WhatsApp direct",
-
     "Products & Solutions | IKEDA ENDOSCOPY AFRICA Ltd": "Produits et solutions | IKEDA ENDOSCOPY AFRICA Ltd",
     "Explore medical equipment for every hospital department by IKEDA ENDOSCOPY AFRICA Ltd, including 4K laparoscopy video towers, urology, ICU ventilators, neonatal incubators, radiology C-arms, and surgical instruments.": "Découvrez l'équipement médical d'IKEDA ENDOSCOPY AFRICA Ltd pour tous les services hospitaliers : colonnes de laparoscopie 4K, urologie, respirateurs de réanimation, couveuses, arceaux de radiologie et instruments chirurgicaux.",
     "Every Hospital Department. One Trusted Partner.": "Tous les services hospitaliers. Un seul *partenaire* de *confiance.*",
@@ -341,7 +280,6 @@
     "Available (OEM / ODM Supported)": "Disponible (OEM / ODM)",
     "Technical Parameter": "Paramètre technique",
     "Medical System Specification": "Caractéristique du système médical",
-
     "Turnkey Surgical Suites & Minimally Invasive Towers": "Blocs chirurgicaux clé en main et colonnes mini-invasives",
     "Complete operating theatre infrastructure, advanced electro-hydraulic surgical tables, shadowless LED surgical lights, electrosurgical generator units, anesthesia workstations, and specialized surgical towers across Laparoscopy, Urology, VATS, Orthopedics, Gastroenterology, and Gynecology.": "Infrastructure complète de bloc opératoire : tables d'opération électro-hydrauliques, scialytiques LED, générateurs d'électrochirurgie, postes d'anesthésie et colonnes spécialisées en laparoscopie, urologie, VATS, orthopédie, gastro-entérologie et gynécologie.",
     "Core surgical tables, shadowless LED illumination, anesthesia workstations, surgical pendants, ventilators, electrosurgical diathermy, and mobile C-arm fluoroscopy.": "Tables d'opération, scialytiques LED, postes d'anesthésie, bras plafonniers, respirateurs, bistouris électriques et arceaux de fluoroscopie mobiles.",
@@ -373,7 +311,6 @@
     "Complete rehabilitation suites featuring passive hand training systems, compression therapy, shockwave machines, medical treadmills, computerized traction beds, Bobath training beds, and electrotherapy.": "Équipements complets de rééducation : rééducation passive de la main, pressothérapie, ondes de choc, tapis de course médicaux, tables de traction informatisées, tables Bobath et électrothérapie.",
     "Patient Care, Hospital Furniture & Ward Essentials": "Soins aux patients, mobilier hospitalier et équipement des services",
     "Complete general hospital materials, ward furniture, manual & electric hospital beds, patient stretchers, dirty & clean linen trolleys, mayo stands, consultation & stool chairs, wheelchairs, examination lights & headlights, diagnostic monitors (ECG, EEG, patient monitors, ultrasound), oxygen concentrators, nebulisers, suction units, and vertical & horizontal autoclaves.": "Matériel hospitalier complet : mobilier de service, lits manuels et électriques, brancards, chariots de linge propre et sale, tables de Mayo, sièges et tabourets, fauteuils roulants, lampes d'examen et frontales, appareils de diagnostic (ECG, EEG, moniteurs, échographes), concentrateurs d'oxygène, nébuliseurs, aspirateurs et autoclaves verticaux et horizontaux.",
-
     "Partner Manufacturers | IKEDA ENDOSCOPY AFRICA Ltd": "Fabricants partenaires | IKEDA ENDOSCOPY AFRICA Ltd",
     "Meet the global medical device manufacturers and OEM partners behind IKEDA ENDOSCOPY AFRICA Ltd's surgical and multi-specialty equipment catalog.": "Découvrez les fabricants internationaux de dispositifs médicaux et partenaires OEM derrière le catalogue d'IKEDA ENDOSCOPY AFRICA Ltd.",
     "Trusted Manufacturers Behind Every Device.": "Des *fabricants* de *confiance* derrière chaque appareil.",
@@ -423,26 +360,10 @@
     "Surgical Diode Lasers & Clinical Phototherapy": "Lasers chirurgicaux à diode et photothérapie",
     "Oxygen Concentrators, Suction & Respiratory Therapy": "Concentrateurs d'oxygène, aspiration et thérapie respiratoire",
     "Clinical Oxygen Generators, Nebulizers & Suction Units": "Générateurs d'oxygène, nébuliseurs et aspirateurs",
-
-    "Clinical Blog & Articles | IKEDA ENDOSCOPY AFRICA Ltd": "Blog et articles cliniques | IKEDA ENDOSCOPY AFRICA Ltd",
     "Clinical publications, minimally invasive surgery advancements, operating theatre design, and biomedical maintenance insights from IKEDA ENDOSCOPY AFRICA specialists.": "Publications cliniques, avancées de la chirurgie mini-invasive, conception de blocs opératoires et maintenance biomédicale, par les spécialistes d'IKEDA ENDOSCOPY AFRICA.",
-    "Clinical Knowledge & Biomedical Engineering": "Savoir clinique et ingénierie biomédicale",
-    "Clinical Insights, Blog & Articles": "Regards cliniques, blog et *articles*",
-    "Authoritative guides, whitepapers, and clinical recommendations on 4K laparoscopy, operating theatre architecture, sterilization protocols, and healthcare technology across Africa.": "Guides, livres blancs et recommandations cliniques sur la laparoscopie 4K, l'aménagement des blocs opératoires, la stérilisation et les technologies de santé en Afrique.",
     "Filter articles by category": "Filtrer les articles par catégorie",
     "Search articles, topics, keywords...": "Rechercher des articles, sujets, mots-clés…",
     "Search articles": "Rechercher des articles",
-    "All Publications": "Toutes les publications",
-    "Loading clinical articles…": "Chargement des articles…",
-    "Biomedical Advisory & Support": "Conseil et support biomédical",
-    "Have Questions About Medical Equipment or Protocols?": "Des questions sur un équipement médical ou un protocole ?",
-    "Our biomedical engineering and clinical product specialists in Kigali provide customized advisory, technical datasheets, and hospital theatre audits.": "Nos ingénieurs biomédicaux et spécialistes produits à Kigali vous offrent conseils personnalisés, fiches techniques et audits de bloc opératoire.",
-    "Contact Our Specialists": "Contacter nos spécialistes",
-    "Eric Mugabo, Lead Biomedical Engineer": "Eric Mugabo, ingénieur biomédical principal",
-    "Eric Mugabo, Bio-Eng": "Eric Mugabo, ingénieur biomédical",
-    "IKEDA Clinical Engineering Advisory Board": "Comité consultatif d'ingénierie clinique IKEDA",
-    "Dr. Jean-Pierre Hakizimana, Consultant Laparoscopic Surgeon": "Dr Jean-Pierre Hakizimana, chirurgien laparoscopiste consultant",
-
     "Contact & Request Quote | IKEDA ENDOSCOPY AFRICA Ltd": "Contact et demande de devis | IKEDA ENDOSCOPY AFRICA Ltd",
     "Get in touch with IKEDA ENDOSCOPY AFRICA Ltd for hospital equipment inquiries, laparoscopy surgical suite quotes, technical servicing, and tender consultations in Kigali, Rwanda.": "Contactez IKEDA ENDOSCOPY AFRICA Ltd pour vos demandes d'équipement hospitalier, devis de blocs de laparoscopie, maintenance technique et appels d'offres, à Kigali, Rwanda.",
     "Request a Quote & Equipment Consultation": "Demande de *devis* et conseil en *équipement*",
@@ -496,26 +417,57 @@
     "Ikeda Endoscopy Africa office location": "Emplacement des bureaux d'Ikeda Endoscopy Africa",
     "Laparoscopy & Surgery": "Laparoscopie et chirurgie",
     "Call +250 795 360 359": "Appeler le +250 795 360 359",
-    "Dr. Jean-Pierre Hakizimana": "Dr Jean-Pierre Hakizimana",
-    "No articles match your search criteria.": "Aucun article ne correspond à votre recherche.",
-    "Failed to load articles.": "Impossible de charger les articles."
+    "Our Equipment Range": "Notre gamme d’équipements",
+    "Explore Equipment by Department": "Découvrez nos équipements par service",
+    "A selection from each department. Click any item to see its details and request a quote.": "Une sélection pour chaque service. Cliquez sur un article pour voir sa fiche et demander un devis.",
+    "Loading equipment…": "Chargement des équipements…",
+    "View all →": "Voir tout →",
+    "Browse the full product catalog →": "Voir tout le catalogue →"
   },
   "patterns": [
-    ["^View specifications for (.+)$", "Voir les caractéristiques : $1"],
-    ["^Products in (.+)$", "Produits — {1}"],
-    ["^(.+) Products$", "Produits — {1}"],
-    ["^1 System$", "1 système"],
-    ["^(\\d+) Systems$", "$1 systèmes"],
-    ["^(.+) Logo$", "Logo $1"],
-    ["^Read article on (.+)$", "Lire l'article : $1"],
-    ["^Read (.+: .+)$", "Lire : {1}"],
-    ["^Neutral placeholder for (.+)$", "Image non disponible : $1"],
-    ["^(.+) is an authentic medical and surgical system supplied and supported directly by IKEDA Endoscopy Africa for referral hospitals, operating theatres, and clinical facilities across Rwanda and East Africa\\.$", "$1 : équipement médical et chirurgical authentique, fourni et pris en charge directement par IKEDA Endoscopy Africa pour les hôpitaux de référence, les blocs opératoires et les établissements de santé au Rwanda et en Afrique de l'Est."],
-    ["^⏱️ (\\d+) min read$", "⏱️ $1 min de lecture"],
-    ["^(\\d+) min read$", "$1 min de lecture"],
-    ["^Thank you, (.+)! We have received your inquiry regarding (.+)\\. Our biomedical support team will contact you shortly\\. Reference: (.+)$", "Merci, $1 ! Nous avons bien reçu votre demande concernant « {2} ». Notre équipe biomédicale vous contactera rapidement. Référence : $3"],
-    ["^Division (\\d+)$", "Division $1"],
-    ["^# (.+)$", "# {1}"],
-    ["^([^/]+) / ([^/]+)$", "{1} / {2}"]
+    [
+      "^View specifications for (.+)$",
+      "Voir les caractéristiques : $1"
+    ],
+    [
+      "^Products in (.+)$",
+      "Produits — {1}"
+    ],
+    [
+      "^(.+) Products$",
+      "Produits — {1}"
+    ],
+    [
+      "^1 System$",
+      "1 système"
+    ],
+    [
+      "^(\\d+) Systems$",
+      "$1 systèmes"
+    ],
+    [
+      "^(.+) Logo$",
+      "Logo $1"
+    ],
+    [
+      "^Neutral placeholder for (.+)$",
+      "Image non disponible : $1"
+    ],
+    [
+      "^(.+) is an authentic medical and surgical system supplied and supported directly by IKEDA Endoscopy Africa for referral hospitals, operating theatres, and clinical facilities across Rwanda and East Africa\\.$",
+      "$1 : équipement médical et chirurgical authentique, fourni et pris en charge directement par IKEDA Endoscopy Africa pour les hôpitaux de référence, les blocs opératoires et les établissements de santé au Rwanda et en Afrique de l'Est."
+    ],
+    [
+      "^Thank you, (.+)! We have received your inquiry regarding (.+)\\. Our biomedical support team will contact you shortly\\. Reference: (.+)$",
+      "Merci, $1 ! Nous avons bien reçu votre demande concernant « {2} ». Notre équipe biomédicale vous contactera rapidement. Référence : $3"
+    ],
+    [
+      "^Division (\\d+)$",
+      "Division $1"
+    ],
+    [
+      "^([^/]+) / ([^/]+)$",
+      "{1} / {2}"
+    ]
   ]
 }

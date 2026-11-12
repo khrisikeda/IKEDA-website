@@ -4,7 +4,7 @@
 //   welcome → small talk → "prepare my inquiry" → medical-advice refusal →
 //   active quotation builder → competitors → prices → delivery →
 //   company facts → specialised legacy engine (clinic setup, comparisons,
-//   definitions) → site-wide search (products, articles, pages) →
+//   definitions) → site-wide search (products, pages) →
 //   legacy engine → closest matches → fallback.
 //
 // Every reply passes through finalize(), which applies the business rules
@@ -107,12 +107,10 @@ function contentAnswer(hit, query, lang) {
   const d = hit.doc;
   const text = d.ref.text || d.body;
   const sentences = bestSentences(text, query, 3);
-  const source = d.type === 'article'
-    ? I.t(lang, `From our article **${d.ref.article.title}**:`, `Extrait de notre article **${d.ref.article.title}** (en anglais) :`)
-    : I.t(lang, `From our **${d.ref.page}** page — *${d.ref.heading}*:`, `Extrait de notre page **${d.ref.page}** — *${d.ref.heading}* (en anglais) :`);
+  const source = I.t(lang, `From our **${d.ref.page}** page — *${d.ref.heading}*:`, `Extrait de notre page **${d.ref.page}** — *${d.ref.heading}* (en anglais) :`);
   return {
     reply: `${source}\n\n> ${sentences.join(' ')}`,
-    actions: [{ label: d.type === 'article' ? I.t(lang, 'Read the article', "Lire l'article") : I.t(lang, 'Open the page', 'Ouvrir la page'), url: d.url }]
+    actions: [{ label: I.t(lang, 'Open the page', 'Ouvrir la page'), url: d.url }]
   };
 }
 
@@ -279,8 +277,8 @@ function respond(message, context = {}, legacy = {}) {
   const products = productMatches(en);
   const bestProduct = search(en, { types: ['product'], limit: 1 }).results[0];
   const productScore = bestProduct ? bestProduct.score : 0;
-  // An article/page wins only if it covers the question and clearly beats the best product
-  const contentWins = top && (top.doc.type === 'article' || top.doc.type === 'page') &&
+  // A page wins only if it covers the question and clearly beats the best product
+  const contentWins = top && top.doc.type === 'page' &&
     top.coverage >= 0.6 && top.score >= 6 && top.score > productScore * 1.6;
   if (contentWins) return finalize(contentAnswer(top, en, lang), lang, { intent: 'content', note });
   if (products.length) return finalize(productAnswer(products, lang), lang, { intent: 'product', note });
@@ -300,7 +298,7 @@ function respond(message, context = {}, legacy = {}) {
       "I'm not completely sure what you need, but these products in our catalog are the closest match:",
       'Je ne suis pas certain de bien comprendre votre besoin, mais voici les produits les plus proches dans notre catalogue :')), lang, { intent: 'product_loose', note });
   }
-  if (top && top.score >= 4 && (top.doc.type === 'article' || top.doc.type === 'page')) {
+  if (top && top.score >= 4 && top.doc.type === 'page') {
     return finalize(contentAnswer(top, en, lang), lang, { intent: 'content_loose', note });
   }
   if (top && top.doc.type === 'department') {

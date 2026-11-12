@@ -830,7 +830,12 @@ function getProductData(catSlug, itemIdx) {
     category = cat.name;
   }
 
-  return { name, image, features, specification, category, subtitle, section, catSlug, departmentGroup: cat.departmentGroup };
+  // Several photos of the same product are shown as one card with a thumbnail gallery
+  const images = typeof rawItem === 'object' && rawItem !== null && Array.isArray(rawItem.images) && rawItem.images.length
+    ? rawItem.images.filter(Boolean)
+    : (image ? [image] : []);
+
+  return { name, image, images, features, specification, category, subtitle, section, catSlug, departmentGroup: cat.departmentGroup };
 }
 
 function formatNoticeLines(specText, features) {
@@ -1254,15 +1259,25 @@ function openProductModal(catSlug, itemIdx) {
   // Thumbnail Strip
   const thumbStrip = document.getElementById('mic-gallery-thumbnails');
   if (thumbStrip) {
-    if (data.image) {
-      thumbStrip.innerHTML = `
-        <div class="mic-thumb-box active" title="${escapeHtml(data.name)}">
-          <img src="${escapeHtml(data.image)}" alt="${escapeHtml(data.name)}" class="mic-thumb-img" />
-        </div>
-      `;
-    } else {
-      thumbStrip.innerHTML = '';
-    }
+    const photos = data.images && data.images.length ? data.images : (data.image ? [data.image] : []);
+    thumbStrip.innerHTML = photos.map((src, i) => `
+        <button type="button" class="mic-thumb-box${i === 0 ? ' active' : ''}" data-src="${escapeHtml(src)}"
+          title="${escapeHtml(data.name)}${photos.length > 1 ? ` (${i + 1}/${photos.length})` : ''}"
+          aria-label="${escapeHtml(data.name)} — photo ${i + 1}" aria-pressed="${i === 0 ? 'true' : 'false'}">
+          <img src="${escapeHtml(src)}" alt="" class="mic-thumb-img" />
+        </button>
+      `).join('');
+    // Clicking a thumbnail shows that photo in the main view
+    thumbStrip.querySelectorAll('.mic-thumb-box').forEach((box) => {
+      box.addEventListener('click', () => {
+        const mainImg = document.getElementById('product-detail-img-element');
+        if (mainImg) mainImg.src = box.dataset.src;
+        thumbStrip.querySelectorAll('.mic-thumb-box').forEach((b) => {
+          b.classList.toggle('active', b === box);
+          b.setAttribute('aria-pressed', b === box ? 'true' : 'false');
+        });
+      });
+    });
   }
 
   // Zoom magnifier handlers

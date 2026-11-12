@@ -25,7 +25,7 @@
 // Main shared application logic
 document.addEventListener('DOMContentLoaded', () => {
   const assistantScript = document.createElement('script');
-  assistantScript.src = '/js/ai-chat.js?v=4.0';
+  assistantScript.src = '/js/ai-chat.js?v=4.2';
   document.body.appendChild(assistantScript);
 
   // Mobile nav toggle
@@ -113,7 +113,7 @@ async function fetchJSON(url) {
 function initSharedPageAnimations() {
   // 1. Immediately trigger any hero on page load with cascade to next section
   const heroSection = document.querySelector('.hero');
-  const towerSection = document.querySelector('#tower-explorer');
+  const towerSection = document.querySelector('#home-showcase');
 
   if (heroSection) {
     const triggerHeroAndSequence = () => {

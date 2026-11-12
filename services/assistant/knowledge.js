@@ -1,5 +1,5 @@
 // Builds a searchable index of everything on the website — products,
-// departments, articles, page sections, manufacturers — and ranks results
+// departments, page sections, manufacturers — and ranks results
 // with BM25 plus typo tolerance. Rebuilt automatically when files change.
 
 const fs = require('fs');
@@ -9,7 +9,6 @@ const { tokenize, stripHtml, editDistance } = require('./text');
 const ROOT = path.join(__dirname, '..', '..');
 const FILES = {
   products: path.join(ROOT, 'data', 'products.json'),
-  articles: path.join(ROOT, 'data', 'articles.json'),
   manufacturers: path.join(ROOT, 'data', 'manufacturers.json'),
   company: path.join(ROOT, 'data', 'company.json')
 };
@@ -17,8 +16,7 @@ const PAGES = [
   { file: 'about.html', url: '/about', label: 'About us' },
   { file: 'index.html', url: '/', label: 'Home' },
   { file: 'manufacturers.html', url: '/manufacturers', label: 'Manufacturers' },
-  { file: 'contact.html', url: '/contact', label: 'Contact' },
-  { file: 'blog.html', url: '/blog', label: 'Articles' }
+  { file: 'contact.html', url: '/contact', label: 'Contact' }
 ];
 
 function readJson(file, fallback) {
@@ -89,19 +87,8 @@ function splitHtmlSections(html) {
     .filter((s) => s.title && s.text.length > 40);
 }
 
-function splitArticle(article) {
-  const parts = String(article.content || '').split(/<h[2-4][^>]*>/i);
-  const sections = [{ heading: article.title, html: parts[0] }];
-  parts.slice(1).forEach((p) => {
-    const [h, ...rest] = p.split(/<\/h[2-4]>/i);
-    sections.push({ heading: stripHtml(h), html: rest.join(' ') });
-  });
-  return sections.map((s) => ({ heading: s.heading, text: stripHtml(s.html) })).filter((s) => s.text.length > 30);
-}
-
 function buildDocs() {
   const categories = readJson(FILES.products, []);
-  const articles = readJson(FILES.articles, []);
   const manufacturers = readJson(FILES.manufacturers, []);
   const company = readJson(FILES.company, {});
   const products = collectProducts(categories);
@@ -127,18 +114,6 @@ function buildDocs() {
     });
   });
 
-  articles.forEach((a) => {
-    splitArticle(a).forEach((s, i) => {
-      docs.push({
-        type: 'article',
-        title: i === 0 ? a.title : `${a.title} — ${s.heading}`,
-        body: `${i === 0 ? a.excerpt + ' ' + (a.tags || []).join(' ') : ''} ${s.text}`,
-        url: `/blog?article=${encodeURIComponent(a.slug || a.id)}`,
-        ref: { article: a, heading: s.heading, text: s.text }
-      });
-    });
-  });
-
   PAGES.forEach((page) => {
     let html = '';
     try {
@@ -161,7 +136,7 @@ function buildDocs() {
     });
   });
 
-  return { docs, products, categories, articles, manufacturers, company };
+  return { docs, products, categories, manufacturers, company };
 }
 
 function indexDocs(docs) {

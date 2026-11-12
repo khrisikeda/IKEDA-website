@@ -176,7 +176,7 @@ function siteFact(n, lang, kb) {
 
   // People / ownership — not published on the site
   if (has(/\b(ceo|founder|owner|owns|director|managing director|manager|boss|staff|employees|team members|who runs|who works|pdg|fondateur|proprietaire|directeur|directrice|gerant|employes|personnel)\b/) &&
-      !has(/\b(training|formation|install\w*)\b/)) {
+      !has(/\b(train\w*|formation|former|formez|install\w*)\b/)) {
     return {
       reply: t(lang,
         "Information about our management and staff isn't published on the website. Our team will be happy to introduce the right person — contact us below.",
@@ -260,12 +260,17 @@ function siteFact(n, lang, kb) {
     };
   }
 
-  // Articles / blog
-  if (has(/\b(articles?|blog|news|insights|publications?|actualites)\b/)) {
-    const list = kb.articles.map((a) => `• **${a.title}**`).join('\n');
+  // Blog / articles / news — the site has none, so steer to what it does offer
+  if (has(/\b(blog|blogs|news|newsletter|insights|publications?|actualites|nouvelles)\b/) ||
+      (lang === 'en' && has(/\b(articles?|posts?)\b/) && !has(/\b(order|buy|quote|need|want)\b/))) {
     return {
-      reply: t(lang, `Here are our latest articles:\n\n${list}`, `Voici nos derniers articles (en anglais) :\n\n${list}`),
-      actions: kb.articles.slice(0, 3).map((a) => ({ label: a.title.split(':')[0].slice(0, 40), url: `/blog?article=${encodeURIComponent(a.slug || a.id)}` }))
+      reply: t(lang,
+        "We don't publish articles or a blog on this website. I can help you with our **products**, a **department setup** (theatre, ICU, dental, laboratory…), our **manufacturers**, or prepare a **quote request** for your team.",
+        "Nous ne publions pas d'articles ni de blog sur ce site. Je peux vous aider avec nos **produits**, l'**équipement d'un service** (bloc opératoire, réanimation, dentaire, laboratoire…), nos **fabricants**, ou préparer une **demande de devis**."),
+      actions: [
+        { label: t(lang, 'Browse products', 'Voir les produits'), url: '/products' },
+        { label: t(lang, 'Contact our team', 'Contacter notre équipe'), url: '/contact' }
+      ]
     };
   }
 

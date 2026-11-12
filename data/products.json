@@ -443,7 +443,7 @@
       },
       {
         "name": "Stone basket",
-        "image": "/images/products/disposable-laparoscopic-graspers.jpg",
+        "image": "/images/products/uro-stone-basket-1.jpg",
         "specification": "Material: Shape-memory superelastic nitinol alloy \nSheath diameter: 1.5 Fr, 1.8 Fr, 2.2 Fr \nWorking length: 115 cm \nGeometry: 4-wire tipless, 6-wire helical, and flat-wire configurations \nHandle: Ergonomic thumb-controlled slider with quick-release detachable mechanism \nCompatibility: Suitable for flexible ureteroscopes (F-URS) and semi-rigid URS",
         "features": [
           "Kink-resistant superelastic nitinol alloy maintains basket shape under heavy capture loads",
@@ -453,11 +453,20 @@
           "4-wire and 6-wire options optimize retrieval for both fragmented gravel and intact calculi"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/uro-stone-basket-1.jpg",
+          "/images/products/uro-stone-basket-2.jpg",
+          "/images/products/uro-stone-basket-3.jpg",
+          "/images/products/uro-stone-basket-4.jpg",
+          "/images/products/uro-stone-basket-5.jpg",
+          "/images/products/uro-stone-basket-6.jpg",
+          "/images/products/uro-stone-basket-7.jpg"
+        ]
       },
       {
         "name": "Ureteral sheath access",
-        "image": "/images/products/laparoscopic-access-instruments.jpg",
+        "image": "/images/products/uro-ureteral-access-sheath-1.jpg",
         "specification": "Sizes: 9.5/11.5 Fr, 10/12 Fr, 11/13 Fr, 12/14 Fr \nLengths: 28 cm, 35 cm, 45 cm \nReinforcement: Stainless steel embedded spiral coil (kink-resistant) \nCoating: Hydrophilic lubricious coating on outer sheath and dilator \nRadiopacity: Dual platinum marker rings at distal and proximal tip \nDilator: Seamless tapered atraumatic dilator with secure snap-lock hub",
         "features": [
           "Reinforced embedded stainless steel coil prevents sheath buckling and ureteral pinching",
@@ -467,11 +476,17 @@
           "High-contrast radiopaque marker bands allow accurate positioning under fluoroscopy"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/uro-ureteral-access-sheath-1.jpg",
+          "/images/products/uro-ureteral-access-sheath-2.jpg",
+          "/images/products/uro-ureteral-access-sheath-3.jpg",
+          "/images/products/uro-ureteral-access-sheath-4.jpg"
+        ]
       },
       {
         "name": "Stents",
-        "image": "/images/products/disposable-plastic-trocars.jpg",
+        "image": "/images/products/uro-ureteral-stent-1.jpg",
         "specification": "Type: Double J (DJ) ureteral stent set \nMaterial: Biocompatible radiopaque polyurethane / medical silicone \nCalibers: 4.5 Fr, 4.8 Fr, 6.0 Fr, 7.0 Fr \nLengths: 24 cm, 26 cm, 28 cm, and multi-length 22-30 cm \nCoating: Hydrophilic anti-encrustation coating (3-6 months indwelling) \nAccessories: Position pusher catheter, stainless steel PTFE guidewire, retrieval suture",
         "features": [
           "Thermally responsive biocompatible material softens at body temperature for patient comfort",
@@ -481,11 +496,15 @@
           "Supplied complete with guidewire, pusher catheter, and braided suture tether"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/uro-ureteral-stent-1.jpg",
+          "/images/products/uro-ureteral-stent-2.jpg"
+        ]
       },
       {
-        "name": "Guide wires",
-        "image": "/images/products/endo-file-hand-file-niti.jpeg",
+        "name": "Hydrophilic guidewire (angled tip)",
+        "image": "/images/products/uro-guide-wire-1.jpg",
         "specification": "Core: Superelastic shape-memory nitinol core \nDiameters: 0.032\", 0.035\", 0.038\" \nLengths: 150 cm, 260 cm (exchange length) \nCoating: Full-length hydrophilic polymer jacket and high-contrast Zebra torque polyurethane \nTip style: 3 cm and 5 cm platinum floppy tip (straight and 45° angled) \nTorque transmission: 1:1 responsive rotational torque",
         "features": [
           "Nitinol core resists permanent kinking and provides high column strength for catheter push",
@@ -495,11 +514,17 @@
           "Gold and platinum radiopaque distal coil provides unmistakable fluoroscopic brightness"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/uro-guide-wire-1.jpg",
+          "/images/products/uro-guide-wire-11.jpg",
+          "/images/products/uro-guide-wire-12.jpg",
+          "/images/products/uro-guide-wire-10.jpg"
+        ]
       },
       {
         "name": "Dilation ballons",
-        "image": "/images/products/air-compressing-nebulizer-w004.jpeg",
+        "image": "/images/products/uro-dilation-balloon-1.jpg",
         "specification": "Balloon diameter: 4 mm, 5 mm, 6 mm, 7 mm, 8 mm, 10 mm \nBalloon length: 4 cm, 6 cm, 8 cm, 10 cm \nCatheter size: 5 Fr / 6 Fr (length 75 cm / 90 cm) \nMaterial: High-pressure non-compliant medical grade nylon \nBurst pressure rating: 20–30 atmospheres (atm) \nAccessories: High-pressure 30 atm inflation syringe with analog gauge and stopcock",
         "features": [
           "Non-compliant nylon balloon ensures uniform radial expansion without dog-boning",
@@ -509,11 +534,17 @@
           "Includes dedicated 30 atm calibrated syringe with quick-release pressure dump trigger"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/uro-dilation-balloon-1.jpg",
+          "/images/products/uro-dilation-balloon-2.jpg",
+          "/images/products/uro-dilation-balloon-3.jpg",
+          "/images/products/uro-dilation-balloon-4.jpg"
+        ]
       },
       {
         "name": "PCNL sets",
-        "image": "/images/products/laparoscopic-access-instruments.jpg",
+        "image": "/images/products/uro-pcnl-set-1.jpg",
         "specification": "Nephroscope: 20.8 Fr / 24 Fr rigid nephroscope, 12° wide-angle optics \nWorking length: 220 mm, instrument channel: 11.5 Fr \nPuncture needles: 18G two-part echogenic Chiba initial puncture needle \nDilators: Fascial dilators (8–16 Fr), Amplatz renal dilator set (10–30 Fr) \nWorking sheaths: Peel-away and reusable radiopaque Amplatz sheaths (24–30 Fr) \nForceps: Rigid two-prong and three-prong stone grasping forceps",
         "features": [
           "Complete percutaneous access set for staghorn and caliceal stone clearance",
@@ -523,7 +554,13 @@
           "Echogenic puncture needle facilitates ultrasound and fluoroscopic-guided caliceal access"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/uro-pcnl-set-1.jpg",
+          "/images/products/uro-pcnl-set-2.jpg",
+          "/images/products/uro-pcnl-set-3.jpg",
+          "/images/products/uro-pcnl-set-4.jpg"
+        ]
       },
       {
         "name": "Holmium laser",
@@ -540,22 +577,19 @@
         "subtitle": "Urology & Endourology"
       },
       {
-        "name": "Thulium laser",
+        "name": "Coblator",
         "image": "/images/products/plasma-surgical-ablation-system.jpg",
-        "specification": "Laser medium: Thulium Fiber Laser (TFL) / Tm:YAG \nWavelength: 1,940 nm (peak water absorption resonance) \nMaximum power: 50W – 60W continuous/pulsed \nPulse frequency: Up to 2,000 Hz \nPulse energy: Micro-pulses down to 0.025 J up to 3.0 J \nOptical fiber: Ultra-fine 150 µm, 200 µm, 272 µm \nApplications: Stone dust pulverization, ThuLEP prostate enucleation, bladder tumors",
+        "specification": "",
         "features": [
-          "1,940 nm wavelength matches water absorption peak—4x higher absorption than Holmium",
-          "Ultra-high frequency up to 2,000 Hz pulverizes stones into fine dust with zero retropulsion",
-          "Enables stone dusting through 150 µm fibers while maintaining 100% ureteroscope deflection",
-          "Shallow 0.2 mm penetration depth delivers exceptional, bloodless prostate enucleation (ThuLEP)",
-          "Compact air-cooled solid-state architecture with standard single-phase electrical power"
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
         ],
         "category": "Operating Theatre",
         "subtitle": "Urology & Endourology"
       },
       {
         "name": "Litotripsy punch",
-        "image": "/images/products/laparoscopic-clip-appliers.jpg",
+        "image": "/images/products/lithotripsy-punch.jpg",
         "specification": "Type: Mechanical optical bladder stone punch crusher (Lithotrite) \nPattern: Mauermayer and Hendrickson continuous-flow design \nCaliber: 24 Fr outer sheath \nMechanism: Heavy-duty rack-and-pinion screw compression \nOptics: Direct-view 0° / 30° telescope compatibility \nMaterial: Heat-treated hardened surgical martensitic stainless steel",
         "features": [
           "Heavy-duty mechanical crushing jaws destroy hard, large calcified bladder stones",
@@ -569,14 +603,20 @@
       },
       {
         "name": "Urethome",
-        "image": "/images/products/rigid-sinoscopes-0-4-175.jpeg",
+        "image": "/images/products/urethrotome-optical-1.jpg",
         "specification": "Type: Sachse optical internal urethrotomy instrument set \nSheath caliber: 21 Fr with dual irrigation stopcocks \nTelescope: 0° straight-view telescope (4 mm / 2.9 mm, 302 mm) \nWorking element: Single-action passive spring mechanism with thumb ring \nBlades: Straight, round-edge, sickle/falciform, and wave-edge cold knives \nSafety channel: Integrated supplementary channel for 0.038\" safety guidewire",
         "features": [
           "Cold-knife optical stricturotomy preserves vascular erectile tissue without thermal injury",
           "Interchangeable micro-honed blades: straight, circular, falciform, and wave cutting profiles"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/urethrotome-optical-1.jpg",
+          "/images/products/urethrotome-optical-2.jpg",
+          "/images/products/urethrotome-optical-3.jpg",
+          "/images/products/urethrotome-optical-4.jpg"
+        ]
       },
       {
         "name": "Optical forceps",
@@ -1149,6 +1189,259 @@
         "features": [],
         "category": "Gynecology & Women's Health",
         "subtitle": "Gynecology & Women's Health"
+      },
+      {
+        "name": "Urethral sound (dilator)",
+        "image": "/images/products/urethral-sound-dilator.jpg",
+        "images": [
+          "/images/products/urethral-sound-dilator.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Suprapubic trocar set",
+        "image": "/images/products/suprapubic-trocar-set-1.jpg",
+        "images": [
+          "/images/products/suprapubic-trocar-set-1.jpg",
+          "/images/products/suprapubic-trocar-set-2.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Bladder irrigation syringe",
+        "image": "/images/products/bladder-irrigation-syringe.jpg",
+        "images": [
+          "/images/products/bladder-irrigation-syringe.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Foley catheter (latex, 2-way / 3-way)",
+        "image": "/images/products/uro-foley-catheter-latex-1.jpg",
+        "images": [
+          "/images/products/uro-foley-catheter-latex-1.jpg",
+          "/images/products/uro-foley-catheter-latex-2.jpg",
+          "/images/products/uro-foley-catheter-latex-3.jpg",
+          "/images/products/uro-foley-catheter-latex-4.jpg",
+          "/images/products/uro-foley-catheter-latex-5.jpg",
+          "/images/products/uro-foley-catheter-latex-6.jpg",
+          "/images/products/uro-foley-catheter-latex-7.jpg",
+          "/images/products/uro-foley-catheter-latex-8.jpg",
+          "/images/products/uro-foley-catheter-latex-9.jpg",
+          "/images/products/uro-foley-catheter-latex-10.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Foley catheter (all-silicone)",
+        "image": "/images/products/uro-foley-catheter-silicone-1.jpg",
+        "images": [
+          "/images/products/uro-foley-catheter-silicone-1.jpg",
+          "/images/products/uro-foley-catheter-silicone-2.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Urine drainage bag",
+        "image": "/images/products/uro-urine-drainage-bag-1.jpg",
+        "images": [
+          "/images/products/uro-urine-drainage-bag-1.jpg",
+          "/images/products/uro-urine-drainage-bag-2.jpg",
+          "/images/products/uro-urine-drainage-bag-3.jpg",
+          "/images/products/uro-urine-drainage-bag-4.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Ureteral catheter",
+        "image": "/images/products/uro-ureteral-catheter-1.jpg",
+        "images": [
+          "/images/products/uro-ureteral-catheter-1.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Zebra guidewire",
+        "image": "/images/products/uro-zebra-guidewire-1.jpg",
+        "images": [
+          "/images/products/uro-zebra-guidewire-1.jpg",
+          "/images/products/uro-zebra-guidewire-2.jpg",
+          "/images/products/uro-zebra-guidewire-3.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Holmium laser fiber",
+        "image": "/images/products/uro-laser-fiber-1.jpg",
+        "images": [
+          "/images/products/uro-laser-fiber-1.jpg",
+          "/images/products/uro-laser-fiber-2.jpg",
+          "/images/products/uro-laser-fiber-3.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Balloon inflation device",
+        "image": "/images/products/uro-balloon-inflation-device-1.jpg",
+        "images": [
+          "/images/products/uro-balloon-inflation-device-1.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Irrigation tubing set (Y-type)",
+        "image": "/images/products/uro-irrigation-tubing-y-set-1.jpg",
+        "images": [
+          "/images/products/uro-irrigation-tubing-y-set-1.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Lubricant jelly",
+        "image": "/images/products/uro-lubricant-jelly-1.jpg",
+        "images": [
+          "/images/products/uro-lubricant-jelly-1.jpg",
+          "/images/products/uro-lubricant-jelly-2.jpg",
+          "/images/products/uro-lubricant-jelly-3.jpg",
+          "/images/products/uro-lubricant-jelly-4.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Absorbable hemostat (oxidized regenerated cellulose)",
+        "image": "/images/products/uro-absorbable-hemostat-orc-1.jpg",
+        "images": [
+          "/images/products/uro-absorbable-hemostat-orc-1.jpg",
+          "/images/products/uro-absorbable-hemostat-orc-2.jpg",
+          "/images/products/uro-absorbable-hemostat-orc-3.jpg",
+          "/images/products/uro-absorbable-hemostat-orc-4.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "J-tip guidewire",
+        "image": "/images/products/uro-guide-wire-3.jpg",
+        "images": [
+          "/images/products/uro-guide-wire-3.jpg",
+          "/images/products/uro-guide-wire-4.jpg",
+          "/images/products/uro-guide-wire-6.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Straight-tip guidewire",
+        "image": "/images/products/uro-guide-wire-2.jpg",
+        "images": [
+          "/images/products/uro-guide-wire-2.jpg",
+          "/images/products/uro-guide-wire-5.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Guidewire (blue straight tip)",
+        "image": "/images/products/uro-guide-wire-7.jpg",
+        "images": [
+          "/images/products/uro-guide-wire-7.jpg",
+          "/images/products/uro-guide-wire-8.jpg",
+          "/images/products/uro-guide-wire-9.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
       }
     ],
     "keySpecs": [
@@ -1581,6 +1874,20 @@
             "subtitle": "Urology & Endourology"
           },
           {
+            "name": "Irrigation tubing set (Y-type)",
+            "image": "/images/products/uro-irrigation-tubing-y-set-1.jpg",
+            "images": [
+              "/images/products/uro-irrigation-tubing-y-set-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
             "name": "Rigid ureteroscope",
             "image": "/images/products/ureteroscope.jpg",
             "specification": "Direction of view: 5° / 12° \nTip caliber: 6.0/7.5 Fr and 8.0/9.8 Fr tapered sheath \nWorking length: 430 mm \nInstrument channel: 4.8 Fr for laser fibers and baskets \nLight adapter: Universal Storz/Wolf/Olympus connection \nIrrigation: Integrated dual stopcocks with Luer-lock \nConstruction: Autoclavable laser-welded stainless steel",
@@ -1609,22 +1916,8 @@
             "subtitle": "Urology & Endourology"
           },
           {
-            "name": "Stone basket",
-            "image": "/images/products/disposable-laparoscopic-graspers.jpg",
-            "specification": "Material: Shape-memory superelastic nitinol alloy \nSheath diameter: 1.5 Fr, 1.8 Fr, 2.2 Fr \nWorking length: 115 cm \nGeometry: 4-wire tipless, 6-wire helical, and flat-wire configurations \nHandle: Ergonomic thumb-controlled slider with quick-release detachable mechanism \nCompatibility: Suitable for flexible ureteroscopes (F-URS) and semi-rigid URS",
-            "features": [
-              "Kink-resistant superelastic nitinol alloy maintains basket shape under heavy capture loads",
-              "Tipless configuration allows direct stone engagement flush against the caliceal wall",
-              "Low-profile 1.5 Fr/1.8 Fr PTFE sheath maintains high irrigation flow during ureteroscopy",
-              "Detachable handle enables quick scope removal during difficult or large stone impaction",
-              "4-wire and 6-wire options optimize retrieval for both fragmented gravel and intact calculi"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
-          },
-          {
             "name": "Ureteral sheath access",
-            "image": "/images/products/laparoscopic-access-instruments.jpg",
+            "image": "/images/products/uro-ureteral-access-sheath-1.jpg",
             "specification": "Sizes: 9.5/11.5 Fr, 10/12 Fr, 11/13 Fr, 12/14 Fr \nLengths: 28 cm, 35 cm, 45 cm \nReinforcement: Stainless steel embedded spiral coil (kink-resistant) \nCoating: Hydrophilic lubricious coating on outer sheath and dilator \nRadiopacity: Dual platinum marker rings at distal and proximal tip \nDilator: Seamless tapered atraumatic dilator with secure snap-lock hub",
             "features": [
               "Reinforced embedded stainless steel coil prevents sheath buckling and ureteral pinching",
@@ -1634,25 +1927,17 @@
               "High-contrast radiopaque marker bands allow accurate positioning under fluoroscopy"
             ],
             "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/uro-ureteral-access-sheath-1.jpg",
+              "/images/products/uro-ureteral-access-sheath-2.jpg",
+              "/images/products/uro-ureteral-access-sheath-3.jpg",
+              "/images/products/uro-ureteral-access-sheath-4.jpg"
+            ]
           },
           {
-            "name": "Stents",
-            "image": "/images/products/disposable-plastic-trocars.jpg",
-            "specification": "Type: Double J (DJ) ureteral stent set \nMaterial: Biocompatible radiopaque polyurethane / medical silicone \nCalibers: 4.5 Fr, 4.8 Fr, 6.0 Fr, 7.0 Fr \nLengths: 24 cm, 26 cm, 28 cm, and multi-length 22-30 cm \nCoating: Hydrophilic anti-encrustation coating (3-6 months indwelling) \nAccessories: Position pusher catheter, stainless steel PTFE guidewire, retrieval suture",
-            "features": [
-              "Thermally responsive biocompatible material softens at body temperature for patient comfort",
-              "High-density radiopaque compound ensures clear visualization under X-ray and fluoroscopy",
-              "Tapered memory pigtail loops prevent proximal renal and distal bladder migration",
-              "Multi-hole radial drainage configuration maintains robust urinary flow around calculus",
-              "Supplied complete with guidewire, pusher catheter, and braided suture tether"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
-          },
-          {
-            "name": "Guide wires",
-            "image": "/images/products/endo-file-hand-file-niti.jpeg",
+            "name": "Hydrophilic guidewire (angled tip)",
+            "image": "/images/products/uro-guide-wire-1.jpg",
             "specification": "Core: Superelastic shape-memory nitinol core \nDiameters: 0.032\", 0.035\", 0.038\" \nLengths: 150 cm, 260 cm (exchange length) \nCoating: Full-length hydrophilic polymer jacket and high-contrast Zebra torque polyurethane \nTip style: 3 cm and 5 cm platinum floppy tip (straight and 45° angled) \nTorque transmission: 1:1 responsive rotational torque",
             "features": [
               "Nitinol core resists permanent kinking and provides high column strength for catheter push",
@@ -1662,11 +1947,135 @@
               "Gold and platinum radiopaque distal coil provides unmistakable fluoroscopic brightness"
             ],
             "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/uro-guide-wire-1.jpg",
+              "/images/products/uro-guide-wire-11.jpg",
+              "/images/products/uro-guide-wire-12.jpg",
+              "/images/products/uro-guide-wire-10.jpg"
+            ]
+          },
+          {
+            "name": "J-tip guidewire",
+            "image": "/images/products/uro-guide-wire-3.jpg",
+            "images": [
+              "/images/products/uro-guide-wire-3.jpg",
+              "/images/products/uro-guide-wire-4.jpg",
+              "/images/products/uro-guide-wire-6.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Straight-tip guidewire",
+            "image": "/images/products/uro-guide-wire-2.jpg",
+            "images": [
+              "/images/products/uro-guide-wire-2.jpg",
+              "/images/products/uro-guide-wire-5.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Guidewire (blue straight tip)",
+            "image": "/images/products/uro-guide-wire-7.jpg",
+            "images": [
+              "/images/products/uro-guide-wire-7.jpg",
+              "/images/products/uro-guide-wire-8.jpg",
+              "/images/products/uro-guide-wire-9.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Zebra guidewire",
+            "image": "/images/products/uro-zebra-guidewire-1.jpg",
+            "images": [
+              "/images/products/uro-zebra-guidewire-1.jpg",
+              "/images/products/uro-zebra-guidewire-2.jpg",
+              "/images/products/uro-zebra-guidewire-3.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Stone basket",
+            "image": "/images/products/uro-stone-basket-1.jpg",
+            "specification": "Material: Shape-memory superelastic nitinol alloy \nSheath diameter: 1.5 Fr, 1.8 Fr, 2.2 Fr \nWorking length: 115 cm \nGeometry: 4-wire tipless, 6-wire helical, and flat-wire configurations \nHandle: Ergonomic thumb-controlled slider with quick-release detachable mechanism \nCompatibility: Suitable for flexible ureteroscopes (F-URS) and semi-rigid URS",
+            "features": [
+              "Kink-resistant superelastic nitinol alloy maintains basket shape under heavy capture loads",
+              "Tipless configuration allows direct stone engagement flush against the caliceal wall",
+              "Low-profile 1.5 Fr/1.8 Fr PTFE sheath maintains high irrigation flow during ureteroscopy",
+              "Detachable handle enables quick scope removal during difficult or large stone impaction",
+              "4-wire and 6-wire options optimize retrieval for both fragmented gravel and intact calculi"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/uro-stone-basket-1.jpg",
+              "/images/products/uro-stone-basket-2.jpg",
+              "/images/products/uro-stone-basket-3.jpg",
+              "/images/products/uro-stone-basket-4.jpg",
+              "/images/products/uro-stone-basket-5.jpg",
+              "/images/products/uro-stone-basket-6.jpg",
+              "/images/products/uro-stone-basket-7.jpg"
+            ]
+          },
+          {
+            "name": "Stents",
+            "image": "/images/products/uro-ureteral-stent-1.jpg",
+            "specification": "Type: Double J (DJ) ureteral stent set \nMaterial: Biocompatible radiopaque polyurethane / medical silicone \nCalibers: 4.5 Fr, 4.8 Fr, 6.0 Fr, 7.0 Fr \nLengths: 24 cm, 26 cm, 28 cm, and multi-length 22-30 cm \nCoating: Hydrophilic anti-encrustation coating (3-6 months indwelling) \nAccessories: Position pusher catheter, stainless steel PTFE guidewire, retrieval suture",
+            "features": [
+              "Thermally responsive biocompatible material softens at body temperature for patient comfort",
+              "High-density radiopaque compound ensures clear visualization under X-ray and fluoroscopy",
+              "Tapered memory pigtail loops prevent proximal renal and distal bladder migration",
+              "Multi-hole radial drainage configuration maintains robust urinary flow around calculus",
+              "Supplied complete with guidewire, pusher catheter, and braided suture tether"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/uro-ureteral-stent-1.jpg",
+              "/images/products/uro-ureteral-stent-2.jpg"
+            ]
+          },
+          {
+            "name": "Ureteral catheter",
+            "image": "/images/products/uro-ureteral-catheter-1.jpg",
+            "images": [
+              "/images/products/uro-ureteral-catheter-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"
           },
           {
             "name": "Dilation ballons",
-            "image": "/images/products/air-compressing-nebulizer-w004.jpeg",
+            "image": "/images/products/uro-dilation-balloon-1.jpg",
             "specification": "Balloon diameter: 4 mm, 5 mm, 6 mm, 7 mm, 8 mm, 10 mm \nBalloon length: 4 cm, 6 cm, 8 cm, 10 cm \nCatheter size: 5 Fr / 6 Fr (length 75 cm / 90 cm) \nMaterial: High-pressure non-compliant medical grade nylon \nBurst pressure rating: 20–30 atmospheres (atm) \nAccessories: High-pressure 30 atm inflation syringe with analog gauge and stopcock",
             "features": [
               "Non-compliant nylon balloon ensures uniform radial expansion without dog-boning",
@@ -1676,11 +2085,31 @@
               "Includes dedicated 30 atm calibrated syringe with quick-release pressure dump trigger"
             ],
             "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/uro-dilation-balloon-1.jpg",
+              "/images/products/uro-dilation-balloon-2.jpg",
+              "/images/products/uro-dilation-balloon-3.jpg",
+              "/images/products/uro-dilation-balloon-4.jpg"
+            ]
+          },
+          {
+            "name": "Balloon inflation device",
+            "image": "/images/products/uro-balloon-inflation-device-1.jpg",
+            "images": [
+              "/images/products/uro-balloon-inflation-device-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"
           },
           {
             "name": "PCNL sets",
-            "image": "/images/products/laparoscopic-access-instruments.jpg",
+            "image": "/images/products/uro-pcnl-set-1.jpg",
             "specification": "Nephroscope: 20.8 Fr / 24 Fr rigid nephroscope, 12° wide-angle optics \nWorking length: 220 mm, instrument channel: 11.5 Fr \nPuncture needles: 18G two-part echogenic Chiba initial puncture needle \nDilators: Fascial dilators (8–16 Fr), Amplatz renal dilator set (10–30 Fr) \nWorking sheaths: Peel-away and reusable radiopaque Amplatz sheaths (24–30 Fr) \nForceps: Rigid two-prong and three-prong stone grasping forceps",
             "features": [
               "Complete percutaneous access set for staghorn and caliceal stone clearance",
@@ -1690,7 +2119,13 @@
               "Echogenic puncture needle facilitates ultrasound and fluoroscopic-guided caliceal access"
             ],
             "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/uro-pcnl-set-1.jpg",
+              "/images/products/uro-pcnl-set-2.jpg",
+              "/images/products/uro-pcnl-set-3.jpg",
+              "/images/products/uro-pcnl-set-4.jpg"
+            ]
           },
           {
             "name": "Holmium laser",
@@ -1707,22 +2142,35 @@
             "subtitle": "Urology & Endourology"
           },
           {
-            "name": "Thulium laser",
-            "image": "/images/products/plasma-surgical-ablation-system.jpg",
-            "specification": "Laser medium: Thulium Fiber Laser (TFL) / Tm:YAG \nWavelength: 1,940 nm (peak water absorption resonance) \nMaximum power: 50W – 60W continuous/pulsed \nPulse frequency: Up to 2,000 Hz \nPulse energy: Micro-pulses down to 0.025 J up to 3.0 J \nOptical fiber: Ultra-fine 150 µm, 200 µm, 272 µm \nApplications: Stone dust pulverization, ThuLEP prostate enucleation, bladder tumors",
+            "name": "Holmium laser fiber",
+            "image": "/images/products/uro-laser-fiber-1.jpg",
+            "images": [
+              "/images/products/uro-laser-fiber-1.jpg",
+              "/images/products/uro-laser-fiber-2.jpg",
+              "/images/products/uro-laser-fiber-3.jpg"
+            ],
+            "specification": "",
             "features": [
-              "1,940 nm wavelength matches water absorption peak—4x higher absorption than Holmium",
-              "Ultra-high frequency up to 2,000 Hz pulverizes stones into fine dust with zero retropulsion",
-              "Enables stone dusting through 150 µm fibers while maintaining 100% ureteroscope deflection",
-              "Shallow 0.2 mm penetration depth delivers exceptional, bloodless prostate enucleation (ThuLEP)",
-              "Compact air-cooled solid-state architecture with standard single-phase electrical power"
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Coblator",
+            "image": "/images/products/plasma-surgical-ablation-system.jpg",
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
             ],
             "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"
           },
           {
             "name": "Litotripsy punch",
-            "image": "/images/products/laparoscopic-clip-appliers.jpg",
+            "image": "/images/products/lithotripsy-punch.jpg",
             "specification": "Type: Mechanical optical bladder stone punch crusher (Lithotrite) \nPattern: Mauermayer and Hendrickson continuous-flow design \nCaliber: 24 Fr outer sheath \nMechanism: Heavy-duty rack-and-pinion screw compression \nOptics: Direct-view 0° / 30° telescope compatibility \nMaterial: Heat-treated hardened surgical martensitic stainless steel",
             "features": [
               "Heavy-duty mechanical crushing jaws destroy hard, large calcified bladder stones",
@@ -1736,11 +2184,31 @@
           },
           {
             "name": "Urethome",
-            "image": "/images/products/rigid-sinoscopes-0-4-175.jpeg",
+            "image": "/images/products/urethrotome-optical-1.jpg",
             "specification": "Type: Sachse optical internal urethrotomy instrument set \nSheath caliber: 21 Fr with dual irrigation stopcocks \nTelescope: 0° straight-view telescope (4 mm / 2.9 mm, 302 mm) \nWorking element: Single-action passive spring mechanism with thumb ring \nBlades: Straight, round-edge, sickle/falciform, and wave-edge cold knives \nSafety channel: Integrated supplementary channel for 0.038\" safety guidewire",
             "features": [
               "Cold-knife optical stricturotomy preserves vascular erectile tissue without thermal injury",
               "Interchangeable micro-honed blades: straight, circular, falciform, and wave cutting profiles"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/urethrotome-optical-1.jpg",
+              "/images/products/urethrotome-optical-2.jpg",
+              "/images/products/urethrotome-optical-3.jpg",
+              "/images/products/urethrotome-optical-4.jpg"
+            ]
+          },
+          {
+            "name": "Urethral sound (dilator)",
+            "image": "/images/products/urethral-sound-dilator.jpg",
+            "images": [
+              "/images/products/urethral-sound-dilator.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
             ],
             "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"
@@ -1755,6 +2223,107 @@
               "Rigid reinforced shaft resists rotational bending and transmission torque loss",
               "Universal bridge locking mechanism locks securely into standard Albarran deflecting bridges",
               "Fully autoclavable and chemical disinfection compliant (IPX8)"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Foley catheter (latex, 2-way / 3-way)",
+            "image": "/images/products/uro-foley-catheter-latex-1.jpg",
+            "images": [
+              "/images/products/uro-foley-catheter-latex-1.jpg",
+              "/images/products/uro-foley-catheter-latex-2.jpg",
+              "/images/products/uro-foley-catheter-latex-3.jpg",
+              "/images/products/uro-foley-catheter-latex-4.jpg",
+              "/images/products/uro-foley-catheter-latex-5.jpg",
+              "/images/products/uro-foley-catheter-latex-6.jpg",
+              "/images/products/uro-foley-catheter-latex-7.jpg",
+              "/images/products/uro-foley-catheter-latex-8.jpg",
+              "/images/products/uro-foley-catheter-latex-9.jpg",
+              "/images/products/uro-foley-catheter-latex-10.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Foley catheter (all-silicone)",
+            "image": "/images/products/uro-foley-catheter-silicone-1.jpg",
+            "images": [
+              "/images/products/uro-foley-catheter-silicone-1.jpg",
+              "/images/products/uro-foley-catheter-silicone-2.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Urine drainage bag",
+            "image": "/images/products/uro-urine-drainage-bag-1.jpg",
+            "images": [
+              "/images/products/uro-urine-drainage-bag-1.jpg",
+              "/images/products/uro-urine-drainage-bag-2.jpg",
+              "/images/products/uro-urine-drainage-bag-3.jpg",
+              "/images/products/uro-urine-drainage-bag-4.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Lubricant jelly",
+            "image": "/images/products/uro-lubricant-jelly-1.jpg",
+            "images": [
+              "/images/products/uro-lubricant-jelly-1.jpg",
+              "/images/products/uro-lubricant-jelly-2.jpg",
+              "/images/products/uro-lubricant-jelly-3.jpg",
+              "/images/products/uro-lubricant-jelly-4.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Suprapubic trocar set",
+            "image": "/images/products/suprapubic-trocar-set-1.jpg",
+            "images": [
+              "/images/products/suprapubic-trocar-set-1.jpg",
+              "/images/products/suprapubic-trocar-set-2.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Bladder irrigation syringe",
+            "image": "/images/products/bladder-irrigation-syringe.jpg",
+            "images": [
+              "/images/products/bladder-irrigation-syringe.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
             ],
             "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"
@@ -1797,6 +2366,23 @@
               "360° continuous rotation knob allows comfortable jaw orientation from any trocar angle",
               "High-performance PEEK insulation withstands repetitive high-voltage electrosurgery",
               "Universal 2-pin bipolar connector and standard Luer-lock port compatible with all major surgical consoles"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Absorbable hemostat (oxidized regenerated cellulose)",
+            "image": "/images/products/uro-absorbable-hemostat-orc-1.jpg",
+            "images": [
+              "/images/products/uro-absorbable-hemostat-orc-1.jpg",
+              "/images/products/uro-absorbable-hemostat-orc-2.jpg",
+              "/images/products/uro-absorbable-hemostat-orc-3.jpg",
+              "/images/products/uro-absorbable-hemostat-orc-4.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
             ],
             "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"

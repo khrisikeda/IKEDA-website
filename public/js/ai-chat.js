@@ -182,6 +182,12 @@
     saveState();
     applyLanguage();
     syncProductButtons();
+    // If the visitor hasn't asked anything yet, redo the welcome in the new language
+    if (!isFirstOpen && !conversationHistory.some((m) => m.role === 'user')) {
+      messagesEl.innerHTML = '';
+      conversationHistory = [];
+      sendToAI('');
+    }
   });
 
   // ── Toggle Panel ───────────────────────────────────────────────────────

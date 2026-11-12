@@ -124,7 +124,7 @@ const DEFINITION_Q = /\b(what is|what are|what's|whats|define|definition|meaning
 
 function lookup(en) {
   if (!DEFINITION_Q.test(en)) return null;
-  // Long, specific questions are better answered from articles/pages
+  // Long, specific questions are better answered from the site pages
   if (tokenize(en).length > 4) return null;
   // Prefer the most specific (longest) match in the question
   let best = null;

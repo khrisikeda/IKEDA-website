@@ -3,7 +3,7 @@
  * Features:
  * 1. Interactive Optical Laser / Particle Canvas (Hero)
  * 2. Animated Telemetry & Stat Counters
- * 3. Interactive 4K Laparoscopic Endoscopy Tower Explorer
+ * 3. Equipment Showcase (five products per department)
  * 4. Optical Clarity Visualizer (4K UHD vs Standard HD)
  * 5. Scroll-Triggered Reveal Animations
  */
@@ -11,7 +11,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initHeroCanvas();
   initTelemetryCounters();
-  initTowerExplorer();
+  initProductShowcase();
   initClarityVisualizer();
   initScrollAnimations();
 });
@@ -71,174 +71,98 @@ function initTelemetryCounters() {
 }
 
 /* ==========================================================================
-   3. Interactive 4K Endoscopy Tower Explorer
+   3. Equipment Showcase — five products from each department
    ========================================================================== */
-const TOWER_COMPONENTS = {
-  monitor: {
-    title: '32" 4K UHD Surgical Medical Monitor',
-    dept: 'Operating Theatre & Endoscopy Suites',
-    badge: '3840 × 2160 Resolution',
-    lead: 'Ultra-high definition clinical display engineered for precision minimally invasive surgery with optical anti-glare bonding.',
-    specs: [
-      { label: 'Color Gamut', val: 'BT.2020 / DCI-P3 98%' },
-      { label: 'Luminance', val: '1000 cd/m² Surgical Daylight' },
-      { label: 'Latency', val: '< 5ms Real-Time Response' },
-      { label: 'Inputs', val: '12G-SDI, HDMI 2.0, DP' }
-    ],
-    features: [
-      'Optical anti-reflective glass eliminates operating theatre glare',
-      'Split-screen PIP/PBP mode for simultaneous ultrasound or fluoroscopy feed',
-      'Sterilizable flat surface designed for sterile wiping protocols'
-    ],
-    highlightY: '12%'
-  },
-  camera: {
-    title: '4K Ultra HD Endoscopic Camera Unit & Sensor Head',
-    dept: 'Multi-Specialty Laparoscopy',
-    badge: 'Sony 4K CMOS Array',
-    lead: 'Quadruple Full-HD resolution providing unprecedented microvascular delineation and natural tissue texture depth.',
-    specs: [
-      { label: 'Sensor', val: '1/1.8" Progressive Scan CMOS' },
-      { label: 'Frame Rate', val: '60 FPS Ultra-Fluid' },
-      { label: 'Enhancement', val: 'Dual-Wavelength Spectral Edge' },
-      { label: 'Controls', val: '4 Ergonomic Programmable Buttons' }
-    ],
-    features: [
-      'Automated white balance and intelligent smoke/mist reduction filter',
-      'Micro-capillary enhancement mode for clear lesion margin distinction',
-      'IPX8 waterproof rated camera head withstands full autoclave & soaking'
-    ],
-    highlightY: '38%'
-  },
-  light: {
-    title: 'Medical Grade LED Cold Light Source (80W / 100W)',
-    dept: 'Optical Illumination Pipeline',
-    badge: '5,700K Daylight Spectrum',
-    lead: 'High-intensity cool illumination preserving natural tissue colors without thermal injury risk at scope tips.',
-    specs: [
-      { label: 'Lamp Life', val: '≥ 20,000 Hours Continuous' },
-      { label: 'CRI Index', val: '≥ 92 Natural Color Rendition' },
-      { label: 'Cable Coupler', val: 'Universal Storz / Wolf / Olympus' },
-      { label: 'Cooling', val: 'Ultra-Quiet Dynamic Fan (<25dB)' }
-    ],
-    features: [
-      'Zero heat radiation at distal tip prevents internal tissue drying',
-      'Instantaneous standby/ready with no warmup downtime required',
-      'Optical fiber detection automatically dims output when disconnected'
-    ],
-    highlightY: '56%'
-  },
-  insufflator: {
-    title: 'Smart High-Flow CO2 Laparoscopic Insufflator (30–45 L/min)',
-    dept: 'Abdominal & Pelvic Laparoscopy',
-    badge: 'Microprocessor Controlled',
-    lead: 'Maintains stable, comfortable pneumoperitoneum cavity pressure during active suction and electrocautery evacuation.',
-    specs: [
-      { label: 'Gas Flow', val: 'Adjustable 1 – 45 L/min' },
-      { label: 'Pressure Range', val: '3 – 30 mmHg Precision' },
-      { label: 'Heating', val: 'Internal 37°C Body Temp Preheater' },
-      { label: 'Safety Relief', val: 'Dual Acoustic & Visual Overpressure' }
-    ],
-    features: [
-      'Intelligent gas pre-heating eliminates scope lens fogging during entry',
-      'High-speed auto-compensation ensures stable cavity during smoke evacuation',
-      'Dedicated pediatric and bariatric operating cavity modes'
-    ],
-    highlightY: '72%'
-  },
-  telescope: {
-    title: 'Sapphire Crystal Rigid Endoscopes (0° / 30°)',
-    dept: 'Optical Laparoscopy & Urology',
-    badge: 'German Optical Glass',
-    lead: 'Precision German rod-lens optical system encased in laser-welded stainless steel with sapphire scratchproof distal windows.',
-    specs: [
-      { label: 'Diameters', val: '10mm / 5.5mm / 4mm' },
-      { label: 'Direction', val: '0° Direct / 30° Oblique Vision' },
-      { label: 'Durability', val: '134°C / 273°F Autoclave Safe' },
-      { label: 'Window', val: 'Sapphire Crystal Scratch-Proof' }
-    ],
-    features: [
-      'Edge-to-edge optical sharpness with zero peripheral image distortion',
-      'Integrated high-transmission optical fiber bundle maximizes light delivery',
-      'Hermetically sealed laser welding for hundreds of autoclave cycles'
-    ],
-    highlightY: '88%'
+const SHOWCASE_PER_DEPARTMENT = 5;
+
+function showcaseEscape(value) {
+  return String(value == null ? '' : value).replace(/[&<>"']/g, (ch) => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]
+  ));
+}
+
+// Pick varied items: spread across the whole department list, avoid near-duplicates
+// (three models of the same table) and products already shown in another department
+function pickShowcaseItems(items, count, shownElsewhere) {
+  const words = (name) => name.toLowerCase().replace(/[^a-z ]+/g, ' ').trim().split(/\s+/).filter((w) => w.length > 2);
+  const key = (name) => name.trim().toLowerCase();
+  // Visit evenly spaced positions first so a long list contributes from every sub-range
+  const order = [];
+  for (let i = 0; i < count; i++) order.push(Math.floor((i * items.length) / count));
+  items.forEach((_, idx) => { if (!order.includes(idx)) order.push(idx); });
+
+  const picked = [];
+  const usedWords = new Set();
+  const usedImages = new Set();
+  const take = (idx) => {
+    const item = items[idx];
+    picked.push({ item, idx });
+    words(item.name).slice(0, 2).forEach((w) => usedWords.add(w));
+    usedImages.add(item.image);
+  };
+  const isPicked = (idx) => picked.some((p) => p.idx === idx);
+  const passes = [
+    (item) => !shownElsewhere.has(key(item.name)) && !usedImages.has(item.image) && !words(item.name).slice(0, 2).some((w) => usedWords.has(w)),
+    (item) => !shownElsewhere.has(key(item.name)) && !usedImages.has(item.image),
+    (item) => !usedImages.has(item.image),
+    () => true
+  ];
+  passes.forEach((ok) => {
+    order.forEach((idx) => {
+      if (picked.length < count && !isPicked(idx) && ok(items[idx])) take(idx);
+    });
+  });
+  picked.forEach((p) => shownElsewhere.add(key(p.item.name)));
+  return picked;
+}
+
+async function initProductShowcase() {
+  const container = document.getElementById('home-showcase-rows');
+  if (!container) return;
+
+  let departments = [];
+  try {
+    const res = await fetch('/api/products');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    departments = await res.json();
+  } catch (err) {
+    container.innerHTML = '<p class="home-showcase-status"><a href="/products">Browse the full product catalog →</a></p>';
+    return;
   }
-};
 
-function initTowerExplorer() {
-  const tabs = document.querySelectorAll('.tower-tab-btn');
-  const hotspots = document.querySelectorAll('.schematic-box');
-  const displayTitle = document.getElementById('tower-component-title');
-  const displayDept = document.getElementById('tower-component-dept');
-  const displayBadge = document.getElementById('tower-component-badge');
-  const displayLead = document.getElementById('tower-component-lead');
-  const displaySpecs = document.getElementById('tower-component-specs');
-  const displayFeatures = document.getElementById('tower-component-features');
+  const shownSets = new Set();
+  const shownProducts = new Set();
+  const rows = departments.map((dept) => {
+    const items = (dept.equipmentHighlights || []).filter((it) => it && it.name && it.image);
+    if (!items.length) return '';
+    // Skip a department that lists exactly the same products as one already shown
+    const signature = items.map((it) => it.name.trim().toLowerCase()).sort().join('|');
+    if (shownSets.has(signature)) return '';
+    shownSets.add(signature);
 
-  if (!tabs.length || !displayTitle) return;
+    const cards = pickShowcaseItems(items, SHOWCASE_PER_DEPARTMENT, shownProducts).map(({ item, idx }) => {
+      const url = '/products?product=' + encodeURIComponent(item.name.trim()) +
+        '&cat=' + encodeURIComponent(dept.slug) + '&idx=' + idx;
+      return `
+        <a class="showcase-card" href="${url}">
+          <span class="showcase-card-media">
+            <img src="${showcaseEscape(item.image)}" alt="${showcaseEscape(item.name.trim())}" loading="lazy" decoding="async" />
+          </span>
+          <span class="showcase-card-name" translate="no">${showcaseEscape(item.name.trim())}</span>
+        </a>`;
+    }).join('');
 
-  function selectComponent(key) {
-    const data = TOWER_COMPONENTS[key];
-    if (!data) return;
-
-    tabs.forEach(tab => {
-      const isMatch = tab.getAttribute('data-component') === key;
-      tab.classList.toggle('active', isMatch);
-      tab.setAttribute('aria-selected', isMatch);
-    });
-
-    hotspots.forEach(spot => {
-      const isMatch = spot.getAttribute('data-component') === key;
-      spot.classList.toggle('active', isMatch);
-    });
-
-    const panel = document.getElementById('tower-spec-panel');
-    if (panel) {
-      panel.style.opacity = '0.3';
-      panel.style.transform = 'translateY(6px)';
-    }
-
-    setTimeout(() => {
-      displayTitle.textContent = data.title;
-      displayDept.textContent = data.dept;
-      displayBadge.textContent = data.badge;
-      displayLead.textContent = data.lead;
-
-      displaySpecs.innerHTML = data.specs.map(s => `
-        <div class="tower-spec-metric">
-          <div class="tower-spec-label">${s.label}</div>
-          <div class="tower-spec-val">${s.val}</div>
+    return `
+      <div class="showcase-row">
+        <div class="showcase-row-head">
+          <h3 class="showcase-row-title">${showcaseEscape(dept.name)}</h3>
+          <a class="showcase-row-link" href="/products#${encodeURIComponent(dept.slug)}">View all →</a>
         </div>
-      `).join('');
+        <div class="showcase-track">${cards}</div>
+      </div>`;
+  }).join('');
 
-      displayFeatures.innerHTML = data.features.map(f => `
-        <li>
-          <span class="tower-check">✓</span>
-          <span>${f}</span>
-        </li>
-      `).join('');
-
-      if (panel) {
-        panel.style.opacity = '1';
-        panel.style.transform = 'translateY(0)';
-      }
-    }, 150);
-  }
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      selectComponent(tab.getAttribute('data-component'));
-    });
-  });
-
-  hotspots.forEach(spot => {
-    spot.addEventListener('click', () => {
-      selectComponent(spot.getAttribute('data-component'));
-    });
-  });
-
-  selectComponent('camera');
+  container.innerHTML = rows || '<p class="home-showcase-status"><a href="/products">Browse the full product catalog →</a></p>';
 }
 
 /* ==========================================================================
@@ -303,16 +227,16 @@ function initClarityVisualizer() {
    ========================================================================== */
 function initScrollAnimations() {
   const heroSection = document.querySelector('.hero');
-  const towerSection = document.querySelector('#tower-explorer');
+  const towerSection = document.querySelector('#home-showcase');
 
-  // 1. Trigger hero elements on load and smoothly cascade into the Tower Explorer section
+  // 1. Trigger hero elements on load and smoothly cascade into the equipment showcase
   if (heroSection) {
     const triggerHeroAndSequence = () => {
       heroSection.classList.add('in-view');
       const heroStaggers = heroSection.querySelectorAll('.pork-stagger-parent, .pork-fade-up, .word-mask-inner');
       heroStaggers.forEach((el) => el.classList.add('in-view'));
 
-      // Seamlessly cascade into the Tower Explorer section without waiting for scroll
+      // Seamlessly cascade into the equipment showcase without waiting for scroll
       if (towerSection) {
         setTimeout(() => {
           towerSection.classList.add('in-view');

@@ -4,7 +4,7 @@
    - Loaded in <head> on every page. English is the source text in the HTML;
      French comes from /i18n/fr.json ({ "strings": {en: fr}, "patterns": [...] }).
    - Translates page text, key attributes, the page title/description and any
-     content added later by scripts (products, articles, manufacturers…).
+     content added later by scripts (products, manufacturers…).
    - Remembers the visitor's choice; French browsers start in French;
      ?lang=fr / ?lang=en in a link forces a language (good for sharing).
    - Content without a translation simply stays in English.
@@ -14,6 +14,11 @@
 
   var STORE_KEY = 'ikeda_lang';
   var SUPPORTED = { en: 'EN', fr: 'FR' };
+  // Small inline flags (emoji flags show as letters on Windows)
+  var FLAGS = {
+    en: '<svg viewBox="0 0 60 30" aria-hidden="true" focusable="false"><clipPath id="ikf-uk"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="ikf-uk-t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#ikf-uk)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ikf-uk-t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>',
+    fr: '<svg viewBox="0 0 3 2" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path fill="#002654" d="M0 0h1v2H0z"/><path fill="#fff" d="M1 0h1v2H1z"/><path fill="#CE1126" d="M2 0h1v2H2z"/></svg>'
+  };
   var SKIP_SELECTOR = 'script,style,noscript,svg,textarea,code,pre,#ikeda-ai-widget,[translate="no"],.no-i18n';
   var ATTRS = ['placeholder', 'title', 'aria-label', 'alt'];
 
@@ -52,7 +57,7 @@
 
   function loadDict() {
     if (!dictPromise) {
-      dictPromise = fetch('/i18n/fr.json?v=1')
+      dictPromise = fetch('/i18n/fr.json?v=3')
         .then(function (r) { return r.ok ? r.json() : { strings: {} }; })
         .catch(function () { return { strings: {} }; })
         .then(function (data) {
@@ -235,7 +240,8 @@
       b.type = 'button';
       b.className = 'lang-switch-btn';
       b.dataset.lang = code;
-      b.textContent = SUPPORTED[code];
+      b.innerHTML = '<span class="lang-flag">' + FLAGS[code] + '</span>';
+      b.title = code === 'fr' ? 'Français' : 'English';
       b.setAttribute('lang', code);
       b.setAttribute('aria-label', code === 'fr' ? 'Français' : 'English');
       b.addEventListener('click', function () { setLang(code); });
