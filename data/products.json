@@ -3885,16 +3885,14 @@
       {
         "name": "Bronchoscope",
         "image": "/images/products/bronchoscope-1.jpg",
-        "specification": "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.\nInsertion tube outer diameter: 5.2mm / 5.8mm\nWorking channel diameter: 2.2mm / 2.8mm\nWorking length: 600mm\nField of view: 120° wide-angle\nDepth of field: 3–50mm\nAngulation range: Up 180°, Down 130°\nDisplay: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording",
+        "specification": "Flexible video bronchoscope for airway management, ICU intubation, and bronchoalveolar lavage.\nModel: FBM-120R\nDistal end outer diameter: 2.8 mm\nField of view: 140°\nAngulation range: Up 210°, Down 130°\nInsertion tube rotation: 120°",
         "features": [
-          "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.",
-          "Insertion tube outer diameter: 5.2mm / 5.8mm",
-          "Working channel diameter: 2.2mm / 2.8mm",
-          "Working length: 600mm",
-          "Field of view: 120° wide-angle",
-          "Depth of field: 3–50mm",
-          "Angulation range: Up 180°, Down 130°",
-          "Display: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording"
+          "Flexible video bronchoscope for airway management, ICU intubation, and bronchoalveolar lavage.",
+          "Model: FBM-120R",
+          "Distal end outer diameter: 2.8 mm",
+          "Field of view: 140°",
+          "Angulation range: Up 210°, Down 130°",
+          "Insertion tube rotation: 120°"
         ],
         "category": "Intensive Care Unit (ICU)",
         "images": [
@@ -6254,16 +6252,14 @@
       {
         "name": "Bronchoscope",
         "image": "/images/products/bronchoscope-1.jpg",
-        "specification": "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.\nInsertion tube outer diameter: 5.2mm / 5.8mm\nWorking channel diameter: 2.2mm / 2.8mm\nWorking length: 600mm\nField of view: 120° wide-angle\nDepth of field: 3–50mm\nAngulation range: Up 180°, Down 130°\nDisplay: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording",
+        "specification": "Flexible video bronchoscope for airway management, ICU intubation, and bronchoalveolar lavage.\nModel: FBM-120R\nDistal end outer diameter: 2.8 mm\nField of view: 140°\nAngulation range: Up 210°, Down 130°\nInsertion tube rotation: 120°",
         "features": [
-          "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.",
-          "Insertion tube outer diameter: 5.2mm / 5.8mm",
-          "Working channel diameter: 2.2mm / 2.8mm",
-          "Working length: 600mm",
-          "Field of view: 120° wide-angle",
-          "Depth of field: 3–50mm",
-          "Angulation range: Up 180°, Down 130°",
-          "Display: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording"
+          "Flexible video bronchoscope for airway management, ICU intubation, and bronchoalveolar lavage.",
+          "Model: FBM-120R",
+          "Distal end outer diameter: 2.8 mm",
+          "Field of view: 140°",
+          "Angulation range: Up 210°, Down 130°",
+          "Insertion tube rotation: 120°"
         ],
         "category": "Emergency & Casualty Care",
         "images": [
