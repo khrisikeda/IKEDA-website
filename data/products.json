@@ -387,7 +387,7 @@
       },
       {
         "name": "Cystoscope",
-        "image": "/images/products/transurethral-cystoscope.jpg",
+        "image": "/images/products/uro-cystoscope-1.jpg",
         "specification": "Direction of view: 0°, 30°, 70° \nDiameter: 4 mm \nWorking length: 302 mm \nSheaths: 17Fr, 19Fr, 21Fr, 23Fr continuous irrigation \nAlbarran bridge: Single & double horn deflector \nStopcocks: Dual 360° rotating Luer-lock \nSterilization: Fully autoclavable & soaking compatible (IPX8)",
         "features": [
           "High-definition rod-lens optical system with sapphire distal objective window",
@@ -397,7 +397,10 @@
           "Dual 360° rotating stopcocks maintain stable distension and clear visualization"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/uro-cystoscope-1.jpg"
+        ]
       },
       {
         "name": "Resectoscope (diathermy, coblation, laser)",
@@ -503,7 +506,7 @@
         ]
       },
       {
-        "name": "Hydrophilic guidewire (angled tip)",
+        "name": "Guide wires",
         "image": "/images/products/uro-guide-wire-1.jpg",
         "specification": "Core: Superelastic shape-memory nitinol core \nDiameters: 0.032\", 0.035\", 0.038\" \nLengths: 150 cm, 260 cm (exchange length) \nCoating: Full-length hydrophilic polymer jacket and high-contrast Zebra torque polyurethane \nTip style: 3 cm and 5 cm platinum floppy tip (straight and 45° angled) \nTorque transmission: 1:1 responsive rotational torque",
         "features": [
@@ -519,7 +522,15 @@
           "/images/products/uro-guide-wire-1.jpg",
           "/images/products/uro-guide-wire-11.jpg",
           "/images/products/uro-guide-wire-12.jpg",
-          "/images/products/uro-guide-wire-10.jpg"
+          "/images/products/uro-guide-wire-10.jpg",
+          "/images/products/uro-guide-wire-3.jpg",
+          "/images/products/uro-guide-wire-4.jpg",
+          "/images/products/uro-guide-wire-6.jpg",
+          "/images/products/uro-guide-wire-2.jpg",
+          "/images/products/uro-guide-wire-5.jpg",
+          "/images/products/uro-guide-wire-7.jpg",
+          "/images/products/uro-guide-wire-8.jpg",
+          "/images/products/uro-guide-wire-9.jpg"
         ]
       },
       {
@@ -539,7 +550,8 @@
           "/images/products/uro-dilation-balloon-1.jpg",
           "/images/products/uro-dilation-balloon-2.jpg",
           "/images/products/uro-dilation-balloon-3.jpg",
-          "/images/products/uro-dilation-balloon-4.jpg"
+          "/images/products/uro-dilation-balloon-4.jpg",
+          "/images/products/uro-balloon-inflation-device-1.jpg"
         ]
       },
       {
@@ -564,7 +576,7 @@
       },
       {
         "name": "Holmium laser",
-        "image": "/images/products/holmium-laser-urology.jpg",
+        "image": "/images/products/uro-holmium-laser-1.jpg",
         "specification": "Laser type: Pulsed Holmium:YAG (Ho:YAG) \nWavelength: 2,100 nm (infrared) \nMaximum power output: 30W – 100W variable \nPulse energy: 0.2 J to 4.0 J \nRepetition rate: 5 Hz to 80 Hz \nOperating modes: Fine Dusting, Fragmentation, Pop-corn, Coagulation \nFiber compatibility: 200 µm, 272 µm, 365 µm, 550 µm, 1000 µm \nAiming beam: 532 nm green laser with adjustable intensity",
         "features": [
           "2,100 nm infrared wavelength delivers explosive optical vaporization of all stone types",
@@ -574,7 +586,10 @@
           "Color touchscreen with pre-programmed clinical parameters for bladder, ureter, and kidney"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
+        "subtitle": "Urology & Endourology",
+        "images": [
+          "/images/products/uro-holmium-laser-1.jpg"
+        ]
       },
       {
         "name": "Coblator",
@@ -1335,20 +1350,6 @@
         "subtitle": "Urology & Endourology"
       },
       {
-        "name": "Balloon inflation device",
-        "image": "/images/products/uro-balloon-inflation-device-1.jpg",
-        "images": [
-          "/images/products/uro-balloon-inflation-device-1.jpg"
-        ],
-        "specification": "",
-        "features": [
-          "Technical specifications available upon request.",
-          "Please contact our clinical engineering team for configuration details and quotation."
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Urology & Endourology"
-      },
-      {
         "name": "Irrigation tubing set (Y-type)",
         "image": "/images/products/uro-irrigation-tubing-y-set-1.jpg",
         "images": [
@@ -1397,12 +1398,10 @@
         "subtitle": "Urology & Endourology"
       },
       {
-        "name": "J-tip guidewire",
-        "image": "/images/products/uro-guide-wire-3.jpg",
+        "name": "Working element",
+        "image": "/images/products/uro-working-element-1.jpg",
         "images": [
-          "/images/products/uro-guide-wire-3.jpg",
-          "/images/products/uro-guide-wire-4.jpg",
-          "/images/products/uro-guide-wire-6.jpg"
+          "/images/products/uro-working-element-1.jpg"
         ],
         "specification": "",
         "features": [
@@ -1413,11 +1412,10 @@
         "subtitle": "Urology & Endourology"
       },
       {
-        "name": "Straight-tip guidewire",
-        "image": "/images/products/uro-guide-wire-2.jpg",
+        "name": "Cystoscope telescope (0° / 30° / 70°)",
+        "image": "/images/products/uro-cystoscope-telescope-1.jpg",
         "images": [
-          "/images/products/uro-guide-wire-2.jpg",
-          "/images/products/uro-guide-wire-5.jpg"
+          "/images/products/uro-cystoscope-telescope-1.jpg"
         ],
         "specification": "",
         "features": [
@@ -1428,12 +1426,136 @@
         "subtitle": "Urology & Endourology"
       },
       {
-        "name": "Guidewire (blue straight tip)",
-        "image": "/images/products/uro-guide-wire-7.jpg",
+        "name": "Cystoscope sheath with obturator",
+        "image": "/images/products/uro-cystoscope-sheath-1.jpg",
         "images": [
-          "/images/products/uro-guide-wire-7.jpg",
-          "/images/products/uro-guide-wire-8.jpg",
-          "/images/products/uro-guide-wire-9.jpg"
+          "/images/products/uro-cystoscope-sheath-1.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Cystoscope bridge",
+        "image": "/images/products/uro-cystoscope-bridge-2.jpg",
+        "images": [
+          "/images/products/uro-cystoscope-bridge-2.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Stopcock & Luer adapter",
+        "image": "/images/products/uro-stopcock-luer-adapter-1.jpg",
+        "images": [
+          "/images/products/uro-stopcock-luer-adapter-1.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Nephroscope",
+        "image": "/images/products/uro-nephroscope-1.jpg",
+        "images": [
+          "/images/products/uro-nephroscope-1.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Cystoscope sheath",
+        "image": "/images/products/uro-cystoscope-sheath-2.jpg",
+        "images": [
+          "/images/products/uro-cystoscope-sheath-2.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Cystoscope bridge N4102 / N4201",
+        "image": "/images/products/uro-cystoscope-bridge-1.jpg",
+        "images": [
+          "/images/products/uro-cystoscope-bridge-1.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Cystoscope bridge with lever",
+        "image": "/images/products/uro-cystoscope-bridge-3.jpg",
+        "images": [
+          "/images/products/uro-cystoscope-bridge-3.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Cystoscope flexible instruments",
+        "image": "/images/products/uro-optical-forceps-1.jpg",
+        "images": [
+          "/images/products/uro-optical-forceps-1.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Cystoscope flexible instrument (single)",
+        "image": "/images/products/uro-optical-forceps-2.jpg",
+        "images": [
+          "/images/products/uro-optical-forceps-2.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Operating Theatre",
+        "subtitle": "Urology & Endourology"
+      },
+      {
+        "name": "Urethral sound",
+        "image": "/images/products/uro-urethral-sound-extra-1.jpg",
+        "images": [
+          "/images/products/uro-urethral-sound-extra-1.jpg"
         ],
         "specification": "",
         "features": [
@@ -1847,7 +1969,7 @@
         "items": [
           {
             "name": "Cystoscope",
-            "image": "/images/products/transurethral-cystoscope.jpg",
+            "image": "/images/products/uro-cystoscope-1.jpg",
             "specification": "Direction of view: 0°, 30°, 70° \nDiameter: 4 mm \nWorking length: 302 mm \nSheaths: 17Fr, 19Fr, 21Fr, 23Fr continuous irrigation \nAlbarran bridge: Single & double horn deflector \nStopcocks: Dual 360° rotating Luer-lock \nSterilization: Fully autoclavable & soaking compatible (IPX8)",
             "features": [
               "High-definition rod-lens optical system with sapphire distal objective window",
@@ -1855,6 +1977,135 @@
               "17Fr to 23Fr outer and inner continuous flow diagnostic & operative sheaths",
               "Albarran deflecting bridge for precise ureteral catheter and stent placement",
               "Dual 360° rotating stopcocks maintain stable distension and clear visualization"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/uro-cystoscope-1.jpg"
+            ]
+          },
+          {
+            "name": "Cystoscope telescope (0° / 30° / 70°)",
+            "image": "/images/products/uro-cystoscope-telescope-1.jpg",
+            "images": [
+              "/images/products/uro-cystoscope-telescope-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Cystoscope sheath with obturator",
+            "image": "/images/products/uro-cystoscope-sheath-1.jpg",
+            "images": [
+              "/images/products/uro-cystoscope-sheath-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Cystoscope sheath",
+            "image": "/images/products/uro-cystoscope-sheath-2.jpg",
+            "images": [
+              "/images/products/uro-cystoscope-sheath-2.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Cystoscope bridge N4102 / N4201",
+            "image": "/images/products/uro-cystoscope-bridge-1.jpg",
+            "images": [
+              "/images/products/uro-cystoscope-bridge-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Cystoscope bridge",
+            "image": "/images/products/uro-cystoscope-bridge-2.jpg",
+            "images": [
+              "/images/products/uro-cystoscope-bridge-2.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Cystoscope bridge with lever",
+            "image": "/images/products/uro-cystoscope-bridge-3.jpg",
+            "images": [
+              "/images/products/uro-cystoscope-bridge-3.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Stopcock & Luer adapter",
+            "image": "/images/products/uro-stopcock-luer-adapter-1.jpg",
+            "images": [
+              "/images/products/uro-stopcock-luer-adapter-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Cystoscope flexible instruments",
+            "image": "/images/products/uro-optical-forceps-1.jpg",
+            "images": [
+              "/images/products/uro-optical-forceps-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Cystoscope flexible instrument (single)",
+            "image": "/images/products/uro-optical-forceps-2.jpg",
+            "images": [
+              "/images/products/uro-optical-forceps-2.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
             ],
             "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"
@@ -1869,6 +2120,20 @@
               "Passive and active ergonomic titanium working elements with thumb ring",
               "Ceramic insulated distal beak prevents mucosal burning and stray current injury",
               "Comprehensive electrode set for TURP, TURBT, and bladder neck incisions"
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Working element",
+            "image": "/images/products/uro-working-element-1.jpg",
+            "images": [
+              "/images/products/uro-working-element-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
             ],
             "category": "Operating Theatre",
             "subtitle": "Urology & Endourology"
@@ -1936,7 +2201,7 @@
             ]
           },
           {
-            "name": "Hydrophilic guidewire (angled tip)",
+            "name": "Guide wires",
             "image": "/images/products/uro-guide-wire-1.jpg",
             "specification": "Core: Superelastic shape-memory nitinol core \nDiameters: 0.032\", 0.035\", 0.038\" \nLengths: 150 cm, 260 cm (exchange length) \nCoating: Full-length hydrophilic polymer jacket and high-contrast Zebra torque polyurethane \nTip style: 3 cm and 5 cm platinum floppy tip (straight and 45° angled) \nTorque transmission: 1:1 responsive rotational torque",
             "features": [
@@ -1952,55 +2217,16 @@
               "/images/products/uro-guide-wire-1.jpg",
               "/images/products/uro-guide-wire-11.jpg",
               "/images/products/uro-guide-wire-12.jpg",
-              "/images/products/uro-guide-wire-10.jpg"
-            ]
-          },
-          {
-            "name": "J-tip guidewire",
-            "image": "/images/products/uro-guide-wire-3.jpg",
-            "images": [
+              "/images/products/uro-guide-wire-10.jpg",
               "/images/products/uro-guide-wire-3.jpg",
               "/images/products/uro-guide-wire-4.jpg",
-              "/images/products/uro-guide-wire-6.jpg"
-            ],
-            "specification": "",
-            "features": [
-              "Technical specifications available upon request.",
-              "Please contact our clinical engineering team for configuration details and quotation."
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
-          },
-          {
-            "name": "Straight-tip guidewire",
-            "image": "/images/products/uro-guide-wire-2.jpg",
-            "images": [
+              "/images/products/uro-guide-wire-6.jpg",
               "/images/products/uro-guide-wire-2.jpg",
-              "/images/products/uro-guide-wire-5.jpg"
-            ],
-            "specification": "",
-            "features": [
-              "Technical specifications available upon request.",
-              "Please contact our clinical engineering team for configuration details and quotation."
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
-          },
-          {
-            "name": "Guidewire (blue straight tip)",
-            "image": "/images/products/uro-guide-wire-7.jpg",
-            "images": [
+              "/images/products/uro-guide-wire-5.jpg",
               "/images/products/uro-guide-wire-7.jpg",
               "/images/products/uro-guide-wire-8.jpg",
               "/images/products/uro-guide-wire-9.jpg"
-            ],
-            "specification": "",
-            "features": [
-              "Technical specifications available upon request.",
-              "Please contact our clinical engineering team for configuration details and quotation."
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
+            ]
           },
           {
             "name": "Zebra guidewire",
@@ -2090,22 +2316,9 @@
               "/images/products/uro-dilation-balloon-1.jpg",
               "/images/products/uro-dilation-balloon-2.jpg",
               "/images/products/uro-dilation-balloon-3.jpg",
-              "/images/products/uro-dilation-balloon-4.jpg"
-            ]
-          },
-          {
-            "name": "Balloon inflation device",
-            "image": "/images/products/uro-balloon-inflation-device-1.jpg",
-            "images": [
+              "/images/products/uro-dilation-balloon-4.jpg",
               "/images/products/uro-balloon-inflation-device-1.jpg"
-            ],
-            "specification": "",
-            "features": [
-              "Technical specifications available upon request.",
-              "Please contact our clinical engineering team for configuration details and quotation."
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
+            ]
           },
           {
             "name": "PCNL sets",
@@ -2128,8 +2341,22 @@
             ]
           },
           {
+            "name": "Nephroscope",
+            "image": "/images/products/uro-nephroscope-1.jpg",
+            "images": [
+              "/images/products/uro-nephroscope-1.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
             "name": "Holmium laser",
-            "image": "/images/products/holmium-laser-urology.jpg",
+            "image": "/images/products/uro-holmium-laser-1.jpg",
             "specification": "Laser type: Pulsed Holmium:YAG (Ho:YAG) \nWavelength: 2,100 nm (infrared) \nMaximum power output: 30W – 100W variable \nPulse energy: 0.2 J to 4.0 J \nRepetition rate: 5 Hz to 80 Hz \nOperating modes: Fine Dusting, Fragmentation, Pop-corn, Coagulation \nFiber compatibility: 200 µm, 272 µm, 365 µm, 550 µm, 1000 µm \nAiming beam: 532 nm green laser with adjustable intensity",
             "features": [
               "2,100 nm infrared wavelength delivers explosive optical vaporization of all stone types",
@@ -2139,7 +2366,10 @@
               "Color touchscreen with pre-programmed clinical parameters for bladder, ureter, and kidney"
             ],
             "category": "Operating Theatre",
-            "subtitle": "Urology & Endourology"
+            "subtitle": "Urology & Endourology",
+            "images": [
+              "/images/products/uro-holmium-laser-1.jpg"
+            ]
           },
           {
             "name": "Holmium laser fiber",
@@ -2204,6 +2434,20 @@
             "image": "/images/products/urethral-sound-dilator.jpg",
             "images": [
               "/images/products/urethral-sound-dilator.jpg"
+            ],
+            "specification": "",
+            "features": [
+              "Technical specifications available upon request.",
+              "Please contact our clinical engineering team for configuration details and quotation."
+            ],
+            "category": "Operating Theatre",
+            "subtitle": "Urology & Endourology"
+          },
+          {
+            "name": "Urethral sound",
+            "image": "/images/products/uro-urethral-sound-extra-1.jpg",
+            "images": [
+              "/images/products/uro-urethral-sound-extra-1.jpg"
             ],
             "specification": "",
             "features": [
@@ -3640,7 +3884,7 @@
       },
       {
         "name": "Bronchoscope",
-        "image": "/images/products/bronchoscope.jpeg",
+        "image": "/images/products/bronchoscope-1.jpg",
         "specification": "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.\nInsertion tube outer diameter: 5.2mm / 5.8mm\nWorking channel diameter: 2.2mm / 2.8mm\nWorking length: 600mm\nField of view: 120° wide-angle\nDepth of field: 3–50mm\nAngulation range: Up 180°, Down 130°\nDisplay: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording",
         "features": [
           "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.",
@@ -3652,7 +3896,14 @@
           "Angulation range: Up 180°, Down 130°",
           "Display: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording"
         ],
-        "category": "Intensive Care Unit (ICU)"
+        "category": "Intensive Care Unit (ICU)",
+        "images": [
+          "/images/products/bronchoscope-1.jpg",
+          "/images/products/bronchoscope-2.jpg",
+          "/images/products/bronchoscope-3.jpg",
+          "/images/products/bronchoscope-4.jpg",
+          "/images/products/bronchoscope-5.jpg"
+        ]
       },
       {
         "name": "Resuscitation bag Adult",
@@ -6002,7 +6253,7 @@
       },
       {
         "name": "Bronchoscope",
-        "image": "/images/products/bronchoscope.jpeg",
+        "image": "/images/products/bronchoscope-1.jpg",
         "specification": "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.\nInsertion tube outer diameter: 5.2mm / 5.8mm\nWorking channel diameter: 2.2mm / 2.8mm\nWorking length: 600mm\nField of view: 120° wide-angle\nDepth of field: 3–50mm\nAngulation range: Up 180°, Down 130°\nDisplay: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording",
         "features": [
           "Flexible video bronchoscope system for airway management, ICU intubation, and bronchoalveolar lavage.",
@@ -6014,7 +6265,14 @@
           "Angulation range: Up 180°, Down 130°",
           "Display: Portable HD color touch-screen monitor with integrated LED light source and USB/SD video recording"
         ],
-        "category": "Emergency & Casualty Care"
+        "category": "Emergency & Casualty Care",
+        "images": [
+          "/images/products/bronchoscope-1.jpg",
+          "/images/products/bronchoscope-2.jpg",
+          "/images/products/bronchoscope-3.jpg",
+          "/images/products/bronchoscope-4.jpg",
+          "/images/products/bronchoscope-5.jpg"
+        ]
       },
       {
         "name": "Resuscitation bag Adult",
