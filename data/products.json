@@ -303,7 +303,7 @@
       },
       {
         "name": "Laparoscopy Premium HD with 1/2.3\" CMOS",
-        "image": "/images/products/laparoscopy-premium-hd-1-23-cmos.jpg",
+        "image": "/images/products/laparoscopy-tower-1080p-new.jpg",
         "specification": "Sensor: 1/2.3\" Ultra-Sensitive SONY CMOS Sensor \nResolution: 1920x1080P Full HD @ 60fps \nOptical Zoom / Focal Length: F=14-32mm optical zoom coupler, C-mount \nIllumination: Integrated 100W Cold LED Light Source, 5700K color temperature, >80,000 Lux \nInsufflator: Automated 30L/min CO2 Insufflator with pre-heating and continuous pressure monitoring \nOutput Ports: HDMI x2, DVI-D x1, SDI x1, CVBS x1 \nDisplay Monitor: 24-inch Full HD Medical Grade Monitor, anti-reflective coating \nIP Rating: IPX8 Waterproof submersible camera head with autoclave coupler \nSignal-to-Noise Ratio (SNR): ≥60 dB \nWhite Balance: Automatic / One-touch manual memory",
         "features": [
           "High-sensitivity 1/2.3\" SONY CMOS sensor capturing true-color tissue micro-vascularity",
@@ -313,11 +313,14 @@
           "IPX8 waterproof submersible camera head compatible with gas plasma and soaking disinfection"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+        "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+        "images": [
+          "/images/products/laparoscopy-tower-1080p-new.jpg"
+        ]
       },
       {
         "name": "Laparoscopy Tower 1080p with 1/2.8\" CMOS",
-        "image": "/images/products/laparoscopy-tower-1080p-1-28-cmos.jpg",
+        "image": "/images/products/laparoscopy-tower-1080p-new.jpg",
         "specification": "Sensor: 1/2.8\" Progressive Scan CMOS Sensor \nResolution: 1080p Full HD (1920x1080) @ 60fps \nEffective Pixels: 2.13 Megapixels \nIllumination: 80W LED Cold Light Source, 5500-6500K, >60,000 Lux \nCamera Head: Ergonomic handheld design with 4 programmable buttons (freeze, record, zoom, white balance) \nCoupler: F=18-35mm manual optical zoom, waterproof C-mount \nVideo Outputs: HDMI x1, DVI x1, VGA x1, Composite x1 \nRecording Storage: USB 3.0 direct HD image capture and MP4 video recording \nDisplay: 21.5-inch Medical Grade Full HD LCD Monitor \nPower Supply: AC 100-240V, 50/60Hz, Power consumption: ≤150W",
         "features": [
           "1/2.8\" progressive scan CMOS sensor delivering reliable Full HD surgical imagery",
@@ -327,11 +330,14 @@
           "Standard C-mount optical interface compatible with rigid 0° and 30° laparoscopes"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+        "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+        "images": [
+          "/images/products/laparoscopy-tower-1080p-new.jpg"
+        ]
       },
       {
         "name": "Laparoscopy Tower 4K",
-        "image": "/images/products/laparoscopy-tower-4k.jpg",
+        "image": "/images/products/laparoscopy-tower-4k-new.jpg",
         "specification": "Sensor: 1/1.8\" Ultra-High Definition 4K CMOS Sensor \nResolution: 3840 x 2160 pixels @ 60Hz (8.3 Megapixels) \nColor Gamut: BT.2020 Wide Color Gamut \nDynamic Range: High Dynamic Range (HDR) enabled with dark cavity auto-enhancement \nIllumination: High-power 150W Medical Cold LED, >100,000 Lux output \nInsufflator: Automated 45L/min High-Flow CO2 Insufflator with built-in gas heating (37°C) \nOutputs: 12G-SDI x2, HDMI 2.0 x2, DisplayPort 1.2 x1 \nDisplay Monitor: 32-inch 4K UHD Anti-Glare Medical Display (3840x2160) \nCamera Cable: Reinforced flexible optical fiber transmission cable, 3.5m \nCart Workstation: Heavy-duty hospital mobile cart with motorized or pneumatic articulated monitor arm",
         "features": [
           "True 4K UHD 3840x2160 resolution rendering quadruple the clinical detail of 1080p",
@@ -341,11 +347,14 @@
           "Heavy-duty 4-shelf ergonomic surgical cart with isolation transformer and cable management"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+        "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+        "images": [
+          "/images/products/laparoscopy-tower-4k-new.jpg"
+        ]
       },
       {
         "name": "4K ICG Enhanced Fluorescence Guided Laparoscopy Tower",
-        "image": "/images/products/laparoscopy-tower-4k-icg.jpg",
+        "image": "/images/products/laparoscopy-tower-4k-new.jpg",
         "specification": "Imaging Modes: 4K White Light Mode, ICG Near-Infrared Fluorescence Mode, Dual-Band Overlay Mode \nSensor: Dual-Sensor 4K CMOS with dedicated NIR 805-835nm excitation wavelength \nExcitation Source: Laser / NIR LED Multi-Wavelength Optical Engine (785nm / 805nm) \nResolution: 3840 x 2160 @ 60fps in all three visualization modes \nClinical Applications: Sentinel lymph node mapping, real-time biliary tree imaging, tissue perfusion assessment, hepatic segmentectomy \nInsufflator: 45L/min intelligent smoke evacuation integrated insufflator \nDisplay: 32-inch or 55-inch 4K UHD Medical Monitor supporting split-screen fluorescence overlay \nOptics: Specialized ICG 4K laparoscopes 10mm 0° / 30° with anti-fog sapphire tip \nRecording: Dual-channel synchronized 4K video recording with DICOM / PACS connectivity",
         "features": [
           "Dual-sensor 4K optical architecture enabling instantaneous switching between White Light and ICG NIR",
@@ -355,11 +364,14 @@
           "Fully integrated with hospital PACS network and automated surgical smoke evacuation"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+        "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+        "images": [
+          "/images/products/laparoscopy-tower-4k-new.jpg"
+        ]
       },
       {
         "name": "Compact HD Endoscopic Visualisation Unit (15\", 19\", 22\", 24\", 27\", 32\")",
-        "image": "/images/products/compact-hd-visualisation-unit.jpg",
+        "image": "/images/products/compact-hd-visualisation-unit-new.jpg",
         "specification": "Available Screen Sizes: 15.6\", 19\", 22\", 24\", 27\", 32\" medical displays \nArchitecture: All-in-One integrated chassis housing Camera Processor + LED Light Source + HD Monitor + Recorder \nResolution: 1920x1080P Full HD (4K available on 27\" and 32\" configurations) \nIntegrated Light Source: 80W - 100W LED daylight source (5700K), >60,000 Lux \nCamera Head: Full HD lightweight ergonomic camera head with integrated zoom coupler \nInput/Output Ports: HDMI in/out, DVI, SDI, USB for external storage, Audio in/out \nMobility: Integrated carrying handle and optional lightweight 5-wheel floor stand \nRecording Function: Front-panel one-touch USB 3.0 recording in MP4 format and JPEG image capture \nPower Supply: Universal AC 100-240V, 50/60Hz, optional internal lithium battery backup for 15\"/19\"",
         "features": [
           "Streamlined 4-in-1 portable architecture combining camera, light source, recorder, and HD monitor",
@@ -369,7 +381,10 @@
           "Universal Storz / Olympus / Wolf fiber optic cable compatibility"
         ],
         "category": "Operating Theatre",
-        "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+        "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+        "images": [
+          "/images/products/compact-hd-visualisation-unit-new.jpg"
+        ]
       },
       {
         "name": "15\" and 19\" Compact Foldable Visualisation Unit",
@@ -690,104 +705,6 @@
         "subtitle": "Urology & Endourology"
       },
       {
-        "name": "HD Laparoscope Telescope 30° & 0°",
-        "image": "/images/products/hd-laparoscope-telescope.jpg",
-        "specification": "Outer Diameter: 10mm & 5.5mm \nWorking Length: 300mm / 325mm \nDirection of View: 0° (Straight forward) & 30° (Forward oblique) \nOptics: German high-index rod-lens optical system, scratch-resistant sapphire distal window \nIllumination Interface: Storz / Olympus / Wolf universal screw-in light guide adapters \nSterilization: Fully autoclavable at 134°C / 273°F (Steam sterilizable), Gas plasma and ETO compatible \nDistal Tip: Laser-welded sealed stainless steel housing, hermetic seal",
-        "features": [
-          "High-definition rod-lens optical train with minimal distortion at margins",
-          "Distal sapphire crystal lens window prevents surgical scratching and clouding",
-          "Available in 0° and 30° field of view for complete abdominal and thoracic cavity inspection",
-          "Standard 134°C autoclave compatibility for rapid hospital reprocessing"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Telescope Section"
-      },
-      {
-        "name": "4K Laparoscope Telescope 30° & 0°",
-        "image": "/images/products/4k-laparoscope-telescope.jpg",
-        "specification": "Outer Diameter: 10mm & 5.5mm \nWorking Length: 325mm \nDirection of View: 0° and 30° \nOptical Resolution: Ultra-High Resolution (>4K optical resolve limit, 120 lines/mm) \nLens Coating: Multi-layer anti-reflective broadband coating for max photon throughput \nLight Transmission: High-density German optical fiber cone delivering uniform field illumination \nAutoclave Cycle: Autoclavable up to 500+ standard autoclave cycles at 134°C",
-        "features": [
-          "Diffraction-limited optical performance optimized for 4K UHD sensors",
-          "Multi-layer anti-reflective coatings maximizing light transmission and color contrast",
-          "Ultra-wide angle illumination cone eliminating peripheral vignette",
-          "Autoclavable robust medical stainless steel construction"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Telescope Section"
-      },
-      {
-        "name": "Transurethral Cystoscope",
-        "image": "/images/products/transurethral-cystoscope.jpg",
-        "specification": "Outer Diameter: 4mm telescope, sheath sizes: 17Fr, 19Fr, 21Fr, 23Fr \nDirection of View: 0°, 30°, 70° available \nWorking Length: 302mm \nAccessories: Single/Double working channel bridge, catheter deflector mechanism (Albarran bridge) \nInflow/Outflow: Dual stopcock irrigation ports with 360° rotating lock \nMaterial: Surgical grade stainless steel, laser welded, autoclavable",
-        "features": [
-          "High-clarity optical rod lens design for crisp bladder and mucosal diagnostic viewing",
-          "Interchangeable 17Fr-23Fr sheaths for diagnostic cystoscopy and operative intervention",
-          "Integrated Albarran deflecting bridge for smooth ureteral catheterization and stent placement",
-          "Continuous irrigation stopcocks providing clear endoscopic visualization"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Telescope Section"
-      },
-      {
-        "name": "Hysteroscope",
-        "image": "/images/products/hysteroscope.jpg",
-        "specification": "Telescope Diameter: 2.9mm & 4mm \nDirection of View: 12° & 30° wide angle \nSheath Type: Continuous flow inner and outer sheath (5mm diagnostic, 7mm operative) \nWorking Channel: 5Fr / 7Fr channel for semi-rigid biopsy forceps, scissors, and electrocautery electrodes \nWorking Length: 300mm \nSterilization: Autoclavable at 134°C, soaking, ETO, low-temp plasma",
-        "features": [
-          "Continuous-flow dual sheath design maintains clear intrauterine visualization",
-          "2.9mm ultra-slim telescope reduces patient discomfort during diagnostic outpatient procedures",
-          "Dedicated 5Fr/7Fr operative channel for polyp biopsy, synechiolysis, and IUD retrieval",
-          "High-transmission optical fiber core for bright daylight cavity illumination"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Telescope Section"
-      },
-      {
-        "name": "TURP Saline",
-        "image": "/images/products/turp-saline-resectoscope.jpg",
-        "specification": "Sheath Size: 26Fr continuous flow with ceramic insulation beak \nWorking Element: Active & Passive cutting options, ergonomic titanium finger rings \nTelescope: 4mm 12° / 30° autoclavable optics \nMedium: 0.9% Normal Saline irrigation (eliminates TUR syndrome risk) \nCompatible Electrodes: Bipolar cutting loop, vaporization button, coagulation roller ball \nLocking Mechanism: Quick-snap bayonet lock with 360° fluid seal",
-        "features": [
-          "Bipolar electrical circuit completed in normal saline, eliminating hypoosmolar TUR syndrome",
-          "High-frequency plasma vaporization and resecting loops for rapid prostate and bladder tumor resection",
-          "Ceramic insulated distal tip ensures total patient electrical safety during high-energy discharge",
-          "Continuous flow inflow/outflow mechanism for crystal clear intraoperative visibility"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Telescope Section"
-      },
-      {
-        "name": "Arthroscope",
-        "image": "/images/products/arthroscope.jpg",
-        "specification": "Outer Diameter: 4.0mm (knee/shoulder) & 2.7mm (wrist/ankle/small joint) \nDirection of View: 0° & 30° \nWorking Length: 175mm (4.0mm) & 110mm (2.7mm) \nHigh-Definition Optical Train: Multi-coated rod lenses with wide field of view (105°) \nSheath: High-flow diagnostic and operative cannula with quick-connect stopcocks \nAutoclavable: Yes, 134°C steam autoclave certified",
-        "features": [
-          "Optimized for diagnostic arthroscopy and reconstructive joint surgery (ACL, meniscus, rotator cuff)",
-          "Reinforced outer tube prevents intraoperative shaft bending and lens fracture",
-          "Universal light cable connectors (Storz, Olympus, Wolf, ACMI)",
-          "Fully sealed construction withstands frequent autoclave sterilizations"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Telescope Section"
-      },
-      {
-        "name": "ENT Telescope",
-        "image": "/images/products/ent-telescope.jpg",
-        "specification": "Diameter: 4.0mm & 2.7mm \nDirection of View: 0°, 30°, 70° \nWorking Length: 175mm (sinuscope) & 60-110mm (otoscope/laryngoscope) \nOptics: High-definition wide-angle optical system with depth of field from 3mm to infinity \nConstruction: Medical-grade stainless steel with laser-welded joint seals \nSterilization: Autoclavable at 134°C, ETO, low-temperature hydrogen peroxide plasma",
-        "features": [
-          "Precision endoscopic visualization for FESS sinus surgery, otology, and vocal cord inspection",
-          "0°, 30°, and 70° viewing angles provide comprehensive access to difficult sinus recesses",
-          "Sapphire objective lens and scratch-resistant ocular window",
-          "Compatible with standard cold light cables and HD endoscopy camera heads"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Telescope Section"
-      },
-      {
         "name": "HF Bipolar monopolar",
         "image": "/images/products/hf-bipolar-monopolar-electrosurgery.jpg",
         "specification": "Maximum Power: 400W Monopolar Cut, 120W Coagulation, 120W Bipolar Coag \nOperating Frequency: 400 kHz - 500 kHz \nModes: Pure Cut, Blend 1, Blend 2, Contact Coag, Spray Coag, Bipolar Standard, Bipolar Auto-Stop \nSafety System: Return Electrode Monitoring (REM) / Contact Quality Monitoring (CQM) with audio-visual alarm \nOutput Channels: 2 Monopolar handswitch/footswitch channels, 1 Bipolar channel \nDisplay: Dual digital microcomputer LED display with touch key power selection \nPower Supply: 110V/220V 50/60Hz, auto-voltage compensation",
@@ -813,7 +730,17 @@
         ],
         "category": "Operating Theatre",
         "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "HF Bipolar & Monopolar, Harmonic & LigaSure"
+        "section": "HF Bipolar & Monopolar, Harmonic & LigaSure",
+        "images": [
+          "/images/products/harmonic-surgical-ultrasonic-scalpel.jpg",
+          "/images/products/harmonic-1.jpg",
+          "/images/products/harmonic-2.jpg",
+          "/images/products/harmonic-3.jpg",
+          "/images/products/harmonic-4.jpg",
+          "/images/products/harmonic-5.jpg",
+          "/images/products/harmonic-6.jpg",
+          "/images/products/harmonic-7.jpg"
+        ]
       },
       {
         "name": "Ligasure( advanced bipolar)",
@@ -856,104 +783,6 @@
         "category": "Operating Theatre",
         "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
         "section": "Energy Section"
-      },
-      {
-        "name": "Access instruments",
-        "image": "/images/products/laparoscopic-access-instruments.jpg",
-        "specification": "Components: Reusable stainless steel trocars (5mm, 10mm, 12mm), Veress insufflation needles (120mm, 150mm), Hasson open laparoscopy trocars, trocar reducers (10-5mm, 12-5mm) \nCannula Surface: Threaded spiral retaining sleeve for secure abdominal wall anchoring \nValve Mechanism: Silicone flip-valve and magnetic ball valve ensuring zero CO2 gas leakage \nMaterial: Medical grade 316L stainless steel and titanium \nSterilization: Autoclavable at 134°C, fully dismantlable without tools for thorough cleaning",
-        "features": [
-          "Complete surgical port entry kit including sharp, blunt, and pyramidal obturators",
-          "Spring-loaded safety shield on Veress needles with audible click upon peritoneal entry",
-          "High-grade silicone gas-sealing valves maintain pneumoperitoneum during repeated instrument passes",
-          "Modular design enables complete disassembly for hospital washer-disinfector processing"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Surgical Instruments"
-      },
-      {
-        "name": "graspers& dissectors",
-        "image": "/images/products/laparoscopic-graspers-dissectors.jpg",
-        "specification": "Types: Maryland curved dissector, Babcock grasping forceps, Fenestrated bowel grasper, Allis grasper, Clinch grasper, Dolphin nose dissector \nShaft Dimensions: 5mm outer diameter x 330mm (standard) & 430mm (bariatric) length \nRotation: 360° fingertip rotation knob with smooth indexing \nRatchet: Switchable locking on/off ratchet mechanism on handle \nInsulation: Heavy-duty PTFE shrink tubing tested up to 5,000V for electrosurgical safety \nModularity: 3-piece takedown system (insert, insulated sheath, handle) for optimal cleaning",
-        "features": [
-          "Complete surgical array of atraumatic grasping and precision dissecting jaw patterns",
-          "Sensitive tactile feedback allowing delicate handling of intestines, gall bladder, and vessels",
-          "Fully insulated shafts prevent accidental electrical burns to adjacent bowel",
-          "Durable stainless steel construction withstands hundreds of hospital autoclaving cycles"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Surgical Instruments"
-      },
-      {
-        "name": "suturing instruments",
-        "image": "/images/products/laparoscopic-suturing-instruments.jpg",
-        "specification": "Jaw Types: Straight, Left-curved, Right-curved, Self-righting convex jaws with tungsten carbide (TC) cross-serrated inserts \nShaft Diameter: 5mm x 330mm length \nHandle Configurations: Axial handle with ratchet, Pistol grip handle, Ring handle with fine-toothed lock \nNeedle Sizes Supported: Curved surgical needles from 12mm to 36mm \nKnot Pushers: Open and closed eye knot tier rods (5mm) \nMaterial: Hardened surgical stainless steel with gold-plated handle rings denoting TC jaws",
-        "features": [
-          "Tungsten carbide jaw inserts securely lock surgical needles without slipping or twisting",
-          "Self-righting jaw architecture automatically aligns needle at 90° for ergonomic suturing",
-          "Axial ergonomic handle minimizes hand fatigue during prolonged intracorporeal knot tying",
-          "Ultra-smooth hinge movement prevents fine 3-0 and 4-0 suture threads from snagging"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Surgical Instruments"
-      },
-      {
-        "name": "HF instruments",
-        "image": "/images/products/laparoscopic-hf-instruments.jpg",
-        "specification": "Instruments: L-hook monopolar electrode, J-hook, Spatula electrode, Needle electrode, Bipolar micro-coagulation forceps (Maryland and straight paddle) \nConnector: Standard 4mm monopolar connector pin & 2-pin bipolar generator plug \nShaft: 5mm diameter x 330mm insulated with heat-resistant ceramic tip \nMax Voltage: Monopolar insulated to 8,000Vp; Bipolar to 2,000Vp \nSuction-Coagulation: Suction-irrigation electrode hooks (dual 5mm/10mm)",
-        "features": [
-          "Precision ceramic tips isolate electrical discharge directly to targeted tissue margins",
-          "Dual-function suction-coagulation probes allow smoke clearing and hemostasis in one step",
-          "Bipolar forceps provide pinpoint micro-vascular coagulation with zero stray current",
-          "Universal electrical pins compatible with all international electrosurgical units"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Surgical Instruments"
-      },
-      {
-        "name": "ligations instruments",
-        "image": "/images/products/laparoscopic-clip-appliers.jpg",
-        "specification": "Clip Types Supported: Titanium clips (Medium, Medium-Large, Large) & Polymer Hem-o-lok type clips (ML, L, XL) \nShaft Diameter: 5mm (for Medium/ML clips) and 10mm (for Large/XL clips) x 330mm \nJaw Closure: Parallel jaw closure mechanism with tactile feedback \nRotation: 360° rotating collar \nLockout Mechanism: Anti-slip retention prevents clip dislodgement prior to vessel clamping \nCleaning Port: Flush luer-lock port for interior shaft de-contamination",
-        "features": [
-          "Parallel closing jaws ensure uniform clip compression across vascular and ductal structures",
-          "Compatible with standard titanium surgical clips and non-absorbable polymer locking clips",
-          "Smooth 360° one-finger rotation provides optimal angles around deep hilar vessels",
-          "Integrated flush port allows complete interior channel irrigation during reprocessing"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Surgical Instruments"
-      },
-      {
-        "name": "liquid tubing devices",
-        "image": "/images/products/endoscopic-suction-irrigation-devices.jpg",
-        "specification": "Shaft Options: 5mm & 10mm interchangeable stainless steel cannulas with lateral spray holes \nValves: Double trumpet valve (Dual push-button for Irrigation and Suction) or Dual-stopcock lever \nTubing Set: Medical grade flexible silicone tubing set with universal puncture spike for saline bags \nOperating Pressure: Compatible with gravity flow and automated pressure irrigation pumps (up to 400 mmHg) \nErgonomics: Lightweight contoured pistol handpiece with ambidextrous button layout \nSterilization: Fully autoclavable trumpet handle and stainless steel probes",
-        "features": [
-          "High-flow trumpet valve design delivers rapid pressurized abdominal lavage and clot aspiration",
-          "Interchangeable 5mm and 10mm probes with multi-hole tips to avoid tissue suction trapping",
-          "Smooth spring-back buttons eliminate valve sticking during emergency hemorrhage irrigation",
-          "Transparent tubing connectors for immediate visual confirmation of fluid and clot transit"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Surgical Instruments"
-      },
-      {
-        "name": "reprocessing containers",
-        "image": "/images/products/instrument-reprocessing-containers.jpg",
-        "specification": "Material: Anodized surgical-grade aluminum alloy and stainless steel mesh basket \nFilter System: Reusable PTFE barrier filter or disposable paper filter discs in lid \nDimensions: Standard DIN sizes (Full size: 580x280x135mm; Half size: 285x280x135mm; Scope trays: 460x80x52mm) \nInterior: Silicone cushioning brackets and scope holding clips \nLocking: Dual safety latch with tamper-evident seal ports \nSterilization: Steam autoclave (134°C), ethylene oxide, and low-temperature gas plasma",
-        "features": [
-          "Heavy-duty anodized aluminum housing shields delicate scopes and cameras from impact",
-          "Perforated top and base with microbiological filters ensure sterile barrier integrity for up to 6 months",
-          "Soft silicone holding fingers securely immobilize telescopes during ultrasonic bath and autoclave",
-          "Lightweight, corrosion-proof, and compliant with EN 868 and ISO 11607 sterilization standards"
-        ],
-        "category": "Operating Theatre",
-        "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-        "section": "Surgical Instruments"
       },
       {
         "name": "plastic trocars",
@@ -1879,7 +1708,7 @@
         "items": [
           {
             "name": "Laparoscopy Premium HD with 1/2.3\" CMOS",
-            "image": "/images/products/laparoscopy-premium-hd-1-23-cmos.jpg",
+            "image": "/images/products/laparoscopy-tower-1080p-new.jpg",
             "specification": "Sensor: 1/2.3\" Ultra-Sensitive SONY CMOS Sensor \nResolution: 1920x1080P Full HD @ 60fps \nOptical Zoom / Focal Length: F=14-32mm optical zoom coupler, C-mount \nIllumination: Integrated 100W Cold LED Light Source, 5700K color temperature, >80,000 Lux \nInsufflator: Automated 30L/min CO2 Insufflator with pre-heating and continuous pressure monitoring \nOutput Ports: HDMI x2, DVI-D x1, SDI x1, CVBS x1 \nDisplay Monitor: 24-inch Full HD Medical Grade Monitor, anti-reflective coating \nIP Rating: IPX8 Waterproof submersible camera head with autoclave coupler \nSignal-to-Noise Ratio (SNR): ≥60 dB \nWhite Balance: Automatic / One-touch manual memory",
             "features": [
               "High-sensitivity 1/2.3\" SONY CMOS sensor capturing true-color tissue micro-vascularity",
@@ -1889,11 +1718,14 @@
               "IPX8 waterproof submersible camera head compatible with gas plasma and soaking disinfection"
             ],
             "category": "Operating Theatre",
-            "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+            "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+            "images": [
+              "/images/products/laparoscopy-tower-1080p-new.jpg"
+            ]
           },
           {
             "name": "Laparoscopy Tower 1080p with 1/2.8\" CMOS",
-            "image": "/images/products/laparoscopy-tower-1080p-1-28-cmos.jpg",
+            "image": "/images/products/laparoscopy-tower-1080p-new.jpg",
             "specification": "Sensor: 1/2.8\" Progressive Scan CMOS Sensor \nResolution: 1080p Full HD (1920x1080) @ 60fps \nEffective Pixels: 2.13 Megapixels \nIllumination: 80W LED Cold Light Source, 5500-6500K, >60,000 Lux \nCamera Head: Ergonomic handheld design with 4 programmable buttons (freeze, record, zoom, white balance) \nCoupler: F=18-35mm manual optical zoom, waterproof C-mount \nVideo Outputs: HDMI x1, DVI x1, VGA x1, Composite x1 \nRecording Storage: USB 3.0 direct HD image capture and MP4 video recording \nDisplay: 21.5-inch Medical Grade Full HD LCD Monitor \nPower Supply: AC 100-240V, 50/60Hz, Power consumption: ≤150W",
             "features": [
               "1/2.8\" progressive scan CMOS sensor delivering reliable Full HD surgical imagery",
@@ -1903,11 +1735,14 @@
               "Standard C-mount optical interface compatible with rigid 0° and 30° laparoscopes"
             ],
             "category": "Operating Theatre",
-            "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+            "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+            "images": [
+              "/images/products/laparoscopy-tower-1080p-new.jpg"
+            ]
           },
           {
             "name": "Laparoscopy Tower 4K",
-            "image": "/images/products/laparoscopy-tower-4k.jpg",
+            "image": "/images/products/laparoscopy-tower-4k-new.jpg",
             "specification": "Sensor: 1/1.8\" Ultra-High Definition 4K CMOS Sensor \nResolution: 3840 x 2160 pixels @ 60Hz (8.3 Megapixels) \nColor Gamut: BT.2020 Wide Color Gamut \nDynamic Range: High Dynamic Range (HDR) enabled with dark cavity auto-enhancement \nIllumination: High-power 150W Medical Cold LED, >100,000 Lux output \nInsufflator: Automated 45L/min High-Flow CO2 Insufflator with built-in gas heating (37°C) \nOutputs: 12G-SDI x2, HDMI 2.0 x2, DisplayPort 1.2 x1 \nDisplay Monitor: 32-inch 4K UHD Anti-Glare Medical Display (3840x2160) \nCamera Cable: Reinforced flexible optical fiber transmission cable, 3.5m \nCart Workstation: Heavy-duty hospital mobile cart with motorized or pneumatic articulated monitor arm",
             "features": [
               "True 4K UHD 3840x2160 resolution rendering quadruple the clinical detail of 1080p",
@@ -1917,11 +1752,14 @@
               "Heavy-duty 4-shelf ergonomic surgical cart with isolation transformer and cable management"
             ],
             "category": "Operating Theatre",
-            "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+            "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+            "images": [
+              "/images/products/laparoscopy-tower-4k-new.jpg"
+            ]
           },
           {
             "name": "4K ICG Enhanced Fluorescence Guided Laparoscopy Tower",
-            "image": "/images/products/laparoscopy-tower-4k-icg.jpg",
+            "image": "/images/products/laparoscopy-tower-4k-new.jpg",
             "specification": "Imaging Modes: 4K White Light Mode, ICG Near-Infrared Fluorescence Mode, Dual-Band Overlay Mode \nSensor: Dual-Sensor 4K CMOS with dedicated NIR 805-835nm excitation wavelength \nExcitation Source: Laser / NIR LED Multi-Wavelength Optical Engine (785nm / 805nm) \nResolution: 3840 x 2160 @ 60fps in all three visualization modes \nClinical Applications: Sentinel lymph node mapping, real-time biliary tree imaging, tissue perfusion assessment, hepatic segmentectomy \nInsufflator: 45L/min intelligent smoke evacuation integrated insufflator \nDisplay: 32-inch or 55-inch 4K UHD Medical Monitor supporting split-screen fluorescence overlay \nOptics: Specialized ICG 4K laparoscopes 10mm 0° / 30° with anti-fog sapphire tip \nRecording: Dual-channel synchronized 4K video recording with DICOM / PACS connectivity",
             "features": [
               "Dual-sensor 4K optical architecture enabling instantaneous switching between White Light and ICG NIR",
@@ -1931,11 +1769,14 @@
               "Fully integrated with hospital PACS network and automated surgical smoke evacuation"
             ],
             "category": "Operating Theatre",
-            "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+            "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+            "images": [
+              "/images/products/laparoscopy-tower-4k-new.jpg"
+            ]
           },
           {
             "name": "Compact HD Endoscopic Visualisation Unit (15\", 19\", 22\", 24\", 27\", 32\")",
-            "image": "/images/products/compact-hd-visualisation-unit.jpg",
+            "image": "/images/products/compact-hd-visualisation-unit-new.jpg",
             "specification": "Available Screen Sizes: 15.6\", 19\", 22\", 24\", 27\", 32\" medical displays \nArchitecture: All-in-One integrated chassis housing Camera Processor + LED Light Source + HD Monitor + Recorder \nResolution: 1920x1080P Full HD (4K available on 27\" and 32\" configurations) \nIntegrated Light Source: 80W - 100W LED daylight source (5700K), >60,000 Lux \nCamera Head: Full HD lightweight ergonomic camera head with integrated zoom coupler \nInput/Output Ports: HDMI in/out, DVI, SDI, USB for external storage, Audio in/out \nMobility: Integrated carrying handle and optional lightweight 5-wheel floor stand \nRecording Function: Front-panel one-touch USB 3.0 recording in MP4 format and JPEG image capture \nPower Supply: Universal AC 100-240V, 50/60Hz, optional internal lithium battery backup for 15\"/19\"",
             "features": [
               "Streamlined 4-in-1 portable architecture combining camera, light source, recorder, and HD monitor",
@@ -1945,7 +1786,10 @@
               "Universal Storz / Olympus / Wolf fiber optic cable compatibility"
             ],
             "category": "Operating Theatre",
-            "subtitle": "Laparoscopy & Minimally Invasive Surgery"
+            "subtitle": "Laparoscopy & Minimally Invasive Surgery",
+            "images": [
+              "/images/products/compact-hd-visualisation-unit-new.jpg"
+            ]
           },
           {
             "name": "15\" and 19\" Compact Foldable Visualisation Unit",
@@ -2638,104 +2482,6 @@
         "description": "Rigid endoscopy optical telescopes, high-frequency bipolar/monopolar electrosurgery, ultrasonic harmonic dissection, plasma ablation, surgical instruments, and sterile single-use consumables.",
         "items": [
           {
-            "name": "HD Laparoscope Telescope 30° & 0°",
-            "image": "/images/products/hd-laparoscope-telescope.jpg",
-            "specification": "Outer Diameter: 10mm & 5.5mm \nWorking Length: 300mm / 325mm \nDirection of View: 0° (Straight forward) & 30° (Forward oblique) \nOptics: German high-index rod-lens optical system, scratch-resistant sapphire distal window \nIllumination Interface: Storz / Olympus / Wolf universal screw-in light guide adapters \nSterilization: Fully autoclavable at 134°C / 273°F (Steam sterilizable), Gas plasma and ETO compatible \nDistal Tip: Laser-welded sealed stainless steel housing, hermetic seal",
-            "features": [
-              "High-definition rod-lens optical train with minimal distortion at margins",
-              "Distal sapphire crystal lens window prevents surgical scratching and clouding",
-              "Available in 0° and 30° field of view for complete abdominal and thoracic cavity inspection",
-              "Standard 134°C autoclave compatibility for rapid hospital reprocessing"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Telescope Section"
-          },
-          {
-            "name": "4K Laparoscope Telescope 30° & 0°",
-            "image": "/images/products/4k-laparoscope-telescope.jpg",
-            "specification": "Outer Diameter: 10mm & 5.5mm \nWorking Length: 325mm \nDirection of View: 0° and 30° \nOptical Resolution: Ultra-High Resolution (>4K optical resolve limit, 120 lines/mm) \nLens Coating: Multi-layer anti-reflective broadband coating for max photon throughput \nLight Transmission: High-density German optical fiber cone delivering uniform field illumination \nAutoclave Cycle: Autoclavable up to 500+ standard autoclave cycles at 134°C",
-            "features": [
-              "Diffraction-limited optical performance optimized for 4K UHD sensors",
-              "Multi-layer anti-reflective coatings maximizing light transmission and color contrast",
-              "Ultra-wide angle illumination cone eliminating peripheral vignette",
-              "Autoclavable robust medical stainless steel construction"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Telescope Section"
-          },
-          {
-            "name": "Transurethral Cystoscope",
-            "image": "/images/products/transurethral-cystoscope.jpg",
-            "specification": "Outer Diameter: 4mm telescope, sheath sizes: 17Fr, 19Fr, 21Fr, 23Fr \nDirection of View: 0°, 30°, 70° available \nWorking Length: 302mm \nAccessories: Single/Double working channel bridge, catheter deflector mechanism (Albarran bridge) \nInflow/Outflow: Dual stopcock irrigation ports with 360° rotating lock \nMaterial: Surgical grade stainless steel, laser welded, autoclavable",
-            "features": [
-              "High-clarity optical rod lens design for crisp bladder and mucosal diagnostic viewing",
-              "Interchangeable 17Fr-23Fr sheaths for diagnostic cystoscopy and operative intervention",
-              "Integrated Albarran deflecting bridge for smooth ureteral catheterization and stent placement",
-              "Continuous irrigation stopcocks providing clear endoscopic visualization"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Telescope Section"
-          },
-          {
-            "name": "Hysteroscope",
-            "image": "/images/products/hysteroscope.jpg",
-            "specification": "Telescope Diameter: 2.9mm & 4mm \nDirection of View: 12° & 30° wide angle \nSheath Type: Continuous flow inner and outer sheath (5mm diagnostic, 7mm operative) \nWorking Channel: 5Fr / 7Fr channel for semi-rigid biopsy forceps, scissors, and electrocautery electrodes \nWorking Length: 300mm \nSterilization: Autoclavable at 134°C, soaking, ETO, low-temp plasma",
-            "features": [
-              "Continuous-flow dual sheath design maintains clear intrauterine visualization",
-              "2.9mm ultra-slim telescope reduces patient discomfort during diagnostic outpatient procedures",
-              "Dedicated 5Fr/7Fr operative channel for polyp biopsy, synechiolysis, and IUD retrieval",
-              "High-transmission optical fiber core for bright daylight cavity illumination"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Telescope Section"
-          },
-          {
-            "name": "TURP Saline",
-            "image": "/images/products/turp-saline-resectoscope.jpg",
-            "specification": "Sheath Size: 26Fr continuous flow with ceramic insulation beak \nWorking Element: Active & Passive cutting options, ergonomic titanium finger rings \nTelescope: 4mm 12° / 30° autoclavable optics \nMedium: 0.9% Normal Saline irrigation (eliminates TUR syndrome risk) \nCompatible Electrodes: Bipolar cutting loop, vaporization button, coagulation roller ball \nLocking Mechanism: Quick-snap bayonet lock with 360° fluid seal",
-            "features": [
-              "Bipolar electrical circuit completed in normal saline, eliminating hypoosmolar TUR syndrome",
-              "High-frequency plasma vaporization and resecting loops for rapid prostate and bladder tumor resection",
-              "Ceramic insulated distal tip ensures total patient electrical safety during high-energy discharge",
-              "Continuous flow inflow/outflow mechanism for crystal clear intraoperative visibility"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Telescope Section"
-          },
-          {
-            "name": "Arthroscope",
-            "image": "/images/products/arthroscope.jpg",
-            "specification": "Outer Diameter: 4.0mm (knee/shoulder) & 2.7mm (wrist/ankle/small joint) \nDirection of View: 0° & 30° \nWorking Length: 175mm (4.0mm) & 110mm (2.7mm) \nHigh-Definition Optical Train: Multi-coated rod lenses with wide field of view (105°) \nSheath: High-flow diagnostic and operative cannula with quick-connect stopcocks \nAutoclavable: Yes, 134°C steam autoclave certified",
-            "features": [
-              "Optimized for diagnostic arthroscopy and reconstructive joint surgery (ACL, meniscus, rotator cuff)",
-              "Reinforced outer tube prevents intraoperative shaft bending and lens fracture",
-              "Universal light cable connectors (Storz, Olympus, Wolf, ACMI)",
-              "Fully sealed construction withstands frequent autoclave sterilizations"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Telescope Section"
-          },
-          {
-            "name": "ENT Telescope",
-            "image": "/images/products/ent-telescope.jpg",
-            "specification": "Diameter: 4.0mm & 2.7mm \nDirection of View: 0°, 30°, 70° \nWorking Length: 175mm (sinuscope) & 60-110mm (otoscope/laryngoscope) \nOptics: High-definition wide-angle optical system with depth of field from 3mm to infinity \nConstruction: Medical-grade stainless steel with laser-welded joint seals \nSterilization: Autoclavable at 134°C, ETO, low-temperature hydrogen peroxide plasma",
-            "features": [
-              "Precision endoscopic visualization for FESS sinus surgery, otology, and vocal cord inspection",
-              "0°, 30°, and 70° viewing angles provide comprehensive access to difficult sinus recesses",
-              "Sapphire objective lens and scratch-resistant ocular window",
-              "Compatible with standard cold light cables and HD endoscopy camera heads"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Telescope Section"
-          },
-          {
             "name": "HF Bipolar monopolar",
             "image": "/images/products/hf-bipolar-monopolar-electrosurgery.jpg",
             "specification": "Maximum Power: 400W Monopolar Cut, 120W Coagulation, 120W Bipolar Coag \nOperating Frequency: 400 kHz - 500 kHz \nModes: Pure Cut, Blend 1, Blend 2, Contact Coag, Spray Coag, Bipolar Standard, Bipolar Auto-Stop \nSafety System: Return Electrode Monitoring (REM) / Contact Quality Monitoring (CQM) with audio-visual alarm \nOutput Channels: 2 Monopolar handswitch/footswitch channels, 1 Bipolar channel \nDisplay: Dual digital microcomputer LED display with touch key power selection \nPower Supply: 110V/220V 50/60Hz, auto-voltage compensation",
@@ -2761,7 +2507,17 @@
             ],
             "category": "Operating Theatre",
             "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "HF Bipolar & Monopolar, Harmonic & LigaSure"
+            "section": "HF Bipolar & Monopolar, Harmonic & LigaSure",
+            "images": [
+              "/images/products/harmonic-surgical-ultrasonic-scalpel.jpg",
+              "/images/products/harmonic-1.jpg",
+              "/images/products/harmonic-2.jpg",
+              "/images/products/harmonic-3.jpg",
+              "/images/products/harmonic-4.jpg",
+              "/images/products/harmonic-5.jpg",
+              "/images/products/harmonic-6.jpg",
+              "/images/products/harmonic-7.jpg"
+            ]
           },
           {
             "name": "Ligasure( advanced bipolar)",
@@ -2804,104 +2560,6 @@
             "category": "Operating Theatre",
             "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
             "section": "Energy Section"
-          },
-          {
-            "name": "Access instruments",
-            "image": "/images/products/laparoscopic-access-instruments.jpg",
-            "specification": "Components: Reusable stainless steel trocars (5mm, 10mm, 12mm), Veress insufflation needles (120mm, 150mm), Hasson open laparoscopy trocars, trocar reducers (10-5mm, 12-5mm) \nCannula Surface: Threaded spiral retaining sleeve for secure abdominal wall anchoring \nValve Mechanism: Silicone flip-valve and magnetic ball valve ensuring zero CO2 gas leakage \nMaterial: Medical grade 316L stainless steel and titanium \nSterilization: Autoclavable at 134°C, fully dismantlable without tools for thorough cleaning",
-            "features": [
-              "Complete surgical port entry kit including sharp, blunt, and pyramidal obturators",
-              "Spring-loaded safety shield on Veress needles with audible click upon peritoneal entry",
-              "High-grade silicone gas-sealing valves maintain pneumoperitoneum during repeated instrument passes",
-              "Modular design enables complete disassembly for hospital washer-disinfector processing"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Surgical Instruments"
-          },
-          {
-            "name": "graspers& dissectors",
-            "image": "/images/products/laparoscopic-graspers-dissectors.jpg",
-            "specification": "Types: Maryland curved dissector, Babcock grasping forceps, Fenestrated bowel grasper, Allis grasper, Clinch grasper, Dolphin nose dissector \nShaft Dimensions: 5mm outer diameter x 330mm (standard) & 430mm (bariatric) length \nRotation: 360° fingertip rotation knob with smooth indexing \nRatchet: Switchable locking on/off ratchet mechanism on handle \nInsulation: Heavy-duty PTFE shrink tubing tested up to 5,000V for electrosurgical safety \nModularity: 3-piece takedown system (insert, insulated sheath, handle) for optimal cleaning",
-            "features": [
-              "Complete surgical array of atraumatic grasping and precision dissecting jaw patterns",
-              "Sensitive tactile feedback allowing delicate handling of intestines, gall bladder, and vessels",
-              "Fully insulated shafts prevent accidental electrical burns to adjacent bowel",
-              "Durable stainless steel construction withstands hundreds of hospital autoclaving cycles"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Surgical Instruments"
-          },
-          {
-            "name": "suturing instruments",
-            "image": "/images/products/laparoscopic-suturing-instruments.jpg",
-            "specification": "Jaw Types: Straight, Left-curved, Right-curved, Self-righting convex jaws with tungsten carbide (TC) cross-serrated inserts \nShaft Diameter: 5mm x 330mm length \nHandle Configurations: Axial handle with ratchet, Pistol grip handle, Ring handle with fine-toothed lock \nNeedle Sizes Supported: Curved surgical needles from 12mm to 36mm \nKnot Pushers: Open and closed eye knot tier rods (5mm) \nMaterial: Hardened surgical stainless steel with gold-plated handle rings denoting TC jaws",
-            "features": [
-              "Tungsten carbide jaw inserts securely lock surgical needles without slipping or twisting",
-              "Self-righting jaw architecture automatically aligns needle at 90° for ergonomic suturing",
-              "Axial ergonomic handle minimizes hand fatigue during prolonged intracorporeal knot tying",
-              "Ultra-smooth hinge movement prevents fine 3-0 and 4-0 suture threads from snagging"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Surgical Instruments"
-          },
-          {
-            "name": "HF instruments",
-            "image": "/images/products/laparoscopic-hf-instruments.jpg",
-            "specification": "Instruments: L-hook monopolar electrode, J-hook, Spatula electrode, Needle electrode, Bipolar micro-coagulation forceps (Maryland and straight paddle) \nConnector: Standard 4mm monopolar connector pin & 2-pin bipolar generator plug \nShaft: 5mm diameter x 330mm insulated with heat-resistant ceramic tip \nMax Voltage: Monopolar insulated to 8,000Vp; Bipolar to 2,000Vp \nSuction-Coagulation: Suction-irrigation electrode hooks (dual 5mm/10mm)",
-            "features": [
-              "Precision ceramic tips isolate electrical discharge directly to targeted tissue margins",
-              "Dual-function suction-coagulation probes allow smoke clearing and hemostasis in one step",
-              "Bipolar forceps provide pinpoint micro-vascular coagulation with zero stray current",
-              "Universal electrical pins compatible with all international electrosurgical units"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Surgical Instruments"
-          },
-          {
-            "name": "ligations instruments",
-            "image": "/images/products/laparoscopic-clip-appliers.jpg",
-            "specification": "Clip Types Supported: Titanium clips (Medium, Medium-Large, Large) & Polymer Hem-o-lok type clips (ML, L, XL) \nShaft Diameter: 5mm (for Medium/ML clips) and 10mm (for Large/XL clips) x 330mm \nJaw Closure: Parallel jaw closure mechanism with tactile feedback \nRotation: 360° rotating collar \nLockout Mechanism: Anti-slip retention prevents clip dislodgement prior to vessel clamping \nCleaning Port: Flush luer-lock port for interior shaft de-contamination",
-            "features": [
-              "Parallel closing jaws ensure uniform clip compression across vascular and ductal structures",
-              "Compatible with standard titanium surgical clips and non-absorbable polymer locking clips",
-              "Smooth 360° one-finger rotation provides optimal angles around deep hilar vessels",
-              "Integrated flush port allows complete interior channel irrigation during reprocessing"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Surgical Instruments"
-          },
-          {
-            "name": "liquid tubing devices",
-            "image": "/images/products/endoscopic-suction-irrigation-devices.jpg",
-            "specification": "Shaft Options: 5mm & 10mm interchangeable stainless steel cannulas with lateral spray holes \nValves: Double trumpet valve (Dual push-button for Irrigation and Suction) or Dual-stopcock lever \nTubing Set: Medical grade flexible silicone tubing set with universal puncture spike for saline bags \nOperating Pressure: Compatible with gravity flow and automated pressure irrigation pumps (up to 400 mmHg) \nErgonomics: Lightweight contoured pistol handpiece with ambidextrous button layout \nSterilization: Fully autoclavable trumpet handle and stainless steel probes",
-            "features": [
-              "High-flow trumpet valve design delivers rapid pressurized abdominal lavage and clot aspiration",
-              "Interchangeable 5mm and 10mm probes with multi-hole tips to avoid tissue suction trapping",
-              "Smooth spring-back buttons eliminate valve sticking during emergency hemorrhage irrigation",
-              "Transparent tubing connectors for immediate visual confirmation of fluid and clot transit"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Surgical Instruments"
-          },
-          {
-            "name": "reprocessing containers",
-            "image": "/images/products/instrument-reprocessing-containers.jpg",
-            "specification": "Material: Anodized surgical-grade aluminum alloy and stainless steel mesh basket \nFilter System: Reusable PTFE barrier filter or disposable paper filter discs in lid \nDimensions: Standard DIN sizes (Full size: 580x280x135mm; Half size: 285x280x135mm; Scope trays: 460x80x52mm) \nInterior: Silicone cushioning brackets and scope holding clips \nLocking: Dual safety latch with tamper-evident seal ports \nSterilization: Steam autoclave (134°C), ethylene oxide, and low-temperature gas plasma",
-            "features": [
-              "Heavy-duty anodized aluminum housing shields delicate scopes and cameras from impact",
-              "Perforated top and base with microbiological filters ensure sterile barrier integrity for up to 6 months",
-              "Soft silicone holding fingers securely immobilize telescopes during ultrasonic bath and autoclave",
-              "Lightweight, corrosion-proof, and compliant with EN 868 and ISO 11607 sterilization standards"
-            ],
-            "category": "Operating Theatre",
-            "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-            "section": "Surgical Instruments"
           },
           {
             "name": "plastic trocars",
@@ -2975,109 +2633,6 @@
           }
         ],
         "groups": [
-          {
-            "title": "Telescope Section",
-            "items": [
-              {
-                "name": "HD Laparoscope Telescope 30° & 0°",
-                "image": "/images/products/hd-laparoscope-telescope.jpg",
-                "specification": "Outer Diameter: 10mm & 5.5mm \nWorking Length: 300mm / 325mm \nDirection of View: 0° (Straight forward) & 30° (Forward oblique) \nOptics: German high-index rod-lens optical system, scratch-resistant sapphire distal window \nIllumination Interface: Storz / Olympus / Wolf universal screw-in light guide adapters \nSterilization: Fully autoclavable at 134°C / 273°F (Steam sterilizable), Gas plasma and ETO compatible \nDistal Tip: Laser-welded sealed stainless steel housing, hermetic seal",
-                "features": [
-                  "High-definition rod-lens optical train with minimal distortion at margins",
-                  "Distal sapphire crystal lens window prevents surgical scratching and clouding",
-                  "Available in 0° and 30° field of view for complete abdominal and thoracic cavity inspection",
-                  "Standard 134°C autoclave compatibility for rapid hospital reprocessing"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Telescope Section"
-              },
-              {
-                "name": "4K Laparoscope Telescope 30° & 0°",
-                "image": "/images/products/4k-laparoscope-telescope.jpg",
-                "specification": "Outer Diameter: 10mm & 5.5mm \nWorking Length: 325mm \nDirection of View: 0° and 30° \nOptical Resolution: Ultra-High Resolution (>4K optical resolve limit, 120 lines/mm) \nLens Coating: Multi-layer anti-reflective broadband coating for max photon throughput \nLight Transmission: High-density German optical fiber cone delivering uniform field illumination \nAutoclave Cycle: Autoclavable up to 500+ standard autoclave cycles at 134°C",
-                "features": [
-                  "Diffraction-limited optical performance optimized for 4K UHD sensors",
-                  "Multi-layer anti-reflective coatings maximizing light transmission and color contrast",
-                  "Ultra-wide angle illumination cone eliminating peripheral vignette",
-                  "Autoclavable robust medical stainless steel construction"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Telescope Section"
-              },
-              {
-                "name": "Transurethral Cystoscope",
-                "image": "/images/products/transurethral-cystoscope.jpg",
-                "specification": "Outer Diameter: 4mm telescope, sheath sizes: 17Fr, 19Fr, 21Fr, 23Fr \nDirection of View: 0°, 30°, 70° available \nWorking Length: 302mm \nAccessories: Single/Double working channel bridge, catheter deflector mechanism (Albarran bridge) \nInflow/Outflow: Dual stopcock irrigation ports with 360° rotating lock \nMaterial: Surgical grade stainless steel, laser welded, autoclavable",
-                "features": [
-                  "High-clarity optical rod lens design for crisp bladder and mucosal diagnostic viewing",
-                  "Interchangeable 17Fr-23Fr sheaths for diagnostic cystoscopy and operative intervention",
-                  "Integrated Albarran deflecting bridge for smooth ureteral catheterization and stent placement",
-                  "Continuous irrigation stopcocks providing clear endoscopic visualization"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Telescope Section"
-              },
-              {
-                "name": "Hysteroscope",
-                "image": "/images/products/hysteroscope.jpg",
-                "specification": "Telescope Diameter: 2.9mm & 4mm \nDirection of View: 12° & 30° wide angle \nSheath Type: Continuous flow inner and outer sheath (5mm diagnostic, 7mm operative) \nWorking Channel: 5Fr / 7Fr channel for semi-rigid biopsy forceps, scissors, and electrocautery electrodes \nWorking Length: 300mm \nSterilization: Autoclavable at 134°C, soaking, ETO, low-temp plasma",
-                "features": [
-                  "Continuous-flow dual sheath design maintains clear intrauterine visualization",
-                  "2.9mm ultra-slim telescope reduces patient discomfort during diagnostic outpatient procedures",
-                  "Dedicated 5Fr/7Fr operative channel for polyp biopsy, synechiolysis, and IUD retrieval",
-                  "High-transmission optical fiber core for bright daylight cavity illumination"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Telescope Section"
-              },
-              {
-                "name": "TURP Saline",
-                "image": "/images/products/turp-saline-resectoscope.jpg",
-                "specification": "Sheath Size: 26Fr continuous flow with ceramic insulation beak \nWorking Element: Active & Passive cutting options, ergonomic titanium finger rings \nTelescope: 4mm 12° / 30° autoclavable optics \nMedium: 0.9% Normal Saline irrigation (eliminates TUR syndrome risk) \nCompatible Electrodes: Bipolar cutting loop, vaporization button, coagulation roller ball \nLocking Mechanism: Quick-snap bayonet lock with 360° fluid seal",
-                "features": [
-                  "Bipolar electrical circuit completed in normal saline, eliminating hypoosmolar TUR syndrome",
-                  "High-frequency plasma vaporization and resecting loops for rapid prostate and bladder tumor resection",
-                  "Ceramic insulated distal tip ensures total patient electrical safety during high-energy discharge",
-                  "Continuous flow inflow/outflow mechanism for crystal clear intraoperative visibility"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Telescope Section"
-              },
-              {
-                "name": "Arthroscope",
-                "image": "/images/products/arthroscope.jpg",
-                "specification": "Outer Diameter: 4.0mm (knee/shoulder) & 2.7mm (wrist/ankle/small joint) \nDirection of View: 0° & 30° \nWorking Length: 175mm (4.0mm) & 110mm (2.7mm) \nHigh-Definition Optical Train: Multi-coated rod lenses with wide field of view (105°) \nSheath: High-flow diagnostic and operative cannula with quick-connect stopcocks \nAutoclavable: Yes, 134°C steam autoclave certified",
-                "features": [
-                  "Optimized for diagnostic arthroscopy and reconstructive joint surgery (ACL, meniscus, rotator cuff)",
-                  "Reinforced outer tube prevents intraoperative shaft bending and lens fracture",
-                  "Universal light cable connectors (Storz, Olympus, Wolf, ACMI)",
-                  "Fully sealed construction withstands frequent autoclave sterilizations"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Telescope Section"
-              },
-              {
-                "name": "ENT Telescope",
-                "image": "/images/products/ent-telescope.jpg",
-                "specification": "Diameter: 4.0mm & 2.7mm \nDirection of View: 0°, 30°, 70° \nWorking Length: 175mm (sinuscope) & 60-110mm (otoscope/laryngoscope) \nOptics: High-definition wide-angle optical system with depth of field from 3mm to infinity \nConstruction: Medical-grade stainless steel with laser-welded joint seals \nSterilization: Autoclavable at 134°C, ETO, low-temperature hydrogen peroxide plasma",
-                "features": [
-                  "Precision endoscopic visualization for FESS sinus surgery, otology, and vocal cord inspection",
-                  "0°, 30°, and 70° viewing angles provide comprehensive access to difficult sinus recesses",
-                  "Sapphire objective lens and scratch-resistant ocular window",
-                  "Compatible with standard cold light cables and HD endoscopy camera heads"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Telescope Section"
-              }
-            ]
-          },
           {
             "title": "HF Bipolar & Monopolar, Harmonic & LigaSure",
             "items": [
@@ -3155,109 +2710,6 @@
                 "category": "Operating Theatre",
                 "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
                 "section": "Energy Section"
-              }
-            ]
-          },
-          {
-            "title": "Surgical Instruments",
-            "items": [
-              {
-                "name": "Access instruments",
-                "image": "/images/products/laparoscopic-access-instruments.jpg",
-                "specification": "Components: Reusable stainless steel trocars (5mm, 10mm, 12mm), Veress insufflation needles (120mm, 150mm), Hasson open laparoscopy trocars, trocar reducers (10-5mm, 12-5mm) \nCannula Surface: Threaded spiral retaining sleeve for secure abdominal wall anchoring \nValve Mechanism: Silicone flip-valve and magnetic ball valve ensuring zero CO2 gas leakage \nMaterial: Medical grade 316L stainless steel and titanium \nSterilization: Autoclavable at 134°C, fully dismantlable without tools for thorough cleaning",
-                "features": [
-                  "Complete surgical port entry kit including sharp, blunt, and pyramidal obturators",
-                  "Spring-loaded safety shield on Veress needles with audible click upon peritoneal entry",
-                  "High-grade silicone gas-sealing valves maintain pneumoperitoneum during repeated instrument passes",
-                  "Modular design enables complete disassembly for hospital washer-disinfector processing"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Surgical Instruments"
-              },
-              {
-                "name": "graspers& dissectors",
-                "image": "/images/products/laparoscopic-graspers-dissectors.jpg",
-                "specification": "Types: Maryland curved dissector, Babcock grasping forceps, Fenestrated bowel grasper, Allis grasper, Clinch grasper, Dolphin nose dissector \nShaft Dimensions: 5mm outer diameter x 330mm (standard) & 430mm (bariatric) length \nRotation: 360° fingertip rotation knob with smooth indexing \nRatchet: Switchable locking on/off ratchet mechanism on handle \nInsulation: Heavy-duty PTFE shrink tubing tested up to 5,000V for electrosurgical safety \nModularity: 3-piece takedown system (insert, insulated sheath, handle) for optimal cleaning",
-                "features": [
-                  "Complete surgical array of atraumatic grasping and precision dissecting jaw patterns",
-                  "Sensitive tactile feedback allowing delicate handling of intestines, gall bladder, and vessels",
-                  "Fully insulated shafts prevent accidental electrical burns to adjacent bowel",
-                  "Durable stainless steel construction withstands hundreds of hospital autoclaving cycles"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Surgical Instruments"
-              },
-              {
-                "name": "suturing instruments",
-                "image": "/images/products/laparoscopic-suturing-instruments.jpg",
-                "specification": "Jaw Types: Straight, Left-curved, Right-curved, Self-righting convex jaws with tungsten carbide (TC) cross-serrated inserts \nShaft Diameter: 5mm x 330mm length \nHandle Configurations: Axial handle with ratchet, Pistol grip handle, Ring handle with fine-toothed lock \nNeedle Sizes Supported: Curved surgical needles from 12mm to 36mm \nKnot Pushers: Open and closed eye knot tier rods (5mm) \nMaterial: Hardened surgical stainless steel with gold-plated handle rings denoting TC jaws",
-                "features": [
-                  "Tungsten carbide jaw inserts securely lock surgical needles without slipping or twisting",
-                  "Self-righting jaw architecture automatically aligns needle at 90° for ergonomic suturing",
-                  "Axial ergonomic handle minimizes hand fatigue during prolonged intracorporeal knot tying",
-                  "Ultra-smooth hinge movement prevents fine 3-0 and 4-0 suture threads from snagging"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Surgical Instruments"
-              },
-              {
-                "name": "HF instruments",
-                "image": "/images/products/laparoscopic-hf-instruments.jpg",
-                "specification": "Instruments: L-hook monopolar electrode, J-hook, Spatula electrode, Needle electrode, Bipolar micro-coagulation forceps (Maryland and straight paddle) \nConnector: Standard 4mm monopolar connector pin & 2-pin bipolar generator plug \nShaft: 5mm diameter x 330mm insulated with heat-resistant ceramic tip \nMax Voltage: Monopolar insulated to 8,000Vp; Bipolar to 2,000Vp \nSuction-Coagulation: Suction-irrigation electrode hooks (dual 5mm/10mm)",
-                "features": [
-                  "Precision ceramic tips isolate electrical discharge directly to targeted tissue margins",
-                  "Dual-function suction-coagulation probes allow smoke clearing and hemostasis in one step",
-                  "Bipolar forceps provide pinpoint micro-vascular coagulation with zero stray current",
-                  "Universal electrical pins compatible with all international electrosurgical units"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Surgical Instruments"
-              },
-              {
-                "name": "ligations instruments",
-                "image": "/images/products/laparoscopic-clip-appliers.jpg",
-                "specification": "Clip Types Supported: Titanium clips (Medium, Medium-Large, Large) & Polymer Hem-o-lok type clips (ML, L, XL) \nShaft Diameter: 5mm (for Medium/ML clips) and 10mm (for Large/XL clips) x 330mm \nJaw Closure: Parallel jaw closure mechanism with tactile feedback \nRotation: 360° rotating collar \nLockout Mechanism: Anti-slip retention prevents clip dislodgement prior to vessel clamping \nCleaning Port: Flush luer-lock port for interior shaft de-contamination",
-                "features": [
-                  "Parallel closing jaws ensure uniform clip compression across vascular and ductal structures",
-                  "Compatible with standard titanium surgical clips and non-absorbable polymer locking clips",
-                  "Smooth 360° one-finger rotation provides optimal angles around deep hilar vessels",
-                  "Integrated flush port allows complete interior channel irrigation during reprocessing"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Surgical Instruments"
-              },
-              {
-                "name": "liquid tubing devices",
-                "image": "/images/products/endoscopic-suction-irrigation-devices.jpg",
-                "specification": "Shaft Options: 5mm & 10mm interchangeable stainless steel cannulas with lateral spray holes \nValves: Double trumpet valve (Dual push-button for Irrigation and Suction) or Dual-stopcock lever \nTubing Set: Medical grade flexible silicone tubing set with universal puncture spike for saline bags \nOperating Pressure: Compatible with gravity flow and automated pressure irrigation pumps (up to 400 mmHg) \nErgonomics: Lightweight contoured pistol handpiece with ambidextrous button layout \nSterilization: Fully autoclavable trumpet handle and stainless steel probes",
-                "features": [
-                  "High-flow trumpet valve design delivers rapid pressurized abdominal lavage and clot aspiration",
-                  "Interchangeable 5mm and 10mm probes with multi-hole tips to avoid tissue suction trapping",
-                  "Smooth spring-back buttons eliminate valve sticking during emergency hemorrhage irrigation",
-                  "Transparent tubing connectors for immediate visual confirmation of fluid and clot transit"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Surgical Instruments"
-              },
-              {
-                "name": "reprocessing containers",
-                "image": "/images/products/instrument-reprocessing-containers.jpg",
-                "specification": "Material: Anodized surgical-grade aluminum alloy and stainless steel mesh basket \nFilter System: Reusable PTFE barrier filter or disposable paper filter discs in lid \nDimensions: Standard DIN sizes (Full size: 580x280x135mm; Half size: 285x280x135mm; Scope trays: 460x80x52mm) \nInterior: Silicone cushioning brackets and scope holding clips \nLocking: Dual safety latch with tamper-evident seal ports \nSterilization: Steam autoclave (134°C), ethylene oxide, and low-temperature gas plasma",
-                "features": [
-                  "Heavy-duty anodized aluminum housing shields delicate scopes and cameras from impact",
-                  "Perforated top and base with microbiological filters ensure sterile barrier integrity for up to 6 months",
-                  "Soft silicone holding fingers securely immobilize telescopes during ultrasonic bath and autoclave",
-                  "Lightweight, corrosion-proof, and compliant with EN 868 and ISO 11607 sterilization standards"
-                ],
-                "category": "Operating Theatre",
-                "subtitle": "Video-Assisted Thoracoscopic Surgery (VATS)",
-                "section": "Surgical Instruments"
               }
             ]
           },
@@ -3659,6 +3111,32 @@
           "two infusion seals",
           "With RS-232 connector, 2 trays",
           "and 2 drawers"
+        ],
+        "category": "Neonatal & Pediatric Care"
+      },
+      {
+        "name": "Double-sided phototherapy",
+        "image": "/images/products/double-sided-phototherapy.jpg",
+        "images": [
+          "/images/products/double-sided-phototherapy.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Neonatal & Pediatric Care"
+      },
+      {
+        "name": "Phototherapy",
+        "image": "/images/products/phototherapy.jpg",
+        "images": [
+          "/images/products/phototherapy.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
         ],
         "category": "Neonatal & Pediatric Care"
       },
@@ -5857,6 +5335,32 @@
           "two infusion seals",
           "With RS-232 connector, 2 trays",
           "and 2 drawers"
+        ],
+        "category": "Pediatrics & Child Health"
+      },
+      {
+        "name": "Double-sided phototherapy",
+        "image": "/images/products/double-sided-phototherapy.jpg",
+        "images": [
+          "/images/products/double-sided-phototherapy.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
+        ],
+        "category": "Pediatrics & Child Health"
+      },
+      {
+        "name": "Phototherapy",
+        "image": "/images/products/phototherapy.jpg",
+        "images": [
+          "/images/products/phototherapy.jpg"
+        ],
+        "specification": "",
+        "features": [
+          "Technical specifications available upon request.",
+          "Please contact our clinical engineering team for configuration details and quotation."
         ],
         "category": "Pediatrics & Child Health"
       },
